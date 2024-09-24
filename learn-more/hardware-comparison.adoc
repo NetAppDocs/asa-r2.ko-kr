@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: learn-more/hardware-comparison.html 
+keywords: compare asa r2, asa a1k, asa a70, asa a90 
+summary: ASA 시스템은 SAN 전용 솔루션에 최적화된 하드웨어 지원을 제공합니다. ASA R2 시스템은 하드웨어 및 소프트웨어를 최적화합니다. 
+searchtitle: ASA R2 시스템을 다른 ONTAP 시스템과 비교합니다 
+---
+= ASA R2 시스템을 다른 ONTAP 시스템과 비교합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템은 All-Flash 플랫폼을 기반으로 구축된 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 통합 솔루션을 제공합니다. ASA R2 시스템은 스토리지 계층 구현 시 다른 ONTAP 시스템(ASA, AFF 및 FAS)과 다르며 지원되는 프로토콜 및 ONTAP 성격 구현 시 서로 다릅니다.
+
+ASA R2 시스템에서 ONTAP 소프트웨어가 간소화되어 필수 SAN 기능을 지원하는 동시에 SAN 관련 기능이 아닌 기능의 가시성과 가용성을 제한합니다. 예를 들어, ASA R2 시스템에서 실행되는 System Manager에는 NAS 클라이언트의 홈 디렉토리를 생성하는 옵션이 표시되지 않습니다. 이 간소화된 ONTAP 버전은 _ ASA R2 Personality _ 로 식별됩니다. 다른 모든 ONTAP 시스템(ASA, AFF, FAS)에서 실행되는 ONTAP는 _ 유니파이드 ONTAP Personality _ 로 식별됩니다. ONTAP 퍼스낼리티의 차이는 ONTAP 명령 참조(man 페이지), REST API 사양 및 해당되는 경우 EMS 메시지에서 참조된다.
+
+ONTAP 스토리지의 특성은 System Manager 또는 ONTAP CLI에서 확인할 수 있습니다.
+
+* System Manager 메뉴에서 * 클러스터 > 개요 * 를 선택합니다.
+* CLI에서 다음을 입력합니다. `san config show`
+
+
+ONTAP 스토리지 시스템의 특성은 변경할 수 없습니다.
+
+통합 ONTAP 속성을 실행하는 ONTAP 시스템의 스토리지 계층에서는 애그리게이트를 스토리지의 기본 유닛으로 사용합니다. Aggregate는 스토리지 시스템에서 사용 가능한 특정 디스크 세트를 소유합니다. Aggregate는 소유한 디스크의 공간을 LUN 및 네임스페이스를 위한 볼륨에 할당합니다. 유니파이드 ONTAP 사용자는 CLI(Command Line Interface)를 사용하여 애그리게이트, 볼륨, LUN 및 네임스페이스를 생성하고 수정할 수 있습니다.
+
+ASA R2 시스템의 스토리지 계층에서는 애그리게이트 대신 스토리지 가용성 영역을 사용합니다. 스토리지 가용 영역은 스토리지 시스템의 모든 가용 디스크에 액세스할 수 있는 공통 스토리지 풀입니다. 스토리지 가용성 영역은 ASA R2 HA 쌍의 두 노드에 표시됩니다. LUN 또는 NVMe 네임스페이스를 기반으로 하는 스토리지 유닛이 생성되면 ONTAP은 스토리지 가용성 영역에 VM(스토리지 가상 머신)이 포함된 볼륨을 자동으로 생성하여 스토리지 유닛을 수용합니다. 스토리지 관리에 대한 이 자동화되고 단순한 접근 방식으로 인해 특정 System Manager 옵션, ONTAP 명령 및 REST API 엔드포인트를 사용할 수 없거나 ASA R2 시스템에서 사용이 제한되었습니다. 예를 들어, ASA R2 시스템의 경우 볼륨 생성 및 관리가 자동화되므로 * Volumes * 메뉴가 System Manager에 나타나지 않고 `volume create` 명령이 지원되지 않습니다.
+
+ASA R2 스토리지는 다음과 같은 측면에서 다른 ONTAP 스토리지 시스템과 비교됩니다.
+
+[cols="1h,2,2,2,2"]
+|===
+|  | ASA r2 를 참조하십시오 | ASA | AFF | FAS 
+
+
+ a| 
+* ONTAP 성격 *
+| ASA r2 를 참조하십시오 | ASA | 통합 | 통합 
+
+
+ a| 
+* SAN 프로토콜 지원 *
+| 예 | 예 | 예 | 예 
+
+
+ a| 
+* NAS 프로토콜 지원 *
+| 아니요 | 아니요 | 예 | 예 
+
+
+ a| 
+* 스토리지 계층 지원 *
+| 스토리지 가용 영역 | 애그리게이트 | 애그리게이트 | 애그리게이트 
+|===
+다음 ASA 플랫폼은 ASA R2 시스템으로 분류됩니다.
+
+* ASA A1K 를 참조하십시오
+* ASA A70 를 참조하십시오
+* ASA A90 를 참조하십시오
+
+
+.를 참조하십시오
+* 에 대해 자세히 link:https://docs.netapp.com/us-en/ontap-systems-family/intro-family.html["ONTAP 하드웨어 시스템"^]알아보십시오.
+* 에서 ASA 및 ASA R2 시스템에 대한 전체 구성 지원 및 제한 사항을 link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^]참조하십시오.
+* 에 대해 자세히 link:https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA"^]알아보십시오.
+
+
+
+
+== ASA R2 시스템의 차이점을 요약합니다
+
+ONTAP CLI(Command Line Interface) 및 REST API와 관련된 ASA R2 시스템과 FAS, AFF 및 ASA 시스템의 주요 차이점은 아래에 설명되어 있습니다.
+
+.프로토콜 서비스를 통한 기본 SVM 생성
+새로운 클러스터에는 SAN 프로토콜이 활성화된 기본 데이터 SVM이 자동으로 포함됩니다. IP 데이터 LIF는 iSCSI 및 NVMe/TCP 프로토콜을 지원하며 `default-data-blocks` 기본적으로 서비스 정책을 사용합니다.
+
+.자동 볼륨 생성
+스토리지 유닛(LUN 또는 네임스페이스)을 생성하면 스토리지 가용 영역에서 볼륨이 자동으로 생성됩니다. 결과적으로 공통 네임스페이스가 단순화됩니다. 스토리지 유닛을 삭제하면 연결된 볼륨이 자동으로 삭제됩니다.
+
+.씬 및 일반 프로비저닝으로 변경
+용 스토리지 유닛은 항상 ASA R2 스토리지 시스템에서 씬 프로비저닝됩니다. 일반 프로비저닝은 지원되지 않습니다.

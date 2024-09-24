@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: release-notes/whats-new-9160.html 
+keywords:  
+summary:  
+---
+= ASA R2 시스템을 위한 ONTAP 9.16.0의 새로운 기능
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템을 위한 ONTAP 9.16.10에서 사용할 수 있는 새로운 기능에 대해 알아보십시오.
+
+
+
+== 플랫폼
+
+[cols="2,4"]
+|===
+| 업데이트 | 설명 
+
+
+| 구입하십시오  a| 
+다음과 같은 새로운 NetApp ASA R2 시스템을 사용할 수 있습니다. 이러한 플랫폼은 SAN 전용 고객의 요구사항에 맞게 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.
+
+* ASA A1K 를 참조하십시오
+* ASA A70 를 참조하십시오
+* ASA A90 를 참조하십시오
+
+
+|===
+
+
+== 시스템 관리자
+
+[cols="2,4"]
+|===
+| 업데이트 | 설명 
+
+
+| link:../get-started/learn-about.html["SAN 전용 고객에 대한 원활한 지원"] | System Manager를 활용하면 필수 SAN 기능을 지원하는 동시에 SAN 환경에서 지원되지 않는 기능을 쉽게 파악할 수 있습니다. 
+|===
+
+
+== 스토리지 관리
+
+[cols="2,4"]
+|===
+| 업데이트 | 설명 
+
+
+| link:../manage-data/provision-san-storage.html["단순화된 스토리지 관리"]  a| 
+ASA R2 시스템에서는 스토리지 유닛과 정합성 보장 그룹을 사용하여 스토리지 관리를 간소화합니다.
+
+* 스토리지 유닛 _ 은(는) 데이터 작업을 위해 SAN 호스트에서 사용할 수 있는 스토리지 공간을 만듭니다. 스토리지 유닛은 SCSI 호스트용 LUN 또는 NVMe 호스트용 NVMe 네임스페이스를 가리킵니다.
+* _A 정합성 보장 그룹 _ 은(는) 단일 유닛으로 관리되는 스토리지 유닛의 모음입니다.
+
+
+|===
+
+
+== 데이터 보안
+
+[cols="2,4"]
+|===
+| 업데이트 | 설명 
+
+
+| link:../secure-data/encrypt-data-at-rest.html["온보드 키 관리자 및 이중 계층 암호화"]  a| 
+ASA R2 시스템은 온보드 키 관리자와 이중 계층(하드웨어 및 소프트웨어) 암호화를 지원합니다.
+
+|===

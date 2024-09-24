@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: secure-data/nvme-tcp-connections.html 
+keywords: asa r2, secure data, data security, encrypt, data at rest, data-at-rest, encryption 
+summary: NVMe/TCP 호스트와 ONTAP 간에 네트워크를 통해 전송되는 모든 데이터를 암호화하도록 TLS를 통한 NVMe/TCP를 구성하여 데이터 보안을 강화하십시오. 
+---
+= ASA R2 스토리지 시스템에서 NVMe 연결을 보호합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe 프로토콜을 사용하는 경우 대역 내 인증을 구성하여 데이터 보안을 강화할 수 있습니다. 대역 내 인증을 통해 NVMe 호스트와 ASA R2 시스템 간에 안전한 양방향 및 단방향 인증을 수행할 수 있습니다. 모든 NVMe 호스트에서 대역 내 인증을 사용할 수 있습니다. NVMe/TCP 프로토콜을 사용하는 경우 TLS(전송 계층 보안)를 구성하여 NVMe/TCP 호스트와 ASA R2 시스템 간에 네트워크를 통해 전송되는 모든 데이터를 암호화함으로써 데이터 보안을 더욱 강화할 수 있습니다.
+
+.단계
+. Hosts * 를 선택한 다음 * NVMe * 를 선택합니다.
+. 을 image:icon_add_blue_bg.png["더하기 기호가 있는 파란색 사각형 다음에 흰색 글자로 추가 라는 단어가 있습니다"] 선택합니다.
+. 호스트 이름을 입력한 다음 호스트 운영 체제를 선택합니다.
+. 호스트 설명을 입력한 다음 호스트에 접속할 스토리지 VM을 선택합니다.
+. image:icon_dropdown_arrow.gif["파란색 아래쪽 화살표"]호스트 이름 옆의 을 선택합니다.
+. 대역내 인증 * 을 선택합니다.
+. NVMe/TCP 프로토콜을 사용하는 경우 * TLS(전송 계층 보안) 필요 * 를 선택합니다.
+. 추가 * 를 선택합니다.
+
+
+.결과
+대역 내 인증 및/또는 TLS를 통해 데이터 보안이 강화됩니다.

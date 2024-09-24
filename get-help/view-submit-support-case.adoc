@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: get-help/view-submit-support-case.html 
+keywords:  
+summary:  
+---
+= ASA R2 스토리지 시스템에 대한 지원 사례를 제출하고 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+도움이 필요한 문제가 있는 경우 ONTAP System Manager를 사용하여 기술 지원 부서에 케이스를 제출할 수 있습니다. ONTAP System Manager를 사용하여 종료되었거나 진행 중인 케이스를 볼 수도 있습니다.
+
+link:https://activeiq-link.netapp.com/["Active IQ에 등록되었습니다"]ASA R2 시스템에 대한 지원 사례를 확인해야 합니다.
+
+.단계
+. 지원 케이스를 제출하려면 System Manager에서 * 클러스터 > 지원 * 을 선택한 다음 * NetApp 지원 * 으로 이동 * 을 선택합니다.
+. 이전에 제출한 케이스를 보려면 System Manager에서 * 클러스터 > 지원 * 을 선택한 다음 * 내 케이스 보기 * 를 선택합니다.
+

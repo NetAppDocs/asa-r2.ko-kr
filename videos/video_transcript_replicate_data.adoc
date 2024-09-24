@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: videos/video_transcript_replicate_data.html 
+keywords: frontmatter, front matter 
+summary: ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에서 일반적인 작업을 빠르고 쉽게 수행하는 방법을 보여주는 짧은 비디오를 보십시오. 
+---
+= ASA R2 스토리지 시스템에서 원격 클러스터로 데이터를 복제합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+동영상에 대해 다음 `Replicate data to a remote cluster from an ASA r2 storage system` 내용이 제공됩니다.
+
+link:videos-common-tasks.html#video_transcript_return_replicate_data["페이지로 돌아갑니다"]
+
+ONTAP System Manager를 사용하면 스토리지 유닛 또는 정합성 보장 그룹의 스냅샷을 예약하고 원격 위치에 복제하여 데이터를 보호할 수 있습니다.
+
+이 예에서는 기존 스토리지 유닛에 대한 스냅샷을 예약합니다.
+
+System Manager 메뉴에서 * Storage * 를 선택합니다.
+
+보호할 스토리지 유닛을 선택한 다음 * Protect * 를 선택합니다.
+
+필요에 따라 * 지금 스냅샷 추가 * 를 선택하여 주문형 스냅샷을 생성할 수 있습니다.
+
+Remote protection * 아래에서 * replicate to a remote cluster * 를 선택합니다.
+
+복제할 스토리지 VM 및 복제 정책을 선택합니다. 기본적으로 초기 데이터 전송은 즉시 시작됩니다.
+
+저장 * 을 선택합니다.
+
+스토리지 유닛이 정합성 보장 그룹에 없는 경우 정합성 보장 그룹을 생성해야 합니다. 새 일관성 그룹의 이름을 입력한 다음 * Create * 를 선택합니다.
+
+일관성 그룹을 원격 클러스터에 빠르고 쉽게 복제할 수 있습니다.

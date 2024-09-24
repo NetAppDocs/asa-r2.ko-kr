@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: learn-more/software-support-limitations.html 
+keywords: asa r2, asa a1k, asa 70, asa 90, unsupported features 
+summary: ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제공하지만 특정 ONTAP 소프트웨어 기능은 지원되지 않습니다. 
+---
+= ASA R2 스토리지 시스템에 대한 ONTAP 소프트웨어 지원 및 제한 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제공하지만 특정 ONTAP 소프트웨어 기능은 지원되지 않습니다.
+
+.ASA R2 시스템은 다음을 지원하지 않습니다.
+* iSCSI LIF 페일오버
+* FabricPool
+* LUN 일반 프로비저닝
+* MetroCluster
+* 오브젝트 프로토콜
+* ONTAP S3 SnapMirror 및 S3 API
+* SnapMirror에서 클라우드로
+* SnapMirror에서 비 ASA R2 시스템으로 마이그레이션
+* 선택적 LUN 맵(SLM)
+
+
+.ASA R2 시스템은 다음을 지원합니다.
+* SnapLock
+* 이중 계층 암호화
+
+
+.를 참조하십시오
+* link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^]ASA R2 하드웨어 지원 및 제한 사항에 대한 자세한 내용은 를 참조하십시오.
+* link:../secure-data/ransomware-protection.html["스냅샷을 잠그는 방법에 대해 알아봅니다"] ASA R2 시스템에서.
+* link:../secure-data/encrypt-data-at-rest.html["이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다"] ASA R2 시스템의 데이터로 이동합니다.
+

@@ -1,0 +1,45 @@
+---
+indexpage:
+  title: ASA r2 설명서
+  summary: NetApp ASA R2 시스템은 통합 하드웨어 및 소프트웨어 솔루션을 제공하여 SAN 전용 고객의 요구 사항에 맞는 간소화된
+    환경을 제공합니다.
+  keywords: asa r2, ontap, documentation, asa a1k, asa a70, asa a90
+  lead: 새로운 NetApp ASA R2 시스템(ASA A1K, ASA A70 및 ASA A90)은 SAN 전용 고객의 요구 사항에 맞는 간소화된
+    환경을 제공하는 통합된 하드웨어 및 소프트웨어 솔루션을 제공합니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 자세한 정보
+      url: "/get-started/learn-about.html"
+    - title: 빠른 시작
+      url: "/get-started/quick-start.html"
+  - title: 데이터 관리
+    links:
+    - title: SAN 스토리지 용량 할당
+      url: "/manage-data/provision-san-storage.html"
+    - title: 데이터를 복제합니다
+      url: "/manage-data/data-cloning.html"
+    - title: 스토리지 유닛을 수정합니다
+      url: "/manage-data/modify-storage-units.html"
+  - title: 데이터 보호 및 보안
+    links:
+    - title: 스냅샷을 생성합니다
+      url: "/data-protection/create-snapshots.html"
+    - title: 스냅샷 복제를 설정합니다
+      url: "/data-protection/snapshot-replication.html"
+    - title: 유휴 데이터 암호화
+      url: "/secure-data/encrypt-data-at-rest.html"
+  - title: 추가 ASA R2 리소스
+    links:
+    - title: ASA 데이터시트 를 참조하십시오
+      url: https://www.netapp.com/data-storage/all-flash-san-storage-array/
+    - title: ONTAP 명령 참조입니다
+      url: https://docs.netapp.com/us-en/ontap-cli/
+    - title: ONTAP REST API 참조
+      url: https://docs.netapp.com/us-en/ontap-restapi/index.html
+    - title: ONTAP EMS 참조
+      url: https://docs.netapp.com/us-en/ontap-ems/index.html
+  - title: 기타 ONTAP 리소스
+    links:
+    - title: 기타 ONTAP 시스템 설명서
+      url: https://docs.netapp.com/us-en/ontap-family/

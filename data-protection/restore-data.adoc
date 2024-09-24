@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: data-protection/restore-data.html 
+keywords: restore data, asa r2, data restoration 
+summary: 정합성 보장 그룹의 데이터가 손상되거나 손실된 경우 원격 스냅샷에서 전체 정합성 보장 그룹을 복원할 수 있습니다. 
+---
+= ASA R2 스토리지 시스템에서 데이터를 복구합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스냅샷으로 보호되는 정합성 보장 그룹 또는 스토리지 유닛의 데이터는 손실되거나 손상된 경우 복구할 수 있습니다.
+
+
+
+== 일관성 그룹 복원
+
+정합성 보장 그룹을 복구하면 정합성 보장 그룹의 모든 스토리지 유닛에 있는 데이터가 스냅샷의 데이터로 대체됩니다. 스냅샷이 생성된 후 스토리지 유닛에 대한 변경 사항은 복구되지 않습니다.
+
+로컬 또는 원격 스냅샷에서 정합성 보장 그룹을 복구할 수 있습니다.
+
+[role="tabbed-block"]
+====
+.로컬 스냅샷에서 복구합니다
+--
+.단계
+. System Manager에서 * 보호 > 일관성 그룹 * 을 선택합니다.
+. 복원할 데이터가 포함된 일관성 그룹을 두 번 클릭합니다.
++
+정합성 보장 그룹 세부 정보 페이지가 열립니다.
+
+. Snapshots * 를 선택합니다.
+. 복원할 스냅샷을 선택한 다음 을 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택합니다.
+. Restore consistency group from this snapshot * 을 선택한 다음 * Restore * 를 선택합니다.
+
+
+--
+.원격 스냅샷에서 복구합니다
+--
+.단계
+. System Manager에서 * Protection > Replication * 을 선택합니다.
+. Local Destinations * 를 선택합니다.
+. 복원할 * 소스 * 를 선택한 다음 를 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택합니다.
+. Restore * 를 선택합니다.
+. 데이터를 복구할 클러스터, 스토리지 VM 및 정합성 보장 그룹을 선택합니다.
+. 복원할 스냅샷을 선택합니다.
+. 메시지가 표시되면 "복원"을 입력한 다음 * 복원 * 을 선택합니다.
+
+
+--
+====
+.결과
+정합성 보장 그룹이 복구에 사용되는 스냅샷의 시점으로 복원됩니다.
+
+
+
+== 스토리지 유닛을 복구합니다
+
+스토리지 유닛을 복구하면 스토리지 유닛의 모든 데이터가 스냅샷의 데이터로 대체됩니다. 스냅샷이 생성된 후 스토리지 유닛에 대한 변경 사항은 복원되지 않습니다.
+
+.단계
+. System Manager에서 * Storage * 를 선택합니다.
+. 복원할 데이터가 포함된 스토리지 유닛을 두 번 클릭합니다.
++
+스토리지 유닛 세부 정보 페이지가 열립니다.
+
+. Snapshots * 를 선택합니다.
+. 복구할 스냅샷을 선택합니다.
+. 를 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택한 다음 * Restore * 를 선택합니다.
+. Use this snapshot to restore the storage unit * 를 선택한 다음 * Restore * 를 선택합니다.
+
+
+.결과
+저장소 유닛이 복원에 사용된 스냅샷의 시점으로 복원됩니다.

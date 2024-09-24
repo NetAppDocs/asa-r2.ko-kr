@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: videos/video_transcript_configure_san_protocols.html 
+keywords: frontmatter, front matter 
+summary: ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에서 일반적인 작업을 빠르고 쉽게 수행하는 방법을 보여주는 짧은 비디오를 보십시오. 
+---
+= ASA R2 시스템에서 SAN 프로토콜을 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+동영상에 대해 다음 `Configure SAN protocols on your ASA r2 storage system` 내용이 제공됩니다.
+
+link:videos-common-tasks.html#video_transcript_return_configure_san_protocols["페이지로 돌아갑니다"]
+
+ONTAP System Manager를 사용하면 SAN 프로토콜을 쉽고 빠르게 구성할 수 있습니다. 이 예에서는 iSCSI 네트워크 인터페이스에 대한 IP 주소를 구성합니다.
+
+System Manager 대시보드에서 * Configure protocol * 을 선택합니다.
+
+IP * 아래에서 * IP 인터페이스 구성 * 을 선택한 다음 * 서브넷 추가 * 를 선택합니다.
+
+서브넷의 이름을 입력한 다음 서브넷 IP 주소를 입력합니다.
+
+서브넷 마스크를 입력하고 선택적으로 게이트웨이를 입력한 다음 * 추가 * 를 선택합니다.
+
+방금 만든 서브넷을 선택한 다음 * 저장 * 을 선택합니다.
+
+iSCSI 네트워크 인터페이스의 IP 주소를 쉽고 빠르게 구성할 수 있습니다.

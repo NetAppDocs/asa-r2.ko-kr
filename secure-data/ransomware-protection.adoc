@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: secure-data/ransomware-protection.html 
+keywords: asa r2, secure data, data security, ransomware, ransomware attacks, protection 
+summary: 무단 조작 방지 스냅샷을 사용하여 데이터를 보호합니다. 무단 조작 방지 스냅샷은 삭제할 수 없으며 랜섬웨어 공격에 의해 손상된 데이터를 복구하는 데 사용될 수 있습니다. 
+---
+= ASA R2 스토리지 시스템에서 랜섬웨어 공격을 방어합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+랜섬웨어 공격에 대한 보호를 강화하기 위해 스냅샷을 원격 클러스터에 복제하고 대상 스냅샷을 잠가 변조 방지를 보장합니다. 잠긴 스냅샷은 실수로 또는 악의적으로 삭제할 수 없습니다. 스토리지 유닛이 랜섬웨어 공격에 의해 손상된 경우 잠긴 스냅샷을 사용하여 데이터를 복구할 수 있습니다.
+
+
+
+== SnapLock Compliance 클록을 초기화한다
+
+무단 변경 방지 스냅샷을 생성하려면 로컬 및 대상 클러스터에서 SnapLock Compliance 클록을 초기화해야 합니다.
+
+.단계
+. 클러스터 > 개요 * 를 선택합니다.
+. 노드 * 섹션에서 * SnapLock Compliance 시계 초기화 * 를 선택합니다.
+. Initialize * 를 선택합니다.
+. 규정 준수 클록이 초기화되었는지 확인
++
+.. 클러스터 > 개요 * 를 선택합니다.
+.. Nodes * 섹션에서 를 image:icon_show_hide.png["흰색 배경에 파란색 열 3개"]선택한 다음 * SnapLock Compliance Clock * 을 선택합니다.
+
+
+
+
+.다음 단계
+로컬 및 대상 클러스터에서 SnapLock Compliance 클록을 초기화한 후에는 을(를) 시작할 link:../data-protection/snapshot-replication.html#step-3-create-a-replication-relationship["잠긴 스냅샷이 있는 복제 관계를 생성합니다"]수 있습니다.

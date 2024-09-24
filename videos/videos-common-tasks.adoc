@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: videos/videos-common-tasks.html 
+keywords: demo,asa r2, videos 
+summary: ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에서 일반적인 작업을 빠르고 쉽게 수행하는 방법을 보여주는 짧은 비디오를 보십시오. 
+---
+= ASA R2 스토리지 시스템 비디오 데모
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에서 일반적인 작업을 빠르고 쉽게 수행하는 방법을 보여주는 짧은 비디오를 보십시오.
+
+.ASA R2 시스템에서 SAN 프로토콜을 구성합니다
+video::96cf3b2d-1cbd-4fff-a6e7-b1f0014ef793[panopto]
+link:video_transcript_configure_san_protocols.html["비디오 스크립트"]
+
+[#video_transcript_return_configure_san_protocols]
+.ASA R2 시스템에서 SAN 스토리지를 프로비저닝합니다
+video::1d3e1a18-7dbe-44e9-a53d-b1f0014ef7c5[panopto]
+link:video_transcript_provision_san_storage.html["비디오 스크립트"]
+
+[#video_transcript_return_provision_san_storage]
+.ASA R2 시스템에서 원격 클러스터로 데이터를 복제합니다
+video::4b78312d-1bfa-4df5-afac-b1f0014ef80e[panopto]
+link:video_transcript_replicate_data.html["비디오 스크립트"]

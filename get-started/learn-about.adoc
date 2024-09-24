@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: get-started/learn-about.html 
+keywords: asa r2, asa a1k, asa 70, asa 90 
+summary: 'ASA R2 시스템(ASA A1K, ASA A70, ASA A90)은 SAN 전용 고객을 위해 간소화된 환경을 조성하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.' 
+searchtitle: ASA A1K, ASA A70 및 ASA A90 스토리지 시스템에 대해 알아보십시오 
+---
+= ASA R2 스토리지 시스템에 대해 알아보십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새로운 NetApp ASA R2 시스템(ASA A1K, ASA A70 및 ASA A90)은 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공하는 통합된 하드웨어 및 소프트웨어 솔루션을 제공합니다.
+
+ASA R2 시스템은 단일 HA 쌍 구축에서 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. SCSI(iSCSI 및 FC) 프로토콜은 호스트와 스토리지 간의 모든 경로가 액티브/최적화되도록 다중 경로를 위해 대칭 액티브-액티브 아키텍처를 사용합니다. NVMe 프로토콜은 호스트와 스토리지 간의 직접 경로를 지원합니다.
+
+ASA R2 시스템에서 ONTAP 소프트웨어 및 System Manager를 간소화하여 필수 SAN 기능을 지원하는 동시에 SAN 환경에서 지원되지 않는 기능을 제거합니다.
+
+ASA R2 시스템에서는 정합성 보장 그룹이 포함된 스토리지 유닛을 사용합니다.
+
+* 스토리지 유닛 _ 은(는) 데이터 작업을 위해 SAN 호스트에서 사용할 수 있는 스토리지 공간을 만듭니다. 스토리지 유닛은 SCSI 호스트용 LUN 또는 NVMe 호스트용 NVMe 네임스페이스를 가리킵니다.
+* _A 정합성 보장 그룹 _ 은(는) 단일 유닛으로 관리되는 스토리지 유닛의 모음입니다.
+
+
+ASA R2 시스템은 스토리지 유닛 및 정합성 보장 그룹을 사용하여 스토리지 관리 및 데이터 보호를 간소화합니다. 예를 들어 정합성 보장 그룹에 10개의 스토리지 유닛으로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정합니다. 각 스토리지 유닛을 개별적으로 백업하는 대신 정합성 보장 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.
+
+도난 또는 랜섬웨어와 같은 악의적인 공격으로부터 데이터를 보호하기 위해 ASA R2 시스템은 온보드 키 관리자, 이중 계층 암호화, 무단 변경 방지 스냅샷, 다중 요소 인증 및 다중 관리자 검증을 지원합니다.
+
+ASA R2 시스템은 기존 ASA, AFF 또는 FAS 시스템과의 혼합을 지원하지 않습니다.
+
+.를 참조하십시오
+* ASA R2 시스템 지원 및 제한 사항에 대한 자세한 내용은 을 link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^]참조하십시오.
+* 에 대해 자세히 link:../learn-more/hardware-comparison.html["새로운 ASA R2 시스템을 ASA 시스템과 비교한 것입니다"]알아보십시오.
+* 에 대해 자세히 link:https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA"]알아보십시오.
+

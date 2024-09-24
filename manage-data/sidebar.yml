@@ -1,0 +1,40 @@
+---
+section: manage-data
+title: ONTAP를 사용하여 데이터를 관리합니다
+entries:
+- title: 일반 작업을 위한 비디오
+  url: "/videos/videos-common-tasks.html"
+- title: 스토리지 관리
+  entries:
+  - title: 스토리지 프로비저닝
+    url: "/manage-data/provision-san-storage.html"
+  - title: 데이터를 복제합니다
+    url: "/manage-data/data-cloning.html"
+  - title: 스토리지 유닛을 수정합니다
+    url: "/manage-data/modify-storage-units.html"
+  - title: 스토리지 유닛을 삭제합니다
+    url: "/manage-data/delete-storage-units.html"
+  - title: 보관 제한
+    url: "/manage-data/storage-limits.html"
+- title: 데이터 보호
+  entries:
+  - title: 스냅샷을 생성합니다
+    url: "/data-protection/create-snapshots.html"
+  - title: 스냅샷 복제를 설정합니다
+    url: "/data-protection/snapshot-replication.html"
+  - title: Kubernetes 보호
+    url: "/data-protection/protect-kubernetes.html"
+  - title: 데이터를 복원합니다
+    url: "/data-protection/restore-data.html"
+  - title: 일관성 그룹을 관리합니다
+    url: "/data-protection/manage-consistency-groups.html"
+  - title: 보호 정책 및 스케줄 관리
+    url: "/data-protection/policies-schedules.html"
+- title: 데이터 보호
+  entries:
+  - title: 유휴 데이터 암호화
+    url: "/secure-data/encrypt-data-at-rest.html"
+  - title: 랜섬웨어 공격을 방어하십시오
+    url: "/secure-data/ransomware-protection.html"
+  - title: 안전한 NVMe 연결
+    url: "/secure-data/nvme-tcp-connections.html"

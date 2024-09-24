@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: manage-data/storage-limits.html 
+keywords: storage limits, cluster limits, maximum lun size, supported protocols, asa r2, asa a1k, asa a70, asa a90 
+summary: ASA R2 구성은 FC, iSCSI, NVMe/FC 또는 NVMe/TCP 프로토콜을 실행하는 클러스터당 최대 2개의 노드를 지원합니다. 
+---
+= ASA R2 스토리지 제한
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+최적의 성능, 구성 및 지원을 위해 ASA R2 스토리지 제한을 숙지해야 합니다.
+
+ASA R2 시스템은 다음을 지원합니다.
+
+[cols="1h, 1"]
+|===
+
+
+| 클러스터당 최대 노드 수 | 2 
+
+
+| 최대 저장 장치 크기 | 128TB 
+|===
+.를 참조하십시오
+최신 ASA R2 스토리지 제한값의 전체 목록은 을 참조하십시오link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^].

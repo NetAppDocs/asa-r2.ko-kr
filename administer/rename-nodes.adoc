@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: administer/rename-nodes.html 
+keywords: rename, node, renaming, asa r2 
+summary: 조직의 명명 규칙에 맞게 또는 기타 관리 상의 이유로 노드 이름을 변경해야 할 수도 있습니다. 
+---
+= ASA R2 스토리지 시스템에서 노드 이름을 바꿉니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager를 사용하여 ASA R2 시스템에서 노드 이름을 바꿀 수 있습니다. 조직의 명명 규칙에 맞게 또는 기타 관리 상의 이유로 노드 이름을 변경해야 할 수도 있습니다.
+
+.단계
+. System Manager에서 * 클러스터 > 개요 * 를 선택합니다.
+. image:icon_kabob.gif["세 개의 수직 파란색 점"]이름을 바꾸려는 노드 옆에 있는 을 선택한 다음 * Rename * 을 선택합니다.
+. 노드의 새 이름을 입력한 다음 * Rename * 을 선택합니다.
+
+
+.결과
+새 이름이 노드에 적용됩니다.

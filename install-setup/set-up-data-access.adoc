@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: install-setup/set-up-data-access.html 
+keywords:  
+summary:  
+---
+= SAN 호스트에서 ASA R2 스토리지 시스템으로의 데이터 액세스가 가능합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 액세스를 설정하려면 ONTAP와 함께 올바르게 작동하는 데 중요한 SAN 클라이언트의 특정 매개 변수 및 설정이 올바르게 구성되었는지 확인해야 합니다. VMware를 사용 중인 경우 가상 시스템을 마이그레이션해야 합니다.
+
+
+
+== SAN 호스트에서 데이터 액세스 설정
+
+SAN 호스트에서 ASA R2 시스템에 대한 데이터 액세스를 설정하는 데 필요한 구성은 호스트 운영 체제 및 프로토콜에 따라 다릅니다. 최상의 성능과 성공적인 페일오버를 위해서는 올바른 구성이 중요합니다.
+
+link:https://docs.netapp.com/us-en/ontap-sanhost/hu_vsphere_8.html["VMware vSphere SCSI 클라이언트"^]link:https://docs.netapp.com/us-en/ontap-sanhost/nvme_esxi_8.html["VMware vSphere NVMe 클라이언트"^]link:https://docs.netapp.com/us-en/ontap-sanhost/overview.html["기타 SAN 클라이언트"^]ASA R2 시스템에 접속하도록 호스트를 적절히 구성하려면 에 대한 ONTAP SAN 호스트 설명서를 참조하십시오.
+
+
+
+== VMware 가상 시스템을 마이그레이션합니다
+
+VM 워크로드를 ASA 스토리지 시스템에서 ASA R2 스토리지 시스템으로 마이그레이션해야 하는 경우, NetApp 를 사용하여 link:https://www.vmware.com/products/cloud-infrastructure/vsphere/vmotion["VMware vSphere vMotion을 참조하십시오"^]무중단 실시간 데이터 마이그레이션을 수행하는 것이 좋습니다.
+
+.다음 단계
+link:../manage-data/provision-san-storage.html["스토리지 용량 할당"]SAN 호스트에서 스토리지 유닛에 데이터를 읽고 쓸 수 있도록 할 준비가 되었습니다.

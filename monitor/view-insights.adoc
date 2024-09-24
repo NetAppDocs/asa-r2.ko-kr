@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: monitor/view-insights.html 
+keywords: view, insights, optimize, cluster, performance, best practices, configuration, security 
+summary: ONTAP System Manager의 Insights를 통해 ASA R2 시스템에 구현할 수 있는 모범 사례 및 구성 수정 사항을 파악하여 클러스터 보안 및 성능을 최적화할 수 있습니다. 
+---
+= ASA R2 스토리지 시스템 인사이트를 통해 클러스터 보안 및 성능을 최적화합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager에서 View_Insights_를 사용하여 ASA R2 시스템에 구현할 수 있는 모범 사례와 구성 수정 사항을 파악하여 클러스터 보안 및 성능을 최적화할 수 있습니다.
+
+예를 들어, 클러스터에 사용하도록 NTP(네트워크 시간 프로토콜) 서버가 구성되어 있다고 가정합니다. 그러나 최적의 클러스터 시간 관리에 필요한 NTP 서버의 수가 권장된 수보다 적다는 사실을 모르고 있습니다. 클러스터 시간이 정확하지 않을 때 발생할 수 있는 문제를 방지하기 위해 Insights에서는 NTP 서버가 너무 적게 구성되어 있음을 알리고 이 문제에 대해 자세히 알아보거나 수정하거나 무시할 수 있는 옵션을 제공합니다.
+
+image:insights.png["시스템 관리자 인사이트 페이지의 스크린샷"]
+
+.단계
+. System Manager에서 * Insights * 를 선택합니다.
+. 권장 사항을 검토합니다.
+
+
+.다음 단계
+모범 사례를 구현하고 클러스터 보안 및 성능을 최적화하는 데 필요한 작업을 수행합니다.

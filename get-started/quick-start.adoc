@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: get-started/quick-start.html 
+keywords: asa r2, asa a1k, asa a70, asa a90, get started, getting started, quick start, install, set up 
+summary: 'ASA R2(ASA A1K, ASA A70, ASA A90) 시스템을 시작하려면 하드웨어를 설치하고, 클러스터를 설정하고, 데이터 액세스를 설정하고, 스토리지를 프로비저닝해야 합니다.' 
+searchtitle: ASA A1K, ASA A70 및 ASA A90 스토리지 시스템을 설치하고 설정합니다 
+---
+= ASA R2 스토리지 시스템의 빠른 시작
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템을 설치하고 실행하려면 하드웨어 구성 요소를 설치하고, 클러스터를 설정하고, 호스트에서 스토리지 시스템으로의 데이터 액세스를 설정하고, 스토리지를 프로비저닝해야 합니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 하드웨어를 설치하고 설정합니다
+[role="quick-margin-para"]
+link:../install-setup/install-setup-workflow.html["설치 및 설정"] ASA R2 시스템을 ONTAP 환경에서 HA 페어로 구축할 수 있습니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 클러스터 설정
+[role="quick-margin-para"]
+System Manager를 사용하여 에 대한 빠르고 쉬운 프로세스를 link:../install-setup/initialize-ontap-cluster.html["ONTAP 클러스터를 설정합니다"]안내합니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] 데이터 액세스를 설정합니다
+[role="quick-margin-para"]
+link:../install-setup/set-up-data-access.html["ASA R2 시스템을 SAN 클라이언트에 연결합니다"]..
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 스토리지를 프로비저닝합니다
+[role="quick-margin-para"]
+link:../manage-data/provision-san-storage.html["스토리지 프로비저닝"] SAN 클라이언트에 데이터를 제공하기 시작합니다.
+
+.다음 단계
+이제 System Manager를 사용하여 를 통해 데이터를 보호할 수 link:../data-protection/create-snapshots.html["스냅샷을 생성하는 중입니다"]있습니다.
