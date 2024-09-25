@@ -256,7 +256,6 @@
   <block id="cd5ce84f06573fa36efd7de37fc1e5ba" category="summary">호스트 데이터 작업에 문제가 있는 경우 ONTAP System Manager를 사용하여 호스트에서 ASA R2 스토리지 시스템으로의 접속이 활성 상태인지 확인할 수 있습니다.</block>
   <block id="29aef3c4098e0c02a759b7ceeffd7bf5" category="doc">ASA R2 스토리지 시스템에서 호스트 접속을 확인합니다</block>
   <block id="2066e94a3e5e94a8e4ebdca7307614e8" category="list-text">System Manager에서 * Host * 를 선택합니다.</block>
-  <block id="d6a0ea19a115b4b6c1b0c1db29d0f8c8" category="paragraph">호스트 접속 상태는 호스트 그룹 이름 옆에 다음과 같이 표시됩니다. * * OK *: 모든 이니시에이터가 두 노드에 접속되었음을 나타냅니다. * 부분적으로 연결됨 *: 초기자 중 일부가 두 노드에 연결되어 있지 않음을 나타냅니다. * 없음 연결됨 *: 이니시에이터가 연결되어 있지 않음을 나타냅니다.</block>
   <block id="7d19a1e7e72002fdb422d749fd4507db" category="paragraph">호스트에서 업데이트를 수행하여 연결 문제를 수정합니다. ONTAP는 15분마다 연결 상태를 다시 확인합니다.</block>
   <block id="69cb7ab40e4d5787db8003ef13bf1939" category="summary">ASA R2 시스템에서 데이터를 백업할 스냅샷을 생성합니다. 수동 스냅샷을 생성하거나 정합성 보장 그룹을 사용하여 자동 스냅샷을 예약할 수 있습니다.</block>
   <block id="a72d39c43f1da3c8e4c29dc1a6cf6185" category="searchtitle">ONTAP 시스템 관리자 | ASA R2를 사용하여 스냅샷을 생성하여 데이터를 백업합니다</block>
@@ -1586,4 +1585,8 @@
   <block id="580170da57ca90dca0f62ce9faf29c6e" category="sidebar">안전한 NVMe 연결</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
   <block id="4eae1c6da6a9edad5e5228cf8cfe3cdb" category="sidebar">ONTAP 9.16.0의 새로운 기능</block>
+  <block id="0a57cb4625de2148aa1f3fe6815e78eb" category="paragraph">호스트 접속 상태는 호스트 그룹 이름 옆에 다음과 같이 표시됩니다.</block>
+  <block id="5b13dc2b1f3390e14daacb1f2f882717" category="list-text">* OK *: 모든 이니시에이터가 두 노드에 연결되었음을 나타냅니다.</block>
+  <block id="c2520bb5c23501e13bc7e06dde3ae9fd" category="list-text">*부분적으로 연결됨*: 초기자 중 일부가 두 노드에 연결되지 않았음을 나타냅니다.</block>
+  <block id="031e3ca05bd720350a450cc6267211e2" category="list-text">*None Connected*: 연결된 이니시에이터가 없음을 나타냅니다.</block>
 </blocks>
