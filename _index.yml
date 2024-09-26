@@ -33,12 +33,6 @@ indexpage:
     links:
     - title: ASA 데이터시트 를 참조하십시오
       url: https://www.netapp.com/data-storage/all-flash-san-storage-array/
-    - title: ONTAP 명령 참조입니다
-      url: https://docs.netapp.com/us-en/ontap-cli/
-    - title: ONTAP REST API 참조
-      url: https://docs.netapp.com/us-en/ontap-restapi/index.html
-    - title: ONTAP EMS 참조
-      url: https://docs.netapp.com/us-en/ontap-ems/index.html
   - title: 기타 ONTAP 리소스
     links:
     - title: 기타 ONTAP 시스템 설명서
