@@ -332,7 +332,6 @@
   <block id="a3d38335033dbc3e63c68f76b308e45c" category="list-text">Maximum snapshots * 에 정합성 보장 그룹에 대해 유지할 최대 스냅샷 수를 입력합니다.</block>
   <block id="72c9cc57bd3acc347a45ea0b780c14ab" category="list-text">선택적으로 * SnapMirror label * 아래에 SnapMirror 라벨을 입력합니다.</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">다음 단계</block>
-  <block id="6b14136e2b75ff639f5ca263a5dd2a6a" category="paragraph">스냅샷을 통해 데이터가 보호되므로 <block ref="c9073dd826fc7721b98f9930c55d01b2" category="inline-link-macro-rx"></block>백업 및 재해 복구를 위해 일관성 그룹을 지리적으로 멀리 떨어진 위치에 복사해야 합니다.</block>
   <block id="cf8693d6af83f33c68a196b12cffa29d" category="section-title">정합성 보장 그룹에서 스냅샷 데이터 보호를 제거합니다</block>
   <block id="0e79d9ba3e974f486c0f5945f4e9673a" category="paragraph">정합성 보장 그룹에서 스냅샷 데이터 보호를 제거하면 정합성 보장 그룹의 모든 스토리지 유닛에 대해 스냅샷이 비활성화됩니다.</block>
   <block id="ddc789e2715034046ecb8d1c8ec50205" category="list-text">보호를 중지할 일관성 그룹 위로 마우스를 가져갑니다.</block>
@@ -365,7 +364,6 @@
   <block id="9c09f709a9761f564907022b7331dbb1" category="paragraph">스토리지 유닛에 대한 데이터 보호를 계속하려면 스토리지 유닛을 다른 정합성 보장 그룹에 추가합니다.</block>
   <block id="793fd1e28f15d34822702f9d70403404" category="section-title">일관성 그룹을 삭제합니다</block>
   <block id="2cd894b6ee2553a527a03b1a9086238b" category="paragraph">일관성 그룹의 구성원을 더 이상 단일 단위로 관리할 필요가 없는 경우 해당 일관성 그룹을 삭제할 수 있습니다. 정합성 보장 그룹을 삭제한 후에는 이전에 그룹에 속한 스토리지 유닛이 클러스터에서 활성 상태로 유지됩니다.</block>
-  <block id="8ca9256ffdf569f8b36fe638e605aa91" category="paragraph">삭제하려는 일관성 그룹이 복제 관계에 있는 경우 일관성 그룹을 삭제하기 전에 관계를 해제해야 합니다. 이전에 복제 정합성 보장 그룹을 삭제한 후에는 정합성 보장 그룹에 있던 스토리지 유닛이 클러스터에서 활성 상태로 유지되고 복제된 복제본이 원격 클러스터에 남아 있습니다.</block>
   <block id="3e905f617938aef0b388912bce87f2e2" category="list-text">삭제할 일관성 그룹 위에 마우스를 놓습니다.</block>
   <block id="b32275e0392f5cbab8806c7ce85e42f5" category="list-text">경고를 수락한 다음 * 삭제 * 를 선택합니다.</block>
   <block id="dde86492e27a0d7b75963e7c4b928397" category="paragraph">정합성 보장 그룹을 삭제한 후에는 이전에 정합성 보장 그룹에 속해 있던 스토리지 유닛이 더 이상 스냅샷으로 보호되지 않습니다. 이러한 스토리지 유닛을 다른 정합성 보장 그룹에 추가하여 데이터 손실로부터 보호하는 것이 좋습니다.</block>
@@ -523,7 +521,6 @@
   <block id="71ba518a68888a9623c97c1553396f78" category="list-text">System Manager에서 * 클러스터 &gt; 설정 * 을 선택합니다.</block>
   <block id="ab7f391aba14be442463b48ba048fc7d" category="list-text">AutoSupport * 옆에 있는 * <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>Test connectivity * 를 선택합니다.</block>
   <block id="02b1e4285506fc0cffd29844e8121e1a" category="list-text">AutoSupport 메시지의 제목을 입력한 다음 * Send test AutoSupport message * 를 선택합니다.</block>
-  <block id="fcb35f0da100ee7cfd8c2c2acdcbb8c0" category="paragraph">는 기술 지원 부서에서 ASA R2 시스템으로부터 AutoSupport 메시지를 수신할 수 있으며, 문제가 발생한 경우 지원을 위해 필요한 데이터를 보유하고 있음을 확인했습니다.</block>
   <block id="825777dd1ed1433192f80c9ec3cc95ab" category="section-title">AutoSupport 받는 사람을 추가합니다</block>
   <block id="4ceed55a3a8a0b3cd4cf3b3ad2f6c061" category="paragraph">내부 지원 조직의 구성원을 AutoSupport 메시지를 받는 전자 메일 주소 목록에 추가합니다.</block>
   <block id="9b7d22da73a3e8a3cf955ff556c4bae7" category="list-text">AutoSupport * 옆에 있는 * <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>추가 옵션 * 을 선택합니다.</block>
@@ -1070,7 +1067,6 @@
   <block id="363188350b1fe2b934c479c977a89ece" category="paragraph-title">자동 볼륨 생성</block>
   <block id="eee98269dcd20c90abcc0a7bfb22f37c" category="paragraph">스토리지 유닛(LUN 또는 네임스페이스)을 생성하면 스토리지 가용 영역에서 볼륨이 자동으로 생성됩니다. 결과적으로 공통 네임스페이스가 단순화됩니다. 스토리지 유닛을 삭제하면 연결된 볼륨이 자동으로 삭제됩니다.</block>
   <block id="deb157545e882ae10d45f43fcb06f0df" category="paragraph-title">씬 및 일반 프로비저닝으로 변경</block>
-  <block id="0cc302b38ca94109fc2cffd503adb3d4" category="paragraph">용 스토리지 유닛은 항상 ASA R2 스토리지 시스템에서 씬 프로비저닝됩니다. 일반 프로비저닝은 지원되지 않습니다.</block>
   <block id="3abf1b035bc420caf188c022ea7d792d" category="summary">ASA R2 REST API는 통합된 ONTAP 퍼스낼리티와 함께 제공되는 REST API를 기반으로 하며, ASA R2 퍼스낼리티의 고유한 특성과 기능에 맞게 많은 변경이 적용되었습니다.</block>
   <block id="48c7d320d017a90d970e154c81d07dc1" category="doc">ASA R2에 대한 REST API 지원</block>
   <block id="83e5ee07fc92447fe7a6ceed082d0c01" category="section-title">API 변경 유형</block>
@@ -1142,8 +1138,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="b46e4e89d5c6947e865dbb8abc5ed28c" category="summary">ASA R2 시스템에서 유지 관리 절차를 수행하는 방법에 대해 알아봅니다.</block>
   <block id="c65b7989475d7b4b884961e0e5c53286" category="doc">ASA R2 스토리지 시스템을 유지 관리합니다</block>
-  <block id="2cc42d8e162137e099ab248df06c4f19" category="inline-link">ASA R2 문서 유지 관리</block>
-  <block id="a779dc7ba81016ed421e7c384c5d1e30" category="paragraph">로 이동하여<block ref="54785b1ca9681752f04c4a927f80eaa1" category="inline-link-rx"></block> ASA R2 시스템 구성 요소에 대한 유지 관리 절차를 수행하는 방법을 알아보십시오.</block>
   <block id="637cdb5787a38a4d0da33ae01aa8fe4c" category="summary">ASA R2에서 스토리지 유닛 및 정합성 보장 그룹을 클론하면 운영 환경 외부에서 다양한 용도로 사용할 데이터 복제본을 생성할 수 있습니다.</block>
   <block id="5efa28b67f38b8acf6f260494435aeb9" category="searchtitle">ONTAP System Manager | ASA R2를 사용한 데이터 클론 복제</block>
   <block id="b672b3c3c67f9dc97cb7aa4016ffd8de" category="doc">ASA R2 스토리지 시스템에 데이터를 복제합니다</block>
@@ -1335,7 +1329,6 @@
   <block id="7210645d4515e7cb96d5b26a294a9f25" category="searchtitle">ONTAP System Manager | ASA R2를 사용하여 클러스터 성능을 모니터링합니다</block>
   <block id="064023636601914c7dfacc81fa4e3b57" category="doc">ASA R2 스토리지 시스템에서 클러스터 및 스토리지 유닛 성능을 모니터링합니다</block>
   <block id="ac48862a6c885879fa8b73f630f8e98f" category="paragraph">ONTAP System Manager를 사용하여 클러스터의 전반적인 성능과 특정 스토리지 유닛의 성능을 모니터링하여 지연 시간, IOPS 및 처리량이 중요 비즈니스 애플리케이션에 미치는 영향을 파악할 수 있습니다. 성능은 1시간에서 1년까지 다양한 기간 동안 모니터링할 수 있습니다.</block>
-  <block id="d2fee2bd5b0bc27aba9325efd2cf7765" category="paragraph">예를 들어, 중요한 애플리케이션에서 높은 지연 시간과 낮은 처리량이 발생한다고 가정합니다. 지난 5일(영업일 기준) 동안 클러스터 성능을 볼 때 매일 동시에 성능이 저하된다는 것을 알 수 있습니다. 이 정보를 사용하여 중요하지 않은 프로세스가 백그라운드에서 실행되기 시작할 때 중요한 애플리케이션이 클러스터 리소스를 두고 경합하고 있는지 확인합니다. 그런 다음 QoS 정책을 수정하여 중요하지 않은 워크로드가 시스템 리소스에 미치는 영향을 제한하고 중요 워크로드가 최소 처리량 목표를 충족하도록 할 수 있습니다.</block>
   <block id="9ed62a90862b2040ffb0a91ecf532fff" category="section-title">클러스터 성능을 모니터링합니다</block>
   <block id="4d46d963226f35fc56c0527f9740cc00" category="paragraph">클러스터 성능 메트릭을 사용하여 지연 시간을 최소화하고 중요 애플리케이션의 IOPS 및 처리량을 극대화하기 위해 워크로드를 이동해야 하는지 여부를 결정할 수 있습니다.</block>
   <block id="1d1e5cd96b3e552f9fc410fb90447401" category="list-text">System Manager에서 * 대시보드 * 를 선택합니다.</block>
@@ -1587,4 +1580,10 @@
   <block id="c2520bb5c23501e13bc7e06dde3ae9fd" category="list-text">*부분적으로 연결됨*: 초기자 중 일부가 두 노드에 연결되지 않았음을 나타냅니다.</block>
   <block id="031e3ca05bd720350a450cc6267211e2" category="list-text">*None Connected*: 연결된 이니시에이터가 없음을 나타냅니다.</block>
   <block id="d28f4031342956661d79f1274d2a395c" category="paragraph">ASA R2 시스템을 위한 ONTAP 9.16.0에서 사용할 수 있는 새로운 기능에 대해 알아보십시오.</block>
+  <block id="6913e721908f172fd672e46e9459c4ad" category="paragraph">삭제하려는 일관성 그룹이 복제 관계에 있는 경우 일관성 그룹을 삭제하기 전에 관계를 해제해야 합니다. 복제 정합성 보장 그룹을 삭제한 후에는 정합성 보장 그룹에 있던 스토리지 유닛이 클러스터에서 활성 상태로 유지되고 복제된 복제본이 원격 클러스터에 남아 있습니다.</block>
+  <block id="22a4c2b7564a7f7d551ab23d23fbcac8" category="paragraph">귀하는 기술 지원 부서에서 ASA R2 시스템으로부터 AutoSupport 메시지를 수신하여 문제가 발생할 경우 도움을 주는 데 필요한 데이터를 확보할 수 있음을 확인했습니다.</block>
+  <block id="3ae7feb5d9cb2335f10922aa1130319d" category="paragraph">스토리지 유닛은 항상 ASA R2 스토리지 시스템에서 씬 프로비저닝됩니다. 일반 프로비저닝은 지원되지 않습니다.</block>
+  <block id="c43d68b5b8370d3423bfb0b13dfe0abe" category="inline-link">ASA R2 유지 보수 설명서</block>
+  <block id="f2abf1f4083409f0d65b59ffbcd13341" category="paragraph">로 이동하여<block ref="6805eee0c680715323289cabd48eb628" category="inline-link-rx"></block> ASA R2 시스템 구성 요소에 대한 유지 관리 절차를 수행하는 방법을 알아보십시오.</block>
+  <block id="77ae7cb145355765cca98cef84bef3eb" category="paragraph">예를 들어, 중요한 애플리케이션에서 높은 지연 시간과 낮은 처리량이 발생한다고 가정합니다. 지난 5일(영업일 기준) 동안 클러스터 성능을 보면 매일 동시에 성능이 저하되는 것을 알 수 있습니다. 이 정보를 사용하여 중요하지 않은 프로세스가 백그라운드에서 실행되기 시작할 때 중요한 애플리케이션이 클러스터 리소스를 두고 경합하고 있는지 확인합니다. 그런 다음 QoS 정책을 수정하여 중요하지 않은 워크로드가 시스템 리소스에 미치는 영향을 제한하고 중요 워크로드가 최소 처리량 목표를 충족하도록 할 수 있습니다.</block>
 </blocks>
