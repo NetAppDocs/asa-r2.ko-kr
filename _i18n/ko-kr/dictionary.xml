@@ -518,7 +518,6 @@
   <block id="8e3b3443f7322d7c7fc2e9b691e9b154" category="paragraph">AutoSupport를 관리하려면 클러스터 관리자여야 합니다.</block>
   <block id="a1a978a0ef405a79f3b2c5f89d50b536" category="section-title">AutoSupport 연결을 테스트합니다</block>
   <block id="d62c03a6357eefd7638471c82a6859be" category="paragraph">클러스터를 설정한 후에는 AutoSupport 연결을 테스트하여 AutoSupport에서 생성된 메시지를 기술 지원 부서에서 수신하는지 확인해야 합니다.</block>
-  <block id="71ba518a68888a9623c97c1553396f78" category="list-text">System Manager에서 * 클러스터 &gt; 설정 * 을 선택합니다.</block>
   <block id="ab7f391aba14be442463b48ba048fc7d" category="list-text">AutoSupport * 옆에 있는 * <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>Test connectivity * 를 선택합니다.</block>
   <block id="02b1e4285506fc0cffd29844e8121e1a" category="list-text">AutoSupport 메시지의 제목을 입력한 다음 * Send test AutoSupport message * 를 선택합니다.</block>
   <block id="825777dd1ed1433192f80c9ec3cc95ab" category="section-title">AutoSupport 받는 사람을 추가합니다</block>
@@ -1451,15 +1450,12 @@
   <block id="f82f9abf9d39b3ea7e9931fe0ec02989" category="summary">무단 조작 방지 스냅샷을 사용하여 데이터를 보호합니다. 무단 조작 방지 스냅샷은 삭제할 수 없으며 랜섬웨어 공격에 의해 손상된 데이터를 복구하는 데 사용될 수 있습니다.</block>
   <block id="17d54966a51825ee64011655de8e99f5" category="doc">ASA R2 스토리지 시스템에서 랜섬웨어 공격을 방어합니다</block>
   <block id="bb09a1295cce99402c216baed3c2b937" category="paragraph">랜섬웨어 공격에 대한 보호를 강화하기 위해 스냅샷을 원격 클러스터에 복제하고 대상 스냅샷을 잠가 변조 방지를 보장합니다. 잠긴 스냅샷은 실수로 또는 악의적으로 삭제할 수 없습니다. 스토리지 유닛이 랜섬웨어 공격에 의해 손상된 경우 잠긴 스냅샷을 사용하여 데이터를 복구할 수 있습니다.</block>
-  <block id="049905961ea2e1141d23d71eb662076b" category="section-title">SnapLock Compliance 클록을 초기화한다</block>
-  <block id="045a584abdee8ddf49e1db3987711d93" category="paragraph">무단 변경 방지 스냅샷을 생성하려면 로컬 및 대상 클러스터에서 SnapLock Compliance 클록을 초기화해야 합니다.</block>
   <block id="7e59070af3e4cd3a421461f7774f3c87" category="list-text">클러스터 &gt; 개요 * 를 선택합니다.</block>
   <block id="045e8ceb02be472a9bc3e54ba6f1d811" category="list-text">노드 * 섹션에서 * SnapLock Compliance 시계 초기화 * 를 선택합니다.</block>
   <block id="2012a4286c3a1864d4fa11ba1cb42b1c" category="list-text">규정 준수 클록이 초기화되었는지 확인</block>
   <block id="2bc6e7414d5cb75e3addfdeb234222a1" category="inline-image-macro">흰색 배경에 파란색 열 3개</block>
   <block id="ff632b6925cddc0c770d38368ff3755e" category="list-text">Nodes * 섹션에서 를 <block ref="db89dee19aae8a41518f426597d8cb6e" category="inline-image-macro-rx" type="image"></block>선택한 다음 * SnapLock Compliance Clock * 을 선택합니다.</block>
   <block id="c19a0c09a1a9acec430b36accfdb5ac8" category="inline-link-macro">잠긴 스냅샷이 있는 복제 관계를 생성합니다</block>
-  <block id="791bf7d3faa5342db177ff00f2bcca3f" category="paragraph">로컬 및 대상 클러스터에서 SnapLock Compliance 클록을 초기화한 후에는 을(를) 시작할 <block ref="9e34609081a00054138ac6c8cbbd66f1" category="inline-link-macro-rx"></block>수 있습니다.</block>
   <block id="25abedf12d26e4bc8960557833ebe68d" category="summary">ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에서 일반적인 작업을 빠르고 쉽게 수행하는 방법을 보여주는 짧은 비디오를 보십시오.</block>
   <block id="9e9e90703a7077203260b19a3af9704a" category="doc">ASA R2 시스템에서 SAN 프로토콜을 구성합니다</block>
   <block id="21d3b12a5a9f6ff0d25b8b5e5e00b7ff" category="paragraph">동영상에 대해 다음<block ref="1ef61309a2d73f2fc4d83b527ce1790e" prefix=" " category="inline-code"></block> 내용이 제공됩니다.</block>
@@ -1587,4 +1583,8 @@
   <block id="02a5548e7c0c7ed0e4a93d5e2d37ebc2" category="paragraph">사용 가능한 NetApp ASA R2 시스템은 다음과 같습니다. 이러한 플랫폼은 SAN 전용 고객의 요구사항에 맞게 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
   <block id="514854c9f2116902eea3ece0f40e8154" category="paragraph-title">데이터 압축의 변경 사항</block>
   <block id="097c1368589d519db55e5ac8f141a847" category="paragraph">온도에 민감한 스토리지 효율성이 ASA R2 시스템에는 적용되지 않습니다. ASA R2 시스템에서 압축은 _hot_(자주 액세스하는) 데이터 또는 _cold_(자주 액세스하지 않는) 데이터를 기반으로 하지 않습니다. 데이터의 콜드 데이터가 될 때까지 기다리지 않고 압축을 시작합니다.</block>
+  <block id="e9dac8f777563b18c14aec6d0406e876" category="list-text">System Manager에서 * 클러스터 &gt; 설정 * 을 선택합니다.</block>
+  <block id="b16351f807fbda6965666255eef268dd" category="section-title">SnapLock Compliance 클록을 초기화한다</block>
+  <block id="6f7e58f2fc20167d69dc971955e6bb11" category="paragraph">무단 변경 방지 스냅샷을 생성하려면 로컬 및 대상 클러스터에서 SnapLock Compliance 클록을 초기화해야 합니다.</block>
+  <block id="71c1cda56d6fad5ca8b28cabd1f98042" category="paragraph">로컬 및 대상 클러스터에서 SnapLock Compliance 클록을 초기화한 후에는 을(를) 시작할 <block ref="9e34609081a00054138ac6c8cbbd66f1" category="inline-link-macro-rx"></block>수 있습니다.</block>
 </blocks>
