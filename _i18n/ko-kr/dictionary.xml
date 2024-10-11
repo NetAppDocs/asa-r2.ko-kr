@@ -444,7 +444,6 @@
   <block id="40bf81e755dc73fb04ab21c9f9f5756c" category="searchtitle">ONTAP System Manager | ASA R2를 사용하여 원격 클러스터에 스냅샷을 복제합니다</block>
   <block id="52e62ad767d46ccf1912124d9b984dd6" category="doc">ASA R2 스토리지 시스템에서 원격 클러스터로 스냅샷 복제</block>
   <block id="f2b39b01edbe286e89542affc03f6d4f" category="paragraph">스냅샷 복제는 ASA R2 시스템의 정합성 보장 그룹이 지리적으로 멀리 떨어진 위치에 복제되는 프로세스입니다. 초기 복제 후 정합성 보장 그룹에 대한 변경 사항은 복제 정책에 따라 원격 위치에 복제됩니다. 복제된 정합성 보장 그룹을 재해 복구 또는 데이터 마이그레이션에 사용할 수 있습니다.</block>
-  <block id="69ed1baaf5609225833ab8e05dd02cda" category="admonition">ASA R2 스토리지 시스템의 스냅샷 복제는 다른 ASA R2 스토리지 시스템에서만 지원됩니다. ASA R2 시스템에서 현재 ASA, AFF 또는 FAS 시스템으로 스냅샷을 복제할 수 없습니다.</block>
   <block id="a11f569aa7659d38ad74c3348435869e" category="paragraph">스냅샷 복제를 설정하려면 ASA R2 시스템과 원격 위치 간에 복제 관계를 설정해야 합니다. 복제 관계는 복제 정책에 의해 관리됩니다. 모든 스냅샷을 복제하는 기본 정책은 클러스터 설정 중에 생성됩니다. 기본 정책을 사용하거나 필요에 따라 새 정책을 생성할 수 있습니다.</block>
   <block id="bb35c8e1197f3cb1f834baa178f51fdd" category="section-title">1단계: 클러스터 피어 관계를 생성합니다</block>
   <block id="256483a2b5ed8710e7c8fdf9ce515426" category="paragraph">데이터를 원격 클러스터에 복제하여 데이터를 보호하려면 로컬 및 원격 클러스터 간에 클러스터 피어 관계를 생성해야 합니다.</block>
@@ -1590,4 +1589,5 @@
   <block id="7f4ce7e91f585315eb8df215a736469e" category="paragraph"><block ref="7f4ce7e91f585315eb8df215a736469e" category="inline-link-macro-rx"></block></block>
   <block id="7634d59040fd3f0630abac42ed05842e" category="inline-link-macro">ASA R2 시스템을 ASA 시스템과 비교한 것입니다</block>
   <block id="0a1c5c73cbf93d4b2d88ff0be84d2900" category="list-text">에 대해 자세히 <block ref="c736257475481e43d317d6d66a81a5cb" category="inline-link-macro-rx"></block>알아보십시오.</block>
+  <block id="420a0f9e5b6b25901e8477f2031c4f09" category="admonition">ASA R2 스토리지 시스템에 대한 스냅샷 복제는 다른 ASA R2 스토리지 시스템에서만 지원됩니다. ASA R2 시스템에서 현재 ASA, AFF 또는 FAS 시스템으로 스냅샷을 복제하거나 현재 ASA, AFF 또는 FAS 시스템에서 ASA R2 시스템으로 스냅샷을 복제할 수 없습니다.</block>
 </blocks>
