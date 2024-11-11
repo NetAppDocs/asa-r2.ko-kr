@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: release-notes/whats-new-9161.html 
+keywords: 'what"s new, release notes, 9.16.1, asa r2, asa a1k, asa 70, asa 90' 
+summary: ASA R2 시스템을 위한 ONTAP 9.16.1에서 사용할 수 있는 새로운 기능에 대해 알아보십시오. 
+---
+= ASA R2 시스템을 위한 ONTAP 9.16.1의 새로운 기능
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템을 위한 ONTAP 9.16.1에서 사용할 수 있는 새로운 기능에 대해 알아보십시오.
+
+
+
+== 스토리지 효율성
+
+[cols="2,4"]
+|===
+| 업데이트 | 설명 
+
+
+| NVMe 공간 할당 취소가 기본적으로 활성화되어 있습니다  a| 
+NVMe 네임스페이스에 대해 공간 할당("홀 펀칭" 및 "매핑 해제"라고도 함)이 기본적으로 활성화됩니다. 공간 할당 해제를 통해 호스트가 네임스페이스에서 사용되지 않는 블록을 할당 해제하여 공간을 재확보할 수 있습니다.
+
+특히, 데이터 회전율이 높은 파일 시스템의 경우 전체적인 스토리지 효율성이 크게 향상됩니다.
+
+|===

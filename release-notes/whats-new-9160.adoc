@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: release-notes/whats-new-9160.html 
-keywords:  
-summary:  
+keywords: 'what"s new, release notes, 9.16.0, asa r2, asa a1k, asa 70, asa 90' 
+summary: ASA R2 시스템을 위한 ONTAP 9.16.0에서 사용할 수 있는 새로운 기능에 대해 알아보십시오. 
 ---
 = ASA R2 시스템을 위한 ONTAP 9.16.0의 새로운 기능
 :hardbreaks:

@@ -277,7 +277,6 @@
   <block id="e7c7a96626caf7f10a69abd91e0c9657" category="section-title">2단계: 스냅샷을 생성합니다</block>
   <block id="5ad8d455ea57e1690a8dd08af1513587" category="paragraph">스냅샷은 특정 시점으로 스토리지 유닛을 복구하는 데 사용할 수 있는 데이터의 로컬 읽기 전용 복사본입니다.</block>
   <block id="a55eea56b3b5ac156631717b66974529" category="inline-link-macro">스냅샷 정책 및 일정</block>
-  <block id="aa2f9feb235086807c06e316a374c42b" category="paragraph">스냅샷은 필요에 따라 생성하거나 을 기반으로 일정한 간격으로 자동으로 생성할 수 <block ref="174ad3d131cf18990fcf462c1e80dea1" category="inline-link-macro-rx"></block>있습니다. 스냅샷 정책 및 스케줄은 스냅샷을 생성할 시기, 보존할 복제본 수, 복제본 이름 지정 방법 및 복제를 위해 스냅샷 레이블을 지정하는 방법을 지정합니다. 예를 들어 시스템은 매일 오전 12시 10분에 스냅샷 하나를 생성하고 가장 최근의 사본 2개를 보존하고, 이름을 "daily"(타임스탬프가 추가됨)로 지정하고, 복제를 위해 "daily"로 레이블을 지정할 수 있습니다.</block>
   <block id="778e49c36a4b37504a26fe297bcd89cd" category="paragraph-title">스냅샷 유형입니다</block>
   <block id="d6acd69ed4935a0b24bcc6574f0a4d59" category="paragraph">단일 스토리지 유닛 또는 정합성 보장 그룹의 필요 시 스냅샷을 생성할 수 있습니다. 여러 스토리지 유닛이 포함된 정합성 보장 그룹의 자동 스냅샷을 생성할 수 있습니다. 단일 스토리지 유닛의 자동 스냅샷을 생성할 수 없습니다.</block>
   <block id="92cd7e74f8f496ce11ec549a066c7294" category="list-text">주문형 스냅샷</block>
@@ -1590,4 +1589,25 @@
   <block id="420a0f9e5b6b25901e8477f2031c4f09" category="admonition">ASA R2 스토리지 시스템에 대한 스냅샷 복제는 다른 ASA R2 스토리지 시스템에서만 지원됩니다. ASA R2 시스템에서 현재 ASA, AFF 또는 FAS 시스템으로 스냅샷을 복제하거나 현재 ASA, AFF 또는 FAS 시스템에서 ASA R2 시스템으로 스냅샷을 복제할 수 없습니다.</block>
   <block id="3f808654ebfed6aae875b71a402ac91b" category="inline-link-macro">ONTAP 9.16.1 참고 사항</block>
   <block id="ccde34ed9a96a11b25c1db2a8c9acb87" category="paragraph"><block ref="ccde34ed9a96a11b25c1db2a8c9acb87" category="inline-link-macro-rx"></block></block>
+  <block id="82f8a3cbf0a93791bbbfc70a1b650bcf" category="paragraph">스냅샷은 필요에 따라 생성하거나 을 기반으로 일정한 간격으로 자동으로 생성할 수 <block ref="83bfa2dc5e6407223dca634141b43309" category="inline-link-macro-rx"></block>있습니다. 스냅샷 정책 및 스케줄은 스냅샷을 생성할 시기, 보존할 복제본 수, 복제본 이름 지정 방법 및 복제를 위해 스냅샷 레이블을 지정하는 방법을 지정합니다. 예를 들어 시스템은 매일 오전 12시 10분에 스냅샷 하나를 생성하고 가장 최근의 사본 2개를 보존하고, 이름을 "daily"(타임스탬프가 추가됨)로 지정하고, 복제를 위해 "daily"로 레이블을 지정할 수 있습니다.</block>
+  <block id="45572a9b40e369d2ef8629844808cced" category="summary">ASA R2 시스템에 영향을 주는 제한 및 기본값 변경 사항에 대해 알아봅니다.</block>
+  <block id="1103c7c9b683247c76b5f25f9cd64b74" category="doc">ASA R2 시스템에 영향을 주는 ONTAP 제한 및 기본값 변경</block>
+  <block id="1daa1b3cc6e7b6b7a591ba10582085a8" category="paragraph">ASA R2 시스템에 영향을 주는 제한 및 기본값 변경 사항에 대해 알아봅니다. NetApp은 고객이 각 ONTAP 릴리스에서 가장 중요한 기본 및 제한 변경 사항을 이해할 수 있도록 돕기 위해 노력하고 있습니다.</block>
+  <block id="d579ca395df40cbbb953cb531ce23a3d" category="section-title">ONTAP 제한 변경 사항</block>
+  <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">피처</block>
+  <block id="4d209cddba5e4e3f517cda6d0180e867" category="cell">제한 변경</block>
+  <block id="b0aeee779af528e83de1fcb141fbbca7" category="cell">릴리스에서 변경...</block>
+  <block id="d705195acc2d17086d7e28da066d6c23" category="cell">보관 장치</block>
+  <block id="6f758206269a4d26aaaac9a25afe7fe5" category="cell">HA 쌍당 2500개에서 HA 쌍당 10,000개로 스토리지 유닛의 최대 수가 증가합니다.</block>
+  <block id="31272abf1c9209ab4acd0bf10f129338" category="cell">ONTAP 9.16.1</block>
+  <block id="456488f81b27ee2e1475e6d76ffad2ca" category="summary">ASA R2 시스템을 위한 ONTAP 9.16.1에서 사용할 수 있는 새로운 기능에 대해 알아보십시오.</block>
+  <block id="02b0c0371a6864d344959c06c5237165" category="doc">ASA R2 시스템을 위한 ONTAP 9.16.1의 새로운 기능</block>
+  <block id="fd18465573ec21a6218982055981f6b1" category="section-title">스토리지 효율성</block>
+  <block id="3a405933969f80a6182b8257c15c10ff" category="cell">NVMe 공간 할당 취소가 기본적으로 활성화되어 있습니다</block>
+  <block id="7ec849e005dbd9c153a3b9fc38bf47df" category="paragraph">NVMe 네임스페이스에 대해 공간 할당("홀 펀칭" 및 "매핑 해제"라고도 함)이 기본적으로 활성화됩니다. 공간 할당 해제를 통해 호스트가 네임스페이스에서 사용되지 않는 블록을 할당 해제하여 공간을 재확보할 수 있습니다.</block>
+  <block id="9228b29536da5aa86ee6865642b7a754" category="paragraph">특히, 데이터 회전율이 높은 파일 시스템의 경우 전체적인 스토리지 효율성이 크게 향상됩니다.</block>
+  <block id="459e6c3f59570324cab3a799ce9f4d6f" category="inline-link-macro">키 관리자 간에 ONTAP 데이터 암호화 키를 마이그레이션합니다</block>
+  <block id="ba905aa152bc67dfe7369966e1f7b161" category="paragraph">온보드 키 관리자에서 외부 키 관리자로 전환하거나 그 반대로 전환해야 하는 경우, 를 참조하십시오.<block ref="ddc33c992daebda8b45882e4c40e07d4" category="inline-link-macro-rx"></block></block>
+  <block id="319ffa33cfb4e70c9e521494969d662a" category="sidebar">ONTAP 9.16.1의 새로운 기능</block>
+  <block id="0b6845dd2391304844b6f9578fd8c865" category="sidebar">ONTAP 기본값 및 한계값으로 변경합니다</block>
 </blocks>

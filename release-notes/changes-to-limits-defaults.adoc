@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: release-notes/changes-to-limits-defaults.html 
+keywords: release notes, changes, updates, defaults, limits, asa r2, asa a1k, asa 70, asa 90 
+summary: ASA R2 시스템에 영향을 주는 제한 및 기본값 변경 사항에 대해 알아봅니다. 
+---
+= ASA R2 시스템에 영향을 주는 ONTAP 제한 및 기본값 변경
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템에 영향을 주는 제한 및 기본값 변경 사항에 대해 알아봅니다. NetApp은 고객이 각 ONTAP 릴리스에서 가장 중요한 기본 및 제한 변경 사항을 이해할 수 있도록 돕기 위해 노력하고 있습니다.
+
+
+
+== ONTAP 제한 변경 사항
+
+[cols="2,4,4"]
+|===
+| 피처 | 제한 변경 | 릴리스에서 변경... 
+
+
+| 보관 장치 | HA 쌍당 2500개에서 HA 쌍당 10,000개로 스토리지 유닛의 최대 수가 증가합니다. | ONTAP 9.16.1 
+|===
