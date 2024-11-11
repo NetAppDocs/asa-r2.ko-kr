@@ -1607,7 +1607,7 @@
   <block id="7ec849e005dbd9c153a3b9fc38bf47df" category="paragraph">NVMe 네임스페이스에 대해 공간 할당("홀 펀칭" 및 "매핑 해제"라고도 함)이 기본적으로 활성화됩니다. 공간 할당 해제를 통해 호스트가 네임스페이스에서 사용되지 않는 블록을 할당 해제하여 공간을 재확보할 수 있습니다.</block>
   <block id="9228b29536da5aa86ee6865642b7a754" category="paragraph">특히, 데이터 회전율이 높은 파일 시스템의 경우 전체적인 스토리지 효율성이 크게 향상됩니다.</block>
   <block id="459e6c3f59570324cab3a799ce9f4d6f" category="inline-link-macro">키 관리자 간에 ONTAP 데이터 암호화 키를 마이그레이션합니다</block>
-  <block id="ba905aa152bc67dfe7369966e1f7b161" category="paragraph">온보드 키 관리자에서 외부 키 관리자로 전환하거나 그 반대로 전환해야 하는 경우, 를 참조하십시오.<block ref="ddc33c992daebda8b45882e4c40e07d4" category="inline-link-macro-rx"></block></block>
   <block id="319ffa33cfb4e70c9e521494969d662a" category="sidebar">ONTAP 9.16.1의 새로운 기능</block>
   <block id="0b6845dd2391304844b6f9578fd8c865" category="sidebar">ONTAP 기본값 및 한계값으로 변경합니다</block>
+  <block id="ec7ed1b959417fb145bcf5bc5351a4e1" category="paragraph">온보드 키 관리자에서 외부 키 관리자로 전환하거나 그 반대로 전환해야 하는 경우, 를 참조하십시오.<block ref="6c5d784251393a5f6fda5c1a058497d1" category="inline-link-macro-rx"></block></block>
 </blocks>
