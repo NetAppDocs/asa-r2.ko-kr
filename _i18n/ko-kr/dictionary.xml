@@ -553,7 +553,6 @@
   <block id="c4bd20e96bacd4ca7f4f874cb8a77b00" category="summary">ASA R2 시스템(ASA A1K, ASA A70, ASA A90)은 SAN 전용 고객을 위해 간소화된 환경을 조성하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
   <block id="0ef2f5aecf77f5521c5e2b69fdb889af" category="searchtitle">ASA A1K, ASA A70 및 ASA A90 스토리지 시스템에 대해 알아보십시오</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="doc">ASA R2 스토리지 시스템에 대해 알아보십시오</block>
-  <block id="4fdeef14779674f92738c7750c976920" category="paragraph">ASA R2 시스템은 단일 HA 쌍 구축에서 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. SCSI(iSCSI 및 FC) 프로토콜은 호스트와 스토리지 간의 모든 경로가 액티브/최적화되도록 다중 경로를 위해 대칭 액티브-액티브 아키텍처를 사용합니다. NVMe 프로토콜은 호스트와 스토리지 간의 직접 경로를 지원합니다.</block>
   <block id="4c09e6dc15402ad1dfdd0de9dde9ced3" category="paragraph">ASA R2 시스템에서 ONTAP 소프트웨어 및 System Manager를 간소화하여 필수 SAN 기능을 지원하는 동시에 SAN 환경에서 지원되지 않는 기능을 제거합니다.</block>
   <block id="8ba78ca0516a69b587aca58206efc01f" category="paragraph">ASA R2 시스템에서는 정합성 보장 그룹이 포함된 스토리지 유닛을 사용합니다.</block>
   <block id="db202dbb9a4a22e347c683ae7290b969" category="list-text">스토리지 유닛 _ 은(는) 데이터 작업을 위해 SAN 호스트에서 사용할 수 있는 스토리지 공간을 만듭니다. 스토리지 유닛은 SCSI 호스트용 LUN 또는 NVMe 호스트용 NVMe 네임스페이스를 가리킵니다.</block>
@@ -1101,8 +1100,6 @@
   <block id="1749d12df3df2319d3eee218a277ff83" category="list-text">MetroCluster</block>
   <block id="f1345c9c1d33e2624cdc41782fec6885" category="list-text">오브젝트 프로토콜</block>
   <block id="372f3c3be292ea7811b9c24f14765c78" category="list-text">ONTAP S3 SnapMirror 및 S3 API</block>
-  <block id="f161dc3326510eaa0a4043b0403c9d6a" category="list-text">SnapMirror에서 클라우드로</block>
-  <block id="22d5ef0e46679353c835a058a6447e5d" category="list-text">SnapMirror에서 비 ASA R2 시스템으로 마이그레이션</block>
   <block id="cbb51e0b1487ab3d93d6d940a1533133" category="list-text">선택적 LUN 맵(SLM)</block>
   <block id="fa445878b9d320833cecf582e9e36c4b" category="list-title">ASA R2 시스템은 다음을 지원합니다.</block>
   <block id="7c2e86b53f6831d08fa968613cefaa23" category="list-text">SnapLock</block>
@@ -1342,7 +1339,6 @@
   <block id="e41cfa628f1aae1b344d1fcccc79b676" category="section-title">클러스터 활용률을 모니터링합니다</block>
   <block id="60522db54655ef0faaafdeb6e1dd2f6c" category="paragraph">클러스터에서 사용하는 스토리지 양을 정기적으로 모니터링하여 필요한 경우 공간이 부족해지기 전에 클러스터 용량을 확장할 준비가 되었는지 확인합니다.</block>
   <block id="5ba997683bb88c0bd7da49e5420cd3b9" category="list-text">Capacity * 에서 클러스터에서 사용된 물리적 공간의 양과 사용 가능한 공간의 양을 확인합니다.</block>
-  <block id="3de31d3507312269ff6fd5ae8a31e0b7" category="paragraph">데이터 축소율은 스토리지 효율성을 통해 절약되는 공간의 양을 나타냅니다.</block>
   <block id="049df4c0a4a8d9829026cfcdd73b2fa6" category="inline-link-macro">새 드라이브를 추가합니다</block>
   <block id="70e4aa2a60c8c55fc487bdeaf9688dea" category="paragraph">클러스터에 공간이 부족하거나 향후 요구 사항을 충족할 수 있는 용량이 없는 경우 <block ref="652f39ff07f6641e851e14e8190a6b59" category="inline-link-macro-rx"></block>ASA R2 시스템을 구축하여 스토리지 용량을 늘려야 합니다.</block>
   <block id="b9de8a926e3bbf2f3ddad971b60d4639" category="section-title">스토리지 유닛 사용률을 모니터링합니다</block>
@@ -1610,4 +1606,8 @@
   <block id="319ffa33cfb4e70c9e521494969d662a" category="sidebar">ONTAP 9.16.1의 새로운 기능</block>
   <block id="0b6845dd2391304844b6f9578fd8c865" category="sidebar">ONTAP 기본값 및 한계값으로 변경합니다</block>
   <block id="ec7ed1b959417fb145bcf5bc5351a4e1" category="paragraph">온보드 키 관리자에서 외부 키 관리자로 전환하거나 그 반대로 전환해야 하는 경우, 를 참조하십시오.<block ref="6c5d784251393a5f6fda5c1a058497d1" category="inline-link-macro-rx"></block></block>
+  <block id="741966f7a31d60fddc8857d2cb9fb674" category="paragraph">ASA R2 시스템은 단일 HA 쌍 구축에서 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. SCSI(iSCSI 및 FC) 프로토콜은 호스트와 스토리지 간의 모든 경로가 액티브/최적화되도록 다중 경로를 위해 대칭 액티브-액티브 아키텍처를 사용합니다. iSCSI 및 NVMe/TCP 프로토콜은 호스트와 스토리지 간의 직접 경로를 지원합니다.</block>
+  <block id="d32b93d0cc0df3a57e074a2dd7f55bac" category="list-text">클라우드로 SnapMirror(비동기식 및 동기식)</block>
+  <block id="db501755a13db6bc1da40b7fa29e25f1" category="list-text">비 ASA R2 시스템에 대한 SnapMirror(비동기식 및 동기식)입니다</block>
+  <block id="b0af3c84875edd616110edf2dac64154" category="paragraph">데이터 축소율은 스토리지 효율성을 통해 절약된 공간의 양을 나타냅니다.</block>
 </blocks>

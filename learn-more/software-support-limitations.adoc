@@ -20,8 +20,8 @@ ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제공하지�
 * MetroCluster
 * 오브젝트 프로토콜
 * ONTAP S3 SnapMirror 및 S3 API
-* SnapMirror에서 클라우드로
-* SnapMirror에서 비 ASA R2 시스템으로 마이그레이션
+* 클라우드로 SnapMirror(비동기식 및 동기식)
+* 비 ASA R2 시스템에 대한 SnapMirror(비동기식 및 동기식)입니다
 * 선택적 LUN 맵(SLM)
 
 
