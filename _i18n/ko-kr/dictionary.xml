@@ -1610,4 +1610,5 @@
   <block id="d32b93d0cc0df3a57e074a2dd7f55bac" category="list-text">클라우드로 SnapMirror(비동기식 및 동기식)</block>
   <block id="db501755a13db6bc1da40b7fa29e25f1" category="list-text">비 ASA R2 시스템에 대한 SnapMirror(비동기식 및 동기식)입니다</block>
   <block id="b0af3c84875edd616110edf2dac64154" category="paragraph">데이터 축소율은 스토리지 효율성을 통해 절약된 공간의 양을 나타냅니다.</block>
+  <block id="f31e58176a4fc5fa75f3c5160b712278" category="admonition">SnapMirror(비동기식 및 동기식)는 ASA R2 시스템에서 ASA R2 시스템으로만 지원됩니다. SnapMirror는 ASA R2 시스템에서 AFF 또는 FAS 시스템으로 지원되지 않습니다.</block>
 </blocks>
