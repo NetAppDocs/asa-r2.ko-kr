@@ -3,7 +3,7 @@ sidebar: sidebar
 permalink: get-started/learn-about.html 
 keywords: asa r2, asa a1k, asa 70, asa 90 
 summary: 'ASA R2 시스템(ASA A1K, ASA A70, ASA A90)은 SAN 전용 고객을 위해 간소화된 환경을 조성하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.' 
-searchtitle: ASA A1K, ASA A70 및 ASA A90 스토리지 시스템에 대해 알아보십시오 
+searchtitle: ASA R2 스토리지 시스템인 A1K, A90 및 A70에 대해 알아보십시오 
 ---
 = ASA R2 스토리지 시스템에 대해 알아보십시오
 :allow-uri-read: 
