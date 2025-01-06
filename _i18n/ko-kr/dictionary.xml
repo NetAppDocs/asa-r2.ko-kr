@@ -1611,4 +1611,19 @@
   <block id="f31e58176a4fc5fa75f3c5160b712278" category="admonition">SnapMirror(비동기식 및 동기식)는 ASA R2 시스템에서 ASA R2 시스템으로만 지원됩니다. SnapMirror는 ASA R2 시스템에서 AFF 또는 FAS 시스템으로 지원되지 않습니다.</block>
   <block id="a45025bc45c4e360bb41b761b432dd34" category="doc">ASA R2 스토리지 시스템의 빠른 시작</block>
   <block id="426ed8a052d2d7277d60ee8001b9d37e" category="searchtitle">ASA R2 스토리지 시스템인 A1K, A90 및 A70에 대해 알아보십시오</block>
+  <block id="465ce601131c87fafd3a4a3da5836246" category="summary">ASA R2 시스템은 SAN 호스트 구성에 대해 다른 모든 ONTAP 시스템과 동일한 권장 사항 및 지침을 따릅니다.</block>
+  <block id="9a364a877707d0b61983419895ba3632" category="doc">ASA R2 시스템을 사용한 SAN 호스트 구성</block>
+  <block id="31eb0490b298463d8797eab8041ed748" category="paragraph">스토리지 시스템을 하나 이상의 SAN 호스트에 연결하려면 두 개 이상의 스위치를 사용하는 것이 좋습니다. iSCSI 구성의 경우 호스트, 스위치 및 스토리지 시스템을 연결하는 네트워크 토폴로지를 _network_라고 합니다. FC 및 FC-NVMe 구성의 경우 이 동일한 네트워크 토폴로지를 a_fabric_이라고 합니다.</block>
+  <block id="1ea2e359c5275499813dff319ee20baa" category="paragraph">다중 네트워크/다중 패브릭 구성(둘 이상의 스위치를 사용하는 구성)은 스위치와 스토리지 계층 모두에서 이중화를 제공하기 때문에 권장됩니다. 이러한 이중화를 통해 스토리지 시스템의 내결함성 기능을 강화하고 무중단 운영을 지원할 수 있습니다.</block>
+  <block id="37fdee11e5eadf392d943f0a18609831" category="paragraph">다음 그림은 단일 HA 쌍에 액세스하기 위해 두 개의 패브릭을 사용하여 여러 호스트가 있는 FC 구성의 예입니다. FC 타겟 포트 번호(0c, 0d, 1a, 1b)도 이에 해당합니다. 실제 포트 번호는 플랫폼 모델 및 확장 어댑터를 사용하는지 여부에 따라 다릅니다.</block>
+  <block id="cafd65a257cc24af0e84e8951ad9d9b5" category="image-alt">여러 호스트를 단일 HA 쌍에 연결하는 두 개의 FC 패브릭</block>
+  <block id="7934e04423cdef3122abed138d14e800" category="inline-link-macro">iSCSI 호스트에 대한 SAN 구성</block>
+  <block id="1697498835ad65fe0eb56d5a08926207" category="inline-link-macro">FC 및 FC/NVMe 호스트에 대한 SAN 구성</block>
+  <block id="ebd194f81358f792dec388e009d8bec3" category="paragraph">에 대해 자세히 <block ref="9880b1feac4156c93ea0abed0c0efc7f" category="inline-link-macro-rx"></block>알아보십시오. 에 대해 자세히 <block ref="e620f7fdd29d4d62cc1639e7aa82a5ed" category="inline-link-macro-rx"></block>알아보십시오.</block>
+  <block id="f32de8a0d0833354764d0913e73367fa" category="section-title">FC 호스트에 대한 조닝 권장 사항</block>
+  <block id="3efb87f7842540462326a834b157f4ab" category="paragraph">조닝을 사용하도록 FC 호스트를 구성해야 합니다. ASA R2 시스템은 다른 모든 ONTAP 시스템과 동일한 FC 호스트 조닝 권장 사항 및 지침을 따릅니다.</block>
+  <block id="db6c51496ac3638e90475615dca619b4" category="paragraph">존은 Fabric 내에서 하나 이상의 포트를 논리적으로 그룹화한 것입니다. 장치가 서로를 검색하고 세션을 설정하여 통신할 수 있도록 하려면 두 포트 모두 공통 영역 멤버십이 있어야 합니다.</block>
+  <block id="61cf7293359faa875bba34aec2374d5e" category="inline-link-macro">FC/FC-NVMe 조닝</block>
+  <block id="05c164818e6cf72673636c3f026f35fd" category="paragraph">에 대해 자세히 <block ref="04395b79c4c7664c0e1d06aced656acd" category="inline-link-macro-rx"></block>알아보십시오.</block>
+  <block id="9567f97a2f92160f66cfc2ac7b1e9cc2" category="sidebar">SAN 호스트 구성을 설정합니다</block>
 </blocks>

@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: install-setup/set-up-san-host.html 
+keywords: san, host, configuration, fc, iscsi, nvme, zoning, fabric, network 
+summary: ASA R2 시스템은 SAN 호스트 구성에 대해 다른 모든 ONTAP 시스템과 동일한 권장 사항 및 지침을 따릅니다. 
+---
+= ASA R2 시스템을 사용한 SAN 호스트 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템은 SAN 호스트 구성에 대해 다른 모든 ONTAP 시스템과 동일한 권장 사항 및 지침을 따릅니다.
+
+스토리지 시스템을 하나 이상의 SAN 호스트에 연결하려면 두 개 이상의 스위치를 사용하는 것이 좋습니다. iSCSI 구성의 경우 호스트, 스위치 및 스토리지 시스템을 연결하는 네트워크 토폴로지를 _network_라고 합니다. FC 및 FC-NVMe 구성의 경우 이 동일한 네트워크 토폴로지를 a_fabric_이라고 합니다.
+
+다중 네트워크/다중 패브릭 구성(둘 이상의 스위치를 사용하는 구성)은 스위치와 스토리지 계층 모두에서 이중화를 제공하기 때문에 권장됩니다. 이러한 이중화를 통해 스토리지 시스템의 내결함성 기능을 강화하고 무중단 운영을 지원할 수 있습니다.
+
+다음 그림은 단일 HA 쌍에 액세스하기 위해 두 개의 패브릭을 사용하여 여러 호스트가 있는 FC 구성의 예입니다. FC 타겟 포트 번호(0c, 0d, 1a, 1b)도 이에 해당합니다. 실제 포트 번호는 플랫폼 모델 및 확장 어댑터를 사용하는지 여부에 따라 다릅니다.
+
+image::multi-fabric-san-configuration.png[여러 호스트를 단일 HA 쌍에 연결하는 두 개의 FC 패브릭]
+
+에 대해 자세히 link:https://docs.netapp.com/us-en/ontap/san-config/configure-iscsi-san-hosts-ha-pairs-reference.html["iSCSI 호스트에 대한 SAN 구성"^]알아보십시오. 에 대해 자세히 link:https://docs.netapp.com/us-en/ontap/san-config/configure-fc-nvme-hosts-ha-pairs-reference.html["FC 및 FC/NVMe 호스트에 대한 SAN 구성"^]알아보십시오.
+
+
+
+== FC 호스트에 대한 조닝 권장 사항
+
+조닝을 사용하도록 FC 호스트를 구성해야 합니다. ASA R2 시스템은 다른 모든 ONTAP 시스템과 동일한 FC 호스트 조닝 권장 사항 및 지침을 따릅니다.
+
+존은 Fabric 내에서 하나 이상의 포트를 논리적으로 그룹화한 것입니다. 장치가 서로를 검색하고 세션을 설정하여 통신할 수 있도록 하려면 두 포트 모두 공통 영역 멤버십이 있어야 합니다.
+
+에 대해 자세히 link:https://docs.netapp.com/us-en/ontap/san-config/fibre-channel-fcoe-zoning-concept.html["FC/FC-NVMe 조닝"^]알아보십시오.
