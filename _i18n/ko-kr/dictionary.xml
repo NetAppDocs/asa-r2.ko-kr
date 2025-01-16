@@ -900,7 +900,6 @@
   <block id="b1d1ac1660761a14f96c8c2916c338ee" category="inline-link-macro">ASA R2 스토리지 시스템용 하드웨어를 설치합니다</block>
   <block id="1657efe0ea96d15a299ea1851942c2a9" category="paragraph">ASA R2 하드웨어를 설치할 준비가 되면<block ref="fb5e4a441151f85bf2036b60142e5f3c" category="inline-link-macro-rx"></block></block>
   <block id="7c67b8b9f7d3533c33fb6cecf037204c" category="doc">SAN 호스트에서 ASA R2 스토리지 시스템으로의 데이터 액세스가 가능합니다</block>
-  <block id="2fa6f858dba87204a24e814faeae2b1a" category="paragraph">데이터 액세스를 설정하려면 ONTAP와 함께 올바르게 작동하는 데 중요한 SAN 클라이언트의 특정 매개 변수 및 설정이 올바르게 구성되었는지 확인해야 합니다. VMware를 사용 중인 경우 가상 시스템을 마이그레이션해야 합니다.</block>
   <block id="4c686f129e697b3603247005c22c0238" category="section-title">SAN 호스트에서 데이터 액세스 설정</block>
   <block id="f66720607a76ceed4cebe5d6d2110bf4" category="paragraph">SAN 호스트에서 ASA R2 시스템에 대한 데이터 액세스를 설정하는 데 필요한 구성은 호스트 운영 체제 및 프로토콜에 따라 다릅니다. 최상의 성능과 성공적인 페일오버를 위해서는 올바른 구성이 중요합니다.</block>
   <block id="e3e3a193f32926fa7dded05dbaba1a71" category="inline-link-macro">VMware vSphere SCSI 클라이언트</block>
@@ -1626,4 +1625,18 @@
   <block id="61cf7293359faa875bba34aec2374d5e" category="inline-link-macro">FC/FC-NVMe 조닝</block>
   <block id="05c164818e6cf72673636c3f026f35fd" category="paragraph">에 대해 자세히 <block ref="04395b79c4c7664c0e1d06aced656acd" category="inline-link-macro-rx"></block>알아보십시오.</block>
   <block id="9567f97a2f92160f66cfc2ac7b1e9cc2" category="sidebar">SAN 호스트 구성을 설정합니다</block>
+  <block id="fbbf9bfec249398ad3da62c3698ce2ad" category="paragraph">데이터 액세스를 설정하려면 ONTAP에서 올바르게 작동하기 위해 SAN 클라이언트의 중요 매개 변수 및 설정이 올바르게 구성되어 있는지 확인해야 합니다. VMware 환경을 위한 스토리지를 제공하는 경우 간단히 ASA R2 스토리지를 관리할 수 있도록 OTV 10.3을 설치해야 합니다.</block>
+  <block id="1496c484b551cb8fd3b8676b0332a8a2" category="section-title">ASA R2 시스템을 VMware 환경에서 스토리지 공급자로 구성합니다</block>
+  <block id="a9e0f432b63d28e01f9f96baf47e7876" category="paragraph">VMware용 ONTAP 툴을 사용하면 ASA R2 시스템을 VMware 환경에서 스토리지 공급자로 쉽게 설정할 수 있습니다.</block>
+  <block id="5d5cb8b837d9b4bfd91c87d5d93d3eef" category="paragraph">VMware vSphere용 ONTAP 툴은 VMware ESXi 호스트에서 가상 머신을 쉽게 관리할 수 있도록 vCSA(vCenter Server Virtual Appliance)와 함께 작동하는 툴 세트입니다.</block>
+  <block id="2e0332b2709dcff7df5d28c654c54066" category="inline-link-macro">VMware vSphere 10.3용 ONTAP 툴</block>
+  <block id="8e4d015f72125fee6a1076da698cfa9b" category="paragraph">ASA R2 시스템은 <block ref="cf4d7ec541bcf67d4856d52c8275160d" category="inline-link-macro-rx"></block>이상에서 지원됩니다.</block>
+  <block id="8b1987d01ceab7f9e7729fcf1f463c97" category="inline-link-macro">VMware용 ONTAP 툴을 구축합니다</block>
+  <block id="8a8beafe3fa2e4ea217e97bf12a3bb91" category="paragraph">다음 작업을 수행하는 방법  및 사용 방법에 대해 <block ref="5a39da81f88e74c1cffe4258059e9f43" category="inline-link-macro-rx"></block>알아봅니다.</block>
+  <block id="6245e46af5a3bdaf57696763c4214c70" category="inline-link-macro">vCenter Server 인스턴스를 추가합니다</block>
+  <block id="384abfcd711546895f3224c5e42e8128" category="list-text"><block ref="384abfcd711546895f3224c5e42e8128" category="inline-link-macro-rx"></block></block>
+  <block id="9a36f8e08fbdd31aefe88585b5de036e" category="inline-link-macro">ESXi 호스트 설정을 구성합니다</block>
+  <block id="28098493f634877a20d2a424bec3e673" category="list-text"><block ref="28098493f634877a20d2a424bec3e673" category="inline-link-macro-rx"></block></block>
+  <block id="0fc12de41b656aa3f728162d7984cb09" category="inline-link-macro">ASA R2 스토리지 시스템 및 호스트를 검색합니다</block>
+  <block id="73a36b5cc4b414970076f394e3abf9e4" category="list-text"><block ref="73a36b5cc4b414970076f394e3abf9e4" category="inline-link-macro-rx"></block></block>
 </blocks>
