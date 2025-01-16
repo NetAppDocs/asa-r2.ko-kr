@@ -37,11 +37,11 @@ VMware vSphere용 ONTAP 툴은 VMware ESXi 호스트에서 가상 머신을 쉽�
 
 ASA R2 시스템은 link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/concepts/ontap-tools-overview.html["VMware vSphere 10.3용 ONTAP 툴"]이상에서 지원됩니다.
 
-다음 작업을 수행하는 방법  및 사용 방법에 대해 link:https://review.docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10_otv103-releasebranch/deploy/ontap-tools-deployment.html["VMware용 ONTAP 툴을 구축합니다"^]알아봅니다.
+다음 작업을 수행하는 방법  및 사용 방법에 대해 link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/deploy/ontap-tools-deployment.html["VMware용 ONTAP 툴을 구축합니다"^]알아봅니다.
 
-* link:https://review.docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10_otv103-releasebranch/configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"^]
-* link:https://review.docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10_otv103-releasebranch/configure/configure-esx-server-multipath-and-timeout-settings.html["ESXi 호스트 설정을 구성합니다"^]
-* link:https://review.docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10_otv103-releasebranch/configure/discover-storage-systems-and-hosts.html["ASA R2 스토리지 시스템 및 호스트를 검색합니다"^]
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"^]
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/configure-esx-server-multipath-and-timeout-settings.html["ESXi 호스트 설정을 구성합니다"^]
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/discover-storage-systems-and-hosts.html["ASA R2 스토리지 시스템 및 호스트를 검색합니다"^]
 
 
 .다음 단계
