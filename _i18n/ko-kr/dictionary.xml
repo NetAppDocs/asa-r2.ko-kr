@@ -1630,7 +1630,6 @@
   <block id="a9e0f432b63d28e01f9f96baf47e7876" category="paragraph">VMware용 ONTAP 툴을 사용하면 ASA R2 시스템을 VMware 환경에서 스토리지 공급자로 쉽게 설정할 수 있습니다.</block>
   <block id="5d5cb8b837d9b4bfd91c87d5d93d3eef" category="paragraph">VMware vSphere용 ONTAP 툴은 VMware ESXi 호스트에서 가상 머신을 쉽게 관리할 수 있도록 vCSA(vCenter Server Virtual Appliance)와 함께 작동하는 툴 세트입니다.</block>
   <block id="2e0332b2709dcff7df5d28c654c54066" category="inline-link-macro">VMware vSphere 10.3용 ONTAP 툴</block>
-  <block id="8e4d015f72125fee6a1076da698cfa9b" category="paragraph">ASA R2 시스템은 <block ref="cf4d7ec541bcf67d4856d52c8275160d" category="inline-link-macro-rx"></block>이상에서 지원됩니다.</block>
   <block id="8b1987d01ceab7f9e7729fcf1f463c97" category="inline-link-macro">VMware용 ONTAP 툴을 구축합니다</block>
   <block id="6245e46af5a3bdaf57696763c4214c70" category="inline-link-macro">vCenter Server 인스턴스를 추가합니다</block>
   <block id="9a36f8e08fbdd31aefe88585b5de036e" category="inline-link-macro">ESXi 호스트 설정을 구성합니다</block>
@@ -1639,4 +1638,5 @@
   <block id="a40657a47b74f3006bcfdd2899235090" category="list-text"><block ref="a40657a47b74f3006bcfdd2899235090" category="inline-link-macro-rx"></block></block>
   <block id="b57ea9712535452d1a9c410e0f1f4f93" category="list-text"><block ref="b57ea9712535452d1a9c410e0f1f4f93" category="inline-link-macro-rx"></block></block>
   <block id="8182eb8f155278176f93ebb4d84774dc" category="list-text"><block ref="8182eb8f155278176f93ebb4d84774dc" category="inline-link-macro-rx"></block></block>
+  <block id="8027cf82d29e89bcd72c0f7ae984c222" category="paragraph">ASA R2 시스템은 <block ref="6a0b5c767b375da41f0e7140f5d8129e" category="inline-link-macro-rx"></block>이상에서 지원됩니다.</block>
 </blocks>
