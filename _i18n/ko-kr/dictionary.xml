@@ -1091,7 +1091,6 @@
   <block id="769cac8936a099436eaf35a70beb7039" category="summary">ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제공하지만 특정 ONTAP 소프트웨어 기능은 지원되지 않습니다.</block>
   <block id="c305c29e81953bb01b7c42d73fc8099c" category="doc">ASA R2 스토리지 시스템에 대한 ONTAP 소프트웨어 지원 및 제한 사항</block>
   <block id="2f7f66e818d17cdf226ec888e94e2751" category="list-title">ASA R2 시스템은 다음을 지원하지 않습니다.</block>
-  <block id="e2d11c222fd8d727dcdcff1a70a7c1c0" category="list-text">iSCSI LIF 페일오버</block>
   <block id="55449fd175613962d882ab450cfc5f3c" category="list-text">FabricPool</block>
   <block id="e4bc96983300161ae3464466c0030db7" category="list-text">LUN 일반 프로비저닝</block>
   <block id="1749d12df3df2319d3eee218a277ff83" category="list-text">MetroCluster</block>
@@ -1639,4 +1638,10 @@
   <block id="b57ea9712535452d1a9c410e0f1f4f93" category="list-text"><block ref="b57ea9712535452d1a9c410e0f1f4f93" category="inline-link-macro-rx"></block></block>
   <block id="8182eb8f155278176f93ebb4d84774dc" category="list-text"><block ref="8182eb8f155278176f93ebb4d84774dc" category="inline-link-macro-rx"></block></block>
   <block id="8027cf82d29e89bcd72c0f7ae984c222" category="paragraph">ASA R2 시스템은 <block ref="6a0b5c767b375da41f0e7140f5d8129e" category="inline-link-macro-rx"></block>이상에서 지원됩니다.</block>
+  <block id="ace9c44d680e3a8684441fd776f4db68" category="paragraph">자동 iSCSI LIF 페일오버를 활성화하려면 iSCSI 전용 LIF를 생성해야 합니다. 자동 iSCSI LIF 페일오버가 사용되도록 설정된 경우 스토리지 페일오버가 발생하면 iSCSI LIF가 홈 노드나 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 다음, 페일오버가 완료된 후 다시 수행됩니다. 또는 iSCSI LIF의 포트가 정상 상태가 아닐 경우 LIF는 자동으로 현재 홈 노드의 정상 포트로 마이그레이션된 다음 포트가 다시 정상 상태가 되면 원래 포트로 다시 마이그레이션됩니다.</block>
+  <block id="38db38181d3edceaf9353ed23bb6a1d6" category="paragraph">단일 프로토콜 LIF를 생성하려면 하나의 프로토콜만 선택합니다. 예를 들어 iSCSI 전용 LIF를 생성하려면 * iSCSI * 를 선택합니다.</block>
+  <block id="f08b07b736a8c5201accc4549e8a0762" category="list-text">기본 자동 iSCSI LIF 페일오버</block>
+  <block id="4b3d6eefe10e552e93669e44e3908ab2" category="inline-link-macro">iSCSI 전용 LIF를 생성합니다</block>
+  <block id="c32fddd27ad2252ef230f0871f34068f" category="paragraph">ASA R2 시스템에서는 기본 네트워킹 LIF가 NVMe와 SCSI 호스트 간에 공유되므로 자동 페일오버를 지원하지 않습니다. 자동 iSCSI LIF 페일오버를 사용하려면 이 <block ref="80674e801e3a84767641d7c52bb7dcab" category="inline-link-macro-rx"></block>필요합니다. 자동 페일오버는 기본적으로 iSCSI 전용 LIFS에서 설정됩니다.</block>
+  <block id="22f4d4e3ef9ad886ae95608e10f828cb" category="paragraph">자동 iSCSI LIF 페일오버가 사용되도록 설정된 경우 스토리지 페일오버가 발생하면 iSCSI LIF가 홈 노드나 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 다음, 페일오버가 완료된 후 다시 수행됩니다. 또는 iSCSI LIF의 포트가 정상 상태가 아닐 경우 LIF는 자동으로 현재 홈 노드의 정상 포트로 마이그레이션된 다음 포트가 다시 정상 상태가 되면 원래 포트로 다시 마이그레이션됩니다.</block>
 </blocks>

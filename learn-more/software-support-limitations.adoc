@@ -14,7 +14,13 @@ summary: ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제�
 ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제공하지만 특정 ONTAP 소프트웨어 기능은 지원되지 않습니다.
 
 .ASA R2 시스템은 다음을 지원하지 않습니다.
-* iSCSI LIF 페일오버
+* 기본 자동 iSCSI LIF 페일오버
++
+ASA R2 시스템에서는 기본 네트워킹 LIF가 NVMe와 SCSI 호스트 간에 공유되므로 자동 페일오버를 지원하지 않습니다. 자동 iSCSI LIF 페일오버를 사용하려면 이 link:../administer/manage-client-vm-access.html#create-a-lif-network-interface["iSCSI 전용 LIF를 생성합니다"]필요합니다. 자동 페일오버는 기본적으로 iSCSI 전용 LIFS에서 설정됩니다.
+
++
+자동 iSCSI LIF 페일오버가 사용되도록 설정된 경우 스토리지 페일오버가 발생하면 iSCSI LIF가 홈 노드나 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 다음, 페일오버가 완료된 후 다시 수행됩니다. 또는 iSCSI LIF의 포트가 정상 상태가 아닐 경우 LIF는 자동으로 현재 홈 노드의 정상 포트로 마이그레이션된 다음 포트가 다시 정상 상태가 되면 원래 포트로 다시 마이그레이션됩니다.
+
 * FabricPool
 * LUN 일반 프로비저닝
 * MetroCluster
@@ -27,11 +33,15 @@ ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제공하지�
 
 .ASA R2 시스템은 다음을 지원합니다.
 * SnapLock
++
+link:../secure-data/ransomware-protection.html["스냅샷을 잠그는 방법에 대해 알아봅니다"] ASA R2 시스템에서.
+
 * 이중 계층 암호화
++
+link:../secure-data/encrypt-data-at-rest.html["이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다"] ASA R2 시스템의 데이터로 이동합니다.
+
 
 
 .를 참조하십시오
 * link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^]ASA R2 하드웨어 지원 및 제한 사항에 대한 자세한 내용은 를 참조하십시오.
-* link:../secure-data/ransomware-protection.html["스냅샷을 잠그는 방법에 대해 알아봅니다"] ASA R2 시스템에서.
-* link:../secure-data/encrypt-data-at-rest.html["이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다"] ASA R2 시스템의 데이터로 이동합니다.
 
