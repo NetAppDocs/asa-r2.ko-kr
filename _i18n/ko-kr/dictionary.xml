@@ -1754,7 +1754,6 @@
   <block id="f35462670e9b95d1e4a8748ba6872f91" category="admonition">클러스터에서 노드가 3개 이상인 ONTAP 9.16.1을 실행 중인 경우 ONTAP 9.16.0으로 되돌릴 수 없습니다.</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="section-title">데이터 보호</block>
   <block id="52b359b5c00e0db3bdd91a9f5c05cf7a" category="inline-link-macro">계층적 정합성 보장 그룹 지원</block>
-  <block id="410817362abc44b1b70bdc2f9f49fece" category="cell"><block ref="410817362abc44b1b70bdc2f9f49fece" category="inline-link-macro-rx"></block></block>
   <block id="aada91e6d0de9250c4de431c33ad5116" category="cell">계층적 일관성 그룹을 사용하면 여러 하위 일관성 그룹이 포함된 부모 일관성 그룹을 생성할 수 있습니다. 따라서 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다.</block>
   <block id="6feaf968503604ce3e0d0b4eefca6c57" category="cell">스토리지 유닛의 자동 재조정 지원</block>
   <block id="ec84fb814253e6779e1876e18f7db731" category="cell">ONTAP은 최적의 성능 및 용량 활용도를 위해 스토리지 가용성 영역에서 스토리지 유닛의 균형을 자동으로 조정합니다.</block>
@@ -1763,4 +1762,5 @@
   <block id="fb3dca1c5682d0eef255de24a00af0f3" category="sidebar">노드 추가</block>
   <block id="3214e36fd00eb6d4da6f5d9b64f41cb1" category="sidebar">스토리지 유닛 관리</block>
   <block id="611bc8bee4d5b03a55be78ab0ca75f66" category="sidebar">저장 장치를 이동합니다</block>
+  <block id="ffb5ca95f1d59040ebadb90640b1970b" category="cell"><block ref="ffb5ca95f1d59040ebadb90640b1970b" category="inline-link-macro-rx"></block></block>
 </blocks>
