@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: administer/reboot-take-over-give-back-nodes.html 
-keywords: reboot, take over, give back, nodes, asa r2, asa r2, asa a1k, asa 70, asa 90 
+keywords: reboot, take over, give back, nodes, asa r2, asa a1k, asa a90, asa a70 
 summary: 유지보수, 문제 해결, 소프트웨어 업데이트 또는 기타 관리상의 이유로 노드를 재부팅해야 할 수 있습니다. 
 ---
 = ASA R2 스토리지 시스템에서 노드를 재부팅합니다

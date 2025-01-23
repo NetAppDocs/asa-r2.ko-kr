@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: install-setup/install-setup-workflow.html 
 keywords: asa r2, install, setup, workflow 
-summary: ASA R2 스토리지 시스템의 설치 및 설정을 시작하고 ONTAP 환경에서 HA 쌍으로 배포합니다. 
+summary: ASA R2 스토리지 시스템의 설치 및 설정을 시작하여 ONTAP 환경에 구축합니다. 
 ---
 = ASA R2 스토리지 시스템의 설치 및 설정 워크플로우
 :allow-uri-read: 

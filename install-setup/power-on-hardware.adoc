@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: install-setup/power-on-hardware.html 
-keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a70, asa a90, asa c80, power on 
+keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a90, asa a70, power on 
 summary: 각 NS224 쉘프의 전원을 켜서 고유 쉘프 ID를 할당하고 ASA R2 컨트롤러의 전원을 켜고 전원 케이블을 고정합니다. 
 ---
 = ASA R2 스토리지 시스템의 전원을 켭니다

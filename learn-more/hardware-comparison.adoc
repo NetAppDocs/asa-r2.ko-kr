@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-more/hardware-comparison.html 
-keywords: compare asa r2, asa a1k, asa a70, asa a90 
+keywords: compare asa r2, asa a1k, asa a90, asa a70 
 summary: ASA 시스템은 SAN 전용 솔루션에 최적화된 하드웨어 지원을 제공합니다. ASA R2 시스템은 하드웨어 및 소프트웨어를 최적화합니다. 
 searchtitle: ASA R2 시스템을 다른 ONTAP 시스템과 비교합니다 
 ---

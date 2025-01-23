@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: install-setup/cable-hardware.html 
-keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a70, asa a90, asa c80, cable controllers 
+keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a90, asa a70, cable controllers 
 summary: ASA R2 컨트롤러 케이블을 네트워크에 연결하고 컨트롤러를 쉘프에 연결하는 방법을 알아보십시오. 
 ---
 = ASA R2 스토리지 시스템용 하드웨어를 케이블로 연결합니다

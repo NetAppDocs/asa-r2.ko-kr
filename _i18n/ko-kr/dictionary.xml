@@ -268,7 +268,6 @@
   <block id="82fd6aa34bfb21de39dd81c963a0a2e8" category="list-text">System Manager에서 * 보호 &gt; 일관성 그룹 * 을 선택합니다.</block>
   <block id="edb9e8b079cc1bbba23675ed2fb9ee82" category="list-text">를 선택한 <block ref="120e8ce30fa09c1e015e32b4fdada4d3" category="inline-image-macro-rx" type="image"></block>다음 * 새 스토리지 유닛 사용 * 을 선택합니다.</block>
   <block id="52121a2aaeb6d47d15d81e8ee203b5f7" category="list-text">새 스토리지 유닛의 이름, 유닛 수 및 유닛당 용량을 입력합니다.</block>
-  <block id="b6a57406c839874cc450218c65042a9c" category="paragraph">두 개 이상의 유닛을 생성하는 경우 각 유닛은 동일한 용량과 동일한 호스트 운영 체제로 생성됩니다. 각 장치에 다른 용량을 할당하려면 * 추가 옵션 * 을 선택한 다음 * 다른 용량 추가 * 를 선택합니다.</block>
   <block id="7028b1e3a2021d39c73b8824b7bc9a9d" category="list-text">호스트 운영 체제 및 호스트 매핑을 선택합니다.</block>
   <block id="97b6e4a76453272c0f1f20a9a7e57b6b" category="paragraph">보호할 스토리지 유닛이 포함된 정합성 보장 그룹을 생성했습니다. 이제 스냅샷을 생성할 준비가 되었습니다.</block>
   <block id="c8ea84d9e7c3634b93976499f8f58956" category="open-title">기존 스토리지 유닛을 사용합니다</block>
@@ -550,7 +549,6 @@
   <block id="871826e1588c93437ae23af0a8c5c29e" category="paragraph"><block ref="2d57bedaf7449221ca7cf6e2da6e5236" category="inline-link-macro-rx"></block>ASA R2 시스템에 대한 지원 사례를 확인해야 합니다.</block>
   <block id="18aec681e94562add9f015e57e17b8d0" category="list-text">지원 케이스를 제출하려면 System Manager에서 * 클러스터 &gt; 지원 * 을 선택한 다음 * NetApp 지원 * 으로 이동 * 을 선택합니다.</block>
   <block id="ce3bbf8e2056eaff8c2c9a52eb4ce4dc" category="list-text">이전에 제출한 케이스를 보려면 System Manager에서 * 클러스터 &gt; 지원 * 을 선택한 다음 * 내 케이스 보기 * 를 선택합니다.</block>
-  <block id="c4bd20e96bacd4ca7f4f874cb8a77b00" category="summary">ASA R2 시스템(ASA A1K, ASA A70, ASA A90)은 SAN 전용 고객을 위해 간소화된 환경을 조성하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="doc">ASA R2 스토리지 시스템에 대해 알아보십시오</block>
   <block id="4c09e6dc15402ad1dfdd0de9dde9ced3" category="paragraph">ASA R2 시스템에서 ONTAP 소프트웨어 및 System Manager를 간소화하여 필수 SAN 기능을 지원하는 동시에 SAN 환경에서 지원되지 않는 기능을 제거합니다.</block>
   <block id="8ba78ca0516a69b587aca58206efc01f" category="paragraph">ASA R2 시스템에서는 정합성 보장 그룹이 포함된 스토리지 유닛을 사용합니다.</block>
@@ -562,13 +560,10 @@
   <block id="989f2b4edace5981db8b18b1ad4a385f" category="list-text">ASA R2 시스템 지원 및 제한 사항에 대한 자세한 내용은 을 <block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2b304856171196502641312a496c6d54" category="inline-link-macro">NetApp ASA</block>
   <block id="b4e5592d9ac502884e059b5eb31d6bf6" category="list-text">에 대해 자세히 <block ref="7ca9eeacedc91cf0cb26acef9d99ecbd" category="inline-link-macro-rx"></block>알아보십시오.</block>
-  <block id="05b76f77eda2923699bcc5fed0226549" category="summary">ASA R2(ASA A1K, ASA A70, ASA A90) 시스템을 시작하려면 하드웨어를 설치하고, 클러스터를 설정하고, 데이터 액세스를 설정하고, 스토리지를 프로비저닝해야 합니다.</block>
-  <block id="726d7bea9295f2cedea11857011476c0" category="searchtitle">ASA A1K, ASA A70 및 ASA A90 스토리지 시스템을 설치하고 설정합니다</block>
   <block id="7277c9d417ac8a6d967bd0e7b323cd57" category="paragraph">ASA R2 시스템을 설치하고 실행하려면 하드웨어 구성 요소를 설치하고, 클러스터를 설정하고, 호스트에서 스토리지 시스템으로의 데이터 액세스를 설정하고, 스토리지를 프로비저닝해야 합니다.</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1개</block>
   <block id="40a0d9b63d17cd9ee40121b195ad7812" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 하드웨어를 설치하고 설정합니다</block>
   <block id="0838ba24ec50794012b940c57af5703f" category="inline-link-macro">설치 및 설정</block>
-  <block id="bd37b0d902cca84ba3edf7120a5ff8ea" category="paragraph"><block ref="1284f4e581f500fae0f4daa3e9543a0c" category="inline-link-macro-rx"></block> ASA R2 시스템을 ONTAP 환경에서 HA 페어로 구축할 수 있습니다.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2개</block>
   <block id="d950f0cc340509cac6299d8daed8cf0a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 클러스터 설정</block>
   <block id="358ff255f5304eea2541b8491eafcb09" category="inline-link-macro">ONTAP 클러스터를 설정합니다</block>
@@ -770,7 +765,6 @@
   <block id="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="list-text"><block ref="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="inline-link-rx"></block></block>
   <block id="bc49acf6a4bdda7bb7cff74873359411" category="inline-link-macro">ASA R2 스토리지 시스템 설치를 준비합니다</block>
   <block id="9bc515044882c3ed46aa32f2e8aa575e" category="paragraph">하드웨어 요구 사항을 검토한 후<block ref="8054262d52a0c88e2eb96c4a29491e7c" category="inline-link-macro-rx"></block></block>
-  <block id="4e12da3ed45d8c0cbcaf56b1f9f08af6" category="summary">ASA R2 스토리지 시스템의 설치 및 설정을 시작하고 ONTAP 환경에서 HA 쌍으로 배포합니다.</block>
   <block id="bec12648a072f54e7209e45d72c0ba78" category="doc">ASA R2 스토리지 시스템의 설치 및 설정 워크플로우</block>
   <block id="f08e3211126883342efb2c1028678668" category="paragraph">ASA R2 시스템을 설치 및 구성하려면 하드웨어 요구 사항을 검토하고, 사이트를 준비하고, 하드웨어 구성 요소를 설치 및 케이블 연결하고, 시스템의 전원을 켜고, ONTAP 클러스터를 설정합니다.</block>
   <block id="7ccd978bf0dbca0a0746f98d09b99f7f" category="inline-link-macro">하드웨어 설치 요구 사항을 검토합니다</block>
@@ -1213,7 +1207,6 @@
   <block id="4ce211e7f3238dc2a7e5fc38f7096d99" category="list-text">스토리지 유닛 용량을 입력한 다음 호스트 운영 체제를 선택합니다.</block>
   <block id="4a12fcafc1a3c4f57a718c8ca92efc50" category="list-text">자동으로 선택된 * 호스트 매핑 * 을 적용하거나 매핑할 스토리지 유닛에 대해 다른 호스트 그룹을 선택합니다.</block>
   <block id="3a880a9aa73ca2acefaaddbfcdb6e4e5" category="paragraph">* 호스트 매핑 * 은 새 스토리지 유닛이 매핑될 호스트 그룹을 나타냅니다. 새 스토리지 유닛에 대해 선택한 호스트 유형에 대해 기존 호스트 그룹이 있는 경우 기존 호스트 그룹이 호스트 매핑에 대해 자동으로 선택됩니다. 호스트 매핑에 대해 자동으로 선택된 호스트 그룹을 수락하거나 다른 호스트 그룹을 선택할 수 있습니다.</block>
-  <block id="827c0951d229d00d677d2fcd8db9ed5e" category="paragraph">지정한 운영 체제에서 실행 중인 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP에서 새 호스트 그룹이 자동으로 생성됩니다.</block>
   <block id="ec00cac618e2a8983fc71ca2a711519c" category="list-text">다음 중 하나를 수행하려면 * 추가 옵션 * 을 선택하고 필요한 단계를 완료합니다.</block>
   <block id="7e8304ed8a1d7b1d5ea3d023833084ac" category="paragraph">기본 QoS(Quality of Service) 정책을 변경합니다</block>
   <block id="670420248bfae86c26e9659cd428df4a" category="paragraph">기본 QoS 정책이 스토리지 유닛이 생성되는 스토리지 가상 머신(VM)에 이전에 설정되지 않은 경우 이 옵션을 사용할 수 없습니다.</block>
@@ -1308,7 +1301,6 @@
   <block id="b6e8a44e2a75e79622ab8bca1270a5ce" category="doc">ASA R2 스토리지 제한</block>
   <block id="abe1583ce937db07d8d0619331789f3c" category="paragraph">최적의 성능, 구성 및 지원을 위해 ASA R2 스토리지 제한을 숙지해야 합니다.</block>
   <block id="96518fa8caa802b5be6e8e42fa8d0690" category="cell">클러스터당 최대 노드 수</block>
-  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="d8aa4c4ba6e098346f0524ef76464fe4" category="cell">최대 저장 장치 크기</block>
   <block id="d0bb632fcdb31cf3c729c1c59f826d4f" category="cell">128TB</block>
   <block id="bebabfeb2bb62750bf38ee33a0e54982" category="paragraph">최신 ASA R2 스토리지 제한값의 전체 목록은 을 참조하십시오<block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>.</block>
@@ -1602,13 +1594,11 @@
   <block id="319ffa33cfb4e70c9e521494969d662a" category="sidebar">ONTAP 9.16.1의 새로운 기능</block>
   <block id="0b6845dd2391304844b6f9578fd8c865" category="sidebar">ONTAP 기본값 및 한계값으로 변경합니다</block>
   <block id="ec7ed1b959417fb145bcf5bc5351a4e1" category="paragraph">온보드 키 관리자에서 외부 키 관리자로 전환하거나 그 반대로 전환해야 하는 경우, 를 참조하십시오.<block ref="6c5d784251393a5f6fda5c1a058497d1" category="inline-link-macro-rx"></block></block>
-  <block id="741966f7a31d60fddc8857d2cb9fb674" category="paragraph">ASA R2 시스템은 단일 HA 쌍 구축에서 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. SCSI(iSCSI 및 FC) 프로토콜은 호스트와 스토리지 간의 모든 경로가 액티브/최적화되도록 다중 경로를 위해 대칭 액티브-액티브 아키텍처를 사용합니다. iSCSI 및 NVMe/TCP 프로토콜은 호스트와 스토리지 간의 직접 경로를 지원합니다.</block>
   <block id="d32b93d0cc0df3a57e074a2dd7f55bac" category="list-text">클라우드로 SnapMirror(비동기식 및 동기식)</block>
   <block id="db501755a13db6bc1da40b7fa29e25f1" category="list-text">비 ASA R2 시스템에 대한 SnapMirror(비동기식 및 동기식)입니다</block>
   <block id="b0af3c84875edd616110edf2dac64154" category="paragraph">데이터 축소율은 스토리지 효율성을 통해 절약된 공간의 양을 나타냅니다.</block>
   <block id="f31e58176a4fc5fa75f3c5160b712278" category="admonition">SnapMirror(비동기식 및 동기식)는 ASA R2 시스템에서 ASA R2 시스템으로만 지원됩니다. SnapMirror는 ASA R2 시스템에서 AFF 또는 FAS 시스템으로 지원되지 않습니다.</block>
   <block id="a45025bc45c4e360bb41b761b432dd34" category="doc">ASA R2 스토리지 시스템의 빠른 시작</block>
-  <block id="426ed8a052d2d7277d60ee8001b9d37e" category="searchtitle">ASA R2 스토리지 시스템인 A1K, A90 및 A70에 대해 알아보십시오</block>
   <block id="465ce601131c87fafd3a4a3da5836246" category="summary">ASA R2 시스템은 SAN 호스트 구성에 대해 다른 모든 ONTAP 시스템과 동일한 권장 사항 및 지침을 따릅니다.</block>
   <block id="9a364a877707d0b61983419895ba3632" category="doc">ASA R2 시스템을 사용한 SAN 호스트 구성</block>
   <block id="31eb0490b298463d8797eab8041ed748" category="paragraph">스토리지 시스템을 하나 이상의 SAN 호스트에 연결하려면 두 개 이상의 스위치를 사용하는 것이 좋습니다. iSCSI 구성의 경우 호스트, 스위치 및 스토리지 시스템을 연결하는 네트워크 토폴로지를 _network_라고 합니다. FC 및 FC-NVMe 구성의 경우 이 동일한 네트워크 토폴로지를 a_fabric_이라고 합니다.</block>
@@ -1644,4 +1634,133 @@
   <block id="4b3d6eefe10e552e93669e44e3908ab2" category="inline-link-macro">iSCSI 전용 LIF를 생성합니다</block>
   <block id="c32fddd27ad2252ef230f0871f34068f" category="paragraph">ASA R2 시스템에서는 기본 네트워킹 LIF가 NVMe와 SCSI 호스트 간에 공유되므로 자동 페일오버를 지원하지 않습니다. 자동 iSCSI LIF 페일오버를 사용하려면 이 <block ref="80674e801e3a84767641d7c52bb7dcab" category="inline-link-macro-rx"></block>필요합니다. 자동 페일오버는 기본적으로 iSCSI 전용 LIFS에서 설정됩니다.</block>
   <block id="22f4d4e3ef9ad886ae95608e10f828cb" category="paragraph">자동 iSCSI LIF 페일오버가 사용되도록 설정된 경우 스토리지 페일오버가 발생하면 iSCSI LIF가 홈 노드나 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 다음, 페일오버가 완료된 후 다시 수행됩니다. 또는 iSCSI LIF의 포트가 정상 상태가 아닐 경우 LIF는 자동으로 현재 홈 노드의 정상 포트로 마이그레이션된 다음 포트가 다시 정상 상태가 되면 원래 포트로 다시 마이그레이션됩니다.</block>
+  <block id="e51f73897cef482e683893c74ad0aebf" category="doc">ASA R2 노드를 ONTAP 클러스터에 추가합니다</block>
+  <block id="be36547b484c259b8e39cb4b17bdac83" category="paragraph">ONTAP 9.16.1부터 ASA R2 스토리지 시스템은 클러스터당 최대 12개의 노드를 지원합니다. HA Pair의 새 노드를 케이블로 연결하고 전원을 켠 후에는 해당 노드를 클러스터에 연결해야 합니다.</block>
+  <block id="97a5a9f5366a279a2160c428ad458079" category="list-text">노드 IP 주소입니다</block>
+  <block id="d08cd309dd95d7aa27f8f977cf1a060e" category="list-text">인터클러스터 네트워크 인터페이스 IP 주소입니다</block>
+  <block id="20f5ca91f6dbeac15890f67c9a4cb751" category="list-text">인터클러스터 네트워크 서브넷 마스크입니다</block>
+  <block id="62f6882cb404e558e070fbed9abb8408" category="list-text">인터클러스터 네트워크 게이트웨이입니다</block>
+  <block id="8d5bab260f1fd17a58eead81f9a933dc" category="list-text">온보드 키 관리자(OKM)를 구성하려면 OKM 암호가 필요합니다.</block>
+  <block id="01c399628d4ca140e3f9a9b4af069aaf" category="list-text">클러스터에 연결할 노드 옆에 있는 을 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 노드 추가 * 를 선택합니다</block>
+  <block id="83574618638225092ab0e933a6da9812" category="list-text">각 노드의 IP 주소를 입력합니다.</block>
+  <block id="e7b7c94e6d81ece348285ff2b7c586bc" category="list-text">인터클러스터 네트워크 인터페이스 IP 주소, 서브넷 마스크 및 게이트웨이를 입력합니다.</block>
+  <block id="4cb7615df5933d98f247b46408545f05" category="list-text">온보드 키 관리자(OKM)를 구성하려면 OKM 암호를 입력합니다.</block>
+  <block id="e65c1f346347ea2c3f94d2f7b1f37252" category="paragraph">* 암호화를 위한 온보드 키 관리자 구성 * 이 기본적으로 선택됩니다.</block>
+  <block id="114bac06cb680744fb618e2d1de76644" category="paragraph">새 HA 쌍이 클러스터에 결합되었습니다.</block>
+  <block id="d46a824e09e83ce9ce018295770894a6" category="inline-link-macro">SAN 호스트에서 데이터 액세스가 가능합니다</block>
+  <block id="a5f04ac5782b3b4db001475a2ce8f1f8" category="paragraph">클러스터에 새 HA 쌍을 추가한 후에는 새 노드를 사용할 수 있습니다<block ref="180fb7c364ff620a7da1de634e394af5" category="inline-link-macro-rx"></block>.</block>
+  <block id="f142a152601a952c440aa742ae54d56c" category="doc">ASA R2 스토리지 시스템에서 ONTAP를 업그레이드합니다</block>
+  <block id="f46c905b973360f57c509a5dac0d6aca" category="paragraph">ASA R2 시스템에서 ONTAP 소프트웨어를 업그레이드할 때 새롭고 향상된 ONTAP 기능을 활용하여 비용을 절감하고, 중요한 워크로드를 가속화하고, 보안을 강화하고, 조직에서 사용할 수 있는 데이터 보호 범위를 확장할 수 있습니다.</block>
+  <block id="1609fb0c876b70bfae98d1cafa399784" category="inline-link-macro">Upgrade Advisor로 업그레이드 준비</block>
+  <block id="e4b24f4689bdc8358c4d409b6a9d4103" category="inline-link-macro">Upgrade Advisor 없이 업그레이드 준비</block>
+  <block id="715a6cc9b89f202d46f87d2b8ae93e8e" category="paragraph">ASA R2 시스템의 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템의 업그레이드와 동일한 프로세스를 따릅니다. Active IQ Digital Advisor(디지털 어드바이저)에 대해 유효한 SupportEdge 계약을 보유한 경우 해야 <block ref="1117d34674fd91a6ee3c7506ddc3a8f0" category="inline-link-macro-rx"></block>합니다. Upgrade Advisor는 클러스터를 평가하고 구성에 맞는 업그레이드 계획을 생성하여 불확실성과 위험을 최소화하는 데 도움이 되는 인텔리전스를 제공합니다. Active IQ 디지털 어드바이저에 대해 유효한 SupportEdge 계약이 없는 경우, 해야 <block ref="66ecb4b248d940ec34981282ad334ce1" category="inline-link-macro-rx"></block>합니다.</block>
+  <block id="46629b819dff531a5a2a49fcda5443dd" category="inline-link-macro">System Manager에서 자동 무중단 업그레이드(ANDU</block>
+  <block id="d351531ad851e21d1ccbc812e54540ff" category="paragraph">업그레이드를 준비하고 나면 을 사용하여 업그레이드를 수행하는 것이 좋습니다<block ref="a93595527d1144b0b27a701c939efa63" category="inline-link-macro-rx"></block>. ANDU는 ONTAP의 고가용성(HA) 페일오버 기술을 활용하여 업그레이드 중에 클러스터가 중단 없이 데이터를 지속적으로 제공할 수 있도록 보장합니다.</block>
+  <block id="8b7f4f92636306e034e67a0098393065" category="inline-link-macro">ONTAP 소프트웨어 업그레이드</block>
+  <block id="db24448a282517925d7637e0ab57fb35" category="paragraph">에 대해 자세히 <block ref="ee50b0384392ffd34e721693cf1abb90" category="inline-link-macro-rx"></block>알아보십시오.</block>
+  <block id="fff17537d9a4bdde67e260b49d17c884" category="paragraph">새 스토리지 유닛을 사용하여 정합성 보장 그룹을 생성하는 경우 각 스토리지 유닛에 다른 용량을 할당하고 기본 성능 서비스 수준을 변경하고 최대 5개의 하위 정합성 보장 그룹을 생성할 수 있습니다. 기존 스토리지 유닛을 사용하여 정합성 보장 그룹을 생성하는 경우 이미 사용 중인 스토리지 유닛을 추가할 수 있습니다.</block>
+  <block id="06b783ccc728f89654eb406f121a920e" category="paragraph">두 개 이상의 유닛을 생성하는 경우 기본적으로 각 유닛은 동일한 용량과 동일한 호스트 운영 체제로 생성됩니다. 필요에 따라 각 유닛에 다른 용량을 할당할 수 있습니다.</block>
+  <block id="c714809f14fa9d9c65c38961426d89e3" category="paragraph">각 스토리지 유닛에 다른 용량을 할당합니다</block>
+  <block id="b079c5d39925229ba3c754aec7200bfe" category="paragraph">Add a different capacity * 를 선택합니다.</block>
+  <block id="31a76ac8189f6bc9ca7266bc2fa13c8d" category="paragraph">기본 성능 서비스 수준을 변경합니다</block>
+  <block id="fe36b3d0747e41e736245b1f2f016f37" category="paragraph">성능 서비스 수준 * 에서 다른 서비스 수준을 선택합니다.</block>
+  <block id="e39fb54244b4e7e5902cf86f104eae5f" category="paragraph">하위 정합성 보장 그룹을 생성합니다</block>
+  <block id="df30ab788ddab119f1a9a52f397c1578" category="paragraph">Add child consistency group * 을 선택합니다.</block>
+  <block id="47f30cf1dbc386b695e587c89d934679" category="paragraph">ONTAP 9.16.1부터 System Manager를 사용하여 ASA R2 시스템에 계층적 정합성 보장 그룹을 생성할 수 있습니다. 계층적 구조에서는 하나 이상의 일관성 그룹이 부모 일관성 그룹 아래에 있는 하위 그룹으로 구성됩니다.</block>
+  <block id="accc48ba80dae134714334f9974f857c" category="paragraph">계층적 정합성 보장 그룹을 사용하면 각 하위 정합성 보장 그룹에 개별 스냅샷 정책을 적용하고 상위 정합성 보장 그룹을 복제하여 모든 하위 정합성 보장 그룹의 스냅샷을 단일 유닛으로 원격 클러스터에 복제할 수 있습니다. 따라서 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다. 예를 들어, 애플리케이션 데이터와<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 애플리케이션 로그라는 두 개의 하위 정합성 보장 그룹이 포함된 이라는 부모 정합성 보장<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 그룹을 생성한다고<block ref="f4834f6322c13f96b4d06d74fae1bbee" prefix=" " category="inline-code"></block> 가정합니다. 의 스냅샷은<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 15분마다 생성되며, 의 스냅샷은<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 매시간마다 생성됩니다. 부모 정합성 보장 그룹에는<block ref="d6faa7ca58e81c6f13095e4f9ff20e81" prefix=" " category="inline-code"></block> 및<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 의 스냅샷을 24시간마다 원격 클러스터에 복제하는 SnapMirror 정책이<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 있습니다. 부모 정합성 보장<block ref="f4834f6322c13f96b4d06d74fae1bbee" prefix=" " category="inline-code"></block> 그룹은 단일 유닛으로 관리되고 하위 정합성 보장 그룹은 별도의 유닛으로 관리됩니다.</block>
+  <block id="5c31d135ad789e411ad759e0c134e359" category="section-title">기존 일관성 그룹을 부모 일관성 그룹으로 변환합니다</block>
+  <block id="ab5220486193aa4a04c53d18e19056fc" category="paragraph">스토리지 유닛은 부모 정합성 보장 그룹에 직접 연결할 수 없습니다. 기존 정합성 보장 그룹을 상위 정합성 보장 그룹으로 변환하면 새 하위 정합성 보장 그룹이 생성되고 변환된 정합성 보장 그룹에 속하는 스토리지 유닛이 새 하위 정합성 보장 그룹으로 이동됩니다.</block>
+  <block id="9bb9a0458dabe990942bf493592cb497" category="list-text">부모 일관성 그룹으로 변환할 일관성 그룹 위에 마우스를 놓습니다.</block>
+  <block id="ec57f29bebbe66441595e764308d00a6" category="list-text">을 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * 부모 정합성 보장 그룹으로 상향 이동 * 을 선택합니다.</block>
+  <block id="e0e1d719c3169a36adccf812d315cc3d" category="list-text">부모 일관성 그룹의 이름을 입력하거나 기본 이름을 그대로 둔 다음, 일관성 그룹 구성 요소 유형을 선택합니다.</block>
+  <block id="3073e32eb6f2f0cb69e9248a5f0c848c" category="list-text">승격 * 을 선택합니다.</block>
+  <block id="f61d709beaccfca851c4fd737b049a61" category="paragraph">부모 일관성 그룹 아래에 하위 일관성 그룹을 추가로 생성할 수 있습니다. 또한 부모 일관성 그룹을 지리적으로 원격 위치에 복사하여 백업 및 재해 복구를 수행할 수도 있습니다<block ref="c9073dd826fc7721b98f9930c55d01b2" category="inline-link-macro-rx"></block>.</block>
+  <block id="f28898d3cd8988ff697e782c8449eb18" category="paragraph">하위 정합성 보장 그룹을 생성하면 부모 레벨의 모든 하위 정합성 보장 그룹에 복제 정책을 적용하는 동시에 각 하위 계층에 개별 스냅샷 정책을 적용할 수 있습니다.</block>
+  <block id="34dd18f2c196dd45fa9dfab7e7517350" category="paragraph">새 일관성 그룹 또는 기존 일관성 그룹에서 하위 일관성 그룹을 생성할 수 있습니다.</block>
+  <block id="643328739ada7596678f9066cec81be9" category="open-title">방법을 자세히 소개합니다</block>
+  <block id="d7c5fedb6bb1501de8279366644bdd86" category="list-text">하위 정합성 보장 그룹을 추가할 부모 정합성 보장 그룹 위로 마우스를 가져갑니다.</block>
+  <block id="f51c3dd065cb4f7804909df96d48e637" category="list-text">을 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * 새 하위 정합성 보장 그룹 추가 * 를 선택합니다.</block>
+  <block id="1e01b7d6c9d4045d5d60b1701e87a5f6" category="list-text">자식 정합성 보장 그룹의 이름을 입력하거나 기본 이름을 그대로 둔 다음 정합성 보장 그룹 구성 요소 유형을 선택합니다.</block>
+  <block id="fd11eccc6260851a0ec00ec6dfe7a17e" category="list-text">기존 스토리지 유닛을 하위 정합성 보장 그룹에 추가하거나 새 스토리지 유닛을 생성하려면 선택합니다.</block>
+  <block id="214e2148a848b4d516c6f14ed1efd50d" category="paragraph">새 스토리지 유닛을 생성하는 경우 생성할 유닛 수와 유닛당 용량을 입력한 다음 호스트 정보를 입력합니다.</block>
+  <block id="34277bacf7bd7771bbb4c1c64a00dedb" category="paragraph">두 개 이상의 스토리지 유닛을 생성하는 경우 각 유닛은 동일한 용량과 동일한 호스트 운영 체제로 생성됩니다. 각 유닛에 다른 용량을 할당하려면 * 다른 용량 추가 * 를 선택합니다.</block>
+  <block id="3fb56bc224d2a0ac3d902de4d323e71a" category="open-title">방법을 자세히 알아보십시오</block>
+  <block id="9e532008425c88c7f9f600e01feb942c" category="list-text">하위 일관성 그룹을 만들 기존 일관성 그룹을 선택합니다.</block>
+  <block id="7ab1a538b156a84c113e1b25aa016aef" category="list-text"><block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 * Move from different consistency group * 을 선택합니다.</block>
+  <block id="f50d0d6201337aee6a17962f21e42153" category="paragraph">다른 일관성 그룹의 하위 그룹으로 사용할 일관성 그룹을 이미 다른 일관성 그룹의 하위 그룹으로 이동하려면 먼저 기존 부모 일관성 그룹에서 해당 일관성 그룹을 분리해야 합니다.</block>
+  <block id="b13aafb46acdbda66ede2f929c14fff7" category="list-text">하위 일관성 그룹의 새 이름을 입력하거나 기본 이름을 그대로 둔 다음, 일관성 그룹 구성 요소 유형을 선택합니다.</block>
+  <block id="767e4528802b2fbd53126bfeffbfbb47" category="list-text">부모 일관성 그룹으로 만들 기존 일관성 그룹을 선택하거나 를 선택하여 새 부모 일관성 그룹을 생성합니다.</block>
+  <block id="36a7554cab29967611589d7eefa20c88" category="paragraph">새 부모 일관성 그룹을 생성하기로 선택한 경우 부모 일관성 그룹의 이름을 입력하거나 기본 이름을 그대로 두고 일관성 애플리케이션의 구성 요소 유형을 선택합니다.</block>
+  <block id="c3eb9435da3ee7c0ac02ef30983ba9d2" category="list-text">이동 * 을 선택합니다.</block>
+  <block id="1aebd2565785840796b5b11c1362918f" category="inline-link-macro">개별 스냅샷 보호 정책을 적용합니다</block>
+  <block id="27f6c159b783eaece3b27009d252861f" category="inline-link-macro">복제 정책을 설정합니다</block>
+  <block id="5584e5580824a6a612aaebc7cae0dc13" category="paragraph">하위 일관성 그룹을 생성한 후에는 각 하위 일관성 그룹에 지정할 수 있습니다<block ref="b20e7e9a535f6a3244da85f4587a0502" category="inline-link-macro-rx"></block>. 또한 부모 정합성 보장 그룹에서 모든 하위 정합성 보장 그룹의 스냅샷을 단일 유닛으로 원격 클러스터에 복제할 수도 <block ref="cbc7b65bc979a0ca08aaa98e2dc63eda" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="4aafb19b9676db4e8aa85eb3131ac5f4" category="section-title">부모 일관성 그룹을 단일 일관성 그룹으로 강등합니다</block>
+  <block id="5837ba118b622a1f9ee732410e451284" category="paragraph">부모 정합성 보장 그룹을 단일 정합성 보장 그룹으로 이동하는 경우 연결된 하위 정합성 보장 그룹의 스토리지 유닛이 부모 정합성 보장 그룹에 추가됩니다. 하위 일관성 그룹이 삭제되고 부모가 단일 일관성 그룹으로 관리됩니다.</block>
+  <block id="dd487eacf1aba6e2726ce73064acff7b" category="list-text">강등할 부모 일관성 그룹 위에 마우스를 놓습니다.</block>
+  <block id="d26a37885a1db03d1d33fa1b32e74c25" category="list-text">를 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * 단일 정합성 보장 그룹으로 하향 이동 * 을 선택합니다.</block>
+  <block id="0b886822f169d28b04dc34a1cb55c402" category="list-text">하향 이동 * 을 선택합니다</block>
+  <block id="8eea35138709fe7cf5caaf5b5fb53a4d" category="inline-link-macro">스냅샷 정책을 추가합니다</block>
+  <block id="a4cc38b952e58f7fac916d3297d86f9f" category="paragraph"><block ref="9b6117933a7d1c9745a65ab485bb26f2" category="inline-link-macro-rx"></block> 이전에 하위 정합성 보장 그룹에 의해 관리되었던 스토리지 유닛을 보호하기 위해 강등된 정합성 보장 그룹으로 이동합니다.</block>
+  <block id="e8289e36e948e36d5aeb9297cf2c6712" category="section-title">부모 정합성 보장 그룹에서 하위 정합성 보장 그룹을 분리합니다</block>
+  <block id="a98e8367b6b0b1bc6b9fdb2658c07a83" category="paragraph">부모 일관성 그룹에서 하위 일관성 그룹을 분리하면 하위 일관성 그룹이 부모 일관성 그룹에서 제거되고 단일 일관성 그룹으로 관리됩니다. 상위 항목에 적용된 복제 정책이 분리된 하위 정합성 보장 그룹에 더 이상 적용되지 않습니다.</block>
+  <block id="94db0ec67f710fec5c7f775e299a2d6e" category="list-text">부모 일관성 그룹을 선택합니다.</block>
+  <block id="77b355d4c3903a5367febffb1d5fb080" category="list-text">분리할 하위 정합성 보장 그룹을 선택합니다.</block>
+  <block id="baffc5619c6b92cfb8bd0f06efe69615" category="list-text">를 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 모체에서 분리 * 를 선택합니다.</block>
+  <block id="43faed766403b7432cc59c42e8d49ebf" category="list-text">분리할 일관성 그룹의 새 이름을 입력하거나 기본 이름을 그대로 적용하고 일관성 그룹 애플리케이션 유형을 선택합니다.</block>
+  <block id="f9e81700c82de44e7b8b9b6bfcfbba80" category="list-text">분리 * 를 선택합니다.</block>
+  <block id="3fe9697b148df0f9994a0c38ed482555" category="inline-link-macro">복제 정책을 설정합니다</block>
+  <block id="ee498a1797cb05156ed6a63b8ff17543" category="paragraph"><block ref="2e81c1e2e7e67baddc7dd1eab1535a95" category="inline-link-macro-rx"></block> 분리된 하위 정합성 보장 그룹의 스냅샷을 단일 정합성 보장 그룹으로 원격 클러스터에 복제합니다.</block>
+  <block id="ab8f09c8990747589e661d2b7b0d3f20" category="summary">ASA R2 시스템(ASA A1K, A90, A70)은 SAN 전용 고객을 위해 간소화된 환경을 위한 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
+  <block id="2168b2f72c5b19d6c97100664276ea67" category="searchtitle">ASA A1K, A90 및 A70 시스템에 대해 알아보십시오</block>
+  <block id="a2d4e1cad7dfa6160fb66fdbda1b87c5" category="paragraph">ASA R2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. iSCSI, FC 및 NVMe/FC 프로토콜은 다중 경로를 위해 대칭 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 액티브/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 호스트와 스토리지 간의 직접 경로를 지원합니다.</block>
+  <block id="109a51a8a2c0a685a3c75a58d3c4230b" category="summary">ASA R2(ASA A1K, A90, A70) 시스템을 시작하려면 하드웨어를 설치하고 클러스터를 설정하고 데이터 액세스를 설정하고 스토리지를 프로비저닝해야 합니다.</block>
+  <block id="1e6107a968feb6567db48861306cc49f" category="searchtitle">ASA A1K, A90 및 A70 스토리지 시스템을 설치하고 설정합니다</block>
+  <block id="e5c51f544e69319bec042113911e203e" category="paragraph"><block ref="1284f4e581f500fae0f4daa3e9543a0c" category="inline-link-macro-rx"></block> ASA R2 시스템을 ONTAP 환경에 구축합니다.</block>
+  <block id="9a5e67864d1a0cbd6f43034e561f51a2" category="summary">ASA R2 스토리지 시스템의 설치 및 설정을 시작하여 ONTAP 환경에 구축합니다.</block>
+  <block id="bf0f6aa21aec3e349179a68aa2cb89e0" category="section-title">정합성 보장 그룹 클론을 분할합니다</block>
+  <block id="6227fd79476a373a893c1d081a6db13e" category="paragraph">일관성 그룹 클론을 분할하면 소스 일관성 그룹에서 클론을 분리하고 클론에 대한 디스크 공간을 할당합니다. 클론은 소스 정합성 보장 그룹과 별개로 사용할 수 있는 독립 실행형 정합성 보장 그룹이 됩니다.</block>
+  <block id="d76e4c0366befa279b219a5ee2ef2f9c" category="list-text">분할할 일관성 그룹 클론 위로 마우스를 이동합니다.</block>
+  <block id="c7146cc88efb9d4aa82ab0e52c436a48" category="list-text">Split clone * 을 선택합니다.</block>
+  <block id="54e2c4dd2b9e992b761540f131754e81" category="list-text">분할 * 을 선택합니다.</block>
+  <block id="b75f8c35975d217c69d40f46c56bb8c5" category="paragraph">클론이 소스 정합성 보장 그룹에서 분리되고 클론에 대해 디스크 공간이 할당됩니다.</block>
+  <block id="9ebaaa53fbc9e58c2b9ee7ad84f3ada8" category="doc">ASA R2 스토리지 시스템에서 스토리지 유닛 이동</block>
+  <block id="aa2588a0578a9bf3830dd720f8969abf" category="paragraph">스토리지 가용 영역의 공간이 부족한 경우 스토리지 유닛을 다른 스토리지 가용 영역으로 이동하여 클러스터 전체의 스토리지 사용률을 조정할 수 있습니다.</block>
+  <block id="d4ec5e86ec36bfd751dc7ae22931f6a3" category="paragraph">스토리지 유닛이 온라인 상태이고 데이터를 제공하는 동안 스토리지 유닛을 이동할 수 있습니다. 이동 작업은 무중단으로 수행됩니다.</block>
+  <block id="3df7f1089e4d9e422795c1f9b7ebd7cb" category="list-text">ONTAP 9.16.1 이상을 실행 중이어야 합니다.</block>
+  <block id="89f5399d31e98d41d9ed3262351036ba" category="list-text">클러스터는 4개 이상의 노드로 구성되어야 합니다.</block>
+  <block id="75c802412c81363d98f12df3afdd41ee" category="list-text">System Manager에서 * Storage * 를 선택한 다음 이동할 스토리지 유닛을 선택합니다.</block>
+  <block id="d5ea13be4cb9332cce8fc578618d94de" category="list-text">을 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * Move * 를 선택합니다.</block>
+  <block id="fdc877319615730d39477cdaa8dc7207" category="list-text">스토리지 유닛을 이동할 스토리지 가용 영역을 선택한 다음 * Move * 를 선택합니다.</block>
+  <block id="a48688c54c854235d38fe4b42f162152" category="paragraph">지정한 운영 체제에서 실행 중인 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP에서 자동으로 새 호스트 그룹을 생성합니다.</block>
+  <block id="12a1557d26fa34ac5e904bc3e60b0bf4" category="list-text">스토리지 및 최적화 * 에서 * 서비스 품질(QoS) * 옆의 를 선택합니다<block ref="b3b2ed9f542d1ec15ba7a198ec58e0b4" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="2cb253331363d78b30ad71dd5d7edd19" category="paragraph">기본 성능 서비스 수준을 변경합니다.</block>
+  <block id="550794613b3e2574a3e7ea8c2b3d0529" category="paragraph">ASA R2 시스템은 두 가지 성능 수준을 제공합니다. 기본 성능 수준은 사용 가능한 최고 수준인 * Extreme * 입니다. 성능 수준을 * 성능 * 으로 낮출 수 있습니다.</block>
+  <block id="337c483d117ff7e78ed214b1799b666f" category="list-text">Storage and optimization * 에서 * Performance service level * 옆에 있는 를 선택합니다<block ref="b3b2ed9f542d1ec15ba7a198ec58e0b4" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="06a4e0373e144570a83a3fcfaa55ff46" category="list-text">성능 * 을 선택합니다.</block>
+  <block id="c20ad4d76fe97759aa27a0c99bff6710" category="cell">12</block>
+  <block id="455f024d5e786170a224f947b09bd74a" category="section-title">스토리지 가용 영역 활용률 모니터링</block>
+  <block id="9cf3716a035447d7f3920daf3ae979bd" category="paragraph">ASA R2 시스템의 각 HA 쌍은 _ 스토리지 가용성 영역 _ 이라는 공통 스토리지 풀을 사용합니다. 스토리지 가용 영역은 스토리지 시스템의 모든 가용 디스크에 액세스할 수 있으며 HA 쌍의 두 노드에 표시됩니다.</block>
+  <block id="c54830fa97aef91a8bc830d439dc004a" category="paragraph">클러스터에 4개 이상의 노드가 있는 경우 각 HA 쌍의 스토리지 가용성 영역에서 사용하는 공간의 양을 볼 수 있습니다. 2노드 클러스터에는 이 메트릭을 사용할 수 없습니다.</block>
+  <block id="dd7cd8aba78024bcc6ec1c67f3987760" category="list-text">System Manager에서 * Cluster * 를 선택한 다음 * Overview * 를 선택합니다.</block>
+  <block id="0ce03f9ea97502f3a10721575d8a9696" category="paragraph">스토리지 가용 영역 활용률에 대한 요약이 클러스터의 각 HA 쌍에 대해 표시됩니다.</block>
+  <block id="3670021e257ef0702d763c08d8b9c8b3" category="list-text">보다 자세한 메트릭을 원하는 경우 특정 스토리지 가용성을 선택합니다.</block>
+  <block id="b8e5e4895e260a0a4eeab6a3c66ae9b3" category="paragraph">개요 * 아래에 스토리지 가용 영역의 용량, 사용된 공간 및 데이터 축소율이 표시됩니다.</block>
+  <block id="97803d08cef50f43e58f978c9b2e1f08" category="paragraph">Storage units * 아래에 스토리지 가용 영역의 모든 스토리지 유닛 목록이 표시됩니다.</block>
+  <block id="c5b460be9264c217ff7aa949f8f26aab" category="inline-link-macro">저장 장치를 이동합니다</block>
+  <block id="7245821daa5af47d8243d8eee3f64b1e" category="paragraph">스토리지 가용 영역에서 공간이 부족하면 다른 스토리지 가용 영역을 계획하여 클러스터 전체에서 스토리지 사용률의 균형을 조정해야 <block ref="a3223fe003597dcfd7b6d75426783c5a" category="inline-link-macro-rx"></block>합니다.</block>
+  <block id="8010ab2f71c733c1a8013b31b901be79" category="cell">클러스터당 노드 수</block>
+  <block id="c7ae27ad054ff4d389e7c15cc82b0866" category="paragraph">클러스터당 최대 노드 수가 2개에서 12개로 늘어났습니다.</block>
+  <block id="f35462670e9b95d1e4a8748ba6872f91" category="admonition">클러스터에서 노드가 3개 이상인 ONTAP 9.16.1을 실행 중인 경우 ONTAP 9.16.0으로 되돌릴 수 없습니다.</block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="section-title">데이터 보호</block>
+  <block id="52b359b5c00e0db3bdd91a9f5c05cf7a" category="inline-link-macro">계층적 정합성 보장 그룹 지원</block>
+  <block id="410817362abc44b1b70bdc2f9f49fece" category="cell"><block ref="410817362abc44b1b70bdc2f9f49fece" category="inline-link-macro-rx"></block></block>
+  <block id="aada91e6d0de9250c4de431c33ad5116" category="cell">계층적 일관성 그룹을 사용하면 여러 하위 일관성 그룹이 포함된 부모 일관성 그룹을 생성할 수 있습니다. 따라서 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다.</block>
+  <block id="6feaf968503604ce3e0d0b4eefca6c57" category="cell">스토리지 유닛의 자동 재조정 지원</block>
+  <block id="ec84fb814253e6779e1876e18f7db731" category="cell">ONTAP은 최적의 성능 및 용량 활용도를 위해 스토리지 가용성 영역에서 스토리지 유닛의 균형을 자동으로 조정합니다.</block>
+  <block id="abdffd3ebdd2031130d1592a9a139a92" category="sidebar">NetApp ASA R2 시스템(ASA A1K, A90, A70)은 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
+  <block id="d04e5f519989e5f2ca95f9541ffe17a0" category="sidebar">ONTAP를 업그레이드합니다</block>
+  <block id="fb3dca1c5682d0eef255de24a00af0f3" category="sidebar">노드 추가</block>
+  <block id="3214e36fd00eb6d4da6f5d9b64f41cb1" category="sidebar">스토리지 유닛 관리</block>
+  <block id="611bc8bee4d5b03a55be78ab0ca75f66" category="sidebar">저장 장치를 이동합니다</block>
 </blocks>

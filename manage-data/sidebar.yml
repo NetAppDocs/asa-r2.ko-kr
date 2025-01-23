@@ -10,10 +10,14 @@ entries:
     url: "/manage-data/provision-san-storage.html"
   - title: 데이터를 복제합니다
     url: "/manage-data/data-cloning.html"
-  - title: 스토리지 유닛을 수정합니다
-    url: "/manage-data/modify-storage-units.html"
-  - title: 스토리지 유닛을 삭제합니다
-    url: "/manage-data/delete-storage-units.html"
+  - title: 스토리지 유닛 관리
+    entries:
+    - title: 스토리지 유닛을 수정합니다
+      url: "/manage-data/modify-storage-units.html"
+    - title: 저장 장치를 이동합니다
+      url: "/manage-data/move-storage-units.html"
+    - title: 스토리지 유닛을 삭제합니다
+      url: "/manage-data/delete-storage-units.html"
   - title: 보관 제한
     url: "/manage-data/storage-limits.html"
 - title: 데이터 보호

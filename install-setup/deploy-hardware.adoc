@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: install-setup/deploy-hardware.html 
-keywords: asa r2, install hardware, deploy hardware, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a70, asa a90, asa c80 
+keywords: asa r2, install hardware, deploy hardware, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a90, asa a70 
 summary: ASA R2 스토리지 시스템 및 스토리지 쉘프용 레일 키트를 설치하고 ASA R2 하드웨어를 캐비닛 또는 통신 랙에 고정하는 방법을 알아보십시오. 
 ---
 = ASA R2 스토리지 시스템을 설치합니다
