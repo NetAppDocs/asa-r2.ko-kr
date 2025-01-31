@@ -1713,7 +1713,6 @@
   <block id="ee498a1797cb05156ed6a63b8ff17543" category="paragraph"><block ref="2e81c1e2e7e67baddc7dd1eab1535a95" category="inline-link-macro-rx"></block> 분리된 하위 정합성 보장 그룹의 스냅샷을 단일 정합성 보장 그룹으로 원격 클러스터에 복제합니다.</block>
   <block id="ab8f09c8990747589e661d2b7b0d3f20" category="summary">ASA R2 시스템(ASA A1K, A90, A70)은 SAN 전용 고객을 위해 간소화된 환경을 위한 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
   <block id="2168b2f72c5b19d6c97100664276ea67" category="searchtitle">ASA A1K, A90 및 A70 시스템에 대해 알아보십시오</block>
-  <block id="a2d4e1cad7dfa6160fb66fdbda1b87c5" category="paragraph">ASA R2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. iSCSI, FC 및 NVMe/FC 프로토콜은 다중 경로를 위해 대칭 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 액티브/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 호스트와 스토리지 간의 직접 경로를 지원합니다.</block>
   <block id="109a51a8a2c0a685a3c75a58d3c4230b" category="summary">ASA R2(ASA A1K, A90, A70) 시스템을 시작하려면 하드웨어를 설치하고 클러스터를 설정하고 데이터 액세스를 설정하고 스토리지를 프로비저닝해야 합니다.</block>
   <block id="1e6107a968feb6567db48861306cc49f" category="searchtitle">ASA A1K, A90 및 A70 스토리지 시스템을 설치하고 설정합니다</block>
   <block id="e5c51f544e69319bec042113911e203e" category="paragraph"><block ref="1284f4e581f500fae0f4daa3e9543a0c" category="inline-link-macro-rx"></block> ASA R2 시스템을 ONTAP 환경에 구축합니다.</block>
@@ -1763,4 +1762,9 @@
   <block id="3214e36fd00eb6d4da6f5d9b64f41cb1" category="sidebar">스토리지 유닛 관리</block>
   <block id="611bc8bee4d5b03a55be78ab0ca75f66" category="sidebar">저장 장치를 이동합니다</block>
   <block id="ffb5ca95f1d59040ebadb90640b1970b" category="cell"><block ref="ffb5ca95f1d59040ebadb90640b1970b" category="inline-link-macro-rx"></block></block>
+  <block id="07f2a299db43ab53ccb5d7b05918e3fc" category="paragraph">ASA R2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. iSCSI, FC, NVMe/FC 및 NVMe/TCP 프로토콜은 다중 경로를 위해 대칭 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 액티브/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 호스트와 스토리지 간의 직접 경로를 지원합니다.</block>
+  <block id="30388d1a3ab1a01f6930553a577eb80b" category="section-title">프로토콜 지원</block>
+  <block id="de67fc8f6fb798124dcbf65615888af5" category="inline-link-macro">대칭 액티브/액티브 다중 경로에 대한 NVMe 지원</block>
+  <block id="ac187c37acbb455a3ec9ef006a79fdf8" category="cell"><block ref="ac187c37acbb455a3ec9ef006a79fdf8" category="inline-link-macro-rx"></block></block>
+  <block id="ac12d691d1b6c417de929f3b833cef99" category="cell">NVMe/FC 및 NVMe/TCP는 이제 다중 경로를 위한 대칭 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 액티브/최적화됩니다.</block>
 </blocks>
