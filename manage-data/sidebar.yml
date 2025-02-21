@@ -38,6 +38,8 @@ entries:
   entries:
   - title: 유휴 데이터 암호화
     url: "/secure-data/encrypt-data-at-rest.html"
+  - title: 키 관리자 간에 데이터 암호화 키를 마이그레이션합니다
+    url: "/secure-data/migrate-encryption-keys-between-key-managers.html"
   - title: 랜섬웨어 공격을 방어하십시오
     url: "/secure-data/ransomware-protection.html"
   - title: 안전한 NVMe 연결
