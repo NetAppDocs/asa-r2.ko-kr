@@ -43,6 +43,9 @@ ONTAP 9.16.1부터 지원되는 NetApp ASA R2 시스템은 다음과 같습니�
 | 업데이트 | 설명 
 
 
+| link:../secure-data/migrate-encryption-keys-between-key-managers.html["키 관리자 간 암호화 키 마이그레이션 지원"] | ONTAP 온보드 키 관리자에서 클러스터 수준의 외부 키 관리자로 전환할 경우 ONTAP CLI(Command Line Interface)를 사용하여 한 키 관리자에서 다른 키 관리자로 암호화 키를 손쉽게 마이그레이션할 수 있습니다. 
+
+
 | link:../data-protection/manage-consistency-groups.html["계층적 정합성 보장 그룹 지원"] | 계층적 일관성 그룹을 사용하면 여러 하위 일관성 그룹이 포함된 부모 일관성 그룹을 생성할 수 있습니다. 따라서 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다. 
 |===
 
