@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: install-setup/power-on-hardware.html 
-keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a90, asa a70, power on 
-summary: 각 NS224 쉘프의 전원을 켜서 고유 쉘프 ID를 할당하고 ASA R2 컨트롤러의 전원을 켜고 전원 케이블을 고정합니다. 
+keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a90, asa a70, asa a30, asa a20, asa a50, power on 
+summary: 각 쉘프의 전원을 켜서 고유 쉘프 ID를 할당하고 ASA R2 컨트롤러의 전원을 켜고 전원 케이블을 고정합니다. 
 ---
 = ASA R2 스토리지 시스템의 전원을 켭니다
 :allow-uri-read: 
@@ -17,10 +17,13 @@ ASA R2 스토리지 시스템용 랙 하드웨어를 설치하고 컨트롤러 �
 
 == 1단계: 쉘프 전원을 켜고 쉘프 ID를 할당합니다
 
-각 NS224 쉘프는 고유한 쉘프 ID로 구별됩니다. 이 ID는 쉘프가 스토리지 시스템 설정 내에서 구분되도록 합니다. 기본적으로 쉘프 ID는 '00' 및 '01'로 할당되지만 스토리지 시스템 전체에서 고유성을 유지하기 위해 이러한 ID를 조정해야 할 수도 있습니다.
+각 쉘프는 고유한 쉘프 ID로 구분됩니다. 이 ID는 쉘프가 스토리지 시스템 설정 내에서 구분되도록 합니다.
 
 .이 작업에 대해
-* 유효한 쉘프 ID는 00부터 99까지입니다.
+* 유효한 쉘프 ID는 01부터 99까지입니다.
++
+컨트롤러 내에 통합된 내부 쉘프(스토리지)가 있는 경우 고정 쉘프 ID 00이 할당됩니다.
+
 * 쉘프 ID가 적용되려면 쉘프의 전원을 껐다가 다시 켜기(두 전원 코드를 모두 뽑은 다음, 적절한 시간을 기다린 다음 다시 꽂아야 합니다).
 
 
@@ -31,7 +34,7 @@ ASA R2 스토리지 시스템용 랙 하드웨어를 설치하고 컨트롤러 �
 
 . 왼쪽 끝 캡을 제거하여 전면판 뒤의 셸프 ID 버튼에 액세스합니다.
 +
-image::../media/drw_a900_oie_change_ns224_shelf_id_ieops-836.svg[NS224 쉘프 ID를 변경합니다]
+image::../media/drw_change_ns224_shelf_id_ieops-836.svg[쉘프 ID를 변경합니다]
 
 +
 [cols="20%,80%"]
@@ -39,28 +42,28 @@ image::../media/drw_a900_oie_change_ns224_shelf_id_ieops-836.svg[NS224 쉘프 ID
 
 
  a| 
-image::../media/legend_icon_01.svg[설명선 번호 1]
+image::../media/icon_round_1.png[설명선 번호 1]
  a| 
 선반 엔드 캡
 
 
 
  a| 
-image::../media/legend_icon_02.svg[[설명 번호 2]
+image::../media/icon_round_2.png[[설명 번호 2]
  a| 
 선반 면판
 
 
 
  a| 
-image::../media/legend_icon_03.svg[[설명 번호 3]
+image::../media/icon_round_3.png[[설명 번호 3]
  a| 
 쉘프 ID 번호입니다
 
 
 
  a| 
-image::../media/legend_icon_04.svg[[설명 번호 4]
+image::../media/icon_round_4.png[[설명 번호 4]
  a| 
 쉘프 ID 버튼
 
@@ -127,32 +130,67 @@ NOTE: ID가 깜박이는 데 15초 넘게 걸린 경우 쉘프 ID 버튼을 다�
 스토리지 쉘프를 켜고 고유한 ID를 할당한 후 스토리지 컨트롤러의 전원을 켭니다.
 
 .단계
-. 랩톱을 직렬 콘솔 포트에 연결합니다. 이렇게 하면 컨트롤러가 켜져 있을 때 부팅 순서를 모니터링할 수 있습니다.
+. 랩톱을 직렬 콘솔 포트에 연결합니다. 이렇게 하면 컨트롤러의 전원이 켜져 있을 때 부팅 순서를 모니터링할 수 있습니다.
 +
 .. 노트북의 직렬 콘솔 포트를 N-8-1에서 115,200보드로 설정합니다.
 +
-
-NOTE: 직렬 콘솔 포트를 구성하는 방법에 대한 지침은 노트북의 온라인 도움말을 참조하십시오.
+직렬 콘솔 포트를 구성하는 방법에 대한 지침은 노트북의 온라인 도움말을 참조하십시오.
 
 .. 콘솔 케이블을 랩톱에 연결하고 스토리지 시스템과 함께 제공된 콘솔 케이블을 사용하여 컨트롤러의 시리얼 콘솔 포트를 연결합니다.
 .. 랩톱을 관리 서브넷의 스위치에 연결합니다.
 +
+[role="tabbed-block"]
+====
+.A1K를 참조하십시오
+--
 image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[콘솔 연결]
 
-.. 관리 서브넷에 있는 주소를 사용하여 랩톱에 TCP/IP 주소를 할당합니다.
+--
+.A70 및 A90
+--
+image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[콘솔 연결]
+
+--
+.A20, A30, A50을 지원합니다
+--
+image::../media/drw_g_isi_console_serial_port_cabling_ieops-1882.svg[콘솔 연결]
+
+--
+====
 
 
+
+
+. 관리 서브넷에 있는 주소를 사용하여 랩톱에 TCP/IP 주소를 할당합니다.
 . 전원 코드를 컨트롤러 전원 공급 장치에 연결한 다음 다른 회로의 전원 공급 장치에 연결합니다.
 +
-image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[일반 전원 연결 다이어그램]
+[role="tabbed-block"]
+====
+.A1K를 참조하십시오
+--
+image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[A1K 기억 장치 시스템 및 A70 또는 A90 전원 연결 다이어그램]
 
+--
+.A70 및 A90
+--
+image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[A1K 기억 장치 시스템 및 A70 또는 A90 전원 연결 다이어그램]
+
+--
+.A20, A30, A50을 지원합니다
+--
+image::../media/drw_psu_layout_1_ieops-1886.svg[A20 또는 A30 또는 A50 스토리지 시스템 전원 연결 다이어그램]
+
+--
+====
 +
-** 스토리지 시스템 부팅이 시작됩니다. 초기 부팅에는 최대 8분이 소요될 수 있습니다.
+** 시스템이 부팅을 시작합니다. 초기 부팅에는 최대 8분이 소요될 수 있습니다.
 ** LED가 깜박이고 팬이 시작되면서 컨트롤러에 전원이 들어오고 있음을 나타냅니다.
 ** 처음 시동할 때 팬에서 소음이 많이 발생할 수 있습니다. 시동 중 팬 소음이 정상입니다.
 
 
-. 각 전원 공급 장치의 고정 장치를 사용하여 전원 케이블을 고정합니다.
+
+
+. 각 전원 공급 장치의 고정 장치를 사용하여 전원 코드를 고정합니다.
 
 
 .다음 단계

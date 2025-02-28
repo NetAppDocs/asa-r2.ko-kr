@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: install-setup/initialize-ontap-cluster.html 
-keywords: asa r2, asa a1k, asa a90, asa a70, initialize cluster, set up cluster, ontap 
+keywords: asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, initialize cluster, set up cluster, ontap 
 summary: System Manager를 사용하여 ASA R2 시스템에서 ONTAP 클러스터를 설정하는 방법에 대해 알아보십시오. 
 searchtitle: ONTAP System Manager | ASA R2를 사용하여 ONTAP 클러스터를 설정합니다 
 ---

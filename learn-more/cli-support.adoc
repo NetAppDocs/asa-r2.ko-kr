@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: learn-more/cli-support.html 
-keywords: asa r2, asa r2, asa a1k, asa a90, a70, cli 
-summary: 'ASA R2 시스템(ASA A1K, ASA 70, ASA 90)에서는 특정 ONTAP 명령이 지원되지 않습니다.' 
+keywords: asa r2, asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20cli 
+summary: 'ASA R2 시스템(ASA A1K, ASA 90, ASA 70, ASA A50, ASA A30, ASA A20)에서는 특정 ONTAP 명령이 지원되지 않습니다.' 
 ---
 = ASA R2 스토리지 시스템에 대한 ONTAP CLI 지원
 :allow-uri-read: 
