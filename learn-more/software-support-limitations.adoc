@@ -28,7 +28,6 @@ ASA R2 시스템에서는 기본 네트워킹 LIF가 NVMe와 SCSI 호스트 간�
 * ONTAP S3 SnapMirror 및 S3 API
 * 클라우드로 SnapMirror(비동기식 및 동기식)
 * 비 ASA R2 시스템에 대한 SnapMirror(비동기식 및 동기식)입니다
-* 선택적 LUN 맵(SLM)
 
 
 .ASA R2 시스템은 다음을 지원합니다.
