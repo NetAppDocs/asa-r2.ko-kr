@@ -684,7 +684,6 @@
   <block id="e28af899651d52d4e958ed29e85f0c9c" category="list-text">DNS 이름 서버 IP 주소입니다</block>
   <block id="178e188a7017b433a79efd35d6037e4c" category="list-text">NTP 서버 IP 주소입니다</block>
   <block id="2676562cc6b0cf6c0163b1086bb1c6c9" category="list-text">데이터 서브넷 마스크</block>
-  <block id="60d902b0a36cd8bdaed2c0e3cade40ba" category="list-text">클러스터 네트워크를 검색합니다</block>
   <block id="13a5c797fb82f415ef3d13e5c012faf4" category="list-text">랩톱을 관리 스위치에 연결하고 네트워크 컴퓨터 및 장치에 액세스합니다.</block>
   <block id="098bbae74bb948e3ff3baff0a28b2546" category="list-text">파일 탐색기를 엽니다.</block>
   <block id="b43b6fc30d6fa5fad81a00f958b516dc" category="list-text">네트워크 * 를 선택한 다음 마우스 오른쪽 버튼을 클릭하고 * 새로 고침 * 을 선택합니다.</block>
@@ -1040,7 +1039,6 @@
   <block id="1749d12df3df2319d3eee218a277ff83" category="list-text">MetroCluster</block>
   <block id="f1345c9c1d33e2624cdc41782fec6885" category="list-text">오브젝트 프로토콜</block>
   <block id="372f3c3be292ea7811b9c24f14765c78" category="list-text">ONTAP S3 SnapMirror 및 S3 API</block>
-  <block id="cbb51e0b1487ab3d93d6d940a1533133" category="list-text">선택적 LUN 맵(SLM)</block>
   <block id="fa445878b9d320833cecf582e9e36c4b" category="list-title">ASA R2 시스템은 다음을 지원합니다.</block>
   <block id="7c2e86b53f6831d08fa968613cefaa23" category="list-text">SnapLock</block>
   <block id="272175c607c14852d532cd2cf2304f90" category="list-text">이중 계층 암호화</block>
@@ -1904,4 +1902,5 @@
   <block id="9e607734cbe02d05fcbdf2a8bd579b3a" category="inline-link-macro">키 관리자 간 암호화 키 마이그레이션 지원</block>
   <block id="c18d7ea3e180dd72f3fc8869a57e6376" category="cell"><block ref="c18d7ea3e180dd72f3fc8869a57e6376" category="inline-link-macro-rx"></block></block>
   <block id="86c79aae612f98a6019861f950eeb1a3" category="cell">ONTAP 온보드 키 관리자에서 클러스터 수준의 외부 키 관리자로 전환할 경우 ONTAP CLI(Command Line Interface)를 사용하여 한 키 관리자에서 다른 키 관리자로 암호화 키를 손쉽게 마이그레이션할 수 있습니다.</block>
+  <block id="f06feed69dbf0f5f7721d9ea53af616f" category="list-text">클러스터 네트워크를 검색합니다</block>
 </blocks>
