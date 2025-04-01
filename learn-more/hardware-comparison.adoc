@@ -12,9 +12,9 @@ searchtitle: ASA R2 시스템을 다른 ONTAP 시스템과 비교합니다
 
 
 [role="lead"]
-ASA R2 시스템은 All-Flash 플랫폼을 기반으로 구축된 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 통합 솔루션을 제공합니다. ASA R2 시스템은 스토리지 계층 구현 시 다른 ONTAP 시스템(ASA, AFF 및 FAS)과 다르며 지원되는 프로토콜 및 ONTAP 성격 구현 시 서로 다릅니다.
+ASA R2 시스템은 All-Flash 플랫폼을 기반으로 구축된 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 솔루션을 제공합니다. ASA R2 시스템은 스토리지 계층 구현 시 다른 ONTAP 시스템(ASA, AFF 및 FAS)과 다르며 지원되는 프로토콜 및 ONTAP 성격 구현 시 서로 다릅니다.
 
-ASA R2 시스템에서 ONTAP 소프트웨어가 간소화되어 필수 SAN 기능을 지원하는 동시에 SAN 관련 기능이 아닌 기능의 가시성과 가용성을 제한합니다. 예를 들어, ASA R2 시스템에서 실행되는 System Manager에는 NAS 클라이언트의 홈 디렉토리를 생성하는 옵션이 표시되지 않습니다. 이 간소화된 ONTAP 버전은 _ ASA R2 Personality _ 로 식별됩니다. 다른 모든 ONTAP 시스템(ASA, AFF, FAS)에서 실행되는 ONTAP는 _ 유니파이드 ONTAP Personality _ 로 식별됩니다. ONTAP 퍼스낼리티의 차이는 ONTAP 명령 참조(man 페이지), REST API 사양 및 해당되는 경우 EMS 메시지에서 참조된다.
+ASA R2 시스템에서 ONTAP 소프트웨어가 간소화되어 필수 SAN 기능을 지원하는 동시에 SAN 관련 기능이 아닌 기능의 가시성과 가용성을 제한합니다. 예를 들어, ASA R2 시스템에서 실행되는 System Manager에는 NAS 클라이언트의 홈 디렉토리를 생성하는 옵션이 표시되지 않습니다. 이 간소화된 ONTAP 버전은 _ ASA R2 Personality _ 로 식별됩니다. ASA 시스템에서 실행되는 ONTAP는 _ ASA ONTAP Personality _ 로 식별됩니다. AFF 및 FAS ONTAP 시스템에서 실행되는 ONTAP는 _ Unified ONTAP Personality _ 로 식별됩니다. ONTAP 퍼스낼리티의 차이는 ONTAP 명령 참조(man 페이지), REST API 사양 및 해당되는 경우 EMS 메시지에서 참조된다.
 
 ONTAP 스토리지의 특성은 System Manager 또는 ONTAP CLI에서 확인할 수 있습니다.
 
