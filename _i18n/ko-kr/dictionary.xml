@@ -796,8 +796,6 @@
   <block id="5dc15886a7be0b02974c471249fd2702" category="image-alt">콘솔 연결</block>
   <block id="9e7e8b48adc159107d0baf9021253c61" category="list-text">관리 서브넷에 있는 주소를 사용하여 랩톱에 TCP/IP 주소를 할당합니다.</block>
   <block id="a2e521b7ad497537c9e544a50086c51b" category="list-text">전원 코드를 컨트롤러 전원 공급 장치에 연결한 다음 다른 회로의 전원 공급 장치에 연결합니다.</block>
-  <block id="71abffb89587fc128eb09ec9ef2dd7e1" category="list-text">LED가 깜박이고 팬이 시작되면서 컨트롤러에 전원이 들어오고 있음을 나타냅니다.</block>
-  <block id="cd76e142e3adabbfc33b1de3c074b2cb" category="list-text">처음 시동할 때 팬에서 소음이 많이 발생할 수 있습니다. 시동 중 팬 소음이 정상입니다.</block>
   <block id="b01257e209b4db1591904675a969a888" category="inline-link-macro">ONTAP ASA R2 클러스터를 설정합니다</block>
   <block id="5375af62a757a5f1f0b518f2b55d638e" category="paragraph">ASA R2 스토리지 시스템을 켜면 <block ref="ad00ee8fa1dc09eacef7d17804bf3a85" category="inline-link-macro-rx"></block>됩니다.</block>
   <block id="4795c2f303b604ed82cee521ffaeb4b7" category="summary">ONTAP 환경에 ASA R2 스토리지 시스템을 설치할 준비를 하고 하드웨어를 등록하여 지원 혜택을 받으십시오.</block>
@@ -1874,7 +1872,6 @@
   <block id="891561cb838adbb7475943bc7ea20ead" category="list-text">랩톱을 직렬 콘솔 포트에 연결합니다. 이렇게 하면 컨트롤러의 전원이 켜져 있을 때 부팅 순서를 모니터링할 수 있습니다.</block>
   <block id="5d181ca91be1af691d1f01654691cc7b" category="image-alt">A1K 기억 장치 시스템 및 A70 또는 A90 전원 연결 다이어그램</block>
   <block id="d2318e267239f37a3cc57e89925b9627" category="image-alt">A20 또는 A30 또는 A50 스토리지 시스템 전원 연결 다이어그램</block>
-  <block id="e477637685baafe9bbd353f71ef51283" category="list-text">시스템이 부팅을 시작합니다. 초기 부팅에는 최대 8분이 소요될 수 있습니다.</block>
   <block id="d420064a5f4919f9be16d853c6d1997c" category="list-text">각 전원 공급 장치의 고정 장치를 사용하여 전원 코드를 고정합니다.</block>
   <block id="784289434de2772034240714a84f80a9" category="list-text">를 사용하여<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 작업장이 기억 장치 시스템의 환경 및 전기 요구 사항을 충족하는지 확인합니다.</block>
   <block id="16b6ee929559cf4a616d08d372071c4d" category="list-text">스토리지 시스템, 셸프 및 모든 스위치를 저장할 수 있는 충분한 캐비닛 또는 랙 공간이 있는지 확인합니다.</block>
@@ -1898,10 +1895,13 @@
   <block id="c18d7ea3e180dd72f3fc8869a57e6376" category="cell"><block ref="c18d7ea3e180dd72f3fc8869a57e6376" category="inline-link-macro-rx"></block></block>
   <block id="86c79aae612f98a6019861f950eeb1a3" category="cell">ONTAP 온보드 키 관리자에서 클러스터 수준의 외부 키 관리자로 전환할 경우 ONTAP CLI(Command Line Interface)를 사용하여 한 키 관리자에서 다른 키 관리자로 암호화 키를 손쉽게 마이그레이션할 수 있습니다.</block>
   <block id="f06feed69dbf0f5f7721d9ea53af616f" category="list-text">클러스터 네트워크를 검색합니다</block>
-  <block id="54ece869b1ae7921e7f18bd670ac879c" category="list-text">ASAr2 A20, A30 또는 A50 스토리지 시스템의 경우 시스템 섀시 전면에 있는 쉘프 ID가 켜지지 않습니다. 시스템의 내부 쉘프 ID는 00으로 고정되어 있습니다.</block>
   <block id="792fd8488bba0c03a6a9c46a34c7db99" category="paragraph">ASA R2 시스템은 All-Flash 플랫폼을 기반으로 구축된 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 솔루션을 제공합니다. ASA R2 시스템은 스토리지 계층 구현 시 다른 ONTAP 시스템(ASA, AFF 및 FAS)과 다르며 지원되는 프로토콜 및 ONTAP 성격 구현 시 서로 다릅니다.</block>
   <block id="6875b01c5e1cd1eaa394cb250554d067" category="paragraph">ASA R2 시스템에서 ONTAP 소프트웨어가 간소화되어 필수 SAN 기능을 지원하는 동시에 SAN 관련 기능이 아닌 기능의 가시성과 가용성을 제한합니다. 예를 들어, ASA R2 시스템에서 실행되는 System Manager에는 NAS 클라이언트의 홈 디렉토리를 생성하는 옵션이 표시되지 않습니다. 이 간소화된 ONTAP 버전은 _ ASA R2 Personality _ 로 식별됩니다. ASA 시스템에서 실행되는 ONTAP는 _ ASA ONTAP Personality _ 로 식별됩니다. AFF 및 FAS ONTAP 시스템에서 실행되는 ONTAP는 _ Unified ONTAP Personality _ 로 식별됩니다. ONTAP 퍼스낼리티의 차이는 ONTAP 명령 참조(man 페이지), REST API 사양 및 해당되는 경우 EMS 메시지에서 참조된다.</block>
   <block id="7332b2297a735d659182d1392cf28129" category="paragraph">ASA R2 시스템에서 IP, FC, NVMe/FC LIF를 생성할 수 있습니다. IP 데이터 LIF는 기본적으로 iSCSI 및 NVMe/TCP 트래픽을 모두 처리할 수 있습니다. FC 및 NVMe/FC 트래픽에는 대해 별도의 데이터 LIF를 생성해야 합니다.</block>
   <block id="fda16306cdb213cc2a2b4bf98efbf826" category="paragraph">자동 iSCSI LIF 페일오버를 활성화하려면 iSCSI 전용 트래픽에 대해 IP LIF를 생성해야 합니다. 자동 iSCSI LIF 페일오버가 사용되도록 설정된 경우 스토리지 페일오버가 발생하면 IP iSCSI LIF가 홈 노드나 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 다음, 페일오버가 완료된 후 다시 수행됩니다. 또는 IP iSCSI LIF의 포트가 정상 상태가 아닐 경우 LIF는 자동으로 현재 홈 노드의 정상 포트로 마이그레이션된 다음 포트가 다시 정상화되면 원래 포트로 다시 돌아갑니다.</block>
   <block id="25ac2a61e9eb3eec03212d96ad6b965a" category="paragraph">iSCSI LIF 페일오버를 활성화하려면 IP 프로토콜만 선택합니다.</block>
+  <block id="bca36b0a086865a5988c326bd3a3c6ef" category="list-text">시스템이 부팅 프로세스를 시작합니다. 초기 부팅 순서는 8분 정도 걸릴 수 있습니다.</block>
+  <block id="f3e09817ba15a4f8685cb156fe2ade6f" category="list-text">부팅 프로세스 중에 LED가 깜박이고 팬이 활성화되어 컨트롤러의 전원이 켜지는 것을 확인할 수 있습니다.</block>
+  <block id="86450f6a6524d00aefa9dda44e7aee80" category="list-text">처음 시동할 때 팬에서 높은 수준의 소음이 발생할 수 있습니다. 시동 중 팬 소음이 정상입니다.</block>
+  <block id="43dd17b3ea5146830157251c7508ca20" category="list-text">ASA A20, ASA A30 및 ASA A50 스토리지 시스템의 경우 시스템 섀시 전면에 있는 쉘프 ID가 켜지지 않습니다.</block>
 </blocks>
