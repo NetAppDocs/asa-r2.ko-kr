@@ -736,19 +736,14 @@
   <block id="bec12648a072f54e7209e45d72c0ba78" category="doc">ASA R2 스토리지 시스템의 설치 및 설정 워크플로우</block>
   <block id="f08e3211126883342efb2c1028678668" category="paragraph">ASA R2 시스템을 설치 및 구성하려면 하드웨어 요구 사항을 검토하고, 사이트를 준비하고, 하드웨어 구성 요소를 설치 및 케이블 연결하고, 시스템의 전원을 켜고, ONTAP 클러스터를 설정합니다.</block>
   <block id="7ccd978bf0dbca0a0746f98d09b99f7f" category="inline-link-macro">하드웨어 설치 요구 사항을 검토합니다</block>
-  <block id="6889512d643df7fa8ccfb7e52dd1181c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="90572de4b12061d10d3adbe91dd02ace" category="inline-link-macro-rx"></block></block>
   <block id="2093d28d6edc661be7e0c92b7f6452f7" category="paragraph">하드웨어 요구 사항을 검토하여 ASA R2 스토리지 시스템을 설치합니다.</block>
   <block id="654b7e4d986ad973f3c2838f5dac8c70" category="inline-link-macro">ASA R2 스토리지 시스템 설치를 준비합니다</block>
-  <block id="00c1207f2baf7dc28041d8ac249f22f9" category="paragraph-title"><block ref="444c1bf2e877f5617e8ce0a2ded57f4f" category="inline-image-macro-rx" type="image"></block><block ref="364d625567d09103e7911f1934bc8d24" category="inline-link-macro-rx"></block></block>
   <block id="50b9fda3a60203dfb56138338390ca5f" category="paragraph">ASA R2 시스템 설치를 준비하려면 현장 준비, 환경 및 전기 요구 사항 확인, 충분한 랙 공간 확보 등이 필요합니다. 그런 다음 장비의 포장을 풀고 내용물을 포장 명세서와 비교하고 하드웨어를 등록하여 지원 혜택을 받으십시오.</block>
   <block id="04e16e17799ca1597df8b649304b6740" category="inline-link-macro">ASA R2 스토리지 시스템용 하드웨어를 설치합니다</block>
-  <block id="1478911ba4fc781e8de9b3aa7b4f6979" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="65a058a30efdac510219d9d7c74f3657" category="inline-link-macro-rx"></block></block>
   <block id="2d797c4cbf8f7f6c9e87e405560d40d4" category="paragraph">하드웨어를 설치하려면 스토리지 시스템 및 셸프용 레일 키트를 설치한 다음 스토리지 시스템을 캐비닛이나 텔코 랙에 설치하고 고정합니다. 그런 다음 선반을 레일에 밀어 넣습니다. 마지막으로 케이블 관리 장치를 스토리지 시스템 후면에 연결하여 케이블을 체계적으로 배선합니다.</block>
   <block id="b5990faed003b2a8d77aecd063000d1a" category="inline-link-macro">ASA R2 스토리지 시스템의 컨트롤러와 스토리지 쉘프를 케이블로 연결합니다</block>
-  <block id="a797a5c1bc5da9127e370ca2436a30a7" category="paragraph-title"><block ref="d5b760e3b486da6aca46a9bd83d66c13" category="inline-image-macro-rx" type="image"></block><block ref="29aaf1b4e7e6610ae4790f0740e69e4e" category="inline-link-macro-rx"></block></block>
   <block id="5ff2c2e371b329794d430555ced9e3f7" category="paragraph">하드웨어를 케이블로 연결하려면 먼저 스토리지 컨트롤러를 네트워크에 연결한 다음, 컨트롤러를 스토리지 쉘프에 연결합니다.</block>
   <block id="f0458cb9a2bfe68bf005af12c17ad1aa" category="inline-link-macro">ASA R2 스토리지 시스템의 전원을 켭니다</block>
-  <block id="22d9f0a1dd203d9cd6eba27e0a348588" category="paragraph-title"><block ref="91d7076df3f3bfcf6ace71bd0aa6cf68" category="inline-image-macro-rx" type="image"></block><block ref="69d31d64dbed246448f394257b05fdb9" category="inline-link-macro-rx"></block></block>
   <block id="9adaba33c41b009e4561e4c9bfed5074" category="paragraph">컨트롤러의 전원을 켜기 전에 각 NS224 쉘프의 전원을 켜고 고유한 쉘프 ID를 할당하여 각 쉘프가 설정 내에서 고유하게 식별되는지 확인하십시오.</block>
   <block id="de4e7be8a936d1ed409fa1f461a34957" category="doc">ASA R2 스토리지 시스템의 전원을 켭니다</block>
   <block id="2b814ecf2be8542bceb68933db5cbcfe" category="paragraph">ASA R2 스토리지 시스템용 랙 하드웨어를 설치하고 컨트롤러 및 스토리지 쉘프용 케이블을 설치한 후에는 스토리지 쉘프와 컨트롤러의 전원을 켜야 합니다.</block>
@@ -1897,11 +1892,17 @@
   <block id="f06feed69dbf0f5f7721d9ea53af616f" category="list-text">클러스터 네트워크를 검색합니다</block>
   <block id="792fd8488bba0c03a6a9c46a34c7db99" category="paragraph">ASA R2 시스템은 All-Flash 플랫폼을 기반으로 구축된 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 솔루션을 제공합니다. ASA R2 시스템은 스토리지 계층 구현 시 다른 ONTAP 시스템(ASA, AFF 및 FAS)과 다르며 지원되는 프로토콜 및 ONTAP 성격 구현 시 서로 다릅니다.</block>
   <block id="6875b01c5e1cd1eaa394cb250554d067" category="paragraph">ASA R2 시스템에서 ONTAP 소프트웨어가 간소화되어 필수 SAN 기능을 지원하는 동시에 SAN 관련 기능이 아닌 기능의 가시성과 가용성을 제한합니다. 예를 들어, ASA R2 시스템에서 실행되는 System Manager에는 NAS 클라이언트의 홈 디렉토리를 생성하는 옵션이 표시되지 않습니다. 이 간소화된 ONTAP 버전은 _ ASA R2 Personality _ 로 식별됩니다. ASA 시스템에서 실행되는 ONTAP는 _ ASA ONTAP Personality _ 로 식별됩니다. AFF 및 FAS ONTAP 시스템에서 실행되는 ONTAP는 _ Unified ONTAP Personality _ 로 식별됩니다. ONTAP 퍼스낼리티의 차이는 ONTAP 명령 참조(man 페이지), REST API 사양 및 해당되는 경우 EMS 메시지에서 참조된다.</block>
-  <block id="7332b2297a735d659182d1392cf28129" category="paragraph">ASA R2 시스템에서 IP, FC, NVMe/FC LIF를 생성할 수 있습니다. IP 데이터 LIF는 기본적으로 iSCSI 및 NVMe/TCP 트래픽을 모두 처리할 수 있습니다. FC 및 NVMe/FC 트래픽에는 대해 별도의 데이터 LIF를 생성해야 합니다.</block>
   <block id="fda16306cdb213cc2a2b4bf98efbf826" category="paragraph">자동 iSCSI LIF 페일오버를 활성화하려면 iSCSI 전용 트래픽에 대해 IP LIF를 생성해야 합니다. 자동 iSCSI LIF 페일오버가 사용되도록 설정된 경우 스토리지 페일오버가 발생하면 IP iSCSI LIF가 홈 노드나 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 다음, 페일오버가 완료된 후 다시 수행됩니다. 또는 IP iSCSI LIF의 포트가 정상 상태가 아닐 경우 LIF는 자동으로 현재 홈 노드의 정상 포트로 마이그레이션된 다음 포트가 다시 정상화되면 원래 포트로 다시 돌아갑니다.</block>
   <block id="25ac2a61e9eb3eec03212d96ad6b965a" category="paragraph">iSCSI LIF 페일오버를 활성화하려면 IP 프로토콜만 선택합니다.</block>
   <block id="bca36b0a086865a5988c326bd3a3c6ef" category="list-text">시스템이 부팅 프로세스를 시작합니다. 초기 부팅 순서는 8분 정도 걸릴 수 있습니다.</block>
   <block id="f3e09817ba15a4f8685cb156fe2ade6f" category="list-text">부팅 프로세스 중에 LED가 깜박이고 팬이 활성화되어 컨트롤러의 전원이 켜지는 것을 확인할 수 있습니다.</block>
   <block id="86450f6a6524d00aefa9dda44e7aee80" category="list-text">처음 시동할 때 팬에서 높은 수준의 소음이 발생할 수 있습니다. 시동 중 팬 소음이 정상입니다.</block>
   <block id="43dd17b3ea5146830157251c7508ca20" category="list-text">ASA A20, ASA A30 및 ASA A50 스토리지 시스템의 경우 시스템 섀시 전면에 있는 쉘프 ID가 켜지지 않습니다.</block>
+  <block id="c8aaa99aa53241360c3c889fc0ceba93" category="paragraph">ASA R2 시스템에서 IP, FC 및 NVMe/FC LIF를 생성할 수 있습니다. IP 데이터 LIF는 기본적으로 iSCSI 및 NVMe/TCP 트래픽을 모두 처리할 수 있습니다. FC 및 NVMe/FC 트래픽에는 대해 별도의 데이터 LIF를 생성해야 합니다.</block>
+  <block id="f137f93169cc0e3caf4322bfd35b3f03" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="90572de4b12061d10d3adbe91dd02ace" category="inline-link-macro-rx"></block></block>
+  <block id="9938ec4aaa5e9affe1e87bdd3406a54f" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="364d625567d09103e7911f1934bc8d24" category="inline-link-macro-rx"></block></block>
+  <block id="0b226b2a00795026190da142779bab13" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> <block ref="65a058a30efdac510219d9d7c74f3657" category="inline-link-macro-rx"></block></block>
+  <block id="b78c98e70e341751d6f58db28ecec461" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="29aaf1b4e7e6610ae4790f0740e69e4e" category="inline-link-macro-rx"></block></block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
+  <block id="77aa123fc5c68731cdf628d8e9c75afc" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> <block ref="69d31d64dbed246448f394257b05fdb9" category="inline-link-macro-rx"></block></block>
 </blocks>
