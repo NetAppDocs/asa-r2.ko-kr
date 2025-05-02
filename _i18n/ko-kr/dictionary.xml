@@ -1905,4 +1905,17 @@
   <block id="b78c98e70e341751d6f58db28ecec461" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="29aaf1b4e7e6610ae4790f0740e69e4e" category="inline-link-macro-rx"></block></block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
   <block id="77aa123fc5c68731cdf628d8e9c75afc" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> <block ref="69d31d64dbed246448f394257b05fdb9" category="inline-link-macro-rx"></block></block>
+  <block id="43be05fcb9765d24f8081a2284f82de7" category="summary">ASA R2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안(IPsec)을 구성하여 데이터 보안을 강화할 수 있습니다.</block>
+  <block id="95f5e5110bbbc9d987c115097008c227" category="doc">ASA R2 스토리지 시스템에서 IP 연결을 보호합니다</block>
+  <block id="c10f6cdf89366933afe9e0a05f726423" category="paragraph">ASA R2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안(IPsec)을 구성하여 데이터 보안을 강화할 수 있습니다. IPsec은 전송 중 데이터 암호화, IP 수준에서 네트워크 엔드포인트 간에 흐르는 트래픽에 대한 인증, 데이터에 대한 재생 및 악의적인 가로채기 공격으로부터 보호하는 인터넷 표준입니다.</block>
+  <block id="602c5938acf67898ca9af2011ec2c721" category="paragraph">ASA R2 시스템의 경우 iSCSI 및 NVMe/TCP 호스트에 IPsec을 사용할 수 있습니다.</block>
+  <block id="a0304825371175c4b6363207289817a6" category="paragraph">특정 ASA R2 시스템에서는 암호화 및 무결성 검사와 같은 여러 암호화 작업을 지원되는 NIC(Network Interface Controller) 카드로 오프로드할 수 있습니다. NIC 카드로 오프로드된 작업의 처리량은 약 5% 이하입니다. 이를 통해 IPsec으로 보호되는 네트워크 트래픽의 성능과 처리량을 크게 향상시킬 수 있습니다.</block>
+  <block id="1d0cc018fd5504976c79bca7bbffc647" category="paragraph">다음 ASA R2 시스템에서 하드웨어 오프로드에 대해 지원되는 NIC 카드는 다음과 같습니다.</block>
+  <block id="90dda976d3b078f124db5239495ee246" category="cell">지원되는 NIC 카드</block>
+  <block id="fde1abb5537b55c34521d414267b3f70" category="cell">ASA r2 시스템</block>
+  <block id="9709e8dba9666b1074d2084b0d7f0020" category="paragraph">X50131A - (2p, 40G/100G/200g/400G 이더넷 컨트롤러)</block>
+  <block id="078fcdf403281df3fd9849a79a715dc5" category="paragraph">X60132A - (4P, 10G/25G 이더넷 컨트롤러)</block>
+  <block id="68852b93a73d565bf943b2e28d4c653b" category="inline-link-macro">ONTAP 네트워크에 대한 IP 보안을 구성합니다</block>
+  <block id="22935e4bd8297da6bdfa32067fc7243c" category="paragraph"><block ref="22935e4bd8297da6bdfa32067fc7243c" category="inline-link-macro-rx"></block></block>
+  <block id="0a0e33e3bee1123a43e4178aad30ed45" category="sidebar">보안 IP 연결</block>
 </blocks>

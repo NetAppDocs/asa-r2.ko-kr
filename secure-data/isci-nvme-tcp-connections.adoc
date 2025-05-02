@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: secure-data/iscsi-nvme-tcp-connections.html 
+keywords: asa r2, secure data, data security, encrypt, data at rest, data-at-rest, encryption, iscsi, nvme/tcp, ipsec, data-in-flight, ip security, secure connections, secure data connections, hardware offload 
+summary: 'ASA R2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안(IPsec)을 구성하여 데이터 보안을 강화할 수 있습니다.' 
+---
+= ASA R2 스토리지 시스템에서 IP 연결을 보호합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안(IPsec)을 구성하여 데이터 보안을 강화할 수 있습니다. IPsec은 전송 중 데이터 암호화, IP 수준에서 네트워크 엔드포인트 간에 흐르는 트래픽에 대한 인증, 데이터에 대한 재생 및 악의적인 가로채기 공격으로부터 보호하는 인터넷 표준입니다.
+
+ASA R2 시스템의 경우 iSCSI 및 NVMe/TCP 호스트에 IPsec을 사용할 수 있습니다.
+
+특정 ASA R2 시스템에서는 암호화 및 무결성 검사와 같은 여러 암호화 작업을 지원되는 NIC(Network Interface Controller) 카드로 오프로드할 수 있습니다. NIC 카드로 오프로드된 작업의 처리량은 약 5% 이하입니다. 이를 통해 IPsec으로 보호되는 네트워크 트래픽의 성능과 처리량을 크게 향상시킬 수 있습니다.
+
+다음 ASA R2 시스템에서 하드웨어 오프로드에 대해 지원되는 NIC 카드는 다음과 같습니다.
+
+[cols="2"]
+|===
+| 지원되는 NIC 카드 | ASA r2 시스템 
+
+
+ a| 
+X50131A - (2p, 40G/100G/200g/400G 이더넷 컨트롤러)
+ a| 
+* ASA A1K 를 참조하십시오
+* ASA A90 를 참조하십시오
+* ASA A70 를 참조하십시오
+
+
+
+
+ a| 
+X60132A - (4P, 10G/25G 이더넷 컨트롤러)
+ a| 
+* ASA A50
+* ASA A30
+* ASA A20
+
+
+|===
+관련 정보
+
+link:https://docs.netapp.com/us-en/ontap/networking/ipsec-configure.html["ONTAP 네트워크에 대한 IP 보안을 구성합니다"]
