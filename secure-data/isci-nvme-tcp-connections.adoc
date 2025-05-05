@@ -43,6 +43,5 @@ X60132A - (4P, 10G/25G 이더넷 컨트롤러)
 
 
 |===
-관련 정보
-
+.다음 단계
 link:https://docs.netapp.com/us-en/ontap/networking/ipsec-configure.html["ONTAP 네트워크에 대한 IP 보안을 구성합니다"]
