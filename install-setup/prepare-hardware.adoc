@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: install-setup/prepare-hardware.html 
-keywords: prepare, hardware installation, aff a1k, aff a70, aff a90, aff c80, asa r2, asa a1k, asa a90, asa a70, asa a30, asa a20, asa a50 
+keywords: prepare, hardware installation, aff a1k, aff a70, aff a90, aff c80, asa r2, asa a1k, asa a90, asa a70, asa a30, asa a20, asa a50, asa c30 
 summary: ONTAP 환경에 ASA R2 스토리지 시스템을 설치할 준비를 하고 하드웨어를 등록하여 지원 혜택을 받으십시오. 
 ---
 = ASA R2 스토리지 시스템 설치를 준비합니다
@@ -42,6 +42,14 @@ ASA R2 스토리지 시스템을 설치하려면 사용하려는 사이트와 �
 
 --
 .A20, A30, A50을 지원합니다
+--
+** 스토리지 시스템의 경우 2U
+** NS224 스토리지 쉘프당 2U
+** 대부분의 스위치는 1U
+
+
+--
+.C30를 참조하십시오
 --
 ** 스토리지 시스템의 경우 2U
 ** NS224 스토리지 쉘프당 2U

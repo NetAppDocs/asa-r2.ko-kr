@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: install-setup/power-on-hardware.html 
-keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a90, asa a70, asa a30, asa a20, asa a50, power on 
+keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a90, asa a70, asa a30, asa a20, asa a50, asa c30, power on 
 summary: 각 쉘프의 전원을 켜서 고유 쉘프 ID를 할당하고 ASA R2 컨트롤러의 전원을 켜고 전원 케이블을 고정합니다. 
 ---
 = ASA R2 스토리지 시스템의 전원을 켭니다
@@ -156,6 +156,11 @@ image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[콘솔 연결]
 image::../media/drw_g_isi_console_serial_port_cabling_ieops-1882.svg[콘솔 연결]
 
 --
+.C30를 참조하십시오
+--
+image::../media/drw_g_isi_console_serial_port_cabling_ieops-1882.svg[콘솔 연결]
+
+--
 ====
 
 
@@ -181,12 +186,17 @@ image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[A1K 기억 장치 �
 image::../media/drw_psu_layout_1_ieops-1886.svg[A20 또는 A30 또는 A50 스토리지 시스템 전원 연결 다이어그램]
 
 --
+.C30를 참조하십시오
+--
+image::../media/drw_psu_layout_1_ieops-1886.svg[A20 또는 A30 또는 A50 스토리지 시스템 전원 연결 다이어그램]
+
+--
 ====
 +
 ** 시스템이 부팅 프로세스를 시작합니다. 초기 부팅 순서는 8분 정도 걸릴 수 있습니다.
 ** 부팅 프로세스 중에 LED가 깜박이고 팬이 활성화되어 컨트롤러의 전원이 켜지는 것을 확인할 수 있습니다.
 ** 처음 시동할 때 팬에서 높은 수준의 소음이 발생할 수 있습니다. 시동 중 팬 소음이 정상입니다.
-** ASA A20, ASA A30 및 ASA A50 스토리지 시스템의 경우 시스템 섀시 전면에 있는 쉘프 ID가 켜지지 않습니다.
+** ASA A20, A30, A50 및 ASA C30 스토리지 시스템의 경우 시스템 섀시 전면의 선반 ID 디스플레이가 켜지지 않습니다.
 
 
 

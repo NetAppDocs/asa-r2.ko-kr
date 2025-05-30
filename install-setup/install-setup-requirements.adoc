@@ -52,14 +52,21 @@ image::../media/drw_a1k_weight_caution_ieops-1698.svg[ASA A1K 인양 주의 아�
 --
 ASA A70 또는 ASA A90 저장 장치 시스템의 무게는 최대 68.8kg(151.68파운드)입니다. 보관 시스템을 인양하려면 네 명 또는 유압 리프트를 사용합니다.
 
-image::../media/drw_a70-90_weight_icon_ieops-1730.svg[ASA A90 를 참조하십시오]
+image::../media/drw_a70-90_weight_icon_ieops-1730.svg[ASA A90 ASA A70 체중 주의 아이콘]
 
 --
 .A20, A30, A50을 지원합니다
 --
 ASA A20, ASA A30 또는 ASA A50 저장 장치 시스템의 무게는 최대 27.9kg(61.5lbs)입니다. 보관 시스템을 인양하려면 두 사람 또는 유압 리프트를 사용합니다.
 
-image::../media/drw_g_lifting_weight_ieops-1831.svg[ASA A20,A30,or an A50 weight caution icon]
+image::../media/drw_g_lifting_weight_ieops-1831.svg[ASA A20 A30 A50 중량 주의 아이콘]
+
+--
+.C30를 참조하십시오
+--
+ASA C30 저장 장치 시스템의 무게는 최대 27.9kg(61.5파운드)입니다. 보관 시스템을 인양하려면 두 사람 또는 유압 리프트를 사용합니다.
+
+image::../media/drw_g_lifting_weight_ieops-1831.svg[ASA A20 A30 또는 A50 중량 주의 아이콘]
 
 --
 ====
