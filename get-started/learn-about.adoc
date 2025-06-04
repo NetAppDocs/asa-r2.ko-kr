@@ -1,9 +1,9 @@
 ---
 sidebar: sidebar 
 permalink: get-started/learn-about.html 
-keywords: asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, learn more, learn about, get started 
-summary: 'ASA R2 시스템(ASA A1K, A90, A70, A50, A30, A20)은 SAN 전용 고객을 위해 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.' 
-searchtitle: ASA A1K, A90, A70, A50, A30 및 A20 시스템에 대해 알아봅니다 
+keywords: asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, asa c30, learn more, learn about, get started 
+summary: 'ASA r2 시스템(ASA A1K, A90, A70, A50, A30, A20, C30)은 SAN 전용 고객에게 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.' 
+searchtitle: ASA A1K, A90, A70, A50, A30 A20 및 C30 시스템에 대해 알아보세요. 
 ---
 = ASA R2 스토리지 시스템에 대해 알아보십시오
 :allow-uri-read: 
@@ -22,6 +22,7 @@ NetApp ASA R2 시스템은 통합 하드웨어 및 소프트웨어 솔루션을 
 * ASA A50
 * ASA A30
 * ASA A20
+* ASA C30
 
 
 ASA R2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. iSCSI, FC, NVMe/FC 및 NVMe/TCP 프로토콜은 다중 경로를 위해 대칭 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 액티브/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 호스트와 스토리지 간의 직접 경로를 지원합니다.

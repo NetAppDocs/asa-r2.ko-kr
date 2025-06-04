@@ -1,9 +1,9 @@
 ---
 sidebar: sidebar 
 permalink: get-started/quick-start.html 
-keywords: asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, get started, getting started, quick start, install, set up 
-summary: 'ASA R2(ASA A1K, A90, A70, A50, A30, A20) 시스템을 시작하려면 하드웨어를 설치하고 클러스터를 설정하고 데이터 액세스를 설정하고 스토리지를 프로비저닝해야 합니다.' 
-searchtitle: ASA A1K, A90, A70, A50, A30 및 A20 스토리지 시스템을 설치하고 설정합니다 
+keywords: asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, asa c30, get started, getting started, quick start, install, set up 
+summary: 'ASA r2(ASA A1K, A90, A70, A50, A30, A20, C30) 시스템을 시작하려면 하드웨어를 설치하고, 클러스터를 설정하고, 데이터 액세스를 설정하고, 스토리지를 프로비저닝하세요.' 
+searchtitle: ASA A1K, A90, A70, A50, A30, A20 및 C30 스토리지 시스템 설치 및 설정 
 ---
 = ASA R2 스토리지 시스템의 빠른 시작
 :allow-uri-read: 

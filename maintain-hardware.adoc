@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: maintain-hardware.html 
-keywords: asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, maintain, hardware 
+keywords: asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, asa c30, maintain, hardware 
 summary: ASA R2 시스템에서 유지 관리 절차를 수행하는 방법에 대해 알아봅니다. 
 ---
 = ASA R2 스토리지 시스템을 유지 관리합니다

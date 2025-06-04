@@ -184,29 +184,20 @@
   <block id="b1fa95bfdd87d26ef5f8aca8df282454" category="paragraph">ONTAP는 기본적으로 ASA R2 시스템에서 펌웨어 및 시스템 파일을 자동으로 다운로드하고 업데이트합니다. 권장 업데이트를 다운로드하여 설치하기 전에 유연하게 확인할 수 있는 경우 ONTAP System Manager를 사용하여 자동화된 업데이트를 사용하지 않도록 설정하거나 업데이트 매개 변수를 편집하여 작업을 수행하기 전에 사용 가능한 업데이트 알림을 표시할 수 있습니다.</block>
   <block id="9543e3c5ee671be608b8d7358d2905b4" category="section-title">자동 업데이트를 활성화합니다</block>
   <block id="16dd8aa4e8a61c5fff4660292af260d6" category="paragraph">스토리지 펌웨어, SP/BMC 펌웨어 및 시스템 파일에 대한 권장 업데이트는 기본적으로 ASA R2 시스템에 자동으로 다운로드되고 설치됩니다. 자동 업데이트를 사용하지 않도록 설정한 경우 기본 동작을 복원하도록 설정할 수 있습니다.</block>
-  <block id="61afff9f522bbf671738bb412c8fe956" category="list-text">자동 업데이트 * 옆에 있는 * 를 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 사용 * 을 선택합니다.</block>
-  <block id="a05df79f4b35e5abaa3bdc88c372d245" category="list-text">EULA를 읽고 동의합니다.</block>
-  <block id="e96b4d3ae2048d6e0ab6b5175cdc67ba" category="list-text">기본값을 그대로 사용하여 펌웨어 및 시스템 파일을 자동으로 업데이트합니다. 필요한 경우 알림을 표시하거나 권장 업데이트를 자동으로 해제하려면 을 선택합니다.</block>
   <block id="17ac6cdd9934a4f4aca00f5228a64555" category="list-text">업데이트 수정이 모든 현재 및 향후 업데이트에 적용됨을 확인하려면 선택합니다.</block>
   <block id="7ae6e72fcf95f7e0b8f4dbe1153d8398" category="paragraph">업데이트 선택 항목에 따라 권장 업데이트가 자동으로 다운로드되고 ASA R2 시스템에 설치됩니다.</block>
   <block id="5de0adb95551ff3c1458ae6247a4959f" category="section-title">자동 업데이트를 비활성화합니다</block>
   <block id="6141cdc0ba26479d87d6b8c24af9fc18" category="paragraph">권장 업데이트를 설치하기 전에 유연하게 볼 수 있도록 하려면 자동 업데이트를 사용하지 않도록 설정합니다. 자동 업데이트를 비활성화하는 경우 펌웨어 및 시스템 파일 업데이트를 수동으로 수행해야 합니다.</block>
-  <block id="292eff21b210f8e769ea67e93af60cc2" category="list-text">자동 업데이트 * 옆에 있는 * 를 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 사용 안 함 * 을 선택합니다.</block>
   <block id="3a73131e5e1a3a498c8e055e84a30f60" category="paragraph">자동 업데이트를 사용할 수 없습니다. 권장 업데이트를 정기적으로 확인하고 수동 설치를 수행할지 결정해야 합니다.</block>
   <block id="e8b8aa5f70e0a4459ca2284f8da3b813" category="section-title">자동 업데이트를 봅니다</block>
   <block id="6edf33a55c81d08e5aac13aae918832c" category="paragraph">클러스터에 다운로드되고 자동 설치가 예약된 펌웨어 및 시스템 파일 업데이트 목록을 봅니다. 이전에 자동으로 설치된 업데이트도 볼 수 있습니다.</block>
-  <block id="abd4e9614ca55c29d3b65381570676f5" category="list-text">자동 업데이트 * 옆에 있는 * 를 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 모든 자동 업데이트 보기 * 를 선택합니다.</block>
   <block id="c5f5044ff24461ba8a4e4a6bc2887bd0" category="section-title">자동 업데이트를 편집합니다</block>
   <block id="aa32761812c5105416e1c8de6901bbf8" category="paragraph">스토리지 펌웨어, SP/BMC 펌웨어 및 시스템 파일에 대한 권장 업데이트를 클러스터에 자동으로 다운로드하고 설치하도록 선택하거나 권장 업데이트를 자동으로 해제하도록 선택할 수 있습니다. 업데이트 설치 또는 해제를 수동으로 제어하려면 권장 업데이트가 있을 때 알림을 받도록 선택합니다. 그런 다음 수동으로 선택하여 설치하거나 해제할 수 있습니다.</block>
-  <block id="72c17efc027d7f0c3f48d02c16886905" category="list-text">자동 업데이트 * 옆에 있는 * <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>자동 업데이트 * 를 선택한 다음 * 자동 업데이트 편집 * 을 선택합니다.</block>
   <block id="820669251a6d9aa8a265e4aa20459cdf" category="list-text">자동 업데이트 선택 사항을 업데이트합니다.</block>
   <block id="aed3f23a5ce94e81514a2da9dce9b2ef" category="paragraph">자동 업데이트는 사용자의 선택에 따라 수정됩니다.</block>
   <block id="d51f54f2a9182b10cea278ae35000b46" category="section-title">펌웨어를 수동으로 업데이트합니다</block>
   <block id="bc1104446ea3d0b83abd00c11e939335" category="paragraph">권장 업데이트를 다운로드 및 설치하기 전에 유연하게 볼 수 있도록 하려면 자동 업데이트를 비활성화하고 펌웨어를 수동으로 업데이트할 수 있습니다.</block>
   <block id="bf48a37237272ddc300e21b45b8971dc" category="list-text">펌웨어 업데이트 파일을 서버 또는 로컬 클라이언트에 다운로드합니다.</block>
-  <block id="484bee1f3996418a874aa526da0b5753" category="list-text">System Manager에서 * 클러스터 &gt; 개요 * 를 선택한 다음 * 업데이트 * 를 선택합니다.</block>
-  <block id="e5f510366eded3b692a9273af6f6bd62" category="inline-image-macro">더하기 기호 다음에 흰색 글자로 펌웨어 업데이트 라는 단어가 있는 파란색 사각형입니다</block>
-  <block id="1c6248c9b917dc357a68441deb105f78" category="list-text">펌웨어 업데이트 * 를 선택하고 선택합니다<block ref="86ace020e2f51d5cc4db2b665d9f2405" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="70bd8d7d7e01ac7ceebd8e8ba2be8da6" category="paragraph">펌웨어가 업데이트됩니다.</block>
   <block id="a8d696bbc3e0da20e552c1bb59ce8581" category="doc">ASA R2 스토리지 시스템에서 사용자 계정 및 역할을 관리합니다</block>
   <block id="26c63dfee3232ccec05fbebd34b103b5" category="paragraph">System Manager를 사용하여 사용자 계정에 대한 Active Directory 도메인 컨트롤러 액세스, LDAP 및 SAML 인증을 구성합니다. 사용자 계정 역할을 생성하여 역할에 할당된 사용자가 클러스터에서 수행할 수 있는 특정 기능을 정의합니다.</block>
@@ -1724,14 +1715,10 @@
   <block id="cc1a9524f9ddd8574a5553ccd90ee9c3" category="paragraph">ONTAP CLI(Command Line Interface)를 사용하여 클러스터 수준의 키 관리자와 스토리지 VM 레벨의 키 관리자 간에 키를 마이그레이션할 수 있습니다.</block>
   <block id="5efbf2392161773688bf42568dd2c8c6" category="list-text">키를 마이그레이션합니다.</block>
   <block id="f7d82610ce1c76769575f4a95bb11e80" category="sidebar">키 관리자 간에 데이터 암호화 키를 마이그레이션합니다</block>
-  <block id="77a58a8f042eca52cbae63333451e567" category="summary">ASA R2 시스템(ASA A1K, A90, A70, A50, A30, A20)은 SAN 전용 고객을 위해 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
-  <block id="16b2362ce213edbe317b5df3169d035c" category="searchtitle">ASA A1K, A90, A70, A50, A30 및 A20 시스템에 대해 알아봅니다</block>
   <block id="feb8007866385642b73ef1e6524ba327" category="paragraph">NetApp ASA R2 시스템은 통합 하드웨어 및 소프트웨어 솔루션을 제공하여 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공합니다.</block>
   <block id="3ee9bc9a210bd85fa921ca63bdeef612" category="list-text">ASA A50</block>
   <block id="e21bdbd552261278be0a5ad02fbc6fa7" category="list-text">ASA A30</block>
   <block id="3c609b480f1311eaec9774146ac50e79" category="list-text">ASA A20</block>
-  <block id="eb020f30ead1b473ff4a75c9863c0d1a" category="summary">ASA R2(ASA A1K, A90, A70, A50, A30, A20) 시스템을 시작하려면 하드웨어를 설치하고 클러스터를 설정하고 데이터 액세스를 설정하고 스토리지를 프로비저닝해야 합니다.</block>
-  <block id="e25344cc16f12d622f2af42aea8ed7a8" category="searchtitle">ASA A1K, A90, A70, A50, A30 및 A20 스토리지 시스템을 설치하고 설정합니다</block>
   <block id="b3a1e3cfc607694cb423d46b8b23fa54" category="paragraph">스토리지 시스템을 네트워크 스위치에 연결하는 방법에 대한 자세한 내용은 네트워크 관리자에게 문의하십시오.</block>
   <block id="28c4b42113d6ebd3c5e6ca40929d04a6" category="list-text">케이블 연결 그래픽에는 포트에 커넥터를 삽입할 때 케이블 커넥터 당김 탭의 올바른 방향(위 또는 아래)을 나타내는 화살표 아이콘이 있습니다.</block>
   <block id="fd2cb99acafb4f0144bfb5e0e4c31373" category="paragraph">커넥터를 삽입할 때 딸깍 소리가 들려야 합니다. 딸깍 소리가 안 되면 커넥터를 제거하고 뒤집은 다음 다시 시도하십시오.</block>
@@ -1864,9 +1851,7 @@
   <block id="676b7066692787a119854c062d5f6c05" category="list-text">각 컨트롤러 또는 일부 시스템의 경우, 각 컨트롤러의 시스템 관리 모듈에 표시됩니다</block>
   <block id="3b2136486adac3ad66275a45c07c6ebf" category="image-alt">시스템 일련 번호의 예</block>
   <block id="6b127ae60215df1a5f77bc62deb0fa41" category="list-text">일련 번호가 목록에 없으면 신규 NetApp 고객에 대한 지침을 따르십시오.</block>
-  <block id="556e0ee8174fe1dd298dfe165915e58f" category="summary">ASA R2 시스템(ASA A1K, ASA 90, ASA 70, ASA A50, ASA A30, ASA A20)에서는 특정 ONTAP 명령이 지원되지 않습니다.</block>
   <block id="d4b904a6ceddca0805b85998f1946d36" category="paragraph">ONTAP 9.16.1부터 지원되는 NetApp ASA R2 시스템은 다음과 같습니다. 이러한 플랫폼은 SAN 전용 고객의 요구사항에 맞게 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
-  <block id="1afab26d25573baff41c4a297e2b15fb" category="sidebar">NetApp ASA R2 시스템(ASA A1K, ASA A90, ASA A70, ASA A50, ASA A30, ASA A20)은 SAN 전용 고객의 요구사항에 맞는 간소화된 환경을 제공하는 통합된 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
   <block id="9e607734cbe02d05fcbdf2a8bd579b3a" category="inline-link-macro">키 관리자 간 암호화 키 마이그레이션 지원</block>
   <block id="c18d7ea3e180dd72f3fc8869a57e6376" category="cell"><block ref="c18d7ea3e180dd72f3fc8869a57e6376" category="inline-link-macro-rx"></block></block>
   <block id="86c79aae612f98a6019861f950eeb1a3" category="cell">ONTAP 온보드 키 관리자에서 클러스터 수준의 외부 키 관리자로 전환할 경우 ONTAP CLI(Command Line Interface)를 사용하여 한 키 관리자에서 다른 키 관리자로 암호화 키를 손쉽게 마이그레이션할 수 있습니다.</block>
@@ -1960,4 +1945,20 @@
   <block id="d7c72b30313c5745f0e330939a9ac031" category="paragraph">ASA C30 저장 장치 시스템의 무게는 최대 27.9kg(61.5파운드)입니다. 보관 시스템을 인양하려면 두 사람 또는 유압 리프트를 사용합니다.</block>
   <block id="7dcb9af2c1167cd0c65ac5b5a874a41d" category="image-alt">ASA A20 A30 또는 A50 중량 주의 아이콘</block>
   <block id="48931ca8df47e809f96404b5fc332cc1" category="list-text">ASA A20, A30, A50 및 ASA C30 스토리지 시스템의 경우 시스템 섀시 전면의 선반 ID 디스플레이가 켜지지 않습니다.</block>
+  <block id="39256e8b85463e186dc7bbc4daac9a22" category="list-text">*소프트웨어 업데이트*에서 *활성화*를 선택합니다.</block>
+  <block id="c06b2149bbe3e94f6eac8a64039cc025" category="list-text">EULA를 읽어보세요.</block>
+  <block id="d6aeb9cf91111f522e0f1901518a3836" category="list-text">권장 업데이트에 대한 *알림 표시*를 기본값으로 설정합니다. 선택적으로, 권장 업데이트를 *자동으로 업데이트* 또는 *자동으로 해제*할 수 있습니다.</block>
+  <block id="03e58722e5fd35b95b0154a42ee279d7" category="list-text">*소프트웨어 업데이트*에서 *비활성화*를 선택합니다.</block>
+  <block id="e087c576f536a1cc1b027d2338ddf55d" category="list-text">*소프트웨어 업데이트* 옆에서 선택하세요 <block ref="5f3155aaa1f70c7a47a7d47ad66cef2b" category="inline-image-macro-rx" type="image"></block> 을 선택한 다음 *모든 자동 업데이트 보기*를 선택하세요.</block>
+  <block id="e3cdf65f6a174657c946f8da21d91054" category="list-text">*소프트웨어 업데이트* 옆에서 선택하세요 <block ref="5f3155aaa1f70c7a47a7d47ad66cef2b" category="inline-image-macro-rx" type="image"></block> 을 선택한 다음 *다른 모든 업데이트*를 선택하세요.</block>
+  <block id="97edade986fff30cbc58d1915b7fc92b" category="list-text">시스템 관리자에서 *클러스터 &gt; 개요*를 선택한 다음 *기타 모든 업데이트*를 선택합니다.</block>
+  <block id="7d089e6b0cd0c4c6a9cc9f51d3933449" category="list-text">*수동 업데이트*에서 *펌웨어 파일 추가*를 선택한 다음, *서버에서 다운로드* 또는 *로컬 클라이언트에서 업로드*를 선택합니다.</block>
+  <block id="a8e89726f0704bd34a60f163989365a7" category="list-text">펌웨어 업데이트 파일을 설치합니다.</block>
+  <block id="7c0a9ac67bcf9f088200f570d11de5cb" category="summary">ASA r2 시스템(ASA A1K, A90, A70, A50, A30, A20, C30)은 SAN 전용 고객에게 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
+  <block id="9e6435d0d0e7d0459a63bf9be064a900" category="searchtitle">ASA A1K, A90, A70, A50, A30 A20 및 C30 시스템에 대해 알아보세요.</block>
+  <block id="14a1b02d9ac34f22a362671d392a3852" category="list-text">ASA C30</block>
+  <block id="e2c77d4bd35cfd8d81e8af62db4c144b" category="summary">ASA r2(ASA A1K, A90, A70, A50, A30, A20, C30) 시스템을 시작하려면 하드웨어를 설치하고, 클러스터를 설정하고, 데이터 액세스를 설정하고, 스토리지를 프로비저닝하세요.</block>
+  <block id="434872b119bd955476c150025f7da4b2" category="searchtitle">ASA A1K, A90, A70, A50, A30, A20 및 C30 스토리지 시스템 설치 및 설정</block>
+  <block id="c3993bfac3ec8dac794fe31c3a3f3195" category="summary">특정 ONTAP 명령은 ASA r2 시스템(ASA A1K, ASA 90, ASA 70, ASA A50, ASA A30, ASA A20, ASA C30)에서 지원되지 않습니다.</block>
+  <block id="13af08b425d55aad64c53d60ae2a530a" category="sidebar">NetApp ASA r2 시스템(ASA A1K, ASA A90, ASA A70, ASA A50, ASA A30, ASA A20, ASA C30)은 SAN 전용 고객의 요구 사항에 맞춰 간소화된 환경을 만드는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
 </blocks>
