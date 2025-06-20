@@ -545,7 +545,6 @@
   <block id="db202dbb9a4a22e347c683ae7290b969" category="list-text">스토리지 유닛 _ 은(는) 데이터 작업을 위해 SAN 호스트에서 사용할 수 있는 스토리지 공간을 만듭니다. 스토리지 유닛은 SCSI 호스트용 LUN 또는 NVMe 호스트용 NVMe 네임스페이스를 가리킵니다.</block>
   <block id="e2969be58319571a8d10cc30d53f9a3b" category="list-text">_A 정합성 보장 그룹 _ 은(는) 단일 유닛으로 관리되는 스토리지 유닛의 모음입니다.</block>
   <block id="db5d2125ba43a68e1d147723a1fd42d2" category="paragraph">ASA R2 시스템은 스토리지 유닛 및 정합성 보장 그룹을 사용하여 스토리지 관리 및 데이터 보호를 간소화합니다. 예를 들어 정합성 보장 그룹에 10개의 스토리지 유닛으로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정합니다. 각 스토리지 유닛을 개별적으로 백업하는 대신 정합성 보장 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
-  <block id="99d7a989df24ddfeaed42c100e841eea" category="paragraph">도난 또는 랜섬웨어와 같은 악의적인 공격으로부터 데이터를 보호하기 위해 ASA R2 시스템은 온보드 키 관리자, 이중 계층 암호화, 무단 변경 방지 스냅샷, 다중 요소 인증 및 다중 관리자 검증을 지원합니다.</block>
   <block id="85af1289b342af44c3abb8f8013b47f6" category="paragraph">ASA R2 시스템은 기존 ASA, AFF 또는 FAS 시스템과의 혼합을 지원하지 않습니다.</block>
   <block id="989f2b4edace5981db8b18b1ad4a385f" category="list-text">ASA R2 시스템 지원 및 제한 사항에 대한 자세한 내용은 을 <block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2b304856171196502641312a496c6d54" category="inline-link-macro">NetApp ASA</block>
@@ -1961,4 +1960,5 @@
   <block id="434872b119bd955476c150025f7da4b2" category="searchtitle">ASA A1K, A90, A70, A50, A30, A20 및 C30 스토리지 시스템 설치 및 설정</block>
   <block id="c3993bfac3ec8dac794fe31c3a3f3195" category="summary">특정 ONTAP 명령은 ASA r2 시스템(ASA A1K, ASA 90, ASA 70, ASA A50, ASA A30, ASA A20, ASA C30)에서 지원되지 않습니다.</block>
   <block id="13af08b425d55aad64c53d60ae2a530a" category="sidebar">NetApp ASA r2 시스템(ASA A1K, ASA A90, ASA A70, ASA A50, ASA A30, ASA A20, ASA C30)은 SAN 전용 고객의 요구 사항에 맞춰 간소화된 환경을 만드는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
+  <block id="3087fbc39029f766e18398db33407a03" category="paragraph">도난이나 랜섬웨어와 같은 악의적인 공격으로부터 데이터를 보호하기 위해 ASA r2 시스템은 온보드 키 관리자, 이중 계층 암호화, 다중 인증 및 다중 관리자 검증을 지원합니다. 보조 ASA r2 시스템에서는 변조 방지 스냅샷도 지원됩니다.</block>
 </blocks>
