@@ -22,9 +22,6 @@ ASA R2 시스템은 스토리지 시스템에서 사용할 수 있는 특정 디
 ====
 * `lun copy`
 * `lun geometry`
-* `lun import`
-* `lun mapping add-reportng-nodes`
-* `lun mapping-remove-reporting-nodes`
 * `lun maxsize`
 * `lun move`
 * `lun move-in-volume`
