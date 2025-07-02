@@ -26,9 +26,42 @@ ASA R2 시스템은 스토리지 시스템에서 사용할 수 있는 특정 디
 * `lun move`
 * `lun move-in-volume`
 +
-이 명령은 LUN 이름 바꾸기/SVM NVMe 네임스페이스 이름 바꾸기로 대체됩니다.
+
+NOTE: 그만큼  `lun move-in-volume` 명령은 다음으로 대체됩니다.  `lun rename` 그리고  `vserver nvme namespace rename` 명령.
 
 * `lun transition`
+
+
+====
+.지원되지 않는 <code> storage </code> 명령입니다
+[%collapsible]
+====
+* `storage failover show-takeover`
+* `storage failover show-giveback`
+* `storage aggregate relocation`
+* `storage disk assign`
+* `storage disk partition`
+* `storage disk reassign`
+
+
+====
+.지원되지 않는 <code> volume </code> 명령 집합입니다
+[%collapsible]
+====
+* `volume activity-tracking`
+* `volume analytics`
+* `volume conversion`
+* `volume file`
+* `volume flexcache`
+* `volume flexgroup`
+* `volume inode-upgrade`
+* `volume object-store`
+* `volume qtree`
+* `volume quota`
+* `volume reallocation`
+* `volume rebalance`
+* `volume recovery-queue`
+* `volume schedule-style`
 
 
 ====
@@ -41,7 +74,7 @@ ASA R2 시스템은 스토리지 시스템에서 사용할 수 있는 특정 디
 * `volume expand`
 * `volume modify`
 +
-다음 매개 변수와 함께 사용할 때는 이 명령을 사용할 수 없습니다.
+그만큼  `volume modify` 다음 매개변수와 함께 사용하면 명령을 사용할 수 없습니다.
 
 +
 ** `-anti-ransomware-state`
@@ -103,38 +136,6 @@ ASA R2 시스템은 스토리지 시스템에서 사용할 수 있는 특정 디
 * `volume snapshot`
 * `volume snapshot autodelete modify`
 * `volume snapshot policy modify`
-
-
-====
-.지원되지 않는 <code> volume </code> 명령 집합입니다
-[%collapsible]
-====
-* `volume activity-tracking`
-* `volume analytics`
-* `volume conversion`
-* `volume file`
-* `volume flexcache`
-* `volume flexgroup`
-* `volume inode-upgrade`
-* `volume object-store`
-* `volume qtree`
-* `volume quota`
-* `volume reallocation`
-* `volume rebalance`
-* `volume recovery-queue`
-* `volume schedule-style`
-
-
-====
-.지원되지 않는 <code> storage </code> 명령입니다
-[%collapsible]
-====
-* `storage failover show-takeover`
-* `storage failover show-giveback`
-* `storage aggregate relocation`
-* `storage disk assign`
-* `storage disk partition`
-* `storage disk reassign`
 
 
 ====
