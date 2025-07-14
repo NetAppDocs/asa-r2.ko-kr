@@ -33,7 +33,7 @@ indexpage:
   - title: 추가 ASA R2 리소스
     links:
     - title: ASA 데이터시트 를 참조하십시오
-      url: https://www.netapp.com/data-storage/all-flash-san-storage-array/
+      url: https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf
   - title: 기타 ONTAP 리소스
     links:
     - title: 기타 ONTAP 시스템 설명서
