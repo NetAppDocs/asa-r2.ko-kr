@@ -11,10 +11,10 @@ summary: Astra Control을 사용하여 애플리케이션 및 데이터를 Kuber
 
 
 [role="lead"]
-Astra Control Center를 사용하여 Kubernetes 애플리케이션을 보호하십시오. Astra Control Center를 사용하면 애플리케이션 및 데이터를 Kubernetes 클러스터 간에 마이그레이션하고, NetApp SnapMirror 기술을 사용하여 애플리케이션을 원격 시스템으로 복제하고, 스테이징에서 운영 환경으로 애플리케이션을 복제할 수 있습니다.
+Trident Protect를 사용하여 Kubernetes 애플리케이션을 보호하세요. Trident Protect를 사용하면 애플리케이션과 데이터를 한 Kubernetes 클러스터에서 다른 Kubernetes 클러스터로 마이그레이션하고, NetApp SnapMirror 기술을 사용하여 애플리케이션을 원격 시스템에 복제하고, 스테이징 환경에서 프로덕션 환경으로 애플리케이션을 복제할 수 있습니다.
 
 
-NOTE: SnapMirror(비동기식 및 동기식)는 ASA R2 시스템에서 ASA R2 시스템으로만 지원됩니다. SnapMirror는 ASA R2 시스템에서 AFF 또는 FAS 시스템으로 지원되지 않습니다.
+NOTE: SnapMirror (비동기 및 동기)는 ASA r2 시스템에서 ASA r2 시스템으로만 지원됩니다. ASA r2 시스템에서 AFF 또는 FAS 시스템으로는 SnapMirror 지원되지 않습니다.
 
 .를 참조하십시오
-link:https://docs.netapp.com/us-en/astra-control-service/use/protect-apps.html["Astra Control을 사용하여 Kubernetes 애플리케이션을 보호하는 방법에 대해 자세히 알아보십시오"^]..
+link:https://docs.netapp.com/us-en/trident/trident-protect/learn-about-trident-protect.html["Trident Protect를 사용하여 Kubernetes 애플리케이션을 보호하는 방법에 대해 자세히 알아보세요."^] .

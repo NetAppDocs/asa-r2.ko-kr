@@ -10,6 +10,12 @@ entries:
     url: "/manage-data/provision-san-storage.html"
   - title: 데이터를 복제합니다
     url: "/manage-data/data-cloning.html"
+  - title: 호스트 그룹 관리
+    entries:
+    - title: 호스트 그룹을 생성합니다
+      url: "/manage-data/create-host-groups.html"
+    - title: 호스트 그룹 삭제
+      url: "/manage-data/delete-host-groups.html"
   - title: 스토리지 유닛 관리
     entries:
     - title: 스토리지 유닛을 수정합니다
@@ -24,8 +30,30 @@ entries:
   entries:
   - title: 스냅샷을 생성합니다
     url: "/data-protection/create-snapshots.html"
+  - title: SVM 피어 관계 생성
+    url: "/data-protection/create-svm-peer-relationship.html"
   - title: 스냅샷 복제를 설정합니다
     url: "/data-protection/snapshot-replication.html"
+  - title: SnapMirror Active Sync 설정
+    entries:
+    - title: 워크플로
+      url: "/data-protection/snapmirror-active-sync.html"
+    - title: SnapMirror Active Sync 구성을 준비합니다.
+      url: "/data-protection/snapmirror-active-sync-prepare.html"
+    - title: 클러스터 구성을 확인하세요
+      url: "/data-protection/snapmirror-active-sync-confirm-cluster-configuration.html"
+    - title: ONTAP Mediator 설치
+      url: "/data-protection/install-ontap-mediator.html"
+    - title: ONTAP Mediator 구성
+      url: "/data-protection/configure-ontap-mediator.html"
+    - title: SnapMirror 활성 동기화 구성
+      url: "/data-protection/configure-snapmirror-active-sync.html"
+  - title: SnapMirror 활성 동기화 관리
+    entries:
+    - title: SnapMirror Active Sync를 사용하여 계획된 장애 조치 수행
+      url: "/data-protection/snapmirror-active-sync-planned-failover.html"
+    - title: 계획되지 않은 장애 조치 후 SnapMirror 활성 동기화 재설정
+      url: "/data-protection/snapmirror-active-sync-unplanned-failover.html"
   - title: Kubernetes 보호
     url: "/data-protection/protect-kubernetes.html"
   - title: 데이터를 복원합니다
@@ -41,7 +69,17 @@ entries:
   - title: 키 관리자 간에 데이터 암호화 키를 마이그레이션합니다
     url: "/secure-data/migrate-encryption-keys-between-key-managers.html"
   - title: 랜섬웨어 공격을 방어하십시오
-    url: "/secure-data/ransomware-protection.html"
+    entries:
+    - title: 변조 방지 스냅샷 만들기
+      url: "/secure-data/ransomware-protection.html"
+    - title: ARP/AI 활성화
+      url: "/secure-data/enable-anti-ransomware-protection.html"
+    - title: ARP/AI 스냅샷 보존 기간 수정
+      url: "/secure-data/modify-arp-snapshot-retention-period.html"
+    - title: ARP/AI 경고에 응답
+      url: "/secure-data/respond-anti-ransomware-protection-alerts.html"
+    - title: ARP/AI 일시 중지 또는 재개
+      url: "/secure-data/pause-resume-anti-ransomware-protection.html"
   - title: 안전한 NVMe 연결
     url: "/secure-data/nvme-tcp-connections.html"
   - title: 보안 IP 연결

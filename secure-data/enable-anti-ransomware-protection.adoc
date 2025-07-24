@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: secure-data/enable-anti-ransomware-protection.html 
+keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, arp/ai, enable 
+summary: ARP/AI를 활성화하여 잠재적인 랜섬웨어 위협을 감지하고, 자동으로 데이터를 보호하기 위한 조치를 취하고, 의심스러운 활동을 알리기 위해 시스템 관리자에 경고 메시지를 표시합니다. 
+---
+= ASA r2 스토리지 시스템에서 AI를 사용하여 자율적인 랜섬웨어 보호 기능을 활성화하세요.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.17.1부터 인공지능(AI)을 활용한 자율형 랜섬웨어 보호(ARP/AI)를 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. ARP/AI는 잠재적인 랜섬웨어 위협을 신속하게 감지하고, 데이터를 보호하기 위해 ARP 스냅샷을 자동으로 생성하며, 의심스러운 활동을 감지하면 시스템 관리자에 경고 메시지를 표시합니다.
+
+ONTAP 9.17.1부터 ARP는 SAN 환경에서 끊임없이 진화하는 랜섬웨어 유형을 98% 정확도로 탐지하는 랜섬웨어 방지 분석용 머신 러닝 모델을 채택하여 사이버 복원력을 향상시킵니다. ARP의 머신 러닝 모델은 시뮬레이션된 랜섬웨어 공격 전후의 대용량 파일 데이터 세트를 기반으로 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 이 학습을 통해 생성된 사전 학습된 모델은 ONTAP 에 기본 제공됩니다. 이 모델은 CLI 또는 API를 통해 접근하거나 수정할 수 없습니다. 따라서 ARP/AI는 활성화 직후 활성화됩니다. link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html#learning-and-active-modes["학습 기간"^] .
+
+
+NOTE: 랜섬웨어 탐지 또는 예방 시스템은 랜섬웨어 공격으로부터 완벽한 안전을 보장할 수 없습니다. 공격이 탐지되지 않을 수도 있지만, ARP/AI는 바이러스 백신 소프트웨어가 침입을 탐지하지 못할 경우 중요한 추가 방어막 역할을 합니다.
+
+.이 작업에 대해
+ARP/AI 지원이 포함되어 있습니다. link:https://kb.netapp.com/onprem/ontap/os/ONTAP_9.10.1_and_later_licensing_overview["ONTAP One 라이센스"] .
+
+ARP/AI를 활성화한 후에는 다음을 수행해야 합니다. link:../administer/update-firmware.html#enable-automatic-updates["보안 파일에 대한 자동 업데이트를 활성화하세요"] 자동으로 새로운 보안 업데이트를 받습니다.
+
+
+
+== SVM의 모든 스토리지 유닛에서 ARP/AI 활성화
+
+스토리지 가상 머신(SVM)에 생성된 모든 스토리지 유닛에서 기본적으로 ARP/AI를 활성화할 수 있습니다. 즉, SVM에 새로 생성된 모든 스토리지 유닛에는 ARP/AI가 자동으로 활성화됩니다. SVM의 기존 스토리지 유닛에도 ARP/AI를 적용할 수 있습니다.
+
+.단계
+. 시스템 관리자에서 *클러스터 > 스토리지 VM*을 선택합니다.
+. ARP/AI를 활성화할 스토리지 VM을 선택합니다.
+. *보안* 섹션에서 *랜섬웨어 방지* 옆을 선택하세요. image:icon_kabob.gif["세 개의 수직 파란색 점"] ; 그런 다음 *랜섬웨어 방지 설정 편집*을 선택합니다.
+. *랜섬웨어 방지 기능 활성화*를 선택하세요.
++
+이렇게 하면 기본적으로 선택된 스토리지 VM에서 생성되는 모든 향후 스토리지 유닛에서 ARP/AI가 활성화됩니다.
+
+. 선택한 스토리지 VM의 기존 스토리지 장치에 ARP를 적용하려면 *이 스토리지 VM의 모든 해당 기존 스토리지 장치에 이 변경 사항 적용*을 선택합니다.
+. 저장 * 을 선택합니다.
+
+
+.결과
+SVM에서 생성하는 모든 새 저장 장치는 기본적으로 랜섬웨어 공격으로부터 보호되며, 의심스러운 활동은 시스템 관리자에 보고됩니다.
+
+
+
+== SVM의 특정 저장 장치에서 ARP/AI 활성화
+
+SVM의 모든 저장 장치에서 ARP/AI를 활성화하지 않으려면 활성화하려는 특정 장치만 선택할 수 있습니다.
+
+.단계
+. System Manager에서 * Storage * 를 선택합니다.
+. ARP/AI를 활성화할 저장 장치를 선택하세요.
+. 선택하다 image:icon_kabob.gif["세 개의 수직 파란색 점"] ; 그런 다음 *랜섬웨어 방지 기능 사용*을 선택합니다.
+. *활성화*를 선택하세요.
+
+
+.결과
+선택한 저장 장치는 랜섬웨어 공격으로부터 보호되며, 의심스러운 활동은 시스템 관리자에 보고됩니다.

@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: manage-data/create-host-groups.html 
+keywords: create host group, map storage units, host access, asa r2 
+summary: 호스트가 스토리지 유닛에 액세스할 수 있도록 호스트 그룹을 만들고 스토리지 매핑을 효과적으로 관리합니다. 
+---
+= ASA r2 시스템에서 호스트 그룹을 만듭니다.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템에서 _host group_ 은(는) 스토리지 유닛에 대한 호스트 액세스를 제공하는 데 사용되는 메커니즘입니다. 호스트 그룹은 SCSI 호스트용 igroup 또는 NVMe 호스트용 NVMe 서브시스템을 참조합니다. 호스트는 호스트가 속한 호스트 그룹에 매핑된 스토리지 유닛만 볼 수 있습니다. 호스트 그룹이 스토리지 유닛에 매핑되면 그룹의 구성원인 호스트가 스토리지 유닛에 디렉토리 및 파일 구조를 마운트(생성)할 수 있습니다.
+
+호스트 그룹은 스토리지 유닛을 생성할 때 자동으로 또는 수동으로 생성됩니다. 필요에 따라 다음 단계를 사용하여 스토리지 유닛을 생성하기 전이나 후에 호스트 그룹을 생성할 수 있습니다.
+
+.단계
+. System Manager에서 * Host * 를 선택합니다.
+. 호스트 그룹에 추가할 호스트를 선택합니다.
++
+첫 번째 호스트를 선택하면 호스트 그룹에 추가하는 옵션이 호스트 목록 위에 나타납니다.
+
+. 호스트 그룹에 추가 * 를 선택합니다.
+. 호스트를 추가할 호스트 그룹을 검색하여 선택합니다.
+
+
+.다음 단계
+호스트 그룹을 생성했으므로 이제 다음을 수행할 수 있습니다. link:provision-san-storage.html#map-the-storage-unit-to-a-host["저장 장치에 매핑합니다"] .

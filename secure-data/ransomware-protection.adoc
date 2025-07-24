@@ -4,7 +4,7 @@ permalink: secure-data/ransomware-protection.html
 keywords: asa r2, secure data, data security, ransomware, ransomware attacks, protection 
 summary: 무단 조작 방지 스냅샷을 사용하여 데이터를 보호합니다. 무단 조작 방지 스냅샷은 삭제할 수 없으며 랜섬웨어 공격에 의해 손상된 데이터를 복구하는 데 사용될 수 있습니다. 
 ---
-= ASA R2 스토리지 시스템에서 랜섬웨어 공격을 방어합니다
+= ASA r2 스토리지 시스템에 대한 랜섬웨어 공격으로부터 보호하기 위해 변조 방지 스냅샷을 생성합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

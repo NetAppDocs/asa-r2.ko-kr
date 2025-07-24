@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: data-protection/snapmirror-active-sync-prepare.html 
+keywords: asa r2, data protection, business continuity, snapmirror active sync, protocol support, object limits, NVMe protocol limitations, prerequisites, interoperability, limits 
+summary: ASA r2 시스템에서 SnapMirror Active Sync를 구성하려면 구성 전제 조건을 검토하고, 호스트 운영 체제에 대한 지원을 확인하고, 특정 구성에 영향을 줄 수 있는 개체 제한을 알아야 합니다. 
+---
+= ASA r2 시스템에서 SnapMirror Active Sync를 구성할 준비를 합니다.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA r2 시스템에서 SnapMirror Active Sync를 구성하려면 구성 전제 조건을 검토하고, 호스트 운영 체제에 대한 지원을 확인하고, 특정 구성에 영향을 줄 수 있는 개체 제한을 알아야 합니다.
+
+.단계
+. SnapMirror Active Sync를 검토하세요 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/prerequisites-reference.html["전제 조건"^] .
+. link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/interoperability-reference.html["호스트 운영 체제가 지원되는지 확인하세요."^] SnapMirror Active Sync용.
+. 검토하다 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/limits-reference.html["객체 한계"] 구성에 영향을 줄 수 있습니다.
+. ASA r2 시스템에서 SnapMirror Active Sync에 대한 호스트 프로토콜 지원을 확인하세요.
++
+ASA r2 시스템에서 SnapMirror Active Sync에 대한 지원은 ONTAP 버전과 호스트 프로토콜에 따라 다릅니다.
+
++
+[cols="2,2"]
+|===
+| ONTAP 부터 시작하여... | SnapMirror Active Sync는 다음을 지원합니다... 
+
+
+| 9.17.1  a| 
+** iSCSI
+** FC
+** NVMe/FC
+** NVMe/TCP
+
+
+
+
+| 9.16.0  a| 
+** iSCSI
+** FC
+
+
+|===
+
+
+
+
+== ASA r2 시스템의 SnapMirror Active Sync에 대한 NVMe 프로토콜 제한
+
+NVMe 호스트가 있는 ASA r2 시스템에서 SnapMirror 활성 동기화를 구성하기 전에 특정 NVMe 프로토콜 제한 사항을 알아야 합니다.
+
+NVMe 하위 시스템의 모든 NVMe 스토리지 장치는 동일한 일관성 그룹의 구성원이어야 하며 모두 동일한 SnapMirror 활성 동기화 관계에 속해야 합니다.
+
+SnapMirror Active Sync에서는 NVMe/FC 및 NVMe/TCP 프로토콜이 다음과 같이 지원됩니다.
+
+* 2노드 클러스터에서만
+* ESXi 호스트에서만
+* 대칭 활성/활성 구성에만 해당
++
+NVMe 호스트에서는 비대칭 액티브/액티브 구성이 지원되지 않습니다.
+
+
+
+NVMe를 사용한 SnapMirror 액티브 동기화는 다음을 지원하지 않습니다.
+
+* 두 개 이상의 일관성 그룹에 매핑된 하위 시스템
++
+일관성 그룹은 여러 하위 시스템에 매핑될 수 있지만, 각 하위 시스템은 하나의 일관성 그룹에만 매핑될 수 있습니다.
+
+* SnapMirror 활성 동기화 관계에서 일관성 그룹 확장
+* SnapMirror 활성 동기화 관계에 없는 NVMe 스토리지 장치를 복제된 하위 시스템에 매핑
+* 일관성 그룹에서 스토리지 유닛 제거
+* 일관성 그룹 지오메트리 변경
+* link:https://docs.netapp.com/us-en/ontap/san-admin/microsoft-offloaded-data-transfer-odx-concept.html["Microsoft 오프로드 데이터 전송(ODX)"]
+
+
+.다음 단계
+SnapMirror Active Sync를 활성화하는 데 필요한 준비를 완료한 후에는 다음을 수행해야 합니다. link:snapmirror-active-sync-confirm-cluster-configuration.html["클러스터 구성을 확인하세요"] .

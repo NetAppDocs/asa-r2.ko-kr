@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: manage-data/delete-host-groups.html 
+keywords: delete host groups, remove host groups, igroup, nvme subsystem, asa r2 
+summary: ASA r2 시스템의 스토리지 유닛에 대한 호스트 액세스를 제거하려면 호스트 그룹을 삭제합니다. 
+---
+= ASA r2 시스템에서 호스트 그룹 삭제
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA r2 시스템에서 호스트 그룹은 호스트에게 스토리지 유닛에 대한 액세스 권한을 부여하는 데 사용되는 메커니즘입니다. 호스트 그룹은 SCSI 호스트의 경우 igroup, NVMe 호스트의 경우 NVMe 하위 시스템을 나타냅니다. 호스트는 자신이 속한 호스트 그룹에 매핑된 스토리지 유닛만 볼 수 있습니다. 그룹 내 호스트가 해당 그룹에 매핑된 스토리지 유닛에 더 이상 액세스하지 못하도록 하려면 호스트 그룹을 삭제하는 것이 좋습니다.
+
+.단계
+. System Manager에서 * Storage * 를 선택합니다.
+. *호스트 매핑*에서 삭제하려는 호스트 그룹을 선택합니다.
+. *매핑된 저장소*를 선택하세요.
+. *더보기*를 선택한 다음, *삭제*를 선택하세요.
+. 계속 진행하시겠습니까? 확인을 선택한 후 *삭제*를 선택하세요.
+
+
+.다음 단계
+호스트 그룹이 삭제되었습니다. 그룹에 속했던 호스트는 더 이상 호스트 그룹에 매핑된 스토리지 유닛에 액세스할 수 없습니다.

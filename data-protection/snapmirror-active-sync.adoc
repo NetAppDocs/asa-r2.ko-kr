@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: data-protection/snapmirror-active-sync.html 
+keywords: asa r2, data protection, business continuity, snapmirror active sync, zero rpo, zero rto, disaster recovery, symmetric active/active, workflow 
+summary: 'SnapMirror Active Sync를 사용하면 예상치 못한 중단이나 사이트 재해로 인한 중단으로부터 복구 지점 목표(RPO)와 복구 시간 목표(RTO)가 0인 호스트 애플리케이션을 보호할 수 있습니다.' 
+---
+= SnapMirror Active Sync 설정 워크플로
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP SnapMirror 액티브 싱크 데이터 보호 기능은 사이트 전체에 장애가 발생하더라도 비즈니스 서비스가 계속 운영될 수 있도록 지원하며, 보조 복사본을 사용하여 애플리케이션이 투명하게 페일오버되도록 지원합니다. SnapMirror 액티브 싱크를 사용하면 페일오버를 트리거하는 데 수동 작업이나 사용자 지정 스크립팅이 필요하지 않습니다.
+
+ASA r2 시스템에서 SnapMirror 활성 동기화를 구성하기 위한 시스템 관리자 절차는 통합 ONTAP 개성을 실행하는 NetApp FAS, AFF 및 ASA 시스템과 다르지만 SnapMirror 활성 동기화의 요구 사항, 아키텍처 및 작동은 동일합니다.
+
+link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html["SnapMirror Active Sync에 대해 자세히 알아보세요"^] .
+
+ASA r2 시스템에서 SnapMirror Active Sync는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서는 두 사이트 모두 액티브 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다.
+
+자세히 알아보세요 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/architecture-concept.html#symmetric-activeactive["대칭 활성/활성 구성"^] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] SnapMirror Active Sync를 구성할 준비를 합니다.
+[role="quick-margin-para"]
+에게 link:snapmirror-active-sync-prepare.html["SnapMirror Active Sync 구성을 준비합니다"] ASA r2 시스템에서는 구성 전제 조건을 검토하고, 호스트 운영 체제에 대한 지원을 확인하고, 특정 구성에 영향을 줄 수 있는 개체 제한을 알고 있어야 합니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 클러스터 구성을 확인하세요.
+[role="quick-margin-para"]
+SnapMirror Active Sync를 구성하기 전에 다음을 수행해야 합니다. link:snapmirror-active-sync-confirm-cluster-configuration.html["ASA r2 클러스터가 적절한 피어링 관계에 있고 기타 구성 요구 사항을 충족하는지 확인하세요."] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] ONTAP Mediator를 설치하세요.
+[role="quick-margin-para"]
+ONTAP Mediator 또는 ONTAP Cloud Mediator를 사용하여 클러스터 상태를 모니터링하고 비즈니스 연속성을 유지할 수 있습니다. ONTAP Mediator를 사용하는 경우 link:install-ontap-mediator.html["설치하다"] 호스트에서 ONTAP Cloud Mediator를 사용하는 경우 이 단계를 건너뛸 수 있습니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 자체 서명 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성합니다.
+[role="quick-margin-para"]
+당신은해야합니다 link:configure-ontap-mediator.html["ONTAP Mediator 또는 ONTAP Cloud Mediator 구성"] 클러스터 모니터링을 위해 SnapMirror Active Sync와 함께 사용하려면 먼저 다음 단계를 따라야 합니다.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] SnapMirror Active Sync를 구성합니다.
+[role="quick-margin-para"]
+link:configure-snapmirror-active-sync.html["SnapMirror 활성 동기화 구성"] 재해 발생 시 보조 사이트에 데이터 사본을 생성하고 호스트 애플리케이션이 자동으로 투명하게 장애 조치되도록 합니다.

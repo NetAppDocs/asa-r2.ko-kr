@@ -12,3 +12,5 @@ entries:
     url: "/learn-more/cli-support.html"
   - title: REST API 지원
     url: "/learn-more/rest-api-support.html"
+  - title: 일반적인 ONTAP 기능 지원
+    url: "/learn-more/additional-supported-ontap-features.html"

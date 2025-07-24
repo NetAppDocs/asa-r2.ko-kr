@@ -108,9 +108,6 @@ ASA R2 시스템에서 IP, FC 및 NVMe/FC LIF를 생성할 수 있습니다. IP 
 . 네트워크 > 개요 * 를 선택합니다.
 . 네트워크 인터페이스 * 를 선택한 다음 를 image:icon_add_blue_bg.png["더하기 기호가 있는 파란색 직사각형 다음에 흰색 글자로 추가된 단어가 있습니다"]선택합니다.
 . 인터페이스 유형과 프로토콜을 선택한 다음 스토리지 VM을 선택합니다.
-+
-iSCSI LIF 페일오버를 활성화하려면 IP 프로토콜만 선택합니다.
-
 . LIF의 이름을 입력하거나 기본 이름을 그대로 사용합니다.
 . 네트워크 인터페이스의 홈 노드를 선택한 다음 IP 주소와 서브넷 마스크를 입력합니다.
 . 저장 * 을 선택합니다.
@@ -120,22 +117,81 @@ iSCSI LIF 페일오버를 활성화하려면 IP 프로토콜만 선택합니다.
 데이터 액세스를 위한 LIF를 생성했습니다.
 
 .다음 단계
-iSCSI용 IP LIF를 생성한 경우 ONTAP CLI(Command Line Interface)를 사용하여 자동 iSCSI LIF 페일오버를 사용하도록 설정할 수 있습니다.
+ONTAP 명령줄 인터페이스(CLI)를 사용하여 자동 장애 조치가 포함된 iSCSI 전용 LIF를 만들 수 있습니다.
 
 
 
-=== 자동 iSCSI LIF 페일오버를 사용합니다
+=== 사용자 정의 iSCSI 전용 LIF 서비스 정책 만들기
 
-자동 LIF 페일오버에 사용되지 않는 SVM에 iSCSI LIF가 있으면 새로 생성한 LIF가 자동 LIF 페일오버 중에 사용할 수 없습니다. 자동 LIF 페일오버가 사용되도록 설정되어 있지 않고 페일오버 이벤트가 발생하면 iSCSI LIF가 마이그레이션되지 않습니다.
+자동 LIF 장애 조치를 통해 iSCSI 전용 LIF를 만들려면 먼저 사용자 지정 iSCSI 전용 LIF 서비스 정책을 만들어야 합니다.
 
-자동 iSCSI LIF 페일오버를 사용하도록 설정하려면 ONTAP CLI(Command Line Interface)를 사용해야 합니다.
+사용자 지정 서비스 정책을 만들려면 ONTAP 명령줄 인터페이스(CLI)를 사용해야 합니다.
 
 .단계
-. 자동 iSCSI LIF 페일오버 활성화:
+. 권한 수준을 고급으로 설정합니다.
 +
 [source, cli]
 ----
-network interface modify -vserver <SVM_name> -lif <iscsi_lif> -failover-policy sfo-partner-only -auto-revert true
+set -privilege advanced
+----
+. 사용자 지정 iSCSI 전용 LIF 서비스 정책을 만듭니다.
++
+[source, cli]
+----
+network interface service-policy create -vserver <SVM_name> -policy <service_policy_name> -services data-core,data-iscsi
+----
+. 서비스 정책이 생성되었는지 확인하세요.
++
+[source, cli]
+----
+network interface service-policy show -policy <service_policy_name>
+----
+. 권한 수준을 admin으로 되돌립니다.
++
+[source, cli]
+----
+set -privilege admin
+----
+
+
+
+
+=== 자동 LIF 장애 조치를 통해 iSCSI 전용 LIF 만들기
+
+자동 LIF 페일오버에 사용되지 않는 SVM에 iSCSI LIF가 있으면 새로 생성한 LIF가 자동 LIF 페일오버 중에 사용할 수 없습니다. 자동 LIF 페일오버가 사용되도록 설정되어 있지 않고 페일오버 이벤트가 발생하면 iSCSI LIF가 마이그레이션되지 않습니다.
+
+.시작하기 전에
+사용자 지정 iSCSI 전용 LIF 서비스 정책을 만들어야 합니다.
+
+.단계
+. 자동 LIF 장애 조치를 통해 iSCSI 전용 LIF를 만듭니다.
++
+[source, cli]
+----
+network interface create -vserver <SVM_name> -lif <iscsi_lif_name> -service-policy <service_policy_name> -home-node <home_node> -home-port <port_name> -address <ip_address> -netmask <netmask> -failover-policy sfo-partner-only -status-admin up
+----
++
+** 각 노드에 패브릭 A와 패브릭 B에 각각 하나씩, 총 두 개의 iSCSI LIF를 생성하는 것이 좋습니다. 이렇게 하면 iSCSI 트래픽에 대한 중복성과 부하 분산이 가능합니다. 다음 예에서는 각 노드에 두 개씩, 각 패브릭에 하나씩, 총 네 개의 iSCSI LIF를 생성합니다.
++
+[listing]
+----
+network interface create -vserver svm1 -lif iscsi-lif-01a -service-policy custom-data-iscsi -home-node node1 -home-port e2b -address <node01-iscsi-a–ip> -netmask 255.255.255.0 -failover-policy sfo-partner-only -status-admin up
+
+network interface create -vserver svm1 -lif iscsi-lif-01b -service-policy custom-data-iscsi -home-node node1 -home-port e4b -address <node01-iscsi-b–ip> -netmask 255.255.255.0 -failover-policy sfo-partner-only -status-admin up
+
+network interface create -vserver svm1 -lif iscsi-lif-02a -service-policy custom-data-iscsi -home-node node2 -home-port e2b -address <node02-iscsi-a–ip> -netmask 255.255.255.0 -failover-policy sfo-partner-only -status-admin up
+
+network interface create -vserver svm1 -lif iscsi-lif-02b -service-policy custom-data-iscsi -home-node node2 -home-port e4b -address <node02-iscsi-b–ip> -netmask 255.255.255.0 -failover-policy sfo-partner-only -status-admin up
+----
+** VLAN을 사용하는 경우 다음을 조정하세요.  `home-port` 예를 들어, 각 iSCSI 패브릭에 대한 VLAN 포트 정보를 포함하는 매개변수  `-home-port e2b-<iSCSI-A-VLAN>` iSCSI 패브릭 A 및  `-home-port e4b-<iSCSI-B-VLAN>` .
+** VLAN과 함께 인터페이스 그룹(ifgroups)을 사용하는 경우 다음을 조정하십시오.  `home-port` 예를 들어 적절한 VLAN 포트를 포함하는 매개변수  `-home-port a0a-<iSCSI-A-VLAN>` iSCSI 패브릭 A 및  `-home-port a0a-<iSCSI-B-VLAN>` iSCSI 패브릭 B의 경우  `a0a` 는 ifgroup이고 a0a-<iSCSI-A-VLAN>과 a0a-<iSCSI-B-VLAN>은 각각 iSCSI A 패브릭과 iSCSI B 패브릭에 대한 VLAN 포트입니다.
+
+
+. iSCSI LIF가 생성되었는지 확인하세요.
++
+[source, cli]
+----
+network interface show -lif iscsi*
 ----
 
 

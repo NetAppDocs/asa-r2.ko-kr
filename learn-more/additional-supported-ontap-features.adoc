@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: learn-more/additional-supported-ontap-features.html 
+keywords: asa r2, asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, asa c30, cli, comand line interface 
+summary: ASA r2 시스템은 간소화된 버전의 ONTAP 실행하므로 일반적인 ONTAP 작업과 시스템 관리자 기능은 ASA r2 시스템에서 다른 ONTAP 시스템과 동일한 방식으로 수행됩니다. 
+---
+= ASA r2 시스템에서 지원되는 일반적인 ONTAP 기능
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA r2 시스템은 간소화된 버전의 ONTAP 실행하므로 일반적인 ONTAP 작업과 시스템 관리자 기능은 ASA r2 시스템에서 다른 ONTAP 시스템과 동일한 방식으로 수행됩니다.
+
+일반적인 특징과 기능에 대한 자세한 내용은 다음 ONTAP 설명서를 참조하세요.
+
+
+
+== ONTAP 관리
+
+* link:https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html["ONTAP 시스템 관리자에서 정보를 검색, 필터링 및 정렬하는 방법을 알아보세요."^] .
+* link:https://docs.netapp.com/us-en/ontap/networking/combine_physical_ports_to_create_interface_groups.html["물리적 포트를 결합하여 인터페이스 그룹을 만듭니다."^] .
+* link:https://docs.netapp.com/us-en/ontap/concept_nvme_provision_overview.html["NVMe over Fabrics(NVMe-oF) 프로비저닝에 대해 알아보세요"^] .
+
+
+
+
+== 데이터 보안
+
+* link:https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["OAuth 2.0 인증에 대해 알아보세요"^] .
+* link:https://docs.netapp.com/us-en/ontap/concepts/client-access-storage-concept.html["클라이언트 인증 및 권한 부여에 대해 알아보세요"^] .
+* link:https://docs.netapp.com/us-en/ontap/system-admin/configure-saml-authentication-task.html["SAML 인증 구성 방법 알아보기"^] .
+* link:https://docs.netapp.com/us-en/ontap/task_security_administrator_access.html["ONTAP 관리자 액세스 관리"^] .
+
+
+
+
+== 데이터 보호
+
+* link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-cluster-key-server-task.html["ONTAP 에서 클러스터링된 외부 키 서버 구성"^] .
+* link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-external-key-management-96-later-hw-task.html["외부 키 관리(HW 기반) 활성화"^] .
+* link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-external-key-management-96-later-nve-task.html["외부 키 관리(NVE) 활성화"^] .
+

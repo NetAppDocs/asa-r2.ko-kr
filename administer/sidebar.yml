@@ -2,6 +2,14 @@
 section: administer
 title: 관리 및 모니터링
 entries:
+- title: ONTAP 업그레이드 및 되돌리기
+  entries:
+  - title: ONTAP를 업그레이드합니다
+    url: "/administer/upgrade-ontap.html"
+  - title: ONTAP 되돌리기
+    url: "/administer/revert-ontap.html"
+  - title: 펌웨어를 업데이트합니다
+    url: "/administer/update-firmware.html"
 - title: 스토리지 VM에 대한 클라이언트 액세스를 관리합니다
   url: "/administer/manage-client-vm-access.html"
 - title: 클러스터 네트워킹 관리
@@ -14,10 +22,6 @@ entries:
     url: "/monitor/monitor-storage.html"
   - title: 스토리지 용량 증가
     url: "/administer/increase-storage-capacity.html"
-- title: ONTAP를 업그레이드합니다
-  url: "/administer/upgrade-ontap.html"
-- title: 펌웨어를 업데이트합니다
-  url: "/administer/update-firmware.html"
 - title: 인사이트 보기
   url: "/monitor/view-insights.html"
 - title: 클러스터 이벤트 및 작업을 봅니다
@@ -30,6 +34,8 @@ entries:
     url: "/administer/reboot-take-over-give-back-nodes.html"
   - title: 노드 이름을 바꿉니다
     url: "/administer/rename-nodes.html"
+  - title: 노드 간 워크로드 재조정
+    url: "/administer/rebalance-workloads.html"
 - title: 사용자 계정 및 역할 관리
   url: "/administer/user-accounts-roles.html"
 - title: 보안 인증서를 관리합니다
