@@ -16,7 +16,7 @@ ASA r2 시스템에서 SnapMirror Active Sync를 구성하려면 구성 전제 �
 .단계
 . SnapMirror Active Sync를 검토하세요 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/prerequisites-reference.html["전제 조건"^] .
 . link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/interoperability-reference.html["호스트 운영 체제가 지원되는지 확인하세요."^] SnapMirror Active Sync용.
-. 검토하다 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/limits-reference.html["객체 한계"] 구성에 영향을 줄 수 있습니다.
+. 검토하다 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/limits-reference.html["객체 한계"^] 구성에 영향을 줄 수 있습니다.
 . ASA r2 시스템에서 SnapMirror Active Sync에 대한 호스트 프로토콜 지원을 확인하세요.
 +
 ASA r2 시스템에서 SnapMirror Active Sync에 대한 지원은 ONTAP 버전과 호스트 프로토콜에 따라 다릅니다.

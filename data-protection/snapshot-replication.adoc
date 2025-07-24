@@ -26,7 +26,7 @@ NOTE: ASA R2 스토리지 시스템에 대한 스냅샷 복제는 다른 ASA R2 
 데이터를 원격 클러스터에 복제하여 데이터를 보호하려면 로컬 및 원격 클러스터 간에 클러스터 피어 관계를 생성해야 합니다.
 
 .시작하기 전에
-클러스터 피어링을 위한 전제 조건은 ASA r2 시스템과 다른 ONTAP 시스템에서 동일합니다. link:https://docs.netapp.com/us-en/ontap/peering/prerequisites-cluster-peering-reference.html["클러스터 피어링의 전제 조건 검토"] .
+클러스터 피어링을 위한 전제 조건은 ASA r2 시스템과 다른 ONTAP 시스템에서 동일합니다. link:https://docs.netapp.com/us-en/ontap/peering/prerequisites-cluster-peering-reference.html["클러스터 피어링의 전제 조건 검토"^] .
 
 .단계
 . 로컬 클러스터의 System Manager에서 * 클러스터 > 설정 * 을 선택합니다.

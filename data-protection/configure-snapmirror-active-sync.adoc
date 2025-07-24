@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: data-protection/configure-snapmirror-active-sync.html 
-keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, arp/ai, alerts, respond, warnings, security 
+keywords: asa r2, data protection, protect data, configure, snapmirror active sync, ,disaster recovery, symmetric active/active 
 summary: 재해 발생 시 자동 장애 조치를 활성화하고 보조 데이터 사본을 생성하여 비즈니스 연속성을 보장하기 위해 SnapMirror Active Sync를 구성하는 방법을 알아보세요. 
 ---
 = ASA r2 시스템에서 SnapMirror Active Sync 구성
@@ -36,4 +36,4 @@ link:create-snapshots.html#step-1-optionally-create-a-consistency-group["일관�
 
 
 .결과
-SnapMirror Active Sync는 재해 발생 시 복구 지점 목표(RPO)와 복구 시간 목표(RTO)가 없이 운영을 계속할 수 있도록 데이터를 보호하도록 구성되어 있습니다.
+SnapMirror Active Sync는 재해 발생 시 거의 0에 가까운 복구 지점 목표(RPO)와 거의 0에 가까운 복구 시간 목표(RTO)로 작업을 계속할 수 있도록 데이터를 보호하도록 구성되어 있습니다.

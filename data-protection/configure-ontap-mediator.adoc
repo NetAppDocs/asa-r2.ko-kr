@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: data-protection/configure-ontap-mediator.html 
-keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, arp/ai, alerts, respond, warnings, security 
-summary: ASA r2 시스템에 대한 자체 서명 인증서로 ONTAP Mediator를 구성하는 방법을 알아보세요. 
+keywords: asa r2, data protection, protect data, configure mediator, ontap mediator, cloud mediator, self-signed, ca, certificates 
+summary: ASA r2 시스템에 대한 자체 서명 인증서로 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성하는 방법을 알아보세요. 
 ---
-= ASA r2 시스템에서 자체 서명 인증서를 사용하여 Mediator 구성
+= ASA r2 시스템에서 자체 서명 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediatior 구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

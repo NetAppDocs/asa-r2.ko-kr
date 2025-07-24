@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: data-protection/protect-kubernetes.html 
-keywords: snapshot replication, asa r2, protect data, data protection, replication, replicate data, remote cluster, destination cluster, source cluster, replication relationship, asynchronous replication, synchronous replication 
-summary: Astra Control을 사용하여 애플리케이션 및 데이터를 Kubernetes 클러스터 간에 마이그레이션하고, 애플리케이션을 원격 시스템으로 복제하고, 애플리케이션을 복제할 수 있습니다. 
+keywords: snapshot replication, asa r2, protect data, data protection, replication, replicate data, kubernetes, trident protect 
+summary: Trident Protect를 사용하면 애플리케이션과 데이터를 한 Kubernetes 클러스터에서 다른 Kubernetes 클러스터로 마이그레이션하고, 애플리케이션을 원격 시스템에 복제하고, 애플리케이션을 복제할 수 있습니다. 
 ---
 = ASA R2 스토리지 시스템에서 Kubernetes 애플리케이션을 보호합니다
 :allow-uri-read: 

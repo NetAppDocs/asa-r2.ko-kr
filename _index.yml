@@ -28,6 +28,8 @@ indexpage:
       url: "/data-protection/create-snapshots.html"
     - title: 스냅샷 복제를 설정합니다
       url: "/data-protection/snapshot-replication.html"
+    - title: SnapMirror Active Sync 설정
+      url: "/data-protection/snapmirror-active-sync.html"
     - title: 유휴 데이터 암호화
       url: "/secure-data/encrypt-data-at-rest.html"
   - title: 추가 ASA R2 리소스
