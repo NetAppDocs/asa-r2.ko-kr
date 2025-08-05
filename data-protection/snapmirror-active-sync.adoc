@@ -17,6 +17,8 @@ ASA r2 시스템에서 SnapMirror 활성 동기화를 구성하기 위한 시스
 
 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html["SnapMirror Active Sync에 대해 자세히 알아보세요"^] .
 
+link:https://www.netapp.com/pdf.html?item=/media/138366-sb-3457-san-disaster-recovery-netapp-asa.pdf["ASA r2 시스템에서 SnapMirror Active Sync를 사용한 재해 복구에 대해 자세히 알아보세요."^]
+
 ASA r2 시스템에서 SnapMirror Active Sync는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서는 두 사이트 모두 액티브 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다.
 
 자세히 알아보세요 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/architecture-concept.html#symmetric-activeactive["대칭 활성/활성 구성"^] .

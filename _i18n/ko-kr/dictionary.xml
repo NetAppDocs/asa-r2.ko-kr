@@ -2321,4 +2321,15 @@
   <block id="ff84680c6870c10f3e11228ef86a9955" category="sidebar">NetApp ASA 의 모범 사례</block>
   <block id="0a297cc4d1df6ddee9072cd47dca7791" category="sidebar">NetApp ASA 의 FlexPod</block>
   <block id="03e4aa0349d001bf969e3c9a3664119c" category="sidebar">ASA/ AFF 에서 ASA r2로의 RestfulAPI 전환 가이드</block>
+  <block id="4ff3b8b9056fdd67969fe5f7de99f262" category="inline-link-macro">ASA r2 시스템에서 SnapMirror Active Sync를 사용한 재해 복구에 대해 자세히 알아보세요.</block>
+  <block id="a4d3fa0a90b98ed30452a119486e6ae3" category="paragraph"><block ref="a4d3fa0a90b98ed30452a119486e6ae3" category="inline-link-macro-rx"></block></block>
+  <block id="1e96162d7ffea43bde6c07852ffff8cb" category="inline-link-macro">vSphere에 ONTAP 사용하는 이점</block>
+  <block id="c3650233fcb8a7a607d25a5c0f5a5493" category="list-text">자세히 알아보세요 <block ref="1b2505f7e592731db42e95f3d10a015e" category="inline-link-macro-rx"></block> .</block>
+  <block id="05d7c63979cf1697d07b8942ba9871b7" category="inline-link-macro">ONTAP 사용한 VMware 라이브 사이트 복구</block>
+  <block id="6992ec4e9dbb069edacb9da04779cc65" category="list-text">에 대해 알아보세요<block ref="e4b7cce6214d1cb9c0a128e8c1f93d1a" category="inline-link-macro-rx"></block> .</block>
+  <block id="e15cde2137ab01eb246b245d05797051" category="inline-link-macro">vSphere 환경을 위한 지속적인 가용성 솔루션</block>
+  <block id="4a9af0008866f0dfb6b455c0aa5b5735" category="list-text">에 대해 알아보세요<block ref="8d6ade06576bd8b6a1b8374eb5aa72d4" category="inline-link-macro-rx"></block> .</block>
+  <block id="e329498f3b3980715382d5109b4ea79a" category="sidebar">ASA r2 시스템을 위한 SnapCenter 작업</block>
+  <block id="5eecc97c2d6bc1539840b90a30464e26" category="sidebar">NetApp ASA 에서의 Oracle 데이터베이스 성능</block>
+  <block id="bf50aa40e09203b6bd2725746556edee" category="sidebar">FCP를 사용하는 NetApp ASA 시스템의 SAP HANA</block>
 </blocks>
