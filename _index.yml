@@ -36,11 +36,11 @@ indexpage:
     links:
     - title: ASA 데이터시트 를 참조하십시오
       url: https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf
-    - title: NetApp ASA 의 모범 사례
+    - title: NetApp ASA 시스템을 위한 모범 사례
       url: https://www.netapp.com/pdf.html?item=/media/137426-tr-5009-best-practices-for-netapp-asa.pdf
     - title: NetApp ASA 의 FlexPod
       url: https://www.netapp.com/pdf.html?item=/media/135828-flexpod-san-ucs-xdirect-asa-nva-deploy-guide.pdf
-    - title: ASA/ AFF 에서 ASA r2로의 RestfulAPI 전환 가이드
+    - title: REST API 전환 가이드
       url: https://www.netapp.com/media/136585-tr-5008-restfulapi-transition-guide-asa-r2.pdf
     - title: ASA r2 시스템을 위한 SnapCenter 작업
       url: https://docs.netapp.com/us-en/snapcenter/get-started/learn-about-snapcenter-support-for-asa-r2-systems.html
