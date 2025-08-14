@@ -29,6 +29,9 @@ link:https://docs.netapp.com/us-en/ontap/revert/task_reverting_an_ontap_cluster.
 
 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌리는 경우, 되돌리기를 시작하기 전에 다음 작업을 수행해야 합니다.
 
+
+NOTE: link:administer/rebalance-workloads.html["자동 워크로드 재조정"]ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다.  자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.
+
 [cols="2"]
 |===
 | 만약 당신이 가지고 있다면... | 되돌리기 전에 다음을 수행해야 합니다. 
