@@ -539,7 +539,6 @@
   <block id="8ba78ca0516a69b587aca58206efc01f" category="paragraph">ASA R2 시스템에서는 정합성 보장 그룹이 포함된 스토리지 유닛을 사용합니다.</block>
   <block id="db202dbb9a4a22e347c683ae7290b969" category="list-text">스토리지 유닛 _ 은(는) 데이터 작업을 위해 SAN 호스트에서 사용할 수 있는 스토리지 공간을 만듭니다. 스토리지 유닛은 SCSI 호스트용 LUN 또는 NVMe 호스트용 NVMe 네임스페이스를 가리킵니다.</block>
   <block id="e2969be58319571a8d10cc30d53f9a3b" category="list-text">_A 정합성 보장 그룹 _ 은(는) 단일 유닛으로 관리되는 스토리지 유닛의 모음입니다.</block>
-  <block id="db5d2125ba43a68e1d147723a1fd42d2" category="paragraph">ASA R2 시스템은 스토리지 유닛 및 정합성 보장 그룹을 사용하여 스토리지 관리 및 데이터 보호를 간소화합니다. 예를 들어 정합성 보장 그룹에 10개의 스토리지 유닛으로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정합니다. 각 스토리지 유닛을 개별적으로 백업하는 대신 정합성 보장 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
   <block id="85af1289b342af44c3abb8f8013b47f6" category="paragraph">ASA R2 시스템은 기존 ASA, AFF 또는 FAS 시스템과의 혼합을 지원하지 않습니다.</block>
   <block id="989f2b4edace5981db8b18b1ad4a385f" category="list-text">ASA R2 시스템 지원 및 제한 사항에 대한 자세한 내용은 을 <block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2b304856171196502641312a496c6d54" category="inline-link-macro">NetApp ASA</block>
@@ -2330,4 +2329,5 @@
   <block id="a7063f74bf99069f53792368bf5ddbe3" category="admonition">자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
   <block id="1d7bf5cce50a0aa006e2b9e2f1d44b49" category="admonition"><block ref="8ec31ee3652bc36cd00ea6f536446af7" category="inline-link-macro-rx"></block>ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다.  자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
   <block id="bbf7c82f4e9f186f627b8c659682a8e1" category="admonition">ASA r2 시스템에서는 SED가 NVMe 프로토콜에 대해서만 지원됩니다.</block>
+  <block id="f0929283036207a854392f9eaeb45be4" category="paragraph">ASA r2 시스템은 일관성 그룹이 있는 스토리지 유닛을 사용하여 스토리지 관리와 데이터 보호를 간소화합니다.  예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다.  각 저장 장치를 개별적으로 백업하는 대신 일관성 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
 </blocks>
