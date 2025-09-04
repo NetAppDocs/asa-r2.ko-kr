@@ -2327,7 +2327,7 @@
   <block id="07deeffbd26ae347c81cfaf3e2169044" category="sidebar">NetApp ASA 시스템을 위한 모범 사례</block>
   <block id="65393a1b15c3a63904bb446f4a99001a" category="sidebar">REST API 전환 가이드</block>
   <block id="a7063f74bf99069f53792368bf5ddbe3" category="admonition">자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
-  <block id="1d7bf5cce50a0aa006e2b9e2f1d44b49" category="admonition"><block ref="8ec31ee3652bc36cd00ea6f536446af7" category="inline-link-macro-rx"></block>ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다.  자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
   <block id="bbf7c82f4e9f186f627b8c659682a8e1" category="admonition">ASA r2 시스템에서는 SED가 NVMe 프로토콜에 대해서만 지원됩니다.</block>
   <block id="f0929283036207a854392f9eaeb45be4" category="paragraph">ASA r2 시스템은 일관성 그룹이 있는 스토리지 유닛을 사용하여 스토리지 관리와 데이터 보호를 간소화합니다.  예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다.  각 저장 장치를 개별적으로 백업하는 대신 일관성 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
+  <block id="85eb2c19fe63353c756dd7a692d4b4f1" category="admonition"><block ref="46c41179928c756a06811404e3a5ce1c" category="inline-link-macro-rx"></block>ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다. 자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
 </blocks>
