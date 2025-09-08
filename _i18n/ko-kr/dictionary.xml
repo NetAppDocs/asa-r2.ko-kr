@@ -301,8 +301,6 @@
   <block id="7a9a61ee2297500e102394139e96e623" category="inline-link-macro">스냅샷 복제를 설정합니다</block>
   <block id="a63371f95cb6727e19c23f03f570df80" category="paragraph">스냅샷을 통해 데이터가 보호되므로 이제 <block ref="c9073dd826fc7721b98f9930c55d01b2" category="inline-link-macro-rx"></block>백업 및 재해 복구를 위해 일관성 그룹을 지리적으로 멀리 떨어진 위치에 복사해야 합니다.</block>
   <block id="28e240e6173e34f1942b6fae18eece4d" category="summary">정합성 보장 그룹을 사용하여 각 유닛에 대해 개별적으로 작업을 수행하는 대신 여러 스토리지 유닛에 대해 동시에 다양한 작업을 수행합니다.</block>
-  <block id="940cbe886b23355545e54a8e670dccf2" category="doc">ASA R2 스토리지 시스템에서 ONTAP 정합성 보장 그룹을 관리합니다</block>
-  <block id="3ec3496fc24d43fe7d9be310975cd088" category="paragraph">정합성 보장 그룹은 단일 유닛으로 관리되는 스토리지 유닛의 모음입니다. 일관성 그룹을 사용하여 스토리지 관리를 간소화합니다. 예를 들어 정합성 보장 그룹에 10개의 스토리지 유닛으로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정합니다. 각 스토리지 유닛을 백업하는 대신 정합성 보장 그룹에 스냅샷 데이터 보호 기능을 추가하여 전체 데이터베이스를 백업할 수 있습니다. 스토리지 유닛을 개별적으로 백업하지 않고 정합성 보장 그룹으로 백업하면 모든 유닛에 대해 일관된 백업이 가능하지만 개별적으로 백업하면 정합성이 보장되지 않을 수 있습니다.</block>
   <block id="756274998bfddb9ee5aca3ce09a0d910" category="section-title">정합성 보장 그룹에 스냅샷 데이터 보호 기능을 추가합니다</block>
   <block id="ef96230e3fb35067c9001214ca84a12c" category="paragraph">정합성 보장 그룹에 스냅샷 데이터 보호를 추가하면 사전 정의된 스케줄에 따라 정합성 보장 그룹의 로컬 스냅샷이 정기적으로 생성됩니다.</block>
   <block id="e96ea80e31853245a2bf947241dc2cee" category="inline-link-macro">데이터를 복원합니다</block>
@@ -350,8 +348,6 @@
   <block id="c7908abb23b7065aef5b318dd60abe7b" category="list-text">Overview * 섹션의 * Storage Units * 아래에서 제거할 스토리지 유닛을 선택한 다음 * Remove from consistency group * 을 선택합니다.</block>
   <block id="f3a864061c7c167216cb7e02d3f90cf4" category="paragraph">스토리지 유닛이 더 이상 정합성 보장 그룹의 구성원이 아닙니다.</block>
   <block id="9c09f709a9761f564907022b7331dbb1" category="paragraph">스토리지 유닛에 대한 데이터 보호를 계속하려면 스토리지 유닛을 다른 정합성 보장 그룹에 추가합니다.</block>
-  <block id="793fd1e28f15d34822702f9d70403404" category="section-title">일관성 그룹을 삭제합니다</block>
-  <block id="2cd894b6ee2553a527a03b1a9086238b" category="paragraph">일관성 그룹의 구성원을 더 이상 단일 단위로 관리할 필요가 없는 경우 해당 일관성 그룹을 삭제할 수 있습니다. 정합성 보장 그룹을 삭제한 후에는 이전에 그룹에 속한 스토리지 유닛이 클러스터에서 활성 상태로 유지됩니다.</block>
   <block id="3e905f617938aef0b388912bce87f2e2" category="list-text">삭제할 일관성 그룹 위에 마우스를 놓습니다.</block>
   <block id="b32275e0392f5cbab8806c7ce85e42f5" category="list-text">경고를 수락한 다음 * 삭제 * 를 선택합니다.</block>
   <block id="dde86492e27a0d7b75963e7c4b928397" category="paragraph">정합성 보장 그룹을 삭제한 후에는 이전에 정합성 보장 그룹에 속해 있던 스토리지 유닛이 더 이상 스냅샷으로 보호되지 않습니다. 이러한 스토리지 유닛을 다른 정합성 보장 그룹에 추가하여 데이터 손실로부터 보호하는 것이 좋습니다.</block>
@@ -438,8 +434,6 @@
   <block id="c48a364bcfea9942c880a707be66baf8" category="list-text"><block ref="750f4f104efd8460cc9c38b724a23fe2" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 인터클러스터 네트워크 인터페이스 IP 주소를 입력합니다.</block>
   <block id="8c0b8a980a5fccf0d26e14839c9636e5" category="list-text">클러스터 피어링 시작 * 을 선택합니다.</block>
   <block id="128a86d6606d71775364b984ff92953c" category="paragraph">원격 클러스터가 있는 로컬 ASA R2 클러스터를 피어링했습니다. 이제 복제 관계를 생성할 수 있습니다.</block>
-  <block id="20a02863b5c5716bf567035b35c78ac6" category="section-title">2단계: 필요에 따라 복제 정책을 생성합니다</block>
-  <block id="55a0affd4bb6a25bd38b35691abd1df0" category="paragraph">스냅샷 복제 정책은 ASA R2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.</block>
   <block id="99ce99ecf863ff8fe2a9cbb3426c1e80" category="list-text">System Manager에서 * 보호 &gt; 정책 * 을 선택한 다음 * 복제 정책 * 을 선택합니다.</block>
   <block id="b03db2a30a32c3ac8c0f123bffb1ece4" category="list-text">복제 정책의 이름을 입력하거나 기본 이름을 그대로 사용한 다음 설명을 입력합니다.</block>
   <block id="ca8308195da9e8f1aaa6981179fa1910" category="list-text">정책 범위 * 를 선택합니다.</block>
@@ -539,7 +533,6 @@
   <block id="8ba78ca0516a69b587aca58206efc01f" category="paragraph">ASA R2 시스템에서는 정합성 보장 그룹이 포함된 스토리지 유닛을 사용합니다.</block>
   <block id="db202dbb9a4a22e347c683ae7290b969" category="list-text">스토리지 유닛 _ 은(는) 데이터 작업을 위해 SAN 호스트에서 사용할 수 있는 스토리지 공간을 만듭니다. 스토리지 유닛은 SCSI 호스트용 LUN 또는 NVMe 호스트용 NVMe 네임스페이스를 가리킵니다.</block>
   <block id="e2969be58319571a8d10cc30d53f9a3b" category="list-text">_A 정합성 보장 그룹 _ 은(는) 단일 유닛으로 관리되는 스토리지 유닛의 모음입니다.</block>
-  <block id="85af1289b342af44c3abb8f8013b47f6" category="paragraph">ASA R2 시스템은 기존 ASA, AFF 또는 FAS 시스템과의 혼합을 지원하지 않습니다.</block>
   <block id="989f2b4edace5981db8b18b1ad4a385f" category="list-text">ASA R2 시스템 지원 및 제한 사항에 대한 자세한 내용은 을 <block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2b304856171196502641312a496c6d54" category="inline-link-macro">NetApp ASA</block>
   <block id="b4e5592d9ac502884e059b5eb31d6bf6" category="list-text">에 대해 자세히 <block ref="7ca9eeacedc91cf0cb26acef9d99ecbd" category="inline-link-macro-rx"></block>알아보십시오.</block>
@@ -826,7 +819,6 @@
   <block id="d27cce4a42b7ea8d15ff3f8607643e33" category="paragraph"><block ref="68f9f8f8e616f0e7ec59af9e1234ec7e" category="inline-link-macro-rx"></block><block ref="f2d6116a997a68be72ff8c2617977350" category="inline-link-macro-rx"></block><block ref="0066ce7dad22194ab05b9b3e8c713a35" category="inline-link-macro-rx"></block>ASA R2 시스템에 접속하도록 호스트를 적절히 구성하려면 에 대한 ONTAP SAN 호스트 설명서를 참조하십시오.</block>
   <block id="5d17193df18fedb451e3f5b9f064ef2f" category="section-title">VMware 가상 시스템을 마이그레이션합니다</block>
   <block id="112622c85a9cbee01c13e67b0b568c78" category="inline-link-macro">VMware vSphere vMotion을 참조하십시오</block>
-  <block id="36b30e26ad350b193fa96577b859aa6b" category="paragraph">VM 워크로드를 ASA 스토리지 시스템에서 ASA R2 스토리지 시스템으로 마이그레이션해야 하는 경우, NetApp 를 사용하여 <block ref="97ce748bde1d0df326ab308ffcedbe79" category="inline-link-macro-rx"></block>무중단 실시간 데이터 마이그레이션을 수행하는 것이 좋습니다.</block>
   <block id="d76fc5ee6d641846e5835d32d7f85b4f" category="inline-link-macro">스토리지 용량 할당</block>
   <block id="e397caa258e5d83ec68542ada3868a88" category="paragraph"><block ref="16349da302f4151e8c9d8212eacbac27" category="inline-link-macro-rx"></block>SAN 호스트에서 스토리지 유닛에 데이터를 읽고 쓸 수 있도록 할 준비가 되었습니다.</block>
   <block id="504d463c80199fc8015db827acb89c07" category="doc">ASA R2 스토리지 시스템에 대한 ONTAP CLI 지원</block>
@@ -933,7 +925,6 @@
   <block id="b8d343a2d9dfd7386b6b373e6050b930" category="searchtitle">ASA R2 시스템을 다른 ONTAP 시스템과 비교합니다</block>
   <block id="cf4ae521a2a16cdd073860fee0fbab96" category="paragraph">ONTAP 스토리지의 특성은 System Manager 또는 ONTAP CLI에서 확인할 수 있습니다.</block>
   <block id="c3e4be39d2ab89664b205dd7d0bb6510" category="list-text">System Manager 메뉴에서 * 클러스터 &gt; 개요 * 를 선택합니다.</block>
-  <block id="8fb6b6206aca4aa491419e270ea3424d" category="list-text">CLI에서 다음을 입력합니다.<block ref="9228fcbc2cb846682f56e98989045eaa" prefix=" " category="inline-code"></block></block>
   <block id="8369fc694deadf80f5d106ef41b6e7b2" category="paragraph">ONTAP 스토리지 시스템의 특성은 변경할 수 없습니다.</block>
   <block id="df5b8332c344a8d1a2ca6124ea06defe" category="cell">ASA r2 를 참조하십시오</block>
   <block id="b7b46ce5d1a547db89c0bc615ff272a5" category="cell">ASA</block>
@@ -1078,7 +1069,6 @@
   <block id="130d99f3155a9524fbcee1b66d372637" category="doc">ASA R2 스토리지 시스템에서 스토리지 유닛을 삭제합니다</block>
   <block id="a43d503903bc397cb05151409b4aa0ee" category="paragraph">유닛에 포함된 데이터를 더 이상 유지 관리할 필요가 없는 경우 스토리지 유닛을 삭제합니다. 더 이상 필요하지 않은 스토리지 유닛을 삭제하면 다른 호스트 애플리케이션에 필요한 공간을 확보하는 데 도움이 됩니다.</block>
   <block id="149f67073e73a0379b210512f9ae9b34" category="inline-link-macro">정합성 보장 그룹에서 스토리지 유닛을 제거합니다</block>
-  <block id="e2401ad7b6793e511075543831eaf193" category="paragraph">삭제하려는 스토리지 유닛이 복제 관계에 있는 정합성 보장 그룹에 있는 경우 <block ref="1bfd409ef7a0e58efec5d57a46fff2f5" category="inline-link-macro-rx"></block>삭제하기 전에 삭제해야 합니다.</block>
   <block id="3b82021e0930da2e3b1fe1bfe2aa2f70" category="list-text">삭제할 스토리지 유닛의 이름 위로 마우스를 가져갑니다.</block>
   <block id="a04511306488004fe2e50b58479b8bc6" category="list-text">삭제를 취소할 수 없음을 확인합니다.</block>
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">삭제 * 를 선택합니다.</block>
@@ -1206,7 +1196,6 @@
   <block id="cbb4ea3ae0ace3dd5cedae78f9d2a805" category="paragraph">프로비저닝 프로세스를 완료했으며 데이터 서비스를 시작할 준비가 되었습니다. 이제 <block ref="13282ab1c43cc291d62099de29c76969" category="inline-link-macro-rx"></block>ASA R2 시스템의 데이터를 보호할 수 있습니다.</block>
   <block id="94751ffa48a4135b11ac22ac2dae643e" category="inline-link-macro">ONTAP SAN 호스트 설명서</block>
   <block id="88e865c72412e4a1327806858c6d2784" category="paragraph">호스트측 구성에 대한 자세한 내용은 <block ref="5045572e3d187366935cbd2a743bcd07" category="inline-link-macro-rx"></block>해당 호스트의 를 참조하십시오.</block>
-  <block id="1baa07f2ade9c6d963643a794d4825f3" category="summary">ASA R2 구성은 FC, iSCSI, NVMe/FC 또는 NVMe/TCP 프로토콜을 실행하는 클러스터당 최대 2개의 노드를 지원합니다.</block>
   <block id="b6e8a44e2a75e79622ab8bca1270a5ce" category="doc">ASA R2 스토리지 제한</block>
   <block id="abe1583ce937db07d8d0619331789f3c" category="paragraph">최적의 성능, 구성 및 지원을 위해 ASA R2 스토리지 제한을 숙지해야 합니다.</block>
   <block id="d0bb632fcdb31cf3c729c1c59f826d4f" category="cell">128TB</block>
@@ -1458,7 +1447,6 @@
   <block id="c2520bb5c23501e13bc7e06dde3ae9fd" category="list-text">*부분적으로 연결됨*: 초기자 중 일부가 두 노드에 연결되지 않았음을 나타냅니다.</block>
   <block id="031e3ca05bd720350a450cc6267211e2" category="list-text">*None Connected*: 연결된 이니시에이터가 없음을 나타냅니다.</block>
   <block id="d28f4031342956661d79f1274d2a395c" category="paragraph">ASA R2 시스템을 위한 ONTAP 9.16.0에서 사용할 수 있는 새로운 기능에 대해 알아보십시오.</block>
-  <block id="6913e721908f172fd672e46e9459c4ad" category="paragraph">삭제하려는 일관성 그룹이 복제 관계에 있는 경우 일관성 그룹을 삭제하기 전에 관계를 해제해야 합니다. 복제 정합성 보장 그룹을 삭제한 후에는 정합성 보장 그룹에 있던 스토리지 유닛이 클러스터에서 활성 상태로 유지되고 복제된 복제본이 원격 클러스터에 남아 있습니다.</block>
   <block id="22a4c2b7564a7f7d551ab23d23fbcac8" category="paragraph">귀하는 기술 지원 부서에서 ASA R2 시스템으로부터 AutoSupport 메시지를 수신하여 문제가 발생할 경우 도움을 주는 데 필요한 데이터를 확보할 수 있음을 확인했습니다.</block>
   <block id="3ae7feb5d9cb2335f10922aa1130319d" category="paragraph">스토리지 유닛은 항상 ASA R2 스토리지 시스템에서 씬 프로비저닝됩니다. 일반 프로비저닝은 지원되지 않습니다.</block>
   <block id="c43d68b5b8370d3423bfb0b13dfe0abe" category="inline-link">ASA R2 유지 보수 설명서</block>
@@ -1474,7 +1462,6 @@
   <block id="253b40ae359ba25b56231803430c4873" category="section-title">ONTAP</block>
   <block id="7634d59040fd3f0630abac42ed05842e" category="inline-link-macro">ASA R2 시스템을 ASA 시스템과 비교한 것입니다</block>
   <block id="0a1c5c73cbf93d4b2d88ff0be84d2900" category="list-text">에 대해 자세히 <block ref="c736257475481e43d317d6d66a81a5cb" category="inline-link-macro-rx"></block>알아보십시오.</block>
-  <block id="420a0f9e5b6b25901e8477f2031c4f09" category="admonition">ASA R2 스토리지 시스템에 대한 스냅샷 복제는 다른 ASA R2 스토리지 시스템에서만 지원됩니다. ASA R2 시스템에서 현재 ASA, AFF 또는 FAS 시스템으로 스냅샷을 복제하거나 현재 ASA, AFF 또는 FAS 시스템에서 ASA R2 시스템으로 스냅샷을 복제할 수 없습니다.</block>
   <block id="3f808654ebfed6aae875b71a402ac91b" category="inline-link-macro">ONTAP 9.16.1 참고 사항</block>
   <block id="ccde34ed9a96a11b25c1db2a8c9acb87" category="paragraph"><block ref="ccde34ed9a96a11b25c1db2a8c9acb87" category="inline-link-macro-rx"></block></block>
   <block id="82f8a3cbf0a93791bbbfc70a1b650bcf" category="paragraph">스냅샷은 필요에 따라 생성하거나 을 기반으로 일정한 간격으로 자동으로 생성할 수 <block ref="83bfa2dc5e6407223dca634141b43309" category="inline-link-macro-rx"></block>있습니다. 스냅샷 정책 및 스케줄은 스냅샷을 생성할 시기, 보존할 복제본 수, 복제본 이름 지정 방법 및 복제를 위해 스냅샷 레이블을 지정하는 방법을 지정합니다. 예를 들어 시스템은 매일 오전 12시 10분에 스냅샷 하나를 생성하고 가장 최근의 사본 2개를 보존하고, 이름을 "daily"(타임스탬프가 추가됨)로 지정하고, 복제를 위해 "daily"로 레이블을 지정할 수 있습니다.</block>
@@ -1534,7 +1521,6 @@
   <block id="c32fddd27ad2252ef230f0871f34068f" category="paragraph">ASA R2 시스템에서는 기본 네트워킹 LIF가 NVMe와 SCSI 호스트 간에 공유되므로 자동 페일오버를 지원하지 않습니다. 자동 iSCSI LIF 페일오버를 사용하려면 이 <block ref="80674e801e3a84767641d7c52bb7dcab" category="inline-link-macro-rx"></block>필요합니다. 자동 페일오버는 기본적으로 iSCSI 전용 LIFS에서 설정됩니다.</block>
   <block id="22f4d4e3ef9ad886ae95608e10f828cb" category="paragraph">자동 iSCSI LIF 페일오버가 사용되도록 설정된 경우 스토리지 페일오버가 발생하면 iSCSI LIF가 홈 노드나 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 다음, 페일오버가 완료된 후 다시 수행됩니다. 또는 iSCSI LIF의 포트가 정상 상태가 아닐 경우 LIF는 자동으로 현재 홈 노드의 정상 포트로 마이그레이션된 다음 포트가 다시 정상 상태가 되면 원래 포트로 다시 마이그레이션됩니다.</block>
   <block id="e51f73897cef482e683893c74ad0aebf" category="doc">ASA R2 노드를 ONTAP 클러스터에 추가합니다</block>
-  <block id="be36547b484c259b8e39cb4b17bdac83" category="paragraph">ONTAP 9.16.1부터 ASA R2 스토리지 시스템은 클러스터당 최대 12개의 노드를 지원합니다. HA Pair의 새 노드를 케이블로 연결하고 전원을 켠 후에는 해당 노드를 클러스터에 연결해야 합니다.</block>
   <block id="97a5a9f5366a279a2160c428ad458079" category="list-text">노드 IP 주소입니다</block>
   <block id="d08cd309dd95d7aa27f8f977cf1a060e" category="list-text">인터클러스터 네트워크 인터페이스 IP 주소입니다</block>
   <block id="20f5ca91f6dbeac15890f67c9a4cb751" category="list-text">인터클러스터 네트워크 서브넷 마스크입니다</block>
@@ -1565,16 +1551,10 @@
   <block id="fe36b3d0747e41e736245b1f2f016f37" category="paragraph">성능 서비스 수준 * 에서 다른 서비스 수준을 선택합니다.</block>
   <block id="e39fb54244b4e7e5902cf86f104eae5f" category="paragraph">하위 정합성 보장 그룹을 생성합니다</block>
   <block id="df30ab788ddab119f1a9a52f397c1578" category="paragraph">Add child consistency group * 을 선택합니다.</block>
-  <block id="47f30cf1dbc386b695e587c89d934679" category="paragraph">ONTAP 9.16.1부터 System Manager를 사용하여 ASA R2 시스템에 계층적 정합성 보장 그룹을 생성할 수 있습니다. 계층적 구조에서는 하나 이상의 일관성 그룹이 부모 일관성 그룹 아래에 있는 하위 그룹으로 구성됩니다.</block>
   <block id="accc48ba80dae134714334f9974f857c" category="paragraph">계층적 정합성 보장 그룹을 사용하면 각 하위 정합성 보장 그룹에 개별 스냅샷 정책을 적용하고 상위 정합성 보장 그룹을 복제하여 모든 하위 정합성 보장 그룹의 스냅샷을 단일 유닛으로 원격 클러스터에 복제할 수 있습니다. 따라서 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다. 예를 들어, 애플리케이션 데이터와<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 애플리케이션 로그라는 두 개의 하위 정합성 보장 그룹이 포함된 이라는 부모 정합성 보장<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 그룹을 생성한다고<block ref="f4834f6322c13f96b4d06d74fae1bbee" prefix=" " category="inline-code"></block> 가정합니다. 의 스냅샷은<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 15분마다 생성되며, 의 스냅샷은<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 매시간마다 생성됩니다. 부모 정합성 보장 그룹에는<block ref="d6faa7ca58e81c6f13095e4f9ff20e81" prefix=" " category="inline-code"></block> 및<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 의 스냅샷을 24시간마다 원격 클러스터에 복제하는 SnapMirror 정책이<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 있습니다. 부모 정합성 보장<block ref="f4834f6322c13f96b4d06d74fae1bbee" prefix=" " category="inline-code"></block> 그룹은 단일 유닛으로 관리되고 하위 정합성 보장 그룹은 별도의 유닛으로 관리됩니다.</block>
-  <block id="5c31d135ad789e411ad759e0c134e359" category="section-title">기존 일관성 그룹을 부모 일관성 그룹으로 변환합니다</block>
-  <block id="ab5220486193aa4a04c53d18e19056fc" category="paragraph">스토리지 유닛은 부모 정합성 보장 그룹에 직접 연결할 수 없습니다. 기존 정합성 보장 그룹을 상위 정합성 보장 그룹으로 변환하면 새 하위 정합성 보장 그룹이 생성되고 변환된 정합성 보장 그룹에 속하는 스토리지 유닛이 새 하위 정합성 보장 그룹으로 이동됩니다.</block>
   <block id="9bb9a0458dabe990942bf493592cb497" category="list-text">부모 일관성 그룹으로 변환할 일관성 그룹 위에 마우스를 놓습니다.</block>
   <block id="ec57f29bebbe66441595e764308d00a6" category="list-text">을 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * 부모 정합성 보장 그룹으로 상향 이동 * 을 선택합니다.</block>
-  <block id="e0e1d719c3169a36adccf812d315cc3d" category="list-text">부모 일관성 그룹의 이름을 입력하거나 기본 이름을 그대로 둔 다음, 일관성 그룹 구성 요소 유형을 선택합니다.</block>
   <block id="3073e32eb6f2f0cb69e9248a5f0c848c" category="list-text">승격 * 을 선택합니다.</block>
-  <block id="f61d709beaccfca851c4fd737b049a61" category="paragraph">부모 일관성 그룹 아래에 하위 일관성 그룹을 추가로 생성할 수 있습니다. 또한 부모 일관성 그룹을 지리적으로 원격 위치에 복사하여 백업 및 재해 복구를 수행할 수도 있습니다<block ref="c9073dd826fc7721b98f9930c55d01b2" category="inline-link-macro-rx"></block>.</block>
-  <block id="f28898d3cd8988ff697e782c8449eb18" category="paragraph">하위 정합성 보장 그룹을 생성하면 부모 레벨의 모든 하위 정합성 보장 그룹에 복제 정책을 적용하는 동시에 각 하위 계층에 개별 스냅샷 정책을 적용할 수 있습니다.</block>
   <block id="34dd18f2c196dd45fa9dfab7e7517350" category="paragraph">새 일관성 그룹 또는 기존 일관성 그룹에서 하위 일관성 그룹을 생성할 수 있습니다.</block>
   <block id="643328739ada7596678f9066cec81be9" category="open-title">방법을 자세히 소개합니다</block>
   <block id="d7c5fedb6bb1501de8279366644bdd86" category="list-text">하위 정합성 보장 그룹을 추가할 부모 정합성 보장 그룹 위로 마우스를 가져갑니다.</block>
@@ -1586,30 +1566,24 @@
   <block id="3fb56bc224d2a0ac3d902de4d323e71a" category="open-title">방법을 자세히 알아보십시오</block>
   <block id="9e532008425c88c7f9f600e01feb942c" category="list-text">하위 일관성 그룹을 만들 기존 일관성 그룹을 선택합니다.</block>
   <block id="7ab1a538b156a84c113e1b25aa016aef" category="list-text"><block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 * Move from different consistency group * 을 선택합니다.</block>
-  <block id="f50d0d6201337aee6a17962f21e42153" category="paragraph">다른 일관성 그룹의 하위 그룹으로 사용할 일관성 그룹을 이미 다른 일관성 그룹의 하위 그룹으로 이동하려면 먼저 기존 부모 일관성 그룹에서 해당 일관성 그룹을 분리해야 합니다.</block>
   <block id="b13aafb46acdbda66ede2f929c14fff7" category="list-text">하위 일관성 그룹의 새 이름을 입력하거나 기본 이름을 그대로 둔 다음, 일관성 그룹 구성 요소 유형을 선택합니다.</block>
   <block id="767e4528802b2fbd53126bfeffbfbb47" category="list-text">부모 일관성 그룹으로 만들 기존 일관성 그룹을 선택하거나 를 선택하여 새 부모 일관성 그룹을 생성합니다.</block>
   <block id="36a7554cab29967611589d7eefa20c88" category="paragraph">새 부모 일관성 그룹을 생성하기로 선택한 경우 부모 일관성 그룹의 이름을 입력하거나 기본 이름을 그대로 두고 일관성 애플리케이션의 구성 요소 유형을 선택합니다.</block>
   <block id="c3eb9435da3ee7c0ac02ef30983ba9d2" category="list-text">이동 * 을 선택합니다.</block>
   <block id="1aebd2565785840796b5b11c1362918f" category="inline-link-macro">개별 스냅샷 보호 정책을 적용합니다</block>
-  <block id="27f6c159b783eaece3b27009d252861f" category="inline-link-macro">복제 정책을 설정합니다</block>
-  <block id="5584e5580824a6a612aaebc7cae0dc13" category="paragraph">하위 일관성 그룹을 생성한 후에는 각 하위 일관성 그룹에 지정할 수 있습니다<block ref="b20e7e9a535f6a3244da85f4587a0502" category="inline-link-macro-rx"></block>. 또한 부모 정합성 보장 그룹에서 모든 하위 정합성 보장 그룹의 스냅샷을 단일 유닛으로 원격 클러스터에 복제할 수도 <block ref="cbc7b65bc979a0ca08aaa98e2dc63eda" category="inline-link-macro-rx"></block>있습니다.</block>
   <block id="4aafb19b9676db4e8aa85eb3131ac5f4" category="section-title">부모 일관성 그룹을 단일 일관성 그룹으로 강등합니다</block>
-  <block id="5837ba118b622a1f9ee732410e451284" category="paragraph">부모 정합성 보장 그룹을 단일 정합성 보장 그룹으로 이동하는 경우 연결된 하위 정합성 보장 그룹의 스토리지 유닛이 부모 정합성 보장 그룹에 추가됩니다. 하위 일관성 그룹이 삭제되고 부모가 단일 일관성 그룹으로 관리됩니다.</block>
   <block id="dd487eacf1aba6e2726ce73064acff7b" category="list-text">강등할 부모 일관성 그룹 위에 마우스를 놓습니다.</block>
   <block id="d26a37885a1db03d1d33fa1b32e74c25" category="list-text">를 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * 단일 정합성 보장 그룹으로 하향 이동 * 을 선택합니다.</block>
   <block id="0b886822f169d28b04dc34a1cb55c402" category="list-text">하향 이동 * 을 선택합니다</block>
   <block id="8eea35138709fe7cf5caaf5b5fb53a4d" category="inline-link-macro">스냅샷 정책을 추가합니다</block>
   <block id="a4cc38b952e58f7fac916d3297d86f9f" category="paragraph"><block ref="9b6117933a7d1c9745a65ab485bb26f2" category="inline-link-macro-rx"></block> 이전에 하위 정합성 보장 그룹에 의해 관리되었던 스토리지 유닛을 보호하기 위해 강등된 정합성 보장 그룹으로 이동합니다.</block>
   <block id="e8289e36e948e36d5aeb9297cf2c6712" category="section-title">부모 정합성 보장 그룹에서 하위 정합성 보장 그룹을 분리합니다</block>
-  <block id="a98e8367b6b0b1bc6b9fdb2658c07a83" category="paragraph">부모 일관성 그룹에서 하위 일관성 그룹을 분리하면 하위 일관성 그룹이 부모 일관성 그룹에서 제거되고 단일 일관성 그룹으로 관리됩니다. 상위 항목에 적용된 복제 정책이 분리된 하위 정합성 보장 그룹에 더 이상 적용되지 않습니다.</block>
   <block id="94db0ec67f710fec5c7f775e299a2d6e" category="list-text">부모 일관성 그룹을 선택합니다.</block>
   <block id="77b355d4c3903a5367febffb1d5fb080" category="list-text">분리할 하위 정합성 보장 그룹을 선택합니다.</block>
   <block id="baffc5619c6b92cfb8bd0f06efe69615" category="list-text">를 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 모체에서 분리 * 를 선택합니다.</block>
   <block id="43faed766403b7432cc59c42e8d49ebf" category="list-text">분리할 일관성 그룹의 새 이름을 입력하거나 기본 이름을 그대로 적용하고 일관성 그룹 애플리케이션 유형을 선택합니다.</block>
   <block id="f9e81700c82de44e7b8b9b6bfcfbba80" category="list-text">분리 * 를 선택합니다.</block>
   <block id="3fe9697b148df0f9994a0c38ed482555" category="inline-link-macro">복제 정책을 설정합니다</block>
-  <block id="ee498a1797cb05156ed6a63b8ff17543" category="paragraph"><block ref="2e81c1e2e7e67baddc7dd1eab1535a95" category="inline-link-macro-rx"></block> 분리된 하위 정합성 보장 그룹의 스냅샷을 단일 정합성 보장 그룹으로 원격 클러스터에 복제합니다.</block>
   <block id="e5c51f544e69319bec042113911e203e" category="paragraph"><block ref="1284f4e581f500fae0f4daa3e9543a0c" category="inline-link-macro-rx"></block> ASA R2 시스템을 ONTAP 환경에 구축합니다.</block>
   <block id="9a5e67864d1a0cbd6f43034e561f51a2" category="summary">ASA R2 스토리지 시스템의 설치 및 설정을 시작하여 ONTAP 환경에 구축합니다.</block>
   <block id="bf0f6aa21aec3e349179a68aa2cb89e0" category="section-title">정합성 보장 그룹 클론을 분할합니다</block>
@@ -1829,7 +1803,6 @@
   <block id="676b7066692787a119854c062d5f6c05" category="list-text">각 컨트롤러 또는 일부 시스템의 경우, 각 컨트롤러의 시스템 관리 모듈에 표시됩니다</block>
   <block id="3b2136486adac3ad66275a45c07c6ebf" category="image-alt">시스템 일련 번호의 예</block>
   <block id="6b127ae60215df1a5f77bc62deb0fa41" category="list-text">일련 번호가 목록에 없으면 신규 NetApp 고객에 대한 지침을 따르십시오.</block>
-  <block id="d4b904a6ceddca0805b85998f1946d36" category="paragraph">ONTAP 9.16.1부터 지원되는 NetApp ASA R2 시스템은 다음과 같습니다. 이러한 플랫폼은 SAN 전용 고객의 요구사항에 맞게 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
   <block id="9e607734cbe02d05fcbdf2a8bd579b3a" category="inline-link-macro">키 관리자 간 암호화 키 마이그레이션 지원</block>
   <block id="c18d7ea3e180dd72f3fc8869a57e6376" category="cell"><block ref="c18d7ea3e180dd72f3fc8869a57e6376" category="inline-link-macro-rx"></block></block>
   <block id="86c79aae612f98a6019861f950eeb1a3" category="cell">ONTAP 온보드 키 관리자에서 클러스터 수준의 외부 키 관리자로 전환할 경우 ONTAP CLI(Command Line Interface)를 사용하여 한 키 관리자에서 다른 키 관리자로 암호화 키를 손쉽게 마이그레이션할 수 있습니다.</block>
@@ -1980,7 +1953,6 @@
   <block id="b3c7be37f134696368fa3ec257e47dca" category="cell">만약 당신이 가지고 있다면...</block>
   <block id="4c018311b80f4cb91ab6f57f2e32f309" category="cell">되돌리기 전에 다음을 수행해야 합니다.</block>
   <block id="e270dd0b11b4d60d2faa3a4912f99f8e" category="cell">SnapMirror 활성 동기화 관계의 계층적 일관성 그룹</block>
-  <block id="43d42e4f9f1f7ec46c3863b8a0151f7b" category="cell">SnapMirror 활성 동기화 관계 제거</block>
   <block id="5ac0fbbc053ed720aacdf3f3af276820" category="cell">활성 수입 관계</block>
   <block id="2a8a59c901b916190a5f0c2fc9db590e" category="cell">활성 가져오기 관계 삭제</block>
   <block id="2d1eaa6efdb3bbcbeddb0390177c033f" category="cell">랜섬웨어 방지 보호 기능 활성화</block>
@@ -1989,11 +1961,9 @@
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">전제 조건</block>
   <block id="e67055b6d8c65ffeed652e0147459791" category="list-text">ONTAP Cloud Mediator를 사용하는 경우 ASA r2 시스템이 필요한 사항을 충족하는지 확인하십시오. <block ref="efcd0c458e1c451926dd33228d1c1e37" category="inline-link-macro-rx"></block> .</block>
   <block id="8d8b639ec8160491c90dea5c1c1c3da9" category="list-text">시스템 관리자에서 *보호 &gt; 개요*를 선택합니다.</block>
-  <block id="51b848336c7f7b6646ffd4f9bac5fba0" category="list-text">오른쪽 창에서 *중재자* 옆을 선택하세요. <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> ; 그런 다음 *중개자 추가*를 선택합니다.</block>
   <block id="7656aa254dd0e2eeb0bb2b5791fc4ce9" category="list-text">*중개자 유형*을 선택하세요.</block>
   <block id="d9bdcb07b569b6e25edbe03768dae198" category="list-text">*클라우드* 중재자의 경우 조직 ID, 클라이언트 ID, 클라이언트 비밀번호를 입력하세요. *온프레미스* 중재자의 경우 IP 주소, 포트, 중재자 사용자 이름, 중재자 비밀번호를 입력하세요.</block>
   <block id="8645f14d86ca95088f9677a7ab1aa3db" category="list-text">적격 클러스터 피어 목록에서 클러스터 피어를 선택하거나 *클러스터 피어 추가*를 선택하여 새 피어를 추가합니다.</block>
-  <block id="b949fce785965e8564d56844e56492e6" category="list-text">내용을 복사하세요 <block ref="9e1f34d274d54e077ab71c2c0fe0badd" prefix=" " category="inline-code"></block> 파일을 *인증서* 필드에 붙여 넣거나 *가져오기*를 선택하여 이동합니다. <block ref="9e1f34d274d54e077ab71c2c0fe0badd" prefix=" " category="inline-code"></block> 파일을 열고 인증서 정보를 가져옵니다.</block>
   <block id="30b5aba1e43ab775f5ea2145687df2a6" category="inline-link-macro">SnapMirror Active Sync 구성</block>
   <block id="dc159caf94b39eeebe38d89cea963f19" category="paragraph">중재자를 초기화한 후에는 다음을 수행할 수 있습니다. <block ref="972d16674ae44824ac2ebd5c1f400dda" category="inline-link-macro-rx"></block> 재해 발생 시 보조 사이트에 데이터 사본을 생성하고 호스트 애플리케이션이 자동으로 투명하게 장애 조치될 수 있도록 합니다.</block>
   <block id="ac467f776ee651744b052418ba147ac6" category="summary">재해 발생 시 자동 장애 조치를 활성화하고 보조 데이터 사본을 생성하여 비즈니스 연속성을 보장하기 위해 SnapMirror Active Sync를 구성하는 방법을 알아보세요.</block>
@@ -2186,11 +2156,7 @@
   <block id="6fc817dfbe9e8303d43dd345dfc8d0a6" category="list-text">*더보기*를 선택한 다음, *삭제*를 선택하세요.</block>
   <block id="d1dde57285c34e792a5945a2584acc2e" category="list-text">계속 진행하시겠습니까? 확인을 선택한 후 *삭제*를 선택하세요.</block>
   <block id="d8c055944ceedab265fa23bd4dac431a" category="paragraph">호스트 그룹이 삭제되었습니다. 그룹에 속했던 호스트는 더 이상 호스트 그룹에 매핑된 스토리지 유닛에 액세스할 수 없습니다.</block>
-  <block id="40082e45e855dbdb3de68aec6ef1aa78" category="cell">클러스터당 최대 노드 수</block>
-  <block id="a3df4c04a46b1ebef6ac5fcea3ddb66f" category="cell">클러스터당 최대 저장 장치 수</block>
   <block id="8487699fb65ed58bf886a609cc850b23" category="cell">30,000</block>
-  <block id="b20d291d0592458b40c373636c7571ef" category="cell">최대 저장 장치 크기</block>
-  <block id="68a0ea87389f1222fb3b843ccfd2c0fb" category="cell">최대 저장소 가용성 영역 크기</block>
   <block id="4d1d2462172575416e653835e7623c79" category="cell">2페타비</block>
   <block id="246838e6a2baa5417bc2bb181dffaefd" category="cell"><block ref="246838e6a2baa5417bc2bb181dffaefd" category="inline-link-macro-rx"></block></block>
   <block id="b41dd2df01d053ae559a639dee1a223a" category="summary">ASA r2 시스템을 위한 ONTAP 9.17.1에서 사용할 수 있는 새로운 기능에 대해 알아보세요.</block>
@@ -2299,8 +2265,6 @@
   <block id="2a1d671c971c0af470fbdc7401172b0f" category="sidebar">ARP/AI 경고에 응답</block>
   <block id="65af6614b420bd97b9cd190dea5aea32" category="sidebar">ARP/AI 일시 중지 또는 재개</block>
   <block id="db63e5e7d34efa3840098020c2d030bc" category="sidebar">ONTAP 9.17.1의 새로운 기능</block>
-  <block id="7d456ea58781d907d2b20d5b2aca677d" category="summary">ASA r2 시스템에 대한 자체 서명 인증서로 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성하는 방법을 알아보세요.</block>
-  <block id="851790a9f21b5ff71a9331c624658b8f" category="doc">ASA r2 시스템에서 자체 서명 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediatior 구성</block>
   <block id="3d1a9a8962bb1e463a972fd3eef1a2d7" category="paragraph">SnapMirror Active Sync는 재해 발생 시 거의 0에 가까운 복구 지점 목표(RPO)와 거의 0에 가까운 복구 시간 목표(RTO)로 작업을 계속할 수 있도록 데이터를 보호하도록 구성되어 있습니다.</block>
   <block id="19e274092e78148b7f8f40a16e4e4b47" category="summary">SnapMirror 사용하여 서로 다른 클러스터의 스토리지 VM 간에 피어 관계를 생성하면 데이터 보호 및 재해 복구가 가능합니다.</block>
   <block id="e7a712b62a3b9917efcf632c95771bf8" category="summary">SnapMirror 액티브 싱크를 구성하기 전에 ASA r2 클러스터가 지원되는 피어링 관계에 있는지, 그리고 기타 구성 요구 사항을 충족하는지 확인해야 합니다.</block>
@@ -2329,5 +2293,217 @@
   <block id="a7063f74bf99069f53792368bf5ddbe3" category="admonition">자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
   <block id="bbf7c82f4e9f186f627b8c659682a8e1" category="admonition">ASA r2 시스템에서는 SED가 NVMe 프로토콜에 대해서만 지원됩니다.</block>
   <block id="f0929283036207a854392f9eaeb45be4" category="paragraph">ASA r2 시스템은 일관성 그룹이 있는 스토리지 유닛을 사용하여 스토리지 관리와 데이터 보호를 간소화합니다.  예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다.  각 저장 장치를 개별적으로 백업하는 대신 일관성 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
-  <block id="85eb2c19fe63353c756dd7a692d4b4f1" category="admonition"><block ref="46c41179928c756a06811404e3a5ce1c" category="inline-link-macro-rx"></block>ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다. 자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
+  <block id="eaeb215b56b171344d62780dd997477e" category="paragraph">ONTAP 9.16.1부터 ASA r2 스토리지 시스템은 클러스터당 최대 12개의 노드를 지원합니다.  HA 쌍의 새 노드에 케이블이 연결되고 전원이 켜진 후에는 이를 클러스터에 조인해야 합니다.</block>
+  <block id="b8838348a8da924f377a5d293230f4f4" category="summary">ASA r2 시스템에 대한 ONTAP 소프트웨어 복구는 다른 ONTAP 시스템에 대한 복구와 동일한 프로세스를 따릅니다. ONTAP 클러스터를 되돌리는 작업은 시스템 중단을 초래할 수 있습니다.</block>
+  <block id="4145a02c95a799fdae111c620990d210" category="admonition"><block ref="78cd7e79034e394d9b3e1aacaa777a70" category="inline-link-macro-rx"></block>ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다. 자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
+  <block id="b4a4e19f8caa5675ed75c7e4c2f95379" category="inline-link-macro">SnapMirror 활성 동기화 관계 삭제</block>
+  <block id="3151003a976b1d39b8d92ef0ca3c387c" category="cell"><block ref="3151003a976b1d39b8d92ef0ca3c387c" category="inline-link-macro-rx"></block></block>
+  <block id="79bc5a42c0ce5e77f02d040d055dfae3" category="summary">ASA r2 시스템용 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템용 업그레이드와 동일한 프로세스를 따릅니다.  ASA r2 시스템에서 ONTAP 소프트웨어를 업그레이드하면 새롭고 향상된 ONTAP 기능을 활용할 수 있습니다.</block>
+  <block id="676b55575e438300a6a0242a0e2d75e1" category="summary">ASA r2 시스템에 대한 자체 서명 인증서나 타사 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성하는 방법을 알아보세요.</block>
+  <block id="891f36b135a18ccbdefecd4dd19a3c84" category="doc">ASA r2 시스템에서 ONTAP Mediator 또는 ONTAP Cloud Mediatior 구성</block>
+  <block id="97bae85f844627b195ba9e949527cd8e" category="list-text">오른쪽 창의 *중재자*에서 *중재자 추가*를 선택합니다.</block>
+  <block id="42d4a1ca1a8c97aaab863879660365c9" category="list-text">인증서 정보를 추가합니다</block>
+  <block id="d766068c7f16a578ba3f54cfb9431541" category="list-text">자체 서명된 인증서를 사용하는 경우 해당 내용을 복사하세요.<block ref="9e1f34d274d54e077ab71c2c0fe0badd" prefix=" " category="inline-code"></block> 파일을 *인증서* 필드에 붙여 넣거나 *가져오기*를 선택하여 이동합니다.<block ref="9e1f34d274d54e077ab71c2c0fe0badd" prefix=" " category="inline-code"></block> 파일을 열고 인증서 정보를 가져옵니다.</block>
+  <block id="063f94639a5aabb84156e8516de0cab6" category="list-text">타사 인증서를 사용하는 경우 인증서 정보를 *인증서* 필드에 입력하세요.</block>
+  <block id="305f7299b1b227306c97e175ddfb373e" category="summary">일관성 그룹의 일부인 저장 장치의 데이터를 보호하기 위해 일관성 그룹의 스냅샷을 만듭니다.  일관성 그룹의 어떤 저장 장치에 있는 데이터를 더 이상 보호할 필요가 없으면 스냅샷 보호를 제거할 수 있습니다.</block>
+  <block id="8536e4b244760f25ededb010c00effa2" category="doc">스냅샷을 사용하여 ASA r2 시스템의 일관성 그룹을 보호하세요.</block>
+  <block id="4b4f911a862c022d119e438c44aa0a17" category="paragraph">일관성 그룹에 속한 스토리지 유닛의 데이터를 보호하려면 ASA r2 스토리지 시스템의 일관성 그룹에 대한 스냅샷을 만듭니다.  일관성 그룹의 어떤 저장 장치에 있는 데이터를 더 이상 보호할 필요가 없는 경우 일관성 그룹에서 스냅샷 보호를 제거할 수 있습니다.</block>
+  <block id="d48c07ef0c202dfbe8cb1a9f0d858fd3" category="paragraph">일관성 그룹 내 특정 저장 장치의 데이터를 더 이상 보호할 필요가 없는 경우 일관성 그룹에서 해당 저장 장치를 제거할 수 있습니다.</block>
+  <block id="41711fcdbb5f638e0c8240940a59ef75" category="summary">일관성 그룹의 저장 장치 수를 수정하여 일관성 그룹의 크기를 늘리거나 줄입니다.</block>
+  <block id="c27a5962c7e7ec66189a305a5f5ad38b" category="doc">ASA r2 시스템에서 일관성 그룹의 크기를 수정합니다.</block>
+  <block id="833a4354cb68f3cdd7ed3c7ae637dd10" category="inline-link-macro">SnapMirror 활성 동기화 관계 삭제</block>
+  <block id="02fe6464a41941805587a0bb0fd6bc1b" category="inline-link-macro">관계를 끊다</block>
+  <block id="befe4ba543ef5becd7b16f7e36af9a30" category="paragraph">ONTAP 9.16.1을 실행 중이고 확장하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 저장 장치를 추가하기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 확장하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
+  <block id="7ac95df708e1e6c23d71cd9393b3bc84" category="summary">더 이상 일관성 그룹의 구성원을 단일 단위로 관리할 필요가 없는 경우 일관성 그룹을 삭제할 수 있습니다.</block>
+  <block id="fad786d01c26418babfb8f46c9213322" category="doc">ASA r2 시스템에서 일관성 그룹 삭제</block>
+  <block id="6488fd27ab28c1a614285c0fcab40be4" category="paragraph">더 이상 일관성 그룹의 구성원을 단일 단위로 관리할 필요가 없는 경우 일관성 그룹을 삭제할 수 있습니다.  일관성 그룹이 삭제된 후에도 이전에 그룹에 속했던 저장 장치는 클러스터에서 활성 상태를 유지합니다.  일관성 그룹이 복제 관계에 있는 경우 복제된 사본은 원격 클러스터에 남아 있습니다.</block>
+  <block id="d6b9eb2d38523b60202862949d11678f" category="paragraph">ONTAP 9.16.1을 실행 중이고 삭제하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹을 삭제하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 수정하기 전에 이 관계를 삭제할 필요가 없습니다.</block>
+  <block id="fded2ecb467047cfa87cd2389472c754" category="doc">ASA r2 스토리지 시스템의 ONTAP 일관성 그룹에 대해 알아보세요.</block>
+  <block id="89a3dbc1e61db3375313b0a46b8b2d38" category="paragraph">일관성 그룹은 단일 단위로 관리되는 저장 단위의 모음입니다.  일관성 그룹을 사용하면 스토리지 관리가 간소화됩니다.</block>
+  <block id="209c4e104de4e93b212390238bb51b0c" category="paragraph">예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다. 각 저장 장치를 백업하는 대신 일관성 그룹에 스냅샷 데이터 보호를 추가하기만 하면 전체 데이터베이스를 백업할 수 있습니다.  저장 장치를 개별적으로 백업하는 대신 일관성 그룹으로 백업하면 모든 장치에 대한 일관된 백업이 제공되지만, 장치를 개별적으로 백업하면 불일치가 발생할 가능성이 있습니다.</block>
+  <block id="a50d9fbff117cd678c55c63a5bb02d0e" category="paragraph">ONTAP 9.16.1부터 System Manager를 사용하여 ASA r2 시스템에서 계층적 일관성 그룹을 만들 수 있습니다.  계층적 구조에서는 하나 이상의 일관성 그룹이 부모 일관성 그룹 아래의 자식으로 구성됩니다.</block>
+  <block id="b677e3124d6e40579970e7053d53c4e0" category="section-title">복제 관계의 일관성 그룹</block>
+  <block id="e2b2e30a32098f6916a6a7a2d004a136" category="paragraph">ONTAP 9.17.1부터 관계를 끊거나 삭제하지 않고도 비동기 복제 관계 또는 SnapMirror 활성 동기화 관계의 일관성 그룹에 다음과 같은 지오메트리 변경을 적용할 수 있습니다.  기본 일관성 그룹에서 기하학적 변경이 발생하면 변경 사항이 보조 일관성 그룹에 복제됩니다.</block>
+  <block id="118a76b2a17ade397c36b94ff6a5a4f9" category="inline-link-macro">저장 장치 크기 수정</block>
+  <block id="fde8c58298e02019969dd954b97dda6d" category="list-text"><block ref="ecd9b37bb6564d4b0eaac3a523e99149" category="inline-link-macro-rx"></block>저장 장치를 추가하거나 제거하여.</block>
+  <block id="0d6c55064bffe94e0d38693f932c9d03" category="inline-link-macro">단일 일관성 그룹을 홍보합니다.</block>
+  <block id="318e50939b290a8ad26496081e4b79f3" category="list-text"><block ref="0e09b761b21c40af56c936feefb34032" category="inline-link-macro-rx"></block>부모 일관성 그룹에.</block>
+  <block id="2ddce4766410ba2d023ff2601b6035e1" category="inline-link-macro">부모 일관성 그룹 강등</block>
+  <block id="76596c109755e8f490e1a34e3fca97eb" category="list-text"><block ref="031a438e26bd812ae216f241f1df7f63" category="inline-link-macro-rx"></block>단일 일관성 그룹으로.</block>
+  <block id="a797d8d67c33e2518148fc6832aec727" category="inline-link-macro">자식 일관성 그룹 분리</block>
+  <block id="85e66a81f7243f5fed3876c39ee88b00" category="list-text"><block ref="a0f6fb7e18585da27ebd1469c65b0bf0" category="inline-link-macro-rx"></block>부모 일관성 그룹에서.</block>
+  <block id="fbc1e4537d7272daa084d09b0b6518c9" category="list-text"><block ref="49d09aacb53e588992bf3059e10179a4" category="inline-link-macro-rx"></block>기존 일관성 그룹을 사용합니다.</block>
+  <block id="4b5530f7d3ae98b0b72f47ff0f799d71" category="inline-link-macro">비동기 복제 관계를 끊다</block>
+  <block id="a04062ef828580f220b683895b5ff7f0" category="paragraph">ONTAP 9.16.1에서는 다음을 수행해야 합니다.<block ref="a469377170b905c6c9ecc6ebb0e09607" category="inline-link-macro-rx"></block> 그리고<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹에 기하학적 변경을 하기 전에.</block>
+  <block id="9a00996d223c374eb701de258a3d4762" category="summary">각 저장 장치에서 개별적으로 작업을 수행하는 대신, 일관성 그룹을 사용하여 여러 저장 장치에 대해 동시에 다양한 작업을 수행합니다.  계층적 구조에서는 하나 이상의 일관성 그룹이 부모 일관성 그룹 아래의 자식으로 구성됩니다.</block>
+  <block id="cfb33d071831c4697b80956e95fabe77" category="doc">ASA r2 시스템에서 계층적 일관성 그룹 관리</block>
+  <block id="12f83c4c3fb13a965f88dab1ae3eb2c0" category="paragraph">ONTAP 9.16.1부터 System Manager를 사용하여 ASA r2 시스템에서 계층적 일관성 그룹을 만들 수 있습니다.  계층적 구조에서는 하나 이상의 일관성 그룹이 부모 일관성 그룹 아래의 자식으로 구성됩니다.  각 자식 일관성 그룹에 개별 스냅샷 정책을 적용하고 부모를 복제하여 모든 자식 일관성 그룹의 스냅샷을 단일 단위로 원격 클러스터에 복제할 수 있습니다.  이를 통해 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다.</block>
+  <block id="3ac8299c6e8aa389c4671969717ba58f" category="section-title">기존 일관성 그룹을 부모 일관성 그룹으로 승격</block>
+  <block id="66ee6561a99b073d54f9e83ee7b09dac" category="paragraph">기존 일관성 그룹을 부모로 승격하면 새 자식 일관성 그룹이 생성되고 승격된 일관성 그룹에 속한 스토리지 유닛이 새 자식 일관성 그룹으로 이동됩니다.  저장 단위는 부모 일관성 그룹과 직접 연관될 수 없습니다.</block>
+  <block id="12cda3c54df5ed8c4eb98ffac475155b" category="paragraph">ONTAP 9.16.1을 실행 중이고 승격하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹이 승격되기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 홍보하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 승격하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
+  <block id="9301bf3266067cf2800be3bd2bfaa3de" category="list-text">새 자식 일관성 그룹의 이름을 입력하거나 기본 이름을 그대로 사용한 다음, 일관성 그룹 구성 요소 유형을 선택합니다.</block>
+  <block id="f8caf636e3b8fa0f56119352de2f4e4f" category="paragraph">부모 일관성 그룹 아래에 추가적인 자식 일관성 그룹을 만들 수 있습니다.  당신도 할 수 있습니다<block ref="c9073dd826fc7721b98f9930c55d01b2" category="inline-link-macro-rx"></block> 백업 및 재해 복구를 위해 부모 및 자식 일관성 그룹을 지리적으로 멀리 떨어진 위치로 복사합니다.</block>
+  <block id="488eb097613bea3d7193264b5d8bde4f" category="paragraph">부모 일관성 그룹을 단일 일관성 그룹으로 강등하면 연관된 자식 일관성 그룹의 스토리지 단위가 부모 일관성 그룹에 추가됩니다.  자식 일관성 그룹이 삭제되고 부모 일관성 그룹은 단일 일관성 그룹으로 관리됩니다.</block>
+  <block id="38f17853f3794e07578f727204a0dbe3" category="paragraph">ONTAP 9.16.1을 실행 중이고 강등하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹이 강등되기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 강등하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
+  <block id="648ef31970ca0486a78c62c1ba3d6ea4" category="paragraph">자식 일관성 그룹을 만들면 각 자식에 개별 스냅샷 정책을 적용할 수 있습니다.  ONTAP 9.17.1부터 개별 복제 정책을 각 자식에 직접 적용할 수도 있습니다.  ONTAP 9.16.1에서는 복제 정책이 부모 수준에서만 적용될 수 있습니다.</block>
+  <block id="55544ce2458cf41daf84e717a42e7150" category="inline-link-macro">기존 부모 일관성 그룹에서 분리합니다.</block>
+  <block id="61ea9d980857627872f7e7b8d57a7e3b" category="paragraph">사용하려는 일관성 그룹이 이미 다른 일관성 그룹의 자식인 경우 다음을 수행해야 합니다.<block ref="669756fc250d6dea21366c7b25a2790e" category="inline-link-macro-rx"></block> 새로운 부모 일관성 그룹으로 옮기기 전에.</block>
+  <block id="7e337096e80859cb6898cfb8384f18f6" category="inline-link-macro">복제 정책 설정</block>
+  <block id="ff18feea12af53720295342101080588" category="paragraph">자식 일관성 그룹을 만든 후에는 다음을 수행할 수 있습니다.<block ref="b20e7e9a535f6a3244da85f4587a0502" category="inline-link-macro-rx"></block> 각 어린이의 일관성 그룹에 대해.  당신도 할 수 있습니다<block ref="4b00dbe31f77fc04f4dbf5d9b3e1fca3" category="inline-link-macro-rx"></block> 부모 및 자식 일관성 그룹을 사용하여 일관성 그룹을 원격 위치로 복제합니다.</block>
+  <block id="a0a49d94e214fa3e16bbaffb341668c7" category="paragraph">자식 일관성 그룹을 부모 일관성 그룹에서 분리하면 자식 일관성 그룹은 부모 일관성 그룹에서 제거되고 단일 일관성 그룹으로 관리됩니다.  부모에 적용된 복제 정책은 더 이상 분리된 자식 일관성 그룹에 적용되지 않습니다.</block>
+  <block id="85bef1d1a49cbb3a5a043ae91ac899f5" category="paragraph">ONTAP 9.16.1을 실행 중이고 분리하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹을 분리하기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 분리하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
+  <block id="8e735c2c6a3f530bcf5ec1e68dcead8d" category="paragraph"><block ref="2e81c1e2e7e67baddc7dd1eab1535a95" category="inline-link-macro-rx"></block>분리된 자식 일관성 그룹의 스냅샷을 원격 클러스터에 복제합니다.</block>
+  <block id="69476e145701ec47dd0e3181118ad91d" category="summary">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.</block>
+  <block id="3de0089e51a9f451f4891a9694b94d7e" category="doc">미리 정의된 ONTAP 데이터 보호 정책에 대해 알아보세요</block>
+  <block id="9f69e96ba899e0e31a6aada411ff602e" category="paragraph">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.</block>
+  <block id="ed8bdaffa7dc68cc8c956646c4e8fe55" category="inline-link-macro">사용자 정의 복제 정책 생성</block>
+  <block id="cd84790f97e4e9beb448a5f86dfdf828" category="paragraph">미리 정의된 정책이 귀하의 요구 사항을 충족하지 못하는 경우<block ref="780c8d0d6612638332edd501d17289ee" category="inline-link-macro-rx"></block> .</block>
+  <block id="80ff29be3d84d7435018e866ecd124a6" category="paragraph">ASA r2 시스템은 다음과 같은 사전 정의된 보호 정책을 지원합니다.</block>
+  <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">정책</block>
+  <block id="551e9178cd3ea95d0d7df735e2e30c6f" category="cell">정책 유형</block>
+  <block id="288aae25bc408055f50c21c991903a44" category="cell">비동기</block>
+  <block id="ecffab924c73081f7a5daa0fcf137bcc" category="cell">최신 활성 파일 시스템과 일일 및 주간 스냅샷을 시간별 전송 일정에 따라 미러링하기 위한 통합 SnapMirror 비동기 및 볼트 정책입니다.</block>
+  <block id="ab82ab1ac857305b532ae893c6df13b1" category="cell">자동화된 이중 장애 복구</block>
+  <block id="5fbde80869a5354222f418b5f3af46dd" category="cell">RTO가 0인 SnapMirror 동기식 및 양방향 동기화 복제 정책입니다.</block>
+  <block id="c0b79db5f258f0c991a383cbdbf001dd" category="cell">SnapMirror 액티브 싱크</block>
+  <block id="3fc99abc5dee77df7e706bb391cf7258" category="cell">클라우드백업기본</block>
+  <block id="eb6c3e84822f94714c7eb065c30117b0" category="cell">일일 규칙이 있는 금고 정책.</block>
+  <block id="4e4df311376e4a403b9614c810b7a3b9" category="cell">데일리백업</block>
+  <block id="c69f7c05d06e3e478b8e5ff198ac35b2" category="cell">일일 규칙과 일일 이체 일정이 있는 금고 정책입니다.</block>
+  <block id="7e09f5121e9c61e839183558ddb0f17d" category="cell">DPDefault</block>
+  <block id="5272b9b0c5ca7c95f915c2080fe8946d" category="cell">모든 스냅샷과 최신 활성 파일 시스템을 미러링하기 위한 SnapMirror 비동기 정책입니다.</block>
+  <block id="549e9a8369377ab9bda71541111ca2f9" category="cell">미러올스냅샷</block>
+  <block id="60bf0a8329b28f710536d60850cb1ad2" category="cell">MirrorAllSnapshotsDiscardNetwork</block>
+  <block id="3b60626161332cd48fe2f9fe9c41de1f" category="cell">SnapMirror 네트워크 구성을 제외한 모든 스냅샷과 최신 활성 파일 시스템을 미러링하는 비동기 정책입니다.</block>
+  <block id="37e459201e5691c90f616e05271f4ba3" category="cell">미러앤볼트</block>
+  <block id="41f889b90a2417e1c56ca295730ea1dc" category="cell">최신 활성 파일 시스템과 일일 및 주간 스냅샷을 미러링하기 위한 통합 SnapMirror 비동기 및 볼트 정책입니다.</block>
+  <block id="5f79bf5ea1c4cd25b49cd8a7fb4f5455" category="cell">MirrorAndVaultDiscardNetwork</block>
+  <block id="6ee73deec679305aa1494717fbf9a5a6" category="cell">네트워크 구성을 제외한 최신 활성 파일 시스템과 일일 및 주간 스냅샷을 미러링하기 위한 통합 SnapMirror 비동기 및 볼트 정책입니다.</block>
+  <block id="e162cfb3e9ccdaa06cb8c6b686825bee" category="cell">미러최신</block>
+  <block id="c76de16c1b3ed0faebadf362f3a06ca9" category="cell">최신 활성 파일 시스템을 미러링하기 위한 SnapMirror 비동기 정책입니다.</block>
+  <block id="4403b8bed8329a1a1ba838d590fec221" category="cell">Unified7year</block>
+  <block id="e2f3a8e2d9dbebebccfd5c2dd674a96c" category="cell">7년 보존이 적용되는 통합 SnapMirror 정책입니다.</block>
+  <block id="a56c1780b810accc7f0bc23193dc16aa" category="cell">XDP기본</block>
+  <block id="6b56815783be20f0a82bd8f4880fefa5" category="cell">일일 및 주간 규칙이 있는 금고 정책입니다.</block>
+  <block id="83d91de2f52b22872c66e363d396d82b" category="summary">ONTAP Mediator 또는 ONTAP Cloud Mediator를 자체 서명 인증서로 구성하는 경우 타사 인증서를 사용하도록 Mediator를 재구성할 수 있습니다.  보안상의 이유로 귀하의 조직에서는 타사 인증서를 선호하거나 요구할 수 있습니다.</block>
+  <block id="8212aa9e3969d005df60d6c0a8d03da9" category="doc">ASA r2 시스템에서 타사 인증서를 사용하도록 ONTAP Mediator 또는 ONTAP Cloud Mediator를 재구성합니다.</block>
+  <block id="6fa9fd24f49ecdb135d0af635134c226" category="section-title">1단계: 중재자 구성 제거</block>
+  <block id="1b017ccd17d10e80ac7e3b702a530790" category="paragraph">중재자를 재구성하려면 먼저 클러스터에서 현재 구성을 제거해야 합니다.</block>
+  <block id="d76107f3fb2c3c33ee326f5ddecf626e" category="list-text">오른쪽 창의 *중재자*에서 다음을 선택하세요.<block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> 제거하려는 중재자 구성이 있는 클러스터 피어 옆에 있는 *제거*를 선택합니다.</block>
+  <block id="191ff56bf6dbd5b81a76ca16a571530b" category="paragraph">여러 개의 중재자가 설치되어 있고 모든 구성을 제거하려면 다음을 선택하십시오.<block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> *중재자* 옆에 있는 *제거*를 선택하세요.</block>
+  <block id="e39086306b3ce16632ca22b3d751ea42" category="list-text">*제거*를 선택하여 중재자 구성을 제거할 것인지 확인하세요.</block>
+  <block id="5bcb93f5956975bda7762923600a7fde" category="section-title">2단계: 자체 서명 인증서 제거</block>
+  <block id="8a9aa417ea3834cc47269177f63df38a" category="paragraph">중재자 구성을 제거한 후에는 클러스터에서 연관된 자체 서명 인증서를 제거해야 합니다.</block>
+  <block id="de4a13d9c204bbdf4795aff9b1aea3de" category="list-text">*보안*에서 *인증서*를 선택합니다.</block>
+  <block id="edb693006e34a8858ad03c5f33e98d9d" category="list-text">제거할 인증서를 선택하세요.</block>
+  <block id="9199037ebac20c4a4b4df287b49db254" category="section-title">3단계: 타사 인증서로 중재자를 다시 설치합니다.</block>
+  <block id="18ef85a2d2a7cbed5f82df9e88cd62b5" category="paragraph">연관된 자체 서명 인증서를 제거한 후에는 타사 인증서로 중재자를 다시 구성할 수 있습니다.</block>
+  <block id="cf57dce9dd33d0745f81c3a98ac4cebd" category="list-text">*보호 &gt; 개요*를 선택합니다.</block>
+  <block id="86e6674acae395f5cc81d371bae88908" category="list-text">오른쪽 창의 *중재자*에서 *중재자 추가*를 선택합니다.</block>
+  <block id="c1b9b64ffaa32827ddafe986795b3948" category="list-text">*클라우드* 중재자의 경우 조직 ID, 클라이언트 ID, 클라이언트 비밀번호를 입력하세요. *온프레미스* 중재자의 경우 IP 주소, 포트, 중재자 사용자 이름 및 중재자 비밀번호를 입력합니다.</block>
+  <block id="2048f18acbfe9e97f51562432ae87b1b" category="list-text">적격 클러스터 피어 목록에서 클러스터 피어를 선택하거나 *클러스터 피어 추가*를 선택하여 새 피어를 추가합니다.</block>
+  <block id="530a7053200e8c038cc3768f24cad13a" category="list-text">*인증서*에서 타사 인증서 정보를 입력합니다.</block>
+  <block id="8c7c5e0c07d872b6c139a5f526a70088" category="paragraph">ONTAP Mediator 또는 ONTAP Cloud Mediator가 타사 인증서를 사용하도록 재구성되었습니다.  이제 중재자를 사용하여 SnapMirror 활성 동기화 관계를 관리할 수 있습니다.</block>
+  <block id="9c12112fa6fe43d99a3e32f651b5372b" category="summary">특정 상황에서는 비동기 복제 관계를 해제해야 할 수도 있습니다.</block>
+  <block id="3c5ec2c1f45c326c6c3f48f99f51c4a6" category="doc">ASA r2 시스템에서 비동기 복제 관계 해제</block>
+  <block id="b8d7df6139bf4421b2174362465b943b" category="paragraph">특정 상황에서는 비동기 복제 관계를 해제해야 할 수도 있습니다.  예를 들어, ONTAP 9.16.1을 실행 중이고 비동기 복제 관계에 있는 일관성 그룹의 크기를 늘리려면 일관성 그룹의 크기를 수정하기 전에 먼저 관계를 해제해야 합니다.</block>
+  <block id="e8105e55290d2bd97b66e26bffa52344" category="list-text">*지역 목적지* 또는 *지역 소스*를 선택하세요.</block>
+  <block id="6f88a4bfa275f474fcb3cb724356e219" category="list-text">끊고 싶은 관계 옆에서 선택하세요<block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> ; 그런 다음 *중단*을 선택합니다.</block>
+  <block id="750c75545b932eb3b3f834231bf644fa" category="list-text">*휴식*을 선택하세요.</block>
+  <block id="bcde3b1cf285960c73a0e8d33b54f7a4" category="paragraph">기본 및 보조 일관성 그룹 간의 비동기 관계가 끊어졌습니다.</block>
+  <block id="773d72c5baf92c9f6d2eab4f0c78e8d5" category="summary">비즈니스 애플리케이션에 대해 거의 0에 가까운 RPO 및 RTO가 더 이상 필요하지 않은 경우, 연관된 SnapMirror 활성 동기화 관계를 삭제하여 SnapMirror 활성 동기화 보호를 제거합니다.</block>
+  <block id="c420820f889b469c295427f98993af3d" category="doc">ASA r2 시스템에서 SnapMirror 활성 동기화 관계 삭제</block>
+  <block id="bdf6db955e768b925afda0bf17928432" category="paragraph">비즈니스 애플리케이션에 대해 거의 0에 가까운 RPO 및 RTO가 더 이상 필요하지 않은 경우, 연관된 SnapMirror 활성 동기화 관계를 삭제하여 SnapMirror 활성 동기화 보호를 제거해야 합니다.  ASA r2 시스템에서 ONTAP 9.16.1을 실행하는 경우 SnapMirror 활성 동기화 관계의 일관성 그룹에 특정 지오메트리 변경을 적용하기 전에 SnapMirror 활성 동기화 관계를 삭제해야 할 수도 있습니다.</block>
+  <block id="fc3507abe06965431063d14ce7c02644" category="section-title">1단계: 호스트 복제 종료</block>
+  <block id="236e942ee46ff6fdc6429108dfa6b2a8" category="paragraph">소스 클러스터의 호스트 그룹이 대상 클러스터로 복제되고 대상 일관성 그룹이 복제된 호스트 그룹에 매핑된 경우 SnapMirror 활성 동기화 관계를 삭제하기 전에 소스 클러스터에서 호스트 복제를 종료해야 합니다.</block>
+  <block id="e46872dc43cf698a1767ad4ee94efd72" category="list-text">복제를 중지하려는 호스트 그룹이 포함된 호스트 옆에서 다음을 선택합니다.<block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> 을 선택한 다음 *편집*을 선택합니다.</block>
+  <block id="ff17da9c94bc0fe522b8188aa4a849e5" category="list-text">*호스트 구성 복제*를 선택 해제한 다음, *업데이트*를 선택합니다.</block>
+  <block id="5c6cc670a07524f68c4bab921db44b89" category="section-title">2단계: SnapMirror 활성 동기화 관계 삭제</block>
+  <block id="ba6cf398b50069e6a0c7728e584724e7" category="paragraph">일관성 그룹에서 SnapMirror 활성 동기화 보호를 제거하려면 SnapMirror 활성 동기화 관계를 삭제해야 합니다.</block>
+  <block id="bae21a909697b1407238dcd4402f4a23" category="list-text">제거하려는 SnapMirror 활성 동기화 관계 옆에서 다음을 선택하세요.<block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> ; 그런 다음 *삭제*를 선택합니다.</block>
+  <block id="fde1120f73c8605556947918e93e79f8" category="list-text">*소스 일관성 그룹 기반 스냅샷 해제*를 선택합니다.</block>
+  <block id="4df02675ad049e30b90413ee776f8ecb" category="paragraph">SnapMirror 활성 동기화 관계가 제거되고 소스 일관성 그룹 기반 스냅샷이 해제됩니다.  일관성 그룹의 저장 장치는 더 이상 SnapMirror Active Sync로 보호되지 않습니다.</block>
+  <block id="f6163f963e9e2a3c70abc5c5c501ae0a" category="paragraph"><block ref="ac7c9d4c42447f2eb78cd56bb53dad12" category="inline-link-macro-rx"></block>백업 및 재해 복구를 위해 일관성 그룹을 지리적으로 멀리 떨어진 위치로 복사합니다.</block>
+  <block id="66b12cace5672f234227566918c5b83b" category="summary">ASA r2 시스템에서는 SnapMirror Active Sync에 한 번에 한 가지 유형의 Mediator만 사용할 수 있습니다.  중재자 유형을 변경하기로 선택한 경우 다른 인스턴스를 설치하기 전에 현재 인스턴스를 제거해야 합니다.</block>
+  <block id="8cef0304e7896be7e19b0be0728e810a" category="doc">ASA r2 시스템에서 ONTAP Mediator 또는 ONTAP Cloud Mediator를 제거합니다.</block>
+  <block id="a12e1fb016d3f58ba251d00fbf0dbac9" category="paragraph">ASA r2 시스템에서는 SnapMirror Active Sync에 한 번에 한 가지 유형의 중재자만 사용할 수 있습니다.  중재자 유형을 변경하기로 선택한 경우 다른 인스턴스를 설치하기 전에 현재 인스턴스를 제거해야 합니다.</block>
+  <block id="99127984a5c3d7bef01ffcbab958d63d" category="paragraph">ONTAP Mediator 또는 ONTAP Cloud Mediator를 제거하려면 ONTAP 명령줄 인터페이스(CLI)를 사용해야 합니다.</block>
+  <block id="58dc7db50a2e11a9de9e6cc092c59d4d" category="open-title">ONTAP 중재자</block>
+  <block id="4022346be332d2c49a8fdee2c2bed18b" category="list-text">ONTAP Mediator 제거:</block>
+  <block id="b922d3d8c6c03b28bb6f684f1ae2ed3c" category="paragraph"><block ref="d6493b8beb28940749572984cf77c520" prefix="" category="inline-code"></block></block>
+  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">예:</block>
+  <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="open-title">ONTAP 클라우드 중재자</block>
+  <block id="e60a33e3338ad246ad4ab11727141276" category="list-text">ONTAP Cloud Mediator 제거:</block>
+  <block id="08fb4ffca88bc0f6461c362f968d394f" category="paragraph"><block ref="6fa56bfab318c33e6446a2520c50c09f" prefix="" category="inline-code"></block></block>
+  <block id="913e3fb6005d79d1e7e5eb2046a6fa4c" category="inline-link-macro">스냅미러 중재자 제거</block>
+  <block id="55394a49231c00367e205c42b064e980" category="list-text"><block ref="55394a49231c00367e205c42b064e980" category="inline-link-macro-rx"></block></block>
+  <block id="7827b7923d6e45ba19022ef0a9878628" category="inline-link-macro">ONTAP 성격에 대해 자세히 알아보세요</block>
+  <block id="67cc47e8f050e98e23b1a714f17238ec" category="paragraph"><block ref="2d2c01d97863e3fdde3b4275018cf566" category="inline-link-macro-rx"></block> .</block>
+  <block id="e9afa2f162b90f572cc67d4d4b43b24f" category="admonition">ASA r2 시스템의 경우 SnapMirror Active Sync는 2노드 클러스터 구성에서만 지원됩니다.</block>
+  <block id="2e50e3f8a8554bd854e544e6dc52462d" category="admonition">ASA r2 스토리지 시스템에 대한 스냅샷 복제는 다른 ASA r2 스토리지 시스템에서만 지원됩니다.  ASA r2 시스템에서 ASA, AFF 또는 FAS 시스템으로, 또는 ASA, AFF 또는 FAS 시스템에서 ASA r2 시스템으로 스냅샷을 복제할 수 없습니다.</block>
+  <block id="8e0a212a3ccb8f506b309ea2b6cbd1f7" category="paragraph">ONTAP 9.17.1부터 계층적 관계의 일관성 그룹에 비동기 복제 정책을 적용할 수 있습니다.  ONTAP 9.16.1에서는 계층적 관계에 있는 일관성 그룹에 대해 비동기 복제가 지원되지 않습니다.</block>
+  <block id="de095ac7880431e9449dcced8cecbd9a" category="inline-link-macro">계층적(부모/자식) 일관성 그룹에 대해 자세히 알아보세요.</block>
+  <block id="9bd28dad99082e4759b37cc288641beb" category="paragraph"><block ref="2c27991fbdb899d0303dcd6d776c47a4" category="inline-link-macro-rx"></block> .</block>
+  <block id="823690d53f135eca513f93c93a174cb1" category="section-title">2단계: 선택적으로 사용자 정의 복제 정책을 만듭니다.</block>
+  <block id="202f82422187107b48c76b4f1093f37b" category="paragraph">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.  미리 정의된 정책이 요구 사항을 충족하지 못하는 경우 사용자 정의 복제 정책을 만들 수 있습니다.</block>
+  <block id="9e0b9f51445e376b8e8b748e02d479d5" category="inline-link-macro">사전 정의된 ONTAP 데이터 보호 정책</block>
+  <block id="f68cabc6603a5173a52adc0789172ad3" category="paragraph">에 대해 알아보세요<block ref="7807ad443b4479d6979a7fffa34492fb" category="inline-link-macro-rx"></block> .</block>
+  <block id="87531525c3b816a3a29dbbcbcd9e58b1" category="inline-link-macro">복제 정책에 대해 알아보세요</block>
+  <block id="3014b2db79594ac1202cd88300196335" category="list-text"><block ref="143654464f8325f80e4706e133fabf02" category="inline-link-macro-rx"></block> .</block>
+  <block id="820e745f4ceb298ff41836e6ae6e0376" category="paragraph">복제 관계를 생성할 때 복제 관계에 적합한 복제 정책을 선택해야 합니다.  미리 정의된 정책을 사용하거나 사용자 지정 정책을 만들 수 있습니다.</block>
+  <block id="39f2cc2c7247fe111861f8e1e350fca5" category="paragraph">ASA r2 시스템은 ASA, AFF 또는 FAS 시스템과의 클러스터 혼합을 지원하지 않습니다.</block>
+  <block id="bec1e41aa312239c590ea19d2cd648e2" category="paragraph">ASA 스토리지 시스템에서 ASA r2 스토리지 시스템으로 VM 작업 부하를 마이그레이션해야 하는 경우 NetApp 다음을 권장합니다.<block ref="5e3823885235dce61c55802a90e4bf09" category="inline-link-macro-rx"></block> 데이터의 실시간, 중단 없는 마이그레이션을 수행합니다.</block>
+  <block id="8472fc4ccb1079c9fe1f338f10dae548" category="list-text">CLI에서 다음을 입력하세요.<block ref="f0af09467abded8f889764e0118fc371" prefix=" " category="inline-code"></block></block>
+  <block id="6e3ec6c33e748e95fcc9a00b80c75047" category="paragraph">ASA r2 시스템의 경우 _개성_은 _ASA r2_이고 _is-disaggregated_의 상태는 _true_입니다.</block>
+  <block id="0212dda5b736d4e3ac685d52c9fe59e3" category="paragraph">삭제하려는 저장 장치가 복제 관계에 있는 일관성 그룹에 있는 경우 다음을 수행해야 합니다.<block ref="741fafaed1397e844d655f1c5d2c2470" category="inline-link-macro-rx"></block> 삭제하기 전에.</block>
+  <block id="c2870e89f5360d8c60cf537f2608a42a" category="paragraph">ASA r2 시스템은 다음과 같은 저장 한도를 지원합니다.</block>
+  <block id="6d6dc550f66f75893e42478842ea745f" category="cell">최대 한도</block>
+  <block id="690fbea35c70c2451fa2a171900ea6a7" category="cell">HA 쌍당</block>
+  <block id="dd1714009b4f40cdf1943390ef2782eb" category="cell">클러스터당</block>
+  <block id="ae9e13b66877a85be97724063f459ec2" category="cell">일관성 그룹</block>
+  <block id="f718499c1c8cef6730f9fd03c8125cab" category="cell">256</block>
+  <block id="b0dae11b82e63781abdc8f893c41b3c0" category="cell">엔터프라이즈 애플리케이션</block>
+  <block id="f899139df5e1059396431415e770c6dd" category="cell">100</block>
+  <block id="9de6d14fff9806d4bcd1ef555be766cd" category="cell">350</block>
+  <block id="187c6ad3a74cc93ac6c2229d398e383e" category="cell">노드</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
+  <block id="d5fbc4c880281f3e9c4fff78066996a5" category="cell">복제 그룹</block>
+  <block id="c0c7c76d30bd3dcaefc96f40275bdc0a" category="cell">50</block>
+  <block id="8ee7e496c0e2a65e2ee8666fe7de92f0" category="cell">스토리지 가용성 영역 크기</block>
+  <block id="76a4dd9b098f9a8877b8b79d0c80c5d3" category="cell">2PB</block>
+  <block id="04207e7bb62b9b5d14bdb603f74e683c" category="cell">10,000</block>
+  <block id="40b9cfa6016513b4c254ea34fe34198c" category="cell">저장 장치 크기</block>
+  <block id="9afb5dac442eac92e8a891cc81c846f3" category="cell">일관성 그룹당 저장 단위</block>
+  <block id="f033ab37c30201f73f142449d037028d" category="cell">80</block>
+  <block id="137f19e6e2dc1219f33553b812627bc2" category="cell">가상 머신</block>
+  <block id="7a53928fa4dd31e82c6ef826f341daec" category="cell">800</block>
+  <block id="fe2d010308a6b3799a3d9c728ee74244" category="cell">1200</block>
+  <block id="e935f176337f588ca3f944c87464e3be" category="section-title">SnapMirror 비동기 관계에 대한 제한</block>
+  <block id="9148fad1f9a8b37e9527a1f329b82af2" category="paragraph">다음 제한은 SnapMirror 비동기 복제 관계의 스토리지 유닛과 일관성 그룹에 적용됩니다.</block>
+  <block id="6165c4352e1504dbaeef34d0cc50c187" category="cell">일관성 그룹</block>
+  <block id="6c9882bbac1c7093bd25041881277658" category="cell">250</block>
+  <block id="b137fdd1f79d56c7edf3365fea7520f2" category="cell">750</block>
+  <block id="a078c2a6f2d4313df0b942ebf9d6b940" category="cell">4,000</block>
+  <block id="3339aa4f121546a4cdc082621ff25a06" category="cell">6,000</block>
+  <block id="2500434603f5238c62790336bd12c2b3" category="section-title">SnapMirror 활성 동기화 관계에 대한 제한 사항</block>
+  <block id="a4f389e6acbb4e2e523aabcd827ac730" category="paragraph">다음 제한은 SnapMirror 활성 동기화 복제 관계의 스토리지 유닛과 일관성 그룹에 적용됩니다.  SnapMirror 액티브 동기화는 ONTAP 9.17.1부터 2노드 클러스터에서만 지원됩니다.</block>
+  <block id="18d8042386b79e2c279fd162df0205c8" category="cell">400</block>
+  <block id="520d35e96fb17bcc138fb02a60b18935" category="paragraph">다음 NetApp ASA r2 시스템은 ONTAP 9.16.1부터 지원됩니다.  이러한 플랫폼은 SAN 전용 고객의 요구 사항에 맞춰 간소화된 환경을 만드는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
+  <block id="b50f5f8469f7f4269e80570d419c9f8e" category="inline-link-macro">복제 관계에서 일관성 그룹에 대한 지오메트리 변경 지원</block>
+  <block id="42071aa0f3867fbd6baf2685ca27c2ff" category="cell"><block ref="42071aa0f3867fbd6baf2685ca27c2ff" category="inline-link-macro-rx"></block></block>
+  <block id="65476b287593ea7b99cab3c73a759847" category="cell">ASA r2 시스템은 SnapMirror 활성 동기화 관계나 비동기 복제 관계에서 일관성 그룹에 대한 기하학적 변경을 지원하며, SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊지 않습니다.  기본 일관성 그룹에서 기하학적 변경이 발생하면 변경 사항이 보조 일관성 그룹에 복제됩니다.</block>
+  <block id="40a82e39058981afc99290ca5e2fabbc" category="inline-link-macro">자식 일관성 그룹의 비동기 복제 지원</block>
+  <block id="4c8a5f5490ffb0c0214d67b43bb5c57d" category="cell"><block ref="4c8a5f5490ffb0c0214d67b43bb5c57d" category="inline-link-macro-rx"></block></block>
+  <block id="f003fc5d30b5290d37cac05051c256e6" category="cell">비동기 복제 정책은 계층적 관계의 일관성 그룹에 적용될 수 있습니다.</block>
+  <block id="91715b561990cbfd9ba4178d340cb226" category="sidebar">원격 클러스터에 스냅샷 복제</block>
+  <block id="92f555951e4f6a083cb57b83ec67f682" category="sidebar">미리 정의된 보호 정책에 대해 알아보세요</block>
+  <block id="daaf076f14b6b8c90addc214d8626a42" category="sidebar">복제 관계 끊기</block>
+  <block id="e346ab9201083b9d1dfbd7c4e0aee470" category="sidebar">타사 인증서를 사용하도록 ONTAP Mediator 또는 ONTAP Cloud Mediator를 재구성합니다.</block>
+  <block id="32c34e31139f2f25d0497ef8291abcdd" category="sidebar">SnapMirror 활성 동기화 관계 삭제</block>
+  <block id="f1b05804c01daada2fa93ccd165477c1" category="sidebar">ONTAP Mediator 또는 ONTAP Cloud Mediator 제거</block>
+  <block id="644c01b44d0b7cd48a350e168c66653e" category="sidebar">일관성 그룹에 대해 알아보세요</block>
+  <block id="ae3acb91b5af425bf5d85275f018efe4" category="sidebar">일관성 그룹을 보호하려면 스냅샷을 사용하세요.</block>
+  <block id="f9e11d9c895b9f2de1a25a03e810d34d" category="sidebar">일관성 그룹에 스토리지 유닛 추가 또는 제거</block>
+  <block id="5a0dfc6f986e17a79c038bc9a2aeec2d" category="sidebar">일관성 그룹 삭제</block>
+  <block id="36bed646725e085252916c3131fbf1b2" category="sidebar">계층적 일관성 그룹 관리</block>
 </blocks>

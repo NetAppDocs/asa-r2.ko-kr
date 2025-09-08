@@ -34,8 +34,10 @@ ASA R2 시스템에서 ONTAP 소프트웨어가 간소화되어 필수 SAN 기�
 ONTAP 스토리지의 특성은 System Manager 또는 ONTAP CLI에서 확인할 수 있습니다.
 
 * System Manager 메뉴에서 * 클러스터 > 개요 * 를 선택합니다.
-* CLI에서 다음을 입력합니다. `san config show`
+* CLI에서 다음을 입력하세요. `system node show -personality -is-disaggregated`
 
+
+ASA r2 시스템의 경우 _개성_은 _ASA r2_이고 _is-disaggregated_의 상태는 _true_입니다.
 
 ONTAP 스토리지 시스템의 특성은 변경할 수 없습니다.
 

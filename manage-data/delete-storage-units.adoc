@@ -14,7 +14,7 @@ summary: 필요한 물리적 스토리지 양을 줄이거나 다른 호스트 �
 유닛에 포함된 데이터를 더 이상 유지 관리할 필요가 없는 경우 스토리지 유닛을 삭제합니다. 더 이상 필요하지 않은 스토리지 유닛을 삭제하면 다른 호스트 애플리케이션에 필요한 공간을 확보하는 데 도움이 됩니다.
 
 .시작하기 전에
-삭제하려는 스토리지 유닛이 복제 관계에 있는 정합성 보장 그룹에 있는 경우 link:../data-protection/manage-consistency-groups.html#remove-a-storage-unit-from-a-consistency-group["정합성 보장 그룹에서 스토리지 유닛을 제거합니다"]삭제하기 전에 삭제해야 합니다.
+삭제하려는 저장 장치가 복제 관계에 있는 일관성 그룹에 있는 경우 다음을 수행해야 합니다.link:../data-protection/manage-consistency-groups-add-remove-storage-units.html#remove-a-storage-unit-from-a-consistency-group["정합성 보장 그룹에서 스토리지 유닛을 제거합니다"] 삭제하기 전에.
 
 .단계
 . System Manager에서 * Storage * 를 선택합니다.

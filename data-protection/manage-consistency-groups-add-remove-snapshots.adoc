@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: data-protection/manage-consistency-groups-add-remove-snapshots.html 
+keywords: consistency groups, snapshots, data protection, protect data, add, remove, delete, storage units, lun, namespace, increase capacity 
+summary: 일관성 그룹의 일부인 저장 장치의 데이터를 보호하기 위해 일관성 그룹의 스냅샷을 만듭니다.  일관성 그룹의 어떤 저장 장치에 있는 데이터를 더 이상 보호할 필요가 없으면 스냅샷 보호를 제거할 수 있습니다. 
+---
+= 스냅샷을 사용하여 ASA r2 시스템의 일관성 그룹을 보호하세요.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+일관성 그룹에 속한 스토리지 유닛의 데이터를 보호하려면 ASA r2 스토리지 시스템의 일관성 그룹에 대한 스냅샷을 만듭니다.  일관성 그룹의 어떤 저장 장치에 있는 데이터를 더 이상 보호할 필요가 없는 경우 일관성 그룹에서 스냅샷 보호를 제거할 수 있습니다.
+
+일관성 그룹 내 특정 저장 장치의 데이터를 더 이상 보호할 필요가 없는 경우 일관성 그룹에서 해당 저장 장치를 제거할 수 있습니다.
+
+
+
+== 정합성 보장 그룹에 스냅샷 데이터 보호 기능을 추가합니다
+
+정합성 보장 그룹에 스냅샷 데이터 보호를 추가하면 사전 정의된 스케줄에 따라 정합성 보장 그룹의 로컬 스냅샷이 정기적으로 생성됩니다.
+
+link:restore-data.html["데이터를 복원합니다"]손실되거나 손상된 스냅샷을 사용할 수 있습니다.
+
+.단계
+. System Manager에서 * 보호 > 일관성 그룹 * 을 선택합니다.
+. 보호할 일관성 그룹 위에 마우스를 놓습니다.
+. 을 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택한 다음 * 편집 * 을 선택합니다.
+. Local protection * 아래에서 * Schedule snapshots * 를 선택합니다.
+. 스냅샷 정책을 선택합니다.
++
+기본 스냅샷 정책을 수락하거나, 기존 정책을 선택하거나, 새 정책을 생성합니다.
+
++
+[cols="2,6a"]
+|===
+| 옵션을 선택합니다 | 단계 
+
+
+| 기존 스냅샷 정책을 선택합니다  a| 
+image:icon_dropdown_arrow.gif["아래쪽 파란색 화살표"]기본 정책 옆에 있는 을 선택한 다음 사용할 기존 정책을 선택합니다.
+
+
+
+| 새 스냅샷 정책을 생성합니다  a| 
+.. image:icon_add.gif["파란색 더하기 기호 다음에 ADD라는 단어가 나옵니다"]을 선택한 다음 새 정책 이름을 입력합니다.
+.. 정책 범위를 선택합니다.
+.. Schedules * 아래에서 를 선택합니다image:icon_add.gif["파란색 더하기 기호 다음에 ADD라는 단어가 나옵니다"].
+.. Schedule name * 에 나타나는 이름을 선택합니다.
++
+그런 다음 을 image:icon_dropdown_arrow.gif["아래쪽 방향을 가리키는 파란색 화살표"]선택합니다.
+
+.. 정책 일정을 선택합니다.
+.. Maximum snapshots * 에 정합성 보장 그룹에 대해 유지할 최대 스냅샷 수를 입력합니다.
+.. 선택적으로 * SnapMirror label * 아래에 SnapMirror 라벨을 입력합니다.
+.. 저장 * 을 선택합니다.
+
+
+|===
+. 저장 * 을 선택합니다.
+
+
+.다음 단계
+스냅샷을 통해 데이터가 보호되므로 이제 link:../secure-data/encrypt-data-at-rest.html["스냅샷 복제를 설정합니다"]백업 및 재해 복구를 위해 일관성 그룹을 지리적으로 멀리 떨어진 위치에 복사해야 합니다.
+
+
+
+== 정합성 보장 그룹에서 스냅샷 데이터 보호를 제거합니다
+
+정합성 보장 그룹에서 스냅샷 데이터 보호를 제거하면 정합성 보장 그룹의 모든 스토리지 유닛에 대해 스냅샷이 비활성화됩니다.
+
+.단계
+. System Manager에서 * 보호 > 일관성 그룹 * 을 선택합니다.
+. 보호를 중지할 일관성 그룹 위로 마우스를 가져갑니다.
+. 을 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택한 다음 * 편집 * 을 선택합니다.
+. Local protection * 아래에서 Schedule snapshots 를 선택 취소합니다.
+. 편집 * 을 선택합니다.
+
+
+.결과
+정합성 보장 그룹의 스토리지 유닛에 대해 스냅샷이 생성되지 않습니다.

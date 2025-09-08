@@ -40,6 +40,12 @@ ASA r2 시스템을 위한 ONTAP 9.17.1에서 사용할 수 있는 새로운 기
 
 
 | link:../data-protection/snapmirror-active-sync.html["NVMe 프로토콜에 대한 SnapMirror Active Sync 지원"] | SnapMirror Active Sync는 2노드 ONTAP 클러스터에 대해 NVMe/TCP 및 NVMe/FC 호스트 액세스를 사용하는 VMware 워크로드 지원을 추가합니다. VMware 워크로드의 NVMe/TCP 지원은 VMware 버그 ID: TR1049746 해결 여부에 따라 달라집니다 
+
+
+| link:../data-protection/manage-consistency-groups.html["복제 관계에서 일관성 그룹에 대한 지오메트리 변경 지원"] | ASA r2 시스템은 SnapMirror 활성 동기화 관계나 비동기 복제 관계에서 일관성 그룹에 대한 기하학적 변경을 지원하며, SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊지 않습니다.  기본 일관성 그룹에서 기하학적 변경이 발생하면 변경 사항이 보조 일관성 그룹에 복제됩니다. 
+
+
+| link:../data-protection/snapshot-replication.html["자식 일관성 그룹의 비동기 복제 지원"] | 비동기 복제 정책은 계층적 관계의 일관성 그룹에 적용될 수 있습니다. 
 |===
 
 

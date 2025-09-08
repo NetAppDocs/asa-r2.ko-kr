@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: data-protection/configure-ontap-mediator.html 
 keywords: asa r2, data protection, protect data, configure mediator, ontap mediator, cloud mediator, self-signed, ca, certificates 
-summary: ASA r2 시스템에 대한 자체 서명 인증서로 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성하는 방법을 알아보세요. 
+summary: ASA r2 시스템에 대한 자체 서명 인증서나 타사 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성하는 방법을 알아보세요. 
 ---
-= ASA r2 시스템에서 자체 서명 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediatior 구성
+= ASA r2 시스템에서 ONTAP Mediator 또는 ONTAP Cloud Mediatior 구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,16 +14,20 @@ summary: ASA r2 시스템에 대한 자체 서명 인증서로 ONTAP Mediator �
 SnapMirror Active Sync를 사용하여 클러스터 모니터링을 시작하려면 먼저 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성해야 합니다. ONTAP Mediator와 ONTAP Cloud Mediator는 모두 SnapMirror Active Sync 관계에서 ONTAP 클러스터가 사용하는 고가용성(HA) 메타데이터를 위한 영구적이고 펜싱된 저장소를 제공합니다. 또한, 두 Mediator 모두 쿼럼 결정을 지원하는 동기식 노드 상태 쿼리 기능을 제공하고 컨트롤러 활성 상태 감지를 위한 ping 프록시 역할을 합니다.
 
 .시작하기 전에
-* ONTAP Cloud Mediator를 사용하는 경우 ASA r2 시스템이 필요한 사항을 충족하는지 확인하십시오. link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html["전제 조건"^] .
-
+ONTAP Cloud Mediator를 사용하는 경우 ASA r2 시스템이 필요한 사항을 충족하는지 확인하십시오. link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html["전제 조건"^] .
 
 .단계
 . 시스템 관리자에서 *보호 > 개요*를 선택합니다.
-. 오른쪽 창에서 *중재자* 옆을 선택하세요. image:icon_kabob.gif["세 개의 수직 파란색 점"] ; 그런 다음 *중개자 추가*를 선택합니다.
+. 오른쪽 창의 *중재자*에서 *중재자 추가*를 선택합니다.
 . *중개자 유형*을 선택하세요.
 . *클라우드* 중재자의 경우 조직 ID, 클라이언트 ID, 클라이언트 비밀번호를 입력하세요. *온프레미스* 중재자의 경우 IP 주소, 포트, 중재자 사용자 이름, 중재자 비밀번호를 입력하세요.
 . 적격 클러스터 피어 목록에서 클러스터 피어를 선택하거나 *클러스터 피어 추가*를 선택하여 새 피어를 추가합니다.
-. 내용을 복사하세요  `intermediate.crt` 파일을 *인증서* 필드에 붙여 넣거나 *가져오기*를 선택하여 이동합니다.  `intermediate.crt` 파일을 열고 인증서 정보를 가져옵니다.
+. 인증서 정보를 추가합니다
++
+** 자체 서명된 인증서를 사용하는 경우 해당 내용을 복사하세요. `intermediate.crt` 파일을 *인증서* 필드에 붙여 넣거나 *가져오기*를 선택하여 이동합니다. `intermediate.crt` 파일을 열고 인증서 정보를 가져옵니다.
+** 타사 인증서를 사용하는 경우 인증서 정보를 *인증서* 필드에 입력하세요.
+
+
 . 추가 * 를 선택합니다.
 
 

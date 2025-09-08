@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: data-protection/pre-defined-protection-policies.html 
+keywords: snapshot replication, asa r2, protect data, data protection, replication, replicate data, remote cluster, destination cluster, source cluster, replication relationship, asynchronous replication, synchronous replication, policy, pre-defined, default, custom, policies 
+summary: 복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다. 
+---
+= 미리 정의된 ONTAP 데이터 보호 정책에 대해 알아보세요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.
+
+미리 정의된 정책이 귀하의 요구 사항을 충족하지 못하는 경우link:snapshot-replication.html#step-2-optionally-create-a-custom-replication-policy["사용자 정의 복제 정책 생성"] .
+
+ASA r2 시스템은 다음과 같은 사전 정의된 보호 정책을 지원합니다.
+
+[cols="3,4,1"]
+|===
+| 정책 | 설명 | 정책 유형 
+
+
+| 비동기 | 최신 활성 파일 시스템과 일일 및 주간 스냅샷을 시간별 전송 일정에 따라 미러링하기 위한 통합 SnapMirror 비동기 및 볼트 정책입니다. | 비동기 
+
+
+| 자동화된 이중 장애 복구 | RTO가 0인 SnapMirror 동기식 및 양방향 동기화 복제 정책입니다. | SnapMirror 액티브 싱크 
+
+
+| 클라우드백업기본 | 일일 규칙이 있는 금고 정책. | 비동기 
+
+
+| 데일리백업 | 일일 규칙과 일일 이체 일정이 있는 금고 정책입니다. | 비동기 
+
+
+| DPDefault | 모든 스냅샷과 최신 활성 파일 시스템을 미러링하기 위한 SnapMirror 비동기 정책입니다. | 비동기 
+
+
+| 미러올스냅샷 | 모든 스냅샷과 최신 활성 파일 시스템을 미러링하기 위한 SnapMirror 비동기 정책입니다. | 비동기 
+
+
+| MirrorAllSnapshotsDiscardNetwork | SnapMirror 네트워크 구성을 제외한 모든 스냅샷과 최신 활성 파일 시스템을 미러링하는 비동기 정책입니다. | 비동기 
+
+
+| 미러앤볼트 | 최신 활성 파일 시스템과 일일 및 주간 스냅샷을 미러링하기 위한 통합 SnapMirror 비동기 및 볼트 정책입니다. | 비동기 
+
+
+| MirrorAndVaultDiscardNetwork | 네트워크 구성을 제외한 최신 활성 파일 시스템과 일일 및 주간 스냅샷을 미러링하기 위한 통합 SnapMirror 비동기 및 볼트 정책입니다. | 비동기 
+
+
+| 미러최신 | 최신 활성 파일 시스템을 미러링하기 위한 SnapMirror 비동기 정책입니다. | 비동기 
+
+
+| Unified7year | 7년 보존이 적용되는 통합 SnapMirror 정책입니다. | 비동기 
+
+
+| XDP기본 | 일일 및 주간 규칙이 있는 금고 정책입니다. | 비동기 
+|===

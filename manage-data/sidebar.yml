@@ -33,7 +33,13 @@ entries:
   - title: SVM 피어 관계 생성
     url: "/data-protection/create-svm-peer-relationship.html"
   - title: 스냅샷 복제를 설정합니다
-    url: "/data-protection/snapshot-replication.html"
+    entries:
+    - title: 원격 클러스터에 스냅샷 복제
+      url: "/data-protection/snapshot-replication.html"
+    - title: 미리 정의된 보호 정책에 대해 알아보세요
+      url: "/data-protection/pre-defined-protection-policies.html"
+    - title: 복제 관계 끊기
+      url: "/data-protection/snapmirror-active-sync-break-relationship.html"
   - title: SnapMirror Active Sync 설정
     entries:
     - title: 워크플로
@@ -50,14 +56,30 @@ entries:
       url: "/data-protection/configure-snapmirror-active-sync.html"
   - title: SnapMirror 활성 동기화 관리
     entries:
+    - title: 타사 인증서를 사용하도록 ONTAP Mediator 또는 ONTAP Cloud Mediator를 재구성합니다.
+      url: "/data-protection/reconfigure-ontap-mediator-ca-certificate.html"
     - title: SnapMirror Active Sync를 사용하여 계획된 장애 조치 수행
       url: "/data-protection/snapmirror-active-sync-planned-failover.html"
     - title: 계획되지 않은 장애 조치 후 SnapMirror 활성 동기화 재설정
       url: "/data-protection/snapmirror-active-sync-unplanned-failover.html"
+    - title: SnapMirror 활성 동기화 관계 삭제
+      url: "/data-protection/snapmirror-active-sync-delete-relationship.html"
+    - title: ONTAP Mediator 또는 ONTAP Cloud Mediator 제거
+      url: "/data-protection/snapmirror-active-sync-remove-mediator.html"
   - title: 데이터를 복원합니다
     url: "/data-protection/restore-data.html"
   - title: 일관성 그룹을 관리합니다
-    url: "/data-protection/manage-consistency-groups.html"
+    entries:
+    - title: 일관성 그룹에 대해 알아보세요
+      url: "/data-protection/manage-consistency-groups.html"
+    - title: 일관성 그룹을 보호하려면 스냅샷을 사용하세요.
+      url: "/data-protection/manage-consistency-groups-add-remove-snapshots.html"
+    - title: 일관성 그룹에 스토리지 유닛 추가 또는 제거
+      url: "/data-protection/manage-consistency-groups-add-remove-storage-units.html"
+    - title: 일관성 그룹 삭제
+      url: "/data-protection/manage-consistency-groups-delete.html"
+    - title: 계층적 일관성 그룹 관리
+      url: "/data-protection/manage-hierarchical-consistency-groups.html"
   - title: 보호 정책 및 스케줄 관리
     url: "/data-protection/policies-schedules.html"
 - title: 데이터 보호

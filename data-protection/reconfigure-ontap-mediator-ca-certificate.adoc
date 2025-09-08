@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: data-protection/reconfigure-ontap-mediator-ca-certificate.html 
+keywords: asa r2, data protection, protect data, configure mediator, reconfigure, reinitialize, ontap mediator, cloud mediator, self-signed, ca, certificates 
+summary: ONTAP Mediator 또는 ONTAP Cloud Mediator를 자체 서명 인증서로 구성하는 경우 타사 인증서를 사용하도록 Mediator를 재구성할 수 있습니다.  보안상의 이유로 귀하의 조직에서는 타사 인증서를 선호하거나 요구할 수 있습니다. 
+---
+= ASA r2 시스템에서 타사 인증서를 사용하도록 ONTAP Mediator 또는 ONTAP Cloud Mediator를 재구성합니다.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP Mediator 또는 ONTAP Cloud Mediator를 자체 서명 인증서로 구성하는 경우 타사 인증서를 사용하도록 Mediator를 재구성할 수 있습니다.  보안상의 이유로 귀하의 조직에서는 타사 인증서를 선호하거나 요구할 수 있습니다.
+
+
+
+== 1단계: 중재자 구성 제거
+
+중재자를 재구성하려면 먼저 클러스터에서 현재 구성을 제거해야 합니다.
+
+.단계
+. 시스템 관리자에서 *보호 > 개요*를 선택합니다.
+. 오른쪽 창의 *중재자*에서 다음을 선택하세요.image:icon_kabob.gif["세 개의 수직 파란색 점"] 제거하려는 중재자 구성이 있는 클러스터 피어 옆에 있는 *제거*를 선택합니다.
++
+여러 개의 중재자가 설치되어 있고 모든 구성을 제거하려면 다음을 선택하십시오.image:icon_kabob.gif["세 개의 수직 파란색 점"] *중재자* 옆에 있는 *제거*를 선택하세요.
+
+. *제거*를 선택하여 중재자 구성을 제거할 것인지 확인하세요.
+
+
+
+
+== 2단계: 자체 서명 인증서 제거
+
+중재자 구성을 제거한 후에는 클러스터에서 연관된 자체 서명 인증서를 제거해야 합니다.
+
+.단계
+. 클러스터 > 설정 * 을 선택합니다.
+. *보안*에서 *인증서*를 선택합니다.
+. 제거할 인증서를 선택하세요.
+. 을 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택한 다음 * 삭제 * 를 선택합니다.
+
+
+
+
+== 3단계: 타사 인증서로 중재자를 다시 설치합니다.
+
+연관된 자체 서명 인증서를 제거한 후에는 타사 인증서로 중재자를 다시 구성할 수 있습니다.
+
+.단계
+. *보호 > 개요*를 선택합니다.
+. 오른쪽 창의 *중재자*에서 *중재자 추가*를 선택합니다.
+. *중개자 유형*을 선택하세요.
+. *클라우드* 중재자의 경우 조직 ID, 클라이언트 ID, 클라이언트 비밀번호를 입력하세요. *온프레미스* 중재자의 경우 IP 주소, 포트, 중재자 사용자 이름 및 중재자 비밀번호를 입력합니다.
+. 적격 클러스터 피어 목록에서 클러스터 피어를 선택하거나 *클러스터 피어 추가*를 선택하여 새 피어를 추가합니다.
+. *인증서*에서 타사 인증서 정보를 입력합니다.
+. 추가 * 를 선택합니다.
+
+
+.결과
+ONTAP Mediator 또는 ONTAP Cloud Mediator가 타사 인증서를 사용하도록 재구성되었습니다.  이제 중재자를 사용하여 SnapMirror 활성 동기화 관계를 관리할 수 있습니다.

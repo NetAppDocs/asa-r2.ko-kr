@@ -25,7 +25,7 @@ link:https://docs.netapp.com/us-en/ontap-sanhost/hu_vsphere_8.html["VMware vSphe
 
 == VMware 가상 시스템을 마이그레이션합니다
 
-VM 워크로드를 ASA 스토리지 시스템에서 ASA R2 스토리지 시스템으로 마이그레이션해야 하는 경우, NetApp 를 사용하여 link:https://www.vmware.com/products/cloud-infrastructure/vsphere/vmotion["VMware vSphere vMotion을 참조하십시오"^]무중단 실시간 데이터 마이그레이션을 수행하는 것이 좋습니다.
+ASA 스토리지 시스템에서 ASA r2 스토리지 시스템으로 VM 작업 부하를 마이그레이션해야 하는 경우 NetApp 다음을 권장합니다.link:https://www.vmware.com/products/cloud-infrastructure/vsphere-foundation["VMware vSphere vMotion을 참조하십시오"^] 데이터의 실시간, 중단 없는 마이그레이션을 수행합니다.
 
 .관련 정보
 * 자세히 알아보세요 link:https://docs.netapp.com/us-en/ontap-apps-dbs/vmware/vmware-vsphere-why.html["vSphere에 ONTAP 사용하는 이점"^] .

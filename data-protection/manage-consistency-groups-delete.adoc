@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: data-protection/manage-consistency-groups-delete.html 
+keywords: consistency groups, snapshots, data protection, protect data, add, remove, delete, storage units, lun, namespace 
+summary: 더 이상 일관성 그룹의 구성원을 단일 단위로 관리할 필요가 없는 경우 일관성 그룹을 삭제할 수 있습니다. 
+---
+= ASA r2 시스템에서 일관성 그룹 삭제
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+더 이상 일관성 그룹의 구성원을 단일 단위로 관리할 필요가 없는 경우 일관성 그룹을 삭제할 수 있습니다.  일관성 그룹이 삭제된 후에도 이전에 그룹에 속했던 저장 장치는 클러스터에서 활성 상태를 유지합니다.  일관성 그룹이 복제 관계에 있는 경우 복제된 사본은 원격 클러스터에 남아 있습니다.
+
+.시작하기 전에
+ONTAP 9.16.1을 실행 중이고 삭제하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.link:snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"] 일관성 그룹을 삭제하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 수정하기 전에 이 관계를 삭제할 필요가 없습니다.
+
+.단계
+. System Manager에서 * 보호 > 일관성 그룹 * 을 선택합니다.
+. 삭제할 일관성 그룹 위에 마우스를 놓습니다.
+. 을 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택한 다음 * 삭제 * 를 선택합니다.
+. 경고를 수락한 다음 * 삭제 * 를 선택합니다.
+
+
+.다음 단계
+정합성 보장 그룹을 삭제한 후에는 이전에 정합성 보장 그룹에 속해 있던 스토리지 유닛이 더 이상 스냅샷으로 보호되지 않습니다. 이러한 스토리지 유닛을 다른 정합성 보장 그룹에 추가하여 데이터 손실로부터 보호하는 것이 좋습니다.

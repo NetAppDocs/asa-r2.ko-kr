@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: administer/user-accounts-roles.html 
-keywords:  
-summary:  
+keywords: manage, user accounts, admin account, roles, active directory, ad, saml, authentication 
+summary: System Manager를 사용하여 사용자 계정에 대한 Active Directory 도메인 컨트롤러 액세스, LDAP 및 SAML 인증을 구성합니다. 사용자 계정 역할을 생성하여 역할에 할당된 사용자가 클러스터에서 수행할 수 있는 특정 기능을 정의합니다. 
 ---
 = ASA R2 스토리지 시스템에서 사용자 계정 및 역할을 관리합니다
 :allow-uri-read: 
