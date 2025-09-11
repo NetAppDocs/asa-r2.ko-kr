@@ -201,6 +201,9 @@ network interface show -lif iscsi*
 
 LIF는 필요에 따라 사용하지 않도록 설정하거나 이름을 바꿀 수 있습니다. LIF IP 주소 및 서브넷 마스크를 변경할 수도 있습니다.
 
+.이 작업에 대해
+ONTAP NTP(네트워크 시간 프로토콜)를 활용하여 클러스터 전체에서 시간을 동기화합니다. LIF IP 주소를 변경한 후에는 동기화 실패를 방지하기 위해 NTP 구성을 업데이트해야 할 수도 있습니다. 자세한 내용은 지식 기반 문서를 참조하세요.link:https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-Issues/CONTAP-500629["LIF IP 변경 후 NTP 동기화가 실패합니다."] .
+
 .단계
 . 네트워크 > 개요 * 를 선택한 다음 * 네트워크 인터페이스 * 를 선택합니다.
 . 편집할 네트워크 인터페이스 위로 마우스를 가져간 다음 을 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택합니다.
