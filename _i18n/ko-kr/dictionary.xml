@@ -1106,7 +1106,6 @@
   <block id="3d7c12f3e6019c2627798720f2876385" category="paragraph">두 개 이상의 스토리지 유닛을 생성하는 경우 각 유닛은 동일한 용량, 호스트 운영 체제 및 호스트 매핑을 사용하여 생성됩니다.</block>
   <block id="4ce211e7f3238dc2a7e5fc38f7096d99" category="list-text">스토리지 유닛 용량을 입력한 다음 호스트 운영 체제를 선택합니다.</block>
   <block id="4a12fcafc1a3c4f57a718c8ca92efc50" category="list-text">자동으로 선택된 * 호스트 매핑 * 을 적용하거나 매핑할 스토리지 유닛에 대해 다른 호스트 그룹을 선택합니다.</block>
-  <block id="3a880a9aa73ca2acefaaddbfcdb6e4e5" category="paragraph">* 호스트 매핑 * 은 새 스토리지 유닛이 매핑될 호스트 그룹을 나타냅니다. 새 스토리지 유닛에 대해 선택한 호스트 유형에 대해 기존 호스트 그룹이 있는 경우 기존 호스트 그룹이 호스트 매핑에 대해 자동으로 선택됩니다. 호스트 매핑에 대해 자동으로 선택된 호스트 그룹을 수락하거나 다른 호스트 그룹을 선택할 수 있습니다.</block>
   <block id="ec00cac618e2a8983fc71ca2a711519c" category="list-text">다음 중 하나를 수행하려면 * 추가 옵션 * 을 선택하고 필요한 단계를 완료합니다.</block>
   <block id="7e8304ed8a1d7b1d5ea3d023833084ac" category="paragraph">기본 QoS(Quality of Service) 정책을 변경합니다</block>
   <block id="670420248bfae86c26e9659cd428df4a" category="paragraph">기본 QoS 정책이 스토리지 유닛이 생성되는 스토리지 가상 머신(VM)에 이전에 설정되지 않은 경우 이 옵션을 사용할 수 없습니다.</block>
@@ -1600,10 +1599,8 @@
   <block id="75c802412c81363d98f12df3afdd41ee" category="list-text">System Manager에서 * Storage * 를 선택한 다음 이동할 스토리지 유닛을 선택합니다.</block>
   <block id="d5ea13be4cb9332cce8fc578618d94de" category="list-text">을 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * Move * 를 선택합니다.</block>
   <block id="fdc877319615730d39477cdaa8dc7207" category="list-text">스토리지 유닛을 이동할 스토리지 가용 영역을 선택한 다음 * Move * 를 선택합니다.</block>
-  <block id="a48688c54c854235d38fe4b42f162152" category="paragraph">지정한 운영 체제에서 실행 중인 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP에서 자동으로 새 호스트 그룹을 생성합니다.</block>
   <block id="12a1557d26fa34ac5e904bc3e60b0bf4" category="list-text">스토리지 및 최적화 * 에서 * 서비스 품질(QoS) * 옆의 를 선택합니다<block ref="b3b2ed9f542d1ec15ba7a198ec58e0b4" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="2cb253331363d78b30ad71dd5d7edd19" category="paragraph">기본 성능 서비스 수준을 변경합니다.</block>
-  <block id="550794613b3e2574a3e7ea8c2b3d0529" category="paragraph">ASA R2 시스템은 두 가지 성능 수준을 제공합니다. 기본 성능 수준은 사용 가능한 최고 수준인 * Extreme * 입니다. 성능 수준을 * 성능 * 으로 낮출 수 있습니다.</block>
   <block id="337c483d117ff7e78ed214b1799b666f" category="list-text">Storage and optimization * 에서 * Performance service level * 옆에 있는 를 선택합니다<block ref="b3b2ed9f542d1ec15ba7a198ec58e0b4" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="06a4e0373e144570a83a3fcfaa55ff46" category="list-text">성능 * 을 선택합니다.</block>
   <block id="c20ad4d76fe97759aa27a0c99bff6710" category="cell">12</block>
@@ -2508,4 +2505,7 @@
   <block id="e130096a0ace158c7893eedbd19e7115" category="inline-link-macro">LIF IP 변경 후 NTP 동기화가 실패합니다.</block>
   <block id="31fea35e33141cfa7edd94a1254d7007" category="paragraph">ONTAP NTP(네트워크 시간 프로토콜)를 활용하여 클러스터 전체에서 시간을 동기화합니다. LIF IP 주소를 변경한 후에는 동기화 실패를 방지하기 위해 NTP 구성을 업데이트해야 할 수도 있습니다. 자세한 내용은 지식 기반 문서를 참조하세요.<block ref="eb416b4e77f6226862164baac134c11c" category="inline-link-macro-rx"></block> .</block>
   <block id="5971035c0734629ac0d154a4b60ca9e9" category="paragraph">ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다.  iSCSI, FC, NVMe/FC 및 NVMe/TCP 프로토콜은 다중 경로를 위한 대칭적 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 활성/최적화됩니다.  iSCSI 및 NVMe/TCP 프로토콜은 호스트와 스토리지 간의 직접 연결을 지원합니다.  파이버 채널 및 NVMe/FC 프로토콜의 경우 직접 연결이 지원되지 않습니다.</block>
+  <block id="d55bb9dedbbb937989198b01ce6688da" category="paragraph">*호스트 매핑*은 새로운 저장 장치가 매핑될 호스트 그룹을 의미합니다.  새 스토리지 유닛에 대해 선택한 호스트 유형에 대한 기존 호스트 그룹이 있는 경우, 호스트 매핑을 위해 기존 호스트 그룹이 자동으로 선택됩니다.  자동으로 선택된 호스트 그룹을 수락하거나 다른 호스트 그룹을 선택할 수 있습니다.</block>
+  <block id="abeb4ea342287af6fb99335900add67e" category="paragraph">지정한 운영 체제에서 실행되는 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP 자동으로 새 호스트 그룹을 만듭니다.</block>
+  <block id="83e804a6917baea37d43dfd34c66ac73" category="paragraph">ASA r2 시스템은 두 가지 성능 수준을 제공합니다.  기본 성능 수준은 *극단*으로, 사용 가능한 가장 높은 수준입니다.  수준을 *성능*으로 낮출 수 있습니다.</block>
 </blocks>
