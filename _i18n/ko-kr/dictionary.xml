@@ -2512,5 +2512,7 @@
   <block id="74618c54a0d6a05f0dbccbfa9f4bc480" category="list-text">SnapMirror Active Sync는 두 개의 ASA r2 시스템 간에만 지원됩니다.</block>
   <block id="c274f3c7bf5ff5013941b9ff06a2dfdc" category="list-text">SnapMirror 비동기 복제는 두 개의 ASA r2 시스템 간에만 지원됩니다. SnapMirror 비동기 복제는 ASA r2 시스템과 ASA, AFF 또는 FAS 시스템 또는 클라우드 사이에서는 지원되지 않습니다.</block>
   <block id="91986d95992f1ad825d4163f8cc66a27" category="inline-link-macro">ASA r2 시스템에서 지원되는 SnapMirror 복제 정책</block>
-  <block id="8d722ac0b9aa4a6e8eaeefc6381bdc0e" category="paragraph">자세히 알아보세요<block ref="d1292e0977d41506a87f914ff1c78817" category="inline-link-macro-rx"></block> .</block>
+  <block id="5ebade231442483b3d9dd2848baa6ccc" category="inline-link-macro">ASA r2 시스템의 SnapMirror Active Sync</block>
+  <block id="423f4fe0f55d76e8fcf2a8817bd3ae34" category="paragraph">자세히 알아보세요<block ref="53c394728f3be1f907f95f13ec9262d9" category="inline-link-macro-rx"></block> .</block>
+  <block id="458b57297f8e6e4338182adf0156897b" category="paragraph">자세히 알아보세요<block ref="d17aeaf6b3cbd3580129852f8106bfe6" category="inline-link-macro-rx"></block> .</block>
 </blocks>
