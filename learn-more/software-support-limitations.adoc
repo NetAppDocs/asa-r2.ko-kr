@@ -26,8 +26,6 @@ ASA R2 시스템에서는 기본 네트워킹 LIF가 NVMe와 SCSI 호스트 간�
 * MetroCluster
 * 오브젝트 프로토콜
 * ONTAP S3 SnapMirror 및 S3 API
-* 클라우드로 SnapMirror(비동기식 및 동기식)
-* 비 ASA R2 시스템에 대한 SnapMirror(비동기식 및 동기식)입니다
 
 
 .ASA R2 시스템은 다음을 지원합니다.
@@ -38,6 +36,20 @@ link:../secure-data/ransomware-protection.html["스냅샷을 잠그는 방법에
 * 이중 계층 암호화
 +
 link:../secure-data/encrypt-data-at-rest.html["이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다"] ASA R2 시스템의 데이터로 이동합니다.
+
+
+
+
+
+== SnapMirror 복제 지원
+
+SnapMirror 복제는 다음과 같은 제한 사항이 있는 ASA r2 시스템에서 지원됩니다.
+
+* SnapMirror 동기 복제는 지원되지 않습니다.
+* SnapMirror Active Sync는 두 개의 ASA r2 시스템 간에만 지원됩니다.
+* SnapMirror 비동기 복제는 두 개의 ASA r2 시스템 간에만 지원됩니다. SnapMirror 비동기 복제는 ASA r2 시스템과 ASA, AFF 또는 FAS 시스템 또는 클라우드 사이에서는 지원되지 않습니다.
++
+자세히 알아보세요link:data-protection/pre-defined-protection-policies.html["ASA r2 시스템에서 지원되는 SnapMirror 복제 정책"] .
 
 
 

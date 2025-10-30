@@ -438,14 +438,9 @@
   <block id="b03db2a30a32c3ac8c0f123bffb1ece4" category="list-text">복제 정책의 이름을 입력하거나 기본 이름을 그대로 사용한 다음 설명을 입력합니다.</block>
   <block id="ca8308195da9e8f1aaa6981179fa1910" category="list-text">정책 범위 * 를 선택합니다.</block>
   <block id="ba8e129c41029b7f9087dd518b733282" category="paragraph">복제 정책을 전체 클러스터에 적용하려면 * Cluster * 를 선택합니다. 복제 정책을 특정 스토리지 VM의 스토리지 유닛에만 적용하려면 * Storage VM * 을 선택합니다.</block>
-  <block id="cc4bd2e3882617e7952e21c6edcf0f70" category="list-text">정책 유형 * 을 선택합니다.</block>
-  <block id="94474bfd74d528818aa33385a7ef01b1" category="cell">데이터를 소스에 쓴 후 원격 사이트에 복사합니다.</block>
-  <block id="5b9740e84ea801d163925a0b1f33b1c2" category="list-text">Asynchronous * 를 선택합니다.</block>
   <block id="ca4245a2767798f81970db32d522e7cf" category="list-text">소스에서 스냅숏 전송 * 에서 기본 전송 일정을 수락하거나 다른 전송 일정을 선택합니다.</block>
   <block id="63abd2a127bdae4f4eaf9ca003d89ab3" category="list-text">모든 스냅샷을 전송하거나 전송할 스냅샷을 결정하는 규칙을 생성하려면 선택합니다.</block>
   <block id="0527fa3e946de1ec8c471d2c7cae3688" category="list-text">필요한 경우 네트워크 압축을 활성화합니다.</block>
-  <block id="a06950db009f1d0449acff1c4c0993e3" category="cell">소스 사이트와 원격 사이트에 동시에 데이터 쓰기</block>
-  <block id="2ea2e8a2b83fdeb4e03eb89a3c69ea7a" category="list-text">Synchronous * 를 선택합니다.</block>
   <block id="caf0e8401f3720e2547947582afb98ff" category="paragraph">복제 정책을 생성했으므로 이제 ASA R2 시스템과 원격 위치 간에 복제 관계를 생성할 준비가 되었습니다.</block>
   <block id="5e1ce6bacb63e4397cf8fa4bbd6cafc8" category="inline-link-macro">클라이언트 액세스를 위한 스토리지 VM입니다</block>
   <block id="308d9e6951d14df38557244f728d31ec" category="paragraph">에 대해 자세히 <block ref="b2f7d76a0b614957304f0bebec8320f7" category="inline-link-macro-rx"></block>알아보십시오.</block>
@@ -1482,8 +1477,6 @@
   <block id="9228b29536da5aa86ee6865642b7a754" category="paragraph">특히, 데이터 회전율이 높은 파일 시스템의 경우 전체적인 스토리지 효율성이 크게 향상됩니다.</block>
   <block id="319ffa33cfb4e70c9e521494969d662a" category="sidebar">ONTAP 9.16.1의 새로운 기능</block>
   <block id="0b6845dd2391304844b6f9578fd8c865" category="sidebar">ONTAP 기본값 및 한계값으로 변경합니다</block>
-  <block id="d32b93d0cc0df3a57e074a2dd7f55bac" category="list-text">클라우드로 SnapMirror(비동기식 및 동기식)</block>
-  <block id="db501755a13db6bc1da40b7fa29e25f1" category="list-text">비 ASA R2 시스템에 대한 SnapMirror(비동기식 및 동기식)입니다</block>
   <block id="b0af3c84875edd616110edf2dac64154" category="paragraph">데이터 축소율은 스토리지 효율성을 통해 절약된 공간의 양을 나타냅니다.</block>
   <block id="a45025bc45c4e360bb41b761b432dd34" category="doc">ASA R2 스토리지 시스템의 빠른 시작</block>
   <block id="465ce601131c87fafd3a4a3da5836246" category="summary">ASA R2 시스템은 SAN 호스트 구성에 대해 다른 모든 ONTAP 시스템과 동일한 권장 사항 및 지침을 따릅니다.</block>
@@ -2510,4 +2503,14 @@
   <block id="11695514a878032b3fb5ecdf5e659b5b" category="paragraph">여기에 구성이 보이지 않으면 다음으로 이동하세요. <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 스토리지 시스템에 케이블을 연결하기 위한 포괄적인 구성 및 슬롯 우선순위 정보를 확인하세요.</block>
   <block id="8c3a29fca49d6a772e0a2f8ab6ab7280" category="paragraph">호스트 네트워크 케이블링 예는 일반적인 구성을 보여줍니다.</block>
   <block id="47209a3f622b3d093f126e58491097c5" category="paragraph">ONTAP 9.17.1부터 ONTAP 최적의 성능을 위해 ASA r2 시스템 HA 쌍의 노드 간 워크로드를 자동으로 재분배합니다. 예를 들어, 한 노드의 공간 활용도가 70%로 증가하는 반면 HA 파트너의 활용도는 30%에 불과하면 ONTAP 각 노드의 공간 활용도가 더 가깝게 일치하도록 작업 부하를 자동으로 전환합니다. HA 쌍의 노드는 동일한 스토리지 가용 영역을 공유하므로 워크로드 재분배는 성능에 영향을 미치지 않는 복사 없는 작업입니다.</block>
+  <block id="19b78e8ad6af7cf1ea82e76fdac1aa7f" category="admonition">ASA r2 시스템은 동기 복제를 지원하지 않습니다.</block>
+  <block id="2e360c76c16280fe84148c9706ad34d6" category="list-text">*정책 유형*에서 *비동기*를 선택합니다.</block>
+  <block id="f1f7f77e02139ed937613a8043556351" category="admonition">비동기 정책을 사용하면 데이터가 소스에 기록된 후 원격 사이트로 복사됩니다. ASA r2 시스템에서는 동기 복제가 지원되지 않습니다.</block>
+  <block id="ea67212f425c599ae5520184dd5dea87" category="section-title">SnapMirror 복제 지원</block>
+  <block id="078f057957ee3112500c8f235bb0352f" category="paragraph">SnapMirror 복제는 다음과 같은 제한 사항이 있는 ASA r2 시스템에서 지원됩니다.</block>
+  <block id="387dae8bc04454e56a9780e8507821e5" category="list-text">SnapMirror 동기 복제는 지원되지 않습니다.</block>
+  <block id="74618c54a0d6a05f0dbccbfa9f4bc480" category="list-text">SnapMirror Active Sync는 두 개의 ASA r2 시스템 간에만 지원됩니다.</block>
+  <block id="c274f3c7bf5ff5013941b9ff06a2dfdc" category="list-text">SnapMirror 비동기 복제는 두 개의 ASA r2 시스템 간에만 지원됩니다. SnapMirror 비동기 복제는 ASA r2 시스템과 ASA, AFF 또는 FAS 시스템 또는 클라우드 사이에서는 지원되지 않습니다.</block>
+  <block id="91986d95992f1ad825d4163f8cc66a27" category="inline-link-macro">ASA r2 시스템에서 지원되는 SnapMirror 복제 정책</block>
+  <block id="8d722ac0b9aa4a6e8eaeefc6381bdc0e" category="paragraph">자세히 알아보세요<block ref="d1292e0977d41506a87f914ff1c78817" category="inline-link-macro-rx"></block> .</block>
 </blocks>
