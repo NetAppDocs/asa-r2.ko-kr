@@ -1,0 +1,239 @@
+---
+sidebar: sidebar 
+permalink: manage-data/migrate-svm.html 
+keywords: move svm, migrate svm, asa, asa r2, storage vm, storage virtual machine 
+summary: 스토리지 가용 영역의 공간이 부족한 경우 스토리지 유닛을 다른 스토리지 가용 영역으로 이동하여 클러스터 전체의 스토리지 사용률을 조정할 수 있습니다. 
+---
+= ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM 마이그레이션
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.18.1부터 모든 ASA 클러스터에서 모든 ASA r2 클러스터로 스토리지 가상 머신(VM)을 중단 없이 마이그레이션할 수 있습니다.  ASA 클러스터에서 ASA r2 클러스터로 마이그레이션하면 SAN 전용 환경에서 ASA r2 시스템의 간소화되고 효율적인 아키텍처를 채택할 수 있습니다.
+
+ASA 와 ASA r2 스토리지 시스템 간의 스토리지 VM 마이그레이션은 다음과 같이 지원됩니다.
+
+[cols="2"]
+|===
+| 다음 ASA 시스템 중 하나에서: | 다음 ASA r2 시스템 중 하나: 
+
+
+ a| 
+* ASA C800
+* ASA C400
+* ASA C250
+* ASA A900
+* ASA A800
+* ASA A400
+* ASA A250
+* ASA A150
+* ASA AFF A800
+* ASA AFF A700
+* ASA AFF A400
+* ASA AFF A250
+* ASA AFF A220
+
+ a| 
+* ASA A1K 를 참조하십시오
+* ASA C30
+* ASA A90 를 참조하십시오
+* ASA A70 를 참조하십시오
+* ASA A50
+* ASA A30
+* ASA A20
+
+
+|===
+
+NOTE: ASA 및 ASA r2 시스템의 최신 목록은 다음을 참조하세요.link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^] .  ASA r2 시스템은 NetApp Hardware Universe 에 "ASA A-시리즈/C-시리즈(신제품)"로 나열되어 있습니다.
+
+ASA 클러스터에서만 스토리지 VM을 ASA r2 클러스터로 마이그레이션할 수 있습니다.  다른 유형의 ONTAP 시스템에서의 마이그레이션은 지원되지 않습니다.
+
+.시작하기 전에
+ASA r2 클러스터와 ASA 클러스터의 모든 노드는 ONTAP 9.18.1 이상을 실행해야 합니다.  클러스터 노드의 ONTAP 9.18.1 패치 버전은 다를 수 있습니다.
+
+
+
+== 1단계: ASA 스토리지 VM 상태 확인
+
+ASA 시스템에서 스토리지 VM을 마이그레이션하기 전에 NVMe 네임스페이스나 vVols 이 없어야 하며 스토리지 VM의 각 볼륨에는 LUN이 하나만 있어야 합니다.  NVMe 네임스페이스 및 vVols 마이그레이션은 지원되지 않습니다.  ASA r2 시스템의 아키텍처에서는 볼륨에 단일 LUN이 포함되어야 합니다.
+
+.단계
+. 스토리지 VM에 NVMe 네임스페이스가 없는지 확인하세요.
++
+[source, cli]
+----
+vserver nvme namespace show -vserver <storage_VM>
+----
++
+항목이 표시되면 NVMe 개체가 있어야 합니다.link:https://docs.netapp.com/us-en/ontap/nvme/convert-namespace-to-lun-task.html["변환됨"^] LUN으로 이동하거나 제거함.  를 참조하십시오 `vserver nvme namespace delete` 그리고 `vserver nvme subsystem delete` 명령link:https://docs.netapp.com/us-en/ontap/concepts/manual-pages.html["ONTAP 명령 참조입니다"^] 자세한 내용은.
+
+. 스토리지 VM에 vVols 없는지 확인하세요.
++
+[source, cli]
+----
+lun show -verser <storage_VM> -class protocol-endpoint,vvol
+----
++
+vVols 이 있는 경우 다른 스토리지 VM에 복사한 다음 마이그레이션할 스토리지 VM에서 삭제해야 합니다.  를 참조하십시오 `lun copy` 그리고 `lun delete` 명령link:https://docs.netapp.com/us-en/ontap/concepts/manual-pages.html["ONTAP 명령 참조입니다"^] 자세한 내용은.
+
+. 스토리지 VM의 각 볼륨에 단일 LUN이 포함되어 있는지 확인하세요.
++
+[source, cli]
+----
+lun show -verser <storage_VM>
+----
++
+볼륨에 두 개 이상의 LUN이 포함된 경우 다음을 사용하십시오. `volume create` 그리고 `lun move` 볼륨 대 LUN 비율을 1:1로 만드는 명령입니다. 를 참조하십시오link:https://docs.netapp.com/us-en/ontap/concepts/manual-pages.html["ONTAP 명령 참조입니다"^] 자세한 내용은.
+
+
+
+.다음 단계
+이제 ASA 와 ASA r2 클러스터 간에 클러스터 피어 관계를 생성할 준비가 되었습니다.
+
+
+
+== 2단계: ASA 와 ASA r2 클러스터 간 클러스터 피어 관계 생성
+
+ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션하려면 먼저 피어 관계를 만들어야 합니다.  피어 관계는 ONTAP 클러스터와 스토리지 VM이 안전하게 데이터를 교환할 수 있도록 하는 네트워크 연결을 정의합니다.
+
+.시작하기 전에
+다음 방법 중 하나를 사용하여 피어링 중인 클러스터의 모든 노드에 클러스터 간 LIF를 생성해야 합니다.
+
+* link:https://docs.netapp.com/us-en/ontap/peering/configure-intercluster-lifs-share-data-ports-task.html["공유 데이터 포트에서 클러스터 간 LIF 구성"^]
+* link:https://docs.netapp.com/us-en/ontap/peering/configure-intercluster-lifs-use-dedicated-ports-task.html["전용 데이터 포트에 클러스터 간 LIF 구성"^]
+* link:https://docs.netapp.com/us-en/ontap/peering/configure-intercluster-lifs-use-ports-own-networks-task.html["사용자 정의 IP 공간에서 클러스터 간 LIF 구성"^]
+
+
+.단계
+. ASA r2 클러스터에서 ASA 클러스터와 피어 관계를 만들고 암호를 생성합니다.
++
+[source, cli]
+----
+cluster peer create -peer-addrs <ASA_cluster_LIF_IPs> -generate-passphrase
+----
++
+다음 예제에서는 클러스터 1과 클러스터 2 사이에 클러스터 피어 관계를 만들고 시스템에서 생성한 암호를 만듭니다.
+
++
+[listing]
+----
+cluster1::> cluster peer create -peer-addrs 10.98.191.193 -generate-passphrase
+Passphrase: UCa+6lRVICXeL/gq1WrK7ShR
+            Peer Cluster Name: cluster2
+            Initial Allowed Vserver Peers: -
+            Expiration Time: 6/7/2017 09:16:10 +5:30
+            Intercluster LIF IP: 10.140.106.185
+Warning: make a note of the passphrase - it cannot be displayed again.
+
+----
+. 생성된 암호를 복사합니다.
+. ASA 클러스터에서 ASA r2 클러스터와 피어 관계를 만듭니다.
++
+[source, cli]
+----
+cluster peer create -peer-addrs <ASA_r2_LIF_IPs>
+----
+. ASA r2 클러스터에서 생성된 암호를 입력하세요.
+. 클러스터 피어 관계가 생성되었는지 확인하세요.
++
+[source, cli]
+----
+cluster peer show
+----
++
+다음 예에서는 피어링에 성공한 클러스터에 대한 예상 출력을 표시합니다.
+
++
+[listing]
+----
+cluster1::> cluster peer show
+
+Peer Cluster Name   Cluster Serial Number   Availability   Authentication
+-----------------   ---------------------   -------------- --------------
+cluster2             1-80-123456             Available      ok
+----
+
+
+.결과
+ASA 및 ASA r2 클러스터는 피어링되어 있으며 스토리지 VM 데이터를 안전하게 전송할 수 있습니다.
+
+.다음 단계
+이제 ASA 스토리지 VM을 마이그레이션할 준비가 되었습니다.
+
+
+
+== 3단계: ASA 에서 ASA r2 클러스터로 스토리지 VM 마이그레이션 준비
+
+ASA 클러스터에서 ASA r2 클러스터로 스토리지 가상 머신(VM)을 마이그레이션하기 전에 마이그레이션 사전 검사를 실행하고 필요한 문제를 해결해야 합니다.  사전 검사를 성공적으로 통과할 때까지 마이그레이션을 수행할 수 없습니다.
+
+.단계
+. ASA r2 클러스터에서 마이그레이션 사전 검사를 실행합니다.
++
+[source, cli]
+----
+vserver migrate start -vserver <storage_VM> -source-cluster <asa_cluster> -check-only true
+----
++
+ASA 클러스터를 마이그레이션하기 위해 문제를 해결해야 하는 경우 문제와 해결 방법이 표시됩니다.  문제를 해결하고 사전 점검을 성공적으로 완료될 때까지 반복합니다.
+
+
+
+.다음 단계
+이제 ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션할 준비가 되었습니다.
+
+
+
+== 4단계: ASA 스토리지 VM을 ASA r2 클러스터로 마이그레이션
+
+ASA 클러스터를 준비하고 ASA r2 클러스터와 필요한 클러스터 피어 관계를 만든 후 스토리지 VM 마이그레이션을 시작할 수 있습니다.
+
+스토리지 VM 마이그레이션을 수행할 때는 CPU 워크로드를 실행할 수 있도록 ASA 클러스터와 ASA r2 클러스터 모두에 30%의 CPU 여유 공간을 두는 것이 가장 좋습니다.
+
+.이 작업에 대해
+스토리지 VM 마이그레이션 후 클라이언트는 자동으로 ASA r2 클러스터로 전환되고 ASA 클러스터의 스토리지 VM은 자동으로 제거됩니다.  자동 전환 및 자동 스토리지 VM 제거는 기본적으로 활성화되어 있습니다.  선택적으로 두 가지 모두 비활성화하고 전환 및 스토리지 VM 제거를 수동으로 수행할 수 있습니다.
+
+.시작하기 전에
+* ASA r2 클러스터에는 마이그레이션된 스토리지 VM을 보관할 수 있는 충분한 여유 공간이 있어야 합니다.
+* ASA 스토리지 VM에 암호화된 볼륨이 포함되어 있는 경우 ASA r2 시스템의 온보드 키 관리자 또는 외부 키 관리자를 클러스터 수준에서 구성해야 합니다.
+* 다음 작업은 소스 ASA 클러스터에서 실행할 수 없습니다.
++
+** 장애 조치 작업
+** 와플리론
+** 지문
+** 볼륨 이동, 리호스팅, 복제, 생성, 변환 또는 분석
+
+
+
+
+.단계
+. ASA r2 클러스터에서 스토리지 VM 마이그레이션을 시작합니다.
++
+[source, cli]
+----
+vserver migrate start -vserver <storage_VM_name> -source-cluster <ASA_cluster>
+----
++
+자동 컷오버를 비활성화하려면 다음을 사용하세요. `-auto-cutover false` 매개변수.  ASA 스토리지 VM의 자동 제거를 비활성화하려면 다음을 사용하세요. `-auto-source-cleanup false` 매개변수.
+
+. 마이그레이션 상태 모니터링
++
+[source, cli]
+----
+vserver migrate show -vserver <storage_VM_name>
+----
++
+마이그레이션이 완료되면 *상태*가 *마이그레이션 완료*로 표시됩니다.
+
+
+
+
+NOTE: 자동 전환이 시작되기 전에 마이그레이션을 일시 중지하거나 취소해야 하는 경우 다음을 사용하세요. `vserver migrate pause` 그리고 `vserver migrate abort` 명령.  취소하기 전에 마이그레이션을 일시 중지해야 합니다.  전환이 시작된 후에는 마이그레이션을 취소할 수 없습니다.
+
+.결과
+스토리지 VM은 ASA 클러스터에서 ASA r2 클러스터로 마이그레이션됩니다.  스토리지 VM의 이름과 UUID, 데이터 LIF 이름, IP 주소, 볼륨 이름과 같은 개체 이름은 변경되지 않습니다.  스토리지 VM에 있는 마이그레이션된 객체의 UUID가 업데이트됩니다.
+
+.다음 단계
+자동 컷오버 및 자동 스토리지 VM 제거를 비활성화한 경우link:svm-post-migrate-cutover-cleanup.html["ASA 클라이언트를 ASA r2 클러스터로 수동으로 전환하고 ASA 클러스터에서 스토리지 VM을 제거합니다."] .

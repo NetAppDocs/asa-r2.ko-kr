@@ -23,11 +23,11 @@ ASA R2 시스템의 ONTAP 온보드 키 관리자나 외부 키 관리자(또는
 
 
 
-| SVM 레벨만 해당 | 외부 키 관리자만 해당됩니다 
+| 스토리지 VM 수준만 | 외부 키 관리자만 해당됩니다 
 
 
  a| 
-클러스터 및 SVM 레벨 모두 지원합니다
+클러스터 및 스토리지 VM 수준 모두
  a| 
 다음 키 관리자 조합 중 하나:
 
@@ -36,14 +36,14 @@ ASA R2 시스템의 ONTAP 온보드 키 관리자나 외부 키 관리자(또는
 클러스터 레벨: 온보드 키 관리자
 
 +
-SVM 레벨: 외부 키 관리자
+스토리지 VM 수준: 외부 키 관리자
 
 * 옵션 2
 +
 클러스터 레벨: 외부 키 관리자
 
 +
-SVM 레벨: 외부 키 관리자
+스토리지 VM 수준: 외부 키 관리자
 
 
 
@@ -75,13 +75,13 @@ security key-manager external create-config
 +
 [source, cli]
 ----
-security key-manager keystore enable -vserver <svm_name> -type KMIP
+security key-manager keystore enable -vserver <storage_vm_name> -type KMIP
 ----
 . Onboard Key Manager 구성을 삭제합니다.
 +
 [source, cli]
 ----
-security key-manager keystore delete-config -vserver <svm_name> -type OKM
+security key-manager keystore delete-config -vserver <storage_vm_name> -type OKM
 ----
 . 권한 수준을 admin으로 설정합니다.
 +
@@ -111,13 +111,13 @@ security key-manager onboard create-config
 +
 [source, cli]
 ----
-security key-manager keystore enable -vserver <svm_name> -type OKM
+security key-manager keystore enable -vserver <storage_vm_name> -type OKM
 ----
 . 외부 키 관리자 구성을 삭제합니다
 +
 [source, cli]
 ----
-security key-manager keystore delete-config -vserver <svm_name> -type KMIP
+security key-manager keystore delete-config -vserver <storage_vm_name> -type KMIP
 ----
 . 권한 수준을 admin으로 설정합니다.
 +
@@ -146,7 +146,7 @@ set -privilege advanced
 +
 [source, cli]
 ----
-security key-manager key migrate -from-vserver <svm_name> -to-vserver <svm_name>
+security key-manager key migrate -from-vserver <storage_vm_name> -to-vserver <storage_vm_name>
 ----
 . 권한 수준을 admin으로 설정합니다.
 +

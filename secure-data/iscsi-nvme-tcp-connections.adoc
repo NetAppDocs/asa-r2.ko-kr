@@ -17,11 +17,37 @@ ASA R2 시스템의 경우 iSCSI 및 NVMe/TCP 호스트에 IPsec을 사용할 �
 
 특정 ASA R2 시스템에서는 암호화 및 무결성 검사와 같은 여러 암호화 작업을 지원되는 NIC(Network Interface Controller) 카드로 오프로드할 수 있습니다. NIC 카드로 오프로드된 작업의 처리량은 약 5% 이하입니다. 이를 통해 IPsec으로 보호되는 네트워크 트래픽의 성능과 처리량을 크게 향상시킬 수 있습니다.
 
-다음 ASA R2 시스템에서 하드웨어 오프로드에 대해 지원되는 NIC 카드는 다음과 같습니다.
+ONTAP 9.18.1부터 지원되는 IPsec 하드웨어 오프로드가 IPv6 트래픽으로 확장되었습니다.
 
-[cols="2"]
+다음 NIC 카드는 다음 ASA r2 시스템 및 ONTAP 버전에서 하드웨어 오프로드를 지원합니다.
+
+[cols="3"]
 |===
-| 지원되는 NIC 카드 | ASA r2 시스템 
+| 지원되는 NIC 카드 | ASA r2 시스템 | ONTAP 버전 
+
+
+ a| 
+X50135A(2p, 40G/100G 이더넷 컨트롤러)
+ a| 
+* ASA A1K 를 참조하십시오
+* ASA A90 를 참조하십시오
+* ASA A70 를 참조하십시오
+
+ a| 
+ONTAP 9.17.1 이상
+
+
+
+ a| 
+X60135A(2p, 40G/100G 이더넷 컨트롤러)
+ a| 
+* ASA A50
+* ASA A30
+* ASA A20
+
+ a| 
+ONTAP 9.17.1 이상
+
 
 
  a| 
@@ -31,6 +57,8 @@ X50131A - (2p, 40G/100G/200g/400G 이더넷 컨트롤러)
 * ASA A90 를 참조하십시오
 * ASA A70 를 참조하십시오
 
+ a| 
+ONTAP 9.16.1 이상
 
 
 
@@ -41,7 +69,11 @@ X60132A - (4P, 10G/25G 이더넷 컨트롤러)
 * ASA A30
 * ASA A20
 
+ a| 
+ONTAP 9.16.1 이상
 
 |===
+를 참조하십시오link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^] 지원되는 시스템과 카드에 대한 자세한 내용은 여기를 참조하세요.
+
 .다음 단계
-link:https://docs.netapp.com/us-en/ontap/networking/ipsec-configure.html["ONTAP 네트워크에 대한 IP 보안을 구성합니다"]
+ASA r2 시스템에서 IPsec은 다른 ONTAP 시스템과 동일한 방식으로 구성됩니다. 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html["ONTAP 네트워크에 대한 IP 보안 구성을 준비합니다."^].

@@ -22,6 +22,8 @@ indexpage:
       url: "/manage-data/data-cloning.html"
     - title: 스토리지 유닛을 수정합니다
       url: "/manage-data/modify-storage-units.html"
+    - title: 스토리지 VM 마이그레이션
+      url: "/manage-data/migrate-svm.html"
   - title: 데이터 보호 및 보안
     links:
     - title: 스냅샷을 생성합니다
@@ -32,6 +34,8 @@ indexpage:
       url: "/data-protection/snapmirror-active-sync.html"
     - title: 유휴 데이터 암호화
       url: "/secure-data/encrypt-data-at-rest.html"
+    - title: ARP/AI 활성화
+      url: "/secure-data/enable-anti-ransomware-protection.html"
   - title: 추가 ASA R2 리소스
     links:
     - title: ASA 데이터시트 를 참조하십시오

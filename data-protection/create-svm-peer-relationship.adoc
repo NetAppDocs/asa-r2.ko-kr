@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: data-protection/create-svm-peer-relationship.html 
-keywords: create, svm peer relationship, asa r2, data protection 
+keywords: create, svm peer relationship, storage vm, asa r2, data protection 
 summary: SnapMirror 사용하여 서로 다른 클러스터의 스토리지 VM 간에 피어 관계를 생성하면 데이터 보호 및 재해 복구가 가능합니다. 
 ---
 = ASA r2 스토리지 시스템에서 클러스터 간 스토리지 VM 피어 관계 생성

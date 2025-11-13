@@ -18,7 +18,7 @@ ASA r2 시스템에서 SnapMirror 활성 동기화를 구성하기 위한 시스
 link:../learn-more/hardware-comparison.html#personality-differences["ONTAP 성격에 대해 자세히 알아보세요"] .
 
 
-NOTE: ASA r2 시스템의 경우 SnapMirror Active Sync는 2노드 클러스터 구성에서만 지원됩니다.
+NOTE: ONTAP 9.18.1부터 SnapMirror 활성 동기화가 4노드 구성에서 지원됩니다.  ONTAP 9.17.1에서는 SnapMirror 활성 동기화가 2노드 구성에서만 지원됩니다.
 
 link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html["SnapMirror Active Sync에 대해 자세히 알아보세요"^] .
 

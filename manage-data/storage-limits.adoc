@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-data/storage-limits.html 
 keywords: storage limits, cluster limits, maximum lun size, maximum, nodes per cluster, storage unit size, supported protocols, asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20,asa c30 
-summary: 최적의 성능, 구성 및 지원을 위해 ASA R2 스토리지 제한을 숙지해야 합니다. 
+summary: 최적의 성능, 구성 및 지원을 위해서는 ASA r2 스토리지 한도를 알고 있어야 합니다. 
 ---
 = ASA R2 스토리지 제한
 :allow-uri-read: 
@@ -11,13 +11,15 @@ summary: 최적의 성능, 구성 및 지원을 위해 ASA R2 스토리지 제�
 
 
 [role="lead"]
-최적의 성능, 구성 및 지원을 위해 ASA R2 스토리지 제한을 숙지해야 합니다.
+최적의 성능, 구성 및 지원을 위해서는 ASA r2 스토리지 한도를 알고 있어야 합니다.
+
+최신 ASA R2 스토리지 제한값의 전체 목록은 을 참조하십시오link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^].
 
 ASA r2 시스템은 다음과 같은 저장 한도를 지원합니다.
 
 [cols="3"]
 |===
-| 최대 한도 | HA 쌍당 | 클러스터당 
+|  | HA 쌍당 최대 | 클러스터당 최대 
 
 
 | 일관성 그룹 | 256 | 256 
@@ -32,7 +34,7 @@ ASA r2 시스템은 다음과 같은 저장 한도를 지원합니다.
 | 복제 그룹 | 50 | 50 
 
 
-| 스토리지 가용성 영역 크기 | 2PB | 2페타비 
+| 스토리지 가용성 영역 크기 | 2페타비 | 2페타비 
 
 
 | 보관 장치 | 10,000 | 30,000 
@@ -44,13 +46,24 @@ ASA r2 시스템은 다음과 같은 저장 한도를 지원합니다.
 | 일관성 그룹당 저장 단위 | 256 | 256 
 
 
+| 스토리지 가상 머신  a| 
+* 256(ONTAP 9.18.1 이상)
+* 32 (ONTAP 9.17.1 및 이전 버전)
+
+ a| 
+* 256(ONTAP 9.18.1 이상)
+* 32 (ONTAP 9.17.1 및 이전 버전)
+
+
+
+
 | 가상 머신 | 800 | 1200 
 |===
 
 
 == SnapMirror 비동기 관계에 대한 제한
 
-다음 제한은 SnapMirror 비동기 복제 관계의 스토리지 유닛과 일관성 그룹에 적용됩니다.
+다음 제한은 SnapMirror 비동기 복제 관계의 스토리지 유닛과 일관성 그룹에 적용됩니다. 최신 ASA r2 스토리지 한도의 전체 목록은 다음과 같습니다.link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^] .
 
 [cols="3"]
 |===
@@ -66,7 +79,9 @@ ASA r2 시스템은 다음과 같은 저장 한도를 지원합니다.
 
 == SnapMirror 활성 동기화 관계에 대한 제한 사항
 
-다음 제한은 SnapMirror 활성 동기화 복제 관계의 스토리지 유닛과 일관성 그룹에 적용됩니다.  SnapMirror 액티브 동기화는 ONTAP 9.17.1부터 2노드 클러스터에서만 지원됩니다.
+다음 제한은 SnapMirror 활성 동기화 복제 관계의 스토리지 유닛과 일관성 그룹에 적용됩니다. SnapMirror 활성 동기화는 ONTAP 9.17.1부터 2노드 클러스터에서만 지원됩니다.  ONTAP 9.18.1부터 SnapMirror 활성 동기화가 4노드 클러스터에서 지원됩니다.
+
+최신 ASA r2 스토리지 한도의 전체 목록은 다음과 같습니다.link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^] .
 
 [cols="2"]
 |===
@@ -78,5 +93,3 @@ ASA r2 시스템은 다음과 같은 저장 한도를 지원합니다.
 
 | 보관 장치 | 400 
 |===
-.를 참조하십시오
-최신 ASA R2 스토리지 제한값의 전체 목록은 을 참조하십시오link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^].

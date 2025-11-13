@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: manage-data/svm-post-migrate-cutover-cleanup.html 
+keywords: move svm, migrate svm, asa, asa r2, storage vm, storage virtual machine, manual cutover, manual cleanup, remove source svm 
+summary: 스토리지 가용 영역의 공간이 부족한 경우 스토리지 유닛을 다른 스토리지 가용 영역으로 이동하여 클러스터 전체의 스토리지 사용률을 조정할 수 있습니다. 
+---
+= ASA r2 시스템으로 마이그레이션 후 클라이언트를 전환하고 소스 스토리지 VM을 정리합니다.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 가상 머신(VM)이 ASA 클러스터에서 ASA r2 클러스터로 마이그레이션된 후 기본적으로 클라이언트는 자동으로 ASA r2 클러스터로 전환되고 ASA 클러스터의 스토리지 VM은 자동으로 제거됩니다.  마이그레이션 중에 ASA 스토리지 VM의 자동 전환 및 제거를 비활성화하도록 선택한 경우 마이그레이션이 완료된 후 이러한 단계를 수동으로 수행해야 합니다.
+
+
+
+== 스토리지 VM 마이그레이션 후 클라이언트를 ASA r2 시스템으로 수동으로 전환
+
+ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션하는 동안 자동 클라이언트 전환을 비활성화한 경우, 마이그레이션이 성공적으로 완료된 후 수동으로 전환을 수행하여 ASA r2 스토리지 VM이 클라이언트에 데이터를 제공할 수 있도록 합니다.
+
+.단계
+. ASA r2 클러스터에서 클라이언트 전환을 수동으로 실행합니다.
++
+[source, cli]
+----
+vserver migrate cutover -vserver <storage_VM_name>
+----
+. 컷오버 작업이 완료되었는지 확인하세요.
++
+[source, cli]
+----
+vserver migrate show
+----
+
+
+.결과
+ASA r2 클러스터의 스토리지 VM에서 클라이언트로 데이터가 제공됩니다.
+
+.다음 단계
+이제 소스 ASA 클러스터에서 스토리지 VM을 제거할 준비가 되었습니다.
+
+
+
+== ASA r2 클러스터로 마이그레이션한 후 ASA 스토리지 VM을 수동으로 제거합니다.
+
+ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션하는 동안 자동 소스 정리를 비활성화한 경우, 마이그레이션이 완료된 후 ASA 클러스터에서 스토리지 VM을 제거하여 스토리지 공간을 확보합니다.
+
+.시작하기 전에
+클라이언트는 ASA r2 클러스터에서 데이터를 제공해야 합니다.
+
+.단계
+. ASA 클러스터에서 ASA 스토리지 VM의 상태가 *소스 정리 준비*인지 확인합니다.
++
+[source, cli]
+----
+vserver migrate show
+----
+. ASA 스토리지 VM을 제거합니다.
++
+[source, cli]
+----
+vserver migrate source-cleanup -vserver <storage_VM_name>
+----
+
+
+.결과
+ASA 클러스터의 스토리지 VM이 제거되었습니다.

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-more/additional-supported-ontap-features.html 
-keywords: asa r2, asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, asa c30, cli, comand line interface 
+keywords: asa r2, asa r2, asa a1k, asa a90, asa a70, asa a50, asa a30, asa a20, asa c30, cli, command line interface, clustered external key servers, external key management, encryption at rest, administrator access management, client authentication, oauth 2.0, saml authentication, fips compliance, link aggregation groups, iscsi, fibre channel, fc, nvme, nvme unmap, hole punch, deallocation, system manager 
 summary: ASA r2 시스템은 간소화된 버전의 ONTAP 실행하므로 일반적인 ONTAP 작업과 시스템 관리자 기능은 ASA r2 시스템에서 다른 ONTAP 시스템과 동일한 방식으로 수행됩니다. 
 ---
 = ASA r2 시스템에서 지원되는 일반적인 ONTAP 기능
@@ -17,28 +17,118 @@ ASA r2 시스템은 간소화된 버전의 ONTAP 실행하므로 일반적인 ON
 
 
 
-== ONTAP 관리
+== 데이터 보호
 
-* link:https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html["ONTAP 시스템 관리자에서 정보를 검색, 필터링 및 정렬하는 방법을 알아보세요."^] .
-* link:https://docs.netapp.com/us-en/ontap/networking/combine_physical_ports_to_create_interface_groups.html["물리적 포트를 결합하여 인터페이스 그룹을 만듭니다."^] .
-* link:https://docs.netapp.com/us-en/ontap/concept_nvme_provision_overview.html["NVMe over Fabrics(NVMe-oF) 프로비저닝에 대해 알아보세요"^] .
+ASA r2 시스템에서 지원되는 일반적인 데이터 보호 기능에 대해 자세히 알아보세요.
+
+
+
+=== 클러스터링된 외부 키 서버
+
+스토리지 VM에서 클러스터된 외부 키 관리 서버에 대한 연결을 구성할 수 있습니다.  클러스터형 키 서버를 사용하면 스토리지 VM에서 기본 키 서버와 보조 키 서버를 지정할 수 있습니다.  ONTAP 키를 등록할 때 먼저 기본 키 서버에 액세스를 시도한 후 작업이 성공적으로 완료될 때까지 순차적으로 보조 서버에 액세스를 시도하여 키 중복을 방지합니다.
+
+link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-cluster-key-server-task.html["클러스터형 외부 키 서버를 구성하는 방법을 알아보세요"^].
+
+
+
+=== 휴면 암호화를 위한 외부 키 관리
+
+하나 이상의 KMIP 서버를 사용하여 클러스터가 암호화된 데이터에 액세스하는 데 사용하는 키를 보호할 수 있습니다.
+
+* link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-external-key-management-96-later-hw-task.html["외부 키 관리 활성화"^].
+* link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-external-key-management-96-later-nve-task.html["외부 키 관리(NVE) 활성화"^] .
 
 
 
 
 == 데이터 보안
 
-* link:https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["OAuth 2.0 인증에 대해 알아보세요"^] .
-* link:https://docs.netapp.com/us-en/ontap/concepts/client-access-storage-concept.html["클라이언트 인증 및 권한 부여에 대해 알아보세요"^] .
-* link:https://docs.netapp.com/us-en/ontap/system-admin/configure-saml-authentication-task.html["SAML 인증 구성 방법 알아보기"^] .
-* link:https://docs.netapp.com/us-en/ontap/task_security_administrator_access.html["ONTAP 관리자 액세스 관리"^] .
+ASA r2 시스템에서 지원되는 일반적인 데이터 보안 기능에 대해 자세히 알아보세요.
+
+
+
+=== 관리자 액세스 관리
+
+관리자에게 할당된 역할에 따라 관리자가 수행할 수 있는 기능이 결정됩니다.  System Manager는 클러스터 관리자와 스토리지 VM 관리자를 위한 미리 정의된 역할을 제공합니다.  관리자 계정을 생성할 때 역할을 할당하거나 나중에 다른 역할을 할당할 수 있습니다.
+
+* link:https://docs.netapp.com/us-en/ontap/task_security_administrator_access.html["System Manager를 사용하여 관리자 액세스를 관리하는 방법을 알아보세요."^].
 
 
 
 
-== 데이터 보호
+=== 클라이언트 인증 및 권한 부여
 
-* link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-cluster-key-server-task.html["ONTAP 에서 클러스터링된 외부 키 서버 구성"^] .
-* link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-external-key-management-96-later-hw-task.html["외부 키 관리(HW 기반) 활성화"^] .
-* link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-external-key-management-96-later-nve-task.html["외부 키 관리(NVE) 활성화"^] .
+ONTAP 표준 방법을 사용하여 클라이언트와 관리자가 저장소에 액세스하는 것을 보호하고 바이러스로부터 보호합니다.  저장 중인 데이터의 암호화와 WORM 저장을 위해 고급 기술을 사용할 수 있습니다.  ONTAP 신뢰할 수 있는 출처를 통해 클라이언트 컴퓨터와 사용자의 신원을 검증하여 인증합니다.  ONTAP 사용자의 자격 증명을 파일이나 디렉토리에 구성된 권한과 비교하여 사용자가 파일이나 디렉토리에 액세스할 수 있도록 권한을 부여합니다.
 
+link:https://docs.netapp.com/us-en/ontap/concepts/client-access-storage-concept.html["클라이언트 인증 및 권한 부여에 대해 알아보세요"^] .
+
+
+
+=== OAuth 2.0 인증
+
+OAuth 2.0(Open Authorization) 프레임워크를 사용하여 ONTAP 클러스터에 대한 액세스를 제어할 수 있습니다.  OAuth 2.0은 서명된 액세스 토큰을 사용하여 보호된 리소스에 대한 액세스를 제한하고 제어합니다.
+
+link:https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["OAuth 2.0 인증에 대해 알아보세요"^] .
+
+
+
+=== SAML 인증 및 관리자 액세스
+
+웹 서비스에 대한 SAML(Security Assertion Markup Language) 인증을 구성하고 활성화할 수 있습니다.  SAML은 Active Directory 및 LDAP와 같은 디렉터리 서비스 공급자 대신 외부 ID 공급자(IdP)를 통해 사용자를 인증합니다.
+
+link:https://docs.netapp.com/us-en/ontap/system-admin/configure-saml-authentication-task.html["SAML 인증 구성 방법 알아보기"^] .
+
+
+
+== 네트워킹
+
+ASA r2 시스템에서 지원되는 일반적인 네트워킹 기능에 대해 자세히 알아보세요.
+
+
+
+=== FIPS 준수
+
+ONTAP 모든 SSL 연결에 대해 연방 정보 처리 표준(FIPS) 140-2를 준수합니다.  ONTAP 내에서 SSL FIPS 모드를 켜고 끌 수 있고, SSL 프로토콜을 전역적으로 설정하고, RC4와 같은 취약한 암호를 끌 수 있습니다.
+
+ONTAP 9.18.1부터 SSL에 대한 포스트퀀텀 컴퓨팅 암호화 알고리즘이 지원됩니다.  이러한 알고리즘은 미래의 양자 컴퓨팅 공격에 대한 추가적인 보호 기능을 제공하며, SSL FIPS 모드가 비활성화된 경우 사용할 수 있습니다.
+
+* link:https://docs.netapp.com/us-en/ontap/networking/configure_network_security_using_federal_information_processing_standards_fips.html["모든 SSL 연결에 대한 FIPS를 구성하는 방법을 알아보세요"^].
+
+
+
+
+=== 링크 집계 그룹(LAG)
+
+인터페이스 그룹은 링크 집계 그룹(LAG)이라고도 하며, 동일한 노드에 있는 두 개 이상의 물리적 포트를 단일 논리적 포트로 결합하여 생성됩니다.  논리적 포트는 복원력, 가용성, 부하 공유를 향상시킵니다.
+
+link:https://docs.netapp.com/us-en/ontap/networking/combine_physical_ports_to_create_interface_groups.html["링크 집계 그룹에 대해 알아보기"^].
+
+
+
+== SAN 프로토콜
+
+ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다.
+
+* link:https://docs.netapp.com/us-en/ontap/san-admin/san-host-provisioning-concept.html["iSCSI 프로토콜에 대해 자세히 알아보세요"^].
+* link:https://docs.netapp.com/us-en/ontap/san-admin/san-provisioning-fc-concept.html["FC(Fibre Channel) 프로토콜에 대해 자세히 알아보세요"^].
+* link:https://docs.netapp.com/us-en/ontap/concept_nvme_provision_overview.html["NVMe 프로토콜에 대해 알아보세요"^].
++
+** link:https://docs.netapp.com/us-en/ontap/san-admin/nvme-copy-offload.html["NVMe 복사 오프로드를 구성하는 방법을 알아보세요"^].
++
+ONTAP 9.18.1부터 NVMe 복사 오프로드가 지원됩니다.  NVMe 복사 오프로드를 사용하면 NVMe 호스트가 CPU에서 ONTAP 스토리지 컨트롤러의 CPU로 복사 작업을 오프로드할 수 있습니다.  호스트는 애플리케이션 워크로드를 위해 CPU 리소스를 예약하는 동시에 한 NVMe 네임스페이스에서 다른 네임스페이스로 데이터를 복사할 수 있습니다.
+
+** link:https://docs.netapp.com/us-en/ontap/san-admin/enable-space-allocation.html["NVMe에 대한 공간 할당(맵 해제)에 대해 자세히 알아보세요."^].
++
+ONTAP 9.16.1부터 NVMe 네임스페이스에 대한 공간 할당 해제(일명 "홀 펀칭" 및 "언맵"이라고도 함)가 기본적으로 활성화됩니다. 공간 할당 해제를 통해 호스트는 네임스페이스에서 사용되지 않은 블록을 할당 해제하여 공간을 회수할 수 있습니다.
+
+
+
+
+
+
+
+== 시스템 관리자
+
+시스템 관리자에서 다양한 작업, 개체 및 정보 항목을 검색할 수 있습니다.  특정 항목에 대한 테이블 데이터를 검색할 수도 있습니다.
+
+link:https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html["시스템 관리자에서 정보를 검색, 필터링 및 정렬하는 방법을 알아보세요."^].

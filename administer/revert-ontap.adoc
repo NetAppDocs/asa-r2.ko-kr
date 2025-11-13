@@ -37,11 +37,11 @@ NOTE: link:rebalance-workloads.html["자동 워크로드 재조정"]ONTAP 9.17.1
 | 만약 당신이 가지고 있다면... | 되돌리기 전에 다음을 수행해야 합니다. 
 
 
-| SnapMirror 활성 동기화 관계의 계층적 일관성 그룹 | link:../data-protection/snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"] 
+| SnapMirror 활성 동기화 관계의 계층적 일관성 그룹 | link:../data-protection/snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"]. 
 
 
-| 활성 수입 관계 | 활성 가져오기 관계 삭제 
+| 활성 수입 관계 | 활성 가져오기 관계를 삭제합니다. link:../install-setup/set-up-data-access.html#migrate-data-from-a-third-party-storage-system["수입 관계에 대해 알아보세요"]. 
 
 
-| 랜섬웨어 방지 보호 기능 활성화 | 랜섬웨어 방지 보호 비활성화 
+| 랜섬웨어 방지 보호 기능 활성화 | link:../secure-data/pause-resume-anti-ransomware-protection.html["랜섬웨어 방지 보호 일시 중지"]. 
 |===

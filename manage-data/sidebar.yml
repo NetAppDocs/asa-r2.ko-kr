@@ -24,13 +24,25 @@ entries:
       url: "/manage-data/move-storage-units.html"
     - title: 스토리지 유닛을 삭제합니다
       url: "/manage-data/delete-storage-units.html"
+  - title: 스토리지 VM 마이그레이션
+    entries:
+    - title: ASA 클러스터에서 스토리지 VM 마이그레이션
+      url: "/manage-data/migrate-svm.html"
+    - title: 컷오버 클라이언트 및 소스 스토리지 VM 정리
+      url: "/manage-data/svm-post-migrate-cutover-cleanup.html"
   - title: 보관 제한
     url: "/manage-data/storage-limits.html"
 - title: 데이터 보호
   entries:
   - title: 스냅샷을 생성합니다
     url: "/data-protection/create-snapshots.html"
-  - title: SVM 피어 관계 생성
+  - title: 스냅샷 예약 관리
+    entries:
+    - title: 스냅샷 예약에 대해 알아보세요
+      url: "/data-protection/snapshot-reserve.html"
+    - title: 스냅샷 예약 수정
+      url: "/data-protection/snapshot-reserve-modify.html"
+  - title: 스토리지 VM 피어 관계 생성
     url: "/data-protection/create-svm-peer-relationship.html"
   - title: 스냅샷 복제를 설정합니다
     entries:
