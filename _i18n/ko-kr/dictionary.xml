@@ -1076,9 +1076,7 @@
   <block id="21ba50dbf4007619e7e1e3d1d4890d04" category="doc">ASA R2 시스템에서 ONTAP SAN 스토리지를 프로비저닝합니다</block>
   <block id="5130efcbab54e3de0826ab521946e46d" category="paragraph">스토리지를 프로비저닝할 때 SAN 호스트가 ASA R2 스토리지 시스템에서 데이터를 읽고 쓸 수 있습니다. 스토리지를 프로비저닝하려면 ONTAP 시스템 관리자를 사용하여 스토리지 유닛을 생성하고 호스트 이니시에이터를 추가한 후 호스트를 스토리지 유닛에 매핑합니다. 읽기/쓰기 작업을 설정하려면 호스트에서 단계를 수행해야 합니다.</block>
   <block id="765e871d79c6c686febb0d212efcee42" category="section-title">스토리지 유닛을 생성합니다</block>
-  <block id="2c9e1fb1b8b3b0713d51e8ae575f96cf" category="paragraph"><block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>ASA R2 시스템의 최신 스토리지 한도는 을 참조하십시오.</block>
   <block id="1d78dc8ed51214e518b5114fe24490ae" category="inline-link-macro">지도</block>
-  <block id="07de3115f268ee32f824fa17392a0fcc" category="paragraph">스토리지 유닛 생성 프로세스의 일부로 호스트 이니시에이터가 스토리지 유닛에 추가 및 매핑됩니다. 또한 <block ref="8a23e2c4e7cc30673e8b314a4ba4f4ed" category="inline-link-macro-rx"></block><block ref="261a27e7b6f81c3f2b0eb2a43b4fcddb" category="inline-link-macro-rx"></block>스토리지 유닛을 생성한 후 스토리지 유닛에 연결할 수도 있습니다.</block>
   <block id="b6ef92a5067caea07262eb16524826b6" category="inline-image-macro">파란색 배경과 단어의 직사각형 아이콘은 흰색 글자의 중앙에 추가됩니다</block>
   <block id="b5f594084b71d3aa55abadbedf670f86" category="list-text">System Manager에서 * Storage * 를 선택한 다음 를 <block ref="da7582bfb005458d3066421df78a060d" category="inline-image-macro-rx" type="image"></block>선택합니다.</block>
   <block id="51a192101931ecb5b57cbe0c93814a0f" category="list-text">새 스토리지 유닛의 이름을 입력합니다.</block>
@@ -1117,7 +1115,6 @@
   <block id="86d44c7101e25ca99d38670a1efa356e" category="paragraph">대역 내 인증을 통해 NVMe 호스트와 ASA R2 시스템 간에 안전한 양방향 및 단방향 인증을 수행할 수 있습니다.</block>
   <block id="a56968accba6c23d9088678742dc323d" category="paragraph">TLS는 NVMe/TCP 호스트와 ASA R2 시스템 간에 네트워크를 통해 전송되는 모든 데이터를 암호화합니다.</block>
   <block id="b2006a7dcb49ba27d412bf7c975d494e" category="list-text">이니시에이터를 추가하려면 * 이니시에이터 추가 * 를 선택하십시오.</block>
-  <block id="5d009b24bd2dd29f315f5549d323dd20" category="paragraph">호스트 NQN은 정규화된 도메인 이름 뒤에 &lt;nqn.yyyy-mm&gt;로 포맷되어야 합니다. 연도는 1970년 이후여야 합니다. 총 최대 길이는 223자입니다. 유효한 NVMe 이니시에이터의 예는 nqn.2014-08.com.example:string 입니다</block>
   <block id="22d9ca4f3f9229c260ae1d1236d3d11c" category="paragraph">스토리지 유닛이 생성되어 호스트에 매핑됩니다. 이제 <block ref="13282ab1c43cc291d62099de29c76969" category="inline-link-macro-rx"></block>ASA R2 시스템의 데이터를 보호할 수 있습니다.</block>
   <block id="87c964622ab29664363b4b2888f1b356" category="inline-link-macro">ASA R2 시스템에서 스토리지 가상 머신을 사용하는 방법</block>
   <block id="6afbcb648aad0c257ca7905b9d403b79" category="paragraph">에 대해 자세히 <block ref="f6474162100d04c74dacf0c12cf75d7f" category="inline-link-macro-rx"></block>알아보십시오.</block>
@@ -1158,7 +1155,6 @@
   <block id="b7a9ab8dab2826ab36bbf1a3559850cc" category="list-text">호스트 그룹에 추가 * 를 선택합니다.</block>
   <block id="0f53db9803696214ded0a88c8b0f7339" category="list-text">호스트를 추가할 호스트 그룹을 검색하여 선택합니다.</block>
   <block id="e4588db94d1d12fcf26071d43abfb9c8" category="section-title">스토리지 유닛을 호스트에 매핑합니다</block>
-  <block id="62ce85edaaef586187e6e1454db66f3c" category="paragraph">ASA R2 스토리지 유닛을 생성하고 호스트 이니시에이터를 추가한 후에는 호스트를 스토리지 유닛에 매핑하여 데이터 서비스를 시작해야 합니다. 스토리지 유닛은 스토리지 유닛 생성 프로세스의 일부로 호스트에 매핑됩니다. 또한 언제든지 기존 스토리지 유닛을 새 호스트 또는 기존 호스트에 매핑할 수 있습니다.</block>
   <block id="8de000c670cb75a778efcd7807338e06" category="list-text">스토리지 * 를 선택합니다.</block>
   <block id="1b9ba9248585970cf009d0cea53f480c" category="list-text">매핑할 스토리지 유닛의 이름 위로 마우스를 가져갑니다.</block>
   <block id="d966085aed4aa82e0f344d0a574996c4" category="list-text">을 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * 호스트에 매핑 * 을 선택합니다.</block>
@@ -2440,7 +2436,6 @@
   <block id="31fea35e33141cfa7edd94a1254d7007" category="paragraph">ONTAP NTP(네트워크 시간 프로토콜)를 활용하여 클러스터 전체에서 시간을 동기화합니다. LIF IP 주소를 변경한 후에는 동기화 실패를 방지하기 위해 NTP 구성을 업데이트해야 할 수도 있습니다. 자세한 내용은 지식 기반 문서를 참조하세요.<block ref="eb416b4e77f6226862164baac134c11c" category="inline-link-macro-rx"></block> .</block>
   <block id="5971035c0734629ac0d154a4b60ca9e9" category="paragraph">ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다.  iSCSI, FC, NVMe/FC 및 NVMe/TCP 프로토콜은 다중 경로를 위한 대칭적 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 활성/최적화됩니다.  iSCSI 및 NVMe/TCP 프로토콜은 호스트와 스토리지 간의 직접 연결을 지원합니다.  파이버 채널 및 NVMe/FC 프로토콜의 경우 직접 연결이 지원되지 않습니다.</block>
   <block id="d55bb9dedbbb937989198b01ce6688da" category="paragraph">*호스트 매핑*은 새로운 저장 장치가 매핑될 호스트 그룹을 의미합니다.  새 스토리지 유닛에 대해 선택한 호스트 유형에 대한 기존 호스트 그룹이 있는 경우, 호스트 매핑을 위해 기존 호스트 그룹이 자동으로 선택됩니다.  자동으로 선택된 호스트 그룹을 수락하거나 다른 호스트 그룹을 선택할 수 있습니다.</block>
-  <block id="abeb4ea342287af6fb99335900add67e" category="paragraph">지정한 운영 체제에서 실행되는 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP 자동으로 새 호스트 그룹을 만듭니다.</block>
   <block id="83e804a6917baea37d43dfd34c66ac73" category="paragraph">ASA r2 시스템은 두 가지 성능 수준을 제공합니다.  기본 성능 수준은 *극단*으로, 사용 가능한 가장 높은 수준입니다.  수준을 *성능*으로 낮출 수 있습니다.</block>
   <block id="4a1975a1a386f2f3f28c4859f5ea4976" category="paragraph">클러스터/HA 케이블링 예제는 일반적인 구성을 보여줍니다.</block>
   <block id="11695514a878032b3fb5ecdf5e659b5b" category="paragraph">여기에 구성이 보이지 않으면 다음으로 이동하세요. <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 스토리지 시스템에 케이블을 연결하기 위한 포괄적인 구성 및 슬롯 우선순위 정보를 확인하세요.</block>
@@ -2641,8 +2636,6 @@
   <block id="903547f07fd29a1a471a450bf6698e9a" category="paragraph">스토리지 VM은 ASA 클러스터에서 ASA r2 클러스터로 마이그레이션됩니다.  스토리지 VM의 이름과 UUID, 데이터 LIF 이름, IP 주소, 볼륨 이름과 같은 개체 이름은 변경되지 않습니다.  스토리지 VM에 있는 마이그레이션된 객체의 UUID가 업데이트됩니다.</block>
   <block id="8dc31ca5dc4646efeb787bf14002d2d0" category="inline-link-macro">ASA 클라이언트를 ASA r2 클러스터로 수동으로 전환하고 ASA 클러스터에서 스토리지 VM을 제거합니다.</block>
   <block id="9577daaa5fbfbab99b56d58ee2c172df" category="paragraph">자동 컷오버 및 자동 스토리지 VM 제거를 비활성화한 경우<block ref="76ae15ac4a72520ba2cd15274463fca3" category="inline-link-macro-rx"></block> .</block>
-  <block id="9582e4c48479798f4f4f9ce46d09c93b" category="paragraph">ASA r2 시스템에서 스토리지 장치는 SAN 호스트에 데이터 작업을 위한 스토리지 공간을 제공합니다.  저장 장치는 SCSI 호스트의 경우 LUN을 의미하고, NVMe 호스트의 경우 NVMe 네임스페이스를 의미합니다.  클러스터가 SCSI 호스트를 지원하도록 구성된 경우 LUN을 생성하라는 메시지가 표시됩니다.  클러스터가 NVMe 호스트를 지원하도록 구성된 경우 NVMe 네임스페이스를 만들라는 메시지가 표시됩니다.  ASA r2 스토리지 유닛의 최대 용량은 128TB입니다.</block>
-  <block id="c9c3efe2f110833ad53d587066554d58" category="paragraph">ONTAP 9.18.1부터 스토리지 유닛을 생성할 때 스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화할 수 있습니다.  스냅샷 예약은 스냅샷을 위해 특별히 예약된 저장 장치의 공간입니다.  스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.</block>
   <block id="7501352b37c8930919c10e645c388272" category="inline-link-macro">ASA r2 시스템의 스냅샷 예약에 대해 자세히 알아보세요.</block>
   <block id="7fdd4a506c158d387464fd16f4e65f8e" category="paragraph"><block ref="614a34b4f7a807cea02dd4507adb351a" category="inline-link-macro-rx"></block>.</block>
   <block id="819b58028cbb8d32e35c5a6d2a9ed247" category="list-text">QoS 한도, QoS 보장 또는 둘 다를 설정합니다.</block>
@@ -2726,4 +2719,19 @@
   <block id="343eac7cd99cc683c46468c5b11af7ac" category="sidebar">스냅샷 예약 수정</block>
   <block id="d36af7beb354a2c45f47821d695da277" category="sidebar">스토리지 VM 피어 관계 생성</block>
   <block id="d529398546b94e10169c1e6f6f8aed12" category="sidebar">ONTAP 9.18.1의 새로운 기능</block>
+  <block id="5aa793bbbd0a039a24351b96f67f0529" category="paragraph">ASA r2 스토리지 유닛은 기본적으로 씬 프로비저닝됩니다.  VM 워크로드를 마이그레이션할 때 가상 디스크(VMDK)도 씬 프로비저닝해야 합니다.</block>
+  <block id="7b848eb8039379df12baae059a9ee8ea" category="inline-link-macro">ONTAP SAN ASA 스토리지 시스템에 Broadcom VMware ESXi iSCSI MPIO를 설정하는 방법</block>
+  <block id="b91b0ae22fa5ae9c0dedfb1c2ea0123d" category="list-text">자세히 알아보세요<block ref="a32ebc6e0510ec3f73b137570cd9df09" category="inline-link-macro-rx"></block> .</block>
+  <block id="f1391ddb40293878f5f1aec84cd95a9d" category="paragraph">ASA r2 시스템에서 스토리지 장치는 SAN 호스트에 데이터 작업을 위한 스토리지 공간을 제공합니다. 저장 장치는 SCSI 호스트의 경우 LUN을 의미하고, NVMe 호스트의 경우 NVMe 네임스페이스를 의미합니다. 클러스터가 SCSI 호스트를 지원하도록 구성된 경우 LUN을 생성하라는 메시지가 표시됩니다. 클러스터가 NVMe 호스트를 지원하도록 구성된 경우 NVMe 네임스페이스를 만들라는 메시지가 표시됩니다.</block>
+  <block id="4314cb010b84f564860a7b2fee2cb4ab" category="paragraph">ASA r2 스토리지 유닛의 최대 용량은 128TB입니다. 를 참조하십시오<block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block> ASA r2 시스템의 최신 저장 한도에 대해서는 다음을 참조하세요.</block>
+  <block id="34ec78fcc91ffb1e54cd85e4a0924332" category="inline-link-macro">추가하다</block>
+  <block id="48e33f950546e0f98a6cda6ec059d508" category="paragraph">스토리지 장치 생성 프로세스의 일부로 호스트 이니시에이터를 스토리지 장치에 추가하고 매핑합니다.  당신도 할 수 있습니다<block ref="7d43bd55c0467bfd35b09864ee6c0663" category="inline-link-macro-rx"></block> 그리고<block ref="261a27e7b6f81c3f2b0eb2a43b4fcddb" category="inline-link-macro-rx"></block> 저장 장치를 만든 후 호스트 이니시에이터를 생성합니다.</block>
+  <block id="daacdfe6a9c965f99bb919daaf922d41" category="paragraph">ONTAP 9.18.1부터 스토리지 유닛을 생성할 때 스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화할 수 있습니다. 스냅샷 예약은 스냅샷을 위해 특별히 예약된 저장 장치의 공간입니다. 스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.</block>
+  <block id="cd70e38e090afe4dfe68269857720d8c" category="inline-link-macro">씬 프로비저닝</block>
+  <block id="6afea9ca1f178aea254d3f9ac79d8dbc" category="paragraph">스토리지 유닛은 기본적으로 씬 프로비저닝됩니다.  씬 프로비저닝을 사용하면 저장 장치가 할당된 크기까지 확장될 수 있지만 공간을 미리 예약하지는 않습니다.  공간은 필요에 따라 사용 가능한 여유 공간에서 동적으로 할당됩니다.  이를 통해 사용 가능한 공간을 _과도하게 프로비저닝_하여 더 큰 저장 효율성을 실현할 수 있습니다.  예를 들어, 1TB의 여유 공간이 있고 1TB 저장 장치 4개를 만들어야 한다고 가정해 보겠습니다.  시스템에 3TB의 추가 저장 용량을 즉시 추가하는 대신, 저장 장치를 만들고 공간 활용도를 모니터링하며 저장 장치가 실제 공간을 사용함에 따라 저장 용량을 늘릴 수 있습니다. 자세히 알아보세요<block ref="37a5a7f95b66d852ea39cef83793bc4b" category="inline-link-macro-rx"></block> .</block>
+  <block id="235edd79b1fce1af069d9278c91366b9" category="paragraph">스토리지 가용성 영역 전체에서 워크로드 밸런싱을 최적화하려면 짝수 개의 스토리지 유닛을 만듭니다.</block>
+  <block id="c82bffc1986369b2cd4e0c02a3eb4336" category="admonition">두 개 이상의 저장 장치를 만드는 경우 각 장치는 동일한 용량으로 생성됩니다.  사용 가능한 공간이 충분한지 확인하려면 만들고자 하는 저장 공간의 수에 원하는 용량을 곱하세요.  충분한 여유 공간이 없고 과도한 프로비저닝을 선택한 경우, 공간 부족과 데이터 손실을 방지하기 위해 사용률을 주의 깊게 모니터링하세요.</block>
+  <block id="574d314c515cf3a8473a1e97b72f3409" category="paragraph">지정한 운영 체제에서 실행되는 호스트에 대한 기존 호스트 그룹이 없으면 ONTAP 자동으로 새 호스트 그룹을 만듭니다.</block>
+  <block id="bcba813b1b55d0253fcd84e63b13b621" category="paragraph">호스트 NQN을 &lt;nqn.yyyy-mm&gt; 다음에 정규화된 도메인 이름으로 포맷합니다.  연도는 1970년 또는 그 이후여야 합니다.  총 최대 길이는 223이어야 합니다.  유효한 NVMe 이니시에이터의 예는 nqn.2014-08.com.example:string입니다.</block>
+  <block id="34870fc34c4d7d31040582c184ed973a" category="paragraph">ASA r2 스토리지 유닛을 생성하고 호스트 이니시에이터를 추가한 후 호스트를 스토리지 유닛에 매핑하여 데이터 제공을 시작합니다.  저장 장치는 저장 장치 생성 프로세스의 일부로 호스트에 매핑됩니다.  언제든지 기존 스토리지 장치를 새 호스트나 기존 호스트에 매핑할 수도 있습니다.</block>
 </blocks>
