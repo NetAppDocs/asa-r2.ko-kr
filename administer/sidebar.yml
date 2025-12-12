@@ -34,8 +34,6 @@ entries:
     url: "/administer/reboot-take-over-give-back-nodes.html"
   - title: 노드 이름을 바꿉니다
     url: "/administer/rename-nodes.html"
-  - title: 노드 간 워크로드 재조정
-    url: "/administer/rebalance-workloads.html"
 - title: 사용자 계정 및 역할 관리
   url: "/administer/user-accounts-roles.html"
 - title: 보안 인증서를 관리합니다
