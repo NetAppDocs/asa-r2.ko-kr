@@ -929,7 +929,6 @@
   <block id="850bd7b0cfd54017b4835ee80bcd19d6" category="list-text">에 대해 자세히 <block ref="87818029f41349444777fa70fdbcf742" category="inline-link-macro-rx"></block>알아보십시오.</block>
   <block id="9d6bd9c6a911bce1e19d13baf3547790" category="list-text">에서 ASA 및 ASA R2 시스템에 대한 전체 구성 지원 및 제한 사항을 <block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2734568aee16bf6e5d8b1dae1295b6bd" category="list-text">에 대해 자세히 <block ref="b827a6cff8052295f0cbdcb7ea0abba2" category="inline-link-macro-rx"></block>알아보십시오.</block>
-  <block id="d480af7e6686a5e56e9006fab126c8e7" category="section-title">ASA R2 시스템의 차이점을 요약합니다</block>
   <block id="396a0ea87d82ffa45a3a3dc95544f118" category="paragraph">ONTAP CLI(Command Line Interface) 및 REST API와 관련된 ASA R2 시스템과 FAS, AFF 및 ASA 시스템의 주요 차이점은 아래에 설명되어 있습니다.</block>
   <block id="363188350b1fe2b934c479c977a89ece" category="paragraph-title">자동 볼륨 생성</block>
   <block id="eee98269dcd20c90abcc0a7bfb22f37c" category="paragraph">스토리지 유닛(LUN 또는 네임스페이스)을 생성하면 스토리지 가용 영역에서 볼륨이 자동으로 생성됩니다. 결과적으로 공통 네임스페이스가 단순화됩니다. 스토리지 유닛을 삭제하면 연결된 볼륨이 자동으로 삭제됩니다.</block>
@@ -1879,24 +1878,6 @@
   <block id="b6a739813709f83018659fdbc27b2de8" category="list-text">VLAN을 사용하는 경우 다음을 조정하세요. <block ref="dd051c084bc8cc988e9de14f3c9ad878" prefix=" " category="inline-code"></block> 예를 들어, 각 iSCSI 패브릭에 대한 VLAN 포트 정보를 포함하는 매개변수 <block ref="2a05b28bd19c3a98e46d07aa6695c6a5" prefix=" " category="inline-code"></block> iSCSI 패브릭 A 및 <block ref="f245070e2a8ef7b028d5d95112386767" prefix=" " category="inline-code"></block> .</block>
   <block id="7500a4db61e9b72fce1ef4eabd1edd15" category="list-text">VLAN과 함께 인터페이스 그룹(ifgroups)을 사용하는 경우 다음을 조정하십시오. <block ref="dd051c084bc8cc988e9de14f3c9ad878" prefix=" " category="inline-code"></block> 예를 들어 적절한 VLAN 포트를 포함하는 매개변수 <block ref="5baba6f6f316f2dc9483d868f8e2f435" prefix=" " category="inline-code"></block> iSCSI 패브릭 A 및 <block ref="4bf48c896b4c0cd30e6f90e2d1f1e320" prefix=" " category="inline-code"></block> iSCSI 패브릭 B의 경우 <block ref="a108b2b9a0c27dd07bed32945c011a40" prefix=" " category="inline-code"></block> 는 ifgroup이고 a0a-&lt;iSCSI-A-VLAN&gt;과 a0a-&lt;iSCSI-B-VLAN&gt;은 각각 iSCSI A 패브릭과 iSCSI B 패브릭에 대한 VLAN 포트입니다.</block>
   <block id="35e215d46dc9e9777b80a47726a059fc" category="list-text">iSCSI LIF가 생성되었는지 확인하세요.</block>
-  <block id="504efdae1b6cba4150ef59f621aedab1" category="summary">ONTAP 9.17.1부터 ONTAP 최적의 성능을 위해 ASA r2 시스템 HA 쌍의 노드 간 작업 부하를 자동으로 재조정합니다.</block>
-  <block id="83d0ebaee455b02e3b225c751a3ddb60" category="doc">ASA r2 스토리지 시스템의 노드 간 워크로드 재조정</block>
-  <block id="705b08e838354472c2696f058ccf7e63" category="section-title">자동 워크로드 재조정을 위한 기본 평가 기간 수정</block>
-  <block id="e5c17665820b0729109c666d990f8a03" category="paragraph">ONTAP 9.17.1로 업그레이드하거나 새 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 자동 워크로드 리밸런싱이 활성화됩니다. ONTAP 명령줄 인터페이스(CLI)를 사용하여 운영 요구 사항에 맞게 기본 평가 기간을 늘리거나 줄일 수 있습니다.</block>
-  <block id="bdba97a2c63e362302c1c6b384c83f50" category="list-text">평가 기간이 남은 일수를 확인하세요.</block>
-  <block id="47c4fbd6e93d1e42f5ed98ed6e9897a9" category="list-text">재조정 평가 기간 변경:</block>
-  <block id="2aeea1d601c1c29400c1ac4f0b641df5" category="paragraph">다음 예에서는 남은 평가 기간을 10일로 설정합니다.</block>
-  <block id="221b2ec9a9d74f3d4810006ec104bfa1" category="section-title">자동 작업 부하 재조정 설정 수정</block>
-  <block id="ebfec0592da7265f7973f73b2dc160da" category="paragraph">자동 워크로드 리밸런싱은 ONTAP 9.17.1로 업그레이드하거나 새 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일 후에 기본적으로 활성화됩니다. 기본 설정을 변경하여 자동 워크로드 리밸런싱을 비활성화하거나, 불균형 워크로드를 자동으로 이동하지 않고 플래그를 지정하도록 권고 상태로 설정할 수 있습니다.</block>
-  <block id="14bfbf2d04d9013e7a9edb0226f54087" category="list-text">현재 노드에 설정된 재조정 모드를 확인하세요.</block>
-  <block id="fdbbdd0a5deb0085fa132d70020cb33d" category="list-text">자동 작업 부하 재분배 설정을 수정합니다.</block>
-  <block id="1bd7679b4e94a7911e37582f39ee8212" category="list-text">재조정 모드가 수정되었는지 확인하세요.</block>
-  <block id="3805d8dfd7d464318b9d12002a6b1842" category="section-title">수동으로 작업 부하 재조정을 트리거합니다.</block>
-  <block id="c5b01858a0fece49cc222e8c80b1f31b" category="paragraph">자동 워크로드 리밸런싱을 비활성화한 경우에도 워크로드 리밸런싱을 수동으로 트리거할 수 있습니다. 이는 일정 기간의 수동 조정 후 워크로드를 리밸런싱하거나 리밸런싱 모드를 *권고*로 설정하고 워크로드 플래그에 따라 조치를 취하려는 경우에 유용합니다.</block>
-  <block id="29065a2328da344d0150753626c42a0b" category="list-text">재조정 모드가 *권고*로 설정되어 있지 않으면 *권고*로 설정합니다.</block>
-  <block id="9a6a7c8a5139babc093f33b751b142b8" category="list-text">수동으로 워크로드 재조정을 트리거합니다.</block>
-  <block id="0e7e739045db63c06316acc714c7b9e8" category="list-text">재조정 작업의 상태를 확인하세요.</block>
-  <block id="f21fbdfcbf369be102f035a4584da46c" category="paragraph">재조정 모드를 *자동* 또는 *비활성화*로 설정하려면 다음을 사용할 수 있습니다. <block ref="66582a46bd2789990bf4e736485e72a5" prefix=" " category="inline-code"></block> 명령.</block>
   <block id="605100eb6736883e31c6d1e4fad51f01" category="doc">ASA r2 스토리지 시스템에서 ONTAP 되돌리기</block>
   <block id="6c4ad6bab2c371edfa0398af05e34073" category="paragraph">ASA r2 시스템에 대한 ONTAP 소프트웨어 복구는 다른 ONTAP 시스템에 대한 복구와 동일한 프로세스를 따릅니다.</block>
   <block id="358f72dc9423c70c64ee3062d2194875" category="paragraph">ONTAP 클러스터를 되돌리는 작업은 시스템 중단을 초래할 수 있습니다. 되돌리는 동안 클러스터를 오프라인 상태로 유지해야 합니다. 기술 지원팀의 도움 없이 운영 클러스터를 되돌려서는 안 됩니다. 새 클러스터나 테스트 클러스터는 도움 없이 되돌릴 수 있습니다. 새 시스템이나 테스트 클러스터의 되돌리기가 실패하거나 성공적으로 완료되었지만 운영 환경의 클러스터 성능에 만족하지 못하는 경우 기술 지원팀에 문의하여 도움을 요청하십시오.</block>
@@ -2075,12 +2056,7 @@
   <block id="ed71343ae4e4dcf121be11ff1628e50c" category="paragraph-title">FAS, AFF 및 ASA 시스템</block>
   <block id="825933c4d860e3660e8c98f0e7eab2b8" category="paragraph">FAS, AFF 및 ASA 시스템의 스토리지 계층은 집계를 스토리지의 기본 단위로 사용합니다. 집계는 스토리지 시스템에서 사용 가능한 특정 디스크 집합을 소유합니다. 집계는 자신이 소유한 디스크의 공간을 LUN 및 네임스페이스 볼륨에 할당합니다. 이러한 시스템을 통해 ONTAP 사용자는 집계, 볼륨, LUN 및 네임스페이스를 생성하고 수정할 수 있습니다.</block>
   <block id="d0ee8f6d42e445ccb3b6cf2ca2eda848" category="paragraph">ASA r2 시스템의 스토리지 계층은 집계 대신 스토리지 가용성 영역(SAZ)을 사용합니다. 스토리지 가용성 영역은 단일 HA 쌍의 두 노드 모두에서 사용할 수 있는 공통 스토리지 풀입니다. HA 쌍의 두 노드는 공유 스토리지 가용성 영역의 모든 사용 가능한 디스크에 액세스할 수 있습니다. 예를 들어, 2노드 ASA r2 System ONTAP 클러스터에는 클러스터의 두 노드 모두 액세스할 수 있는 스토리지 가용성 영역이 하나 있습니다. 4노드 ASA r2 System ONTAP 클러스터에는 두 개의 스토리지 가용성 영역이 있습니다. 클러스터의 각 HA 쌍은 스토리지 가용성 영역 중 하나에 액세스할 수 있습니다.</block>
-  <block id="7e0e6d0b54f1d3e43011949edcedf558" category="paragraph">스토리지 유닛(LUN 또는 NVMe 네임스페이스 기반)이 생성되면 ONTAP 해당 스토리지 가용 영역에 볼륨을 자동으로 생성하여 스토리지 유닛을 저장합니다. 새로 생성된 볼륨은 최적의 성능과 균형 잡힌 용량 활용을 위해 스토리지 가용 영역 내에 자동으로 배치됩니다. ONTAP 버전에 따라 ASA r2 시스템은 스토리지 가용 영역 전반의 스토리지 유닛 자동 리밸런싱과 HA 쌍의 노드 간 워크로드 자동 리밸런싱을 지원합니다.</block>
-  <block id="74701f9abdc762e4db1ffc78445e9260" category="list-text">자동 저장 장치 재조정</block>
-  <block id="8cd9f35b6c3dc031600dea6f3fc6cb0a" category="paragraph">ONTAP 9.16.1부터 스토리지 유닛이 늘어나거나 줄어들어 스토리지 가용성 영역 전체에서 스토리지 활용도에 불균형이 발생하는 경우 ONTAP 필요에 따라 스토리지 유닛을 자동으로 이동하여 활용도를 재조정하고 성능을 최적화합니다.</block>
   <block id="21d7850248698429a3bafb9997a15a87" category="list-text">자동 워크로드 재조정</block>
-  <block id="3bfef144a44ee705d6606481010950f4" category="inline-link-macro">기본 설정을 변경하다</block>
-  <block id="46f7fb5395b739874d38cda9682d3b9b" category="paragraph">ONTAP 9.17.1부터 ONTAP 최적의 성능을 위해 ASA r2 시스템 HA 쌍의 노드 간 워크로드를 자동으로 재분배합니다. 예를 들어, 한 노드의 사용률이 70%로 증가하는 반면 HA 파트너의 사용률은 30%에 불과한 경우, ONTAP 각 노드의 사용률이 더욱 일치하도록 워크로드를 자동으로 이동합니다. HA 쌍의 노드는 동일한 스토리지 가용 영역을 공유하므로 워크로드 재분배는 성능에 영향을 미치지 않는 복사 없는 작업입니다. 워크로드 재분배는 ONTAP 9.17.1로 업그레이드하거나 새 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일 후에 기본적으로 활성화됩니다. <block ref="ad613c4047c21221600808d09601f36b" category="inline-link-macro-rx"></block> 자동 워크로드 재분배를 활성화 또는 비활성화하거나, 워크로드를 자동으로 이동하지 않고 불균형한 워크로드에 플래그를 지정하여 권고 상태로 설정합니다.</block>
   <block id="25afba57f81c57e27978071d59c7fb4c" category="paragraph">ASA r2 시스템은 다음과 같은 면에서 FAS, AFF, ASA 시스템과 다릅니다.</block>
   <block id="fc647b716005682fb47d07737c88ef5f" category="inline-link-macro">지원되지 않는 ASA r2 명령에 대해 자세히 알아보세요</block>
   <block id="a9bf379b64b6d61f1e4ce19d0d6e0c25" category="paragraph">이러한 자동화되고 간소화된 스토리지 관리 방식으로 인해 ASA r2 시스템에서는 특정 System Manager 옵션, ONTAP 명령 및 REST API 엔드포인트를 사용할 수 없거나 사용이 제한됩니다. 예를 들어, ASA r2 시스템에서는 볼륨 생성 및 관리가 자동화되어 있기 때문에 System Manager에 *볼륨* 메뉴가 나타나지 않고 <block ref="4784dd0ffa42c3d1b43b0afd079dfc17" prefix=" " category="inline-code"></block> 명령이 지원되지 않습니다. <block ref="876b47d727ef9cdbe213f90a9ae9f200" category="inline-link-macro-rx"></block> .</block>
@@ -2181,7 +2157,6 @@
   <block id="51fdbcd0db2c1872dd7cebbf0001c027" category="list-text">*거짓 양성으로 표시*를 선택하거나 *잠재적 랜섬웨어 공격으로 표시*를 선택합니다.</block>
   <block id="01075bb2e4cdf943e1489ac725c74870" category="sidebar">ONTAP 업그레이드 및 되돌리기</block>
   <block id="3522b68140325fa7c5d18729fa204677" category="sidebar">ONTAP 되돌리기</block>
-  <block id="4367988913c0c31461d7e173b575ab73" category="sidebar">노드 간 워크로드 재조정</block>
   <block id="861a3dc8d4cd1ed4472591f4c462b0ee" category="sidebar">일반적인 ONTAP 기능 지원</block>
   <block id="fd2b7af0b1efe7980f890d1f7de70549" category="sidebar">호스트 그룹 관리</block>
   <block id="ed3e0c3253c203840c9491b3d4651269" category="sidebar">호스트 그룹 삭제</block>
@@ -2224,7 +2199,6 @@
   <block id="4a9d271be00cfe80ccf9f2ae1e86c4ff" category="sidebar">vSphere 환경을 위한 지속적인 가용성 솔루션에 대해 알아보세요</block>
   <block id="07deeffbd26ae347c81cfaf3e2169044" category="sidebar">NetApp ASA 시스템을 위한 모범 사례</block>
   <block id="65393a1b15c3a63904bb446f4a99001a" category="sidebar">REST API 전환 가이드</block>
-  <block id="a7063f74bf99069f53792368bf5ddbe3" category="admonition">자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
   <block id="f0929283036207a854392f9eaeb45be4" category="paragraph">ASA r2 시스템은 일관성 그룹이 있는 스토리지 유닛을 사용하여 스토리지 관리와 데이터 보호를 간소화합니다.  예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다.  각 저장 장치를 개별적으로 백업하는 대신 일관성 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
   <block id="eaeb215b56b171344d62780dd997477e" category="paragraph">ONTAP 9.16.1부터 ASA r2 스토리지 시스템은 클러스터당 최대 12개의 노드를 지원합니다.  HA 쌍의 새 노드에 케이블이 연결되고 전원이 켜진 후에는 이를 클러스터에 조인해야 합니다.</block>
   <block id="b8838348a8da924f377a5d293230f4f4" category="summary">ASA r2 시스템에 대한 ONTAP 소프트웨어 복구는 다른 ONTAP 시스템에 대한 복구와 동일한 프로세스를 따릅니다. ONTAP 클러스터를 되돌리는 작업은 시스템 중단을 초래할 수 있습니다.</block>
@@ -2439,7 +2413,6 @@
   <block id="4a1975a1a386f2f3f28c4859f5ea4976" category="paragraph">클러스터/HA 케이블링 예제는 일반적인 구성을 보여줍니다.</block>
   <block id="11695514a878032b3fb5ecdf5e659b5b" category="paragraph">여기에 구성이 보이지 않으면 다음으로 이동하세요. <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 스토리지 시스템에 케이블을 연결하기 위한 포괄적인 구성 및 슬롯 우선순위 정보를 확인하세요.</block>
   <block id="8c3a29fca49d6a772e0a2f8ab6ab7280" category="paragraph">호스트 네트워크 케이블링 예는 일반적인 구성을 보여줍니다.</block>
-  <block id="47209a3f622b3d093f126e58491097c5" category="paragraph">ONTAP 9.17.1부터 ONTAP 최적의 성능을 위해 ASA r2 시스템 HA 쌍의 노드 간 워크로드를 자동으로 재분배합니다. 예를 들어, 한 노드의 공간 활용도가 70%로 증가하는 반면 HA 파트너의 활용도는 30%에 불과하면 ONTAP 각 노드의 공간 활용도가 더 가깝게 일치하도록 작업 부하를 자동으로 전환합니다. HA 쌍의 노드는 동일한 스토리지 가용 영역을 공유하므로 워크로드 재분배는 성능에 영향을 미치지 않는 복사 없는 작업입니다.</block>
   <block id="19b78e8ad6af7cf1ea82e76fdac1aa7f" category="admonition">ASA r2 시스템은 동기 복제를 지원하지 않습니다.</block>
   <block id="2e360c76c16280fe84148c9706ad34d6" category="list-text">*정책 유형*에서 *비동기*를 선택합니다.</block>
   <block id="f1f7f77e02139ed937613a8043556351" category="admonition">비동기 정책을 사용하면 데이터가 소스에 기록된 후 원격 사이트로 복사됩니다. ASA r2 시스템에서는 동기 복제가 지원되지 않습니다.</block>
@@ -2734,4 +2707,5 @@
   <block id="bcba813b1b55d0253fcd84e63b13b621" category="paragraph">호스트 NQN을 &lt;nqn.yyyy-mm&gt; 다음에 정규화된 도메인 이름으로 포맷합니다.  연도는 1970년 또는 그 이후여야 합니다.  총 최대 길이는 223이어야 합니다.  유효한 NVMe 이니시에이터의 예는 nqn.2014-08.com.example:string입니다.</block>
   <block id="34870fc34c4d7d31040582c184ed973a" category="paragraph">ASA r2 스토리지 유닛을 생성하고 호스트 이니시에이터를 추가한 후 호스트를 스토리지 유닛에 매핑하여 데이터 제공을 시작합니다.  저장 장치는 저장 장치 생성 프로세스의 일부로 호스트에 매핑됩니다.  언제든지 기존 스토리지 장치를 새 호스트나 기존 호스트에 매핑할 수도 있습니다.</block>
   <block id="e5e9f89a4e81cd1c64531c80eba2e77e" category="admonition">ASA r2 시스템에서는 SED가 NVMe 기반 SSD에 대해서만 지원됩니다.</block>
+  <block id="0195aa02a40fea888f627303a4327d5b" category="paragraph">스토리지 유닛(LUN 또는 NVMe 네임스페이스 기반)이 생성되면 ONTAP 해당 스토리지 가용 영역에 볼륨을 자동으로 생성하여 스토리지 유닛을 저장합니다. 새로 생성된 볼륨은 최적의 성능과 균형 잡힌 용량 활용을 위해 스토리지 가용 영역 내에 자동으로 배치됩니다. == ASA r2 시스템 차이점 요약</block>
 </blocks>
