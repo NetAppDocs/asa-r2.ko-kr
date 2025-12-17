@@ -42,7 +42,7 @@ entries:
       url: "/data-protection/snapshot-reserve.html"
     - title: 스냅샷 예약 수정
       url: "/data-protection/snapshot-reserve-modify.html"
-  - title: 스토리지 VM 피어 관계 생성
+  - title: 스토리지 VM 피어 관계를 생성합니다.
     url: "/data-protection/create-svm-peer-relationship.html"
   - title: 스냅샷 복제를 설정합니다
     entries:

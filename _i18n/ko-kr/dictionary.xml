@@ -2056,7 +2056,6 @@
   <block id="ed71343ae4e4dcf121be11ff1628e50c" category="paragraph-title">FAS, AFF 및 ASA 시스템</block>
   <block id="825933c4d860e3660e8c98f0e7eab2b8" category="paragraph">FAS, AFF 및 ASA 시스템의 스토리지 계층은 집계를 스토리지의 기본 단위로 사용합니다. 집계는 스토리지 시스템에서 사용 가능한 특정 디스크 집합을 소유합니다. 집계는 자신이 소유한 디스크의 공간을 LUN 및 네임스페이스 볼륨에 할당합니다. 이러한 시스템을 통해 ONTAP 사용자는 집계, 볼륨, LUN 및 네임스페이스를 생성하고 수정할 수 있습니다.</block>
   <block id="d0ee8f6d42e445ccb3b6cf2ca2eda848" category="paragraph">ASA r2 시스템의 스토리지 계층은 집계 대신 스토리지 가용성 영역(SAZ)을 사용합니다. 스토리지 가용성 영역은 단일 HA 쌍의 두 노드 모두에서 사용할 수 있는 공통 스토리지 풀입니다. HA 쌍의 두 노드는 공유 스토리지 가용성 영역의 모든 사용 가능한 디스크에 액세스할 수 있습니다. 예를 들어, 2노드 ASA r2 System ONTAP 클러스터에는 클러스터의 두 노드 모두 액세스할 수 있는 스토리지 가용성 영역이 하나 있습니다. 4노드 ASA r2 System ONTAP 클러스터에는 두 개의 스토리지 가용성 영역이 있습니다. 클러스터의 각 HA 쌍은 스토리지 가용성 영역 중 하나에 액세스할 수 있습니다.</block>
-  <block id="21d7850248698429a3bafb9997a15a87" category="list-text">자동 워크로드 재조정</block>
   <block id="25afba57f81c57e27978071d59c7fb4c" category="paragraph">ASA r2 시스템은 다음과 같은 면에서 FAS, AFF, ASA 시스템과 다릅니다.</block>
   <block id="fc647b716005682fb47d07737c88ef5f" category="inline-link-macro">지원되지 않는 ASA r2 명령에 대해 자세히 알아보세요</block>
   <block id="a9bf379b64b6d61f1e4ce19d0d6e0c25" category="paragraph">이러한 자동화되고 간소화된 스토리지 관리 방식으로 인해 ASA r2 시스템에서는 특정 System Manager 옵션, ONTAP 명령 및 REST API 엔드포인트를 사용할 수 없거나 사용이 제한됩니다. 예를 들어, ASA r2 시스템에서는 볼륨 생성 및 관리가 자동화되어 있기 때문에 System Manager에 *볼륨* 메뉴가 나타나지 않고 <block ref="4784dd0ffa42c3d1b43b0afd079dfc17" prefix=" " category="inline-code"></block> 명령이 지원되지 않습니다. <block ref="876b47d727ef9cdbe213f90a9ae9f200" category="inline-link-macro-rx"></block> .</block>
@@ -2092,7 +2091,6 @@
   <block id="7cd792910eb45c6b7d750838a44c4fe3" category="doc">ASA r2 스토리지 시스템에서 AI를 사용하여 자율적인 랜섬웨어 보호 기능을 활성화하세요.</block>
   <block id="e8b71c667f5920e249288a672ea7f999" category="paragraph">ONTAP 9.17.1부터 인공지능(AI)을 활용한 자율형 랜섬웨어 보호(ARP/AI)를 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. ARP/AI는 잠재적인 랜섬웨어 위협을 신속하게 감지하고, 데이터를 보호하기 위해 ARP 스냅샷을 자동으로 생성하며, 의심스러운 활동을 감지하면 시스템 관리자에 경고 메시지를 표시합니다.</block>
   <block id="7331e9472b69421ea7995df5df0b5754" category="inline-link-macro">학습 기간</block>
-  <block id="36d9aa26c54df45c1444d8d8c87f223b" category="paragraph">ONTAP 9.17.1부터 ARP는 SAN 환경에서 끊임없이 진화하는 랜섬웨어 유형을 98% 정확도로 탐지하는 랜섬웨어 방지 분석용 머신 러닝 모델을 채택하여 사이버 복원력을 향상시킵니다. ARP의 머신 러닝 모델은 시뮬레이션된 랜섬웨어 공격 전후의 대용량 파일 데이터 세트를 기반으로 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 이 학습을 통해 생성된 사전 학습된 모델은 ONTAP 에 기본 제공됩니다. 이 모델은 CLI 또는 API를 통해 접근하거나 수정할 수 없습니다. 따라서 ARP/AI는 활성화 직후 활성화됩니다. <block ref="3fa1bfd584351c2c430a6346ba4b1ef3" category="inline-link-macro-rx"></block> .</block>
   <block id="c23c5941acca34f7955743c2115ef87e" category="admonition">랜섬웨어 탐지 또는 예방 시스템은 랜섬웨어 공격으로부터 완벽한 안전을 보장할 수 없습니다. 공격이 탐지되지 않을 수도 있지만, ARP/AI는 바이러스 백신 소프트웨어가 침입을 탐지하지 못할 경우 중요한 추가 방어막 역할을 합니다.</block>
   <block id="ad09d4f074e5e7f7524d8960ed675311" category="inline-link-macro">ONTAP One 라이센스</block>
   <block id="4098ab2b124dfc2ac9a7199398f039bf" category="paragraph">ARP/AI 지원이 포함되어 있습니다. <block ref="eac36fc822e433078e178d83ea6ed140" category="inline-link-macro-rx"></block> .</block>
@@ -2202,7 +2200,6 @@
   <block id="f0929283036207a854392f9eaeb45be4" category="paragraph">ASA r2 시스템은 일관성 그룹이 있는 스토리지 유닛을 사용하여 스토리지 관리와 데이터 보호를 간소화합니다.  예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다.  각 저장 장치를 개별적으로 백업하는 대신 일관성 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
   <block id="eaeb215b56b171344d62780dd997477e" category="paragraph">ONTAP 9.16.1부터 ASA r2 스토리지 시스템은 클러스터당 최대 12개의 노드를 지원합니다.  HA 쌍의 새 노드에 케이블이 연결되고 전원이 켜진 후에는 이를 클러스터에 조인해야 합니다.</block>
   <block id="b8838348a8da924f377a5d293230f4f4" category="summary">ASA r2 시스템에 대한 ONTAP 소프트웨어 복구는 다른 ONTAP 시스템에 대한 복구와 동일한 프로세스를 따릅니다. ONTAP 클러스터를 되돌리는 작업은 시스템 중단을 초래할 수 있습니다.</block>
-  <block id="4145a02c95a799fdae111c620990d210" category="admonition"><block ref="78cd7e79034e394d9b3e1aacaa777a70" category="inline-link-macro-rx"></block>ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다. 자동 워크로드 리밸런싱이 활성화된 후에는 ASA r2 시스템에서 ONTAP 9.17.1에서 되돌릴 수 없습니다.</block>
   <block id="b4a4e19f8caa5675ed75c7e4c2f95379" category="inline-link-macro">SnapMirror 활성 동기화 관계 삭제</block>
   <block id="79bc5a42c0ce5e77f02d040d055dfae3" category="summary">ASA r2 시스템용 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템용 업그레이드와 동일한 프로세스를 따릅니다.  ASA r2 시스템에서 ONTAP 소프트웨어를 업그레이드하면 새롭고 향상된 ONTAP 기능을 활용할 수 있습니다.</block>
   <block id="676b55575e438300a6a0242a0e2d75e1" category="summary">ASA r2 시스템에 대한 자체 서명 인증서나 타사 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성하는 방법을 알아보세요.</block>
@@ -2486,7 +2483,6 @@
   <block id="43b8a9db5392b7dee9842cb0e7e1155d" category="paragraph">다음 그림은 두 개의 패브릭을 사용하여 단일 HA 쌍에 액세스하는 여러 호스트로 구성된 FC 구성의 예입니다.  FC 대상 포트 번호(0c, 0d, 1a, 1b)도 예입니다.  실제 포트 번호는 시스템 모델과 확장 어댑터를 사용하는지 여부에 따라 달라집니다.</block>
   <block id="7ae21cadd263178648c997416019850c" category="paragraph">ASA r2 시스템에서 지원되는 일반적인 데이터 보호 기능에 대해 자세히 알아보세요.</block>
   <block id="ce42c71243f06fc614542e0e55a275e8" category="section-title">클러스터링된 외부 키 서버</block>
-  <block id="5f7c44cb2c8485bb82150a336201223d" category="paragraph">스토리지 VM에서 클러스터된 외부 키 관리 서버에 대한 연결을 구성할 수 있습니다.  클러스터형 키 서버를 사용하면 스토리지 VM에서 기본 키 서버와 보조 키 서버를 지정할 수 있습니다.  ONTAP 키를 등록할 때 먼저 기본 키 서버에 액세스를 시도한 후 작업이 성공적으로 완료될 때까지 순차적으로 보조 서버에 액세스를 시도하여 키 중복을 방지합니다.</block>
   <block id="d45192a9dbc8a2cb6e487c863af22bbb" category="inline-link-macro">클러스터형 외부 키 서버를 구성하는 방법을 알아보세요</block>
   <block id="b5fde6611f98dcb7f68f83b340b778b9" category="paragraph"><block ref="774d74de870375f3b6eceda1ffb399f2" category="inline-link-macro-rx"></block>.</block>
   <block id="398ff0a12bc1e99d6ac1e3b9a33d9ed1" category="section-title">휴면 암호화를 위한 외부 키 관리</block>
@@ -2665,11 +2661,8 @@
   <block id="c65375b9e9461021110e7878164c1353" category="inline-link-macro">스냅샷 예약 수정 및 자동 스냅샷 삭제 지원</block>
   <block id="74bb636063257a476aa70d6beb1b78a0" category="cell"><block ref="74bb636063257a476aa70d6beb1b78a0" category="inline-link-macro-rx"></block></block>
   <block id="bb6f2042d7b561ef22513dcacc071c68" category="cell">스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화하여 ASA r2 스토리지 유닛에서 스냅샷에 사용되는 공간의 양을 제한할 수 있습니다.  스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.  이렇게 하면 사용자 데이터를 위한 저장 장치의 공간을 스냅샷이 차지하지 못하게 하여 애플리케이션 중단을 방지할 수 있습니다.</block>
-  <block id="d5dbf89be96c1d99854bd0585a1c44fb" category="section-title">스토리지 VM의 모든 스토리지 유닛에서 ARP/AI 활성화</block>
   <block id="05e7e1680bf144077a0c95dc04ecfe70" category="paragraph">스토리지 가상 머신(VM)에 생성된 모든 스토리지 유닛에서 기본적으로 ARP/AI를 활성화할 수 있습니다. 즉, 스토리지 VM에서 생성된 모든 새 스토리지 유닛에는 ARP/AI가 자동으로 활성화됩니다.  스토리지 VM의 기존 스토리지 유닛에 ARP/AI를 적용할 수도 있습니다.</block>
   <block id="afc9ff5f825988208f6c59ba04c2c2d2" category="paragraph">스토리지 VM에서 생성하는 모든 새 스토리지 유닛은 기본적으로 랜섬웨어 공격으로부터 보호되며, 의심스러운 활동은 System Manager에서 보고됩니다.</block>
-  <block id="239fd0403ac267048794a15cbef5b1dc" category="section-title">스토리지 VM의 특정 스토리지 유닛에서 ARP/AI 활성화</block>
-  <block id="62700fbbbfe12bea2a0aa0890f568f6d" category="paragraph">스토리지 VM의 모든 스토리지 유닛에서 ARP/AI를 활성화하지 않으려면 활성화하려는 특정 유닛만 선택할 수 있습니다.</block>
   <block id="8ae754caf3a2f6cacd2c696b8292a020" category="paragraph">ONTAP 9.18.1부터 지원되는 IPsec 하드웨어 오프로드가 IPv6 트래픽으로 확장되었습니다.</block>
   <block id="39fa9e9872335fa886f58deacacdaf75" category="paragraph">다음 NIC 카드는 다음 ASA r2 시스템 및 ONTAP 버전에서 하드웨어 오프로드를 지원합니다.</block>
   <block id="e8467e9b509c4924668c01eb7ab2adde" category="cell">ONTAP 버전</block>
@@ -2689,7 +2682,6 @@
   <block id="17dd0aa64fbdd042489b5c0fffcd25bb" category="sidebar">스냅샷 예약 관리</block>
   <block id="3c0f4fa7666b61f86ab42a6f65750f20" category="sidebar">스냅샷 예약에 대해 알아보세요</block>
   <block id="343eac7cd99cc683c46468c5b11af7ac" category="sidebar">스냅샷 예약 수정</block>
-  <block id="d36af7beb354a2c45f47821d695da277" category="sidebar">스토리지 VM 피어 관계 생성</block>
   <block id="d529398546b94e10169c1e6f6f8aed12" category="sidebar">ONTAP 9.18.1의 새로운 기능</block>
   <block id="5aa793bbbd0a039a24351b96f67f0529" category="paragraph">ASA r2 스토리지 유닛은 기본적으로 씬 프로비저닝됩니다.  VM 워크로드를 마이그레이션할 때 가상 디스크(VMDK)도 씬 프로비저닝해야 합니다.</block>
   <block id="7b848eb8039379df12baae059a9ee8ea" category="inline-link-macro">ONTAP SAN ASA 스토리지 시스템에 Broadcom VMware ESXi iSCSI MPIO를 설정하는 방법</block>
@@ -2707,5 +2699,40 @@
   <block id="bcba813b1b55d0253fcd84e63b13b621" category="paragraph">호스트 NQN을 &lt;nqn.yyyy-mm&gt; 다음에 정규화된 도메인 이름으로 포맷합니다.  연도는 1970년 또는 그 이후여야 합니다.  총 최대 길이는 223이어야 합니다.  유효한 NVMe 이니시에이터의 예는 nqn.2014-08.com.example:string입니다.</block>
   <block id="34870fc34c4d7d31040582c184ed973a" category="paragraph">ASA r2 스토리지 유닛을 생성하고 호스트 이니시에이터를 추가한 후 호스트를 스토리지 유닛에 매핑하여 데이터 제공을 시작합니다.  저장 장치는 저장 장치 생성 프로세스의 일부로 호스트에 매핑됩니다.  언제든지 기존 스토리지 장치를 새 호스트나 기존 호스트에 매핑할 수도 있습니다.</block>
   <block id="e5e9f89a4e81cd1c64531c80eba2e77e" category="admonition">ASA r2 시스템에서는 SED가 NVMe 기반 SSD에 대해서만 지원됩니다.</block>
-  <block id="0195aa02a40fea888f627303a4327d5b" category="paragraph">스토리지 유닛(LUN 또는 NVMe 네임스페이스 기반)이 생성되면 ONTAP 해당 스토리지 가용 영역에 볼륨을 자동으로 생성하여 스토리지 유닛을 저장합니다. 새로 생성된 볼륨은 최적의 성능과 균형 잡힌 용량 활용을 위해 스토리지 가용 영역 내에 자동으로 배치됩니다. == ASA r2 시스템 차이점 요약</block>
+  <block id="e6129943cc99a13d8c697c60264ba016" category="inline-link-macro">동적 공간 균형 조정</block>
+  <block id="8c43a655da0b70a36ef0f72c6b39d432" category="admonition"><block ref="f3838dd89a924b4e0ebc50e64aa2b719" category="inline-link-macro-rx"></block>이 기능은 ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다.  ASA r2 시스템에서 동적 공간 균형 조정을 활성화한 후에는 ONTAP 9.17.1에서 이전 버전으로 되돌릴 수 없습니다.</block>
+  <block id="166a84d4b4570b597bcb3a30d4252d65" category="doc">ASA r2 클러스터에서 ONTAP 용량 분산에 대해 알아보세요.</block>
+  <block id="0eabbb2a15c52c4ca21e3d1a32f8a437" category="paragraph">ASA r2 시스템의 경우 ONTAP _균형 배치_를 사용하여 새로 생성된 스토리지 장치를 최적의 성능과 균형 잡힌 스토리지 활용을 위해 가장 적합한 스토리지 가용 영역에 자동으로 배치합니다.  ONTAP 9.17.1 이상 버전을 실행 중인 경우 기존 스토리지 장치에서 사용되는 공간은 동적 공간 균형 조정을 사용하여 균형이 맞춰집니다.  ONTAP 9.16.1을 실행 중인 경우 기존 스토리지 장치에서 사용되는 공간은 복사 기반 워크로드 재균형 조정을 사용하여 균형이 맞춰집니다.</block>
+  <block id="0378d558dcd0562ad67f6e96ad981dde" category="cell">...에서 지원됨</block>
+  <block id="037e39315c9955da8fb128aa756cd46e" category="cell">균형 잡힌 배치</block>
+  <block id="3b5c971fe265309c78554a126187a02b" category="cell">동적 공간 균형 조정</block>
+  <block id="b357fa1cac46cc202ec05fcda6bb8345" category="cell">복사 기반 워크로드 재분배</block>
+  <block id="ca5e84f0aed2658b5025cc94ecf226e3" category="cell">ONTAP 9.16.1 버전에서만 사용 가능</block>
+  <block id="cdf4362de9950bde8f5ebc0f7e20c7e0" category="paragraph">균형 배치 기능을 사용하면 새로 생성된 스토리지 장치가 최적의 성능과 균형 잡힌 스토리지 활용을 위해 최적의 스토리지 가용 영역에 자동으로 배치됩니다.  균형 배치 기능은 ONTAP 9.16.1 이상 버전에서 기본적으로 활성화되어 있습니다.</block>
+  <block id="558429cf36a4f5c8c0960e6bd8efd1df" category="paragraph">ONTAP 동적 공간 균형 조정 기능을 통해 클러스터의 여유 공간을 능동적으로 모니터링하고 스토리지 가용 영역 내에서 스토리지 장치를 자동으로 이동하여 균형 잡힌 공간 활용을 유지합니다.  클러스터 전체 용량 활용률이 80%에 도달하면 EMS 경고가 자동으로 발생하고, 90%에 도달하면 EMS 알림이 자동으로 발생합니다.</block>
+  <block id="c6a005b97c2f2846aa679b95c6025d92" category="paragraph">ONTAP 9.17.1 이상 버전으로 업그레이드 또는 설치한 후 14일이 지나면 동적 공간 균형 조정이 기본적으로 활성화됩니다.  기본 14일 활성화 기간을 수정해야 하는 경우 NetApp 지원팀에 문의하십시오.  동적 공간 균형 조정이 활성화된 후에는 ONTAP 9.17.1에서 이전 버전으로 되돌릴 수 없습니다.</block>
+  <block id="46a255963b960d8b5876c25f4de05d2a" category="paragraph">동적 공간 균형 조정은 클러스터 내 모든 노드의 사용 가능한 공간 평균(전역 평균)을 기준으로 _일반 모드_ 또는 _저용량 공간 모드_로 작동합니다.</block>
+  <block id="025d18661b268d39b7e3eaaddcbc28d7" category="list-text">*일반 모드*</block>
+  <block id="1e2b165e104c3720ed3eae401de85f1d" category="paragraph">일반 모드에서 ONTAP 3분마다 동적 공간 균형 조정이 필요한지 여부를 확인합니다.  동적 공간 균형 조정은 다음 조건이 충족될 때 일반 모드로 작동합니다.</block>
+  <block id="21785288675631645ce1e84d8015b73c" category="list-text">전 세계 평균 여유 공간 비율은 10% 이상입니다.</block>
+  <block id="08b87c5a5faec00b9261df150c92a32b" category="list-text">클러스터의 노드 중 적어도 하나는 전체 평균보다 더 많은 여유 공간을 가지고 있습니다.</block>
+  <block id="1452275c17d530e5bf7907bf8036547a" category="list-text">클러스터 내 하나 이상의 노드가 전체 평균보다 여유 공간이 20% 적습니다.</block>
+  <block id="8a46d383f6569301a603e54b4418ce55" category="list-text">*저용량 모드*</block>
+  <block id="7f6dc71b0f98b16a0db647450cc99a3e" category="paragraph">저장 공간이 부족한 모드에서 ONTAP 매분마다 동적 공간 균형 조정이 필요한지 여부를 확인합니다.  동적 공간 균형 조정은 다음 조건이 충족될 때 저용량 모드로 작동합니다.</block>
+  <block id="3277f61f156841253c20ed4c96e6c0a2" category="list-text">전 세계 평균 여유 공간은 10% 미만입니다.</block>
+  <block id="87e3450ba7653f98d10dc2803138c7bf" category="list-text">클러스터 내 하나 이상의 노드에 전체 평균보다 여유 공간이 적습니다.</block>
+  <block id="6dfd63ffb4710564042f8d26eb17a0af" category="paragraph">_복사 기반 워크로드 재균형_을 사용하면 스토리지 가용 영역 내에서 스토리지 사용률 불균형이 발생할 경우 ONTAP 불균형을 유발하는 스토리지 장치를 여유 공간이 더 많은 스토리지 가용 영역으로 자동으로 복사합니다.  대상 스토리지 가용 영역에 여유 공간이 충분하지 않으면 ONTAP 로드 밸런싱 작업을 수행하지 않습니다.  복사 기반 워크로드 재균형 조정은 ONTAP 9.16.1을 실행하는 ASA r2 시스템에만 적용되며, 해당 시스템에서는 기본적으로 활성화되어 있습니다.  ONTAP 9.17.1 이상 버전에서는 동적 공간 균형 조정으로 대체되었습니다.</block>
+  <block id="625927359c6ff98754dcdfda6d0f8d77" category="paragraph">복사 기반 워크로드 재조정의 기본 설정을 수정해야 하는 경우 NetApp 지원팀에 문의하십시오.</block>
+  <block id="299c5db3cbde057ebd5a919711b1d2e1" category="paragraph">스토리지 VM에서 클러스터링된 외부 키 관리 서버에 대한 연결을 구성할 수 있습니다. 클러스터형 키 서버를 사용하면 스토리지 VM에서 기본 키 서버와 보조 키 서버를 지정할 수 있습니다. ONTAP 키를 등록할 때 먼저 기본 키 서버에 액세스를 시도한 후 작업이 성공적으로 완료될 때까지 순차적으로 보조 서버에 액세스를 시도하여 키 중복을 방지합니다.</block>
+  <block id="9f71ddf310db058a3a89122693392a68" category="inline-link-macro">ASA r2 클러스터에서 용량 균형 조정에 대해 알아보세요.</block>
+  <block id="be2bfcecf308b1d3a417456024096c75" category="paragraph">스토리지 유닛(LUN 또는 NVMe 네임스페이스 기반)이 생성되면 ONTAP 해당 스토리지 가용 영역에 볼륨을 자동으로 생성하여 스토리지 유닛을 저장합니다. 새로 생성된 볼륨은 최적의 성능과 균형 잡힌 용량 활용을 위해 스토리지 가용 영역 내에 자동으로 배치됩니다. 스토리지 가용 영역 내에서 용량 활용률은 사용자의 ONTAP 버전에 따라 균형을 이룹니다. <block ref="9689a3d9a5cc82eb930985adacfe9343" category="inline-link-macro-rx"></block>.</block>
+  <block id="d480af7e6686a5e56e9006fab126c8e7" category="section-title">ASA r2 시스템 차이점 요약</block>
+  <block id="2be27a1e2f13957646665cd7fef8000d" category="cell">부모 일관성 그룹별 자녀 일관성 그룹</block>
+  <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
+  <block id="d24ed4821c2e547301d0c31d918da4ea" category="paragraph">ONTAP 9.17.1부터 ARP는 SAN 환경에서 끊임없이 진화하는 랜섬웨어 유형을 98% 정확도로 탐지하는 랜섬웨어 방지 분석용 머신 러닝 모델을 채택하여 사이버 복원력을 향상시킵니다. ARP의 머신 러닝 모델은 시뮬레이션된 랜섬웨어 공격 전후의 대용량 파일 데이터 세트를 기반으로 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 이 학습을 통해 생성된 사전 학습된 모델은 ONTAP 에 기본 제공됩니다. 이 모델은 접근하거나 수정할 수 없습니다.  ARP/AI는 활성화 직후 바로 작동합니다. 별도의 조치가 필요하지 않습니다.<block ref="3fa1bfd584351c2c430a6346ba4b1ef3" category="inline-link-macro-rx"></block> .</block>
+  <block id="542b4f4e36f442f64960052e5e90dc97" category="section-title">스토리지 VM의 모든 스토리지 장치에서 ARP/AI를 활성화합니다.</block>
+  <block id="4a8ba6399b21b6bd034b8e0eaf51d276" category="section-title">스토리지 VM의 특정 스토리지 장치에 대해 ARP/AI를 활성화합니다.</block>
+  <block id="354d3bc6178c825e83ed9c7eb99644cb" category="paragraph">스토리지 VM의 모든 스토리지 장치에 대해 ARP/AI를 활성화하지 않으려면 활성화할 특정 장치를 선택할 수 있습니다.</block>
+  <block id="6938dcbd34a520f0105bf12cf29cbdce" category="sidebar">공간 균형 맞추기에 대해 알아보세요</block>
+  <block id="72f3763acb9cf34e72f0598e6d1bebf8" category="sidebar">스토리지 VM 피어 관계를 생성합니다.</block>
 </blocks>
