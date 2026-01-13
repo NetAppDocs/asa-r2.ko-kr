@@ -2085,7 +2085,6 @@
   <block id="ab3721eb6cf69168eba216763f76f9d8" category="cell">ARP/AI는 ASA r2 스토리지 유닛에서 활성화할 수 있습니다. ARP/AI는 학습 기간 없이 잠재적인 랜섬웨어 공격을 탐지하고 보고하여 추가적인 데이터 보호 기능을 제공합니다.</block>
   <block id="f231c7e641e6d267354740a6c9850600" category="cell">SnapMirror Active Sync는 2노드 ONTAP 클러스터에 대해 NVMe/TCP 및 NVMe/FC 호스트 액세스를 사용하는 VMware 워크로드 지원을 추가합니다. VMware 워크로드의 NVMe/TCP 지원은 VMware 버그 ID: TR1049746 해결 여부에 따라 달라집니다</block>
   <block id="2595874d578967634d23bb05c5c7197c" category="inline-link-macro">자동 작업 부하 분산 지원</block>
-  <block id="c33e823e9a93260b53fe781334bf0f34" category="cell"><block ref="c33e823e9a93260b53fe781334bf0f34" category="inline-link-macro-rx"></block></block>
   <block id="f5f208592c87b0ba3e87b3ad6fad7fa6" category="cell">HA 쌍의 노드 간에 작업 부하가 자동으로 균형을 이루어 성능과 리소스 활용도가 최적화됩니다.</block>
   <block id="cc9afe53172875d5c9c85e52f0ecbf07" category="summary">ARP/AI를 활성화하여 잠재적인 랜섬웨어 위협을 감지하고, 자동으로 데이터를 보호하기 위한 조치를 취하고, 의심스러운 활동을 알리기 위해 시스템 관리자에 경고 메시지를 표시합니다.</block>
   <block id="7cd792910eb45c6b7d750838a44c4fe3" category="doc">ASA r2 스토리지 시스템에서 AI를 사용하여 자율적인 랜섬웨어 보호 기능을 활성화하세요.</block>
@@ -2735,4 +2734,5 @@
   <block id="354d3bc6178c825e83ed9c7eb99644cb" category="paragraph">스토리지 VM의 모든 스토리지 장치에 대해 ARP/AI를 활성화하지 않으려면 활성화할 특정 장치를 선택할 수 있습니다.</block>
   <block id="6938dcbd34a520f0105bf12cf29cbdce" category="sidebar">공간 균형 맞추기에 대해 알아보세요</block>
   <block id="72f3763acb9cf34e72f0598e6d1bebf8" category="sidebar">스토리지 VM 피어 관계를 생성합니다.</block>
+  <block id="bbaf1d1dee5098cd15496cd4ba1a66da" category="cell"><block ref="bbaf1d1dee5098cd15496cd4ba1a66da" category="inline-link-macro-rx"></block></block>
 </blocks>

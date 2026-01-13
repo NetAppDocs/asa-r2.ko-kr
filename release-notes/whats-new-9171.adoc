@@ -56,5 +56,5 @@ ASA r2 시스템을 위한 ONTAP 9.17.1에서 사용할 수 있는 새로운 기
 | 업데이트 | 설명 
 
 
-| link:../learn-more/hardware-comparison.html["자동 작업 부하 분산 지원"] | HA 쌍의 노드 간에 작업 부하가 자동으로 균형을 이루어 성능과 리소스 활용도가 최적화됩니다. 
+| link:../administer/space-balancing.html["자동 작업 부하 분산 지원"] | HA 쌍의 노드 간에 작업 부하가 자동으로 균형을 이루어 성능과 리소스 활용도가 최적화됩니다. 
 |===
