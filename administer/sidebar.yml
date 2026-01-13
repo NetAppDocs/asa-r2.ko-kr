@@ -17,7 +17,7 @@ entries:
 - title: 사용량을 모니터링하고 용량을 늘립니다
   entries:
   - title: 공간 균형 맞추기에 대해 알아보세요
-    url: administer/space-balancing.html
+    url: "/administer/space-balancing.html"
   - title: 스토리지 성능을 모니터링합니다
     url: "/monitor/monitor-performance.html"
   - title: 스토리지 활용률 모니터링
