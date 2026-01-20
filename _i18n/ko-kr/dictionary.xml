@@ -2004,7 +2004,6 @@
   <block id="5d356c397f5a143daadc1597a8fd7a34" category="list-text">다시 설정하려는 SnapMirror 활성 동기화 관계를 선택하세요.</block>
   <block id="9f4215830573390fcfe4dab1715a643e" category="list-text">관계 상태가 *동기화됨*으로 표시될 때까지 기다리세요.</block>
   <block id="a1f13cb349233b9c7d0b9e95fdff569e" category="list-text">선택하다 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> ; 그런 다음 *장애 조치*를 선택하여 원래 기본 클러스터에서 작업을 재개합니다.</block>
-  <block id="b69b57f7782b4b37cff72f353a59ac84" category="paragraph">호스트에 대한 I/O 경로 손실을 방지하려면 기본 클러스터에서 작업을 재개한 후 호스트 경로를 다시 스캔해야 합니다.</block>
   <block id="4e815228ca61a1f75181e7efe619c495" category="summary">SnapMirror Active Sync를 사용하면 예상치 못한 중단이나 사이트 재해로 인한 중단으로부터 복구 지점 목표(RPO)와 복구 시간 목표(RTO)가 0인 호스트 애플리케이션을 보호할 수 있습니다.</block>
   <block id="497c72a2f611a19c23299b5daea37215" category="doc">SnapMirror Active Sync 설정 워크플로</block>
   <block id="c0da5a4756d4ac1721f7418cfa0145da" category="paragraph">ONTAP SnapMirror 액티브 싱크 데이터 보호 기능은 사이트 전체에 장애가 발생하더라도 비즈니스 서비스가 계속 운영될 수 있도록 지원하며, 보조 복사본을 사용하여 애플리케이션이 투명하게 페일오버되도록 지원합니다. SnapMirror 액티브 싱크를 사용하면 페일오버를 트리거하는 데 수동 작업이나 사용자 지정 스크립팅이 필요하지 않습니다.</block>
@@ -2735,4 +2734,7 @@
   <block id="6938dcbd34a520f0105bf12cf29cbdce" category="sidebar">공간 균형 맞추기에 대해 알아보세요</block>
   <block id="72f3763acb9cf34e72f0598e6d1bebf8" category="sidebar">스토리지 VM 피어 관계를 생성합니다.</block>
   <block id="bbaf1d1dee5098cd15496cd4ba1a66da" category="cell"><block ref="bbaf1d1dee5098cd15496cd4ba1a66da" category="inline-link-macro-rx"></block></block>
+  <block id="91d54d0d46ef33d2bbd727e59b537fee" category="list-text">호스트에서 손실된 I/O 경로를 복구하거나 I/O 경로 상태를 업데이트하려면 기본 스토리지 클러스터가 다시 작동을 시작한 후 호스트에서 스토리지/어댑터 재스캔을 수행해야 합니다.</block>
+  <block id="682aa2cee69ce16837ee717d9beba117" category="inline-link-macro">ONTAP 명령줄 인터페이스(CLI)를 사용하여 클러스터를 설정하십시오.</block>
+  <block id="ac1a39b823c12e10449f448872a387b1" category="paragraph">특정 상황에서는 다음과 같은 조치가 필요할 수 있습니다. <block ref="b88ab746f7be66e2ab53ecac4b9fd72e" category="inline-link-macro-rx"></block>. 예를 들어 보안 프로토콜 때문에 랩톱을 관리 스위치에 연결할 수 없거나 Windows가 아닌 운영 체제를 사용하는 경우 CLI를 사용해야 합니다.</block>
 </blocks>
