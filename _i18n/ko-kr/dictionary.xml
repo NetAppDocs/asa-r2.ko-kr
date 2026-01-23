@@ -1999,7 +1999,6 @@
   <block id="de03dfd1ae9f6be9d8b9a3908591e8b8" category="paragraph">SnapMirror Active Sync를 활성화하는 데 필요한 준비를 완료한 후에는 다음을 수행해야 합니다. <block ref="04df4bf09ed66e3358600cfc6c24fb99" category="inline-link-macro-rx"></block> .</block>
   <block id="d611938cbbf8e09d8cffb8d50d6f69d7" category="summary">ASA r2 클러스터의 계획되지 않은 장애 조치 후 SnapMirror 활성 동기화 관계를 재설정하는 방법을 알아보세요.</block>
   <block id="d9f4c40f0a9837797bd436d8c81aa4aa" category="doc">ASA r2 클러스터의 계획되지 않은 장애 조치 후 SnapMirror 활성 동기화 관계를 다시 설정합니다.</block>
-  <block id="0e0d0122b629fb0e54343aa34c487fc4" category="paragraph">자동 비계획 장애 조치(AUFO) 작업은 기본 클러스터가 다운되거나 격리될 때 발생합니다. 메디에이터는 장애 조치 발생을 감지하고 보조 클러스터로 자동 비계획 장애 조치를 실행합니다. 보조 클러스터는 기본 클러스터로 전환되어 클라이언트 서비스를 시작합니다.</block>
   <block id="4e85ef85cff46642712b0ee2dcf46ebb" category="list-text">ONTAP Mediator는 구성되고 연결되어 있으며 쿼럼에 속해야 합니다.</block>
   <block id="5d356c397f5a143daadc1597a8fd7a34" category="list-text">다시 설정하려는 SnapMirror 활성 동기화 관계를 선택하세요.</block>
   <block id="9f4215830573390fcfe4dab1715a643e" category="list-text">관계 상태가 *동기화됨*으로 표시될 때까지 기다리세요.</block>
@@ -2737,4 +2736,6 @@
   <block id="91d54d0d46ef33d2bbd727e59b537fee" category="list-text">호스트에서 손실된 I/O 경로를 복구하거나 I/O 경로 상태를 업데이트하려면 기본 스토리지 클러스터가 다시 작동을 시작한 후 호스트에서 스토리지/어댑터 재스캔을 수행해야 합니다.</block>
   <block id="682aa2cee69ce16837ee717d9beba117" category="inline-link-macro">ONTAP 명령줄 인터페이스(CLI)를 사용하여 클러스터를 설정하십시오.</block>
   <block id="ac1a39b823c12e10449f448872a387b1" category="paragraph">특정 상황에서는 다음과 같은 조치가 필요할 수 있습니다. <block ref="b88ab746f7be66e2ab53ecac4b9fd72e" category="inline-link-macro-rx"></block>. 예를 들어 보안 프로토콜 때문에 랩톱을 관리 스위치에 연결할 수 없거나 Windows가 아닌 운영 체제를 사용하는 경우 CLI를 사용해야 합니다.</block>
+  <block id="f216ce14a016872d4ebd01d56ac0f6c4" category="paragraph">ASA r2 시스템에서 SnapMirror 액티브 동기화는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서는 양쪽 사이트 모두 활성 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다. 소스 클러스터에 장애가 발생하거나 격리되면 중재자는 자동 계획되지 않은 페일오버(AUFO)를 트리거하고 소스 클러스터가 복구될 때까지 타겟 클러스터에서 모든 I/O를 처리합니다.</block>
+  <block id="5f163ae9655a06ffcd7d72f99c857efa" category="paragraph">SnapMirror 활성 동기화 관계에서 AUFO가 발생하는 경우, 관계를 다시 설정하고 원래 소스 클러스터가 다시 온라인 상태가 되면 해당 클러스터에서 작업을 재개해야 합니다.</block>
 </blocks>
