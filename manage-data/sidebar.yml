@@ -106,6 +106,8 @@ entries:
       url: "/secure-data/ransomware-protection.html"
     - title: ARP/AI 활성화
       url: "/secure-data/enable-anti-ransomware-protection.html"
+    - title: 기본 ARP/AI 활성화 비활성화
+      url: "/secure-data/disable-default-anti-ransomware-protection.html"
     - title: ARP/AI 스냅샷 보존 기간 수정
       url: "/secure-data/modify-arp-snapshot-retention-period.html"
     - title: ARP/AI 경고에 응답

@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: secure-data/disable-default-anti-ransomware-protection.html 
+keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, arp/ai, disable 
+summary: 'ASA r2 클러스터에 ARP(Autonomous Ransomware Protection) 라이센스가 설치되어 있는 경우 ONTAP 9.18.1로 업그레이드하거나 새 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간 후에 기존 및 새로 생성된 모든 스토리지 유닛에서 ARP가 기본적으로 설정됩니다.' 
+---
+= ASA r2 스토리지 시스템에서 기본 자율형 랜섬웨어 보호 기능을 비활성화하십시오.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 ONTAP 9.18.1로 업그레이드하면 12시간의 유예 기간 후 모든 새 스토리지 장치에서 ARP/AI가 기본적으로 자동으로 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새 스토리지 장치에 대해 클러스터 전체에서 활성화됩니다.
+
+ONTAP 9.17.1에서 생성된 스토리지 장치는 ARP/AI용 link:enable-anti-ransomware-protection.html["수동으로 활성화됨"]이어야 합니다.
+
+.단계
+최초 12시간의 유예 기간 동안 또는 그 이후에 기본 활성화를 비활성화할 수 있습니다.
+
+[role="tabbed-block"]
+====
+.시스템 관리자
+--
+. 클러스터 > 설정 * 을 선택합니다.
+. ARP 비활성화:
++
+** 12시간 유예 기간 동안 비활성화하려면:
++
+... *Anti-ransomware* 항목에서 *Don't enable*을 선택한 다음 *Disable*을 선택하십시오.
+
+
+** 12시간 유예 기간 후 비활성화하려면:
++
+... *랜섬웨어 방지* 항목에서 image:icon_pencil.gif["편집"]를 선택한 다음 *새 저장 장치에 대해 활성화*를 선택 해제합니다.
+... *저장*을 선택합니다
+
+
+
+
+
+
+--
+.CLI
+--
+. 기본 활성화 상태를 확인합니다.
++
+[source, cli]
+----
+security anti-ransomware auto-enable show
+----
+. 기존 볼륨 및 새 볼륨에 대한 기본 활성화를 비활성화합니다.
++
+[source, cli]
+----
+security anti-ransomware auto-enable modify -default-existing-volume-state false -default-new-volume-state false
+----
+
+
+--
+====

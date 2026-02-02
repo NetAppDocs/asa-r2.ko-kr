@@ -510,7 +510,6 @@
   <block id="095767130effe9a44b7d3ff367eda1fa" category="doc">ASA R2 스토리지 시스템에 대한 지원 사례를 제출하고 확인합니다</block>
   <block id="98c449686f1bb755fdc3ec64c1f3ea2e" category="paragraph">도움이 필요한 문제가 있는 경우 ONTAP System Manager를 사용하여 기술 지원 부서에 케이스를 제출할 수 있습니다. ONTAP System Manager를 사용하여 종료되었거나 진행 중인 케이스를 볼 수도 있습니다.</block>
   <block id="ce04aba89455a6f59cf366030c2056ab" category="inline-link-macro">Active IQ에 등록되었습니다</block>
-  <block id="871826e1588c93437ae23af0a8c5c29e" category="paragraph"><block ref="2d57bedaf7449221ca7cf6e2da6e5236" category="inline-link-macro-rx"></block>ASA R2 시스템에 대한 지원 사례를 확인해야 합니다.</block>
   <block id="18aec681e94562add9f015e57e17b8d0" category="list-text">지원 케이스를 제출하려면 System Manager에서 * 클러스터 &gt; 지원 * 을 선택한 다음 * NetApp 지원 * 으로 이동 * 을 선택합니다.</block>
   <block id="ce3bbf8e2056eaff8c2c9a52eb4ce4dc" category="list-text">이전에 제출한 케이스를 보려면 System Manager에서 * 클러스터 &gt; 지원 * 을 선택한 다음 * 내 케이스 보기 * 를 선택합니다.</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="doc">ASA R2 스토리지 시스템에 대해 알아보십시오</block>
@@ -2088,7 +2087,6 @@
   <block id="7cd792910eb45c6b7d750838a44c4fe3" category="doc">ASA r2 스토리지 시스템에서 AI를 사용하여 자율적인 랜섬웨어 보호 기능을 활성화하세요.</block>
   <block id="e8b71c667f5920e249288a672ea7f999" category="paragraph">ONTAP 9.17.1부터 인공지능(AI)을 활용한 자율형 랜섬웨어 보호(ARP/AI)를 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. ARP/AI는 잠재적인 랜섬웨어 위협을 신속하게 감지하고, 데이터를 보호하기 위해 ARP 스냅샷을 자동으로 생성하며, 의심스러운 활동을 감지하면 시스템 관리자에 경고 메시지를 표시합니다.</block>
   <block id="7331e9472b69421ea7995df5df0b5754" category="inline-link-macro">학습 기간</block>
-  <block id="c23c5941acca34f7955743c2115ef87e" category="admonition">랜섬웨어 탐지 또는 예방 시스템은 랜섬웨어 공격으로부터 완벽한 안전을 보장할 수 없습니다. 공격이 탐지되지 않을 수도 있지만, ARP/AI는 바이러스 백신 소프트웨어가 침입을 탐지하지 못할 경우 중요한 추가 방어막 역할을 합니다.</block>
   <block id="ad09d4f074e5e7f7524d8960ed675311" category="inline-link-macro">ONTAP One 라이센스</block>
   <block id="4098ab2b124dfc2ac9a7199398f039bf" category="paragraph">ARP/AI 지원이 포함되어 있습니다. <block ref="eac36fc822e433078e178d83ea6ed140" category="inline-link-macro-rx"></block> .</block>
   <block id="7c5c3f99ed72f08e7f6f630c025f7421" category="inline-link-macro">보안 파일에 대한 자동 업데이트를 활성화하세요</block>
@@ -2658,7 +2656,6 @@
   <block id="c65375b9e9461021110e7878164c1353" category="inline-link-macro">스냅샷 예약 수정 및 자동 스냅샷 삭제 지원</block>
   <block id="74bb636063257a476aa70d6beb1b78a0" category="cell"><block ref="74bb636063257a476aa70d6beb1b78a0" category="inline-link-macro-rx"></block></block>
   <block id="bb6f2042d7b561ef22513dcacc071c68" category="cell">스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화하여 ASA r2 스토리지 유닛에서 스냅샷에 사용되는 공간의 양을 제한할 수 있습니다.  스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.  이렇게 하면 사용자 데이터를 위한 저장 장치의 공간을 스냅샷이 차지하지 못하게 하여 애플리케이션 중단을 방지할 수 있습니다.</block>
-  <block id="05e7e1680bf144077a0c95dc04ecfe70" category="paragraph">스토리지 가상 머신(VM)에 생성된 모든 스토리지 유닛에서 기본적으로 ARP/AI를 활성화할 수 있습니다. 즉, 스토리지 VM에서 생성된 모든 새 스토리지 유닛에는 ARP/AI가 자동으로 활성화됩니다.  스토리지 VM의 기존 스토리지 유닛에 ARP/AI를 적용할 수도 있습니다.</block>
   <block id="afc9ff5f825988208f6c59ba04c2c2d2" category="paragraph">스토리지 VM에서 생성하는 모든 새 스토리지 유닛은 기본적으로 랜섬웨어 공격으로부터 보호되며, 의심스러운 활동은 System Manager에서 보고됩니다.</block>
   <block id="8ae754caf3a2f6cacd2c696b8292a020" category="paragraph">ONTAP 9.18.1부터 지원되는 IPsec 하드웨어 오프로드가 IPv6 트래픽으로 확장되었습니다.</block>
   <block id="39fa9e9872335fa886f58deacacdaf75" category="paragraph">다음 NIC 카드는 다음 ASA r2 시스템 및 ONTAP 버전에서 하드웨어 오프로드를 지원합니다.</block>
@@ -2726,10 +2723,8 @@
   <block id="d480af7e6686a5e56e9006fab126c8e7" category="section-title">ASA r2 시스템 차이점 요약</block>
   <block id="2be27a1e2f13957646665cd7fef8000d" category="cell">부모 일관성 그룹별 자녀 일관성 그룹</block>
   <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
-  <block id="d24ed4821c2e547301d0c31d918da4ea" category="paragraph">ONTAP 9.17.1부터 ARP는 SAN 환경에서 끊임없이 진화하는 랜섬웨어 유형을 98% 정확도로 탐지하는 랜섬웨어 방지 분석용 머신 러닝 모델을 채택하여 사이버 복원력을 향상시킵니다. ARP의 머신 러닝 모델은 시뮬레이션된 랜섬웨어 공격 전후의 대용량 파일 데이터 세트를 기반으로 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 이 학습을 통해 생성된 사전 학습된 모델은 ONTAP 에 기본 제공됩니다. 이 모델은 접근하거나 수정할 수 없습니다.  ARP/AI는 활성화 직후 바로 작동합니다. 별도의 조치가 필요하지 않습니다.<block ref="3fa1bfd584351c2c430a6346ba4b1ef3" category="inline-link-macro-rx"></block> .</block>
   <block id="542b4f4e36f442f64960052e5e90dc97" category="section-title">스토리지 VM의 모든 스토리지 장치에서 ARP/AI를 활성화합니다.</block>
   <block id="4a8ba6399b21b6bd034b8e0eaf51d276" category="section-title">스토리지 VM의 특정 스토리지 장치에 대해 ARP/AI를 활성화합니다.</block>
-  <block id="354d3bc6178c825e83ed9c7eb99644cb" category="paragraph">스토리지 VM의 모든 스토리지 장치에 대해 ARP/AI를 활성화하지 않으려면 활성화할 특정 장치를 선택할 수 있습니다.</block>
   <block id="6938dcbd34a520f0105bf12cf29cbdce" category="sidebar">공간 균형 맞추기에 대해 알아보세요</block>
   <block id="72f3763acb9cf34e72f0598e6d1bebf8" category="sidebar">스토리지 VM 피어 관계를 생성합니다.</block>
   <block id="bbaf1d1dee5098cd15496cd4ba1a66da" category="cell"><block ref="bbaf1d1dee5098cd15496cd4ba1a66da" category="inline-link-macro-rx"></block></block>
@@ -2738,4 +2733,39 @@
   <block id="ac1a39b823c12e10449f448872a387b1" category="paragraph">특정 상황에서는 다음과 같은 조치가 필요할 수 있습니다. <block ref="b88ab746f7be66e2ab53ecac4b9fd72e" category="inline-link-macro-rx"></block>. 예를 들어 보안 프로토콜 때문에 랩톱을 관리 스위치에 연결할 수 없거나 Windows가 아닌 운영 체제를 사용하는 경우 CLI를 사용해야 합니다.</block>
   <block id="f216ce14a016872d4ebd01d56ac0f6c4" category="paragraph">ASA r2 시스템에서 SnapMirror 액티브 동기화는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서는 양쪽 사이트 모두 활성 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다. 소스 클러스터에 장애가 발생하거나 격리되면 중재자는 자동 계획되지 않은 페일오버(AUFO)를 트리거하고 소스 클러스터가 복구될 때까지 타겟 클러스터에서 모든 I/O를 처리합니다.</block>
   <block id="5f163ae9655a06ffcd7d72f99c857efa" category="paragraph">SnapMirror 활성 동기화 관계에서 AUFO가 발생하는 경우, 관계를 다시 설정하고 원래 소스 클러스터가 다시 온라인 상태가 되면 해당 클러스터에서 작업을 재개해야 합니다.</block>
+  <block id="329e726c526800c2f75bf6d3e2260fe6" category="paragraph"><block ref="f1b69e50633569a9d4ff998335d87123" category="inline-link-macro-rx"></block> ASA r2 시스템에 대한 지원 사례를 보려면 권한이 있어야 합니다.</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">보안</block>
+  <block id="560b852910a0e98466ea0bc41a896549" category="inline-link-macro">자동 ARP/AI 활성화 지원</block>
+  <block id="e9a88c72c24e4398f874d2f4af5b49e8" category="cell"><block ref="e9a88c72c24e4398f874d2f4af5b49e8" category="inline-link-macro-rx"></block></block>
+  <block id="689aa35f9f1eec56b70643199a8682d8" category="cell">새로운 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 9.18.1로 업그레이드하면 12시간의 유예 기간 후 새로 생성된 모든 스토리지 유닛에서 ARP/AI가 기본적으로 자동 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새로 생성된 스토리지 유닛에 대해 클러스터 전체에서 활성화됩니다.</block>
+  <block id="1a96b0b4e7eeb5c869def87fe1b46270" category="summary">ASA r2 클러스터에 ARP(Autonomous Ransomware Protection) 라이센스가 설치되어 있는 경우 ONTAP 9.18.1로 업그레이드하거나 새 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간 후에 기존 및 새로 생성된 모든 스토리지 유닛에서 ARP가 기본적으로 설정됩니다.</block>
+  <block id="47db8421e482de0cb387c25e02ac95ad" category="doc">ASA r2 스토리지 시스템에서 기본 자율형 랜섬웨어 보호 기능을 비활성화하십시오.</block>
+  <block id="ada9a568ab6a5d18c006a2f881dad45e" category="paragraph">새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 ONTAP 9.18.1로 업그레이드하면 12시간의 유예 기간 후 모든 새 스토리지 장치에서 ARP/AI가 기본적으로 자동으로 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새 스토리지 장치에 대해 클러스터 전체에서 활성화됩니다.</block>
+  <block id="15a35bbf98ecdf50ebbe830c9150b1fa" category="inline-link-macro">수동으로 활성화됨</block>
+  <block id="2c5bf6d23c3b237a161f10e7a30084bf" category="paragraph">ONTAP 9.17.1에서 생성된 스토리지 장치는 ARP/AI용 <block ref="e30e679666ce4b86d4d0fe351918a7bf" category="inline-link-macro-rx"></block>이어야 합니다.</block>
+  <block id="89282cacdaeec6ad949d1fee8ef83b96" category="paragraph">최초 12시간의 유예 기간 동안 또는 그 이후에 기본 활성화를 비활성화할 수 있습니다.</block>
+  <block id="06f738cd9e1ffd61cee9f2f7298af898" category="list-text">ARP 비활성화:</block>
+  <block id="9aa3a30140e694c88ae8dc5d1d6baeb9" category="list-text">12시간 유예 기간 동안 비활성화하려면:</block>
+  <block id="3f89c840d19029a97a24bc85a1f4bc2a" category="list-text">*Anti-ransomware* 항목에서 *Don't enable*을 선택한 다음 *Disable*을 선택하십시오.</block>
+  <block id="8a142e162a74e2269d6374226b8deab8" category="list-text">12시간 유예 기간 후 비활성화하려면:</block>
+  <block id="7dce122004969d56ae2e0245cb754d35" category="inline-image-macro">편집</block>
+  <block id="3506bfed41b9e706367e09a6ee264e4a" category="list-text">*랜섬웨어 방지* 항목에서 <block ref="cd4fada87571e8da586532fce60b382a" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *새 저장 장치에 대해 활성화*를 선택 해제합니다.</block>
+  <block id="969d795be0732afa7c8d6bc59c89a090" category="list-text">*저장*을 선택합니다</block>
+  <block id="91af5705f16502125e8b2187e64202c0" category="open-title">CLI</block>
+  <block id="2789285c59c5d3b50b0af44eb0af9d83" category="list-text">기본 활성화 상태를 확인합니다.</block>
+  <block id="51ea13505527485e8ad1964193e9ac5d" category="list-text">기존 볼륨 및 새 볼륨에 대한 기본 활성화를 비활성화합니다.</block>
+  <block id="8dec9eba7de20cf1b8ccafba1cfae901" category="paragraph">ARP는 머신러닝 모델을 활용한 랜섬웨어 분석 기능을 통해 사이버 복원력을 향상시킵니다. 이 모델은 SAN 환경에서 98%의 정확도로 끊임없이 진화하는 랜섬웨어를 탐지합니다. ARP의 머신러닝 모델은 모의 랜섬웨어 공격 전후의 대규모 파일 데이터셋을 기반으로 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 학습된 모델은 ONTAP에 포함되어 제공됩니다. 이 모델은 접근하거나 수정할 수 없습니다. ARP/AI는 활성화 즉시 작동하며, <block ref="3fa1bfd584351c2c430a6346ba4b1ef3" category="inline-link-macro-rx"></block>가 필요하지 않습니다.</block>
+  <block id="f2927aad75b0aa15b973bf19aae3a066" category="admonition">어떤 랜섬웨어 탐지 또는 예방 시스템도 랜섬웨어 공격으로부터 완벽한 안전을 보장할 수는 없습니다. 공격이 탐지되지 않을 수도 있지만, ARP/AI는 안티바이러스 소프트웨어가 침입을 탐지하지 못할 경우 중요한 추가 방어 계층 역할을 합니다.</block>
+  <block id="613dcccc80c6c70a2f7f3bbba3e85635" category="list-text">ARP/AI는 SnapMirror 액티브 동기화, SnapMirror 동기식 또는 SnapLock으로 보호되는 스토리지 유닛에서 지원되지 않습니다.</block>
+  <block id="d818371e54d5db7f0b123dad9f0741fa" category="list-text">ONTAP 9.18.1부터는 ONTAP 9.18.1로 업그레이드하거나 새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간이 지나면 새로 생성되는 모든 스토리지 유닛에서 ARP/AI가 기본적으로 활성화됩니다.</block>
+  <block id="4ebb5f6bb42f5000c86113152e6fc7b8" category="section-title">클러스터의 모든 스토리지 유닛에서 ARP/AI 활성화</block>
+  <block id="4a30706558af49bc475c9076f39c5043" category="paragraph">ONTAP 9.17.1을 실행 중인 경우 클러스터에 생성된 모든 스토리지 유닛에 대해 기본적으로 ARP/AI를 활성화할 수 있습니다.</block>
+  <block id="b3d26117cd7cf369132a7f5c1b0e1b21" category="paragraph">ONTAP 9.18.1 이상에서는 모든 새 스토리지 유닛에서 ARP/AI가 기본적으로 활성화됩니다. ARP/AI가 활성화되지 않은 ONTAP 9.17.1에서 생성된 스토리지 유닛이 있는 경우 수동으로 활성화할 수 있습니다.</block>
+  <block id="1ce5b5693fce06d8eab0db104f812a23" category="inline-image-macro">랜섬웨어 방지 설정 편집</block>
+  <block id="50d605f03d486d36ef3d11420980afa9" category="list-text">*랜섬웨어 방지* 옆에서 <block ref="09996779530a0566a9742876e9ffd4f1" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *기존의 모든 스토리지 유닛에서 활성화*를 선택합니다.</block>
+  <block id="1d6ca6ff92e87645e0e1be4c8c4254c1" category="paragraph">ONTAP 9.17.1을 실행 중인 경우 스토리지 가상 머신(VM)에 생성된 모든 스토리지 유닛에 대해 기본적으로 ARP/AI를 활성화할 수 있습니다. 즉, 스토리지 VM에 새로 생성되는 모든 스토리지 유닛에는 ARP/AI가 자동으로 활성화됩니다. 또한 스토리지 VM에 있는 기존 스토리지 유닛에도 ARP/AI를 적용할 수 있습니다.</block>
+  <block id="f3a115988cb09dfd534467f2d9511859" category="paragraph">ONTAP 9.17.1을 실행 중이고 스토리지 VM의 모든 스토리지 유닛에서 ARP/AI를 활성화하지 않으려면 활성화할 특정 유닛을 선택할 수 있습니다.</block>
+  <block id="b86583f9a9fc89f434a369308432e10e" category="inline-link-macro">알려진 ARP/AI 급증 보고</block>
+  <block id="114bbec71af5be00be6f74b75bcf02d1" category="paragraph">스토리지 유닛 활동의 급증(일회성 급증이든 새로운 정상 상태의 특징인 급증이든)을 알고 있다면 안전하다고 보고해야 합니다. 이러한 급증을 수동으로 안전하다고 보고하면 ARP의 위협 평가 정확도를 높이는 데 도움이 됩니다. <block ref="8dee558f5c9b6bedf916b9781132862f" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
+  <block id="b27281dcf866cc70bd075c0d39310671" category="sidebar">기본 ARP/AI 활성화 비활성화</block>
 </blocks>
