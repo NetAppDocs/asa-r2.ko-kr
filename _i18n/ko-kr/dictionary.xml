@@ -2768,4 +2768,5 @@
   <block id="b86583f9a9fc89f434a369308432e10e" category="inline-link-macro">알려진 ARP/AI 급증 보고</block>
   <block id="114bbec71af5be00be6f74b75bcf02d1" category="paragraph">스토리지 유닛 활동의 급증(일회성 급증이든 새로운 정상 상태의 특징인 급증이든)을 알고 있다면 안전하다고 보고해야 합니다. 이러한 급증을 수동으로 안전하다고 보고하면 ARP의 위협 평가 정확도를 높이는 데 도움이 됩니다. <block ref="8dee558f5c9b6bedf916b9781132862f" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
   <block id="b27281dcf866cc70bd075c0d39310671" category="sidebar">기본 ARP/AI 활성화 비활성화</block>
+  <block id="74c34cd79314b0b0543df58dce891912" category="cell">SnapMirror 활성 동기화 지원이 2노드 클러스터에서 4노드 클러스터로 확대되었습니다.</block>
 </blocks>
