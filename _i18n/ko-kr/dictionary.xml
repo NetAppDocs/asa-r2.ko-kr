@@ -184,7 +184,6 @@
   <block id="17ac6cdd9934a4f4aca00f5228a64555" category="list-text">업데이트 수정이 모든 현재 및 향후 업데이트에 적용됨을 확인하려면 선택합니다.</block>
   <block id="7ae6e72fcf95f7e0b8f4dbe1153d8398" category="paragraph">업데이트 선택 항목에 따라 권장 업데이트가 자동으로 다운로드되고 ASA R2 시스템에 설치됩니다.</block>
   <block id="5de0adb95551ff3c1458ae6247a4959f" category="section-title">자동 업데이트를 비활성화합니다</block>
-  <block id="6141cdc0ba26479d87d6b8c24af9fc18" category="paragraph">권장 업데이트를 설치하기 전에 유연하게 볼 수 있도록 하려면 자동 업데이트를 사용하지 않도록 설정합니다. 자동 업데이트를 비활성화하는 경우 펌웨어 및 시스템 파일 업데이트를 수동으로 수행해야 합니다.</block>
   <block id="3a73131e5e1a3a498c8e055e84a30f60" category="paragraph">자동 업데이트를 사용할 수 없습니다. 권장 업데이트를 정기적으로 확인하고 수동 설치를 수행할지 결정해야 합니다.</block>
   <block id="e8b8aa5f70e0a4459ca2284f8da3b813" category="section-title">자동 업데이트를 봅니다</block>
   <block id="6edf33a55c81d08e5aac13aae918832c" category="paragraph">클러스터에 다운로드되고 자동 설치가 예약된 펌웨어 및 시스템 파일 업데이트 목록을 봅니다. 이전에 자동으로 설치된 업데이트도 볼 수 있습니다.</block>
@@ -1943,7 +1942,6 @@
   <block id="63f65589705e420ce3e3c84f5a73edea" category="inline-link-macro">클러스터 간 스토리지 VM 피어 관계 생성</block>
   <block id="0a1048623dcc4bf6a07e4f070c75b99a" category="list-text">클러스터의 각 노드에 최소한 하나의 LIF가 생성되었는지 확인하세요.</block>
   <block id="f0a8f8a4710c7aff45926e4c429a8cc0" category="inline-link-macro">LIF 생성</block>
-  <block id="d57b4f0ac425b878d2f45da8c8c89d8d" category="paragraph"><block ref="d57b4f0ac425b878d2f45da8c8c89d8d" category="inline-link-macro-rx"></block></block>
   <block id="b04d1fe353930783cf68fb978624b212" category="list-text">필요한 저장 장치가 생성되어 호스트 그룹에 매핑되었는지 확인합니다.</block>
   <block id="12aa04a968692be25285a9fc7234d0d5" category="inline-link-macro">저장 공간을 만드세요</block>
   <block id="0dcd2c45a0db6a5c91ed22efb559bd29" category="inline-link-macro">저장 장치를 호스트 그룹에 매핑합니다.</block>
@@ -2769,4 +2767,6 @@
   <block id="114bbec71af5be00be6f74b75bcf02d1" category="paragraph">스토리지 유닛 활동의 급증(일회성 급증이든 새로운 정상 상태의 특징인 급증이든)을 알고 있다면 안전하다고 보고해야 합니다. 이러한 급증을 수동으로 안전하다고 보고하면 ARP의 위협 평가 정확도를 높이는 데 도움이 됩니다. <block ref="8dee558f5c9b6bedf916b9781132862f" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
   <block id="b27281dcf866cc70bd075c0d39310671" category="sidebar">기본 ARP/AI 활성화 비활성화</block>
   <block id="74c34cd79314b0b0543df58dce891912" category="cell">SnapMirror 활성 동기화 지원이 2노드 클러스터에서 4노드 클러스터로 확대되었습니다.</block>
+  <block id="b930776d8572e5f3c1d7294d9809974c" category="paragraph">업데이트를 전적으로 직접 관리하려는 경우에만 자동 업데이트를 비활성화하십시오. 자동 업데이트가 꺼지면 시스템에서 업데이트를 알리거나 다운로드하거나 설치하지 않습니다. 모든 업데이트를 수동으로 모니터링, 다운로드, 예약 및 설치할 책임은 사용자에게 있습니다.</block>
+  <block id="26f7abc505f53b85cb219303544259d3" category="paragraph"><block ref="d57b4f0ac425b878d2f45da8c8c89d8d" category="inline-link-macro-rx"></block>.</block>
 </blocks>

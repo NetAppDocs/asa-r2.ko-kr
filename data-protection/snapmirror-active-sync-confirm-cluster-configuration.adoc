@@ -28,7 +28,7 @@ link:create-svm-peer-relationship.html["클러스터 간 스토리지 VM 피어 
 
 . 클러스터의 각 노드에 최소한 하나의 LIF가 생성되었는지 확인하세요.
 +
-link:../administer/manage-client-vm-access.html#create-a-lif-network-interface["LIF 생성"]
+link:../administer/manage-client-vm-access.html#create-a-lif-network-interface["LIF 생성"].
 
 . 필요한 저장 장치가 생성되어 호스트 그룹에 매핑되었는지 확인합니다.
 +
