@@ -1054,7 +1054,6 @@
   <block id="4af5b851dfcd374944ce285278985595" category="paragraph">삭제된 스토리지 유닛에서 확보한 공간을 <block ref="f623a169728c03b0e232ffad71f851b4" category="inline-link-macro-rx"></block>추가 용량이 필요한 스토리지 유닛으로 사용할 수 있습니다.</block>
   <block id="d144ceb11715b5ffc74a8293d3aa8303" category="summary">스토리지 유닛을 편집하여 용량을 늘리고, QoS(서비스 품질) 정책을 업데이트하거나, 호스트 매핑을 변경하여 스토리지 시스템 성능 및 데이터의 변화에 대응할 수 있습니다.</block>
   <block id="ceff03bfa1a8dafc5e617407d14564d3" category="doc">ASA R2 스토리지 시스템에서 스토리지 유닛을 수정합니다</block>
-  <block id="e6f1f5b43dd2b3e740c42c5f1623750d" category="paragraph">ASA R2 시스템의 성능을 최적화하려면 스토리지 유닛을 수정하여 용량을 늘리거나 QoS 정책을 업데이트하거나 유닛에 매핑된 호스트를 변경해야 할 수 있습니다. 예를 들어, 새로운 중요 애플리케이션 워크로드를 기존 스토리지 유닛에 추가하는 경우 새 애플리케이션에 필요한 성능 수준을 지원하기 위해 스토리지 유닛에 적용되는 QoS(서비스 품질) 정책을 변경해야 할 수 있습니다.</block>
   <block id="261c95ed5d454ef55df25657c605d472" category="paragraph-title">용량 증가</block>
   <block id="9c4dfedb8190eb2128e8185aff1c8e51" category="paragraph">스토리지 유닛에 쓰기 가능한 공간이 부족할 때 발생할 수 있는 데이터 액세스 손실을 방지하려면 스토리지 유닛의 크기를 전체 용량에 도달하기 전에 늘립니다. 스토리지 유닛의 용량은 ONTAP에서 허용하는 최대 크기인 128TB로 늘릴 수 있습니다.</block>
   <block id="e2bcdafb5edd46c07debdaff4977f47e" category="paragraph-title">호스트 매핑을 수정합니다</block>
@@ -2334,7 +2333,6 @@
   <block id="913e3fb6005d79d1e7e5eb2046a6fa4c" category="inline-link-macro">스냅미러 중재자 제거</block>
   <block id="55394a49231c00367e205c42b064e980" category="list-text"><block ref="55394a49231c00367e205c42b064e980" category="inline-link-macro-rx"></block></block>
   <block id="7827b7923d6e45ba19022ef0a9878628" category="inline-link-macro">ONTAP 성격에 대해 자세히 알아보세요</block>
-  <block id="67cc47e8f050e98e23b1a714f17238ec" category="paragraph"><block ref="2d2c01d97863e3fdde3b4275018cf566" category="inline-link-macro-rx"></block> .</block>
   <block id="2e50e3f8a8554bd854e544e6dc52462d" category="admonition">ASA r2 스토리지 시스템에 대한 스냅샷 복제는 다른 ASA r2 스토리지 시스템에서만 지원됩니다.  ASA r2 시스템에서 ASA, AFF 또는 FAS 시스템으로, 또는 ASA, AFF 또는 FAS 시스템에서 ASA r2 시스템으로 스냅샷을 복제할 수 없습니다.</block>
   <block id="8e0a212a3ccb8f506b309ea2b6cbd1f7" category="paragraph">ONTAP 9.17.1부터 계층적 관계의 일관성 그룹에 비동기 복제 정책을 적용할 수 있습니다.  ONTAP 9.16.1에서는 계층적 관계에 있는 일관성 그룹에 대해 비동기 복제가 지원되지 않습니다.</block>
   <block id="de095ac7880431e9449dcced8cecbd9a" category="inline-link-macro">계층적(부모/자식) 일관성 그룹에 대해 자세히 알아보세요.</block>
@@ -2684,10 +2682,7 @@
   <block id="48e33f950546e0f98a6cda6ec059d508" category="paragraph">스토리지 장치 생성 프로세스의 일부로 호스트 이니시에이터를 스토리지 장치에 추가하고 매핑합니다.  당신도 할 수 있습니다<block ref="7d43bd55c0467bfd35b09864ee6c0663" category="inline-link-macro-rx"></block> 그리고<block ref="261a27e7b6f81c3f2b0eb2a43b4fcddb" category="inline-link-macro-rx"></block> 저장 장치를 만든 후 호스트 이니시에이터를 생성합니다.</block>
   <block id="daacdfe6a9c965f99bb919daaf922d41" category="paragraph">ONTAP 9.18.1부터 스토리지 유닛을 생성할 때 스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화할 수 있습니다. 스냅샷 예약은 스냅샷을 위해 특별히 예약된 저장 장치의 공간입니다. 스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.</block>
   <block id="cd70e38e090afe4dfe68269857720d8c" category="inline-link-macro">씬 프로비저닝</block>
-  <block id="6afea9ca1f178aea254d3f9ac79d8dbc" category="paragraph">스토리지 유닛은 기본적으로 씬 프로비저닝됩니다.  씬 프로비저닝을 사용하면 저장 장치가 할당된 크기까지 확장될 수 있지만 공간을 미리 예약하지는 않습니다.  공간은 필요에 따라 사용 가능한 여유 공간에서 동적으로 할당됩니다.  이를 통해 사용 가능한 공간을 _과도하게 프로비저닝_하여 더 큰 저장 효율성을 실현할 수 있습니다.  예를 들어, 1TB의 여유 공간이 있고 1TB 저장 장치 4개를 만들어야 한다고 가정해 보겠습니다.  시스템에 3TB의 추가 저장 용량을 즉시 추가하는 대신, 저장 장치를 만들고 공간 활용도를 모니터링하며 저장 장치가 실제 공간을 사용함에 따라 저장 용량을 늘릴 수 있습니다. 자세히 알아보세요<block ref="37a5a7f95b66d852ea39cef83793bc4b" category="inline-link-macro-rx"></block> .</block>
   <block id="235edd79b1fce1af069d9278c91366b9" category="paragraph">스토리지 가용성 영역 전체에서 워크로드 밸런싱을 최적화하려면 짝수 개의 스토리지 유닛을 만듭니다.</block>
-  <block id="c82bffc1986369b2cd4e0c02a3eb4336" category="admonition">두 개 이상의 저장 장치를 만드는 경우 각 장치는 동일한 용량으로 생성됩니다.  사용 가능한 공간이 충분한지 확인하려면 만들고자 하는 저장 공간의 수에 원하는 용량을 곱하세요.  충분한 여유 공간이 없고 과도한 프로비저닝을 선택한 경우, 공간 부족과 데이터 손실을 방지하기 위해 사용률을 주의 깊게 모니터링하세요.</block>
-  <block id="574d314c515cf3a8473a1e97b72f3409" category="paragraph">지정한 운영 체제에서 실행되는 호스트에 대한 기존 호스트 그룹이 없으면 ONTAP 자동으로 새 호스트 그룹을 만듭니다.</block>
   <block id="bcba813b1b55d0253fcd84e63b13b621" category="paragraph">호스트 NQN을 &lt;nqn.yyyy-mm&gt; 다음에 정규화된 도메인 이름으로 포맷합니다.  연도는 1970년 또는 그 이후여야 합니다.  총 최대 길이는 223이어야 합니다.  유효한 NVMe 이니시에이터의 예는 nqn.2014-08.com.example:string입니다.</block>
   <block id="34870fc34c4d7d31040582c184ed973a" category="paragraph">ASA r2 스토리지 유닛을 생성하고 호스트 이니시에이터를 추가한 후 호스트를 스토리지 유닛에 매핑하여 데이터 제공을 시작합니다.  저장 장치는 저장 장치 생성 프로세스의 일부로 호스트에 매핑됩니다.  언제든지 기존 스토리지 장치를 새 호스트나 기존 호스트에 매핑할 수도 있습니다.</block>
   <block id="e5e9f89a4e81cd1c64531c80eba2e77e" category="admonition">ASA r2 시스템에서는 SED가 NVMe 기반 SSD에 대해서만 지원됩니다.</block>
@@ -2769,4 +2764,9 @@
   <block id="74c34cd79314b0b0543df58dce891912" category="cell">SnapMirror 활성 동기화 지원이 2노드 클러스터에서 4노드 클러스터로 확대되었습니다.</block>
   <block id="b930776d8572e5f3c1d7294d9809974c" category="paragraph">업데이트를 전적으로 직접 관리하려는 경우에만 자동 업데이트를 비활성화하십시오. 자동 업데이트가 꺼지면 시스템에서 업데이트를 알리거나 다운로드하거나 설치하지 않습니다. 모든 업데이트를 수동으로 모니터링, 다운로드, 예약 및 설치할 책임은 사용자에게 있습니다.</block>
   <block id="26f7abc505f53b85cb219303544259d3" category="paragraph"><block ref="d57b4f0ac425b878d2f45da8c8c89d8d" category="inline-link-macro-rx"></block>.</block>
+  <block id="889dd2634c57a80d5ff345be8b87b394" category="list-text"><block ref="2d2c01d97863e3fdde3b4275018cf566" category="inline-link-macro-rx"></block>. *</block>
+  <block id="330a40ed2b3f8affc9b2ba9dda95e7d2" category="paragraph">ASA r2 시스템의 성능을 최적화하려면 스토리지 유닛의 용량을 늘리거나, QoS 정책을 업데이트하거나, 유닛에 매핑된 호스트를 변경하는 등의 수정이 필요할 수 있습니다. 예를 들어, 기존 스토리지 유닛에 새롭고 중요한 애플리케이션 워크로드가 추가되는 경우, 새 애플리케이션에 필요한 성능 수준을 지원하기 위해 스토리지 유닛에 적용된 QoS(Quality of Service) 정책을 변경해야 할 수 있습니다.</block>
+  <block id="3fda8ce05b50b72371c5f4cb65657861" category="paragraph">스토리지 유닛은 기본적으로 씬 프로비저닝 방식으로 구성됩니다. 씬 프로비저닝을 사용하면 스토리지 유닛이 할당된 크기까지 확장될 수 있지만 공간을 미리 예약하지는 않습니다. 필요에 따라 사용 가능한 여유 공간에서 공간이 동적으로 할당됩니다. 이를 통해 사용 가능한 공간을 _과잉 프로비저닝_하여 스토리지 효율성을 높일 수 있습니다. 예를 들어 1TB의 여유 공간이 있고 1TB 스토리지 유닛 4개를 생성해야 한다고 가정해 보겠습니다. 시스템에 3TB의 추가 스토리지 용량을 즉시 추가하는 대신 스토리지 유닛을 생성하고 공간 사용량을 모니터링한 다음 스토리지 유닛이 실제 공간을 사용함에 따라 스토리지 용량을 늘릴 수 있습니다. 자세한 내용은 <block ref="37a5a7f95b66d852ea39cef83793bc4b" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="d6e1856d58417da15c8f45bb5225a284" category="admonition">스토리지 유닛을 두 개 이상 생성하는 경우, 각 유닛은 동일한 용량으로 생성됩니다. 충분한 사용 가능한 공간을 확보하려면 생성할 스토리지 유닛 수에 원하는 용량을 곱하십시오. 사용 가능한 공간이 부족한 상태에서 오버 프로비저닝을 선택한 경우, 공간 부족으로 인한 데이터 손실을 방지하기 위해 사용률을 면밀히 모니터링하십시오.</block>
+  <block id="aa716862002e83866a499a0f5aaa467f" category="paragraph">지정한 운영 체제에서 실행 중인 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP에서 자동으로 새 호스트 그룹을 생성합니다.</block>
 </blocks>
