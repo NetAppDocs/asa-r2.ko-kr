@@ -1500,9 +1500,6 @@
   <block id="a5f04ac5782b3b4db001475a2ce8f1f8" category="paragraph">클러스터에 새 HA 쌍을 추가한 후에는 새 노드를 사용할 수 있습니다<block ref="180fb7c364ff620a7da1de634e394af5" category="inline-link-macro-rx"></block>.</block>
   <block id="f142a152601a952c440aa742ae54d56c" category="doc">ASA R2 스토리지 시스템에서 ONTAP를 업그레이드합니다</block>
   <block id="f46c905b973360f57c509a5dac0d6aca" category="paragraph">ASA R2 시스템에서 ONTAP 소프트웨어를 업그레이드할 때 새롭고 향상된 ONTAP 기능을 활용하여 비용을 절감하고, 중요한 워크로드를 가속화하고, 보안을 강화하고, 조직에서 사용할 수 있는 데이터 보호 범위를 확장할 수 있습니다.</block>
-  <block id="1609fb0c876b70bfae98d1cafa399784" category="inline-link-macro">Upgrade Advisor로 업그레이드 준비</block>
-  <block id="e4b24f4689bdc8358c4d409b6a9d4103" category="inline-link-macro">Upgrade Advisor 없이 업그레이드 준비</block>
-  <block id="715a6cc9b89f202d46f87d2b8ae93e8e" category="paragraph">ASA R2 시스템의 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템의 업그레이드와 동일한 프로세스를 따릅니다. Active IQ Digital Advisor(디지털 어드바이저)에 대해 유효한 SupportEdge 계약을 보유한 경우 해야 <block ref="1117d34674fd91a6ee3c7506ddc3a8f0" category="inline-link-macro-rx"></block>합니다. Upgrade Advisor는 클러스터를 평가하고 구성에 맞는 업그레이드 계획을 생성하여 불확실성과 위험을 최소화하는 데 도움이 되는 인텔리전스를 제공합니다. Active IQ 디지털 어드바이저에 대해 유효한 SupportEdge 계약이 없는 경우, 해야 <block ref="66ecb4b248d940ec34981282ad334ce1" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="46629b819dff531a5a2a49fcda5443dd" category="inline-link-macro">System Manager에서 자동 무중단 업그레이드(ANDU</block>
   <block id="d351531ad851e21d1ccbc812e54540ff" category="paragraph">업그레이드를 준비하고 나면 을 사용하여 업그레이드를 수행하는 것이 좋습니다<block ref="a93595527d1144b0b27a701c939efa63" category="inline-link-macro-rx"></block>. ANDU는 ONTAP의 고가용성(HA) 페일오버 기술을 활용하여 업그레이드 중에 클러스터가 중단 없이 데이터를 지속적으로 제공할 수 있도록 보장합니다.</block>
   <block id="8b7f4f92636306e034e67a0098393065" category="inline-link-macro">ONTAP 소프트웨어 업그레이드</block>
@@ -2769,4 +2766,7 @@
   <block id="3fda8ce05b50b72371c5f4cb65657861" category="paragraph">스토리지 유닛은 기본적으로 씬 프로비저닝 방식으로 구성됩니다. 씬 프로비저닝을 사용하면 스토리지 유닛이 할당된 크기까지 확장될 수 있지만 공간을 미리 예약하지는 않습니다. 필요에 따라 사용 가능한 여유 공간에서 공간이 동적으로 할당됩니다. 이를 통해 사용 가능한 공간을 _과잉 프로비저닝_하여 스토리지 효율성을 높일 수 있습니다. 예를 들어 1TB의 여유 공간이 있고 1TB 스토리지 유닛 4개를 생성해야 한다고 가정해 보겠습니다. 시스템에 3TB의 추가 스토리지 용량을 즉시 추가하는 대신 스토리지 유닛을 생성하고 공간 사용량을 모니터링한 다음 스토리지 유닛이 실제 공간을 사용함에 따라 스토리지 용량을 늘릴 수 있습니다. 자세한 내용은 <block ref="37a5a7f95b66d852ea39cef83793bc4b" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="d6e1856d58417da15c8f45bb5225a284" category="admonition">스토리지 유닛을 두 개 이상 생성하는 경우, 각 유닛은 동일한 용량으로 생성됩니다. 충분한 사용 가능한 공간을 확보하려면 생성할 스토리지 유닛 수에 원하는 용량을 곱하십시오. 사용 가능한 공간이 부족한 상태에서 오버 프로비저닝을 선택한 경우, 공간 부족으로 인한 데이터 손실을 방지하기 위해 사용률을 면밀히 모니터링하십시오.</block>
   <block id="aa716862002e83866a499a0f5aaa467f" category="paragraph">지정한 운영 체제에서 실행 중인 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP에서 자동으로 새 호스트 그룹을 생성합니다.</block>
+  <block id="a8e81b2ccd42d59459e94b66c7e93b33" category="inline-link-macro">Active IQ Digital Advisor 또는 Upgrade Health Checker에서 Upgrade Advisor를 사용하여 업그레이드 준비</block>
+  <block id="3bd021c9fab6ece4503050272dff524d" category="paragraph">ASA r2 시스템용 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템의 업그레이드와 동일한 프로세스를 따릅니다. <block ref="a44687563e089a36f625493635099b07" category="inline-link-macro-rx"></block>을(를) 시작하는 것이 좋습니다.</block>
+  <block id="8e06442a81408e5b3d9d881ee34604d9" category="list-text">포트 e10b를 shelf 1 NSM B 포트 e0b에 연결하십시오.</block>
 </blocks>
