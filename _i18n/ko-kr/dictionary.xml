@@ -2078,7 +2078,6 @@
   <block id="2595874d578967634d23bb05c5c7197c" category="inline-link-macro">자동 작업 부하 분산 지원</block>
   <block id="f5f208592c87b0ba3e87b3ad6fad7fa6" category="cell">HA 쌍의 노드 간에 작업 부하가 자동으로 균형을 이루어 성능과 리소스 활용도가 최적화됩니다.</block>
   <block id="cc9afe53172875d5c9c85e52f0ecbf07" category="summary">ARP/AI를 활성화하여 잠재적인 랜섬웨어 위협을 감지하고, 자동으로 데이터를 보호하기 위한 조치를 취하고, 의심스러운 활동을 알리기 위해 시스템 관리자에 경고 메시지를 표시합니다.</block>
-  <block id="7cd792910eb45c6b7d750838a44c4fe3" category="doc">ASA r2 스토리지 시스템에서 AI를 사용하여 자율적인 랜섬웨어 보호 기능을 활성화하세요.</block>
   <block id="e8b71c667f5920e249288a672ea7f999" category="paragraph">ONTAP 9.17.1부터 인공지능(AI)을 활용한 자율형 랜섬웨어 보호(ARP/AI)를 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. ARP/AI는 잠재적인 랜섬웨어 위협을 신속하게 감지하고, 데이터를 보호하기 위해 ARP 스냅샷을 자동으로 생성하며, 의심스러운 활동을 감지하면 시스템 관리자에 경고 메시지를 표시합니다.</block>
   <block id="7331e9472b69421ea7995df5df0b5754" category="inline-link-macro">학습 기간</block>
   <block id="ad09d4f074e5e7f7524d8960ed675311" category="inline-link-macro">ONTAP One 라이센스</block>
@@ -2110,7 +2109,6 @@
   <block id="6071a17c985fe00a9fb93ceb8b43b31c" category="inline-link">ONTAP 자동 스냅샷에 대한 옵션 수정</block>
   <block id="945b91477a64c6c005e774606fec4bd9" category="paragraph">기본 보존 기간은 ONTAP 명령줄 인터페이스(CLI)를 사용하여 수정할 수 있습니다 . <block ref="02f493e3d4b2ac47f6e229a1ce055166" category="inline-link-rx"></block> 기본 보존 기간을 변경하는 단계는 다음과 같습니다.</block>
   <block id="c10d1e8c9c33d289c596032f6f9fdb66" category="summary">비정상적인 작업 부하 이벤트를 계획하는 경우 랜섬웨어 공격의 오탐지 방지를 위해 ARP/AI 분석을 일시적으로 중단할 수 있습니다.</block>
-  <block id="307c4460ae352b43e1c3405e18bfda56" category="doc">ASA r2 스토리지 시스템에서 AI를 사용하여 자율 랜섬웨어 보호를 일시 중지하거나 재개하세요.</block>
   <block id="6a775ca760bff9fbc6c0ed5905022d26" category="paragraph">ONTAP 9.17.1부터 인공지능(ARP/AI)을 활용한 자율형 랜섬웨어 보호 기능을 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. 비정상적인 워크로드 이벤트를 계획하는 경우, 랜섬웨어 공격의 오탐지를 방지하기 위해 ARP/AI 분석을 일시적으로 중단할 수 있습니다. 워크로드 이벤트가 완료되면 ARP/AI 분석을 재개할 수 있습니다.</block>
   <block id="d6a9a7257f4378316af056ede012c0ab" category="section-title">ARP/AI 일시 중지</block>
   <block id="84354dab4dfd74a63f53750e80507db9" category="paragraph">비정상적인 작업 부하 이벤트를 시작하기 전에 랜섬웨어 공격에 대한 오탐지 방지를 위해 ARP/AI 분석을 일시적으로 중단해야 할 수도 있습니다.</block>
@@ -2123,7 +2121,6 @@
   <block id="8e1667e545dde536a2a34599f2a208a4" category="list-text">*랜섬웨어 방지 재개*를 선택하세요.</block>
   <block id="18a871e39c4db6e8fdaffd71c7141248" category="paragraph">잠재적인 랜섬웨어 공격에 대한 분석이 재개되고, 의심스러운 활동이 시스템 관리자에게 보고됩니다.</block>
   <block id="0dd10bd0f2a6a0ae25f679d61fe6376d" category="doc">ASA r2 스토리지 시스템에 대한 랜섬웨어 공격으로부터 보호하기 위해 변조 방지 스냅샷을 생성합니다.</block>
-  <block id="1ffdbc09128fd9a7a38adc196844275d" category="doc">ASA r2 스토리지 시스템에서 AI 알림을 통해 자율적인 랜섬웨어 보호에 대응</block>
   <block id="a779502493c8672d764e9893228ff604" category="paragraph">인공지능(ARP/AI)을 활용한 자율 랜섬웨어 보호 기능이 ASA r2 시스템 스토리지 유닛 하나 이상에서 비정상적인 활동을 감지하면 시스템 관리자 대시보드에 경고가 생성됩니다. 경고를 확인하고 활동을 확인한 후, 필요한 경우 데이터에 대한 잠재적 위협을 차단하기 위한 조치를 취해야 합니다.</block>
   <block id="c0e52aa291208452d8e4daf52f19e352" category="paragraph">ARP/AI 경고 메시지가 표시되면 조치를 취하기 전에 적절한 애플리케이션 무결성 검사기를 사용하여 스토리지 유닛의 데이터 무결성을 확인해야 합니다. 스토리지 유닛의 데이터 무결성을 확인하면 해당 활동이 허용 가능한 수준인지 아니면 잠재적인 랜섬웨어 공격인지 판단하는 데 도움이 됩니다.</block>
   <block id="d72f2cfc4586d8ec238fbb54c4e19dfb" category="cell">비정상적인 활동이 발생하면...</block>
@@ -2729,7 +2726,6 @@
   <block id="e9a88c72c24e4398f874d2f4af5b49e8" category="cell"><block ref="e9a88c72c24e4398f874d2f4af5b49e8" category="inline-link-macro-rx"></block></block>
   <block id="689aa35f9f1eec56b70643199a8682d8" category="cell">새로운 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 9.18.1로 업그레이드하면 12시간의 유예 기간 후 새로 생성된 모든 스토리지 유닛에서 ARP/AI가 기본적으로 자동 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새로 생성된 스토리지 유닛에 대해 클러스터 전체에서 활성화됩니다.</block>
   <block id="1a96b0b4e7eeb5c869def87fe1b46270" category="summary">ASA r2 클러스터에 ARP(Autonomous Ransomware Protection) 라이센스가 설치되어 있는 경우 ONTAP 9.18.1로 업그레이드하거나 새 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간 후에 기존 및 새로 생성된 모든 스토리지 유닛에서 ARP가 기본적으로 설정됩니다.</block>
-  <block id="47db8421e482de0cb387c25e02ac95ad" category="doc">ASA r2 스토리지 시스템에서 기본 자율형 랜섬웨어 보호 기능을 비활성화하십시오.</block>
   <block id="ada9a568ab6a5d18c006a2f881dad45e" category="paragraph">새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 ONTAP 9.18.1로 업그레이드하면 12시간의 유예 기간 후 모든 새 스토리지 장치에서 ARP/AI가 기본적으로 자동으로 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새 스토리지 장치에 대해 클러스터 전체에서 활성화됩니다.</block>
   <block id="15a35bbf98ecdf50ebbe830c9150b1fa" category="inline-link-macro">수동으로 활성화됨</block>
   <block id="2c5bf6d23c3b237a161f10e7a30084bf" category="paragraph">ONTAP 9.17.1에서 생성된 스토리지 장치는 ARP/AI용 <block ref="e30e679666ce4b86d4d0fe351918a7bf" category="inline-link-macro-rx"></block>이어야 합니다.</block>
@@ -2761,7 +2757,6 @@
   <block id="74c34cd79314b0b0543df58dce891912" category="cell">SnapMirror 활성 동기화 지원이 2노드 클러스터에서 4노드 클러스터로 확대되었습니다.</block>
   <block id="b930776d8572e5f3c1d7294d9809974c" category="paragraph">업데이트를 전적으로 직접 관리하려는 경우에만 자동 업데이트를 비활성화하십시오. 자동 업데이트가 꺼지면 시스템에서 업데이트를 알리거나 다운로드하거나 설치하지 않습니다. 모든 업데이트를 수동으로 모니터링, 다운로드, 예약 및 설치할 책임은 사용자에게 있습니다.</block>
   <block id="26f7abc505f53b85cb219303544259d3" category="paragraph"><block ref="d57b4f0ac425b878d2f45da8c8c89d8d" category="inline-link-macro-rx"></block>.</block>
-  <block id="889dd2634c57a80d5ff345be8b87b394" category="list-text"><block ref="2d2c01d97863e3fdde3b4275018cf566" category="inline-link-macro-rx"></block>. *</block>
   <block id="330a40ed2b3f8affc9b2ba9dda95e7d2" category="paragraph">ASA r2 시스템의 성능을 최적화하려면 스토리지 유닛의 용량을 늘리거나, QoS 정책을 업데이트하거나, 유닛에 매핑된 호스트를 변경하는 등의 수정이 필요할 수 있습니다. 예를 들어, 기존 스토리지 유닛에 새롭고 중요한 애플리케이션 워크로드가 추가되는 경우, 새 애플리케이션에 필요한 성능 수준을 지원하기 위해 스토리지 유닛에 적용된 QoS(Quality of Service) 정책을 변경해야 할 수 있습니다.</block>
   <block id="3fda8ce05b50b72371c5f4cb65657861" category="paragraph">스토리지 유닛은 기본적으로 씬 프로비저닝 방식으로 구성됩니다. 씬 프로비저닝을 사용하면 스토리지 유닛이 할당된 크기까지 확장될 수 있지만 공간을 미리 예약하지는 않습니다. 필요에 따라 사용 가능한 여유 공간에서 공간이 동적으로 할당됩니다. 이를 통해 사용 가능한 공간을 _과잉 프로비저닝_하여 스토리지 효율성을 높일 수 있습니다. 예를 들어 1TB의 여유 공간이 있고 1TB 스토리지 유닛 4개를 생성해야 한다고 가정해 보겠습니다. 시스템에 3TB의 추가 스토리지 용량을 즉시 추가하는 대신 스토리지 유닛을 생성하고 공간 사용량을 모니터링한 다음 스토리지 유닛이 실제 공간을 사용함에 따라 스토리지 용량을 늘릴 수 있습니다. 자세한 내용은 <block ref="37a5a7f95b66d852ea39cef83793bc4b" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="d6e1856d58417da15c8f45bb5225a284" category="admonition">스토리지 유닛을 두 개 이상 생성하는 경우, 각 유닛은 동일한 용량으로 생성됩니다. 충분한 사용 가능한 공간을 확보하려면 생성할 스토리지 유닛 수에 원하는 용량을 곱하십시오. 사용 가능한 공간이 부족한 상태에서 오버 프로비저닝을 선택한 경우, 공간 부족으로 인한 데이터 손실을 방지하기 위해 사용률을 면밀히 모니터링하십시오.</block>
@@ -2769,4 +2764,9 @@
   <block id="a8e81b2ccd42d59459e94b66c7e93b33" category="inline-link-macro">Active IQ Digital Advisor 또는 Upgrade Health Checker에서 Upgrade Advisor를 사용하여 업그레이드 준비</block>
   <block id="3bd021c9fab6ece4503050272dff524d" category="paragraph">ASA r2 시스템용 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템의 업그레이드와 동일한 프로세스를 따릅니다. <block ref="a44687563e089a36f625493635099b07" category="inline-link-macro-rx"></block>을(를) 시작하는 것이 좋습니다.</block>
   <block id="8e06442a81408e5b3d9d881ee34604d9" category="list-text">포트 e10b를 shelf 1 NSM B 포트 e0b에 연결하십시오.</block>
+  <block id="67cc47e8f050e98e23b1a714f17238ec" category="list-text"><block ref="2d2c01d97863e3fdde3b4275018cf566" category="inline-link-macro-rx"></block>.</block>
+  <block id="a21739611cdd87f44b21b69f2d1255c4" category="doc">ASA r2 스토리지 시스템에서 기본 자율형 랜섬웨어 보호 기능을 비활성화하십시오</block>
+  <block id="8a7cfb8fa6ea38ee5f0146687bddcd42" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 활성화하세요</block>
+  <block id="a9adededf161bd5d8bb9db9309976ce3" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 일시 중지하거나 다시 시작하세요.</block>
+  <block id="bd38f3869f7e640b90d83fffd4208955" category="doc">ASA r2 스토리지 시스템에서 AI 알림을 통해 자율형 랜섬웨어 보호 기능에 대응하세요</block>
 </blocks>

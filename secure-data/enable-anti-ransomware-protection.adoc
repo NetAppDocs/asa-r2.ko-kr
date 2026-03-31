@@ -4,7 +4,7 @@ permalink: secure-data/enable-anti-ransomware-protection.html
 keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, arp/ai, enable 
 summary: ARP/AI를 활성화하여 잠재적인 랜섬웨어 위협을 감지하고, 자동으로 데이터를 보호하기 위한 조치를 취하고, 의심스러운 활동을 알리기 위해 시스템 관리자에 경고 메시지를 표시합니다. 
 ---
-= ASA r2 스토리지 시스템에서 AI를 사용하여 자율적인 랜섬웨어 보호 기능을 활성화하세요.
+= ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 활성화하세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
