@@ -592,7 +592,7 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[40
 .4포트 64Gb/s FC I/O 모듈 1개가 포함된 ASA A20, A30 및 A50
 [%collapsible]
 =====
-각 컨트롤러에서 포트 1a, 1b, 1c 및 1d 를 FC 호스트 네트워크 스위치에 연결합니다.
+각 컨트롤러에서 포트 2a, 2b, 2c 및 2d를 FC 호스트 네트워크 스위치에 연결합니다.
 
 * 64 Gb/s FC 케이블 *
 
@@ -653,11 +653,13 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[40
 
 
 =====
+* FC 호스트 케이블 연결 *
+
 .4포트 64Gb/s FC I/O 모듈 1개가 포함된 ASA C30
 [%collapsible]
 =====
 .단계
-. 각 컨트롤러에서 포트 1a, 1b, 1c 및 1d를 FC 호스트 네트워크 스위치에 연결합니다.
+. 각 컨트롤러에서 케이블 포트 2a, 2b, 2c 및 2d를 FC 호스트 네트워크 스위치에 연결합니다.
 +
 * 64 Gb/s FC 케이블 *
 

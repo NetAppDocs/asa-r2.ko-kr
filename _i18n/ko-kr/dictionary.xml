@@ -1692,7 +1692,6 @@
   <block id="3e42ab3fbc066a1e09943ca314bf3205" category="paragraph">각 컨트롤러에서 포트 e2a, e2b, E2C 및 e2D를 이더넷 호스트 네트워크 스위치에 연결합니다.</block>
   <block id="c053ea984f8ec26545ef5a0f8e3c516b" category="paragraph">* 10/25 GbE 케이블 *</block>
   <block id="b8382f91ab365521fe8568f720b6ddd4" category="paragraph">* FC 호스트 케이블 연결 *</block>
-  <block id="945fde23e0c7ac9dc52f131c48ef5861" category="paragraph">각 컨트롤러에서 포트 1a, 1b, 1c 및 1d 를 FC 호스트 네트워크 스위치에 연결합니다.</block>
   <block id="241c17a1be2cc4feae5c8c6007f8aed3" category="paragraph">* 64 Gb/s FC 케이블 *</block>
   <block id="176084e0e3d1d8b98919ade28704bd7b" category="inline-image-macro">64Gb FC 케이블, 폭 = 100px</block>
   <block id="0174aef3c6edce25256f90638a06bdca" category="paragraph"><block ref="0174aef3c6edce25256f90638a06bdca" category="inline-image-macro-rx" type="image"></block></block>
@@ -1819,7 +1818,6 @@
   <block id="7358d22f4186a5e126b0fada0a666115" category="example-title">4포트 10/25 GbE 입출력 모듈 1개가 포함된 ASA C30</block>
   <block id="baae66b5065d8c53c84d82ba2175779d" category="list-text">각 컨트롤러에서 이더넷 호스트 네트워크 스위치에 케이블 포트 e2a, e2b, E2C 및 e2D를 연결합니다.</block>
   <block id="84f30e54db618597e0548b01a8f9bb23" category="example-title">4포트 64Gb/s FC I/O 모듈 1개가 포함된 ASA C30</block>
-  <block id="8f03269dbdbab70bab244893051fb6ec" category="list-text">각 컨트롤러에서 포트 1a, 1b, 1c 및 1d를 FC 호스트 네트워크 스위치에 연결합니다.</block>
   <block id="02b0ddc9c51a6fd3d072763fb5b859f3" category="paragraph">스토리지 시스템에서 지원되는 최대 쉘프 수와 광 및 스위치 연결과 같은 모든 케이블 옵션은 을 참조하십시오.<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block></block>
   <block id="ed57089257c5bf0e9855c2abce5e2f2c" category="paragraph">AFF A1K 스토리지 시스템은 NSM100 또는 NSM100B 모듈을 사용하여 NS224 선반을 지원합니다. 두 모듈의 주요 차이점은 다음과 같습니다.</block>
   <block id="bee9bdef55e93399a97d85b3925cfca2" category="list-text">NSM100 쉘프 모듈은 내장 포트 e0a 및 e0b를 사용합니다.</block>
@@ -2706,7 +2704,6 @@
   <block id="625927359c6ff98754dcdfda6d0f8d77" category="paragraph">복사 기반 워크로드 재조정의 기본 설정을 수정해야 하는 경우 NetApp 지원팀에 문의하십시오.</block>
   <block id="299c5db3cbde057ebd5a919711b1d2e1" category="paragraph">스토리지 VM에서 클러스터링된 외부 키 관리 서버에 대한 연결을 구성할 수 있습니다. 클러스터형 키 서버를 사용하면 스토리지 VM에서 기본 키 서버와 보조 키 서버를 지정할 수 있습니다. ONTAP 키를 등록할 때 먼저 기본 키 서버에 액세스를 시도한 후 작업이 성공적으로 완료될 때까지 순차적으로 보조 서버에 액세스를 시도하여 키 중복을 방지합니다.</block>
   <block id="9f71ddf310db058a3a89122693392a68" category="inline-link-macro">ASA r2 클러스터에서 용량 균형 조정에 대해 알아보세요.</block>
-  <block id="be2bfcecf308b1d3a417456024096c75" category="paragraph">스토리지 유닛(LUN 또는 NVMe 네임스페이스 기반)이 생성되면 ONTAP 해당 스토리지 가용 영역에 볼륨을 자동으로 생성하여 스토리지 유닛을 저장합니다. 새로 생성된 볼륨은 최적의 성능과 균형 잡힌 용량 활용을 위해 스토리지 가용 영역 내에 자동으로 배치됩니다. 스토리지 가용 영역 내에서 용량 활용률은 사용자의 ONTAP 버전에 따라 균형을 이룹니다. <block ref="9689a3d9a5cc82eb930985adacfe9343" category="inline-link-macro-rx"></block>.</block>
   <block id="d480af7e6686a5e56e9006fab126c8e7" category="section-title">ASA r2 시스템 차이점 요약</block>
   <block id="2be27a1e2f13957646665cd7fef8000d" category="cell">부모 일관성 그룹별 자녀 일관성 그룹</block>
   <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
@@ -2769,4 +2766,8 @@
   <block id="8a7cfb8fa6ea38ee5f0146687bddcd42" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 활성화하세요</block>
   <block id="a9adededf161bd5d8bb9db9309976ce3" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 일시 중지하거나 다시 시작하세요.</block>
   <block id="bd38f3869f7e640b90d83fffd4208955" category="doc">ASA r2 스토리지 시스템에서 AI 알림을 통해 자율형 랜섬웨어 보호 기능에 대응하세요</block>
+  <block id="7c9f18ab5a6d9bddcd86839795bbf631" category="paragraph">각 컨트롤러에서 포트 2a, 2b, 2c 및 2d를 FC 호스트 네트워크 스위치에 연결합니다.</block>
+  <block id="e075a310e0208871f253ed1786f7aa85" category="list-text">각 컨트롤러에서 케이블 포트 2a, 2b, 2c 및 2d를 FC 호스트 네트워크 스위치에 연결합니다.</block>
+  <block id="3e43f7eeca64d5c830b0064870a6156b" category="admonition">설치 및 유지보수 절차를 수행하는 동안에는 항상 검증된 접지점에 연결된 접지 손목 스트랩을 착용하십시오. 적절한 ESD 예방 조치를 따르지 않으면 컨트롤러 노드, 스토리지 셸프 및 네트워크 스위치가 영구적으로 손상될 수 있습니다.</block>
+  <block id="fc4a9f6cd00df6dfa4d8144f15b57af3" category="paragraph">스토리지 유닛(LUN 또는 NVMe 네임스페이스 기반)이 생성되면 ONTAP은 해당 스토리지 유닛을 저장할 적절한 스토리지 가용성 영역에 볼륨을 자동으로 생성합니다. 새로 생성된 볼륨은 최적의 성능과 균형 잡힌 용량 활용을 위해 스토리지 가용성 영역 내에 자동으로 배치됩니다. 스토리지 가용성 영역 내의 용량 활용은 사용 중인 ONTAP 버전에 따라 균형을 유지합니다. <block ref="44cab674f8c9e72d3dcaedde750c6695" category="inline-link-macro-rx"></block>.</block>
 </blocks>
