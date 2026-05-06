@@ -17,7 +17,17 @@ entries:
   - title: 하드웨어를 설치합니다
     url: "/install-setup/deploy-hardware.html"
   - title: 하드웨어 케이블 연결
-    url: "/install-setup/cable-hardware.html"
+    entries:
+    - title: 케이블 개요
+      url: "/install-setup/cable-hardware.html"
+    - title: 케이블 ASA A1K
+      url: "/install-setup/cable-hardware-a1k.html"
+    - title: 케이블 ASA A70 및 A90
+      url: "/install-setup/cable-hardware-a70-90.html"
+    - title: 케이블 ASA A20, A30 및 A50
+      url: "/install-setup/cable-hardware-a20-30-50.html"
+    - title: 케이블 ASA C30
+      url: "/install-setup/cable-hardware-c30.html"
   - title: 시스템 전원을 켭니다
     url: "/install-setup/power-on-hardware.html"
 - title: ASA R2 시스템을 설정합니다
