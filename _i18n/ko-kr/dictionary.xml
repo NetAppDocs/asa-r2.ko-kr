@@ -1252,7 +1252,6 @@
   <block id="a2d38e07f32f557705115c0e67b1cf0c" category="list-text">소프트웨어 암호화를 활성화하려면 * 듀얼 레이어 암호화 * 를 선택하십시오.</block>
   <block id="3adddf5fb61118db0851698e94df9d20" category="inline-link-macro">네트워크를 통해 전송되는 모든 데이터를 암호화합니다</block>
   <block id="7d48eac362573df2fed01eb80f7d4ec2" category="paragraph">이제 저장된 데이터를 암호화했습니다. NVMe/TCP 프로토콜을 사용하는 경우 <block ref="74cf61e3a0c52691fd5b474676f672e9" category="inline-link-macro-rx"></block>NVMe/TCP 호스트와 ASA R2 시스템 간에 데이터를 암호화할 수 있습니다.</block>
-  <block id="5c2176542e490214bcd9614880d942f0" category="summary">NVMe/TCP 호스트와 ONTAP 간에 네트워크를 통해 전송되는 모든 데이터를 암호화하도록 TLS를 통한 NVMe/TCP를 구성하여 데이터 보안을 강화하십시오.</block>
   <block id="5bdd1772c315e3d023ef23531e6172d5" category="doc">ASA R2 스토리지 시스템에서 NVMe 연결을 보호합니다</block>
   <block id="4bbb8f0466027ba41f7760a28b31c469" category="paragraph">NVMe 프로토콜을 사용하는 경우 대역 내 인증을 구성하여 데이터 보안을 강화할 수 있습니다. 대역 내 인증을 통해 NVMe 호스트와 ASA R2 시스템 간에 안전한 양방향 및 단방향 인증을 수행할 수 있습니다. 모든 NVMe 호스트에서 대역 내 인증을 사용할 수 있습니다. NVMe/TCP 프로토콜을 사용하는 경우 TLS(전송 계층 보안)를 구성하여 NVMe/TCP 호스트와 ASA R2 시스템 간에 네트워크를 통해 전송되는 모든 데이터를 암호화함으로써 데이터 보안을 더욱 강화할 수 있습니다.</block>
   <block id="24e4b19fe20674545837cd1f5514b5cc" category="list-text">Hosts * 를 선택한 다음 * NVMe * 를 선택합니다.</block>
@@ -1475,9 +1474,7 @@
   <block id="f142a152601a952c440aa742ae54d56c" category="doc">ASA R2 스토리지 시스템에서 ONTAP를 업그레이드합니다</block>
   <block id="f46c905b973360f57c509a5dac0d6aca" category="paragraph">ASA R2 시스템에서 ONTAP 소프트웨어를 업그레이드할 때 새롭고 향상된 ONTAP 기능을 활용하여 비용을 절감하고, 중요한 워크로드를 가속화하고, 보안을 강화하고, 조직에서 사용할 수 있는 데이터 보호 범위를 확장할 수 있습니다.</block>
   <block id="46629b819dff531a5a2a49fcda5443dd" category="inline-link-macro">System Manager에서 자동 무중단 업그레이드(ANDU</block>
-  <block id="d351531ad851e21d1ccbc812e54540ff" category="paragraph">업그레이드를 준비하고 나면 을 사용하여 업그레이드를 수행하는 것이 좋습니다<block ref="a93595527d1144b0b27a701c939efa63" category="inline-link-macro-rx"></block>. ANDU는 ONTAP의 고가용성(HA) 페일오버 기술을 활용하여 업그레이드 중에 클러스터가 중단 없이 데이터를 지속적으로 제공할 수 있도록 보장합니다.</block>
   <block id="8b7f4f92636306e034e67a0098393065" category="inline-link-macro">ONTAP 소프트웨어 업그레이드</block>
-  <block id="db24448a282517925d7637e0ab57fb35" category="paragraph">에 대해 자세히 <block ref="ee50b0384392ffd34e721693cf1abb90" category="inline-link-macro-rx"></block>알아보십시오.</block>
   <block id="06b783ccc728f89654eb406f121a920e" category="paragraph">두 개 이상의 유닛을 생성하는 경우 기본적으로 각 유닛은 동일한 용량과 동일한 호스트 운영 체제로 생성됩니다. 필요에 따라 각 유닛에 다른 용량을 할당할 수 있습니다.</block>
   <block id="c714809f14fa9d9c65c38961426d89e3" category="paragraph">각 스토리지 유닛에 다른 용량을 할당합니다</block>
   <block id="b079c5d39925229ba3c754aec7200bfe" category="paragraph">Add a different capacity * 를 선택합니다.</block>
@@ -1540,15 +1537,12 @@
   <block id="06a4e0373e144570a83a3fcfaa55ff46" category="list-text">성능 * 을 선택합니다.</block>
   <block id="c20ad4d76fe97759aa27a0c99bff6710" category="cell">12</block>
   <block id="455f024d5e786170a224f947b09bd74a" category="section-title">스토리지 가용 영역 활용률 모니터링</block>
-  <block id="9cf3716a035447d7f3920daf3ae979bd" category="paragraph">ASA R2 시스템의 각 HA 쌍은 _ 스토리지 가용성 영역 _ 이라는 공통 스토리지 풀을 사용합니다. 스토리지 가용 영역은 스토리지 시스템의 모든 가용 디스크에 액세스할 수 있으며 HA 쌍의 두 노드에 표시됩니다.</block>
   <block id="c54830fa97aef91a8bc830d439dc004a" category="paragraph">클러스터에 4개 이상의 노드가 있는 경우 각 HA 쌍의 스토리지 가용성 영역에서 사용하는 공간의 양을 볼 수 있습니다. 2노드 클러스터에는 이 메트릭을 사용할 수 없습니다.</block>
   <block id="dd7cd8aba78024bcc6ec1c67f3987760" category="list-text">System Manager에서 * Cluster * 를 선택한 다음 * Overview * 를 선택합니다.</block>
   <block id="0ce03f9ea97502f3a10721575d8a9696" category="paragraph">스토리지 가용 영역 활용률에 대한 요약이 클러스터의 각 HA 쌍에 대해 표시됩니다.</block>
   <block id="3670021e257ef0702d763c08d8b9c8b3" category="list-text">보다 자세한 메트릭을 원하는 경우 특정 스토리지 가용성을 선택합니다.</block>
   <block id="b8e5e4895e260a0a4eeab6a3c66ae9b3" category="paragraph">개요 * 아래에 스토리지 가용 영역의 용량, 사용된 공간 및 데이터 축소율이 표시됩니다.</block>
-  <block id="97803d08cef50f43e58f978c9b2e1f08" category="paragraph">Storage units * 아래에 스토리지 가용 영역의 모든 스토리지 유닛 목록이 표시됩니다.</block>
   <block id="c5b460be9264c217ff7aa949f8f26aab" category="inline-link-macro">저장 장치를 이동합니다</block>
-  <block id="7245821daa5af47d8243d8eee3f64b1e" category="paragraph">스토리지 가용 영역에서 공간이 부족하면 다른 스토리지 가용 영역을 계획하여 클러스터 전체에서 스토리지 사용률의 균형을 조정해야 <block ref="a3223fe003597dcfd7b6d75426783c5a" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="8010ab2f71c733c1a8013b31b901be79" category="cell">클러스터당 노드 수</block>
   <block id="c7ae27ad054ff4d389e7c15cc82b0866" category="paragraph">클러스터당 최대 노드 수가 2개에서 12개로 늘어났습니다.</block>
   <block id="f35462670e9b95d1e4a8748ba6872f91" category="admonition">클러스터에서 노드가 3개 이상인 ONTAP 9.16.1을 실행 중인 경우 ONTAP 9.16.0으로 되돌릴 수 없습니다.</block>
@@ -1709,7 +1703,6 @@
   <block id="b78c98e70e341751d6f58db28ecec461" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="29aaf1b4e7e6610ae4790f0740e69e4e" category="inline-link-macro-rx"></block></block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
   <block id="77aa123fc5c68731cdf628d8e9c75afc" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> <block ref="69d31d64dbed246448f394257b05fdb9" category="inline-link-macro-rx"></block></block>
-  <block id="43be05fcb9765d24f8081a2284f82de7" category="summary">ASA R2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안(IPsec)을 구성하여 데이터 보안을 강화할 수 있습니다.</block>
   <block id="95f5e5110bbbc9d987c115097008c227" category="doc">ASA R2 스토리지 시스템에서 IP 연결을 보호합니다</block>
   <block id="c10f6cdf89366933afe9e0a05f726423" category="paragraph">ASA R2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안(IPsec)을 구성하여 데이터 보안을 강화할 수 있습니다. IPsec은 전송 중 데이터 암호화, IP 수준에서 네트워크 엔드포인트 간에 흐르는 트래픽에 대한 인증, 데이터에 대한 재생 및 악의적인 가로채기 공격으로부터 보호하는 인터넷 표준입니다.</block>
   <block id="602c5938acf67898ca9af2011ec2c721" category="paragraph">ASA R2 시스템의 경우 iSCSI 및 NVMe/TCP 호스트에 IPsec을 사용할 수 있습니다.</block>
@@ -1919,12 +1912,9 @@
   <block id="4e815228ca61a1f75181e7efe619c495" category="summary">SnapMirror Active Sync를 사용하면 예상치 못한 중단이나 사이트 재해로 인한 중단으로부터 복구 지점 목표(RPO)와 복구 시간 목표(RTO)가 0인 호스트 애플리케이션을 보호할 수 있습니다.</block>
   <block id="497c72a2f611a19c23299b5daea37215" category="doc">SnapMirror Active Sync 설정 워크플로</block>
   <block id="c0da5a4756d4ac1721f7418cfa0145da" category="paragraph">ONTAP SnapMirror 액티브 싱크 데이터 보호 기능은 사이트 전체에 장애가 발생하더라도 비즈니스 서비스가 계속 운영될 수 있도록 지원하며, 보조 복사본을 사용하여 애플리케이션이 투명하게 페일오버되도록 지원합니다. SnapMirror 액티브 싱크를 사용하면 페일오버를 트리거하는 데 수동 작업이나 사용자 지정 스크립팅이 필요하지 않습니다.</block>
-  <block id="496bd86dd8bb62f9490750bc6a2bd331" category="paragraph">ASA r2 시스템에서 SnapMirror 활성 동기화를 구성하기 위한 시스템 관리자 절차는 통합 ONTAP 개성을 실행하는 NetApp FAS, AFF 및 ASA 시스템과 다르지만 SnapMirror 활성 동기화의 요구 사항, 아키텍처 및 작동은 동일합니다.</block>
   <block id="e5aa1050a01e875d0fd4839753c22c3a" category="inline-link-macro">SnapMirror Active Sync에 대해 자세히 알아보세요</block>
   <block id="c42fce7fb66798714860f8785e01c4fd" category="paragraph"><block ref="a408e5a82a63466cbd34839f021414e3" category="inline-link-macro-rx"></block> .</block>
-  <block id="d2d4f7014e3da9faf0b74dfe30ffa3d4" category="paragraph">ASA r2 시스템에서 SnapMirror Active Sync는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서는 두 사이트 모두 액티브 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다.</block>
   <block id="fa2f5b44a6ee8f9c7d43efc8bb1daca1" category="inline-link-macro">대칭 활성/활성 구성</block>
-  <block id="523dd06e2c0961b1020a5b70b22d7611" category="paragraph">자세히 알아보세요 <block ref="cd08e89ddecf5772544f56e955b2d721" category="inline-link-macro-rx"></block> .</block>
   <block id="1075f9a2bdd0eec8a237b62c855adf87" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> SnapMirror Active Sync를 구성할 준비를 합니다.</block>
   <block id="a8f00bd7503de5f4a45e28b2e197cc39" category="inline-link-macro">SnapMirror Active Sync 구성을 준비합니다</block>
   <block id="b4147f15364f77411931933a225c44d5" category="paragraph">에게 <block ref="cc0b3a933662ec3d582d20420f8b2a10" category="inline-link-macro-rx"></block> ASA r2 시스템에서는 구성 전제 조건을 검토하고, 호스트 운영 체제에 대한 지원을 확인하고, 특정 구성에 영향을 줄 수 있는 개체 제한을 알고 있어야 합니다.</block>
@@ -1944,10 +1934,6 @@
   <block id="1546c57263450319fef8d1d8de83e306" category="section-title">타사 스토리지 시스템에서 데이터 마이그레이션</block>
   <block id="99657bc66973f189d87f6d702b300b6e" category="paragraph">ONTAP 9.17.1부터 FLI(Foreign LUN Import)를 사용하여 타사 스토리지 시스템의 LUN에서 ASA r2 시스템으로 데이터를 마이그레이션할 수 있습니다. FLI를 사용하여 데이터 마이그레이션을 수행하면 마이그레이션 프로세스 중 데이터 손실 및 다운타임 위험을 줄이는 데 도움이 됩니다.</block>
   <block id="cd7fc10aafbc563ec83b036726716d53" category="paragraph">FLI는 온라인 및 오프라인 마이그레이션을 모두 지원합니다. 온라인 마이그레이션에서는 클라이언트 시스템이 온라인 상태를 유지하는 동안 타사 스토리지 시스템에서 ONTAP 스토리지 시스템으로 데이터가 복사됩니다. 온라인 마이그레이션은 Windows, Linux 및 ESXi 호스트 운영 체제에서 지원됩니다. 오프라인 마이그레이션에서는 클라이언트 시스템이 오프라인 상태로 전환되고, LUN 데이터가 타사 스토리지 시스템에서 ONTAP 스토리지 시스템으로 복사된 후 클라이언트 시스템이 다시 온라인 상태로 전환됩니다.</block>
-  <block id="5c85b34ddc611aad4c1c95da5183b039" category="inline-link-macro">FLI 오프라인 마이그레이션</block>
-  <block id="f70b44cd993cd2c931b66a3448afab81" category="list-text">수행 방법을 알아보세요 <block ref="035b0b09e519739eed6266400ab97686" category="inline-link-macro-rx"></block> .</block>
-  <block id="1001999583c199f3eb49c903e2498b5d" category="inline-link-macro">FLI 온라인 마이그레이션</block>
-  <block id="357051192b540d86651f3bccdefa9666" category="list-text">수행 방법을 알아보세요 <block ref="5ed7d3d6c0241f338e5a28a232e76e56" category="inline-link-macro-rx"></block> .</block>
   <block id="97deade833d7f54a1cb2037da41d63c5" category="summary">ASA r2 시스템은 간소화된 버전의 ONTAP 실행하므로 일반적인 ONTAP 작업과 시스템 관리자 기능은 ASA r2 시스템에서 다른 ONTAP 시스템과 동일한 방식으로 수행됩니다.</block>
   <block id="f01fcb252b22a1393a193f28b22135fc" category="doc">ASA r2 시스템에서 지원되는 일반적인 ONTAP 기능</block>
   <block id="8b9b16acd91241c2b1259b842284faa4" category="paragraph">일반적인 특징과 기능에 대한 자세한 내용은 다음 ONTAP 설명서를 참조하세요.</block>
@@ -1997,7 +1983,6 @@
   <block id="f231c7e641e6d267354740a6c9850600" category="cell">SnapMirror Active Sync는 2노드 ONTAP 클러스터에 대해 NVMe/TCP 및 NVMe/FC 호스트 액세스를 사용하는 VMware 워크로드 지원을 추가합니다. VMware 워크로드의 NVMe/TCP 지원은 VMware 버그 ID: TR1049746 해결 여부에 따라 달라집니다</block>
   <block id="2595874d578967634d23bb05c5c7197c" category="inline-link-macro">자동 작업 부하 분산 지원</block>
   <block id="f5f208592c87b0ba3e87b3ad6fad7fa6" category="cell">HA 쌍의 노드 간에 작업 부하가 자동으로 균형을 이루어 성능과 리소스 활용도가 최적화됩니다.</block>
-  <block id="cc9afe53172875d5c9c85e52f0ecbf07" category="summary">ARP/AI를 활성화하여 잠재적인 랜섬웨어 위협을 감지하고, 자동으로 데이터를 보호하기 위한 조치를 취하고, 의심스러운 활동을 알리기 위해 시스템 관리자에 경고 메시지를 표시합니다.</block>
   <block id="e8b71c667f5920e249288a672ea7f999" category="paragraph">ONTAP 9.17.1부터 인공지능(AI)을 활용한 자율형 랜섬웨어 보호(ARP/AI)를 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. ARP/AI는 잠재적인 랜섬웨어 위협을 신속하게 감지하고, 데이터를 보호하기 위해 ARP 스냅샷을 자동으로 생성하며, 의심스러운 활동을 감지하면 시스템 관리자에 경고 메시지를 표시합니다.</block>
   <block id="7331e9472b69421ea7995df5df0b5754" category="inline-link-macro">학습 기간</block>
   <block id="ad09d4f074e5e7f7524d8960ed675311" category="inline-link-macro">ONTAP One 라이센스</block>
@@ -2028,7 +2013,6 @@
   <block id="2d836c595463e39451f4bc5201b13c16" category="cell">10일</block>
   <block id="6071a17c985fe00a9fb93ceb8b43b31c" category="inline-link">ONTAP 자동 스냅샷에 대한 옵션 수정</block>
   <block id="945b91477a64c6c005e774606fec4bd9" category="paragraph">기본 보존 기간은 ONTAP 명령줄 인터페이스(CLI)를 사용하여 수정할 수 있습니다 . <block ref="02f493e3d4b2ac47f6e229a1ce055166" category="inline-link-rx"></block> 기본 보존 기간을 변경하는 단계는 다음과 같습니다.</block>
-  <block id="c10d1e8c9c33d289c596032f6f9fdb66" category="summary">비정상적인 작업 부하 이벤트를 계획하는 경우 랜섬웨어 공격의 오탐지 방지를 위해 ARP/AI 분석을 일시적으로 중단할 수 있습니다.</block>
   <block id="6a775ca760bff9fbc6c0ed5905022d26" category="paragraph">ONTAP 9.17.1부터 인공지능(ARP/AI)을 활용한 자율형 랜섬웨어 보호 기능을 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. 비정상적인 워크로드 이벤트를 계획하는 경우, 랜섬웨어 공격의 오탐지를 방지하기 위해 ARP/AI 분석을 일시적으로 중단할 수 있습니다. 워크로드 이벤트가 완료되면 ARP/AI 분석을 재개할 수 있습니다.</block>
   <block id="d6a9a7257f4378316af056ede012c0ab" category="section-title">ARP/AI 일시 중지</block>
   <block id="84354dab4dfd74a63f53750e80507db9" category="paragraph">비정상적인 작업 부하 이벤트를 시작하기 전에 랜섬웨어 공격에 대한 오탐지 방지를 위해 ARP/AI 분석을 일시적으로 중단해야 할 수도 있습니다.</block>
@@ -2089,7 +2073,6 @@
   <block id="dea3a75107d7790747be36ffd87dfafd" category="sidebar">ONTAP Mediator 또는 ONTAP Cloud Mediator 구성</block>
   <block id="0a297cc4d1df6ddee9072cd47dca7791" category="sidebar">NetApp ASA 의 FlexPod</block>
   <block id="4ff3b8b9056fdd67969fe5f7de99f262" category="inline-link-macro">ASA r2 시스템에서 SnapMirror Active Sync를 사용한 재해 복구에 대해 자세히 알아보세요.</block>
-  <block id="a4d3fa0a90b98ed30452a119486e6ae3" category="paragraph"><block ref="a4d3fa0a90b98ed30452a119486e6ae3" category="inline-link-macro-rx"></block></block>
   <block id="1e96162d7ffea43bde6c07852ffff8cb" category="inline-link-macro">vSphere에 ONTAP 사용하는 이점</block>
   <block id="c3650233fcb8a7a607d25a5c0f5a5493" category="list-text">자세히 알아보세요 <block ref="1b2505f7e592731db42e95f3d10a015e" category="inline-link-macro-rx"></block> .</block>
   <block id="05d7c63979cf1697d07b8942ba9871b7" category="inline-link-macro">ONTAP 사용한 VMware 라이브 사이트 복구</block>
@@ -2246,7 +2229,6 @@
   <block id="08fb4ffca88bc0f6461c362f968d394f" category="paragraph"><block ref="6fa56bfab318c33e6446a2520c50c09f" prefix="" category="inline-code"></block></block>
   <block id="913e3fb6005d79d1e7e5eb2046a6fa4c" category="inline-link-macro">스냅미러 중재자 제거</block>
   <block id="55394a49231c00367e205c42b064e980" category="list-text"><block ref="55394a49231c00367e205c42b064e980" category="inline-link-macro-rx"></block></block>
-  <block id="7827b7923d6e45ba19022ef0a9878628" category="inline-link-macro">ONTAP 성격에 대해 자세히 알아보세요</block>
   <block id="2e50e3f8a8554bd854e544e6dc52462d" category="admonition">ASA r2 스토리지 시스템에 대한 스냅샷 복제는 다른 ASA r2 스토리지 시스템에서만 지원됩니다.  ASA r2 시스템에서 ASA, AFF 또는 FAS 시스템으로, 또는 ASA, AFF 또는 FAS 시스템에서 ASA r2 시스템으로 스냅샷을 복제할 수 없습니다.</block>
   <block id="8e0a212a3ccb8f506b309ea2b6cbd1f7" category="paragraph">ONTAP 9.17.1부터 계층적 관계의 일관성 그룹에 비동기 복제 정책을 적용할 수 있습니다.  ONTAP 9.16.1에서는 계층적 관계에 있는 일관성 그룹에 대해 비동기 복제가 지원되지 않습니다.</block>
   <block id="de095ac7880431e9449dcced8cecbd9a" category="inline-link-macro">계층적(부모/자식) 일관성 그룹에 대해 자세히 알아보세요.</block>
@@ -2641,7 +2623,6 @@
   <block id="560b852910a0e98466ea0bc41a896549" category="inline-link-macro">자동 ARP/AI 활성화 지원</block>
   <block id="e9a88c72c24e4398f874d2f4af5b49e8" category="cell"><block ref="e9a88c72c24e4398f874d2f4af5b49e8" category="inline-link-macro-rx"></block></block>
   <block id="689aa35f9f1eec56b70643199a8682d8" category="cell">새로운 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 9.18.1로 업그레이드하면 12시간의 유예 기간 후 새로 생성된 모든 스토리지 유닛에서 ARP/AI가 기본적으로 자동 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새로 생성된 스토리지 유닛에 대해 클러스터 전체에서 활성화됩니다.</block>
-  <block id="1a96b0b4e7eeb5c869def87fe1b46270" category="summary">ASA r2 클러스터에 ARP(Autonomous Ransomware Protection) 라이센스가 설치되어 있는 경우 ONTAP 9.18.1로 업그레이드하거나 새 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간 후에 기존 및 새로 생성된 모든 스토리지 유닛에서 ARP가 기본적으로 설정됩니다.</block>
   <block id="ada9a568ab6a5d18c006a2f881dad45e" category="paragraph">새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 ONTAP 9.18.1로 업그레이드하면 12시간의 유예 기간 후 모든 새 스토리지 장치에서 ARP/AI가 기본적으로 자동으로 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새 스토리지 장치에 대해 클러스터 전체에서 활성화됩니다.</block>
   <block id="15a35bbf98ecdf50ebbe830c9150b1fa" category="inline-link-macro">수동으로 활성화됨</block>
   <block id="2c5bf6d23c3b237a161f10e7a30084bf" category="paragraph">ONTAP 9.17.1에서 생성된 스토리지 장치는 ARP/AI용 <block ref="e30e679666ce4b86d4d0fe351918a7bf" category="inline-link-macro-rx"></block>이어야 합니다.</block>
@@ -2656,9 +2637,7 @@
   <block id="91af5705f16502125e8b2187e64202c0" category="open-title">CLI</block>
   <block id="2789285c59c5d3b50b0af44eb0af9d83" category="list-text">기본 활성화 상태를 확인합니다.</block>
   <block id="51ea13505527485e8ad1964193e9ac5d" category="list-text">기존 볼륨 및 새 볼륨에 대한 기본 활성화를 비활성화합니다.</block>
-  <block id="8dec9eba7de20cf1b8ccafba1cfae901" category="paragraph">ARP는 머신러닝 모델을 활용한 랜섬웨어 분석 기능을 통해 사이버 복원력을 향상시킵니다. 이 모델은 SAN 환경에서 98%의 정확도로 끊임없이 진화하는 랜섬웨어를 탐지합니다. ARP의 머신러닝 모델은 모의 랜섬웨어 공격 전후의 대규모 파일 데이터셋을 기반으로 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 학습된 모델은 ONTAP에 포함되어 제공됩니다. 이 모델은 접근하거나 수정할 수 없습니다. ARP/AI는 활성화 즉시 작동하며, <block ref="3fa1bfd584351c2c430a6346ba4b1ef3" category="inline-link-macro-rx"></block>가 필요하지 않습니다.</block>
   <block id="f2927aad75b0aa15b973bf19aae3a066" category="admonition">어떤 랜섬웨어 탐지 또는 예방 시스템도 랜섬웨어 공격으로부터 완벽한 안전을 보장할 수는 없습니다. 공격이 탐지되지 않을 수도 있지만, ARP/AI는 안티바이러스 소프트웨어가 침입을 탐지하지 못할 경우 중요한 추가 방어 계층 역할을 합니다.</block>
-  <block id="613dcccc80c6c70a2f7f3bbba3e85635" category="list-text">ARP/AI는 SnapMirror 액티브 동기화, SnapMirror 동기식 또는 SnapLock으로 보호되는 스토리지 유닛에서 지원되지 않습니다.</block>
   <block id="d818371e54d5db7f0b123dad9f0741fa" category="list-text">ONTAP 9.18.1부터는 ONTAP 9.18.1로 업그레이드하거나 새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간이 지나면 새로 생성되는 모든 스토리지 유닛에서 ARP/AI가 기본적으로 활성화됩니다.</block>
   <block id="4ebb5f6bb42f5000c86113152e6fc7b8" category="section-title">클러스터의 모든 스토리지 유닛에서 ARP/AI 활성화</block>
   <block id="4a30706558af49bc475c9076f39c5043" category="paragraph">ONTAP 9.17.1을 실행 중인 경우 클러스터에 생성된 모든 스토리지 유닛에 대해 기본적으로 ARP/AI를 활성화할 수 있습니다.</block>
@@ -2678,9 +2657,7 @@
   <block id="d6e1856d58417da15c8f45bb5225a284" category="admonition">스토리지 유닛을 두 개 이상 생성하는 경우, 각 유닛은 동일한 용량으로 생성됩니다. 충분한 사용 가능한 공간을 확보하려면 생성할 스토리지 유닛 수에 원하는 용량을 곱하십시오. 사용 가능한 공간이 부족한 상태에서 오버 프로비저닝을 선택한 경우, 공간 부족으로 인한 데이터 손실을 방지하기 위해 사용률을 면밀히 모니터링하십시오.</block>
   <block id="aa716862002e83866a499a0f5aaa467f" category="paragraph">지정한 운영 체제에서 실행 중인 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP에서 자동으로 새 호스트 그룹을 생성합니다.</block>
   <block id="a8e81b2ccd42d59459e94b66c7e93b33" category="inline-link-macro">Active IQ Digital Advisor 또는 Upgrade Health Checker에서 Upgrade Advisor를 사용하여 업그레이드 준비</block>
-  <block id="3bd021c9fab6ece4503050272dff524d" category="paragraph">ASA r2 시스템용 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템의 업그레이드와 동일한 프로세스를 따릅니다. <block ref="a44687563e089a36f625493635099b07" category="inline-link-macro-rx"></block>을(를) 시작하는 것이 좋습니다.</block>
   <block id="8e06442a81408e5b3d9d881ee34604d9" category="list-text">포트 e10b를 shelf 1 NSM B 포트 e0b에 연결하십시오.</block>
-  <block id="67cc47e8f050e98e23b1a714f17238ec" category="list-text"><block ref="2d2c01d97863e3fdde3b4275018cf566" category="inline-link-macro-rx"></block>.</block>
   <block id="a21739611cdd87f44b21b69f2d1255c4" category="doc">ASA r2 스토리지 시스템에서 기본 자율형 랜섬웨어 보호 기능을 비활성화하십시오</block>
   <block id="8a7cfb8fa6ea38ee5f0146687bddcd42" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 활성화하세요</block>
   <block id="a9adededf161bd5d8bb9db9309976ce3" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 일시 중지하거나 다시 시작하세요.</block>
@@ -2793,4 +2770,101 @@
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="section-title">추가 리소스</block>
   <block id="e8a159e2ff115b18e83ff77937ef6345" category="paragraph">케이블 연결 절차는 일반적인 구성을 보여줍니다. 구체적인 케이블 연결은 스토리지 시스템에 주문한 구성 요소에 따라 다릅니다. 포괄적인 구성 및 슬롯 우선순위 세부 정보는 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="3b1d6e6330ca5bf54a0c22beaa407de9" category="sidebar">케이블 개요</block>
+  <block id="2c8eecf979e6fd790e493d164307b594" category="paragraph">ASA r2 시스템용 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템의 업그레이드와 동일한 프로세스를 따릅니다. <block ref="6ef617cad96624aff48188ee9c2d2af4" category="inline-link-macro-rx"></block>을(를) 시작하는 것이 좋습니다.</block>
+  <block id="64653b9fd94570b308a1c2ed04a37c62" category="paragraph">업그레이드 준비를 마친 후에는 <block ref="e26ea1c18f478c08bac49629d6c7055f" category="inline-link-macro-rx"></block>를 사용하여 업그레이드를 수행하는 것이 좋습니다. ANDU는 ONTAP의 고가용성(HA) 페일오버 기술을 활용하여 업그레이드 중에도 클러스터가 중단 없이 데이터를 계속 제공하도록 보장합니다.</block>
+  <block id="a9a92968dbd42b1c6a98d69ef29dff86" category="paragraph"><block ref="dbcdfdb6de3365861229d4de54f3e7c8" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
+  <block id="0000dac1f1d7d52694ae1c57ec4c4952" category="section-title">계획된 업그레이드 전에 자동화된 사전 업그레이드 검사를 실행합니다</block>
+  <block id="1e136489f0f4579da4728cecbc41c760" category="paragraph">ONTAP 소프트웨어를 업그레이드하는 과정에 있지 않아도 ONTAP 자동 업그레이드 사전 점검을 실행할 수 있습니다. ONTAP 자동 업그레이드 프로세스와 별도로 업그레이드 전 점검을 실행하면 클러스터에 대해 수행되는 점검 항목을 확인할 수 있으며 실제 업그레이드를 시작하기 전에 수정해야 할 오류 또는 경고 목록을 제공받을 수 있습니다.</block>
+  <block id="97b8d819cd6f1c3d1e12d20c69bc9343" category="paragraph">ONTAP 9.19.1부터 오류와 경고가 별도로 표시되어 업그레이드 전에 해결해야 할 문제를 쉽게 식별할 수 있습니다.</block>
+  <block id="7dadbaefb3cf1bd5b8a86802fac0839a" category="inline-link-macro">ONTAP 자동 사전 업그레이드 검사 실행</block>
+  <block id="c240788f59668332d5c171cbe489376a" category="paragraph"><block ref="9c7fdd39bc5019d6cec3e908fec6a772" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
+  <block id="9917a58904f13efdde588f2978fd93b9" category="inline-link-macro">AI를 활용한 자율형 랜섬웨어 보호 기능 활성화</block>
+  <block id="fb1b02686213ed6e031c1f039708270a" category="admonition">ONTAP 9.19.1 RC부터 인공지능 기반 자율 랜섬웨어 보호(ARP/AI)는 ASA r2 시스템의 SnapMirror 액티브 싱크 SAN 관계에서 기본 읽기/쓰기 스토리지 유닛을 지원합니다. ARP/AI는 활성 기본 스토리지 유닛에서 실행되어 기본 전용 ARP 스냅샷을 생성하고 해당 스토리지 유닛에 대한 머신 러닝 기반 랜섬웨어 탐지 기능을 제공합니다. ARP/AI를 활성화하려면 <block ref="1ee41ad3123e5db18e6fae76e28afe9f" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="b71329b670dac542862012007751fd6f" category="summary">ONTAP 9.19.1 이상을 실행하는 AIX 호스트에 대해 SnapMirror 액티브 동기화를 활성화하려면 먼저 호스트 액세스 모드를 로컬로 설정해야 합니다.</block>
+  <block id="e7afd2cc385e151dc252f52489678be6" category="doc">ASA r2 시스템에서 SnapMirror 액티브 동기화 보호를 위해 AIX 호스트 준비</block>
+  <block id="16624daae6b7659680047c4fc428fec2" category="paragraph">ONTAP 9.19.1 버전부터 AIX용 투명 애플리케이션 페일오버가 대칭형 액티브/액티브 구성에서 SnapMirror 액티브 싱크를 통해 지원됩니다. SnapMirror 액티브 싱크의 데이터 보호 기능을 통해 사이트 전체 장애 발생 시에도 비즈니스 서비스가 계속 운영될 수 있으며, 보조 복사본을 사용하여 애플리케이션이 투명하게 페일오버될 수 있습니다.</block>
+  <block id="ba38f5c107e42f69bfac0d9f7824f8c9" category="inline-link-macro">SnapMirror 액티브 동기화를 위한 상호 운용성</block>
+  <block id="f80d8776833174e556c56272ce794684" category="paragraph">ONTAP 9.19.1 이상을 실행하는 AIX 호스트에 대해 SnapMirror 액티브 동기화를 활성화하려면 먼저 호스트 액세스 모드를 로컬로 설정해야 합니다. 다른 호스트 유형의 경우 액세스 모드를 선택할 필요가 없습니다. <block ref="987f5b7a840f16d7e10b014311f90ef1" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
+  <block id="13cf50fcf318293df5a3adeadda4221c" category="paragraph">ONTAP 9.19.1 이상 버전을 실행 중이어야 합니다. ONTAP 9.18.1 이하 버전을 실행 중인 경우 SnapMirror 액티브 동기화에 대한 AIX 호스트 지원을 위해 기능 정책 변경 요청(FPVR)이 필요합니다.</block>
+  <block id="49c7424b52c7ec83e7da5d72f7f13764" category="list-text">SnapMirror 활성 동기화 보호를 위해 준비할 AIX 스토리지 장치의 이름 위로 마우스 커서를 가져가십시오.</block>
+  <block id="89b5596dc218f237904b988c0f8904cc" category="inline-image-macro">메뉴 선택 아이콘</block>
+  <block id="21a7f37e0aaf9ac924df65177afb8228" category="list-text"><block ref="2bf8f430922192bda6865bad87ff2a74" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *편집*을 선택합니다.</block>
+  <block id="02b80ac4962fa1aa89a11e655a3bd996" category="list-text">*호스트 정보*에서 *액세스 모드*로 *local*을 선택한 다음 *편집*을 선택합니다.</block>
+  <block id="6d33f82590752283d027e2c7394ab829" category="paragraph">AIX 호스트용 스토리지 장치가 SnapMirror 액티브 동기화 보호 기능을 사용할 준비가 되었습니다.</block>
+  <block id="55aa696f6eeaf20f8cd5f18a42f214dd" category="paragraph">SnapMirror 액티브 동기화를 구성하기 위한 System Manager 절차는 ASA r2 시스템과 통합 ONTAP 퍼스널리티를 실행하는 NetApp FAS, AFF 및 ASA 시스템에서 서로 다르지만, SnapMirror 액티브 동기화의 요구 사항, 아키텍처 및 작동 방식은 동일합니다.<block ref="a4d3fa0a90b98ed30452a119486e6ae3" category="inline-link-macro-rx"></block></block>
+  <block id="1783622f273954ab75caf352332b94b9" category="paragraph">ASA r2 시스템에서 SnapMirror 액티브 동기화는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서 양쪽 사이트 모두 액티브 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다. <block ref="cd08e89ddecf5772544f56e955b2d721" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
+  <block id="98c953c1bb66d85c490522bafc5c85b5" category="list-text">ONTAP 9.19.1 RC부터 인공지능 기반 자율 랜섬웨어 보호(ARP/AI)는 ASA r2 시스템의 SnapMirror 액티브 싱크 SAN 관계에서 기본 읽기/쓰기 스토리지 장치를 지원합니다. ARP/AI는 활성 기본 스토리지 장치에서 실행되어 기본 전용 ARP 스냅샷을 생성하고 해당 스토리지 장치에 대한 머신 러닝 기반 랜섬웨어 탐지 기능을 제공합니다. ARP/AI 활성화 단계는 <block ref="1ee41ad3123e5db18e6fae76e28afe9f" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="f6948bd1b416e70ac7297904c89918c2" category="inline-link-macro">AIX 호스트를 준비합니다</block>
+  <block id="9f3699fb5ae95cc656437f0d40316b3a" category="paragraph">ONTAP 9.19.1 이상 버전을 실행 중이고 AIX 호스트에 대해 SnapMirror 활성 동기화를 활성화하는 경우 <block ref="a1eb09700bb6039b09944ad4a8beb294" category="inline-link-macro-rx"></block>를 수행해야 합니다.</block>
+  <block id="d844604326e9cd2c315729a7379f2f39" category="paragraph">ONTAP 9.19.1부터 FLI는 백엔드 연결을 위해 iSCSI 프로토콜을 지원합니다.</block>
+  <block id="01ec680b4387bb404e72e15247c25cc6" category="list-text">자세한 내용은 다음 링크를 참조하세요: https://docs.netapp.com/us-en/ontap-fli/get-started/learn-about-data-migration.html[ONTAP FLI 마이그레이션^].</block>
+  <block id="2f99f456cfdb820f75a7c3148365f63b" category="section-title">TLS 하드웨어 오프로드</block>
+  <block id="0cb676b13f3e5b88d1d96f6dc967fbf0" category="paragraph">지원되는 이더넷 카드로 전체 클러스터의 전송 계층 보안(TLS) 암호화 및 복호화를 오프로드할 수 있습니다. 이를 통해 CPU 오버헤드가 줄어들고 TLS를 사용하는 시스템의 성능이 향상됩니다.</block>
+  <block id="6fa5dce098144939c83d2d3fe4ca7e8d" category="inline-link-macro">TLS 하드웨어 오프로드 구성 방법을 알아보세요.</block>
+  <block id="9433af924bd16d2b5d6282d91d613926" category="paragraph"><block ref="669de2e9a90723c75d4b935770e4df97" category="inline-link-macro-rx"></block>.</block>
+  <block id="9446a98ad14416153cc4d45ab8b531bf" category="section-title">성능</block>
+  <block id="2f7da8b0d24f58aae7a1dc8db2ca277d" category="paragraph">ASA r2 시스템에서 지원되는 일반적인 성능 기능에 대해 자세히 알아보십시오.</block>
+  <block id="61dd3b29ebbda633eaa5595a4948d71f" category="section-title">자동 QoS 처리량 상한 증가를 제어하는 기본 설정을 수정합니다.</block>
+  <block id="a05bc26fbb935d2a28e26f1e40856f67" category="paragraph">적응형 및 비적응형 QoS 정책 그룹은 기본적으로 워크로드의 처리량 상한을 1초 동안 50%까지 일시적으로 높여 단기적인 성능 향상 요구에 대응하도록 자동으로 활성화됩니다. ONTAP 9.19.1부터는 이러한 기본 설정을 수정할 수 있습니다. ONTAP 9.18.1 이하 버전에서는 이러한 설정을 변경할 수 없습니다.</block>
+  <block id="60315893e2acf5905698d5d0f606fd10" category="inline-link-macro">QoS 처리량 상한에 대해 자세히 알아보십시오</block>
+  <block id="90845cd8ac5d10e2937758f233798b78" category="paragraph"><block ref="d91291c9e48585273f64f9043b3d3422" category="inline-link-macro-rx"></block>.</block>
+  <block id="4f27a34799ad8580f67b93c57e242ad0" category="section-title">SAN 구성</block>
+  <block id="0049b7998bb071bfe030bf33eb2c9de3" category="paragraph">SAN(스토리지 영역 네트워크)은 iSCSI 또는 FC와 같은 SAN 전송 프로토콜을 통해 호스트에 연결된 스토리지 솔루션으로 구성됩니다. 하나 이상의 스위치를 통해 스토리지 솔루션이 호스트에 연결되도록 SAN을 구성할 수 있습니다. iSCSI를 사용하는 경우 스위치를 사용하지 않고 스토리지 솔루션이 호스트에 직접 연결되도록 SAN을 구성할 수도 있습니다.</block>
+  <block id="ea188495f5bc167e82a7fbff3f977e1f" category="section-title">SAN 직접 연결</block>
+  <block id="89dd72f722952148a52848398de2af98" category="paragraph">ONTAP 9.19.1부터 FC 및 FC-NVMe 호스트와 ONTAP 스토리지 간의 연결을 설정하는 데 FC 스위치가 필요하지 않습니다. 호스트는 ASA r2 시스템의 FC 어댑터 포트에 직접 연결할 수 있습니다. 직접 연결 기능은 특히 간편함이 중요한 원격 사이트 및 하이브리드 환경에서 유용합니다.</block>
+  <block id="d6fda1bbe79a70e1ad34ce9857102a6f" category="inline-link-macro">SAN 직접 연결에 대해 자세히 알아보십시오</block>
+  <block id="6ae2ce2d58a3fa8990ebae194277f9c3" category="list-text"><block ref="ca36c2c6ca138f3af9323afde8970be4" category="inline-link-macro-rx"></block>.</block>
+  <block id="be475f74890bbcee818b4dcaa88fc2ef" category="paragraph">스토리지 효율성은 스토리지 시스템이 스토리지 리소스를 최적화하고, 낭비되는 공간을 최소화하며, 기록되는 데이터의 물리적 크기를 줄임으로써 사용 가능한 공간을 얼마나 효과적으로 활용하는지를 나타내는 척도입니다.</block>
+  <block id="470668cf61ea3bcd6e1cb686cce301ab" category="paragraph">ONTAP는 스토리지 사용량을 최적화하고 비용을 절감하는 데 도움이 되는 다양한 스토리지 효율성 기술을 제공합니다.</block>
+  <block id="4064dbb2da19e8796b10f1c59bc4f23a" category="inline-link-macro">ONTAP 스토리지 효율성 기술에 대해 자세히 알아보십시오</block>
+  <block id="a8421094cc908d8f315c1ab2f19b8085" category="paragraph"><block ref="fddba30123b8f0cdf7b9e22a9b2eaad2" category="inline-link-macro-rx"></block>.</block>
+  <block id="d2faa14ab70288d07188a62b2f1242e8" category="section-title">전역 중복 제거</block>
+  <block id="3cc42248c8d3e1724108887db39a1fc0" category="inline-link-macro">기존 ONTAP 중복제거 공간 절약 효과</block>
+  <block id="dfa4d4587562c16f4a5925d3b5594a9e" category="paragraph">ONTAP 9.19.1부터 _글로벌 중복 제거_ 기능이 <block ref="c7d4c0ceea3d0bc35cdb8645e84b0be9" category="inline-link-macro-rx"></block> 스토리지 유닛 수준에서 전체 스토리지 가용성 영역(SAZ)으로 확장되었습니다. SAZ 내 모든 스토리지 유닛에서 중복 데이터 블록을 제거함으로써 스토리지 효율성을 크게 향상시키고 총 소유 비용을 절감할 수 있습니다. 글로벌 중복 제거는 기능 라이선스가 필요하지 않으며 기본적으로 활성화되어 있고 기존 스토리지 효율성 기술과 원활하게 통합되며 최소한의 성능 영향으로 투명하게 작동하고 관리자 구성이 필요하지 않습니다.</block>
+  <block id="65481be362fd14e3b943e8347948143f" category="paragraph">ONTAP 9.19.1부터 SnapMirror 액티브 동기화 보호를 활성화할 계획인 AIX LUN을 생성하는 경우 *호스트 정보*에서 *액세스 모드*에 대해 *로컬*을 선택합니다. 이는 투명한 애플리케이션 페일오버를 활성화하는 데 필요합니다.</block>
+  <block id="b8cd8dd355516b19f7a3260bfd645929" category="paragraph">ASA r2 시스템의 각 HA 쌍은 _스토리지 가용성 영역_이라는 공통 스토리지 풀을 사용합니다. 스토리지 가용성 영역은 스토리지 시스템의 사용 가능한 모든 디스크에 액세스할 수 있으며 HA 쌍의 두 노드 모두에서 볼 수 있습니다. 스토리지 가용성 영역의 사용 가능한 공간을 모니터링하면 필요에 따라 사용량을 줄이거나 용량을 늘려 공간 부족으로 인한 워크로드 장애를 방지할 수 있습니다.</block>
+  <block id="f1c9e9af80bb533618f5bdefe333747d" category="inline-link-macro">인사이트</block>
+  <block id="ebafe46641c676ef6ab5894f79ff62ab" category="paragraph">ONTAP 9.19.1부터 ASA r2 시스템 HA 쌍 중 하나의 스토리지 가용성 영역이 용량에 가까워지면 System Manager *Insights*에 알림이 표시됩니다. System Manager에 대해 자세히 알아보십시오<block ref="41fc10ce3fe36daf8df250e4d0c01ea9" category="inline-link-macro-rx"></block>.</block>
+  <block id="1546607861bbb550ca3750055c66328f" category="paragraph">*스토리지 유닛* 아래에 스토리지 가용성 영역의 모든 스토리지 유닛 목록이 표시됩니다.</block>
+  <block id="2e9d0a1cf17808045f957a3e9c93942b" category="paragraph">스토리지 가용성 영역의 공간이 부족한 경우 클러스터 전체의 스토리지 사용률 균형을 맞추기 위해 다른 스토리지 가용성 영역으로 <block ref="a3223fe003597dcfd7b6d75426783c5a" category="inline-link-macro-rx"></block>하거나, 공간 확보를 위해 스냅샷을 삭제하거나, 용량을 늘리기 위해 노드에 디스크를 추가하는 것을 계획해야 합니다.</block>
+  <block id="f81baecda64413757c058ded626fcc01" category="summary">ASA r2 시스템용 ONTAP 9.19.1에서 제공되는 새로운 기능에 대해 알아보십시오.</block>
+  <block id="2be5fa0f2f2942f164632e2517148f97" category="doc">ASA r2 시스템용 ONTAP 9.19.1의 새로운 기능</block>
+  <block id="3f1aac64a6f9339cbf436a8cebfe6bf1" category="inline-link-macro">SnapMirror 액티브 동기화를 위한 AIX 호스트 지원</block>
+  <block id="a8e9a396c69578ce7333f984da64c336" category="cell"><block ref="a8e9a396c69578ce7333f984da64c336" category="inline-link-macro-rx"></block></block>
+  <block id="555e7d49883fdeee7ee35940a1e0422a" category="cell">AIX용 투명 애플리케이션 페일오버는 대칭형 액티브/액티브 구성에서 SnapMirror 액티브 동기화를 통해 지원됩니다.</block>
+  <block id="f3c0ac77cfd922d5495f5c32bde93fef" category="inline-link-macro">iSCSI 프로토콜용 ONTAP FLI(Foreign LUN Import) 지원</block>
+  <block id="571961045f6acced447011686935e734" category="cell"><block ref="571961045f6acced447011686935e734" category="inline-link-macro-rx"></block></block>
+  <block id="41e5e49b6c7d76352e103517e3eef2b2" category="cell">ONTAP Foreign LUN Import(FLI)는 백엔드 연결을 위해 iSCSI 프로토콜을 지원합니다.</block>
+  <block id="911fbb20c80fb962a01d41ff494bdac4" category="inline-link-macro">직접 연결 FC 구성 지원</block>
+  <block id="832bd89ad9f3cb073b0b1c7a24fda2ad" category="cell"><block ref="832bd89ad9f3cb073b0b1c7a24fda2ad" category="inline-link-macro-rx"></block></block>
+  <block id="9d255f8061d2c26397587d57452560a3" category="cell">FC 및 FC-NVMe 호스트와 ONTAP 스토리지 간의 연결을 설정하는 데 FC 스위치는 필요하지 않습니다. 호스트는 ASA r2 시스템의 FC 어댑터 포트에 직접 연결할 수 있습니다. 이러한 직접 연결 기능은 특히 단순성이 중요한 원격 사이트 및 하이브리드 환경에서 유용합니다.</block>
+  <block id="1c1e4bbac513ca426ea459850a27cf80" category="inline-link-macro">SnapMirror 활성 동기화 관계를 통한 ARP/AI 지원</block>
+  <block id="06c698f9402b1596702afca5eb290c16" category="cell"><block ref="06c698f9402b1596702afca5eb290c16" category="inline-link-macro-rx"></block></block>
+  <block id="ae5b88290cbba1c2143301d124dcbbbf" category="cell">인공지능 기반 자율 랜섬웨어 보호(ARP/AI)는 ASA r2 시스템의 SnapMirror 활성 동기화 관계에 있는 기본 읽기/쓰기 스토리지 유닛을 지원합니다. ARP/AI는 활성 기본 스토리지 유닛에서 실행되어 기본 전용 ARP 스냅샷을 생성하고 해당 스토리지 유닛에 대한 머신 러닝 기반 랜섬웨어 탐지 기능을 제공합니다.</block>
+  <block id="281fd14262fa7c1793e3c18dfd336f7f" category="inline-link-macro">TLS 하드웨어 오프로드 지원</block>
+  <block id="1c03eaa9510cac0323e8851def881c41" category="cell"><block ref="1c03eaa9510cac0323e8851def881c41" category="inline-link-macro-rx"></block></block>
+  <block id="856d2008511fbcc3fde42bc9df07cc74" category="inline-link-macro">전역 중복 제거 지원</block>
+  <block id="c2aae43e9678be7b1ccbf9e69e5c7eb2" category="cell"><block ref="c2aae43e9678be7b1ccbf9e69e5c7eb2" category="inline-link-macro-rx"></block></block>
+  <block id="497405d1bfd083677d0d9555d9027d88" category="cell">글로벌 데이터 중복 제거는 기존 ONTAP 데이터 중복 제거를 통해 확보되는 공간 절약 효과를 전체 Storage Availability Zone(SAZ)으로 확장합니다. SAZ 내 모든 스토리지 장치에서 중복 데이터 블록을 제거함으로써 스토리지 효율성을 크게 향상시키고 총 소유 비용을 절감할 수 있습니다. 글로벌 데이터 중복 제거는 기본적으로 활성화되어 있으며 관리자 구성 없이 투명하게 작동합니다.</block>
+  <block id="92da55166137739e02f5b936f74380ee" category="section-title">스토리지 리소스 관리</block>
+  <block id="111932fc1f94afb73674c79d84d3c63f" category="inline-link-macro">System Manager에서 스토리지 가용성 영역 용량 알림 지원</block>
+  <block id="445c41dab6c25da30423427c5174c083" category="cell"><block ref="445c41dab6c25da30423427c5174c083" category="inline-link-macro-rx"></block></block>
+  <block id="63c3c3a7296a9754070057942295221b" category="cell">ASA r2 시스템의 스토리지 가용성 영역 용량이 거의 다 차면 System Manager에 경고가 표시됩니다.</block>
+  <block id="06d8255b249000a8dc1ea05905facab1" category="inline-link-macro">자동 QoS 처리량 상한 증가를 제어하는 기본 설정을 수정하는 기능에 대한 지원이 제공됩니다.</block>
+  <block id="5ebe4d2005a9bf12b4599600d5b37a74" category="cell"><block ref="5ebe4d2005a9bf12b4599600d5b37a74" category="inline-link-macro-rx"></block></block>
+  <block id="526357124bf4a788b83696c381ec921e" category="cell">QoS 정책 그룹이 단기적인 성능 향상 요구에 대응하여 QoS 처리량 상한을 자동으로 높이는 방식을 제어하는 기본 설정을 수정할 수 있습니다. 이러한 설정은 ONTAP 9.18.1 이하 버전에서는 수정할 수 없습니다.</block>
+  <block id="f683581d3e75f05f9d9215f9b4696cef" category="section-title">업그레이드</block>
+  <block id="446769ecfd2416f049608620cc994ac8" category="inline-link-macro">자동 업그레이드 전 점검을 위한 향상된 보고 기능</block>
+  <block id="368f083985829ad76ae5f8d7530fbd0e" category="cell"><block ref="368f083985829ad76ae5f8d7530fbd0e" category="inline-link-macro-rx"></block></block>
+  <block id="2b1cc84feb959647df3e34b19f0fa843" category="cell">자동화된 업그레이드 전 검사를 실행할 때 오류와 경고가 별도로 표시되어 업그레이드 전에 해결해야 할 문제를 쉽게 파악할 수 있습니다.</block>
+  <block id="064aa1a0e3e542c891816ff0102a8eca" category="summary">ASA r2 클러스터에 Autonomous Ransomware Protection 라이센스가 설치되어 있는 경우 ONTAP 9.18.1로 업그레이드하거나 새 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간 후에 기존 및 새로 생성된 모든 스토리지 유닛에서 ARP가 기본적으로 설정됩니다.</block>
+  <block id="c21e619b6e99a5ee7d89c9b052f96fb0" category="summary">AI 기반 ARP를 활성화하면 잠재적인 랜섬웨어 위협을 감지하고, 데이터를 보호하기 위한 조치를 자동으로 취하며, System Manager에 경고 메시지를 표시하여 의심스러운 활동을 알려줍니다.</block>
+  <block id="99705e545197778e8e90edce81239e6b" category="paragraph">ARP는 SAN 환경에서 끊임없이 진화하는 랜섬웨어를 탐지하는 머신러닝 기반의 안티랜섬웨어 분석 모델을 도입하여 사이버 복원력을 향상시킵니다. ARP의 머신러닝 모델은 모의 랜섬웨어 공격 전후의 대규모 파일 데이터셋을 사용하여 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 이 학습 결과로 생성된 사전 학습 모델은 ONTAP에 포함되어 제공됩니다. 이 모델은 접근하거나 수정할 수 없습니다. ARP/AI는 활성화 즉시 사용 가능하며, <block ref="3fa1bfd584351c2c430a6346ba4b1ef3" category="inline-link-macro-rx"></block>이 없습니다.</block>
+  <block id="32993ed903bc1884ece0b04175a7a552" category="list-text">ONTAP 9.19.1 RC부터 인공 지능 기반 자율 랜섬웨어 보호(ARP/AI)는 ASA r2 시스템의 SnapMirror 액티브 동기화 SAN 관계에서 운영 읽기-쓰기 스토리지 유닛을 지원합니다. ARP/AI는 활성 운영 스토리지 유닛에서 실행되고, 운영 전용 ARP 스냅샷을 생성하며, 해당 스토리지 유닛에 대한 머신 러닝 기반 랜섬웨어 탐지를 제공합니다.</block>
+  <block id="0da4b61d19faba4a01242d2539243538" category="list-text">ARP/AI는 SnapLock으로 보호되는 스토리지 유닛에서 지원되지 않습니다.</block>
+  <block id="df2caa7829ca66f49ae2621799defacd" category="summary">ASA r2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안을 구성하여 데이터 보안을 강화할 수 있습니다.</block>
+  <block id="51e4b174c948dff20235dc02acc443e7" category="summary">NVMe TCP over TLS를 구성하여 NVMe TCP 호스트와 ONTAP 간에 네트워크를 통해 전송되는 모든 데이터를 암호화함으로써 데이터 보안을 강화하십시오.</block>
+  <block id="4cc34abbf04951a48585b5548e80ee6b" category="summary">평소와 다른 워크로드 이벤트를 계획하고 있는 경우 AI 분석을 통한 ARP를 일시적으로 일시 중단하여 랜섬웨어 공격의 오탐지를 방지할 수 있습니다</block>
+  <block id="f89ff085af9a8e3382e45dfd5fc7eead" category="sidebar">AIX 호스트 준비</block>
+  <block id="7ceef35284e2093e2f3f2e17a1256628" category="sidebar">ONTAP 9.19.1의 새로운 기능</block>
 </blocks>

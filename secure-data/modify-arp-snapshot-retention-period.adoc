@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: secure-data/modify-arp-snapshot-retention-period.html 
-keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, arp/ai, alerts, respond, warnings, security 
+keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, ai, alerts, respond, warnings, security 
 summary: 저장소 및 비즈니스 요구 사항에 맞게 ARP 스냅샷 보존 기간을 수정하는 방법을 알아보세요. 
 ---
 = ASA r2 스토리지 시스템에서 ARP/AI 스냅샷 보존 기간 수정

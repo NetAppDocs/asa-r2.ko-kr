@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: secure-data/enable-anti-ransomware-protection.html 
-keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, arp/ai, enable 
-summary: ARP/AI를 활성화하여 잠재적인 랜섬웨어 위협을 감지하고, 자동으로 데이터를 보호하기 위한 조치를 취하고, 의심스러운 활동을 알리기 위해 시스템 관리자에 경고 메시지를 표시합니다. 
+keywords: asa r2, secure data, data security, anti-ransomware, autonomous ransomware protection, arp, ai, enable 
+summary: AI 기반 ARP를 활성화하면 잠재적인 랜섬웨어 위협을 감지하고, 데이터를 보호하기 위한 조치를 자동으로 취하며, System Manager에 경고 메시지를 표시하여 의심스러운 활동을 알려줍니다. 
 ---
 = ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 활성화하세요
 :allow-uri-read: 
@@ -13,15 +13,16 @@ summary: ARP/AI를 활성화하여 잠재적인 랜섬웨어 위협을 감지하
 [role="lead"]
 ONTAP 9.17.1부터 인공지능(AI)을 활용한 자율형 랜섬웨어 보호(ARP/AI)를 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. ARP/AI는 잠재적인 랜섬웨어 위협을 신속하게 감지하고, 데이터를 보호하기 위해 ARP 스냅샷을 자동으로 생성하며, 의심스러운 활동을 감지하면 시스템 관리자에 경고 메시지를 표시합니다.
 
-ARP는 머신러닝 모델을 활용한 랜섬웨어 분석 기능을 통해 사이버 복원력을 향상시킵니다. 이 모델은 SAN 환경에서 98%의 정확도로 끊임없이 진화하는 랜섬웨어를 탐지합니다. ARP의 머신러닝 모델은 모의 랜섬웨어 공격 전후의 대규모 파일 데이터셋을 기반으로 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 학습된 모델은 ONTAP에 포함되어 제공됩니다. 이 모델은 접근하거나 수정할 수 없습니다. ARP/AI는 활성화 즉시 작동하며, link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html#learning-and-active-modes["학습 기간"^]가 필요하지 않습니다.
+ARP는 SAN 환경에서 끊임없이 진화하는 랜섬웨어를 탐지하는 머신러닝 기반의 안티랜섬웨어 분석 모델을 도입하여 사이버 복원력을 향상시킵니다. ARP의 머신러닝 모델은 모의 랜섬웨어 공격 전후의 대규모 파일 데이터셋을 사용하여 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 이 학습 결과로 생성된 사전 학습 모델은 ONTAP에 포함되어 제공됩니다. 이 모델은 접근하거나 수정할 수 없습니다. ARP/AI는 활성화 즉시 사용 가능하며, link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html#learning-and-active-modes["학습 기간"^]이 없습니다.
 
 
 NOTE: 어떤 랜섬웨어 탐지 또는 예방 시스템도 랜섬웨어 공격으로부터 완벽한 안전을 보장할 수는 없습니다. 공격이 탐지되지 않을 수도 있지만, ARP/AI는 안티바이러스 소프트웨어가 침입을 탐지하지 못할 경우 중요한 추가 방어 계층 역할을 합니다.
 
 .이 작업에 대해
 * ARP/AI 지원이 포함되어 있습니다. link:https://kb.netapp.com/onprem/ontap/os/ONTAP_9.10.1_and_later_licensing_overview["ONTAP One 라이센스"] .
-* ARP/AI는 SnapMirror 액티브 동기화, SnapMirror 동기식 또는 SnapLock으로 보호되는 스토리지 유닛에서 지원되지 않습니다.
+* ONTAP 9.19.1 RC부터 인공 지능 기반 자율 랜섬웨어 보호(ARP/AI)는 ASA r2 시스템의 SnapMirror 액티브 동기화 SAN 관계에서 운영 읽기-쓰기 스토리지 유닛을 지원합니다. ARP/AI는 활성 운영 스토리지 유닛에서 실행되고, 운영 전용 ARP 스냅샷을 생성하며, 해당 스토리지 유닛에 대한 머신 러닝 기반 랜섬웨어 탐지를 제공합니다.
 * ONTAP 9.18.1부터는 ONTAP 9.18.1로 업그레이드하거나 새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간이 지나면 새로 생성되는 모든 스토리지 유닛에서 ARP/AI가 기본적으로 활성화됩니다.
+* ARP/AI는 SnapLock으로 보호되는 스토리지 유닛에서 지원되지 않습니다.
 * ARP/AI를 활성화한 후에는 다음을 수행해야 합니다. link:../administer/update-firmware.html#enable-automatic-updates["보안 파일에 대한 자동 업데이트를 활성화하세요"] 자동으로 새로운 보안 업데이트를 받습니다.
 
 

@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: data-protection/prepare-aix-snapmirror-active-sync.html 
+keywords: asa r2, data protection, protect data, configure, snapmirror active sync, ,disaster recovery, symmetric active active, prepare, aix 
+summary: ONTAP 9.19.1 이상을 실행하는 AIX 호스트에 대해 SnapMirror 액티브 동기화를 활성화하려면 먼저 호스트 액세스 모드를 로컬로 설정해야 합니다. 
+---
+= ASA r2 시스템에서 SnapMirror 액티브 동기화 보호를 위해 AIX 호스트 준비
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.19.1 버전부터 AIX용 투명 애플리케이션 페일오버가 대칭형 액티브/액티브 구성에서 SnapMirror 액티브 싱크를 통해 지원됩니다. SnapMirror 액티브 싱크의 데이터 보호 기능을 통해 사이트 전체 장애 발생 시에도 비즈니스 서비스가 계속 운영될 수 있으며, 보조 복사본을 사용하여 애플리케이션이 투명하게 페일오버될 수 있습니다.
+
+ONTAP 9.19.1 이상을 실행하는 AIX 호스트에 대해 SnapMirror 액티브 동기화를 활성화하려면 먼저 호스트 액세스 모드를 로컬로 설정해야 합니다. 다른 호스트 유형의 경우 액세스 모드를 선택할 필요가 없습니다. link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/interoperability-reference.html["SnapMirror 액티브 동기화를 위한 상호 운용성"^]에 대해 자세히 알아보십시오.
+
+.시작하기 전에
+ONTAP 9.19.1 이상 버전을 실행 중이어야 합니다. ONTAP 9.18.1 이하 버전을 실행 중인 경우 SnapMirror 액티브 동기화에 대한 AIX 호스트 지원을 위해 기능 정책 변경 요청(FPVR)이 필요합니다.
+
+.단계
+. System Manager에서 * Storage * 를 선택합니다.
+. SnapMirror 활성 동기화 보호를 위해 준비할 AIX 스토리지 장치의 이름 위로 마우스 커서를 가져가십시오.
+. image:icon_kabob.gif["메뉴 선택 아이콘"]를 선택한 다음 *편집*을 선택합니다.
+. *호스트 정보*에서 *액세스 모드*로 *local*을 선택한 다음 *편집*을 선택합니다.
+
+
+.다음 단계
+AIX 호스트용 스토리지 장치가 SnapMirror 액티브 동기화 보호 기능을 사용할 준비가 되었습니다.

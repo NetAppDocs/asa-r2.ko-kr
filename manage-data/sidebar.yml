@@ -56,6 +56,8 @@ entries:
     entries:
     - title: 워크플로
       url: "/data-protection/snapmirror-active-sync.html"
+    - title: AIX 호스트 준비
+      url: "/data-protection/prepare-aix-snapmirror-active-sync.html"
     - title: SnapMirror Active Sync 구성을 준비합니다.
       url: "/data-protection/snapmirror-active-sync-prepare.html"
     - title: 클러스터 구성을 확인하세요
