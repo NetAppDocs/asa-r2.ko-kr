@@ -857,7 +857,6 @@
   <block id="c3c96ea806ac83498c365d5180661ba3" category="list-text"><block ref="9b82d4f814395730025ab1c7b269e56e" prefix="" category="inline-code"></block></block>
   <block id="4dae76cd6e28c01554edf8f2fb2ff842" category="list-text"><block ref="ec9655721b41e06c690354a032042fc1" prefix="" category="inline-code"></block></block>
   <block id="f3497351aae46692e603fedb2f2cd146" category="inline-link-macro">ONTAP 명령 참조입니다</block>
-  <block id="e9631e93a04d798bea6710be4a2f5da3" category="paragraph"><block ref="585532baa3876b6b8281302459d86312" category="inline-link-macro-rx"></block>지원되는 명령의 전체 목록은 를 참조하십시오</block>
   <block id="7b25c381c7fe8ec42f4be59e49b01ffa" category="section-title">CLI를 사용하여 ONTAP ASA R2 클러스터를 설정합니다</block>
   <block id="8770069e8d7e75b723f2a51c7a6e2e49" category="inline-link-macro">System Manager를 사용하여 ONTAP ASA R2 클러스터를 설정합니다</block>
   <block id="36b66e7ec3e638a1c0d5532a210a47a1" category="paragraph">권장 <block ref="df4559a5b62289a9d3564a01abc04ba8" category="inline-link-macro-rx"></block>사항입니다. System Manager는 클러스터를 설정하고 실행하는 데 도움이 되는 빠르고 쉬운 워크플로우를 제공합니다. 하지만 ONTAP 명령 작업에 익숙한 경우 선택적으로 ONTAP CLI(Command Line Interface)를 사용하여 클러스터 설정을 할 수 있습니다. CLI를 사용하여 클러스터를 설정하면 System Manager를 사용하여 설정하는 것보다 더 많은 옵션이나 이점이 없습니다.</block>
@@ -2868,4 +2867,5 @@
   <block id="f7686fa2365fefd1997978c89bc02784" category="inline-link-macro">ONTAP FLI 마이그레이션</block>
   <block id="6be3407e36219b0795158b00b3dff0ca" category="list-text"><block ref="ca933b90c89fa23c09167e20b9cccb24" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
   <block id="8b046b3216eeb1b646506eacab8f767f" category="paragraph"><block ref="ca9cf0fa026ed1f702f811d5351a5f40" category="inline-link-macro-rx"></block>.</block>
+  <block id="44fb59de1e9bca7d7d33dee185838ea7" category="paragraph">지원되지 않는다고 명시된 경우를 제외하고, <block ref="585532baa3876b6b8281302459d86312" category="inline-link-macro-rx"></block>의 나머지 모든 명령어는 ASA r2 시스템에서 지원됩니다.</block>
 </blocks>

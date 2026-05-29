@@ -42,12 +42,8 @@ indexpage:
       url: https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf
     - title: NetApp ASA 시스템을 위한 모범 사례
       url: https://www.netapp.com/pdf.html?item=/media/137426-tr-5009-best-practices-for-netapp-asa.pdf
-    - title: NetApp ASA 의 FlexPod
-      url: https://www.netapp.com/pdf.html?item=/media/135828-flexpod-san-ucs-xdirect-asa-nva-deploy-guide.pdf
     - title: REST API 전환 가이드
       url: https://www.netapp.com/media/136585-tr-5008-restfulapi-transition-guide-asa-r2.pdf
-    - title: ASA r2 시스템을 위한 SnapCenter 작업
-      url: https://docs.netapp.com/us-en/snapcenter/get-started/learn-about-snapcenter-support-for-asa-r2-systems.html
     - title: NetApp ASA 에서의 Oracle 데이터베이스 성능
       url: https://www.netapp.com/pdf.html?item=/media/138087-tr-5015-oracle-perf-on-asa.pdf
     - title: FCP를 사용하는 NetApp ASA 시스템의 SAP HANA
@@ -56,6 +52,10 @@ indexpage:
     links:
     - title: 기타 ONTAP 시스템 설명서
       url: https://docs.netapp.com/us-en/ontap-family/
+    - title: NetApp ASA 의 FlexPod
+      url: https://www.netapp.com/pdf.html?item=/media/135828-flexpod-san-ucs-xdirect-asa-nva-deploy-guide.pdf
+    - title: ASA r2 시스템을 위한 SnapCenter 작업
+      url: https://docs.netapp.com/us-en/snapcenter/get-started/learn-about-snapcenter-support-for-asa-r2-systems.html
     - title: vSphere에 ONTAP 사용하는 이점에 대해 알아보세요
       url: https://docs.netapp.com/us-en/ontap-apps-dbs/vmware/vmware-vsphere-why.html
     - title: ONTAP 사용한 VMware 라이브 사이트 복구

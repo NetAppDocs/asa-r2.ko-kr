@@ -15,6 +15,8 @@ ASA r2 시스템의 스토리지 계층은 집계 대신 스토리지 가용성 
 
 이러한 저장소 관리에 대한 간소화된 접근 방식으로 인해  `storage aggregate` ASA r2 시스템에서는 명령이 지원되지 않습니다.  `lun` ,  `storage` 그리고  `volume` 명령과 매개변수도 제한적이다.
 
+지원되지 않는다고 명시된 경우를 제외하고, link:https://docs.netapp.com/us-en/ontap-cli/["ONTAP 명령 참조입니다"]의 나머지 모든 명령어는 ASA r2 시스템에서 지원됩니다.
+
 다음 명령 및 명령 세트는 R2의 ASA에서 지원되지 않습니다.
 
 .지원되지 않는 <code> LUN </code> 명령입니다
@@ -139,9 +141,6 @@ NOTE: 그만큼  `lun move-in-volume` 명령은 다음으로 대체됩니다.  `
 
 
 ====
-.를 참조하십시오
-link:https://docs.netapp.com/us-en/ontap-cli/["ONTAP 명령 참조입니다"]지원되는 명령의 전체 목록은 를 참조하십시오
-
 
 
 == CLI를 사용하여 ONTAP ASA R2 클러스터를 설정합니다
