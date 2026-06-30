@@ -852,7 +852,6 @@
   <block id="a75bf2b9e1da63b60510e670e13280f5" category="example-title">지원되지 않는 &lt;code&gt; storage &lt;/code&gt; 명령입니다</block>
   <block id="96e3e25ced73cbc3087692d33e698dfc" category="list-text"><block ref="c1391c72a0f399cab63e0f906219eba1" prefix="" category="inline-code"></block></block>
   <block id="db03a3b1b5e9221c407a3226384456b7" category="list-text"><block ref="852ce55a153bc728405ba8a2c95bcdf1" prefix="" category="inline-code"></block></block>
-  <block id="cb493146003b5096fb9dbce0cf86abad" category="list-text"><block ref="f0f37fae9d089110c4fb0245013845fb" prefix="" category="inline-code"></block></block>
   <block id="2134111bb81c1ada4be502decedecb30" category="list-text"><block ref="3c698d76925a2f101122edd72990fc94" prefix="" category="inline-code"></block></block>
   <block id="c3c96ea806ac83498c365d5180661ba3" category="list-text"><block ref="9b82d4f814395730025ab1c7b269e56e" prefix="" category="inline-code"></block></block>
   <block id="4dae76cd6e28c01554edf8f2fb2ff842" category="list-text"><block ref="ec9655721b41e06c690354a032042fc1" prefix="" category="inline-code"></block></block>
@@ -950,7 +949,6 @@
   <block id="4428c7556a1eea23721f907d8d23eb21" category="inline-link-macro">스냅샷을 잠그는 방법에 대해 알아봅니다</block>
   <block id="19deecdd8b763ce6f48eadb0070d24cd" category="list-text"><block ref="f5c7881d0f64c83ae31bbc947dffd4c1" category="inline-link-macro-rx"></block> ASA R2 시스템에서.</block>
   <block id="a45dbe7c067a9974c8fca40e2b212fd6" category="inline-link-macro">이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다</block>
-  <block id="bcdcf9cfaaa690edc9d618403dd65057" category="list-text"><block ref="285ab21de69619aa33a3697c0850e834" category="inline-link-macro-rx"></block> ASA R2 시스템의 데이터로 이동합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
@@ -1235,7 +1233,6 @@
   <block id="2906636dbf4e4249f5399e9553d745b9" category="paragraph">유휴 상태의 데이터를 암호화할 때 스토리지 미디어가 용도 변경하거나 반환되거나 잘못 배치되거나 도난당하는 경우에는 읽을 수 없습니다. ONTAP System Manager를 사용하여 하드웨어 및 소프트웨어 수준에서 데이터를 암호화하여 이중 계층 보호를 제공할 수 있습니다.</block>
   <block id="7b51e981529660667d1414c7a37e2172" category="paragraph">NSE(NetApp 스토리지 암호화)는 자체 암호화 드라이브(SED)를 이용한 하드웨어 암호화를 지원합니다. SED는 데이터가 기록될 때 데이터를 암호화합니다. 각 SED에는 고유한 암호화 키가 포함되어 있습니다. SED에 저장된 암호화된 데이터는 SED의 암호화 키가 없으면 읽을 수 없습니다. SED에서 읽기를 시도하는 노드는 SED의 암호화 키에 액세스하려면 인증을 받아야 합니다. 노드는 키 관리자로부터 인증 키를 받은 다음 SED에 인증 키를 제공하여 인증됩니다. 인증 키가 유효한 경우 SED는 노드에 포함된 데이터에 액세스할 수 있는 암호화 키를 노드에 제공합니다.</block>
   <block id="97453174e9fea59b5b73518b257f2785" category="paragraph">ASA R2 온보드 키 관리자 또는 외부 키 관리자를 사용하여 노드에 인증 키를 제공합니다.</block>
-  <block id="2a1bd1bede081db0130e4d43abfae163" category="paragraph">NSE 이외에 소프트웨어 암호화를 사용하여 데이터에 더 많은 보안 계층을 추가할 수도 있습니다.</block>
   <block id="c3895fd1cc061addf95194af9659baa6" category="list-text">System Manager에서 * 클러스터 &gt; 설정 * 을 선택합니다.</block>
   <block id="b59449d4094d1449f93a0de73791997c" category="list-text">보안 * 섹션의 * 암호화 * 에서 * 구성 * 을 선택합니다.</block>
   <block id="9bd21eab9d09006d0846084b0f1b970d" category="list-text">Key Manager를 설정한다.</block>
@@ -2868,4 +2865,11 @@
   <block id="6be3407e36219b0795158b00b3dff0ca" category="list-text"><block ref="ca933b90c89fa23c09167e20b9cccb24" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
   <block id="8b046b3216eeb1b646506eacab8f767f" category="paragraph"><block ref="ca9cf0fa026ed1f702f811d5351a5f40" category="inline-link-macro-rx"></block>.</block>
   <block id="44fb59de1e9bca7d7d33dee185838ea7" category="paragraph">지원되지 않는다고 명시된 경우를 제외하고, <block ref="585532baa3876b6b8281302459d86312" category="inline-link-macro-rx"></block>의 나머지 모든 명령어는 ASA r2 시스템에서 지원됩니다.</block>
+  <block id="a809a3f67f68e189b93c920155d8f362" category="list-text">NetApp Aggregate Encryption(NAE)</block>
+  <block id="2b115325b25b8f67f05803e840eb1b7c" category="paragraph">ASA r2 시스템은 자체 암호화 드라이브(SED)를 사용한 하드웨어 암호화와 NetApp 볼륨 암호화(NVE) 기술을 사용한 소프트웨어 암호화를 지원합니다. <block ref="285ab21de69619aa33a3697c0850e834" category="inline-link-macro-rx"></block> ASA r2 시스템의 데이터를 보호합니다.</block>
+  <block id="f5c9d4c28f92d0b49036a87f3b949ecc" category="paragraph">NSE 외에도 소프트웨어 암호화를 활성화하여 데이터에 또 다른 보안 계층을 추가할 수 있습니다. ASA r2 시스템은 NetApp Volume Encryption(NVE) 기술을 사용하여 소프트웨어 수준에서 데이터를 암호화합니다. NetApp Aggregate Encryption(NAE)은 ASA r2 시스템의 스토리지 계층이 애그리게이트 대신 스토리지 가용성 존을 사용하기 때문에 ASA r2 시스템에서 지원되지 않습니다.</block>
+  <block id="c4b8c29f448328e82ce27062b5fd9c28" category="inline-link-macro">NetApp 볼륨 암호화</block>
+  <block id="3b02d77db56f5837a4003247043c2394" category="paragraph"><block ref="31c33696bbbaa92dffde7abe3995709d" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
+  <block id="a77592aaf5c220b3ff9f169a775bd853" category="inline-link-macro">ASA r2 시스템과 다른 ONTAP 시스템의 차이점</block>
+  <block id="a3516695dad8c94bdcdc3a67a8d5dd34" category="paragraph"><block ref="539f35f6411ebaaeab190de38a065f4e" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
 </blocks>

@@ -21,7 +21,11 @@ NOTE: ASA r2 시스템에서는 SED가 NVMe 기반 SSD에 대해서만 지원됩
 
 ASA R2 온보드 키 관리자 또는 외부 키 관리자를 사용하여 노드에 인증 키를 제공합니다.
 
-NSE 이외에 소프트웨어 암호화를 사용하여 데이터에 더 많은 보안 계층을 추가할 수도 있습니다.
+NSE 외에도 소프트웨어 암호화를 활성화하여 데이터에 또 다른 보안 계층을 추가할 수 있습니다. ASA r2 시스템은 NetApp Volume Encryption(NVE) 기술을 사용하여 소프트웨어 수준에서 데이터를 암호화합니다. NetApp Aggregate Encryption(NAE)은 ASA r2 시스템의 스토리지 계층이 애그리게이트 대신 스토리지 가용성 존을 사용하기 때문에 ASA r2 시스템에서 지원되지 않습니다.
+
+link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["NetApp 볼륨 암호화"^]에 대해 자세히 알아보십시오.
+
+link:https://docs.netapp.com/us-en/asa-r2/learn-more/hardware-comparison.html["ASA r2 시스템과 다른 ONTAP 시스템의 차이점"]에 대해 자세히 알아보십시오.
 
 .단계
 . System Manager에서 * 클러스터 > 설정 * 을 선택합니다.

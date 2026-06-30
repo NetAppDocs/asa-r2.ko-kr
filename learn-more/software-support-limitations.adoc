@@ -24,6 +24,7 @@ ASA R2 시스템에서는 기본 네트워킹 LIF가 NVMe와 SCSI 호스트 간�
 * FabricPool
 * LUN 일반 프로비저닝
 * MetroCluster
+* NetApp Aggregate Encryption(NAE)
 * 오브젝트 프로토콜
 * ONTAP S3 SnapMirror 및 S3 API
 
@@ -35,7 +36,7 @@ link:../secure-data/ransomware-protection.html["스냅샷을 잠그는 방법에
 
 * 이중 계층 암호화
 +
-link:../secure-data/encrypt-data-at-rest.html["이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다"] ASA R2 시스템의 데이터로 이동합니다.
+ASA r2 시스템은 자체 암호화 드라이브(SED)를 사용한 하드웨어 암호화와 NetApp 볼륨 암호화(NVE) 기술을 사용한 소프트웨어 암호화를 지원합니다. link:../secure-data/encrypt-data-at-rest.html["이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다"] ASA r2 시스템의 데이터를 보호합니다.
 
 
 

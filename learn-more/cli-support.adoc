@@ -40,7 +40,6 @@ NOTE: 그만큼  `lun move-in-volume` 명령은 다음으로 대체됩니다.  `
 ====
 * `storage failover show-takeover`
 * `storage failover show-giveback`
-* `storage aggregate relocation`
 * `storage disk assign`
 * `storage disk partition`
 * `storage disk reassign`
