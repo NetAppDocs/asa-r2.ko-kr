@@ -13,7 +13,7 @@ summary: ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에�
 [role="lead"]
 동영상에 대해 다음 `Replicate data to a remote cluster from an ASA r2 storage system` 내용이 제공됩니다.
 
-link:videos-common-tasks.html#video_transcript_return_replicate_data["페이지로 돌아갑니다"]
+link:videos-common-tasks.html["페이지로 돌아갑니다"]
 
 ONTAP System Manager를 사용하면 스토리지 유닛 또는 정합성 보장 그룹의 스냅샷을 예약하고 원격 위치에 복제하여 데이터를 보호할 수 있습니다.
 

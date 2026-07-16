@@ -15,6 +15,7 @@ System Manager를 사용하여 사용자 계정에 대한 Active Directory 도�
 
 
 
+[[configure-active-directory-domain-controller-access]]
 == Active Directory 도메인 컨트롤러 액세스를 구성합니다
 
 AD 계정 액세스를 설정할 수 있도록 클러스터 또는 스토리지 VM에 대한 AD(Active Directory) 도메인 컨트롤러 액세스를 구성합니다.
@@ -29,6 +30,7 @@ AD 계정 액세스를 설정할 수 있도록 클러스터 또는 스토리지 
 
 
 
+[[configure-ldap]]
 == LDAP를 구성합니다
 
 LDAP(Lightweight Directory Access Protocol) 서버를 구성하여 인증을 위한 사용자 정보를 중앙에서 관리합니다.
@@ -47,6 +49,7 @@ LDAP(Lightweight Directory Access Protocol) 서버를 구성하여 인증을 위
 
 
 
+[[configure-saml-authentication]]
 == SAML 인증을 구성합니다
 
 SAML(Security Assertion Markup Language) 인증을 사용하면 Active Directory 및 LDAP와 같은 직접 서비스 공급자 대신 IDP(Secure Identity Provider)에서 사용자를 인증할 수 있습니다.
@@ -80,6 +83,7 @@ IDP 시스템에 인증 화면이 표시됩니다.
 
 
 
+[[create-user-account-roles]]
 == 사용자 계정 역할을 생성합니다
 
 클러스터 관리자 및 스토리지 VM 관리자의 역할은 클러스터가 초기화될 때 자동으로 생성됩니다. 추가 사용자 계정 역할을 생성하여 역할에 할당된 사용자가 클러스터에서 수행할 수 있는 특정 기능을 정의합니다.
@@ -100,6 +104,7 @@ IDP 시스템에 인증 화면이 표시됩니다.
 
 
 
+[[create-an-administrator-account]]
 == 관리자 계정을 만듭니다
 
 계정 사용자가 계정에 할당된 역할에 따라 클러스터에서 특정 작업을 수행할 수 있도록 관리자 계정을 생성합니다. 계정 보안을 강화하려면 계정을 만들 때 MFA(다중 요소 인증)를 설정합니다.

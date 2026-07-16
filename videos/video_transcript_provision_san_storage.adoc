@@ -13,7 +13,7 @@ summary: ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에�
 [role="lead"]
 동영상에 대해 다음 `Provision SAN storage on your ASA r2 storage system` 내용이 제공됩니다.
 
-link:videos-common-tasks.html#video_transcript_return_provision_san_storage["페이지로 돌아갑니다"]
+link:videos-common-tasks.html["페이지로 돌아갑니다"]
 
 ONTAP System Manager를 사용하면 ASA R2 스토리지 시스템의 호스트에 대한 스토리지 유닛을 쉽고 빠르게 프로비저닝할 수 있습니다.
 

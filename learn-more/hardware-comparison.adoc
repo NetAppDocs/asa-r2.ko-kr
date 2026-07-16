@@ -27,6 +27,7 @@ ASA r2 시스템으로 분류되는 것은 다음과 같습니다.
 
 
 
+[[personality-differences]]
 == 성격 차이
 
 ASA R2 시스템에서 ONTAP 소프트웨어가 간소화되어 필수 SAN 기능을 지원하는 동시에 SAN 관련 기능이 아닌 기능의 가시성과 가용성을 제한합니다. 예를 들어, ASA R2 시스템에서 실행되는 System Manager에는 NAS 클라이언트의 홈 디렉토리를 생성하는 옵션이 표시되지 않습니다. 이 간소화된 ONTAP 버전은 _ ASA R2 Personality _ 로 식별됩니다. ASA 시스템에서 실행되는 ONTAP는 _ ASA ONTAP Personality _ 로 식별됩니다. AFF 및 FAS ONTAP 시스템에서 실행되는 ONTAP는 _ Unified ONTAP Personality _ 로 식별됩니다. ONTAP 퍼스낼리티의 차이는 ONTAP 명령 참조(man 페이지), REST API 사양 및 해당되는 경우 EMS 메시지에서 참조된다.
@@ -43,6 +44,7 @@ ONTAP 스토리지 시스템의 특성은 변경할 수 없습니다.
 
 
 
+[[storage-layer-differences]]
 == 저장 계층 차이점
 
 ASA r2 시스템은 FAS, AFF, ASA 시스템에서 사용하는 저장 계층과 다른 단순화된 저장 계층을 사용합니다.
@@ -57,6 +59,7 @@ ASA r2 시스템의 스토리지 계층은 집계 대신 스토리지 가용성 
 
 
 
+[[summary-of-asa-r2-system-differences]]
 == ASA r2 시스템 차이점 요약
 
 ASA r2 시스템은 다음과 같은 면에서 FAS, AFF, ASA 시스템과 다릅니다.

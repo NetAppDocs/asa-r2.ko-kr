@@ -13,16 +13,32 @@ summary: ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에�
 [role="lead"]
 ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에서 일반적인 작업을 빠르고 쉽게 수행하는 방법을 보여주는 짧은 비디오를 보십시오.
 
-.ASA R2 시스템에서 SAN 프로토콜을 구성합니다
+
+
+[[configure-san-protocols-on-your-asa-r2-system]]
+== ASA R2 시스템에서 SAN 프로토콜을 구성합니다
+
+ONTAP System Manager를 사용하면 SAN 프로토콜을 빠르고 쉽게 구성할 수 있습니다. 이 예에서는 iSCSI 네트워크 인터페이스에 대한 IP 주소를 구성해 보겠습니다.
+
 video::96cf3b2d-1cbd-4fff-a6e7-b1f0014ef793[panopto]
 link:video_transcript_configure_san_protocols.html["비디오 스크립트"]
 
-[#video_transcript_return_configure_san_protocols]
-.ASA R2 시스템에서 SAN 스토리지를 프로비저닝합니다
+
+
+[[provision-san-storage-on-your-asa-r2-system]]
+== ASA R2 시스템에서 SAN 스토리지를 프로비저닝합니다
+
+ONTAP System Manager를 사용하면 ASA r2 스토리지 시스템의 호스트에 대한 스토리지 유닛을 빠르고 쉽게 프로비저닝할 수 있습니다. 이 예에서는 VMware 호스트에 6개의 새 스토리지 유닛을 생성합니다.
+
 video::1d3e1a18-7dbe-44e9-a53d-b1f0014ef7c5[panopto]
 link:video_transcript_provision_san_storage.html["비디오 스크립트"]
 
-[#video_transcript_return_provision_san_storage]
-.ASA R2 시스템에서 원격 클러스터로 데이터를 복제합니다
+
+
+[[replicate-data-to-a-remote-cluster-from-an-asa-r2-storage-system]]
+== ASA R2 스토리지 시스템에서 원격 클러스터로 데이터를 복제합니다
+
+ONTAP System Manager를 사용하면 스토리지 유닛 또는 일관성 그룹의 스냅샷을 예약하고 원격 위치로 복제하여 데이터를 보호할 수 있습니다. 이 예에서는 기존 스토리지 유닛에 대한 스냅샷을 예약합니다.
+
 video::4b78312d-1bfa-4df5-afac-b1f0014ef80e[panopto]
 link:video_transcript_replicate_data.html["비디오 스크립트"]

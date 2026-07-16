@@ -17,6 +17,7 @@ summary: 일관성 그룹의 일부인 저장 장치의 데이터를 보호하�
 
 
 
+[[add-snapshot-data-protection-to-a-consistency-group]]
 == 정합성 보장 그룹에 스냅샷 데이터 보호 기능을 추가합니다
 
 정합성 보장 그룹에 스냅샷 데이터 보호를 추가하면 사전 정의된 스케줄에 따라 정합성 보장 그룹의 로컬 스냅샷이 정기적으로 생성됩니다.
@@ -66,6 +67,7 @@ image:icon_dropdown_arrow.gif["아래쪽 파란색 화살표"]기본 정책 옆�
 
 
 
+[[remove-snapshot-data-protection-from-a-consistency-group]]
 == 정합성 보장 그룹에서 스냅샷 데이터 보호를 제거합니다
 
 정합성 보장 그룹에서 스냅샷 데이터 보호를 제거하면 정합성 보장 그룹의 모든 스토리지 유닛에 대해 스냅샷이 비활성화됩니다.

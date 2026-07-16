@@ -17,6 +17,7 @@ link:snapshot-reserve.html["ASA r2 스토리지 시스템의 스냅샷 예약에
 
 
 
+[[modify-snapshot-reserve-on-storage-units]]
 == 스토리지 유닛의 스냅샷 예약 수정
 
 다양한 스냅샷 예약 값을 설정하려면 각 저장 장치를 개별적으로 구성하세요.  모든 스토리지 유닛에 동일한 값을 사용하려면 스토리지 VM에서 스냅샷 예약을 수정합니다.
@@ -35,6 +36,7 @@ link:snapshot-reserve.html["ASA r2 스토리지 시스템의 스냅샷 예약에
 
 
 
+[[modify-snapshot-reserve-on-a-storage-vm]]
 == 스토리지 VM에서 스냅샷 예약 수정
 
 스토리지 VM의 모든 스토리지 유닛에 대해 동일한 스냅샷 예약을 설정하려면 스토리지 VM에 원하는 백분율을 적용합니다. .  스냅샷 예약이 스토리지 VM에 적용되면 스토리지 VM 내에서 새로 생성된 모든 스토리지 유닛에 적용됩니다.  설정을 수정하기 전에 생성된 저장 장치에는 적용되지 않습니다.

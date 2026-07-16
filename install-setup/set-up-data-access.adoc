@@ -15,6 +15,7 @@ summary:
 
 
 
+[[set-up-data-access-from-san-hosts]]
 == SAN 호스트에서 데이터 액세스 설정
 
 SAN 호스트에서 ASA R2 시스템에 대한 데이터 액세스를 설정하는 데 필요한 구성은 호스트 운영 체제 및 프로토콜에 따라 다릅니다. 최상의 성능과 성공적인 페일오버를 위해서는 올바른 구성이 중요합니다.
@@ -23,6 +24,7 @@ link:https://docs.netapp.com/us-en/ontap-sanhost/hu_vsphere_8.html["VMware vSphe
 
 
 
+[[migrate-vmware-virtual-machines]]
 == VMware 가상 시스템을 마이그레이션합니다
 
 ASA 스토리지 시스템에서 ASA r2 스토리지 시스템으로 VM 작업 부하를 마이그레이션해야 하는 경우 NetApp 다음을 권장합니다.link:https://www.vmware.com/products/cloud-infrastructure/vsphere-foundation["VMware vSphere vMotion을 참조하십시오"^] 데이터의 실시간, 중단 없는 마이그레이션을 수행합니다.
@@ -38,6 +40,7 @@ ASA r2 스토리지 유닛은 기본적으로 씬 프로비저닝됩니다.  VM 
 
 
 
+[[migrate-data-from-a-third-party-storage-system]]
 == 타사 스토리지 시스템에서 데이터 마이그레이션
 
 ONTAP 9.17.1부터 FLI(Foreign LUN Import)를 사용하여 타사 스토리지 시스템의 LUN에서 ASA r2 시스템으로 데이터를 마이그레이션할 수 있습니다. FLI를 사용하여 데이터 마이그레이션을 수행하면 마이그레이션 프로세스 중 데이터 손실 및 다운타임 위험을 줄이는 데 도움이 됩니다.
@@ -51,6 +54,7 @@ ONTAP 9.19.1부터 FLI는 백엔드 연결을 위해 iSCSI 프로토콜을 지�
 
 
 
+[[configure-your-asa-r2-system-as-a-storage-provider-in-your-vmware-environment]]
 == ASA R2 시스템을 VMware 환경에서 스토리지 공급자로 구성합니다
 
 VMware용 ONTAP 툴을 사용하면 ASA R2 시스템을 VMware 환경에서 스토리지 공급자로 쉽게 설정할 수 있습니다.

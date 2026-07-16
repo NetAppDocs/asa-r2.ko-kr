@@ -17,6 +17,7 @@ OCSP(온라인 인증서 상태 프로토콜)는 SSL 및 TLS(전송 계층 보�
 
 
 
+[[generate-a-certificate-signing-request]]
 == 인증서 서명 요청을 생성합니다
 
 인증서 서명 요청(CSR)을 생성하여 공용 인증서를 생성하는 데 사용할 수 있는 개인 키를 만듭니다.
@@ -34,6 +35,7 @@ OCSP(온라인 인증서 상태 프로토콜)는 SSL 및 TLS(전송 계층 보�
 
 
 
+[[add-a-trusted-certificate-authority]]
 == 신뢰할 수 있는 인증 기관을 추가합니다
 
 ONTAP TLS(전송 계층 보안)를 사용하는 응용 프로그램에 대해 신뢰할 수 있는 기본 루트 인증서 집합을 제공합니다. 필요에 따라 신뢰할 수 있는 인증 기관을 추가할 수 있습니다.
@@ -50,6 +52,7 @@ ONTAP TLS(전송 계층 보안)를 사용하는 응용 프로그램에 대해 �
 
 
 
+[[renew-or-delete-a-trusted-certificate-authority]]
 == 신뢰할 수 있는 인증 기관을 갱신하거나 삭제합니다
 
 신뢰할 수 있는 인증 기관은 매년 갱신해야 합니다. 만료된 인증서를 갱신하지 않으려면 삭제해야 합니다.
@@ -83,6 +86,7 @@ ASA R2 시스템에서 기존의 신뢰할 수 있는 인증 기관을 갱신하
 
 
 
+[[add-a-clientserver-certificate-or-local-certificate-authorities]]
 == 클라이언트/서버 인증서 또는 로컬 인증 기관을 추가합니다
 
 클라이언트/서버 인증서 또는 로컬 인증 기관을 추가하여 보안 웹 서비스를 활성화합니다.
@@ -99,6 +103,7 @@ ASA R2 시스템에서 기존의 신뢰할 수 있는 인증 기관을 갱신하
 
 
 
+[[renew-or-delete-a-clientserver-certificate-or-local-certificate-authorities]]
 == 클라이언트/서버 인증서 또는 로컬 인증 기관을 갱신하거나 삭제합니다
 
 클라이언트/서버 인증서 및 로컬 인증 기관은 매년 갱신해야 합니다. 만료된 인증서 또는 로컬 인증 기관을 갱신하지 않으려면 삭제해야 합니다.

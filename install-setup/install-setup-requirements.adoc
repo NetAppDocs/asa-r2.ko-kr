@@ -15,6 +15,7 @@ ASA R2 스토리지 시스템 및 스토리지 셸프에 필요한 장비 및 �
 
 
 
+[[equipment-needed-for-install]]
 == 설치에 필요한 장비
 
 ASA R2 스토리지 시스템을 설치하려면 다음과 같은 장비와 툴이 필요합니다.
@@ -29,12 +30,14 @@ ASA R2 스토리지 시스템을 설치하려면 다음과 같은 장비와 툴�
 
 
 
+[[lifting-precautions]]
 == 인양 주의 사항
 
 ASA R2 스토리지 시스템과 스토리지 쉘프는 무겁습니다. 이러한 품목을 들어 올리거나 이동할 때는 주의를 기울이십시오.
 
 
 
+[[storage-system-weights]]
 === 스토리지 시스템 중량
 
 ASA R2 스토리지 시스템을 이동하거나 들어올릴 때 필요한 예방 조치를 취하십시오.
@@ -72,6 +75,7 @@ image::../media/drw_g_lifting_weight_ieops-1831.svg[ASA A20 A30 또는 A50 중�
 ====
 
 
+[[storage-shelf-weights]]
 === 보관 선반 중량
 
 선반을 옮기거나 들어올릴 때 필요한 예방 조치를 취하십시오.
@@ -82,7 +86,7 @@ image::../media/drw_g_lifting_weight_ieops-1831.svg[ASA A20 A30 또는 A50 중�
 --
 NS224 선반의 무게는 최대 30.29kg(66.78lbs)입니다. 선반을 인양하려면 두 사람이 함께 작업하거나 유압식 리프트를 사용하십시오. 선반 무게의 균형을 맞추기 위해 모든 구성 요소를 선반(전면 및 후면 모두)에 보관하십시오.
 
-image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100 인양 주의]
+image::../media/drw_ns224_lifting_weight_2_ieops-2960.svg[NS224 NSM100 인양 주의]
 
 --
 .NSM100B 모듈 포함 NS224 쉘프

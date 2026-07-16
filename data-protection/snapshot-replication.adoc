@@ -25,6 +25,7 @@ link:manage-hierarchical-consistency-groups.html["계층적(부모/자식) 일�
 
 
 
+[[step-1-create-a-cluster-peer-relationship]]
 == 1단계: 클러스터 피어 관계를 생성합니다
 
 데이터를 원격 클러스터에 복제하여 데이터를 보호하려면 로컬 및 원격 클러스터 간에 클러스터 피어 관계를 생성해야 합니다.
@@ -46,6 +47,7 @@ link:manage-hierarchical-consistency-groups.html["계층적(부모/자식) 일�
 
 
 
+[[step-2-optionally-create-a-custom-replication-policy]]
 == 2단계: 선택적으로 사용자 정의 복제 정책을 만듭니다.
 
 복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.  미리 정의된 정책이 요구 사항을 충족하지 못하는 경우 사용자 정의 복제 정책을 만들 수 있습니다.
@@ -79,6 +81,7 @@ NOTE: 비동기 정책을 사용하면 데이터가 소스에 기록된 후 원�
 
 
 
+[[step-3-create-a-replication-relationship]]
 == 3단계: 복제 관계를 생성합니다
 
 스냅샷 복제 관계는 정합성 보장 그룹을 원격 클러스터에 복제할 수 있도록 ASA R2 시스템과 원격 위치 간에 접속을 설정합니다. 복제된 정합성 보장 그룹을 재해 복구 또는 데이터 마이그레이션에 사용할 수 있습니다.
@@ -170,6 +173,7 @@ source_consistency 그룹은 복제할 로컬 클러스터의 정합성 보장 �
 
 
 
+[[step-4-test-replication-failover]]
 == 4단계: 복제 장애 조치를 테스트합니다
 
 필요에 따라 소스 클러스터가 오프라인 상태인 경우 원격 클러스터의 복제된 스토리지 유닛에서 데이터를 성공적으로 제공할 수 있는지 확인합니다.

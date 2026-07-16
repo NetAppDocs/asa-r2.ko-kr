@@ -42,6 +42,7 @@ ASA r2 시스템은 자체 암호화 드라이브(SED)를 사용한 하드웨어
 
 
 
+[[support-for-snapmirror-replication]]
 == SnapMirror 복제 지원
 
 SnapMirror 복제는 다음과 같은 제한 사항이 있는 ASA r2 시스템에서 지원됩니다.

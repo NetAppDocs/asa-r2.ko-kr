@@ -25,6 +25,7 @@ image::multi-fabric-san-configuration.png[여러 호스트를 단일 HA 쌍에 �
 
 
 
+[[zoning-recommendation-for-fc-hosts]]
 == FC 호스트에 대한 조닝 권장 사항
 
 조닝을 사용하도록 FC 호스트를 구성해야 합니다. ASA R2 시스템은 다른 모든 ONTAP 시스템과 동일한 FC 호스트 조닝 권장 사항 및 지침을 따릅니다.

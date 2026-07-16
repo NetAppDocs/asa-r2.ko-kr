@@ -15,6 +15,7 @@ ONTAP Mediator 또는 ONTAP Cloud Mediator를 자체 서명 인증서로 구성�
 
 
 
+[[step-1-remove-the-mediator-configuration]]
 == 1단계: 중재자 구성 제거
 
 중재자를 재구성하려면 먼저 클러스터에서 현재 구성을 제거해야 합니다.
@@ -30,6 +31,7 @@ ONTAP Mediator 또는 ONTAP Cloud Mediator를 자체 서명 인증서로 구성�
 
 
 
+[[step-2-remove-the-self-signed-certificate]]
 == 2단계: 자체 서명 인증서 제거
 
 중재자 구성을 제거한 후에는 클러스터에서 연관된 자체 서명 인증서를 제거해야 합니다.
@@ -43,6 +45,7 @@ ONTAP Mediator 또는 ONTAP Cloud Mediator를 자체 서명 인증서로 구성�
 
 
 
+[[step-3-reinstall-the-mediator-with-a-third-party-certificate]]
 == 3단계: 타사 인증서로 중재자를 다시 설치합니다.
 
 연관된 자체 서명 인증서를 제거한 후에는 타사 인증서로 중재자를 다시 구성할 수 있습니다.

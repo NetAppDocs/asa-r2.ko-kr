@@ -15,6 +15,7 @@ summary: 클러스터 통신, 호스트 네트워크 액세스, 관리 연결 �
 
 
 
+[[overview-of-hardware-cabling]]
 == 하드웨어 케이블링 개요
 
 각 ASA r2 모델은 슬롯 위치, 포트 할당 및 I/O 모듈 구성이 고유하므로 케이블 연결 방법은 플랫폼 모델별로 다릅니다. 사용 중인 ASA r2 모델에 맞는 절차를 선택하십시오.
@@ -47,6 +48,7 @@ ONTAP System Manager 및 CLI를 통해 시스템 관리 액세스가 가능하�
 
 
 
+[[additional-resources]]
 == 추가 리소스
 
 케이블 연결 절차는 일반적인 구성을 보여줍니다. 구체적인 케이블 연결은 스토리지 시스템에 주문한 구성 요소에 따라 다릅니다. 포괄적인 구성 및 슬롯 우선순위 세부 정보는 link:https://hwu.netapp.com["NetApp Hardware Universe를 참조하십시오"^]을 참조하십시오.

@@ -46,6 +46,7 @@ ASA r2 시스템에서 SnapMirror Active Sync에 대한 지원은 ONTAP 버전�
 
 
 
+[[nvme-protocol-limitations-with-snapmirror-active-sync-on-asa-r2-systems]]
 == ASA r2 시스템의 SnapMirror Active Sync에 대한 NVMe 프로토콜 제한
 
 NVMe 호스트가 있는 ASA r2 시스템에서 SnapMirror 활성 동기화를 구성하기 전에 특정 NVMe 프로토콜 제한 사항을 알아야 합니다.

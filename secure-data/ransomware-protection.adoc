@@ -15,6 +15,7 @@ summary: 무단 조작 방지 스냅샷을 사용하여 데이터를 보호합�
 
 
 
+[[initialize-the-snaplock-compliance-clock]]
 == SnapLock Compliance 클록을 초기화한다
 
 무단 변경 방지 스냅샷을 생성하려면 로컬 및 대상 클러스터에서 SnapLock Compliance 클록을 초기화해야 합니다.

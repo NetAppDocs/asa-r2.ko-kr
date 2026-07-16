@@ -15,6 +15,7 @@ ONTAP 9.16.1부터 System Manager를 사용하여 ASA r2 시스템에서 계층�
 
 
 
+[[promote-an-existing-consistency-group-into-a-parent-consistency-group]]
 == 기존 일관성 그룹을 부모 일관성 그룹으로 승격
 
 기존 일관성 그룹을 부모로 승격하면 새 자식 일관성 그룹이 생성되고 승격된 일관성 그룹에 속한 스토리지 유닛이 새 자식 일관성 그룹으로 이동됩니다.  저장 단위는 부모 일관성 그룹과 직접 연관될 수 없습니다.
@@ -35,6 +36,7 @@ ONTAP 9.16.1을 실행 중이고 승격하려는 일관성 그룹이 SnapMirror 
 
 
 
+[[demote-a-parent-consistency-group-to-a-single-consistency-group]]
 == 부모 일관성 그룹을 단일 일관성 그룹으로 강등합니다
 
 부모 일관성 그룹을 단일 일관성 그룹으로 강등하면 연관된 자식 일관성 그룹의 스토리지 단위가 부모 일관성 그룹에 추가됩니다.  자식 일관성 그룹이 삭제되고 부모 일관성 그룹은 단일 일관성 그룹으로 관리됩니다.
@@ -54,6 +56,7 @@ link:policies-schedules.html#apply-a-snapshot-policy-to-a-consistency-group["스
 
 
 
+[[create-a-child-consistency-group]]
 == 하위 정합성 보장 그룹을 생성합니다
 
 자식 일관성 그룹을 만들면 각 자식에 개별 스냅샷 정책을 적용할 수 있습니다.  ONTAP 9.17.1부터 개별 복제 정책을 각 자식에 직접 적용할 수도 있습니다.  ONTAP 9.16.1에서는 복제 정책이 부모 수준에서만 적용될 수 있습니다.
@@ -104,6 +107,7 @@ link:policies-schedules.html#apply-a-snapshot-policy-to-a-consistency-group["스
 
 
 
+[[detach-a-child-consistency-group-from-a-parent-consistency-group]]
 == 부모 정합성 보장 그룹에서 하위 정합성 보장 그룹을 분리합니다
 
 자식 일관성 그룹을 부모 일관성 그룹에서 분리하면 자식 일관성 그룹은 부모 일관성 그룹에서 제거되고 단일 일관성 그룹으로 관리됩니다.  부모에 적용된 복제 정책은 더 이상 분리된 자식 일관성 그룹에 적용되지 않습니다.

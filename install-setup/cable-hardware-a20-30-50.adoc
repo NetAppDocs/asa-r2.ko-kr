@@ -30,6 +30,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["케이블 당김 탭
 
 
 
+[[step-1-cable-the-clusterha-connections]]
 == 1단계: 클러스터/HA 연결 케이블 연결
 
 컨트롤러를 케이블로 연결하여 ONTAP 클러스터 연결을 생성합니다. 스위치가 없는 클러스터의 경우 컨트롤러를 서로 연결합니다. 스위치 클러스터의 경우 컨트롤러를 클러스터 네트워크 스위치에 연결합니다.
@@ -191,6 +192,7 @@ image::../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[25GbE I/O �
 ====
 
 
+[[step-2-cable-the-host-network-connections]]
 == 2단계: 호스트 네트워크 연결 케이블 연결
 
 이더넷 모듈 포트 또는 FC(Fibre Channel) 모듈 포트를 호스트 네트워크에 연결합니다.
@@ -246,6 +248,7 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[64Gb/s FC
 ====
 
 
+[[step-3-cable-the-management-network-connections]]
 == 3단계: 관리 네트워크 연결 케이블 연결
 
 컨트롤러를 관리 네트워크에 연결합니다.
@@ -263,6 +266,7 @@ IMPORTANT: 아직 전원 코드를 연결하지 마십시오.
 
 
 
+[[step-4-cable-the-shelf-connections]]
 == 4단계: 선반 연결 케이블 연결
 
 NS224 쉘프 케이블 연결 절차는 NSM100 모듈 대신 NSM100B 모듈을 사용합니다. 케이블 연결은 사용된 NSM 모듈의 종류와 관계없이 동일하며, 포트 이름만 다릅니다.

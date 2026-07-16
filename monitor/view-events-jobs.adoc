@@ -53,6 +53,7 @@ Audit logs * 를 선택합니다.
 
 
 
+[[send-email-notifications-for-cluster-events-and-audit-logs]]
 == 클러스터 이벤트 및 감사 로그에 대한 이메일 알림을 보냅니다
 
 클러스터 이벤트 또는 감사 로그 항목이 있을 때 특정 이메일 주소로 알림을 보내도록 시스템을 구성합니다.

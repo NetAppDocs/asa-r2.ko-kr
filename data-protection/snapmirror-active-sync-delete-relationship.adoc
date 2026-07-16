@@ -15,6 +15,7 @@ summary: 비즈니스 애플리케이션에 대해 거의 0에 가까운 RPO 및
 
 
 
+[[step-1-terminate-host-replication]]
 == 1단계: 호스트 복제 종료
 
 소스 클러스터의 호스트 그룹이 대상 클러스터로 복제되고 대상 일관성 그룹이 복제된 호스트 그룹에 매핑된 경우 SnapMirror 활성 동기화 관계를 삭제하기 전에 소스 클러스터에서 호스트 복제를 종료해야 합니다.
@@ -27,6 +28,7 @@ summary: 비즈니스 애플리케이션에 대해 거의 0에 가까운 RPO 및
 
 
 
+[[step-2-delete-the-snapmirror-active-sync-relationship]]
 == 2단계: SnapMirror 활성 동기화 관계 삭제
 
 일관성 그룹에서 SnapMirror 활성 동기화 보호를 제거하려면 SnapMirror 활성 동기화 관계를 삭제해야 합니다.

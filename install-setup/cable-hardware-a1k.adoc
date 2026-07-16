@@ -34,6 +34,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["케이블 당김 탭
 
 
 
+[[step-1-cable-the-clusterha-connections]]
 == 1단계: 클러스터/HA 연결 케이블 연결
 
 컨트롤러를 케이블로 연결하여 ONTAP 클러스터 연결을 생성합니다. 스위치가 없는 클러스터의 경우 컨트롤러를 서로 연결합니다. 스위치 클러스터의 경우 컨트롤러를 클러스터 네트워크 스위치에 연결합니다.
@@ -91,6 +92,7 @@ image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[클러스터 연
 ====
 
 
+[[step-2-cable-the-host-network-connections]]
 == 2단계: 호스트 네트워크 연결 케이블 연결
 
 이더넷 모듈 포트를 호스트 네트워크에 연결합니다.
@@ -135,6 +137,7 @@ image::../media/drw_a1k_network_cabling2_ieops-1650.svg[10/25GbE Ethernet 네트
 ====
 
 
+[[step-3-cable-the-management-network-connections]]
 == 3단계: 관리 네트워크 연결 케이블 연결
 
 컨트롤러를 관리 네트워크에 연결합니다.
@@ -160,6 +163,7 @@ IMPORTANT: 아직 전원 코드를 연결하지 마십시오.
 
 
 
+[[step-4-cable-the-shelf-connections]]
 == 4단계: 선반 연결 케이블 연결
 
 ASA A1K 스토리지 시스템은 NSM100 또는 NSM100B 모듈이 있는 NS224 쉘프를 지원합니다. 모듈 간의 주요 차이점은 다음과 같습니다.
@@ -212,9 +216,9 @@ NS224 쉘프가 두 개 있는 경우 이 케이블 연결 옵션을 사용하�
 . 컨트롤러 A에서 다음 포트를 연결합니다.
 +
 .. 포트 e11a를 쉘프 1 NSM A 포트 e0a에 연결합니다.
-.. 포트 e11b를 쉘프 2 NSM B 포트 e0b에 연결합니다.
-.. 포트 e10a를 쉘프 2 NSM A 포트 e0a에 연결합니다.
 .. 포트 e10b를 shelf 1 NSM B 포트 e0b에 연결하십시오.
+.. 포트 e10a를 쉘프 2 NSM A 포트 e0a에 연결합니다.
+.. 포트 e11b를 쉘프 2 NSM B 포트 e0b에 연결합니다.
 +
 image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg["컨트롤러 A의 컨트롤러-쉘프 연결"]
 
@@ -223,9 +227,9 @@ image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg["컨트롤러 A의 컨트
 . 컨트롤러 B에서 다음 포트를 연결합니다.
 +
 .. 포트 e11a를 쉘프 1 NSM B 포트 e0a에 연결합니다.
-.. 포트 e11b를 쉘프 2 NSM A 포트 e0b에 연결합니다.
-.. 포트 e10a를 쉘프 2 NSM B 포트 e0a에 연결합니다.
 .. 포트 e10b를 쉘프 1 NSM A 포트 e0b에 연결합니다.
+.. 포트 e10a를 쉘프 2 NSM B 포트 e0a에 연결합니다.
+.. 포트 e11b를 쉘프 2 NSM A 포트 e0b에 연결합니다.
 +
 image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg["컨트롤러 B의 컨트롤러-쉘프 연결"]
 
