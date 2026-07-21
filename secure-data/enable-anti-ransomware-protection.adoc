@@ -20,7 +20,7 @@ NOTE: 어떤 랜섬웨어 탐지 또는 예방 시스템도 랜섬웨어 공격�
 
 .이 작업에 대해
 * ARP/AI 지원이 포함되어 있습니다. link:https://kb.netapp.com/onprem/ontap/os/ONTAP_9.10.1_and_later_licensing_overview["ONTAP One 라이센스"] .
-* ONTAP 9.19.1 RC부터 인공 지능 기반 자율 랜섬웨어 보호(ARP/AI)는 ASA r2 시스템의 SnapMirror 액티브 동기화 SAN 관계에서 운영 읽기-쓰기 스토리지 유닛을 지원합니다. ARP/AI는 활성 운영 스토리지 유닛에서 실행되고, 운영 전용 ARP 스냅샷을 생성하며, 해당 스토리지 유닛에 대한 머신 러닝 기반 랜섬웨어 탐지를 제공합니다.
+* ONTAP 9.19.1부터 인공지능 기반 자율 랜섬웨어 보호(ARP/AI)는 ASA r2 시스템의 SnapMirror 액티브 싱크 SAN 관계에서 기본 읽기/쓰기 스토리지 장치를 지원합니다. ARP/AI는 활성 기본 스토리지 장치에서 실행되어 기본 전용 ARP 스냅샷을 생성하고 해당 스토리지 장치에 대한 머신 러닝 기반 랜섬웨어 탐지 기능을 제공합니다.
 * ONTAP 9.18.1부터는 ONTAP 9.18.1로 업그레이드하거나 새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간이 지나면 새로 생성되는 모든 스토리지 유닛에서 ARP/AI가 기본적으로 활성화됩니다.
 * ARP/AI는 SnapLock으로 보호되는 스토리지 유닛에서 지원되지 않습니다.
 * ARP/AI를 활성화한 후에는 다음을 수행해야 합니다. link:../administer/update-firmware.html#enable-automatic-updates["보안 파일에 대한 자동 업데이트를 활성화하세요"] 자동으로 새로운 보안 업데이트를 받습니다.
