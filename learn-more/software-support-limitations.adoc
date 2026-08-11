@@ -14,47 +14,35 @@ summary: ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제�
 ASA R2 시스템은 SAN 솔루션에 대해 광범위한 지원을 제공하지만 특정 ONTAP 소프트웨어 기능은 지원되지 않습니다.
 
 .ASA R2 시스템은 다음을 지원하지 않습니다.
-* 기본 자동 iSCSI LIF 페일오버
-+
-ASA R2 시스템에서는 기본 네트워킹 LIF가 NVMe와 SCSI 호스트 간에 공유되므로 자동 페일오버를 지원하지 않습니다. 자동 iSCSI LIF 페일오버를 사용하려면 이 link:../administer/manage-client-vm-access.html#create-a-lif-network-interface["iSCSI 전용 LIF를 생성합니다"]필요합니다. 자동 페일오버는 기본적으로 iSCSI 전용 LIFS에서 설정됩니다.
-
-+
-자동 iSCSI LIF 페일오버가 사용되도록 설정된 경우 스토리지 페일오버가 발생하면 iSCSI LIF가 홈 노드나 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 다음, 페일오버가 완료된 후 다시 수행됩니다. 또는 iSCSI LIF의 포트가 정상 상태가 아닐 경우 LIF는 자동으로 현재 홈 노드의 정상 포트로 마이그레이션된 다음 포트가 다시 정상 상태가 되면 원래 포트로 다시 마이그레이션됩니다.
-
 * FabricPool
 * LUN 일반 프로비저닝
 * MetroCluster
 * NetApp Aggregate Encryption(NAE)
 * 오브젝트 프로토콜
 * ONTAP S3 SnapMirror 및 S3 API
-
-
-.ASA R2 시스템은 다음을 지원합니다.
 * SnapLock
 +
-link:../secure-data/ransomware-protection.html["스냅샷을 잠그는 방법에 대해 알아봅니다"] ASA R2 시스템에서.
+SnapLock Compliance 및 Enterprise 모드는 SAN 환경의 기본 클러스터에서 지원되지 않습니다. SnapLock for SnapVault는 보조 클러스터에서 지원됩니다.
 
-* 이중 계층 암호화
+* SnapMirror 복제는 다음과 같은 제한 사항이 있는 ASA r2 시스템에서 지원됩니다.
 +
-ASA r2 시스템은 자체 암호화 드라이브(SED)를 사용한 하드웨어 암호화와 NetApp 볼륨 암호화(NVE) 기술을 사용한 소프트웨어 암호화를 지원합니다. link:../secure-data/encrypt-data-at-rest.html["이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다"] ASA r2 시스템의 데이터를 보호합니다.
+** SnapMirror 동기 복제는 지원되지 않습니다.
+** SnapMirror 비동기 복제는 두 개의 ASA r2 시스템 간에만 지원됩니다. SnapMirror 비동기 복제는 ASA r2 시스템과 ASA, AFF 또는 FAS 시스템 또는 클라우드 사이에서는 지원되지 않습니다.
++
+자세히 알아보세요link:../data-protection/pre-defined-protection-policies.html["ASA r2 시스템에서 지원되는 SnapMirror 복제 정책"] .
 
-
-
-
-
-[[support-for-snapmirror-replication]]
-== SnapMirror 복제 지원
-
-SnapMirror 복제는 다음과 같은 제한 사항이 있는 ASA r2 시스템에서 지원됩니다.
-
-* SnapMirror 동기 복제는 지원되지 않습니다.
-* SnapMirror Active Sync는 두 개의 ASA r2 시스템 간에만 지원됩니다.
+** SnapMirror Active Sync는 두 개의 ASA r2 시스템 간에만 지원됩니다.
 +
 자세히 알아보세요link:../data-protection/snapmirror-active-sync.html["ASA r2 시스템의 SnapMirror Active Sync"] .
 
-* SnapMirror 비동기 복제는 두 개의 ASA r2 시스템 간에만 지원됩니다. SnapMirror 비동기 복제는 ASA r2 시스템과 ASA, AFF 또는 FAS 시스템 또는 클라우드 사이에서는 지원되지 않습니다.
+
+
+
+
+.ASA R2 시스템은 다음을 지원합니다.
+* 이중 계층 암호화
 +
-자세히 알아보세요link:../data-protection/pre-defined-protection-policies.html["ASA r2 시스템에서 지원되는 SnapMirror 복제 정책"] .
+ASA r2 시스템은 자체 암호화 드라이브(SED)를 사용한 하드웨어 암호화와 NetApp 볼륨 암호화(NVE) 기술을 사용한 소프트웨어 암호화를 지원합니다. link:../secure-data/encrypt-data-at-rest.html["이중 레이어 암호화를 적용하는 방법에 대해 알아봅니다"] ASA r2 시스템의 데이터를 보호합니다.
 
 
 

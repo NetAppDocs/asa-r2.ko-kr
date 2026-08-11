@@ -104,8 +104,8 @@ entries:
     url: "/secure-data/migrate-encryption-keys-between-key-managers.html"
   - title: 랜섬웨어 공격을 방어하십시오
     entries:
-    - title: 변조 방지 스냅샷 만들기
-      url: "/secure-data/ransomware-protection.html"
+    - title: SnapLock에 대해 알아보십시오
+      url: "/secure-data/snaplock.html"
     - title: ARP/AI 활성화
       url: "/secure-data/enable-anti-ransomware-protection.html"
     - title: 기본 ARP/AI 활성화 비활성화

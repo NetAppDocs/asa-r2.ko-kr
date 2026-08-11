@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: secure-data/snaplock.html 
+keywords: asa r2, secure data, data security, ransomware, ransomware attacks, protection, snaplock, snaplock compliance, snaplock enterprise, snaplock compliance clock 
+summary: 무단 조작 방지 스냅샷을 사용하여 데이터를 보호합니다. 무단 조작 방지 스냅샷은 삭제할 수 없으며 랜섬웨어 공격에 의해 손상된 데이터를 복구하는 데 사용될 수 있습니다. 
+---
+= ASA r2 스토리지 시스템의 SnapLock 데이터 보호에 대해 알아보십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP SnapLock은 규정 및 거버넌스 목적으로 파일을 수정되지 않은 형태로 보존하기 위해 WORM 스토리지를 사용하는 조직을 위한 고성능 규정 준수 솔루션입니다. SnapLock을 Compliance 또는 Enterprise 모드로 실행할 수 있으며, 이들 모드는 서로 다른 수준의 WORM 데이터 보호를 제공합니다. SAN 환경의 기본 클러스터에서는 SnapLock Compliance 및 Enterprise 모드가 지원되지 않지만, 2차 시스템에서 SnapVault용 SnapLock을 활성화하여 우발적이거나 악의적인 삭제로부터 2차 스냅샷을 보호할 수 있습니다.
+
+SnapLock Compliance Clock는 SnapLock for SnapVault를 사용하여 2차 시스템의 스냅샷을 보호하려면 초기화해야 합니다.
+
+.관련 정보
+* link:https://docs.netapp.com/us-en/ontap/san-admin/configure-backup-vaults-san-environment-concept.html["SnapLock for SnapVault SAN 환경에서"^]에 대해 자세히 알아보십시오.
+* link:https://docs.netapp.com/us-en/ontap/snaplock/index.html["ONTAP SnapLock"^]에 대해 자세히 알아보십시오.
+
+
+
+
+[[initialize-the-snaplock-compliance-clock]]
+== SnapLock 규정 준수 시계를 초기화합니다
+
+2차 시스템에서 SnapLock for SnapVault로 대상 스냅샷을 보호하려면 먼저 로컬 및 대상 클러스터에서 SnapLock Compliance Clock을 초기화해야 합니다.
+
+.단계
+. 클러스터 > 개요 * 를 선택합니다.
+. 노드 * 섹션에서 * SnapLock Compliance 시계 초기화 * 를 선택합니다.
+. Initialize * 를 선택합니다.
+. 규정 준수 시계가 초기화되었는지 확인하십시오.
++
+.. 클러스터 > 개요 * 를 선택합니다.
+.. Nodes * 섹션에서 를 image:icon_show_hide.png["흰색 배경에 파란색 열 3개"]선택한 다음 * SnapLock Compliance Clock * 을 선택합니다.
+
+
+
+
+.다음 단계
+로컬 클러스터와 대상 클러스터에서 SnapLock 규정 준수 시계를 초기화한 후에는 link:../data-protection/snapshot-replication.html["SnapVault용 SnapLock과의 복제 관계 생성"]할 준비가 완료됩니다.
