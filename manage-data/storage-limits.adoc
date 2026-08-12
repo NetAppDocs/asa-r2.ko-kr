@@ -16,7 +16,10 @@ summary: 최적의 성능, 구성 및 지원을 위해서는 ASA r2 스토리지
 제한 사항은 사용 중인 ASA r2 시스템 및 ONTAP 버전에 따라 다를 수 있습니다. 해당 시스템에 대한 최신 제한 사항의 전체 목록은 link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^]을 참조하십시오.
 
 
-NOTE: ASA r2 시스템은 NetApp Hardware Universe의 *제품* 항목에서 "ASA" 플랫폼으로 표시됩니다.
+NOTE: VM(가상 머신) 제한은 Hardware Universe에 나열되어 있지 않습니다. ASA r2 시스템 볼륨 제한을 기준으로 HA 쌍당 권장 최대 VM 수는 800개, 클러스터당 권장 최대 VM 수는 1200개입니다.  이 제한은 VMFS 데이터스토어에 있는 VM에는 적용되지 않습니다.  VMFS 데이터스토어에는 최대 VM 수 제한이 없습니다.
+
+.이 작업에 대해
+ASA r2 시스템은 NetApp Hardware Universe의 *제품* 항목에서 "ASA" 플랫폼으로 표시됩니다.
 
 .단계
 . link:https://hwu.netapp.com["NetApp Hardware Universe를 참조하십시오"^]로 이동하세요.

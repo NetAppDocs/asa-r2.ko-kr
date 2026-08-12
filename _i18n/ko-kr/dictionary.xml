@@ -2866,4 +2866,5 @@
   <block id="794d2058bfa0143a6c722eb0d40f6fa2" category="paragraph">ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. 모든 프로토콜은 멀티패싱을 위한 대칭형 액티브-액티브 아키텍처를 지원하여 호스트와 스토리지 간의 모든 경로가 활성화/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 및 직접 연결 구성을 지원합니다. FC 및 NVMe/FC 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 구성을 지원하며, ONTAP 9.19.1부터는 직접 연결 구성도 지원합니다. ASA r2 시스템은 ASA, AFF 또는 FAS 시스템과의 클러스터 혼합을 지원하지 않습니다.</block>
   <block id="5cdfe0a12dbe0154513cd399f4ebb394" category="cell"><block ref="5cdfe0a12dbe0154513cd399f4ebb394" category="inline-link-macro-rx"></block></block>
   <block id="79e8ff3b299a4fcb9f7a7eaedd4a6306" category="cell">IP 및 NVMe/TCP LIF에 대해 기본 자동 LIF 페일오버가 지원됩니다.</block>
+  <block id="f4a196522bd29f2dc617b123e426fca8" category="admonition">VM(가상 머신) 제한은 Hardware Universe에 나열되어 있지 않습니다. ASA r2 시스템 볼륨 제한을 기준으로 HA 쌍당 권장 최대 VM 수는 800개, 클러스터당 권장 최대 VM 수는 1200개입니다.  이 제한은 VMFS 데이터스토어에 있는 VM에는 적용되지 않습니다.  VMFS 데이터스토어에는 최대 VM 수 제한이 없습니다.</block>
 </blocks>
