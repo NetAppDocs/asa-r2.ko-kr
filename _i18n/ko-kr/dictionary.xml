@@ -449,7 +449,6 @@
   <block id="f731460115898cdd49151a66d75556b6" category="cell">로컬 소스</block>
   <block id="5833acf9cb6206654194780dbf5bb4e0" category="list-text">Local sources * 를 선택한 다음 를 <block ref="08a74c2de12fbe2628462227f788ae6a" category="inline-image-macro-rx" type="image"></block> 선택합니다.</block>
   <block id="a18a6418cfbf231c4bb22f6553628bd0" category="list-text">복제 정책을 선택합니다.</block>
-  <block id="7ab1f0b2182b6c6f36937d583dfeac9c" category="paragraph">복제 정책 및 관계를 생성했으므로 초기 데이터 전송은 복제 정책에 정의된 대로 시작됩니다. 필요에 따라 복제 페일오버를 테스트하여 ASA R2 시스템이 오프라인 상태가 되는 경우 페일오버가 성공적으로 수행되는지 확인할 수 있습니다.</block>
   <block id="55af8fe36cb88367588d3f92024db64d" category="section-title">4단계: 복제 장애 조치를 테스트합니다</block>
   <block id="920b6f48db05908e2d7fdde6821a89e3" category="paragraph">필요에 따라 소스 클러스터가 오프라인 상태인 경우 원격 클러스터의 복제된 스토리지 유닛에서 데이터를 성공적으로 제공할 수 있는지 확인합니다.</block>
   <block id="a2640285f2f549a8106a0b1aa4d9fbd1" category="list-text">테스트할 복제 관계 위로 마우스를 가져간 다음 을 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택합니다.</block>
@@ -2187,7 +2186,6 @@
   <block id="87531525c3b816a3a29dbbcbcd9e58b1" category="inline-link-macro">복제 정책에 대해 알아보세요</block>
   <block id="3014b2db79594ac1202cd88300196335" category="list-text"><block ref="143654464f8325f80e4706e133fabf02" category="inline-link-macro-rx"></block> .</block>
   <block id="820e745f4ceb298ff41836e6ae6e0376" category="paragraph">복제 관계를 생성할 때 복제 관계에 적합한 복제 정책을 선택해야 합니다.  미리 정의된 정책을 사용하거나 사용자 지정 정책을 만들 수 있습니다.</block>
-  <block id="39f2cc2c7247fe111861f8e1e350fca5" category="paragraph">ASA r2 시스템은 ASA, AFF 또는 FAS 시스템과의 클러스터 혼합을 지원하지 않습니다.</block>
   <block id="bec1e41aa312239c590ea19d2cd648e2" category="paragraph">ASA 스토리지 시스템에서 ASA r2 스토리지 시스템으로 VM 작업 부하를 마이그레이션해야 하는 경우 NetApp 다음을 권장합니다.<block ref="5e3823885235dce61c55802a90e4bf09" category="inline-link-macro-rx"></block> 데이터의 실시간, 중단 없는 마이그레이션을 수행합니다.</block>
   <block id="8472fc4ccb1079c9fe1f338f10dae548" category="list-text">CLI에서 다음을 입력하세요.<block ref="f0af09467abded8f889764e0118fc371" prefix=" " category="inline-code"></block></block>
   <block id="6e3ec6c33e748e95fcc9a00b80c75047" category="paragraph">ASA r2 시스템의 경우 _개성_은 _ASA r2_이고 _is-disaggregated_의 상태는 _true_입니다.</block>
@@ -2794,17 +2792,12 @@
   <block id="20290ba3bc660a6b1ec6d46adf0b0974" category="paragraph">한 번에 추가해야 하는 드라이브의 최소 개수는 3개입니다. 단일 드라이브를 추가하면 성능이 저하될 수 있습니다.</block>
   <block id="38964f69af54ac13a49e3e0955441258" category="paragraph">LIF(네트워크 인터페이스)는 물리적 또는 논리적 포트와 연결된 IP 주소입니다.  데이터 액세스에 사용할 포트에 LIF를 생성하십시오.  스토리지 VM은 하나 이상의 LIF를 통해 클라이언트에 데이터를 제공합니다.  ASA r2 시스템에서는 IP, FC 및 NVMe/FC LIF를 생성할 수 있습니다.  IP 데이터 LIF는 기본적으로 iSCSI 및 NVMe/TCP 트래픽을 모두 처리할 수 있습니다.  FC 및 NVMe/FC 트래픽에는 각각 별도의 데이터 LIF를 생성해야 합니다.</block>
   <block id="0da4b7c484f1bfa3f71126ddd8e221ce" category="paragraph-title">ASA r2 시스템의 LIF 페일오버</block>
-  <block id="b7f8c7f57cc6cf3263d927fa39301bbe" category="paragraph">구성 요소에 장애가 발생하면 LIF는 페일오버되거나 다른 물리적 포트로 마이그레이션되어 네트워크 통신이 중단되지 않습니다. ONTAP 9.19.1부터 iSCSI, NVMe/TCP 및 공유 IP LIF에 대해 자동 LIF 페일오버가 기본적으로 지원됩니다. 자동 LIF 페일오버가 활성화되면 스토리지 페일오버가 발생할 경우 LIF는 홈 노드 또는 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 후 페일오버가 완료되면 다시 원래 노드 또는 포트로 돌아갑니다. 또는 포트 상태가 불안정해지면 LIF는 현재 홈 노드의 정상 포트로 자동으로 마이그레이션된 후 포트가 다시 정상화되면 원래 포트로 돌아갑니다.</block>
   <block id="2f510f91f88e7ad0b5faca1d650d5c46" category="inline-link-macro">SAN 환경에서 LIF 삭제</block>
-  <block id="773288d84a800e3b1d7803ab90036215" category="paragraph">ONTAP 9.18.1 이하 버전에서는 NVMe/TCP LIF 또는 공유 IP LIF에 대해 자동 LIF 페일오버가 지원되지 않습니다. iSCSI 전용 LIF를 생성할 때, 스토리지 VM에 이미 자동 LIF 페일오버가 활성화되지 않은 iSCSI LIF가 있는 경우를 제외하고 기본적으로 자동 LIF 페일오버가 활성화됩니다. 스토리지 VM에 자동 LIF 페일오버가 활성화되지 않은 iSCSI 전용 LIF가 있는 경우, 새로 생성하는 LIF도 활성화되지 않습니다. 이러한 경우에는 기존 iSCSI 전용 LIF를 먼저 삭제한 다음 자동 LIF 페일오버를 활성화하여 다시 생성해야 합니다. <block ref="bd7be76bcbb9f56b8521a7457373f6cc" category="inline-link-macro-rx"></block>하는 방법을 알아보십시오.</block>
   <block id="16bbf9f716eb1b1f397ecd56fea6a475" category="inline-link-macro">영구 포트</block>
   <block id="3ee1e150b971acda14b2f412bb3b363a" category="paragraph">영구 포트는 FC 및 NVMe/FC LIF의 페일오버에 사용됩니다. 자세한 내용은 <block ref="f05616066afed51c38bb80daf2d2c177" category="inline-link-macro-rx"></block> ONTAP 설명서를 참조하십시오.</block>
   <block id="77fb55c5f214bb33b9bd943baa52258c" category="paragraph">ONTAP 9.18.1 이하 버전에서 자동 iSCSI LIF 페일오버를 활성화하려면 먼저 사용자 지정 iSCSI 전용 LIF 서비스 정책을 생성해야 합니다.</block>
-  <block id="2a3ee0bdebde6bb4f90001e2d1ff5518" category="paragraph">ONTAP 9.18.1 이하 버전에서는 스토리지 VM의 다른 모든 iSCSI LIF에 대해 자동 LIF 페일오버가 활성화된 경우, iSCSI 전용 LIF를 생성할 때 자동 LIF 페일오버가 기본적으로 활성화됩니다. 스토리지 VM에 자동 LIF 페일오버가 활성화되지 않은 iSCSI 전용 LIF가 있는 경우, 새로 생성되는 LIF에도 자동 LIF 페일오버가 활성화되지 않습니다.</block>
   <block id="c7e321fca2a8f7e1f3ab296539b0195c" category="inline-link-macro">SAN LIF 이동</block>
-  <block id="061c16b0ed3909e672bb167f666657d2" category="list-text"><block ref="84859be9a33e5a2046d8b8f65121e08b" category="inline-link-macro-rx"></block>.</block>
   <block id="a56c83faed28c1bd9c232e9aad91422d" category="inline-link-macro">포트셋에서 SAN LIF 제거</block>
-  <block id="39475d761f36ea805bf52bd0d85cd6fa" category="list-text"><block ref="6ee35dee3ff81a58e64cd1105fa8d841" category="inline-link-macro-rx"></block>.</block>
   <block id="ca9419cb261d1f542e7ca3641ce02a6c" category="list-text"><block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 *보호*를 선택합니다.</block>
   <block id="f033c9cc89aa0606022393d542e81b55" category="list-text"><block ref="2bf8f430922192bda6865bad87ff2a74" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 *편집*을 선택합니다.</block>
   <block id="0ca961272103b716d585866f80eab6e3" category="paragraph">SnapLock Enterprise 및 Compliance 모드는 ASA r2 시스템에서 SnapMirror 활성 동기화를 지원하지 않습니다.</block>
@@ -2826,7 +2819,6 @@
   <block id="c6032ff25210fd8264d5f370b7924a96" category="paragraph-title">저장 단위 및 일관성 그룹</block>
   <block id="e13d282f1b6dc4032c4acd77d766ee11" category="paragraph">데이터 도난이나 랜섬웨어 등 악의적인 공격으로부터 데이터를 보호하기 위해 ASA r2 시스템은 내장 키 관리자, 이중 계층 암호화, 다중 요소 인증 및 다중 관리자 검증을 지원합니다. 또한 스냅샷을 2차 위치로 복제하고 SnapLock for SnapVault를 사용하여 대상 스냅샷이 실수로 또는 악의적으로 삭제되는 것을 방지할 수 있습니다.</block>
   <block id="4c78514417b4a0942051bcf756b5e689" category="paragraph-title">지원되는 프로토콜, 다중 경로 및 구성</block>
-  <block id="e5dcf60b35d63934d42e3aac7f00c836" category="paragraph">ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. 모든 프로토콜은 다중 경로를 위한 대칭형 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 활성화/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 및 직접 연결 구성을 지원합니다. FC 및 NVMe/FC 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 구성을 지원하며, ONTAP 9.19.1부터는 직접 연결 구성도 지원합니다.</block>
   <block id="46fe1d288c9a0f1af878fd298319c1f5" category="inline-link-macro">SAN 다중 경로 지원</block>
   <block id="0e8a99bad4b792a0f1d2b26bca172d70" category="list-text"><block ref="e49bc3d33674d3c62051d808bc03b9aa" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
   <block id="e8010ed5357d34c65bda392b1759dc21" category="inline-link-macro">iSCSI 및 NVMe/TCP 프로토콜 구성</block>
@@ -2847,7 +2839,6 @@
   <block id="fd69c5cf902969e6fb71d043085ddee6" category="paragraph-title">결과</block>
   <block id="e76b5069871e2a0c42b0b2e86e9e5d0b" category="paragraph">사용 중인 특정 ASA r2 시스템 및 ONTAP 버전에 대해 지원되는 제한이 표시됩니다.</block>
   <block id="e0f4fdf47233f69304e680fd1923eb88" category="cell">자동 SAN LIF 페일오버에 대한 지원 강화</block>
-  <block id="8a9840e8547ff441eef956289166e3cc" category="cell">iSCSI 및 NVMe/TCP LIF의 경우 기본적으로 자동 LIF 페일오버가 지원됩니다.</block>
   <block id="443ddb7ca2bd07f5946e8a824feee453" category="list-text">*랜섬웨어 방지* 항목에서 *사용 안 함*을 선택한 다음 *비활성화*를 선택하십시오.</block>
   <block id="882422644d0036961f2ef9aed07712d6" category="list-text">*랜섬웨어 방지* 옆에서 <block ref="09996779530a0566a9742876e9ffd4f1" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 *기존의 모든 스토리지 유닛에서 활성화*를 선택합니다.</block>
   <block id="6dc61dbf62f6b39ca07f06ff22297587" category="doc">ASA r2 스토리지 시스템의 SnapLock 데이터 보호에 대해 알아보십시오</block>
@@ -2864,4 +2855,15 @@
   <block id="1c455b71b9a6a19b8ab5534d9dd3545f" category="paragraph">로컬 클러스터와 대상 클러스터에서 SnapLock 규정 준수 시계를 초기화한 후에는 <block ref="716f8ed67937d4ffe779f9f204ed103b" category="inline-link-macro-rx"></block>할 준비가 완료됩니다.</block>
   <block id="53ba0b0af13871c9c1e7a43da8f40ede" category="sidebar">ONTAP 고급 사용자를 위한 ASA r2 CLI 및 REST API 지원</block>
   <block id="56487b0f66d25f7027042188a0b85f01" category="sidebar">SnapLock에 대해 알아보십시오</block>
+  <block id="479de3f7ce60040c78f3aea05b661d3d" category="paragraph">구성 요소에 장애가 발생하면 LIF는 페일오버되거나 다른 물리적 포트로 마이그레이션되어 네트워크 통신이 중단되지 않습니다.  ONTAP 9.19.1부터 IP LIF에 대해 자동 LIF 페일오버가 기본적으로 지원됩니다.  자동 LIF 페일오버가 활성화되면 스토리지 페일오버가 발생할 경우 LIF는 홈 노드 또는 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 후 페일오버가 완료되면 다시 원래 노드 또는 포트로 돌아갑니다.  또는 포트 상태가 불안정해지면 LIF는 현재 홈 노드의 정상 포트로 자동으로 마이그레이션된 후 포트가 다시 정상화되면 원래 포트로 돌아갑니다.</block>
+  <block id="d26b171679a151dddcf0f77ce05e7dd3" category="paragraph">ONTAP 9.18.1 이하 버전에서는 iSCSI 및 NVMe/TCP 트래픽을 모두 사용하는 IP LIF에 대해 자동 LIF 페일오버가 지원되지 않습니다. iSCSI 전용 LIF를 생성할 때, 스토리지 VM에 이미 자동 LIF 페일오버가 활성화되지 않은 iSCSI LIF가 있는 경우를 제외하고 기본적으로 자동 LIF 페일오버가 활성화됩니다. 스토리지 VM에 자동 LIF 페일오버가 활성화되지 않은 iSCSI LIF가 있는 경우, 새로 생성하는 LIF도 활성화되지 않습니다. 이러한 경우에는 기존 iSCSI LIF를 먼저 삭제한 다음 자동 LIF 페일오버를 활성화하여 다시 생성해야 합니다. <block ref="bd7be76bcbb9f56b8521a7457373f6cc" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
+  <block id="f6cd95bfbbfa8cfbf33805948f9e02ab" category="paragraph">ONTAP 9.18.1 이하 버전에서는 스토리지 VM의 다른 모든 iSCSI LIF에 대해 자동 LIF 페일오버가 활성화된 경우, iSCSI 전용 LIF를 생성할 때 자동 LIF 페일오버가 기본적으로 활성화됩니다. 스토리지 VM에 자동 LIF 페일오버가 활성화되지 않은 iSCSI LIF가 있는 경우, 새로 생성되는 LIF에도 자동 LIF 페일오버가 활성화되지 않습니다.</block>
+  <block id="a52cb55bc715199db0a2c89f5628463a" category="paragraph">iSCSI 전용 LIF를 생성하려면 ONTAP 명령줄 인터페이스(CLI)를 사용해야 합니다.</block>
+  <block id="5fe25a30e97a2bdf4a723672ff4742c0" category="list-text"><block ref="27c75436a238633e1d18ab51a23477b5" category="inline-link-macro-rx"></block>.</block>
+  <block id="92a1cbd4a70feecdf2052aa1fa356bcb" category="list-text"><block ref="7a7f88f43b7074f5986625bfd88c1f41" category="inline-link-macro-rx"></block>.</block>
+  <block id="586d267f3f13eb8c297cb08d2d97ab3e" category="paragraph">이제 복제 관계를 생성했으므로 복제 정책에 정의된 대로 초기 데이터 전송이 시작됩니다. 선택적으로 복제 페일오버를 테스트하여 ASA r2 시스템이 오프라인 상태가 될 경우 성공적인 페일오버가 발생하는지 확인할 수 있습니다.</block>
+  <block id="da0717e9287d2101d9333f2031bca9aa" category="paragraph-title">데이터 보호 및 보안</block>
+  <block id="794d2058bfa0143a6c722eb0d40f6fa2" category="paragraph">ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. 모든 프로토콜은 멀티패싱을 위한 대칭형 액티브-액티브 아키텍처를 지원하여 호스트와 스토리지 간의 모든 경로가 활성화/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 및 직접 연결 구성을 지원합니다. FC 및 NVMe/FC 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 구성을 지원하며, ONTAP 9.19.1부터는 직접 연결 구성도 지원합니다. ASA r2 시스템은 ASA, AFF 또는 FAS 시스템과의 클러스터 혼합을 지원하지 않습니다.</block>
+  <block id="5cdfe0a12dbe0154513cd399f4ebb394" category="cell"><block ref="5cdfe0a12dbe0154513cd399f4ebb394" category="inline-link-macro-rx"></block></block>
+  <block id="79e8ff3b299a4fcb9f7a7eaedd4a6306" category="cell">IP 및 NVMe/TCP LIF에 대해 기본 자동 LIF 페일오버가 지원됩니다.</block>
 </blocks>

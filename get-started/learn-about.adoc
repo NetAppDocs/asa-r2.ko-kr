@@ -34,19 +34,18 @@ ASA R2 시스템에서는 정합성 보장 그룹이 포함된 스토리지 유�
 
 ASA r2 시스템은 일관성 그룹이 있는 스토리지 유닛을 사용하여 스토리지 관리와 데이터 보호를 간소화합니다.  예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다.  각 저장 장치를 개별적으로 백업하는 대신 일관성 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.
 
+.데이터 보호 및 보안
 데이터 도난이나 랜섬웨어 등 악의적인 공격으로부터 데이터를 보호하기 위해 ASA r2 시스템은 내장 키 관리자, 이중 계층 암호화, 다중 요소 인증 및 다중 관리자 검증을 지원합니다. 또한 스냅샷을 2차 위치로 복제하고 SnapLock for SnapVault를 사용하여 대상 스냅샷이 실수로 또는 악의적으로 삭제되는 것을 방지할 수 있습니다.
 
 .지원되는 프로토콜, 다중 경로 및 구성
-ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. 모든 프로토콜은 다중 경로를 위한 대칭형 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 활성화/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 및 직접 연결 구성을 지원합니다. FC 및 NVMe/FC 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 구성을 지원하며, ONTAP 9.19.1부터는 직접 연결 구성도 지원합니다.
+ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. 모든 프로토콜은 멀티패싱을 위한 대칭형 액티브-액티브 아키텍처를 지원하여 호스트와 스토리지 간의 모든 경로가 활성화/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 및 직접 연결 구성을 지원합니다. FC 및 NVMe/FC 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 구성을 지원하며, ONTAP 9.19.1부터는 직접 연결 구성도 지원합니다. ASA r2 시스템은 ASA, AFF 또는 FAS 시스템과의 클러스터 혼합을 지원하지 않습니다.
 
 * link:https://docs.netapp.com/us-en/ontap/san-admin/multipath-automatic-lif-failover-support.html["SAN 다중 경로 지원"^]에 대해 자세히 알아보십시오.
 * link:https://docs.netapp.com/us-en/ontap/san-config/configure-iscsi-san-hosts-ha-pairs-reference.html["iSCSI 및 NVMe/TCP 프로토콜 구성"^]에 대해 자세히 알아보십시오.
 * link:https://docs.netapp.com/us-en/ontap/san-config/configure-fc-nvme-hosts-ha-pairs-reference.html["FC 및 NVMe/FC 프로토콜용 구성"^]에 대해 자세히 알아보십시오.
 
 
-ASA r2 시스템은 ASA, AFF 또는 FAS 시스템과의 클러스터 혼합을 지원하지 않습니다.
-
-.를 참조하십시오
+.관련 정보
 * ASA R2 시스템 지원 및 제한 사항에 대한 자세한 내용은 을 link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^]참조하십시오.
 * 에 대해 자세히 link:../learn-more/hardware-comparison.html["ASA R2 시스템을 ASA 시스템과 비교한 것입니다"]알아보십시오.
 * 에 대해 자세히 link:https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA"^]알아보십시오.
