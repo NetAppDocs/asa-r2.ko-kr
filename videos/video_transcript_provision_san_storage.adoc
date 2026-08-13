@@ -4,7 +4,7 @@ permalink: videos/video_transcript_provision_san_storage.html
 keywords: frontmatter, front matter 
 summary: ONTAP System Manager를 사용하여 ASA R2 스토리지 시스템에서 일반적인 작업을 빠르고 쉽게 수행하는 방법을 보여주는 짧은 비디오를 보십시오. 
 ---
-= ASA R2 시스템에 SAN 스토리지를 구성합니다
+= ASA R2 시스템에서 SAN 스토리지를 프로비저닝합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

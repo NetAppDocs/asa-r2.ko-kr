@@ -5,7 +5,7 @@ keywords: provision storage,san, create storage units, luns, namespaces, nvme, a
 summary: 'ASA R2에서 ONTAP 스토리지를 프로비저닝하여 SAN(SCSI 및 NVMe) 호스트가 지정된 스토리지 유닛(LUN 및 NVMe 네임스페이스)에 데이터를 읽고 쓸 수 있도록 합니다.' 
 searchtitle: ONTAP System Manager | ASA R2를 사용하여 SAN 스토리지를 프로비저닝합니다 
 ---
-= ASA R2 시스템에서 ONTAP SAN 스토리지를 프로비저닝합니다
+= ASA r2 시스템에서 ONTAP SAN 스토리지 프로비저닝
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: data-protection/snapmirror-active-sync-confirm-cluster-configuration.
 keywords: asa r2, data protection, business continuity, snapmirror active sync, cluster configuration 
 summary: SnapMirror 액티브 싱크를 구성하기 전에 ASA r2 클러스터가 지원되는 피어링 관계에 있는지, 그리고 기타 구성 요구 사항을 충족하는지 확인해야 합니다. 
 ---
-= SnapMirror Active Sync를 구성하기 전에 ASA r2 클러스터 구성을 확인하세요.
+= ASA r2 클러스터 SnapMirror 액티브 동기화 구성 확인
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

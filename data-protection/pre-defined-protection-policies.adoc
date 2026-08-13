@@ -4,7 +4,7 @@ permalink: data-protection/pre-defined-protection-policies.html
 keywords: snapshot replication, asa r2, protect data, data protection, replication, replicate data, remote cluster, destination cluster, source cluster, replication relationship, asynchronous replication, synchronous replication, policy, pre-defined, default, custom, policies 
 summary: 복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다. 
 ---
-= 미리 정의된 ONTAP 데이터 보호 정책에 대해 알아보세요
+= ASA r2 시스템에 대한 사전 정의된 데이터 보호 정책에 대해 알아보십시오.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

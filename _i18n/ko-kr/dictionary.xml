@@ -339,7 +339,6 @@
   <block id="b32275e0392f5cbab8806c7ce85e42f5" category="list-text">경고를 수락한 다음 * 삭제 * 를 선택합니다.</block>
   <block id="dde86492e27a0d7b75963e7c4b928397" category="paragraph">정합성 보장 그룹을 삭제한 후에는 이전에 정합성 보장 그룹에 속해 있던 스토리지 유닛이 더 이상 스냅샷으로 보호되지 않습니다. 이러한 스토리지 유닛을 다른 정합성 보장 그룹에 추가하여 데이터 손실로부터 보호하는 것이 좋습니다.</block>
   <block id="f64372c965917d3f83cea4c8fcaab6e6" category="summary">데이터 보호 정책 및 일정을 사용하여 자동화된 일정에 따라 데이터를 보호합니다.</block>
-  <block id="c9d9054182df60da02ddbfbf4efecfdb" category="doc">ASA R2 스토리지 시스템에서 ONTAP 데이터 보호 정책 및 일정을 관리합니다</block>
   <block id="d3919acd269a3722bd7dde17248b45a2" category="paragraph">스냅샷 정책을 사용하여 자동화된 일정에 따라 일관성 그룹의 데이터를 보호합니다. 스냅샷 정책 내에서 정책 스케줄을 사용하여 스냅샷을 생성하는 빈도를 결정합니다.</block>
   <block id="a5d94ffe746cc520a02e27113f7f17f8" category="section-title">새 보호 정책 스케줄을 생성합니다</block>
   <block id="839eaac1f4b53c683e9bc97157690966" category="paragraph">보호 정책 스케줄은 스냅샷 정책이 실행되는 빈도를 정의합니다. 일, 시간 또는 분 수에 따라 정기적으로 실행되도록 일정을 만들 수 있습니다. 예를 들어, 매 시간마다 실행되도록 스케줄을 생성하거나 하루에 한 번만 실행할 수 있습니다. 또한 특정 요일 또는 월의 특정 시간에 실행되도록 일정을 만들 수도 있습니다. 예를 들어 매달 20일 오전 12시 15분에 실행되도록 일정을 만들 수 있습니다.</block>
@@ -858,7 +857,6 @@
   <block id="3c3574a78c74302dbc13bf11e0435275" category="list-text">클러스터가 NTP 서버와 연결되어 있는지 확인합니다.</block>
   <block id="7a15ceb09d1ef08df7b9021f7341e654" category="paragraph"><block ref="0675c663575ea5d2004171fa7c4c09af" category="inline-link-macro-rx"></block>SAN 클라이언트에서 시스템으로 전환할 준비가 되었습니다.</block>
   <block id="e42d5bab0edf2441b75829873e298e1b" category="summary">ASA 시스템은 SAN 전용 솔루션에 최적화된 하드웨어 지원을 제공합니다. ASA R2 시스템은 하드웨어 및 소프트웨어를 최적화합니다.</block>
-  <block id="b8d343a2d9dfd7386b6b373e6050b930" category="searchtitle">ASA R2 시스템을 다른 ONTAP 시스템과 비교합니다</block>
   <block id="cf4ae521a2a16cdd073860fee0fbab96" category="paragraph">ONTAP 스토리지의 특성은 System Manager 또는 ONTAP CLI에서 확인할 수 있습니다.</block>
   <block id="c3e4be39d2ab89664b205dd7d0bb6510" category="list-text">System Manager 메뉴에서 * 클러스터 &gt; 개요 * 를 선택합니다.</block>
   <block id="8369fc694deadf80f5d106ef41b6e7b2" category="paragraph">ONTAP 스토리지 시스템의 특성은 변경할 수 없습니다.</block>
@@ -1019,7 +1017,6 @@
   <block id="2c7986b55d62aa1db59f4d09ab214512" category="paragraph">스토리지 유닛의 크기를 늘린 경우 호스트에서 크기 변경을 인식하려면 호스트에서 스토리지 유닛을 다시 검색해야 합니다.</block>
   <block id="bb761368ebc9763c37adc9f2f9182164" category="summary">ASA R2에서 ONTAP 스토리지를 프로비저닝하여 SAN(SCSI 및 NVMe) 호스트가 지정된 스토리지 유닛(LUN 및 NVMe 네임스페이스)에 데이터를 읽고 쓸 수 있도록 합니다.</block>
   <block id="1bd888345785eeccf1ec0db2ace03041" category="searchtitle">ONTAP System Manager | ASA R2를 사용하여 SAN 스토리지를 프로비저닝합니다</block>
-  <block id="21ba50dbf4007619e7e1e3d1d4890d04" category="doc">ASA R2 시스템에서 ONTAP SAN 스토리지를 프로비저닝합니다</block>
   <block id="5130efcbab54e3de0826ab521946e46d" category="paragraph">스토리지를 프로비저닝할 때 SAN 호스트가 ASA R2 스토리지 시스템에서 데이터를 읽고 쓸 수 있습니다. 스토리지를 프로비저닝하려면 ONTAP 시스템 관리자를 사용하여 스토리지 유닛을 생성하고 호스트 이니시에이터를 추가한 후 호스트를 스토리지 유닛에 매핑합니다. 읽기/쓰기 작업을 설정하려면 호스트에서 단계를 수행해야 합니다.</block>
   <block id="765e871d79c6c686febb0d212efcee42" category="section-title">스토리지 유닛을 생성합니다</block>
   <block id="1d78dc8ed51214e518b5114fe24490ae" category="inline-link-macro">지도</block>
@@ -1180,7 +1177,6 @@
   <block id="94a2e0e8ab485816cc10fd24499c15d8" category="list-text">목적지 정보를 입력한 다음 * 추가 * 를 선택합니다.</block>
   <block id="ff859a51425032eeba77af0fbd94f566" category="paragraph">추가한 이메일 주소는 클러스터 이벤트 및 감사 로그에 대해 지정된 이메일 알림을 받습니다.</block>
   <block id="902f69f8add54032a3780db669e4e052" category="summary">ONTAP System Manager의 Insights를 통해 ASA R2 시스템에 구현할 수 있는 모범 사례 및 구성 수정 사항을 파악하여 클러스터 보안 및 성능을 최적화할 수 있습니다.</block>
-  <block id="39eb974e3811334d91ec84b86aec1732" category="doc">ASA R2 스토리지 시스템 인사이트를 통해 클러스터 보안 및 성능을 최적화합니다</block>
   <block id="9d86f65ca6623815e9bd6f0547909992" category="paragraph">ONTAP System Manager에서 View_Insights_를 사용하여 ASA R2 시스템에 구현할 수 있는 모범 사례와 구성 수정 사항을 파악하여 클러스터 보안 및 성능을 최적화할 수 있습니다.</block>
   <block id="f73a710b7e6b349114b2765ad1274f5e" category="paragraph">예를 들어, 클러스터에 사용하도록 NTP(네트워크 시간 프로토콜) 서버가 구성되어 있다고 가정합니다. 그러나 최적의 클러스터 시간 관리에 필요한 NTP 서버의 수가 권장된 수보다 적다는 사실을 모르고 있습니다. 클러스터 시간이 정확하지 않을 때 발생할 수 있는 문제를 방지하기 위해 Insights에서는 NTP 서버가 너무 적게 구성되어 있음을 알리고 이 문제에 대해 자세히 알아보거나 수정하거나 무시할 수 있는 옵션을 제공합니다.</block>
   <block id="48cfda35c766b770b4272442f0e97eec" category="inline-image-macro">시스템 관리자 인사이트 페이지의 스크린샷</block>
@@ -1249,7 +1245,6 @@
   <block id="fb5c0f9ac1d7ca64f515441ac68af5b9" category="paragraph">System Manager 대시보드에서 * Configure protocol * 을 선택합니다.</block>
   <block id="9e0acd2071d8ef683d886a96a243f9cc" category="paragraph">IP * 아래에서 * IP 인터페이스 구성 * 을 선택한 다음 * 서브넷 추가 * 를 선택합니다.</block>
   <block id="75d7e21ebd9ad6b23f1103cbbb28fd31" category="paragraph">iSCSI 네트워크 인터페이스의 IP 주소를 쉽고 빠르게 구성할 수 있습니다.</block>
-  <block id="d41e8dd34fef54160816dae4105416f6" category="doc">ASA R2 시스템에 SAN 스토리지를 구성합니다</block>
   <block id="501a74ab6e17a226c7db107b0b362ce4" category="paragraph">동영상에 대해 다음<block ref="c4c3ae1c600a410ad0a77c184a6ed22d" prefix=" " category="inline-code"></block> 내용이 제공됩니다.</block>
   <block id="a74447cd194e6886256748db76e9ae46" category="paragraph">ONTAP System Manager를 사용하면 ASA R2 스토리지 시스템의 호스트에 대한 스토리지 유닛을 쉽고 빠르게 프로비저닝할 수 있습니다.</block>
   <block id="eb691c0f91c8f9367dcb6c9f06318778" category="paragraph">이 예에서는 VMware 호스트용 새 스토리지 유닛 6개를 생성합니다.</block>
@@ -1656,7 +1651,6 @@
   <block id="b78c98e70e341751d6f58db28ecec461" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="29aaf1b4e7e6610ae4790f0740e69e4e" category="inline-link-macro-rx"></block></block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
   <block id="77aa123fc5c68731cdf628d8e9c75afc" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> <block ref="69d31d64dbed246448f394257b05fdb9" category="inline-link-macro-rx"></block></block>
-  <block id="95f5e5110bbbc9d987c115097008c227" category="doc">ASA R2 스토리지 시스템에서 IP 연결을 보호합니다</block>
   <block id="c10f6cdf89366933afe9e0a05f726423" category="paragraph">ASA R2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안(IPsec)을 구성하여 데이터 보안을 강화할 수 있습니다. IPsec은 전송 중 데이터 암호화, IP 수준에서 네트워크 엔드포인트 간에 흐르는 트래픽에 대한 인증, 데이터에 대한 재생 및 악의적인 가로채기 공격으로부터 보호하는 인터넷 표준입니다.</block>
   <block id="602c5938acf67898ca9af2011ec2c721" category="paragraph">ASA R2 시스템의 경우 iSCSI 및 NVMe/TCP 호스트에 IPsec을 사용할 수 있습니다.</block>
   <block id="a0304825371175c4b6363207289817a6" category="paragraph">특정 ASA R2 시스템에서는 암호화 및 무결성 검사와 같은 여러 암호화 작업을 지원되는 NIC(Network Interface Controller) 카드로 오프로드할 수 있습니다. NIC 카드로 오프로드된 작업의 처리량은 약 5% 이하입니다. 이를 통해 IPsec으로 보호되는 네트워크 트래픽의 성능과 처리량을 크게 향상시킬 수 있습니다.</block>
@@ -1774,7 +1768,6 @@
   <block id="842dcef5223aaf88ec80c981db6281af" category="list-text">스토리지 VM을 선택하세요.</block>
   <block id="533fb0f30c2a24bf44c7a68b00aed588" category="list-text">복제 정책에 대해 *AutomatedFailOverDuplex*를 선택합니다.</block>
   <block id="28dda6c6cd8928858d47bf343ece67f7" category="list-text">비균일 대칭 활성/활성 구성을 생성하는 경우 *대상 설정*을 선택한 다음 이 절차를 시작하기 전에 생성하는 새 대상 일관성 그룹의 이름을 입력합니다.</block>
-  <block id="9973b2dc6ff0d198b66645d9b9f56c95" category="doc">ASA r2 스토리지 시스템에서 클러스터 간 스토리지 VM 피어 관계 생성</block>
   <block id="2b85569d3702bb2d36113451710361a0" category="paragraph">피어 관계는 클러스터와 스토리지 가상 머신(VM)이 안전하게 데이터를 교환할 수 있도록 하는 네트워크 연결을 정의합니다. SnapMirror 사용하여 서로 다른 클러스터의 스토리지 VM 간에 피어 관계를 생성하면 데이터 보호 및 재해 복구가 가능합니다.</block>
   <block id="96d54cd4dca11897495ae0700eabe4db" category="inline-link-macro">동료 관계에 대해 자세히 알아보세요</block>
   <block id="c6729b936e54a0a4447cabb61660a9d4" category="paragraph"><block ref="1dc8c581a19c9273878f4245199fc483" category="inline-link-macro-rx"></block> .</block>
@@ -1792,7 +1785,6 @@
   <block id="6fb5023500d2f772bfda250aee9189e3" category="inline-link-macro">자체 서명 인증서를 사용하여 ONTAP Mediator 구성</block>
   <block id="61ad23b638716bf0a345ab306b490801" category="paragraph">ONTAP Mediator가 설치된 후에는 다음을 수행해야 합니다. <block ref="32ce91cb98769079c3f189462b53f48e" category="inline-link-macro-rx"></block> .</block>
   <block id="1d4e19ef25fe54c490c90b84de5b941b" category="summary">시스템 관리자에서 잠재적인 랜섬웨어 공격에 대한 경고를 보고 조치를 취하세요.</block>
-  <block id="ffebabaf8051c5f32f02bdc0ef022af1" category="doc">SnapMirror Active Sync를 구성하기 전에 ASA r2 클러스터 구성을 확인하세요.</block>
   <block id="317b640808ec09a0efa427a71506d876" category="paragraph">SnapMirror 액티브 싱크는 장애 조치 발생 시 데이터를 보호하기 위해 피어링된 클러스터를 사용합니다. SnapMirror 액티브 싱크를 구성하기 전에 ASA r2 클러스터가 지원되는 피어링 관계에 있는지, 그리고 기타 구성 요구 사항을 충족하는지 확인해야 합니다.</block>
   <block id="43f3def96f033272abf0478fc4738baf" category="list-text">클러스터 간에 클러스터 피어링 관계가 있는지 확인합니다.</block>
   <block id="f5e7302cb0ac2b00c2d0bbab0782656a" category="admonition">SnapMirror Active Sync에서는 클러스터 피어 관계를 위해 기본 IP 공간이 필요합니다. 사용자 지정 IP 공간은 지원되지 않습니다.</block>
@@ -1809,7 +1801,6 @@
   <block id="e615d081056a6324246cc9785367d8c8" category="inline-link-macro">ONTAP Mediator 설치</block>
   <block id="229ae8f0472b87ad8714bd265cdb8c32" category="paragraph">클러스터 구성을 확인한 후에는 준비가 됩니다. <block ref="781396984d6963e02a0f354491f1e60f" category="inline-link-macro-rx"></block> .</block>
   <block id="050a9798f5e7e652c91062296d549925" category="summary">SnapMirror 활성 동기화 관계에 대한 계획된 장애 조치를 수행하여 비즈니스 연속성과 재해 복구를 보장하는 방법을 알아보세요.</block>
-  <block id="b523d4446fe92e51af8153c1037dd3c0" category="doc">SnapMirror 활성 동기화 관계에서 ASA r2 클러스터의 계획된 장애 조치 수행</block>
   <block id="2a7ca9f182eb13965b41490352a28925" category="paragraph">SnapMirror 액티브 싱크는 보조 사이트에 데이터 사본을 생성하고 재해 발생 시 호스트 애플리케이션이 자동으로 투명하게 장애 조치를 수행하도록 하여 비즈니스 크리티컬 애플리케이션의 지속적인 가용성을 보장합니다. 장애 조치 프로세스를 테스트하거나 기본 사이트의 유지 관리를 위해 SnapMirror 액티브 싱크 관계에 대한 계획된 장애 조치를 수행해야 할 수도 있습니다.</block>
   <block id="36813a25710ff6e6474b3b529511e797" category="list-text">SnapMirror 활성 동기화 관계는 동기화되어야 합니다.</block>
   <block id="9bc690936650c0a86f8a2f0501647f6b" category="list-text">저장 장치 이동과 같은 중단 없는 작업이 진행 중일 때는 계획된 장애 조치를 시작할 수 없습니다.</block>
@@ -1854,13 +1845,11 @@
   <block id="2fc36b1a4b7ee19add6fb96fa51e06e8" category="inline-link-macro">클러스터 구성을 확인하세요</block>
   <block id="de03dfd1ae9f6be9d8b9a3908591e8b8" category="paragraph">SnapMirror Active Sync를 활성화하는 데 필요한 준비를 완료한 후에는 다음을 수행해야 합니다. <block ref="04df4bf09ed66e3358600cfc6c24fb99" category="inline-link-macro-rx"></block> .</block>
   <block id="d611938cbbf8e09d8cffb8d50d6f69d7" category="summary">ASA r2 클러스터의 계획되지 않은 장애 조치 후 SnapMirror 활성 동기화 관계를 재설정하는 방법을 알아보세요.</block>
-  <block id="d9f4c40f0a9837797bd436d8c81aa4aa" category="doc">ASA r2 클러스터의 계획되지 않은 장애 조치 후 SnapMirror 활성 동기화 관계를 다시 설정합니다.</block>
   <block id="4e85ef85cff46642712b0ee2dcf46ebb" category="list-text">ONTAP Mediator는 구성되고 연결되어 있으며 쿼럼에 속해야 합니다.</block>
   <block id="5d356c397f5a143daadc1597a8fd7a34" category="list-text">다시 설정하려는 SnapMirror 활성 동기화 관계를 선택하세요.</block>
   <block id="9f4215830573390fcfe4dab1715a643e" category="list-text">관계 상태가 *동기화됨*으로 표시될 때까지 기다리세요.</block>
   <block id="a1f13cb349233b9c7d0b9e95fdff569e" category="list-text">선택하다 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> ; 그런 다음 *장애 조치*를 선택하여 원래 기본 클러스터에서 작업을 재개합니다.</block>
   <block id="4e815228ca61a1f75181e7efe619c495" category="summary">SnapMirror Active Sync를 사용하면 예상치 못한 중단이나 사이트 재해로 인한 중단으로부터 복구 지점 목표(RPO)와 복구 시간 목표(RTO)가 0인 호스트 애플리케이션을 보호할 수 있습니다.</block>
-  <block id="497c72a2f611a19c23299b5daea37215" category="doc">SnapMirror Active Sync 설정 워크플로</block>
   <block id="c0da5a4756d4ac1721f7418cfa0145da" category="paragraph">ONTAP SnapMirror 액티브 싱크 데이터 보호 기능은 사이트 전체에 장애가 발생하더라도 비즈니스 서비스가 계속 운영될 수 있도록 지원하며, 보조 복사본을 사용하여 애플리케이션이 투명하게 페일오버되도록 지원합니다. SnapMirror 액티브 싱크를 사용하면 페일오버를 트리거하는 데 수동 작업이나 사용자 지정 스크립팅이 필요하지 않습니다.</block>
   <block id="e5aa1050a01e875d0fd4839753c22c3a" category="inline-link-macro">SnapMirror Active Sync에 대해 자세히 알아보세요</block>
   <block id="c42fce7fb66798714860f8785e01c4fd" category="paragraph"><block ref="a408e5a82a63466cbd34839f021414e3" category="inline-link-macro-rx"></block> .</block>
@@ -2038,7 +2027,6 @@
   <block id="b4a4e19f8caa5675ed75c7e4c2f95379" category="inline-link-macro">SnapMirror 활성 동기화 관계 삭제</block>
   <block id="79bc5a42c0ce5e77f02d040d055dfae3" category="summary">ASA r2 시스템용 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템용 업그레이드와 동일한 프로세스를 따릅니다.  ASA r2 시스템에서 ONTAP 소프트웨어를 업그레이드하면 새롭고 향상된 ONTAP 기능을 활용할 수 있습니다.</block>
   <block id="676b55575e438300a6a0242a0e2d75e1" category="summary">ASA r2 시스템에 대한 자체 서명 인증서나 타사 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성하는 방법을 알아보세요.</block>
-  <block id="891f36b135a18ccbdefecd4dd19a3c84" category="doc">ASA r2 시스템에서 ONTAP Mediator 또는 ONTAP Cloud Mediatior 구성</block>
   <block id="97bae85f844627b195ba9e949527cd8e" category="list-text">오른쪽 창의 *중재자*에서 *중재자 추가*를 선택합니다.</block>
   <block id="42d4a1ca1a8c97aaab863879660365c9" category="list-text">인증서 정보를 추가합니다</block>
   <block id="d766068c7f16a578ba3f54cfb9431541" category="list-text">자체 서명된 인증서를 사용하는 경우 해당 내용을 복사하세요.<block ref="9e1f34d274d54e077ab71c2c0fe0badd" prefix=" " category="inline-code"></block> 파일을 *인증서* 필드에 붙여 넣거나 *가져오기*를 선택하여 이동합니다.<block ref="9e1f34d274d54e077ab71c2c0fe0badd" prefix=" " category="inline-code"></block> 파일을 열고 인증서 정보를 가져옵니다.</block>
@@ -2092,7 +2080,6 @@
   <block id="85bef1d1a49cbb3a5a043ae91ac899f5" category="paragraph">ONTAP 9.16.1을 실행 중이고 분리하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹을 분리하기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 분리하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
   <block id="8e735c2c6a3f530bcf5ec1e68dcead8d" category="paragraph"><block ref="2e81c1e2e7e67baddc7dd1eab1535a95" category="inline-link-macro-rx"></block>분리된 자식 일관성 그룹의 스냅샷을 원격 클러스터에 복제합니다.</block>
   <block id="69476e145701ec47dd0e3181118ad91d" category="summary">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.</block>
-  <block id="3de0089e51a9f451f4891a9694b94d7e" category="doc">미리 정의된 ONTAP 데이터 보호 정책에 대해 알아보세요</block>
   <block id="9f69e96ba899e0e31a6aada411ff602e" category="paragraph">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.</block>
   <block id="ed8bdaffa7dc68cc8c956646c4e8fe55" category="inline-link-macro">사용자 정의 복제 정책 생성</block>
   <block id="cd84790f97e4e9beb448a5f86dfdf828" category="paragraph">미리 정의된 정책이 귀하의 요구 사항을 충족하지 못하는 경우<block ref="780c8d0d6612638332edd501d17289ee" category="inline-link-macro-rx"></block> .</block>
@@ -2124,7 +2111,6 @@
   <block id="a56c1780b810accc7f0bc23193dc16aa" category="cell">XDP기본</block>
   <block id="6b56815783be20f0a82bd8f4880fefa5" category="cell">일일 및 주간 규칙이 있는 금고 정책입니다.</block>
   <block id="83d91de2f52b22872c66e363d396d82b" category="summary">ONTAP Mediator 또는 ONTAP Cloud Mediator를 자체 서명 인증서로 구성하는 경우 타사 인증서를 사용하도록 Mediator를 재구성할 수 있습니다.  보안상의 이유로 귀하의 조직에서는 타사 인증서를 선호하거나 요구할 수 있습니다.</block>
-  <block id="8212aa9e3969d005df60d6c0a8d03da9" category="doc">ASA r2 시스템에서 타사 인증서를 사용하도록 ONTAP Mediator 또는 ONTAP Cloud Mediator를 재구성합니다.</block>
   <block id="6fa9fd24f49ecdb135d0af635134c226" category="section-title">1단계: 중재자 구성 제거</block>
   <block id="1b017ccd17d10e80ac7e3b702a530790" category="paragraph">중재자를 재구성하려면 먼저 클러스터에서 현재 구성을 제거해야 합니다.</block>
   <block id="d76107f3fb2c3c33ee326f5ddecf626e" category="list-text">오른쪽 창의 *중재자*에서 다음을 선택하세요.<block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> 제거하려는 중재자 구성이 있는 클러스터 피어 옆에 있는 *제거*를 선택합니다.</block>
@@ -2272,7 +2258,6 @@
   <block id="bfbfee5b7921da567b4e7f4846f074a4" category="list-text">시스템 관리자에서 *클러스터 &gt; 스토리지 VM*을 선택한 다음 *설정*을 선택합니다.</block>
   <block id="82083a09f8e30e28eb5bea2adf44745b" category="list-text">*정책*에서 *스냅샷* 옆에서 다음을 선택하세요.<block ref="ea08f7a0a99302dbbfd0c8a2575314f3" category="inline-image-macro-rx" type="image"></block> ; 그런 다음 *스냅샷 예약 기본값 설정/편집*을 선택합니다.</block>
   <block id="154d9d875cdce0523c156baad6b9aaf9" category="paragraph">새로 생성된 스토리지 유닛에 대한 스냅샷 예약은 사용자가 지정한 비율로 설정됩니다.  해당 저장 장치에서 스냅샷에 의해 사용된 공간의 양이 예약 공간에 도달하면 오래된 스냅샷은 자동으로 삭제됩니다.</block>
-  <block id="8ac521aa288da78824531c0731c9f2ce" category="doc">ASA r2 스토리지에서 ONTAP 스냅샷 예약에 대해 알아보세요</block>
   <block id="b172b37fc1d3aaa39402471d5fe32da8" category="paragraph">스냅샷 예약은 스냅샷을 위해 특별히 예약된 저장 장치의 공간입니다.  스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.  이렇게 하면 스냅샷이 사용자 데이터용으로 지정된 저장 장치의 공간을 차지하는 것을 방지할 수 있습니다.</block>
   <block id="dc4385ccf12373b89768d8f0604ac921" category="paragraph">스냅샷 예약은 전체 저장 장치 크기의 백분율로 설정됩니다.  예를 들어, 저장 단위가 50GB이고 스냅샷 예약을 10%로 설정하면 스냅샷에 예약된 공간은 5GB가 됩니다.  스냅샷에 사용되는 공간의 양이 5GB로 늘어나면 새로운 스냅샷을 위한 공간을 확보하기 위해 이전 스냅샷이 자동으로 삭제됩니다.  저장 장치 크기가 100GB로 늘어나면 스냅샷 예약 용량도 10GB로 늘어납니다.  설정할 수 있는 최대 스냅샷 예약량은 200%입니다.  저장 장치가 최대 128TB까지 커지면 200% 스냅샷 예약을 통해 완전한 스냅샷을 2개 찍을 수 있습니다.</block>
   <block id="b5c51b506b8606572637075d65d777dd" category="paragraph">기본적으로 스냅샷 예약은 0%로 설정되고 스냅샷 자동 삭제는 활성화되어 있지 않습니다.</block>
@@ -2408,7 +2393,6 @@
   <block id="5ae2b91104e852585ddf073635450cf8" category="paragraph">기본 스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화합니다.</block>
   <block id="715a6e64eed03295b4e2bc3df4da2dc6" category="list-text">*스냅샷 예약 %*에서 스냅샷에 할당하려는 저장 장치 공간의 백분율에 대한 숫자 값을 입력합니다.</block>
   <block id="162edb1432d7c690ed0b5b42fa399a29" category="summary">최적의 성능, 구성 및 지원을 위해서는 ASA r2 스토리지 한도를 알고 있어야 합니다.</block>
-  <block id="9027c61cfac0613d2e6d2a3e9f8dce46" category="doc">ASA r2 시스템으로 마이그레이션 후 클라이언트를 전환하고 소스 스토리지 VM을 정리합니다.</block>
   <block id="a36422a2f9f3777ca6a112c936b8ffc7" category="paragraph">스토리지 가상 머신(VM)이 ASA 클러스터에서 ASA r2 클러스터로 마이그레이션된 후 기본적으로 클라이언트는 자동으로 ASA r2 클러스터로 전환되고 ASA 클러스터의 스토리지 VM은 자동으로 제거됩니다.  마이그레이션 중에 ASA 스토리지 VM의 자동 전환 및 제거를 비활성화하도록 선택한 경우 마이그레이션이 완료된 후 이러한 단계를 수동으로 수행해야 합니다.</block>
   <block id="b1a60764d65e294c75af5b4d8f70838b" category="section-title">스토리지 VM 마이그레이션 후 클라이언트를 ASA r2 시스템으로 수동으로 전환</block>
   <block id="aac22a8dfae9665f2f3c5a2f9431abe7" category="paragraph">ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션하는 동안 자동 클라이언트 전환을 비활성화한 경우, 마이그레이션이 성공적으로 완료된 후 수동으로 전환을 수행하여 ASA r2 스토리지 VM이 클라이언트에 데이터를 제공할 수 있도록 합니다.</block>
@@ -2561,8 +2545,6 @@
   <block id="8e06442a81408e5b3d9d881ee34604d9" category="list-text">포트 e10b를 shelf 1 NSM B 포트 e0b에 연결하십시오.</block>
   <block id="a21739611cdd87f44b21b69f2d1255c4" category="doc">ASA r2 스토리지 시스템에서 기본 자율형 랜섬웨어 보호 기능을 비활성화하십시오</block>
   <block id="8a7cfb8fa6ea38ee5f0146687bddcd42" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 활성화하세요</block>
-  <block id="a9adededf161bd5d8bb9db9309976ce3" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 일시 중지하거나 다시 시작하세요.</block>
-  <block id="bd38f3869f7e640b90d83fffd4208955" category="doc">ASA r2 스토리지 시스템에서 AI 알림을 통해 자율형 랜섬웨어 보호 기능에 대응하세요</block>
   <block id="3e43f7eeca64d5c830b0064870a6156b" category="admonition">설치 및 유지보수 절차를 수행하는 동안에는 항상 검증된 접지점에 연결된 접지 손목 스트랩을 착용하십시오. 적절한 ESD 예방 조치를 따르지 않으면 컨트롤러 노드, 스토리지 셸프 및 네트워크 스위치가 영구적으로 손상될 수 있습니다.</block>
   <block id="fc4a9f6cd00df6dfa4d8144f15b57af3" category="paragraph">스토리지 유닛(LUN 또는 NVMe 네임스페이스 기반)이 생성되면 ONTAP은 해당 스토리지 유닛을 저장할 적절한 스토리지 가용성 영역에 볼륨을 자동으로 생성합니다. 새로 생성된 볼륨은 최적의 성능과 균형 잡힌 용량 활용을 위해 스토리지 가용성 영역 내에 자동으로 배치됩니다. 스토리지 가용성 영역 내의 용량 활용은 사용 중인 ONTAP 버전에 따라 균형을 유지합니다. <block ref="44cab674f8c9e72d3dcaedde750c6695" category="inline-link-macro-rx"></block>.</block>
   <block id="862cd7ba2a996f4f7baaf919aeabdaa3" category="summary">ASA A1K 스토리지 시스템을 네트워크 및 스토리지 셸프에 연결하여 클러스터 통신, 관리 액세스 및 SAN 호스트 연결을 활성화하십시오.</block>
@@ -2681,7 +2663,6 @@
   <block id="c240788f59668332d5c171cbe489376a" category="paragraph"><block ref="9c7fdd39bc5019d6cec3e908fec6a772" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
   <block id="9917a58904f13efdde588f2978fd93b9" category="inline-link-macro">AI를 활용한 자율형 랜섬웨어 보호 기능 활성화</block>
   <block id="b71329b670dac542862012007751fd6f" category="summary">ONTAP 9.19.1 이상을 실행하는 AIX 호스트에 대해 SnapMirror 액티브 동기화를 활성화하려면 먼저 호스트 액세스 모드를 로컬로 설정해야 합니다.</block>
-  <block id="e7afd2cc385e151dc252f52489678be6" category="doc">ASA r2 시스템에서 SnapMirror 액티브 동기화 보호를 위해 AIX 호스트 준비</block>
   <block id="16624daae6b7659680047c4fc428fec2" category="paragraph">ONTAP 9.19.1 버전부터 AIX용 투명 애플리케이션 페일오버가 대칭형 액티브/액티브 구성에서 SnapMirror 액티브 싱크를 통해 지원됩니다. SnapMirror 액티브 싱크의 데이터 보호 기능을 통해 사이트 전체 장애 발생 시에도 비즈니스 서비스가 계속 운영될 수 있으며, 보조 복사본을 사용하여 애플리케이션이 투명하게 페일오버될 수 있습니다.</block>
   <block id="ba38f5c107e42f69bfac0d9f7824f8c9" category="inline-link-macro">SnapMirror 액티브 동기화를 위한 상호 운용성</block>
   <block id="f80d8776833174e556c56272ce794684" category="paragraph">ONTAP 9.19.1 이상을 실행하는 AIX 호스트에 대해 SnapMirror 액티브 동기화를 활성화하려면 먼저 호스트 액세스 모드를 로컬로 설정해야 합니다. 다른 호스트 유형의 경우 액세스 모드를 선택할 필요가 없습니다. <block ref="987f5b7a840f16d7e10b014311f90ef1" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
@@ -2867,4 +2848,22 @@
   <block id="5cdfe0a12dbe0154513cd399f4ebb394" category="cell"><block ref="5cdfe0a12dbe0154513cd399f4ebb394" category="inline-link-macro-rx"></block></block>
   <block id="79e8ff3b299a4fcb9f7a7eaedd4a6306" category="cell">IP 및 NVMe/TCP LIF에 대해 기본 자동 LIF 페일오버가 지원됩니다.</block>
   <block id="f4a196522bd29f2dc617b123e426fca8" category="admonition">VM(가상 머신) 제한은 Hardware Universe에 나열되어 있지 않습니다. ASA r2 시스템 볼륨 제한을 기준으로 HA 쌍당 권장 최대 VM 수는 800개, 클러스터당 권장 최대 VM 수는 1200개입니다.  이 제한은 VMFS 데이터스토어에 있는 VM에는 적용되지 않습니다.  VMFS 데이터스토어에는 최대 VM 수 제한이 없습니다.</block>
+  <block id="a536b53a0230979ea7dced793dc9491e" category="doc">ASA r2 시스템에서 ONTAP Mediator 또는 ONTAP Cloud Mediator 구성</block>
+  <block id="6e3fcbcce3441b9118a284072b2d43aa" category="doc">ASA r2 시스템에서 클러스터 간 스토리지 VM 피어 관계 생성</block>
+  <block id="6bf0920af0bdc9c57b36bb8d2920f050" category="doc">ASA r2 시스템에서 데이터 보호 정책 및 일정 관리</block>
+  <block id="f8bb47b24976c7bf4723961daedd3e1a" category="doc">ASA r2 시스템에 대한 사전 정의된 데이터 보호 정책에 대해 알아보십시오.</block>
+  <block id="76e0d98c8871e04d4f9ff544bbb24b78" category="doc">ASA r2 시스템에서 SnapMirror 활성 동기화를 위해 AIX 호스트 준비</block>
+  <block id="96072d2cdbee5229e27852ec585d56d1" category="doc">ASA r2 시스템에서 타사 인증서를 사용하도록 Mediator 재구성</block>
+  <block id="b062004dfbb4ad5e82066f96dc686b12" category="doc">ASA r2 클러스터 SnapMirror 액티브 동기화 구성 확인</block>
+  <block id="198085dfe5a8229e7c749f1dbdf5e4f7" category="doc">ASA r2 SnapMirror 활성 동기화 관계 장애 조치</block>
+  <block id="c52c6c6622ecbf9a06ed9e2749751ea7" category="doc">ASA r2에서 예기치 않은 페일오버 후 SnapMirror 활성 동기화 재설정</block>
+  <block id="5040e8878b6b4047227bf23dfa69ad32" category="doc">SnapMirror ASA r2 시스템용 SnapMirror 액티브 싱크 설정 워크플로</block>
+  <block id="9a923360fe18ef8d2ab0c152cf8b442b" category="doc">ASA r2 스토리지 시스템의 ONTAP 스냅샷 예약에 대해 알아보십시오</block>
+  <block id="d0f9bfc8fd9b34fb299681a49d3c44f2" category="searchtitle">ASA r2와 다른 ONTAP 시스템 간의 차이점</block>
+  <block id="b97444b3293ace41e23cdcd254cb82d6" category="doc">ASA r2 시스템에서 ONTAP SAN 스토리지 프로비저닝</block>
+  <block id="3a70164c0ba54edbf03abe9eb4ddcf0f" category="doc">ASA r2 스토리지 VM 마이그레이션 후 전환 및 정리 작업</block>
+  <block id="86c0d573069eca002c586264ae1b0211" category="doc">ASA r2 시스템 인사이트를 활용하여 클러스터 보안 및 성능을 최적화합니다.</block>
+  <block id="d59a2ca55fba4c918ce94764958c72c4" category="doc">ASA r2 스토리지 시스템에 대한 IPsec 및 하드웨어 오프로드 지원</block>
+  <block id="58c7744ea9658fb6f86ed215f89056ad" category="doc">ASA r2 스토리지 시스템에서 ARP/AI 보호 일시 중지 또는 재개</block>
+  <block id="a80d92389a122d0641f947975df5f6d2" category="doc">ASA r2 스토리지 시스템에서 ARP/AI 경고에 대응하기</block>
 </blocks>

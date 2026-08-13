@@ -4,7 +4,7 @@ permalink: data-protection/prepare-aix-snapmirror-active-sync.html
 keywords: asa r2, data protection, protect data, configure, snapmirror active sync, ,disaster recovery, symmetric active active, prepare, aix 
 summary: ONTAP 9.19.1 이상을 실행하는 AIX 호스트에 대해 SnapMirror 액티브 동기화를 활성화하려면 먼저 호스트 액세스 모드를 로컬로 설정해야 합니다. 
 ---
-= ASA r2 시스템에서 SnapMirror 액티브 동기화 보호를 위해 AIX 호스트 준비
+= ASA r2 시스템에서 SnapMirror 활성 동기화를 위해 AIX 호스트 준비
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

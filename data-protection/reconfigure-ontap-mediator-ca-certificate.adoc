@@ -4,7 +4,7 @@ permalink: data-protection/reconfigure-ontap-mediator-ca-certificate.html
 keywords: asa r2, data protection, protect data, configure mediator, reconfigure, reinitialize, ontap mediator, cloud mediator, self-signed, ca, certificates 
 summary: ONTAP Mediator 또는 ONTAP Cloud Mediator를 자체 서명 인증서로 구성하는 경우 타사 인증서를 사용하도록 Mediator를 재구성할 수 있습니다.  보안상의 이유로 귀하의 조직에서는 타사 인증서를 선호하거나 요구할 수 있습니다. 
 ---
-= ASA r2 시스템에서 타사 인증서를 사용하도록 ONTAP Mediator 또는 ONTAP Cloud Mediator를 재구성합니다.
+= ASA r2 시스템에서 타사 인증서를 사용하도록 Mediator 재구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

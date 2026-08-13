@@ -4,7 +4,7 @@ permalink: data-protection/snapshot-reserve.html
 keywords: asa r2, snapshot reserve, percentage 
 summary: 스냅샷 예약은 스냅샷을 위해 특별히 예약된 저장 장치의 공간입니다.  스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다. 
 ---
-= ASA r2 스토리지에서 ONTAP 스냅샷 예약에 대해 알아보세요
+= ASA r2 스토리지 시스템의 ONTAP 스냅샷 예약에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
