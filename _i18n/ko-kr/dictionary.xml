@@ -23,7 +23,6 @@
   <block id="ea606fa7b548cf2b580d32d8a7e06738" category="list-text">드라이브가 중간 평면에 완전히 장착되고 핸들이 제자리에 고정되도록 캠 핸들을 닫습니다.</block>
   <block id="70c5de04671814ba5dcd9d09b741a1cf" category="paragraph">캠 핸들이 드라이브 면과 올바르게 정렬되도록 캠 핸들을 천천히 닫아야 합니다.</block>
   <block id="914880e8c4c1f2d863426d9fdb26e63d" category="list-text">드라이브의 작동 LED(녹색)가 켜져 있는지 확인합니다.</block>
-  <block id="8540a1aa039945b859a1a577be974331" category="list-text">LED가 켜져 있으면 드라이브에 전원이 들어옵니다.</block>
   <block id="b976d1eaf63b1cc64a0aefb8ee074737" category="list-text">LED가 깜박이면 드라이브에 전원이 들어오고 I/O가 진행 중인 것입니다. 드라이브 펌웨어를 업데이트하는 경우에도 LED가 깜박입니다.</block>
   <block id="23e334f05e952b9ff19da92642272c97" category="paragraph">현재 펌웨어 버전이 없는 새 드라이브에서 드라이브 펌웨어가 중단 없이 자동으로 업데이트됩니다.</block>
   <block id="ddd3f2f8d2c30dd30d7f438baa0b344c" category="list-text">노드가 드라이브 자동 할당으로 구성되어 있는 경우 ONTAP가 새 드라이브를 노드에 자동으로 할당할 때까지 기다릴 수 있습니다. 노드가 드라이브 자동 할당으로 구성되지 않았거나 원하는 경우 드라이브를 수동으로 할당할 수 있습니다.</block>
@@ -43,7 +42,6 @@
   <block id="763c4b735ed893cd16a51bd04983ace0" category="inline-image-macro">대각선 반대 방향으로 향하는 두 개의 화살표 다음에 More options(추가 옵션)라는 단어가 나옵니다</block>
   <block id="0e7abfbe7afd6a026db3f74641f7c1dc" category="list-text">GSR 기본값을 변경하려면 확장 키 사용을 선택하거나 제목 대체 이름을 추가한 <block ref="ca3389cd4e212742391c26eb7cfeb92f" category="inline-image-macro-rx" type="image"></block>다음 을 선택하고 원하는 업데이트를 수행합니다.</block>
   <block id="c67e909aabe72e49f90ee7cbe67386f3" category="list-text">Generate * 를 선택합니다.</block>
-  <block id="58a9444d475382ab6d41e5dfb3b74c25" category="paragraph">공개 인증서를 생성하는 데 사용할 수 있는 CSR을 생성했습니다.</block>
   <block id="d2239394e4657f1d0e7710610d913ea0" category="section-title">신뢰할 수 있는 인증 기관을 추가합니다</block>
   <block id="969be7a147de5a36fce282a68b738f12" category="paragraph">ONTAP TLS(전송 계층 보안)를 사용하는 응용 프로그램에 대해 신뢰할 수 있는 기본 루트 인증서 집합을 제공합니다. 필요에 따라 신뢰할 수 있는 인증 기관을 추가할 수 있습니다.</block>
   <block id="895ca0680053a3b00358e1394db5afd3" category="list-text">클러스터 &gt; 설정 * 을 선택합니다.</block>
@@ -162,31 +160,24 @@
   <block id="4b43fcb8416640ec9fab44fa28ba7990" category="paragraph">보안을 강화하고, 문제를 격리하고, IP 네트워크 인프라 내에서 사용 가능한 경로를 제한하기 위해 VLAN을 만들었습니다.</block>
   <block id="6ed0df7e904b85eced349f3dfe9d7449" category="summary">유지보수, 문제 해결, 소프트웨어 업데이트 또는 기타 관리상의 이유로 노드를 재부팅해야 할 수 있습니다.</block>
   <block id="f32099e04b2acfe97d8355b9fa3ab9a0" category="doc">ASA R2 스토리지 시스템에서 노드를 재부팅합니다</block>
-  <block id="d7b158851672ba435107aef39e567fc9" category="paragraph">유지보수, 문제 해결, 소프트웨어 업데이트 또는 기타 관리상의 이유로 노드를 재부팅해야 할 수 있습니다. 노드가 재부팅되면 HA 파트너가 자동으로 테이크오버를 실행합니다. 파트너 노드는 재부팅된 노드가 다시 온라인 상태가 된 후에 자동 반환을 수행합니다.</block>
   <block id="c352b7c4dd311b306fdd9f0fc9a8cd8c" category="list-text">System Manager에서 * 클러스터 &gt; 개요 * 를 선택합니다.</block>
   <block id="9440e1c4b84b57408c464ace07a7a878" category="list-text"><block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>재부팅하려는 노드 옆에 있는 을 선택한 다음 * 재부팅 * 을 선택합니다.</block>
   <block id="4283dcef28f0d09e831a0be894435be6" category="list-text">노드를 재부팅하는 이유를 입력한 다음 * Reboot * 를 선택합니다.</block>
   <block id="ca23d4a9dcd507fdb0e2b37edf93124f" category="paragraph">재부팅 이유를 입력한 이유는 시스템 감사 로그에 기록됩니다.</block>
-  <block id="54dc5c16f4aee32cdc661e34243fd2b4" category="paragraph">노드가 재부팅 중인 동안 HA 파트너가 테이크오버를 수행하여 데이터 서비스가 중단되지 않도록 합니다. 재부팅이 완료되면 HA 파트너가 기브백을 수행합니다.</block>
   <block id="8e709d4933b80517cc0796f25203c496" category="summary">조직의 명명 규칙에 맞게 또는 기타 관리 상의 이유로 노드 이름을 변경해야 할 수도 있습니다.</block>
   <block id="476d1f0db4e5f305c79190e60266f995" category="doc">ASA R2 스토리지 시스템에서 노드 이름을 바꿉니다</block>
-  <block id="75d2e00ad74f6a0ed1760ec89a776487" category="paragraph">ONTAP System Manager를 사용하여 ASA R2 시스템에서 노드 이름을 바꿀 수 있습니다. 조직의 명명 규칙에 맞게 또는 기타 관리 상의 이유로 노드 이름을 변경해야 할 수도 있습니다.</block>
   <block id="6e44f6775202148b10a6a547cbc3387d" category="list-text"><block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>이름을 바꾸려는 노드 옆에 있는 을 선택한 다음 * Rename * 을 선택합니다.</block>
   <block id="04cf2d1c62979e65af58dad93b9576d6" category="list-text">노드의 새 이름을 입력한 다음 * Rename * 을 선택합니다.</block>
   <block id="386965547e6b84de440cf671abaf2461" category="paragraph">새 이름이 노드에 적용됩니다.</block>
   <block id="39d236810e52221ef0f78b5afe9dda51" category="summary">ONTAP는 ASA R2 시스템에서 펌웨어를 자동으로 업데이트합니다. System Manager를 사용하여 자동 업데이트를 사용하지 않도록 설정하고 업데이트를 설치하기 전에 볼 수 있습니다.</block>
   <block id="531a0a7558ea49516e00375fc7a7c6c1" category="doc">ASA R2 스토리지 시스템에서 펌웨어를 업데이트합니다</block>
-  <block id="b1fa95bfdd87d26ef5f8aca8df282454" category="paragraph">ONTAP는 기본적으로 ASA R2 시스템에서 펌웨어 및 시스템 파일을 자동으로 다운로드하고 업데이트합니다. 권장 업데이트를 다운로드하여 설치하기 전에 유연하게 확인할 수 있는 경우 ONTAP System Manager를 사용하여 자동화된 업데이트를 사용하지 않도록 설정하거나 업데이트 매개 변수를 편집하여 작업을 수행하기 전에 사용 가능한 업데이트 알림을 표시할 수 있습니다.</block>
   <block id="9543e3c5ee671be608b8d7358d2905b4" category="section-title">자동 업데이트를 활성화합니다</block>
-  <block id="16dd8aa4e8a61c5fff4660292af260d6" category="paragraph">스토리지 펌웨어, SP/BMC 펌웨어 및 시스템 파일에 대한 권장 업데이트는 기본적으로 ASA R2 시스템에 자동으로 다운로드되고 설치됩니다. 자동 업데이트를 사용하지 않도록 설정한 경우 기본 동작을 복원하도록 설정할 수 있습니다.</block>
   <block id="17ac6cdd9934a4f4aca00f5228a64555" category="list-text">업데이트 수정이 모든 현재 및 향후 업데이트에 적용됨을 확인하려면 선택합니다.</block>
   <block id="7ae6e72fcf95f7e0b8f4dbe1153d8398" category="paragraph">업데이트 선택 항목에 따라 권장 업데이트가 자동으로 다운로드되고 ASA R2 시스템에 설치됩니다.</block>
   <block id="5de0adb95551ff3c1458ae6247a4959f" category="section-title">자동 업데이트를 비활성화합니다</block>
-  <block id="3a73131e5e1a3a498c8e055e84a30f60" category="paragraph">자동 업데이트를 사용할 수 없습니다. 권장 업데이트를 정기적으로 확인하고 수동 설치를 수행할지 결정해야 합니다.</block>
   <block id="e8b8aa5f70e0a4459ca2284f8da3b813" category="section-title">자동 업데이트를 봅니다</block>
   <block id="6edf33a55c81d08e5aac13aae918832c" category="paragraph">클러스터에 다운로드되고 자동 설치가 예약된 펌웨어 및 시스템 파일 업데이트 목록을 봅니다. 이전에 자동으로 설치된 업데이트도 볼 수 있습니다.</block>
   <block id="c5f5044ff24461ba8a4e4a6bc2887bd0" category="section-title">자동 업데이트를 편집합니다</block>
-  <block id="aa32761812c5105416e1c8de6901bbf8" category="paragraph">스토리지 펌웨어, SP/BMC 펌웨어 및 시스템 파일에 대한 권장 업데이트를 클러스터에 자동으로 다운로드하고 설치하도록 선택하거나 권장 업데이트를 자동으로 해제하도록 선택할 수 있습니다. 업데이트 설치 또는 해제를 수동으로 제어하려면 권장 업데이트가 있을 때 알림을 받도록 선택합니다. 그런 다음 수동으로 선택하여 설치하거나 해제할 수 있습니다.</block>
   <block id="820669251a6d9aa8a265e4aa20459cdf" category="list-text">자동 업데이트 선택 사항을 업데이트합니다.</block>
   <block id="aed3f23a5ce94e81514a2da9dce9b2ef" category="paragraph">자동 업데이트는 사용자의 선택에 따라 수정됩니다.</block>
   <block id="d51f54f2a9182b10cea278ae35000b46" category="section-title">펌웨어를 수동으로 업데이트합니다</block>
@@ -195,8 +186,6 @@
   <block id="70bd8d7d7e01ac7ceebd8e8ba2be8da6" category="paragraph">펌웨어가 업데이트됩니다.</block>
   <block id="a8d696bbc3e0da20e552c1bb59ce8581" category="doc">ASA R2 스토리지 시스템에서 사용자 계정 및 역할을 관리합니다</block>
   <block id="26c63dfee3232ccec05fbebd34b103b5" category="paragraph">System Manager를 사용하여 사용자 계정에 대한 Active Directory 도메인 컨트롤러 액세스, LDAP 및 SAML 인증을 구성합니다. 사용자 계정 역할을 생성하여 역할에 할당된 사용자가 클러스터에서 수행할 수 있는 특정 기능을 정의합니다.</block>
-  <block id="6dc7fdce5f04758fffbd1050c23f063c" category="section-title">Active Directory 도메인 컨트롤러 액세스를 구성합니다</block>
-  <block id="f9adc1a73be5a88e97262617585fc35b" category="paragraph">AD 계정 액세스를 설정할 수 있도록 클러스터 또는 스토리지 VM에 대한 AD(Active Directory) 도메인 컨트롤러 액세스를 구성합니다.</block>
   <block id="e2c5bc110c3134711e8a3af89700078e" category="list-text">보안 * 섹션의 * Active Directory * 아래에서 * 구성 * 을 선택합니다.</block>
   <block id="2d9774ef5d6550d067c7779bde2cc348" category="paragraph">이제 ASA R2 시스템에서 AD 계정 액세스를 활성화할 수 있습니다.</block>
   <block id="f4577450199e9b0c070ffd7727b8b7db" category="section-title">LDAP를 구성합니다</block>
@@ -212,7 +201,6 @@
   <block id="bbbb5ba02f389abec12b75c1b9cb91bc" category="paragraph">구성에 대해서는 IDP 설명서를 참조하십시오.</block>
   <block id="3a9e3f68d0c667f8a7b447e51b0c8cba" category="list-text">IDP의 URI가 있어야 합니다.</block>
   <block id="ee70ca4f30627d772db092c5816654fa" category="inline-image-macro">기계식 기어의 파란색 윤곽선</block>
-  <block id="2f57bb8657084586dcade5932725c4de" category="list-text">보안 * 에서 * SAML 인증 * 옆에 있는 를 선택합니다<block ref="a9be0719b387789238ea22451afbb122" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="7db9109baea64861f13be96391d9b81d" category="list-text">SAML 인증 활성화 * 를 선택합니다.</block>
   <block id="3e352186f36f76f562edca4984f0411a" category="list-text">IDP URL 및 호스트 시스템 IP 주소를 입력한 다음 * 저장 * 을 선택합니다.</block>
   <block id="cb4c43c9c7ec8689cc5b6b9004feb80d" category="paragraph">확인 창에 메타데이터 정보가 표시되며, 이 정보는 클립보드에 자동으로 복사됩니다.</block>
@@ -234,7 +222,6 @@
   <block id="a730d357af30dbb64e05aedcc912bc6e" category="list-text">사용자 * 에서 을 선택합니다<block ref="120e8ce30fa09c1e015e32b4fdada4d3" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="0591e5156b9b9934695bd3a29fc6ad2d" category="list-text">사용자 이름을 입력한 다음 사용자에게 할당할 역할을 선택합니다.</block>
   <block id="993b9a4bb761c1677086e320fa017318" category="list-text">사용자 로그인 방법과 인증 방법을 선택합니다.</block>
-  <block id="b21ff4532a83df036f4d23b6a3950c9d" category="list-text">MFA를 활성화하려면 를 <block ref="0428df21f8cd0e9a5a515701151394b7" category="inline-image-macro-rx" type="image"></block>선택한 다음 보조 로그인 방법 및 인증 방법을 선택합니다</block>
   <block id="a684b58dd7cbb3dc60e9390e6971aad8" category="list-text">사용자의 암호를 입력합니다.</block>
   <block id="3dbdb12dafcdfe6fa91ffde82420684c" category="paragraph">새 관리자 계정이 생성되어 ASA R2 클러스터에서 사용할 수 있습니다.</block>
   <block id="cd5ce84f06573fa36efd7de37fc1e5ba" category="summary">호스트 데이터 작업에 문제가 있는 경우 ONTAP System Manager를 사용하여 호스트에서 ASA R2 스토리지 시스템으로의 접속이 활성 상태인지 확인할 수 있습니다.</block>
@@ -288,9 +275,7 @@
   <block id="a4d185388b1d0590ab82bd92ab9e5a4f" category="open-title">스토리지 유닛의 스냅샷입니다</block>
   <block id="10f0065e6ea2180cb3c97fabb6c95d12" category="list-text">System Manager에서 * Storage * 를 선택합니다.</block>
   <block id="b533e24f42188dc84e030cbc9efbd351" category="list-text">보호할 스토리지 유닛의 이름 위로 마우스를 가져갑니다.</block>
-  <block id="c32a6403a774a3688dc679bd55484681" category="list-text">를 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block> 선택한 다음 * Protect * 를 선택합니다. 즉시 주문형 스냅샷을 생성하려면 * 로컬 보호 * 아래에서 * 지금 스냅샷 추가 * 를 선택합니다.</block>
   <block id="7a9a61ee2297500e102394139e96e623" category="inline-link-macro">스냅샷 복제를 설정합니다</block>
-  <block id="a63371f95cb6727e19c23f03f570df80" category="paragraph">스냅샷을 통해 데이터가 보호되므로 이제 <block ref="c9073dd826fc7721b98f9930c55d01b2" category="inline-link-macro-rx"></block>백업 및 재해 복구를 위해 일관성 그룹을 지리적으로 멀리 떨어진 위치에 복사해야 합니다.</block>
   <block id="28e240e6173e34f1942b6fae18eece4d" category="summary">정합성 보장 그룹을 사용하여 각 유닛에 대해 개별적으로 작업을 수행하는 대신 여러 스토리지 유닛에 대해 동시에 다양한 작업을 수행합니다.</block>
   <block id="756274998bfddb9ee5aca3ce09a0d910" category="section-title">정합성 보장 그룹에 스냅샷 데이터 보호 기능을 추가합니다</block>
   <block id="ef96230e3fb35067c9001214ca84a12c" category="paragraph">정합성 보장 그룹에 스냅샷 데이터 보호를 추가하면 사전 정의된 스케줄에 따라 정합성 보장 그룹의 로컬 스냅샷이 정기적으로 생성됩니다.</block>
@@ -324,10 +309,8 @@
   <block id="236d027a29735ea241017b984070febe" category="list-text">새 저장 장치 사용 * 을 선택합니다.</block>
   <block id="49cc1302e1d4a9fc25e79b21e9b9390d" category="list-text">생성할 단위 수와 단위당 용량을 입력합니다.</block>
   <block id="6810fc9a2124dfae445328ea12c8054a" category="list-text">확장 * 을 선택합니다.</block>
-  <block id="0a20c90d5270bed19fcaf851778c663b" category="paragraph-title">다음 단계</block>
   <block id="dca1bf967ef02ec6ead04262fe0c5dfd" category="inline-link-macro">호스트 이니시에이터를 추가합니다</block>
   <block id="7436bfb4eb62ddf1309c6ae813f75f0c" category="inline-link-macro">새로 생성된 스토리지 유닛을 호스트에 매핑합니다</block>
-  <block id="191b857adf5e444490ae6b5ef5564654" category="paragraph">새 스토리지 유닛을 생성한 후에는 <block ref="0b287ca0eb92c7f68147891f3dfb6ead" category="inline-link-macro-rx"></block>및 <block ref="8f4058042298bb1cf89c5eaabd6331c6" category="inline-link-macro-rx"></block>을 수행해야 합니다. 호스트 이니시에이터를 추가하면 호스트가 스토리지 유닛을 액세스하고 데이터 작업을 수행할 수 있습니다. 스토리지 유닛을 호스트에 매핑하면 스토리지 유닛이 매핑된 호스트에 데이터를 제공하기 시작할 수 있습니다.</block>
   <block id="99700bd2ab6af15decb17885d5856657" category="inline-link-macro">즉시 스냅샷을 생성합니다</block>
   <block id="883fa8b44943472ff82c4b395e3207ba" category="paragraph">정합성 보장 그룹의 기존 스냅샷에는 새로 추가된 스토리지 유닛이 포함되지 않습니다. <block ref="bde1d2fc6fbace4be56bc1d078ee60f6" category="inline-link-macro-rx"></block>다음에 예약된 스냅샷이 자동으로 생성될 때까지 정합성 보장 그룹을 사용하여 새로 추가된 스토리지 유닛을 보호해야 합니다.</block>
   <block id="eb3d9524e99cab26e24c94b8d7a74f7b" category="section-title">정합성 보장 그룹에서 스토리지 유닛을 제거합니다</block>
@@ -380,7 +363,6 @@
   <block id="042d689a0af446510e1c4b24dd9c2fb3" category="doc">ASA R2 스토리지 시스템에서 데이터를 복구합니다</block>
   <block id="23f73d35f33960f836b4c972d5d09270" category="paragraph">스냅샷으로 보호되는 정합성 보장 그룹 또는 스토리지 유닛의 데이터는 손실되거나 손상된 경우 복구할 수 있습니다.</block>
   <block id="0547aea64f49ba1efcd1fd9f6ef765bd" category="section-title">일관성 그룹 복원</block>
-  <block id="345ca20e39c1b3f1423343d17031e8db" category="paragraph">정합성 보장 그룹을 복구하면 정합성 보장 그룹의 모든 스토리지 유닛에 있는 데이터가 스냅샷의 데이터로 대체됩니다. 스냅샷이 생성된 후 스토리지 유닛에 대한 변경 사항은 복구되지 않습니다.</block>
   <block id="a97b0cb07478c4ff127c8ba83a66503f" category="paragraph">로컬 또는 원격 스냅샷에서 정합성 보장 그룹을 복구할 수 있습니다.</block>
   <block id="29deb93ec612425b64c0c477a30824d7" category="open-title">로컬 스냅샷에서 복구합니다</block>
   <block id="e5f6b4e12f05c608a7c04738b6b2d7d1" category="list-text">복원할 데이터가 포함된 일관성 그룹을 두 번 클릭합니다.</block>
@@ -414,12 +396,10 @@
   <block id="256483a2b5ed8710e7c8fdf9ce515426" category="paragraph">데이터를 원격 클러스터에 복제하여 데이터를 보호하려면 로컬 및 원격 클러스터 간에 클러스터 피어 관계를 생성해야 합니다.</block>
   <block id="53950c8063da261b283bbbda8dcdf670" category="list-text">로컬 클러스터의 System Manager에서 * 클러스터 &gt; 설정 * 을 선택합니다.</block>
   <block id="111e1e243efefbc8f1f98dbcb38b2be9" category="list-text">클러스터 피어 * 옆에 있는 * Intercluster Settings * 에서 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>* Add a cluster peer * 를 선택한 다음 * Add a cluster peer * 를 선택합니다.</block>
-  <block id="695db69b9d1b9c619b5e7ddaa2999cc1" category="list-text">lauch remote cluster * 를 선택합니다. 그러면 원격 클러스터를 인증하는 데 사용할 암호가 생성됩니다.</block>
   <block id="817c3b20b4d3edad274a1a4e512f4000" category="list-text">원격 클러스터에 대한 암호를 생성한 후 로컬 클러스터의 * Passphrase * 에 붙여 넣습니다.</block>
   <block id="94e8481f76f7459831da0ff830f03693" category="inline-image-macro">파란색 더하기 기호 뒤에 파란색 글자가 추가됩니다</block>
   <block id="c48a364bcfea9942c880a707be66baf8" category="list-text"><block ref="750f4f104efd8460cc9c38b724a23fe2" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 인터클러스터 네트워크 인터페이스 IP 주소를 입력합니다.</block>
   <block id="8c0b8a980a5fccf0d26e14839c9636e5" category="list-text">클러스터 피어링 시작 * 을 선택합니다.</block>
-  <block id="128a86d6606d71775364b984ff92953c" category="paragraph">원격 클러스터가 있는 로컬 ASA R2 클러스터를 피어링했습니다. 이제 복제 관계를 생성할 수 있습니다.</block>
   <block id="99ce99ecf863ff8fe2a9cbb3426c1e80" category="list-text">System Manager에서 * 보호 &gt; 정책 * 을 선택한 다음 * 복제 정책 * 을 선택합니다.</block>
   <block id="b03db2a30a32c3ac8c0f123bffb1ece4" category="list-text">복제 정책의 이름을 입력하거나 기본 이름을 그대로 사용한 다음 설명을 입력합니다.</block>
   <block id="ca8308195da9e8f1aaa6981179fa1910" category="list-text">정책 범위 * 를 선택합니다.</block>
@@ -456,8 +436,6 @@
   <block id="0bb0adac08ee917b57b12b2ff068f754" category="inline-link-macro">유휴 데이터 암호화</block>
   <block id="1fd0dd113b7d2a6e0f3a9fb170c02fb4" category="paragraph">이제 재해 복구를 위해 스냅샷 복제를 통해 데이터를 보호하므로 <block ref="fe828903eaf34996ebfa181196a5a3c3" category="inline-link-macro-rx"></block>ASA R2 시스템의 디스크가 용도 변경, 반환, 위치 오류 또는 도난된 경우에도 데이터를 읽을 수 없습니다.</block>
   <block id="f0afca309281c705315c3dbc8027d635" category="doc">ASA R2 스토리지 시스템에서 AutoSupport를 관리합니다</block>
-  <block id="31147c2932798eadd955620b17929169" category="paragraph">AutoSupport는 시스템의 상태를 능동적으로 모니터링하고 NetApp 기술 지원, 내부 지원 조직 및 지원 파트너에게 메시지를 자동으로 보내는 메커니즘입니다.</block>
-  <block id="5814a9c468f0bf869cac19ccf16a8e35" category="paragraph">클러스터를 설정할 때 기술 지원에 대한 AutoSupport 메시지는 기본적으로 사용하도록 설정됩니다. 내부 지원 조직에 메시지를 보내려면 올바른 옵션을 설정하고 유효한 메일 호스트가 있어야 합니다. ONTAP는 AutoSupport 메시지를 사용하도록 설정한 후 24시간 후에 보내기 시작합니다.</block>
   <block id="8e3b3443f7322d7c7fc2e9b691e9b154" category="paragraph">AutoSupport를 관리하려면 클러스터 관리자여야 합니다.</block>
   <block id="a1a978a0ef405a79f3b2c5f89d50b536" category="section-title">AutoSupport 연결을 테스트합니다</block>
   <block id="d62c03a6357eefd7638471c82a6859be" category="paragraph">클러스터를 설정한 후에는 AutoSupport 연결을 테스트하여 AutoSupport에서 생성된 메시지를 기술 지원 부서에서 수신하는지 확인해야 합니다.</block>
@@ -469,9 +447,6 @@
   <block id="0f86fcaaecd18bb5b840cecfe55df6dc" category="inline-image-macro">연필 아이콘</block>
   <block id="3c442f0ec8d0ee98ccd9181e6322ae19" category="inline-image-macro">파란색 더하기 기호 다음에 Add(추가) 라는 단어가 나옵니다</block>
   <block id="c05111112bb963a5fee8223525086c7b" category="list-text">이메일 * 옆에 있는 을 선택한 <block ref="64bf6947f7152489b534c7e3d9281ba8" category="inline-image-macro-rx" type="image"></block>다음 을 <block ref="97e24a86610c75905260004f34de6d47" category="inline-image-macro-rx" type="image"></block>선택합니다.</block>
-  <block id="3e9e4333e164c87224379f79a203b056" category="list-text">받는 사람의 전자 메일 주소를 입력한 다음 받는 사람 범주를 입력합니다.</block>
-  <block id="5522155290b09c829eb53d555358b50e" category="paragraph">파트너의 경우 받는 사람 범주에 * Partner * 를 선택합니다. 내부 지원 조직의 구성원에 대해서는 * 일반 * 을 선택하십시오.</block>
-  <block id="829b98302a315e05b67e508979403a3b" category="list-text">저장 을 선택합니다.</block>
   <block id="0d683993ce85ab22516524e528e88ccb" category="paragraph">추가한 전자 메일 주소는 특정 받는 사람 범주에 대한 새 AutoSupport 메시지를 받게 됩니다.</block>
   <block id="9c737282667df23d96526973f5d83281" category="section-title">AutoSupport 데이터를 전송합니다</block>
   <block id="ea76f4a78d8b1c8eb7686c4e2510363b" category="paragraph">ASA R2 시스템에서 문제가 발생할 경우 AutoSupport 데이터는 문제를 식별하고 해결하는 데 걸리는 시간을 크게 줄일 수 있습니다.</block>
@@ -483,24 +458,19 @@
   <block id="42e351a16b261d73b9b6daaefbae1aba" category="list-text">AutoSupport * 옆에 있는 * 를 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 지원 케이스 생성 기능 억제 * 를 선택합니다.</block>
   <block id="069f94a2039e2d55deda826dcc459214" category="list-text">지원 케이스 생성을 억제할 시간을 지정한 다음, 케이스 생성을 원하지 않는 노드를 선택합니다.</block>
   <block id="94f66866107911bd36ca9497f33cdf55" category="list-text">보내기 * 를 선택합니다.</block>
-  <block id="fc9a5b8a8957163965bd3096ac6e9441" category="paragraph">지정한 시간 동안에는 AutoSupport 케이스가 생성되지 않습니다. 지정된 시간이 만료되기 전에 업그레이드 또는 유지 관리를 완료한 경우 지원 케이스 생성을 즉시 재개해야 합니다.</block>
   <block id="0fdbfde385dfda36f515e38c6d0f7ac5" category="section-title">지원 케이스 생성을 재개합니다</block>
   <block id="d84e06a7320bba7c7163b7715bd082fa" category="paragraph">업그레이드 또는 유지 관리 창에서 지원 케이스 생성을 제한한 경우, 업그레이드 또는 유지 관리가 완료된 직후 지원 케이스 생성을 재개해야 합니다.</block>
   <block id="9a49b39c6fa2362b6f54f32a01f93b1c" category="list-text">AutoSupport * 옆에 있는 * 를 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 지원 케이스 생성 재개 * 를 선택합니다.</block>
   <block id="4f76e9881ff80c29458d366170a731f5" category="list-text">생성된 AutoSupport 케이스를 재개할 노드를 선택합니다.</block>
   <block id="a3745d335f23bd8f84c22eac15093a39" category="paragraph">AutoSupport 케이스는 필요에 따라 ASA R2 시스템에 대해 자동 생성됩니다.</block>
   <block id="095767130effe9a44b7d3ff367eda1fa" category="doc">ASA R2 스토리지 시스템에 대한 지원 사례를 제출하고 확인합니다</block>
-  <block id="98c449686f1bb755fdc3ec64c1f3ea2e" category="paragraph">도움이 필요한 문제가 있는 경우 ONTAP System Manager를 사용하여 기술 지원 부서에 케이스를 제출할 수 있습니다. ONTAP System Manager를 사용하여 종료되었거나 진행 중인 케이스를 볼 수도 있습니다.</block>
   <block id="ce04aba89455a6f59cf366030c2056ab" category="inline-link-macro">Active IQ에 등록되었습니다</block>
-  <block id="18aec681e94562add9f015e57e17b8d0" category="list-text">지원 케이스를 제출하려면 System Manager에서 * 클러스터 &gt; 지원 * 을 선택한 다음 * NetApp 지원 * 으로 이동 * 을 선택합니다.</block>
-  <block id="ce3bbf8e2056eaff8c2c9a52eb4ce4dc" category="list-text">이전에 제출한 케이스를 보려면 System Manager에서 * 클러스터 &gt; 지원 * 을 선택한 다음 * 내 케이스 보기 * 를 선택합니다.</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="doc">ASA R2 스토리지 시스템에 대해 알아보십시오</block>
   <block id="8ba78ca0516a69b587aca58206efc01f" category="paragraph">ASA R2 시스템에서는 정합성 보장 그룹이 포함된 스토리지 유닛을 사용합니다.</block>
   <block id="db202dbb9a4a22e347c683ae7290b969" category="list-text">스토리지 유닛 _ 은(는) 데이터 작업을 위해 SAN 호스트에서 사용할 수 있는 스토리지 공간을 만듭니다. 스토리지 유닛은 SCSI 호스트용 LUN 또는 NVMe 호스트용 NVMe 네임스페이스를 가리킵니다.</block>
   <block id="e2969be58319571a8d10cc30d53f9a3b" category="list-text">_A 정합성 보장 그룹 _ 은(는) 단일 유닛으로 관리되는 스토리지 유닛의 모음입니다.</block>
   <block id="989f2b4edace5981db8b18b1ad4a385f" category="list-text">ASA R2 시스템 지원 및 제한 사항에 대한 자세한 내용은 을 <block ref="41f66f34b3a905f864500c9319fdff8f" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2b304856171196502641312a496c6d54" category="inline-link-macro">NetApp ASA</block>
-  <block id="7277c9d417ac8a6d967bd0e7b323cd57" category="paragraph">ASA R2 시스템을 설치하고 실행하려면 하드웨어 구성 요소를 설치하고, 클러스터를 설정하고, 호스트에서 스토리지 시스템으로의 데이터 액세스를 설정하고, 스토리지를 프로비저닝해야 합니다.</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1개</block>
   <block id="40a0d9b63d17cd9ee40121b195ad7812" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 하드웨어를 설치하고 설정합니다</block>
   <block id="0838ba24ec50794012b940c57af5703f" category="inline-link-macro">설치 및 설정</block>
@@ -759,7 +729,6 @@
   <block id="d76fc5ee6d641846e5835d32d7f85b4f" category="inline-link-macro">스토리지 용량 할당</block>
   <block id="e397caa258e5d83ec68542ada3868a88" category="paragraph"><block ref="16349da302f4151e8c9d8212eacbac27" category="inline-link-macro-rx"></block>SAN 호스트에서 스토리지 유닛에 데이터를 읽고 쓸 수 있도록 할 준비가 되었습니다.</block>
   <block id="504d463c80199fc8015db827acb89c07" category="doc">ASA R2 스토리지 시스템에 대한 ONTAP CLI 지원</block>
-  <block id="7c19782694334dcfd315e878b56096ba" category="paragraph">다음 명령 및 명령 세트는 R2의 ASA에서 지원되지 않습니다.</block>
   <block id="a72b8be483491b0d1db823bb36907bfd" category="example-title">지원되지 않는 &lt;code&gt; LUN &lt;/code&gt; 명령입니다</block>
   <block id="796b405c9879ad0e08e0cd88cd3b3e16" category="list-text"><block ref="792ce1786b8a3a128a82817b09eedada" prefix="" category="inline-code"></block></block>
   <block id="1388cc53eae6c07af7f412dcc77461a9" category="list-text"><block ref="845a2fac965d9f41d0e11a08d1c7197e" prefix="" category="inline-code"></block></block>
@@ -839,8 +808,6 @@
   <block id="f3497351aae46692e603fedb2f2cd146" category="inline-link-macro">ONTAP 명령 참조입니다</block>
   <block id="7b25c381c7fe8ec42f4be59e49b01ffa" category="section-title">CLI를 사용하여 ONTAP ASA R2 클러스터를 설정합니다</block>
   <block id="8770069e8d7e75b723f2a51c7a6e2e49" category="inline-link-macro">System Manager를 사용하여 ONTAP ASA R2 클러스터를 설정합니다</block>
-  <block id="36b66e7ec3e638a1c0d5532a210a47a1" category="paragraph">권장 <block ref="df4559a5b62289a9d3564a01abc04ba8" category="inline-link-macro-rx"></block>사항입니다. System Manager는 클러스터를 설정하고 실행하는 데 도움이 되는 빠르고 쉬운 워크플로우를 제공합니다. 하지만 ONTAP 명령 작업에 익숙한 경우 선택적으로 ONTAP CLI(Command Line Interface)를 사용하여 클러스터 설정을 할 수 있습니다. CLI를 사용하여 클러스터를 설정하면 System Manager를 사용하여 설정하는 것보다 더 많은 옵션이나 이점이 없습니다.</block>
-  <block id="968e5fe06f5a932dd5a661ea2dc7dba2" category="paragraph">클러스터 설정 중에 기본 데이터 스토리지 가상 머신(VM)이 생성되고 초기 스토리지 유닛이 생성되며 데이터 LIF가 자동으로 검색됩니다. 필요에 따라 DNS(Domain Name System)를 활성화하여 호스트 이름을 확인하고, 시간 동기화에 NTS(Network Time Protocol)를 사용하도록 클러스터를 설정하고, 저장된 데이터의 암호화를 활성화할 수 있습니다.</block>
   <block id="8482ccc845851c74e1babfdb9e5f07ff" category="list-text">HA Pair의 두 노드 전원을 켭니다.</block>
   <block id="52560e7a62865ac74c44ac6603fc8243" category="list-text">로컬 네트워크에서 검색된 노드를 표시합니다.</block>
   <block id="cc5a41800687f63c8dbcaa7e401c8609" category="list-text">클러스터 설정 마법사를 시작합니다.</block>
@@ -886,7 +853,6 @@
   <block id="3abf1b035bc420caf188c022ea7d792d" category="summary">ASA R2 REST API는 통합된 ONTAP 퍼스낼리티와 함께 제공되는 REST API를 기반으로 하며, ASA R2 퍼스낼리티의 고유한 특성과 기능에 맞게 많은 변경이 적용되었습니다.</block>
   <block id="48c7d320d017a90d970e154c81d07dc1" category="doc">ASA R2에 대한 REST API 지원</block>
   <block id="83e5ee07fc92447fe7a6ceed082d0c01" category="section-title">API 변경 유형</block>
-  <block id="3d1d919573417660e4a546b32ac9d4b6" category="paragraph">ASA R2 시스템 REST API와 FAS, AFF 및 ASA 시스템에서 사용할 수 있는 유니파이드 ONTAP REST API 간에는 여러 가지 차이점이 있습니다. 변경 유형을 이해하면 온라인 API 참조 문서를 보다 잘 활용할 수 있습니다.</block>
   <block id="0272115298f04a8bb0475566419279d1" category="paragraph-title">새로운 ASA R2 엔드포인트는 유니파이드 ONTAP에서 지원되지 않습니다</block>
   <block id="3e76642c1d2206ff9e90b4fd2de4b328" category="paragraph">유니파이드 ONTAP에서는 사용할 수 없는 ASA R2 REST API에 여러 엔드포인트가 추가되었습니다.</block>
   <block id="cade0ebd17dd3bed75c0337c741dd39a" category="paragraph">예를 들어, 새로운 블록 볼륨 엔드포인트가 ASA R2 시스템용 REST API에 추가되었습니다. 블록 볼륨 엔드포인트는 LUN 및 NVMe 네임스페이스 개체에 대한 액세스를 제공하여 리소스를 종합적으로 볼 수 있도록 지원합니다. REST API를 통해서만 사용할 수 있습니다.</block>
@@ -894,14 +860,12 @@
   <block id="fd6e07bfcc281a1328e9ebe5847a3426" category="paragraph-title">일부 끝점에 사용되는 HTTP 메서드에 대한 제한 사항</block>
   <block id="f3a1b4055985606a4d8517b47a8bbd41" category="paragraph">ASA R2에서 사용할 수 있는 여러 끝점에는 Unified ONTAP와 비교하여 사용할 수 있는 HTTP 메서드가 제한되어 있습니다. 예를 들어,<block ref="8e478b6b5801deeb609bbe13602b4ddf" prefix=" " category="inline-code"></block> ASA R2 시스템에서 엔드포인트를 사용할 때는 POST 및 DELETE가 허용되지 않습니다.</block>
   <block id="f7f611f2d178b57ab165c40ead632fe1" category="paragraph-title">끝점 및 HTTP 메서드에 대한 속성 변경</block>
-  <block id="4d4e026413c7577f213ce0a4ad5d5886" category="paragraph">일부 ASA R2 시스템 끝점 및 메서드 조합은 통합 ONTAP 속성에서 사용할 수 있는 정의된 모든 속성을 지원하지 않습니다. 예를 들어, 끝점에서 패치를 사용하는 경우<block ref="e1b0fcb86b8544c0bfae622fa2eee9eb" prefix=" " category="inline-code"></block> ASA R2에서는 다음을 비롯한 몇 가지 속성이 지원되지 않습니다.</block>
   <block id="86c3bce1e15b53a1cb43f69b5444a2ea" category="list-text"><block ref="53ac4723df1b82cecfb457968ed456d2" prefix="" category="inline-code"></block></block>
   <block id="323eeafbe8577319f9fc77b2b6fc5846" category="list-text"><block ref="b3d2f478eeb2c97790a32aaa215b52ef" prefix="" category="inline-code"></block></block>
   <block id="6b5364bbbb13fb3d94dfb092ea43b0a0" category="list-text"><block ref="f4b34c507e46d81b51ddb20e7c5fa344" prefix="" category="inline-code"></block></block>
   <block id="3783d7c38022d89817e3d4975ed4f06a" category="paragraph-title">내부 처리의 변경</block>
   <block id="0f2d5a548993b890865d45812675918e" category="paragraph">ASA R2가 특정 REST API 요청을 처리하는 방법은 몇 가지 변경되었습니다. 예를 들어, 끝점이 있는 삭제 요청은<block ref="0e7022c8e683287334a1293166df6b1c" prefix=" " category="inline-code"></block> 비동기적으로 처리됩니다.</block>
   <block id="b90fe5814139c1241ba59e097117a1eb" category="section-title">OAuth 2.0으로 보안 강화</block>
-  <block id="6d7330a721349e1c14715f15fba9c715" category="paragraph">OAuth 2.0은 업계 표준 인증 프레임워크입니다. 서명된 액세스 토큰을 기반으로 보호된 리소스에 대한 액세스를 제한하고 제어하는 데 사용됩니다. System Manager를 사용하여 OAuth 2.0을 구성하여 ASA R2 시스템 리소스를 보호할 수 있습니다.</block>
   <block id="2728eb13c00c9967af882c75ead94654" category="inline-link">OAuth 2.0을 사용한 인증 및 권한 부여</block>
   <block id="de5bda1caf7f9fa5bdcc362a004a6647" category="paragraph">System Manager로 OAuth 2.0을 설정한 후 REST API 클라이언트의 액세스를 제어할 수 있습니다. 먼저 인증 서버에서 액세스 토큰을 얻어야 합니다. 그런 다음 REST 클라이언트는 HTTP 승인 요청 헤더를 사용하여 토큰을 ASA R2 클러스터에 베어러 토큰으로 전달합니다. 자세한 내용은 을<block ref="79c0d5dfd9954672e62566078ff5fa99" category="inline-link-rx"></block> 참조하십시오.</block>
   <block id="d2e127d8f90ff6fea31853498215d353" category="section-title">Swagger UI를 통해 ASA R2 API 참조 문서에 액세스합니다</block>
@@ -949,7 +913,6 @@
   <block id="637cdb5787a38a4d0da33ae01aa8fe4c" category="summary">ASA R2에서 스토리지 유닛 및 정합성 보장 그룹을 클론하면 운영 환경 외부에서 다양한 용도로 사용할 데이터 복제본을 생성할 수 있습니다.</block>
   <block id="5efa28b67f38b8acf6f260494435aeb9" category="searchtitle">ONTAP System Manager | ASA R2를 사용한 데이터 클론 복제</block>
   <block id="b672b3c3c67f9dc97cb7aa4016ffd8de" category="doc">ASA R2 스토리지 시스템에 데이터를 복제합니다</block>
-  <block id="47aa16585c5d740c2e875956f91b75f5" category="paragraph">데이터 클론 생성은 ONTAP System Manager를 사용하여 ASA R2 시스템에서 스토리지 유닛 및 정합성 보장 그룹의 복제본을 생성하며, 이 복제본은 애플리케이션 개발, 테스트, 백업, 데이터 마이그레이션 또는 기타 관리 기능에 사용할 수 있습니다.</block>
   <block id="db111a2cf0c0f9671b7966268e827844" category="section-title">스토리지 유닛 복제</block>
   <block id="580db26d8795089f4cfa24ccbd7c7866" category="paragraph">스토리지 유닛을 클론하면 ASA R2 시스템에서 클론한 스토리지 유닛의 쓰기 가능한 시점 복제본인 새 스토리지 유닛을 생성합니다.</block>
   <block id="4307c2dc64df479564b106a5f1271db3" category="list-text">복제할 스토리지 유닛의 이름 위에 마우스를 놓습니다.</block>
@@ -959,14 +922,12 @@
   <block id="4964c71a898b0a4d4538d783e0b27917" category="paragraph">클론에 대한 새 스냅샷은 기본적으로 생성됩니다.</block>
   <block id="1a0fbbebb0c1b2a10fe0a8095caaf707" category="list-text">기존 스냅샷을 사용하거나, 새 호스트 그룹을 생성하거나, 새 호스트를 추가하려면 * More Options * 를 선택합니다.</block>
   <block id="73b1d804565defc4cbc4c2b8540aef0a" category="paragraph">기존 스냅샷을 사용합니다</block>
-  <block id="7d9b391000caf3061473fe6a78721b5a" category="list-text">복제할 스냅샷 * 아래에서 * 기존 snaphot 사용 * 을 선택합니다.</block>
   <block id="dd2959858bb587a8e2e3b6391d27d51e" category="list-text">클론에 사용할 스냅샷을 선택합니다.</block>
   <block id="f50eb1716c3a7ef3d283dc66e2d9e6ca" category="paragraph">새 호스트 그룹을 생성합니다</block>
   <block id="c28d2416b4554c9f84c35d71e12a7fac" category="list-text">호스트 매핑 * 아래에서 * 새 호스트 그룹 * 을 선택합니다.</block>
   <block id="10416ffc36188c466d8627eac03abfd0" category="list-text">새 호스트 그룹의 이름을 입력한 다음 그룹에 포함할 호스트 이니시에이터를 선택합니다.</block>
   <block id="3efaad102c1fa244e39e6e7a28ed1c4f" category="paragraph">새 호스트를 추가합니다</block>
   <block id="341eef069de22b04769ebb34c6d5339a" category="list-text">Host mapping * 아래에서 * New hosts * 를 선택합니다.</block>
-  <block id="6ca59e1216e9b0b1d2f3bd35c4910f32" category="list-text">새 호스트의 이름을 입력한 다음 * FC * 또는 * iSCSI * 를 선택합니다.</block>
   <block id="41bb978973326f3efe8701e8b336c66c" category="list-text">기존 이니시에이터 목록에서 호스트 이니시에이터를 선택하거나 * Add * 를 선택하여 호스트의 새 이니시에이터를 추가합니다.</block>
   <block id="9de0e2b17d7e1e2da6c0ce7e9dc6e377" category="list-text">클론 * 을 선택합니다.</block>
   <block id="285a864bbeacf5127fb22d5579cb37e5" category="paragraph">클론한 스토리지 유닛과 동일한 새 스토리지 유닛을 생성했습니다. 이제 필요에 따라 새 저장 장치를 사용할 준비가 되었습니다.</block>
@@ -982,7 +943,6 @@
   <block id="5ab7a5d73aacf50fcf59ef58a06d87e8" category="list-text">소스 정합성 보장 그룹에서 클론을 분리하고 디스크 공간을 할당하려면 * Split clone * 을 선택합니다.</block>
   <block id="c73b1d88745a5bed2584eee88495a676" category="list-text">기존 스냅샷을 사용하려면 새 호스트 그룹을 생성하거나 클론에 새 호스트를 추가하려면 * More Options * 를 선택합니다.</block>
   <block id="a0f75574dcf0ab525b71988128fd6dc9" category="list-text">복제할 스냅샷 * 아래에서 * 기존 스냅샷 사용 * 을 선택합니다.</block>
-  <block id="a5b860186416f0b7618bf4958b6cbf25" category="list-text">새 호스트 이름을 입력한 다음 * FC * 또는 * iSCSI * 를 선택합니다.</block>
   <block id="f84a91cff0f15a36959890fc896bd2d8" category="list-text">기존 이니시에이터 목록에서 호스트 이니시에이터를 선택하거나 * 이니시에이터 추가 * 를 선택하여 호스트의 새 이니시에이터를 추가합니다.</block>
   <block id="af29df6db90599d57c3c711c23eabd00" category="open-title">원격 스냅샷을 사용하여 클론을 생성합니다</block>
   <block id="e8f7c25de132ec56319553a579e69db6" category="list-text">복제할 * 소스 * 에 마우스를 갖다 댑니다.</block>
@@ -992,8 +952,6 @@
   <block id="0fc1cd180f7ef3529fdc528ef536fbc8" category="inline-link-macro">스냅샷을 생성합니다</block>
   <block id="b16e804e926595ce52e11416c4c4021b" category="paragraph">데이터를 보호하려면 <block ref="1d21a098bd9677c475d90af30f929e46" category="inline-link-macro-rx"></block>클론 복제된 일관성 그룹이 있어야 합니다.</block>
   <block id="abfb7611be3d1984b4048c111c70896e" category="summary">필요한 물리적 스토리지 양을 줄이거나 다른 호스트 애플리케이션에 필요한 공간을 확보하려면 스토리지 유닛을 삭제하십시오.</block>
-  <block id="130d99f3155a9524fbcee1b66d372637" category="doc">ASA R2 스토리지 시스템에서 스토리지 유닛을 삭제합니다</block>
-  <block id="a43d503903bc397cb05151409b4aa0ee" category="paragraph">유닛에 포함된 데이터를 더 이상 유지 관리할 필요가 없는 경우 스토리지 유닛을 삭제합니다. 더 이상 필요하지 않은 스토리지 유닛을 삭제하면 다른 호스트 애플리케이션에 필요한 공간을 확보하는 데 도움이 됩니다.</block>
   <block id="149f67073e73a0379b210512f9ae9b34" category="inline-link-macro">정합성 보장 그룹에서 스토리지 유닛을 제거합니다</block>
   <block id="3b82021e0930da2e3b1fe1bfe2aa2f70" category="list-text">삭제할 스토리지 유닛의 이름 위로 마우스를 가져갑니다.</block>
   <block id="a04511306488004fe2e50b58479b8bc6" category="list-text">삭제를 취소할 수 없음을 확인합니다.</block>
@@ -1003,7 +961,6 @@
   <block id="d144ceb11715b5ffc74a8293d3aa8303" category="summary">스토리지 유닛을 편집하여 용량을 늘리고, QoS(서비스 품질) 정책을 업데이트하거나, 호스트 매핑을 변경하여 스토리지 시스템 성능 및 데이터의 변화에 대응할 수 있습니다.</block>
   <block id="ceff03bfa1a8dafc5e617407d14564d3" category="doc">ASA R2 스토리지 시스템에서 스토리지 유닛을 수정합니다</block>
   <block id="261c95ed5d454ef55df25657c605d472" category="paragraph-title">용량 증가</block>
-  <block id="9c4dfedb8190eb2128e8185aff1c8e51" category="paragraph">스토리지 유닛에 쓰기 가능한 공간이 부족할 때 발생할 수 있는 데이터 액세스 손실을 방지하려면 스토리지 유닛의 크기를 전체 용량에 도달하기 전에 늘립니다. 스토리지 유닛의 용량은 ONTAP에서 허용하는 최대 크기인 128TB로 늘릴 수 있습니다.</block>
   <block id="e2bcdafb5edd46c07debdaff4977f47e" category="paragraph-title">호스트 매핑을 수정합니다</block>
   <block id="70e329035d20df3cdabdc84b9ea5820b" category="paragraph">스토리지 유닛에 매핑되는 호스트를 수정하여 워크로드의 균형을 조정하거나 시스템 리소스를 재구성합니다.</block>
   <block id="e5c37d444d86dff14ece6ae023e44020" category="paragraph-title">QoS 정책을 수정합니다</block>
@@ -1031,7 +988,6 @@
   <block id="7e8304ed8a1d7b1d5ea3d023833084ac" category="paragraph">기본 QoS(Quality of Service) 정책을 변경합니다</block>
   <block id="670420248bfae86c26e9659cd428df4a" category="paragraph">기본 QoS 정책이 스토리지 유닛이 생성되는 스토리지 가상 머신(VM)에 이전에 설정되지 않은 경우 이 옵션을 사용할 수 없습니다.</block>
   <block id="05998b53a85e8c80c5b2173e79b5ebee" category="inline-image-macro">아래쪽 방향을 가리키는 파란색 화살표 아이콘</block>
-  <block id="029f5652d4ec63fc9ca42d2aac2bc629" category="list-text">스토리지 및 최적화 * 에서 * 서비스 품질(QoS) * 옆의 를 선택합니다<block ref="b3b2ed9f542d1ec15ba7a198ec58e0b4" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="78b06e2559336fae293baa13507d3fff" category="list-text">기존 QoS 정책을 선택합니다.</block>
   <block id="9b4adc8f209fe1ca07853989d48af3c0" category="paragraph">새 QoS 정책을 생성합니다</block>
   <block id="89434c8406398c368cd7d10c247065ce" category="list-text">Define new policy * 를 선택합니다.</block>
@@ -1090,8 +1046,6 @@
   <block id="8afc97bf18ed2d8332b9bb9de381b057" category="list-text">Add initiator * 를 선택합니다.</block>
   <block id="8643ed37e687b297a4c27bec1904c098" category="paragraph">NVMe 호스트가 ASA R2 시스템에 추가되고, 호스트를 스토리지 유닛에 매핑할 수 있습니다.</block>
   <block id="50f3c6288588430494b3bf4bca173b55" category="section-title">호스트 그룹을 생성합니다</block>
-  <block id="1da1baa1434e589e17c7bccabaafa7bd" category="paragraph">ASA R2 시스템에서 _host group_ 은(는) 스토리지 유닛에 대한 호스트 액세스를 제공하는 데 사용되는 메커니즘입니다. 호스트 그룹은 SCSI 호스트용 igroup 또는 NVMe 호스트용 NVMe 서브시스템을 참조합니다. 호스트는 호스트가 속한 호스트 그룹에 매핑된 스토리지 유닛만 볼 수 있습니다. 호스트 그룹이 스토리지 유닛에 매핑되면 그룹의 구성원인 호스트가 스토리지 유닛에 디렉토리 및 파일 구조를 마운트(생성)할 수 있습니다.</block>
-  <block id="efdb92741c05b002fee75d1aed7739f4" category="paragraph">호스트 그룹은 스토리지 유닛을 생성할 때 자동으로 또는 수동으로 생성됩니다. 필요에 따라 다음 단계를 사용하여 스토리지 유닛을 생성하기 전이나 후에 호스트 그룹을 생성할 수 있습니다.</block>
   <block id="719a9c07fb982da45f633c2895007a16" category="list-text">System Manager에서 * Host * 를 선택합니다.</block>
   <block id="27016aa41f81d9bb1c573738f3f06dc1" category="list-text">호스트 그룹에 추가할 호스트를 선택합니다.</block>
   <block id="412fddbb62911c2ce50e4d949374721b" category="paragraph">첫 번째 호스트를 선택하면 호스트 그룹에 추가하는 옵션이 호스트 목록 위에 나타납니다.</block>
@@ -1116,7 +1070,6 @@
   <block id="fcfb17e140eb359d2e4bf0ffb8fc90f2" category="summary">클러스터 및 스토리지 유닛의 성능을 모니터링하여 지연 시간, IOPS 및 처리량이 중요 비즈니스 애플리케이션에 어떤 영향을 미치는지 파악할 수 있습니다.</block>
   <block id="7210645d4515e7cb96d5b26a294a9f25" category="searchtitle">ONTAP System Manager | ASA R2를 사용하여 클러스터 성능을 모니터링합니다</block>
   <block id="064023636601914c7dfacc81fa4e3b57" category="doc">ASA R2 스토리지 시스템에서 클러스터 및 스토리지 유닛 성능을 모니터링합니다</block>
-  <block id="ac48862a6c885879fa8b73f630f8e98f" category="paragraph">ONTAP System Manager를 사용하여 클러스터의 전반적인 성능과 특정 스토리지 유닛의 성능을 모니터링하여 지연 시간, IOPS 및 처리량이 중요 비즈니스 애플리케이션에 미치는 영향을 파악할 수 있습니다. 성능은 1시간에서 1년까지 다양한 기간 동안 모니터링할 수 있습니다.</block>
   <block id="9ed62a90862b2040ffb0a91ecf532fff" category="section-title">클러스터 성능을 모니터링합니다</block>
   <block id="4d46d963226f35fc56c0527f9740cc00" category="paragraph">클러스터 성능 메트릭을 사용하여 지연 시간을 최소화하고 중요 애플리케이션의 IOPS 및 처리량을 극대화하기 위해 워크로드를 이동해야 하는지 여부를 결정할 수 있습니다.</block>
   <block id="1d1e5cd96b3e552f9fc410fb90447401" category="list-text">System Manager에서 * 대시보드 * 를 선택합니다.</block>
@@ -1125,10 +1078,8 @@
   <block id="96918061c7e2616ea10b5e257e6603f2" category="list-text"><block ref="f608c7f1ce9fe53ea7b08af0f988e017" category="inline-image-macro-rx" type="image"></block>성능 데이터를 다운로드하려면 선택합니다.</block>
   <block id="5412d66d1b940cac9c30aada0447af3e" category="paragraph">클러스터 성능 메트릭을 사용하여 QoS 정책을 수정하거나 애플리케이션 워크로드를 조정할 필요가 있는지 분석하여 전체 클러스터 성능을 극대화할 수 있습니다.</block>
   <block id="c67ce188029f9fc77043d58a50195faa" category="section-title">스토리지 유닛 성능을 모니터링합니다</block>
-  <block id="945d548e0f2b6e0d893dcb3324931492" category="paragraph">스토리지 유닛 성능 메트릭을 사용하여 특정 애플리케이션이 지연 시간, IOPS 및 처리량에 미치는 영향을 확인합니다.</block>
   <block id="4812565e03191bd47ded08296e78a657" category="list-text">모니터링할 스토리지 유닛을 선택한 다음 * Overview * 를 선택합니다.</block>
   <block id="072f32b41d829885ee9a2c15a8f4bfac" category="list-text">Performance * 에서 시간, 일, 주, 월 또는 연도별로 스토리지 유닛의 지연 시간, IOPS 및 처리량을 확인합니다.</block>
-  <block id="5d2f85dc8c63d0351c36b672568478e7" category="paragraph">스토리지 유닛 성능 메트릭을 사용하여 스토리지 유닛에 할당된 QoS 정책을 수정해야 하는지 여부를 분석하여 지연 시간을 줄이고 IOPS 및 처리량을 극대화합니다.</block>
   <block id="d97140ad30592cff018c51a2915b6f8a" category="summary">스토리지 활용률을 모니터링하여 현재 및 미래의 워크로드를 처리하는 데 필요한 스토리지 용량이 있는지 확인하십시오.</block>
   <block id="4b611b60857c6c5cb2e68cf03f265ee3" category="searchtitle">ONTAP System Manager | ASA R2를 사용하여 공간 활용률을 모니터링합니다</block>
   <block id="70ad7a054da3fd05bc8ccb0e8e79aa8f" category="doc">ASA R2 스토리지 시스템에서 클러스터 및 스토리지 유닛 활용도를 모니터링합니다</block>
@@ -1137,21 +1088,18 @@
   <block id="60522db54655ef0faaafdeb6e1dd2f6c" category="paragraph">클러스터에서 사용하는 스토리지 양을 정기적으로 모니터링하여 필요한 경우 공간이 부족해지기 전에 클러스터 용량을 확장할 준비가 되었는지 확인합니다.</block>
   <block id="5ba997683bb88c0bd7da49e5420cd3b9" category="list-text">Capacity * 에서 클러스터에서 사용된 물리적 공간의 양과 사용 가능한 공간의 양을 확인합니다.</block>
   <block id="049df4c0a4a8d9829026cfcdd73b2fa6" category="inline-link-macro">새 드라이브를 추가합니다</block>
-  <block id="70e4aa2a60c8c55fc487bdeaf9688dea" category="paragraph">클러스터에 공간이 부족하거나 향후 요구 사항을 충족할 수 있는 용량이 없는 경우 <block ref="652f39ff07f6641e851e14e8190a6b59" category="inline-link-macro-rx"></block>ASA R2 시스템을 구축하여 스토리지 용량을 늘려야 합니다.</block>
   <block id="b9de8a926e3bbf2f3ddad971b60d4639" category="section-title">스토리지 유닛 사용률을 모니터링합니다</block>
   <block id="317901cd2a3bb979dae71e0401824ba4" category="paragraph">스토리지 유닛에서 사용하는 스토리지 양을 모니터링하여 비즈니스 요구 사항에 따라 스토리지 유닛의 크기를 사전에 늘릴 수 있습니다.</block>
   <block id="875bad30627e3f1ac1d0763421ff7fa3" category="list-text">스토리지 * 에서 다음을 확인합니다.</block>
   <block id="8bbac825aa128cef10318ba85443d845" category="list-text">저장 장치의 크기입니다</block>
   <block id="fcceb5d3e6cc80acd81036e797aa4e14" category="list-text">사용된 공간의 양입니다</block>
   <block id="94269030598b71d635027cb23f6a62db" category="list-text">데이터 축소율</block>
-  <block id="d0a1c45798851642d66c370a01c7d67e" category="paragraph">데이터 축소율은 스토리지 효율성을 통해 절약된 공간의 양을 나타냅니다</block>
   <block id="ea48781244aaf816e0378fc9ff55511c" category="list-text">스냅샷이 사용되었습니다</block>
   <block id="72cc8fd78f178b893fe94aa1a98d6e48" category="paragraph">사용된 스냅샷은 스냅샷에 사용되는 스토리지의 양을 나타냅니다.</block>
   <block id="cc9f3da7753ac722528dd2e7b661823e" category="inline-link-macro">스토리지 유닛을 수정합니다</block>
   <block id="2b8de8601b25d70c91481a1b4a49a76f" category="paragraph">저장 장치 용량이 거의 다 되면 <block ref="bb5958dc62cc0e4abec32a80fbc51ad2" category="inline-link-macro-rx"></block>크기를 늘려야 합니다.</block>
   <block id="f1bdb387b0a6ca7729dff5f9d56f1b32" category="summary">ONTAP System Manager를 사용하면 시스템에서 발생한 오류 또는 경고 목록과 권장 수정 조치를 볼 수 있습니다.</block>
   <block id="a6f5a251b127b5c1f3099fc50f3fb13b" category="doc">ASA R2 스토리지 시스템에서 클러스터 이벤트 및 작업을 봅니다</block>
-  <block id="467608103d4414ac83274a52fd68b0fb" category="paragraph">ONTAP System Manager를 사용하면 시스템에서 발생한 오류 또는 경고 목록과 권장 수정 조치를 볼 수 있습니다. 또한 시스템 감사 로그 및 활성, 완료 또는 실패한 작업 목록을 볼 수 있습니다.</block>
   <block id="f08f493401d8358eff80a99c9e80a9d8" category="list-text">System Manager에서 * Events &amp; Jobs * 를 선택합니다.</block>
   <block id="d5fbc9ab0d7773563c6c867a0e6c8b0b" category="list-text">클러스터 이벤트 및 작업을 봅니다.</block>
   <block id="206a4107db0d69e37472895504c1e96a" category="cell">이 항목을 보려면...</block>
@@ -1175,10 +1123,8 @@
   <block id="5a44cd233bac39affdb8362ac562d2b5" category="inline-image-macro">더하기 기호가 있는 파란색 직사각형 다음에 흰색 글자로 추가된 단어</block>
   <block id="a965541f47c7a323b09d8822116bc9d5" category="list-text">을 <block ref="df7c335acb6f116ad3c95dc4cf3e7ccb" category="inline-image-macro-rx" type="image"></block>선택합니다.</block>
   <block id="94a2e0e8ab485816cc10fd24499c15d8" category="list-text">목적지 정보를 입력한 다음 * 추가 * 를 선택합니다.</block>
-  <block id="ff859a51425032eeba77af0fbd94f566" category="paragraph">추가한 이메일 주소는 클러스터 이벤트 및 감사 로그에 대해 지정된 이메일 알림을 받습니다.</block>
   <block id="902f69f8add54032a3780db669e4e052" category="summary">ONTAP System Manager의 Insights를 통해 ASA R2 시스템에 구현할 수 있는 모범 사례 및 구성 수정 사항을 파악하여 클러스터 보안 및 성능을 최적화할 수 있습니다.</block>
   <block id="9d86f65ca6623815e9bd6f0547909992" category="paragraph">ONTAP System Manager에서 View_Insights_를 사용하여 ASA R2 시스템에 구현할 수 있는 모범 사례와 구성 수정 사항을 파악하여 클러스터 보안 및 성능을 최적화할 수 있습니다.</block>
-  <block id="f73a710b7e6b349114b2765ad1274f5e" category="paragraph">예를 들어, 클러스터에 사용하도록 NTP(네트워크 시간 프로토콜) 서버가 구성되어 있다고 가정합니다. 그러나 최적의 클러스터 시간 관리에 필요한 NTP 서버의 수가 권장된 수보다 적다는 사실을 모르고 있습니다. 클러스터 시간이 정확하지 않을 때 발생할 수 있는 문제를 방지하기 위해 Insights에서는 NTP 서버가 너무 적게 구성되어 있음을 알리고 이 문제에 대해 자세히 알아보거나 수정하거나 무시할 수 있는 옵션을 제공합니다.</block>
   <block id="48cfda35c766b770b4272442f0e97eec" category="inline-image-macro">시스템 관리자 인사이트 페이지의 스크린샷</block>
   <block id="179a9fb3c3da42fe1bb169f945a03c28" category="paragraph"><block ref="179a9fb3c3da42fe1bb169f945a03c28" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56f9f43ddcf9d91a9e02c96a84a15ef3" category="list-text">System Manager에서 * Insights * 를 선택합니다.</block>
@@ -1202,13 +1148,10 @@
   <block id="4c8be67d73679ae4d2b56af70c18930f" category="summary">유휴 데이터를 암호화하여 디스크가 반환되거나 손실되거나 도난 당한 경우 읽을 수 없도록 합니다. 하드웨어 및 소프트웨어 암호화를 사용하여 이중 계층 보호를 활성화합니다.</block>
   <block id="ecfe0d76736441fd5c3363a39c663578" category="searchtitle">ONTAP System Manager | ASA R2를 사용하여 유휴 데이터를 암호화합니다</block>
   <block id="44934af219d5d85daa0f7f7a2a8d5efa" category="doc">ASA R2 스토리지 시스템에서 유휴 데이터를 암호화합니다</block>
-  <block id="2906636dbf4e4249f5399e9553d745b9" category="paragraph">유휴 상태의 데이터를 암호화할 때 스토리지 미디어가 용도 변경하거나 반환되거나 잘못 배치되거나 도난당하는 경우에는 읽을 수 없습니다. ONTAP System Manager를 사용하여 하드웨어 및 소프트웨어 수준에서 데이터를 암호화하여 이중 계층 보호를 제공할 수 있습니다.</block>
   <block id="7b51e981529660667d1414c7a37e2172" category="paragraph">NSE(NetApp 스토리지 암호화)는 자체 암호화 드라이브(SED)를 이용한 하드웨어 암호화를 지원합니다. SED는 데이터가 기록될 때 데이터를 암호화합니다. 각 SED에는 고유한 암호화 키가 포함되어 있습니다. SED에 저장된 암호화된 데이터는 SED의 암호화 키가 없으면 읽을 수 없습니다. SED에서 읽기를 시도하는 노드는 SED의 암호화 키에 액세스하려면 인증을 받아야 합니다. 노드는 키 관리자로부터 인증 키를 받은 다음 SED에 인증 키를 제공하여 인증됩니다. 인증 키가 유효한 경우 SED는 노드에 포함된 데이터에 액세스할 수 있는 암호화 키를 노드에 제공합니다.</block>
   <block id="97453174e9fea59b5b73518b257f2785" category="paragraph">ASA R2 온보드 키 관리자 또는 외부 키 관리자를 사용하여 노드에 인증 키를 제공합니다.</block>
-  <block id="c3895fd1cc061addf95194af9659baa6" category="list-text">System Manager에서 * 클러스터 &gt; 설정 * 을 선택합니다.</block>
   <block id="b59449d4094d1449f93a0de73791997c" category="list-text">보안 * 섹션의 * 암호화 * 에서 * 구성 * 을 선택합니다.</block>
   <block id="9bd21eab9d09006d0846084b0f1b970d" category="list-text">Key Manager를 설정한다.</block>
-  <block id="ba6246026192852edb568b40ca46a1d0" category="cell">Onboard Key Manager를 구성합니다</block>
   <block id="abe4eb783dfc1ed20a1767b1b0b37e12" category="list-text">Onboard Key Manager * 를 선택하여 키 서버를 추가합니다.</block>
   <block id="1fd88d59c1d719c57b195c707d7951de" category="list-text">암호를 입력합니다.</block>
   <block id="9bb5ba94825ba6d28795229ea175d9b8" category="cell">외부 키 관리자를 구성합니다</block>
@@ -1224,7 +1167,6 @@
   <block id="4bbb8f0466027ba41f7760a28b31c469" category="paragraph">NVMe 프로토콜을 사용하는 경우 대역 내 인증을 구성하여 데이터 보안을 강화할 수 있습니다. 대역 내 인증을 통해 NVMe 호스트와 ASA R2 시스템 간에 안전한 양방향 및 단방향 인증을 수행할 수 있습니다. 모든 NVMe 호스트에서 대역 내 인증을 사용할 수 있습니다. NVMe/TCP 프로토콜을 사용하는 경우 TLS(전송 계층 보안)를 구성하여 NVMe/TCP 호스트와 ASA R2 시스템 간에 네트워크를 통해 전송되는 모든 데이터를 암호화함으로써 데이터 보안을 더욱 강화할 수 있습니다.</block>
   <block id="24e4b19fe20674545837cd1f5514b5cc" category="list-text">Hosts * 를 선택한 다음 * NVMe * 를 선택합니다.</block>
   <block id="4843ac7779e1deaee1af5252373469ca" category="inline-image-macro">더하기 기호가 있는 파란색 사각형 다음에 흰색 글자로 추가 라는 단어가 있습니다</block>
-  <block id="53171f975b353bebf601cf13abc94ae5" category="list-text">을 <block ref="ffae57afd5555ce06187b71385ac5fc4" category="inline-image-macro-rx" type="image"></block> 선택합니다.</block>
   <block id="6f39c647858508710d4339c7d616e1fc" category="list-text">호스트 이름을 입력한 다음 호스트 운영 체제를 선택합니다.</block>
   <block id="668f73fd95bcd6c27e0c274955cfc6a3" category="list-text">호스트 설명을 입력한 다음 호스트에 접속할 스토리지 VM을 선택합니다.</block>
   <block id="f1a6537fcfe67a3762c0c7c1fac76e09" category="inline-image-macro">파란색 아래쪽 화살표</block>
@@ -1344,7 +1286,6 @@
   <block id="4eae1c6da6a9edad5e5228cf8cfe3cdb" category="sidebar">ONTAP 9.16.0의 새로운 기능</block>
   <block id="0a57cb4625de2148aa1f3fe6815e78eb" category="paragraph">호스트 접속 상태는 호스트 그룹 이름 옆에 다음과 같이 표시됩니다.</block>
   <block id="5b13dc2b1f3390e14daacb1f2f882717" category="list-text">* OK *: 모든 이니시에이터가 두 노드에 연결되었음을 나타냅니다.</block>
-  <block id="c2520bb5c23501e13bc7e06dde3ae9fd" category="list-text">*부분적으로 연결됨*: 초기자 중 일부가 두 노드에 연결되지 않았음을 나타냅니다.</block>
   <block id="031e3ca05bd720350a450cc6267211e2" category="list-text">*None Connected*: 연결된 이니시에이터가 없음을 나타냅니다.</block>
   <block id="d28f4031342956661d79f1274d2a395c" category="paragraph">ASA R2 시스템을 위한 ONTAP 9.16.0에서 사용할 수 있는 새로운 기능에 대해 알아보십시오.</block>
   <block id="22a4c2b7564a7f7d551ab23d23fbcac8" category="paragraph">귀하는 기술 지원 부서에서 ASA R2 시스템으로부터 AutoSupport 메시지를 수신하여 문제가 발생할 경우 도움을 주는 데 필요한 데이터를 확보할 수 있음을 확인했습니다.</block>
@@ -1354,7 +1295,6 @@
   <block id="77ae7cb145355765cca98cef84bef3eb" category="paragraph">예를 들어, 중요한 애플리케이션에서 높은 지연 시간과 낮은 처리량이 발생한다고 가정합니다. 지난 5일(영업일 기준) 동안 클러스터 성능을 보면 매일 동시에 성능이 저하되는 것을 알 수 있습니다. 이 정보를 사용하여 중요하지 않은 프로세스가 백그라운드에서 실행되기 시작할 때 중요한 애플리케이션이 클러스터 리소스를 두고 경합하고 있는지 확인합니다. 그런 다음 QoS 정책을 수정하여 중요하지 않은 워크로드가 시스템 리소스에 미치는 영향을 제한하고 중요 워크로드가 최소 처리량 목표를 충족하도록 할 수 있습니다.</block>
   <block id="514854c9f2116902eea3ece0f40e8154" category="paragraph-title">데이터 압축의 변경 사항</block>
   <block id="097c1368589d519db55e5ac8f141a847" category="paragraph">온도에 민감한 스토리지 효율성이 ASA R2 시스템에는 적용되지 않습니다. ASA R2 시스템에서 압축은 _hot_(자주 액세스하는) 데이터 또는 _cold_(자주 액세스하지 않는) 데이터를 기반으로 하지 않습니다. 데이터의 콜드 데이터가 될 때까지 기다리지 않고 압축을 시작합니다.</block>
-  <block id="e9dac8f777563b18c14aec6d0406e876" category="list-text">System Manager에서 * 클러스터 &gt; 설정 * 을 선택합니다.</block>
   <block id="253b40ae359ba25b56231803430c4873" category="section-title">ONTAP</block>
   <block id="7634d59040fd3f0630abac42ed05842e" category="inline-link-macro">ASA R2 시스템을 ASA 시스템과 비교한 것입니다</block>
   <block id="0a1c5c73cbf93d4b2d88ff0be84d2900" category="list-text">에 대해 자세히 <block ref="c736257475481e43d317d6d66a81a5cb" category="inline-link-macro-rx"></block>알아보십시오.</block>
@@ -1415,7 +1355,6 @@
   <block id="20f5ca91f6dbeac15890f67c9a4cb751" category="list-text">인터클러스터 네트워크 서브넷 마스크입니다</block>
   <block id="62f6882cb404e558e070fbed9abb8408" category="list-text">인터클러스터 네트워크 게이트웨이입니다</block>
   <block id="8d5bab260f1fd17a58eead81f9a933dc" category="list-text">온보드 키 관리자(OKM)를 구성하려면 OKM 암호가 필요합니다.</block>
-  <block id="01c399628d4ca140e3f9a9b4af069aaf" category="list-text">클러스터에 연결할 노드 옆에 있는 을 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 노드 추가 * 를 선택합니다</block>
   <block id="83574618638225092ab0e933a6da9812" category="list-text">각 노드의 IP 주소를 입력합니다.</block>
   <block id="e7b7c94e6d81ece348285ff2b7c586bc" category="list-text">인터클러스터 네트워크 인터페이스 IP 주소, 서브넷 마스크 및 게이트웨이를 입력합니다.</block>
   <block id="4cb7615df5933d98f247b46408545f05" category="list-text">온보드 키 관리자(OKM)를 구성하려면 OKM 암호를 입력합니다.</block>
@@ -1435,7 +1374,6 @@
   <block id="e39fb54244b4e7e5902cf86f104eae5f" category="paragraph">하위 정합성 보장 그룹을 생성합니다</block>
   <block id="df30ab788ddab119f1a9a52f397c1578" category="paragraph">Add child consistency group * 을 선택합니다.</block>
   <block id="accc48ba80dae134714334f9974f857c" category="paragraph">계층적 정합성 보장 그룹을 사용하면 각 하위 정합성 보장 그룹에 개별 스냅샷 정책을 적용하고 상위 정합성 보장 그룹을 복제하여 모든 하위 정합성 보장 그룹의 스냅샷을 단일 유닛으로 원격 클러스터에 복제할 수 있습니다. 따라서 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다. 예를 들어, 애플리케이션 데이터와<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 애플리케이션 로그라는 두 개의 하위 정합성 보장 그룹이 포함된 이라는 부모 정합성 보장<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 그룹을 생성한다고<block ref="f4834f6322c13f96b4d06d74fae1bbee" prefix=" " category="inline-code"></block> 가정합니다. 의 스냅샷은<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 15분마다 생성되며, 의 스냅샷은<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 매시간마다 생성됩니다. 부모 정합성 보장 그룹에는<block ref="d6faa7ca58e81c6f13095e4f9ff20e81" prefix=" " category="inline-code"></block> 및<block ref="0f23ff9c78f3eb5ab959d518e111d2f4" prefix=" " category="inline-code"></block> 의 스냅샷을 24시간마다 원격 클러스터에 복제하는 SnapMirror 정책이<block ref="234223ee2714e5f18034660862262d11" prefix=" " category="inline-code"></block> 있습니다. 부모 정합성 보장<block ref="f4834f6322c13f96b4d06d74fae1bbee" prefix=" " category="inline-code"></block> 그룹은 단일 유닛으로 관리되고 하위 정합성 보장 그룹은 별도의 유닛으로 관리됩니다.</block>
-  <block id="9bb9a0458dabe990942bf493592cb497" category="list-text">부모 일관성 그룹으로 변환할 일관성 그룹 위에 마우스를 놓습니다.</block>
   <block id="ec57f29bebbe66441595e764308d00a6" category="list-text">을 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>선택한 다음 * 부모 정합성 보장 그룹으로 상향 이동 * 을 선택합니다.</block>
   <block id="3073e32eb6f2f0cb69e9248a5f0c848c" category="list-text">승격 * 을 선택합니다.</block>
   <block id="34dd18f2c196dd45fa9dfab7e7517350" category="paragraph">새 일관성 그룹 또는 기존 일관성 그룹에서 하위 일관성 그룹을 생성할 수 있습니다.</block>
@@ -1462,7 +1400,6 @@
   <block id="a4cc38b952e58f7fac916d3297d86f9f" category="paragraph"><block ref="9b6117933a7d1c9745a65ab485bb26f2" category="inline-link-macro-rx"></block> 이전에 하위 정합성 보장 그룹에 의해 관리되었던 스토리지 유닛을 보호하기 위해 강등된 정합성 보장 그룹으로 이동합니다.</block>
   <block id="e8289e36e948e36d5aeb9297cf2c6712" category="section-title">부모 정합성 보장 그룹에서 하위 정합성 보장 그룹을 분리합니다</block>
   <block id="94db0ec67f710fec5c7f775e299a2d6e" category="list-text">부모 일관성 그룹을 선택합니다.</block>
-  <block id="77b355d4c3903a5367febffb1d5fb080" category="list-text">분리할 하위 정합성 보장 그룹을 선택합니다.</block>
   <block id="baffc5619c6b92cfb8bd0f06efe69615" category="list-text">를 선택한 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>다음 * 모체에서 분리 * 를 선택합니다.</block>
   <block id="43faed766403b7432cc59c42e8d49ebf" category="list-text">분리할 일관성 그룹의 새 이름을 입력하거나 기본 이름을 그대로 적용하고 일관성 그룹 애플리케이션 유형을 선택합니다.</block>
   <block id="f9e81700c82de44e7b8b9b6bfcfbba80" category="list-text">분리 * 를 선택합니다.</block>
@@ -1471,7 +1408,6 @@
   <block id="9a5e67864d1a0cbd6f43034e561f51a2" category="summary">ASA R2 스토리지 시스템의 설치 및 설정을 시작하여 ONTAP 환경에 구축합니다.</block>
   <block id="bf0f6aa21aec3e349179a68aa2cb89e0" category="section-title">정합성 보장 그룹 클론을 분할합니다</block>
   <block id="6227fd79476a373a893c1d081a6db13e" category="paragraph">일관성 그룹 클론을 분할하면 소스 일관성 그룹에서 클론을 분리하고 클론에 대한 디스크 공간을 할당합니다. 클론은 소스 정합성 보장 그룹과 별개로 사용할 수 있는 독립 실행형 정합성 보장 그룹이 됩니다.</block>
-  <block id="d76e4c0366befa279b219a5ee2ef2f9c" category="list-text">분할할 일관성 그룹 클론 위로 마우스를 이동합니다.</block>
   <block id="c7146cc88efb9d4aa82ab0e52c436a48" category="list-text">Split clone * 을 선택합니다.</block>
   <block id="54e2c4dd2b9e992b761540f131754e81" category="list-text">분할 * 을 선택합니다.</block>
   <block id="b75f8c35975d217c69d40f46c56bb8c5" category="paragraph">클론이 소스 정합성 보장 그룹에서 분리되고 클론에 대해 디스크 공간이 할당됩니다.</block>
@@ -1492,7 +1428,6 @@
   <block id="dd7cd8aba78024bcc6ec1c67f3987760" category="list-text">System Manager에서 * Cluster * 를 선택한 다음 * Overview * 를 선택합니다.</block>
   <block id="0ce03f9ea97502f3a10721575d8a9696" category="paragraph">스토리지 가용 영역 활용률에 대한 요약이 클러스터의 각 HA 쌍에 대해 표시됩니다.</block>
   <block id="3670021e257ef0702d763c08d8b9c8b3" category="list-text">보다 자세한 메트릭을 원하는 경우 특정 스토리지 가용성을 선택합니다.</block>
-  <block id="b8e5e4895e260a0a4eeab6a3c66ae9b3" category="paragraph">개요 * 아래에 스토리지 가용 영역의 용량, 사용된 공간 및 데이터 축소율이 표시됩니다.</block>
   <block id="c5b460be9264c217ff7aa949f8f26aab" category="inline-link-macro">저장 장치를 이동합니다</block>
   <block id="8010ab2f71c733c1a8013b31b901be79" category="cell">클러스터당 노드 수</block>
   <block id="c7ae27ad054ff4d389e7c15cc82b0866" category="paragraph">클러스터당 최대 노드 수가 2개에서 12개로 늘어났습니다.</block>
@@ -1512,8 +1447,6 @@
   <block id="ac187c37acbb455a3ec9ef006a79fdf8" category="cell"><block ref="ac187c37acbb455a3ec9ef006a79fdf8" category="inline-link-macro-rx"></block></block>
   <block id="ac12d691d1b6c417de929f3b833cef99" category="cell">NVMe/FC 및 NVMe/TCP는 이제 다중 경로를 위한 대칭 액티브-액티브 아키텍처를 지원하므로 호스트와 스토리지 간의 모든 경로가 액티브/최적화됩니다.</block>
   <block id="1b2a9f2a24a72c15335105126ba3c988" category="summary">ASA R2 시스템에서 ONTAP 온보드 키 관리자나 외부 키 관리자 또는 둘 다(한 가지 경우) 사용하여 데이터 암호화 키를 관리할 수 있습니다.</block>
-  <block id="e99ed2862cc3fe1cd81a9f3a2dd33c56" category="doc">ONTAP R2 시스템의 주요 관리자 간에 ASA 데이터 암호화 키를 마이그레이션합니다</block>
-  <block id="b5badfcddc250ad4fcc8251908f87e29" category="paragraph">ASA R2 시스템의 ONTAP 온보드 키 관리자나 외부 키 관리자(또는 둘 다)를 사용하여 데이터 암호화 키를 관리할 수 있습니다. 외부 키 관리자는 스토리지 VM 레벨에서만 사용하도록 설정할 수 있습니다. ONTAP 클러스터 레벨에서 온보드 키 관리자 또는 외부 키 관리자를 사용하도록 설정할 수 있습니다.</block>
   <block id="afcb105c793faf5a2de8b7bec9a27701" category="cell">에서 키 관리자를 활성화하면...</block>
   <block id="0fe3023d00cc7e6a03e47a3c68ab74c5" category="cell">다음을 사용할 수 있습니다.</block>
   <block id="5c5372da5c24091217c06cc0f6ec8d03" category="cell">클러스터 레벨만 해당</block>
@@ -1525,19 +1458,14 @@
   <block id="e24963e40778134b357f4a5eac58e1f5" category="list-text">옵션 2</block>
   <block id="3a8a9355eb7486336283b79738409c86" category="paragraph">클러스터 레벨: 외부 키 관리자</block>
   <block id="0210c164d56b9ee340b6de0f8bcc2d48" category="section-title">ONTAP 클러스터 레벨에서 주요 관리자 간에 키를 마이그레이션합니다</block>
-  <block id="fbcbd18b1b9340d453b1e6de03001b58" category="paragraph">ONTAP 9.16.1부터는 ONTAP CLI(Command Line Interface)를 사용하여 클러스터 레벨의 키 관리자 간에 키를 마이그레이션할 수 있습니다.</block>
-  <block id="ad149857660a2356599fe21affd4451d" category="open-title">온보드부터 외부까지</block>
   <block id="b5c6fde8816eb583a49b6c0314b82928" category="list-text">권한 수준을 고급으로 설정합니다.</block>
   <block id="e1bb323a4b2b039ad5f3cab3ae012f34" category="list-text">비활성 외부 키 관리자 구성 생성:</block>
   <block id="d3004c556729998245acc90f8fa80c9c" category="list-text">외부 키 관리자로 전환합니다.</block>
   <block id="98e4d41b2a29ccd0b80651026a329d11" category="list-text">Onboard Key Manager 구성을 삭제합니다.</block>
   <block id="fe07e34b9c4a621f8012d19499fb4ea5" category="list-text">권한 수준을 admin으로 설정합니다.</block>
-  <block id="e23deb899dce1ad56b34b17413e1b7ec" category="open-title">외부에서 온보드까지</block>
   <block id="8f2a471846efc7bf912e0fa539aa3330" category="list-text">비활성 온보드 키 관리자 구성 생성:</block>
   <block id="b0b9d1953037e9596f7d9b5447aeafb2" category="list-text">Onboard Key Manager 구성을 활성화합니다.</block>
-  <block id="dfa14df9c3238dad5e97f0b19204f7d3" category="list-text">외부 키 관리자 구성을 삭제합니다</block>
   <block id="8168a513576ac2e105ea5be6de6b1d72" category="section-title">ONTAP 클러스터와 스토리지 VM 수준에서 주요 관리자 간에 키를 마이그레이션합니다</block>
-  <block id="cc1a9524f9ddd8574a5553ccd90ee9c3" category="paragraph">ONTAP CLI(Command Line Interface)를 사용하여 클러스터 수준의 키 관리자와 스토리지 VM 레벨의 키 관리자 간에 키를 마이그레이션할 수 있습니다.</block>
   <block id="5efbf2392161773688bf42568dd2c8c6" category="list-text">키를 마이그레이션합니다.</block>
   <block id="f7d82610ce1c76769575f4a95bb11e80" category="sidebar">키 관리자 간에 데이터 암호화 키를 마이그레이션합니다</block>
   <block id="3ee9bc9a210bd85fa921ca63bdeef612" category="list-text">ASA A50</block>
@@ -1641,7 +1569,6 @@
   <block id="c18d7ea3e180dd72f3fc8869a57e6376" category="cell"><block ref="c18d7ea3e180dd72f3fc8869a57e6376" category="inline-link-macro-rx"></block></block>
   <block id="86c79aae612f98a6019861f950eeb1a3" category="cell">ONTAP 온보드 키 관리자에서 클러스터 수준의 외부 키 관리자로 전환할 경우 ONTAP CLI(Command Line Interface)를 사용하여 한 키 관리자에서 다른 키 관리자로 암호화 키를 손쉽게 마이그레이션할 수 있습니다.</block>
   <block id="f06feed69dbf0f5f7721d9ea53af616f" category="list-text">클러스터 네트워크를 검색합니다</block>
-  <block id="6875b01c5e1cd1eaa394cb250554d067" category="paragraph">ASA R2 시스템에서 ONTAP 소프트웨어가 간소화되어 필수 SAN 기능을 지원하는 동시에 SAN 관련 기능이 아닌 기능의 가시성과 가용성을 제한합니다. 예를 들어, ASA R2 시스템에서 실행되는 System Manager에는 NAS 클라이언트의 홈 디렉토리를 생성하는 옵션이 표시되지 않습니다. 이 간소화된 ONTAP 버전은 _ ASA R2 Personality _ 로 식별됩니다. ASA 시스템에서 실행되는 ONTAP는 _ ASA ONTAP Personality _ 로 식별됩니다. AFF 및 FAS ONTAP 시스템에서 실행되는 ONTAP는 _ Unified ONTAP Personality _ 로 식별됩니다. ONTAP 퍼스낼리티의 차이는 ONTAP 명령 참조(man 페이지), REST API 사양 및 해당되는 경우 EMS 메시지에서 참조된다.</block>
   <block id="bca36b0a086865a5988c326bd3a3c6ef" category="list-text">시스템이 부팅 프로세스를 시작합니다. 초기 부팅 순서는 8분 정도 걸릴 수 있습니다.</block>
   <block id="f3e09817ba15a4f8685cb156fe2ade6f" category="list-text">부팅 프로세스 중에 LED가 깜박이고 팬이 활성화되어 컨트롤러의 전원이 켜지는 것을 확인할 수 있습니다.</block>
   <block id="86450f6a6524d00aefa9dda44e7aee80" category="list-text">처음 시동할 때 팬에서 높은 수준의 소음이 발생할 수 있습니다. 시동 중 팬 소음이 정상입니다.</block>
@@ -1651,7 +1578,6 @@
   <block id="b78c98e70e341751d6f58db28ecec461" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="29aaf1b4e7e6610ae4790f0740e69e4e" category="inline-link-macro-rx"></block></block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
   <block id="77aa123fc5c68731cdf628d8e9c75afc" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> <block ref="69d31d64dbed246448f394257b05fdb9" category="inline-link-macro-rx"></block></block>
-  <block id="c10f6cdf89366933afe9e0a05f726423" category="paragraph">ASA R2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안(IPsec)을 구성하여 데이터 보안을 강화할 수 있습니다. IPsec은 전송 중 데이터 암호화, IP 수준에서 네트워크 엔드포인트 간에 흐르는 트래픽에 대한 인증, 데이터에 대한 재생 및 악의적인 가로채기 공격으로부터 보호하는 인터넷 표준입니다.</block>
   <block id="602c5938acf67898ca9af2011ec2c721" category="paragraph">ASA R2 시스템의 경우 iSCSI 및 NVMe/TCP 호스트에 IPsec을 사용할 수 있습니다.</block>
   <block id="a0304825371175c4b6363207289817a6" category="paragraph">특정 ASA R2 시스템에서는 암호화 및 무결성 검사와 같은 여러 암호화 작업을 지원되는 NIC(Network Interface Controller) 카드로 오프로드할 수 있습니다. NIC 카드로 오프로드된 작업의 처리량은 약 5% 이하입니다. 이를 통해 IPsec으로 보호되는 네트워크 트래픽의 성능과 처리량을 크게 향상시킬 수 있습니다.</block>
   <block id="90dda976d3b078f124db5239495ee246" category="cell">지원되는 NIC 카드</block>
@@ -1660,7 +1586,6 @@
   <block id="078fcdf403281df3fd9849a79a715dc5" category="paragraph">X60132A - (4P, 10G/25G 이더넷 컨트롤러)</block>
   <block id="0a0e33e3bee1123a43e4178aad30ed45" category="sidebar">보안 IP 연결</block>
   <block id="8272f5b23e79d0ee33bd5151dcddc454" category="section-title">스토리지 VM을 생성합니다</block>
-  <block id="628df41697616cee6d5c865542d342ad" category="paragraph">클러스터 설정 중에 기본 데이터 스토리지 가상 머신(VM)이 생성됩니다. 다른 스토리지 VM을 생성하고 선택하지 않는 한 모든 새 스토리지 유닛은 기본 데이터 스토리지 VM 내에 생성됩니다. 추가 스토리지 VM을 생성하여 다양한 애플리케이션, 부서 또는 클라이언트의 스토리지 유닛을 분리할 수 있습니다. 예를 들어 개발 환경용 스토리지 VM과 프로덕션 환경을 위한 다른 스토리지 VM을 만들거나 재무 부서용 스토리지 VM과 마케팅 부서를 위한 다른 스토리지 VM을 만들 수 있습니다.</block>
   <block id="9d51c1df5884ca3290827847b5ca369e" category="list-text">클러스터 &gt; 스토리지 VM * 을 선택합니다.</block>
   <block id="a2606f19bd0ddba50071c32e6f0d3941" category="list-text">스토리지 VM의 이름을 입력하거나 기본 이름을 그대로 사용합니다.</block>
   <block id="47e869b5fd15e0e1eb4d7ed47d7db38e" category="list-text">Configure protocols * 에서 스토리지 VM에 사용할 프로토콜을 선택합니다.</block>
@@ -1732,9 +1657,7 @@
   <block id="35e215d46dc9e9777b80a47726a059fc" category="list-text">iSCSI LIF가 생성되었는지 확인하세요.</block>
   <block id="605100eb6736883e31c6d1e4fad51f01" category="doc">ASA r2 스토리지 시스템에서 ONTAP 되돌리기</block>
   <block id="6c4ad6bab2c371edfa0398af05e34073" category="paragraph">ASA r2 시스템에 대한 ONTAP 소프트웨어 복구는 다른 ONTAP 시스템에 대한 복구와 동일한 프로세스를 따릅니다.</block>
-  <block id="358f72dc9423c70c64ee3062d2194875" category="paragraph">ONTAP 클러스터를 되돌리는 작업은 시스템 중단을 초래할 수 있습니다. 되돌리는 동안 클러스터를 오프라인 상태로 유지해야 합니다. 기술 지원팀의 도움 없이 운영 클러스터를 되돌려서는 안 됩니다. 새 클러스터나 테스트 클러스터는 도움 없이 되돌릴 수 있습니다. 새 시스템이나 테스트 클러스터의 되돌리기가 실패하거나 성공적으로 완료되었지만 운영 환경의 클러스터 성능에 만족하지 못하는 경우 기술 지원팀에 문의하여 도움을 요청하십시오.</block>
   <block id="f0f741a2db2b034a75b5ae50e58d6b69" category="inline-link-macro">ONTAP 클러스터 되돌리기</block>
-  <block id="69f3bf402db3ab87bd308302cbf3b439" category="paragraph"><block ref="685dd4f32cb1899994bd1e3c5bb2a9b4" category="inline-link-macro-rx"></block> .</block>
   <block id="c0a2035563fe68c440cab106e5198732" category="section-title">ASA r2 시스템에 대한 요구 사항 되돌리기</block>
   <block id="5db7db0eab466beabc1cf794bfae5148" category="paragraph">특정 ASA r2 클러스터 구성에서는 ONTAP 소프트웨어 되돌리기를 시작하기 전에 특정 작업을 수행해야 합니다.</block>
   <block id="0741302586efe2fff91028abbfde1bb2" category="section-title">ONTAP 9.17.1에서 복귀</block>
@@ -1884,13 +1807,11 @@
   <block id="797e8e388c1c72ea3c94ad3f43cdc0ae" category="list-text"><block ref="0fe1b6a617afbb42e49809656c42af43" category="inline-link-macro-rx"></block> .</block>
   <block id="45c4115685375f9ea0f373a67af25085" category="inline-link-macro">외부 키 관리(NVE) 활성화</block>
   <block id="664014ba2ab1dd9087554c403aa6238d" category="list-text"><block ref="e752d6bc9a92f21dbd903e565fda63f7" category="inline-link-macro-rx"></block> .</block>
-  <block id="f3ef1f7fdfc583741c6a8188e9dfb445" category="paragraph">ASA r2 시스템의 스토리지 계층은 집계 대신 스토리지 가용성 영역(SAZ)을 사용합니다. 스토리지 가용성 영역은 단일 HA 쌍에서 사용할 수 있는 공통 스토리지 풀입니다. HA 쌍의 두 노드는 공유 스토리지 가용성 영역의 모든 사용 가능한 디스크에 액세스할 수 있습니다. 스토리지 유닛(LUN 또는 NVMe 네임스페이스)이 생성되면 ONTAP 해당 스토리지 가용성 영역에 볼륨을 자동으로 생성하여 스토리지 유닛을 저장합니다.</block>
   <block id="0ef6451ec8cfc30e01bce69e0bf6efb8" category="paragraph">이러한 저장소 관리에 대한 간소화된 접근 방식으로 인해 <block ref="ba2a83cd4de4eb43c31f434bfb5213e0" prefix=" " category="inline-code"></block> ASA r2 시스템에서는 명령이 지원되지 않습니다. <block ref="03628ea331120176369891df319619e8" prefix=" " category="inline-code"></block> , <block ref="ddecebdea58b5f264d27f1f7909bab74" prefix=" " category="inline-code"></block> 그리고 <block ref="210ab9e731c9c36c2c38db15c28a8d1c" prefix=" " category="inline-code"></block> 명령과 매개변수도 제한적이다.</block>
   <block id="36b194790f06e57d90bfae2eb92a9c33" category="section-title">성격 차이</block>
   <block id="fcc4b08d8168ca1d956ed17e80bd8724" category="section-title">저장 계층 차이점</block>
   <block id="25c5603af3c40392278c531c778d7240" category="paragraph">ASA r2 시스템은 FAS, AFF, ASA 시스템에서 사용하는 저장 계층과 다른 단순화된 저장 계층을 사용합니다.</block>
   <block id="ed71343ae4e4dcf121be11ff1628e50c" category="paragraph-title">FAS, AFF 및 ASA 시스템</block>
-  <block id="825933c4d860e3660e8c98f0e7eab2b8" category="paragraph">FAS, AFF 및 ASA 시스템의 스토리지 계층은 집계를 스토리지의 기본 단위로 사용합니다. 집계는 스토리지 시스템에서 사용 가능한 특정 디스크 집합을 소유합니다. 집계는 자신이 소유한 디스크의 공간을 LUN 및 네임스페이스 볼륨에 할당합니다. 이러한 시스템을 통해 ONTAP 사용자는 집계, 볼륨, LUN 및 네임스페이스를 생성하고 수정할 수 있습니다.</block>
   <block id="d0ee8f6d42e445ccb3b6cf2ca2eda848" category="paragraph">ASA r2 시스템의 스토리지 계층은 집계 대신 스토리지 가용성 영역(SAZ)을 사용합니다. 스토리지 가용성 영역은 단일 HA 쌍의 두 노드 모두에서 사용할 수 있는 공통 스토리지 풀입니다. HA 쌍의 두 노드는 공유 스토리지 가용성 영역의 모든 사용 가능한 디스크에 액세스할 수 있습니다. 예를 들어, 2노드 ASA r2 System ONTAP 클러스터에는 클러스터의 두 노드 모두 액세스할 수 있는 스토리지 가용성 영역이 하나 있습니다. 4노드 ASA r2 System ONTAP 클러스터에는 두 개의 스토리지 가용성 영역이 있습니다. 클러스터의 각 HA 쌍은 스토리지 가용성 영역 중 하나에 액세스할 수 있습니다.</block>
   <block id="25afba57f81c57e27978071d59c7fb4c" category="paragraph">ASA r2 시스템은 다음과 같은 면에서 FAS, AFF, ASA 시스템과 다릅니다.</block>
   <block id="fc647b716005682fb47d07737c88ef5f" category="inline-link-macro">지원되지 않는 ASA r2 명령에 대해 자세히 알아보세요</block>
@@ -1905,7 +1826,6 @@
   <block id="4244dd9a547fabfd651293dc1c4d1dd2" category="list-text">*호스트 매핑*에서 삭제하려는 호스트 그룹을 선택합니다.</block>
   <block id="481a421e621f56b493d24163b8b6e61f" category="list-text">*매핑된 저장소*를 선택하세요.</block>
   <block id="6fc817dfbe9e8303d43dd345dfc8d0a6" category="list-text">*더보기*를 선택한 다음, *삭제*를 선택하세요.</block>
-  <block id="d1dde57285c34e792a5945a2584acc2e" category="list-text">계속 진행하시겠습니까? 확인을 선택한 후 *삭제*를 선택하세요.</block>
   <block id="d8c055944ceedab265fa23bd4dac431a" category="paragraph">호스트 그룹이 삭제되었습니다. 그룹에 속했던 호스트는 더 이상 호스트 그룹에 매핑된 스토리지 유닛에 액세스할 수 없습니다.</block>
   <block id="246838e6a2baa5417bc2bb181dffaefd" category="cell"><block ref="246838e6a2baa5417bc2bb181dffaefd" category="inline-link-macro-rx"></block></block>
   <block id="b41dd2df01d053ae559a639dee1a223a" category="summary">ASA r2 시스템을 위한 ONTAP 9.17.1에서 사용할 수 있는 새로운 기능에 대해 알아보세요.</block>
@@ -1920,7 +1840,6 @@
   <block id="f231c7e641e6d267354740a6c9850600" category="cell">SnapMirror Active Sync는 2노드 ONTAP 클러스터에 대해 NVMe/TCP 및 NVMe/FC 호스트 액세스를 사용하는 VMware 워크로드 지원을 추가합니다. VMware 워크로드의 NVMe/TCP 지원은 VMware 버그 ID: TR1049746 해결 여부에 따라 달라집니다</block>
   <block id="2595874d578967634d23bb05c5c7197c" category="inline-link-macro">자동 작업 부하 분산 지원</block>
   <block id="f5f208592c87b0ba3e87b3ad6fad7fa6" category="cell">HA 쌍의 노드 간에 작업 부하가 자동으로 균형을 이루어 성능과 리소스 활용도가 최적화됩니다.</block>
-  <block id="e8b71c667f5920e249288a672ea7f999" category="paragraph">ONTAP 9.17.1부터 인공지능(AI)을 활용한 자율형 랜섬웨어 보호(ARP/AI)를 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. ARP/AI는 잠재적인 랜섬웨어 위협을 신속하게 감지하고, 데이터를 보호하기 위해 ARP 스냅샷을 자동으로 생성하며, 의심스러운 활동을 감지하면 시스템 관리자에 경고 메시지를 표시합니다.</block>
   <block id="7331e9472b69421ea7995df5df0b5754" category="inline-link-macro">학습 기간</block>
   <block id="ad09d4f074e5e7f7524d8960ed675311" category="inline-link-macro">ONTAP One 라이센스</block>
   <block id="4098ab2b124dfc2ac9a7199398f039bf" category="paragraph">ARP/AI 지원이 포함되어 있습니다. <block ref="eac36fc822e433078e178d83ea6ed140" category="inline-link-macro-rx"></block> .</block>
@@ -1938,7 +1857,6 @@
   <block id="3cec770f1e7e799dfaa881a2536b04d8" category="paragraph">선택한 저장 장치는 랜섬웨어 공격으로부터 보호되며, 의심스러운 활동은 시스템 관리자에 보고됩니다.</block>
   <block id="e4bfa390a2e1efb2d342f4385a4acfde" category="summary">저장소 및 비즈니스 요구 사항에 맞게 ARP 스냅샷 보존 기간을 수정하는 방법을 알아보세요.</block>
   <block id="ad6ca6c4e592647310494a87323a772f" category="doc">ASA r2 스토리지 시스템에서 ARP/AI 스냅샷 보존 기간 수정</block>
-  <block id="92354f35ee7ef9aa5c6b7ce7e259b1d4" category="paragraph">인공지능(ARP/AI)을 활용한 자율 랜섬웨어 보호 기능이 ASA r2 시스템 스토리지 유닛 하나 이상에서 비정상적인 활동을 감지하면 자동으로 ARP 스냅샷을 생성하여 스토리지 유닛의 데이터를 보호합니다. 스토리지 용량 및 비즈니스 데이터 요구 사항에 따라 기본 ARP 스냅샷 보존 기간을 늘리거나 줄일 수 있습니다. 예를 들어, 비즈니스 크리티컬 애플리케이션의 보존 기간을 늘려 필요한 경우 데이터 복구를 위한 보존 기간을 늘리거나, 비핵심 애플리케이션의 보존 기간을 줄여 스토리지 공간을 절약할 수 있습니다.</block>
   <block id="0dd298883c6e9bf0cc0d37232ee54e70" category="paragraph">ARP 스냅샷의 기본 보존 기간은 비정상적인 활동에 대한 대응 조치에 따라 달라집니다.</block>
   <block id="097a6ac756aaf3f813f3c988283f0f55" category="cell">만약 당신이 이 작업을 수행한다면...</block>
   <block id="b938f1b6c9b2de370aa5f774653ac6a2" category="cell">ARP 스냅샷은 기본적으로 다음 항목에 대해 보관됩니다.</block>
@@ -1949,20 +1867,14 @@
   <block id="6f2e90349f4bbfbf2dc6975049769897" category="cell">즉각적인 조치를 취하지 마십시오</block>
   <block id="2d836c595463e39451f4bc5201b13c16" category="cell">10일</block>
   <block id="6071a17c985fe00a9fb93ceb8b43b31c" category="inline-link">ONTAP 자동 스냅샷에 대한 옵션 수정</block>
-  <block id="945b91477a64c6c005e774606fec4bd9" category="paragraph">기본 보존 기간은 ONTAP 명령줄 인터페이스(CLI)를 사용하여 수정할 수 있습니다 . <block ref="02f493e3d4b2ac47f6e229a1ce055166" category="inline-link-rx"></block> 기본 보존 기간을 변경하는 단계는 다음과 같습니다.</block>
-  <block id="6a775ca760bff9fbc6c0ed5905022d26" category="paragraph">ONTAP 9.17.1부터 인공지능(ARP/AI)을 활용한 자율형 랜섬웨어 보호 기능을 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. 비정상적인 워크로드 이벤트를 계획하는 경우, 랜섬웨어 공격의 오탐지를 방지하기 위해 ARP/AI 분석을 일시적으로 중단할 수 있습니다. 워크로드 이벤트가 완료되면 ARP/AI 분석을 재개할 수 있습니다.</block>
   <block id="d6a9a7257f4378316af056ede012c0ab" category="section-title">ARP/AI 일시 중지</block>
-  <block id="84354dab4dfd74a63f53750e80507db9" category="paragraph">비정상적인 작업 부하 이벤트를 시작하기 전에 랜섬웨어 공격에 대한 오탐지 방지를 위해 ARP/AI 분석을 일시적으로 중단해야 할 수도 있습니다.</block>
   <block id="5ef0d9034456bd5eebaec2576b771f4d" category="list-text">ARP/AI를 일시 중지할 저장 장치를 선택하세요.</block>
   <block id="7955a74f929d2d0cf06e1ec6dd0c7c7a" category="list-text">*랜섬웨어 방지 일시 중지*를 선택하세요.</block>
   <block id="414e9d94d89edfca59fb12b5a1334774" category="paragraph">선택한 저장 장치에 대한 ARP/AI 분석이 일시 중지되고, ARP/AI를 재개할 때까지 시스템 관리자에 의심스러운 활동이 보고되지 않습니다.</block>
   <block id="36492801d02736bef73b4c68049b7734" category="section-title">ARP/AI 재개</block>
-  <block id="d2d7f2d179eafcd6777cc3b5dc958baa" category="paragraph">비정상적인 작업 부하 중에 ARP/AI를 일시 중지한 경우, 작업이 완료된 후 다시 시작하여 랜섬웨어 공격으로부터 데이터를 보호해야 합니다.</block>
   <block id="5cda9545c48d9b6f5f36b4ce856eaf47" category="list-text">ARP/AI를 재개할 저장 장치를 선택하세요.</block>
   <block id="8e1667e545dde536a2a34599f2a208a4" category="list-text">*랜섬웨어 방지 재개*를 선택하세요.</block>
   <block id="18a871e39c4db6e8fdaffd71c7141248" category="paragraph">잠재적인 랜섬웨어 공격에 대한 분석이 재개되고, 의심스러운 활동이 시스템 관리자에게 보고됩니다.</block>
-  <block id="a779502493c8672d764e9893228ff604" category="paragraph">인공지능(ARP/AI)을 활용한 자율 랜섬웨어 보호 기능이 ASA r2 시스템 스토리지 유닛 하나 이상에서 비정상적인 활동을 감지하면 시스템 관리자 대시보드에 경고가 생성됩니다. 경고를 확인하고 활동을 확인한 후, 필요한 경우 데이터에 대한 잠재적 위협을 차단하기 위한 조치를 취해야 합니다.</block>
-  <block id="c0e52aa291208452d8e4daf52f19e352" category="paragraph">ARP/AI 경고 메시지가 표시되면 조치를 취하기 전에 적절한 애플리케이션 무결성 검사기를 사용하여 스토리지 유닛의 데이터 무결성을 확인해야 합니다. 스토리지 유닛의 데이터 무결성을 확인하면 해당 활동이 허용 가능한 수준인지 아니면 잠재적인 랜섬웨어 공격인지 판단하는 데 도움이 됩니다.</block>
   <block id="d72f2cfc4586d8ec238fbb54c4e19dfb" category="cell">비정상적인 활동이 발생하면...</block>
   <block id="9792a4eebc59c44369f1f98f9d27237a" category="cell">그러면 이렇게 하세요...</block>
   <block id="e684de7fa7e539170e4ab10139eccfec" category="cell">허용 가능</block>
@@ -1970,8 +1882,6 @@
   <block id="063e907556dbcfcfcd835babe00937cd" category="cell">잠재적인 랜섬웨어 공격</block>
   <block id="0c01593e64ecaa53a985c1ab71ea1744" category="cell">해당 활동을 랜섬웨어 공격의 가능성이 있는 활동으로 표시합니다.</block>
   <block id="a2d00c353d1f9a5f07852650030dbd53" category="cell">불확정</block>
-  <block id="b02d0134f213ceef73fa5c63e00bf881" category="cell">즉각적인 조치를 취하지 마십시오. 최대 7일 동안 저장 장치를 모니터링하십시오. 저장 장치가 계속 정상적으로 작동하면 해당 활동을 오탐(false positive)으로 표시하십시오. 저장 장치에서 비정상적인 활동이 계속 나타나면 해당 활동을 잠재적인 랜섬웨어 공격으로 표시하십시오.</block>
-  <block id="b3930eae0cea4363e1cb5bad66e5b31c" category="paragraph">ARP가 하나 이상의 저장 장치에서 비정상적인 활동을 감지하면 *경고* 아래에 메시지가 나타납니다.</block>
   <block id="a664dbe2365fb46a91e7a0475a262535" category="list-text">경고 메시지를 선택하세요.</block>
   <block id="a9b6a1feb4a09c0645d1e77714b0b0a1" category="list-text">*이벤트 개요*에서 비정상적인 활동이 있는 저장 장치 수를 나타내는 *경고* 메시지를 선택합니다.</block>
   <block id="823f2c8d3a8fe442338579280f434882" category="list-text">*비정상적인 활동이 있는 보관 장치*에서 보관 장치를 선택하세요.</block>
@@ -2021,7 +1931,6 @@
   <block id="4a9d271be00cfe80ccf9f2ae1e86c4ff" category="sidebar">vSphere 환경을 위한 지속적인 가용성 솔루션에 대해 알아보세요</block>
   <block id="07deeffbd26ae347c81cfaf3e2169044" category="sidebar">NetApp ASA 시스템을 위한 모범 사례</block>
   <block id="65393a1b15c3a63904bb446f4a99001a" category="sidebar">REST API 전환 가이드</block>
-  <block id="f0929283036207a854392f9eaeb45be4" category="paragraph">ASA r2 시스템은 일관성 그룹이 있는 스토리지 유닛을 사용하여 스토리지 관리와 데이터 보호를 간소화합니다.  예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다.  각 저장 장치를 개별적으로 백업하는 대신 일관성 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
   <block id="eaeb215b56b171344d62780dd997477e" category="paragraph">ONTAP 9.16.1부터 ASA r2 스토리지 시스템은 클러스터당 최대 12개의 노드를 지원합니다.  HA 쌍의 새 노드에 케이블이 연결되고 전원이 켜진 후에는 이를 클러스터에 조인해야 합니다.</block>
   <block id="b8838348a8da924f377a5d293230f4f4" category="summary">ASA r2 시스템에 대한 ONTAP 소프트웨어 복구는 다른 ONTAP 시스템에 대한 복구와 동일한 프로세스를 따릅니다. ONTAP 클러스터를 되돌리는 작업은 시스템 중단을 초래할 수 있습니다.</block>
   <block id="b4a4e19f8caa5675ed75c7e4c2f95379" category="inline-link-macro">SnapMirror 활성 동기화 관계 삭제</block>
@@ -2039,7 +1948,6 @@
   <block id="c27a5962c7e7ec66189a305a5f5ad38b" category="doc">ASA r2 시스템에서 일관성 그룹의 크기를 수정합니다.</block>
   <block id="833a4354cb68f3cdd7ed3c7ae637dd10" category="inline-link-macro">SnapMirror 활성 동기화 관계 삭제</block>
   <block id="02fe6464a41941805587a0bb0fd6bc1b" category="inline-link-macro">관계를 끊다</block>
-  <block id="befe4ba543ef5becd7b16f7e36af9a30" category="paragraph">ONTAP 9.16.1을 실행 중이고 확장하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 저장 장치를 추가하기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 확장하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
   <block id="7ac95df708e1e6c23d71cd9393b3bc84" category="summary">더 이상 일관성 그룹의 구성원을 단일 단위로 관리할 필요가 없는 경우 일관성 그룹을 삭제할 수 있습니다.</block>
   <block id="fad786d01c26418babfb8f46c9213322" category="doc">ASA r2 시스템에서 일관성 그룹 삭제</block>
   <block id="6488fd27ab28c1a614285c0fcab40be4" category="paragraph">더 이상 일관성 그룹의 구성원을 단일 단위로 관리할 필요가 없는 경우 일관성 그룹을 삭제할 수 있습니다.  일관성 그룹이 삭제된 후에도 이전에 그룹에 속했던 저장 장치는 클러스터에서 활성 상태를 유지합니다.  일관성 그룹이 복제 관계에 있는 경우 복제된 사본은 원격 클러스터에 남아 있습니다.</block>
@@ -2047,7 +1955,6 @@
   <block id="fded2ecb467047cfa87cd2389472c754" category="doc">ASA r2 스토리지 시스템의 ONTAP 일관성 그룹에 대해 알아보세요.</block>
   <block id="89a3dbc1e61db3375313b0a46b8b2d38" category="paragraph">일관성 그룹은 단일 단위로 관리되는 저장 단위의 모음입니다.  일관성 그룹을 사용하면 스토리지 관리가 간소화됩니다.</block>
   <block id="209c4e104de4e93b212390238bb51b0c" category="paragraph">예를 들어, 일관성 그룹에 10개의 저장 장치로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다. 각 저장 장치를 백업하는 대신 일관성 그룹에 스냅샷 데이터 보호를 추가하기만 하면 전체 데이터베이스를 백업할 수 있습니다.  저장 장치를 개별적으로 백업하는 대신 일관성 그룹으로 백업하면 모든 장치에 대한 일관된 백업이 제공되지만, 장치를 개별적으로 백업하면 불일치가 발생할 가능성이 있습니다.</block>
-  <block id="a50d9fbff117cd678c55c63a5bb02d0e" category="paragraph">ONTAP 9.16.1부터 System Manager를 사용하여 ASA r2 시스템에서 계층적 일관성 그룹을 만들 수 있습니다.  계층적 구조에서는 하나 이상의 일관성 그룹이 부모 일관성 그룹 아래의 자식으로 구성됩니다.</block>
   <block id="b677e3124d6e40579970e7053d53c4e0" category="section-title">복제 관계의 일관성 그룹</block>
   <block id="e2b2e30a32098f6916a6a7a2d004a136" category="paragraph">ONTAP 9.17.1부터 관계를 끊거나 삭제하지 않고도 비동기 복제 관계 또는 SnapMirror 활성 동기화 관계의 일관성 그룹에 다음과 같은 지오메트리 변경을 적용할 수 있습니다.  기본 일관성 그룹에서 기하학적 변경이 발생하면 변경 사항이 보조 일관성 그룹에 복제됩니다.</block>
   <block id="118a76b2a17ade397c36b94ff6a5a4f9" category="inline-link-macro">저장 장치 크기 수정</block>
@@ -2061,14 +1968,11 @@
   <block id="fbc1e4537d7272daa084d09b0b6518c9" category="list-text"><block ref="49d09aacb53e588992bf3059e10179a4" category="inline-link-macro-rx"></block>기존 일관성 그룹을 사용합니다.</block>
   <block id="4b5530f7d3ae98b0b72f47ff0f799d71" category="inline-link-macro">비동기 복제 관계를 끊다</block>
   <block id="a04062ef828580f220b683895b5ff7f0" category="paragraph">ONTAP 9.16.1에서는 다음을 수행해야 합니다.<block ref="a469377170b905c6c9ecc6ebb0e09607" category="inline-link-macro-rx"></block> 그리고<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹에 기하학적 변경을 하기 전에.</block>
-  <block id="9a00996d223c374eb701de258a3d4762" category="summary">각 저장 장치에서 개별적으로 작업을 수행하는 대신, 일관성 그룹을 사용하여 여러 저장 장치에 대해 동시에 다양한 작업을 수행합니다.  계층적 구조에서는 하나 이상의 일관성 그룹이 부모 일관성 그룹 아래의 자식으로 구성됩니다.</block>
   <block id="cfb33d071831c4697b80956e95fabe77" category="doc">ASA r2 시스템에서 계층적 일관성 그룹 관리</block>
-  <block id="12f83c4c3fb13a965f88dab1ae3eb2c0" category="paragraph">ONTAP 9.16.1부터 System Manager를 사용하여 ASA r2 시스템에서 계층적 일관성 그룹을 만들 수 있습니다.  계층적 구조에서는 하나 이상의 일관성 그룹이 부모 일관성 그룹 아래의 자식으로 구성됩니다.  각 자식 일관성 그룹에 개별 스냅샷 정책을 적용하고 부모를 복제하여 모든 자식 일관성 그룹의 스냅샷을 단일 단위로 원격 클러스터에 복제할 수 있습니다.  이를 통해 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다.</block>
   <block id="3ac8299c6e8aa389c4671969717ba58f" category="section-title">기존 일관성 그룹을 부모 일관성 그룹으로 승격</block>
   <block id="66ee6561a99b073d54f9e83ee7b09dac" category="paragraph">기존 일관성 그룹을 부모로 승격하면 새 자식 일관성 그룹이 생성되고 승격된 일관성 그룹에 속한 스토리지 유닛이 새 자식 일관성 그룹으로 이동됩니다.  저장 단위는 부모 일관성 그룹과 직접 연관될 수 없습니다.</block>
   <block id="12cda3c54df5ed8c4eb98ffac475155b" category="paragraph">ONTAP 9.16.1을 실행 중이고 승격하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹이 승격되기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 홍보하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 승격하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
   <block id="9301bf3266067cf2800be3bd2bfaa3de" category="list-text">새 자식 일관성 그룹의 이름을 입력하거나 기본 이름을 그대로 사용한 다음, 일관성 그룹 구성 요소 유형을 선택합니다.</block>
-  <block id="f8caf636e3b8fa0f56119352de2f4e4f" category="paragraph">부모 일관성 그룹 아래에 추가적인 자식 일관성 그룹을 만들 수 있습니다.  당신도 할 수 있습니다<block ref="c9073dd826fc7721b98f9930c55d01b2" category="inline-link-macro-rx"></block> 백업 및 재해 복구를 위해 부모 및 자식 일관성 그룹을 지리적으로 멀리 떨어진 위치로 복사합니다.</block>
   <block id="488eb097613bea3d7193264b5d8bde4f" category="paragraph">부모 일관성 그룹을 단일 일관성 그룹으로 강등하면 연관된 자식 일관성 그룹의 스토리지 단위가 부모 일관성 그룹에 추가됩니다.  자식 일관성 그룹이 삭제되고 부모 일관성 그룹은 단일 일관성 그룹으로 관리됩니다.</block>
   <block id="38f17853f3794e07578f727204a0dbe3" category="paragraph">ONTAP 9.16.1을 실행 중이고 강등하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹이 강등되기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 강등하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
   <block id="648ef31970ca0486a78c62c1ba3d6ea4" category="paragraph">자식 일관성 그룹을 만들면 각 자식에 개별 스냅샷 정책을 적용할 수 있습니다.  ONTAP 9.17.1부터 개별 복제 정책을 각 자식에 직접 적용할 수도 있습니다.  ONTAP 9.16.1에서는 복제 정책이 부모 수준에서만 적용될 수 있습니다.</block>
@@ -2079,7 +1983,6 @@
   <block id="a0a49d94e214fa3e16bbaffb341668c7" category="paragraph">자식 일관성 그룹을 부모 일관성 그룹에서 분리하면 자식 일관성 그룹은 부모 일관성 그룹에서 제거되고 단일 일관성 그룹으로 관리됩니다.  부모에 적용된 복제 정책은 더 이상 분리된 자식 일관성 그룹에 적용되지 않습니다.</block>
   <block id="85bef1d1a49cbb3a5a043ae91ac899f5" category="paragraph">ONTAP 9.16.1을 실행 중이고 분리하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.<block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 일관성 그룹을 분리하기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.<block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 일관성 그룹을 분리하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.</block>
   <block id="8e735c2c6a3f530bcf5ec1e68dcead8d" category="paragraph"><block ref="2e81c1e2e7e67baddc7dd1eab1535a95" category="inline-link-macro-rx"></block>분리된 자식 일관성 그룹의 스냅샷을 원격 클러스터에 복제합니다.</block>
-  <block id="69476e145701ec47dd0e3181118ad91d" category="summary">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.</block>
   <block id="9f69e96ba899e0e31a6aada411ff602e" category="paragraph">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.</block>
   <block id="ed8bdaffa7dc68cc8c956646c4e8fe55" category="inline-link-macro">사용자 정의 복제 정책 생성</block>
   <block id="cd84790f97e4e9beb448a5f86dfdf828" category="paragraph">미리 정의된 정책이 귀하의 요구 사항을 충족하지 못하는 경우<block ref="780c8d0d6612638332edd501d17289ee" category="inline-link-macro-rx"></block> .</block>
@@ -2166,7 +2069,6 @@
   <block id="de095ac7880431e9449dcced8cecbd9a" category="inline-link-macro">계층적(부모/자식) 일관성 그룹에 대해 자세히 알아보세요.</block>
   <block id="9bd28dad99082e4759b37cc288641beb" category="paragraph"><block ref="2c27991fbdb899d0303dcd6d776c47a4" category="inline-link-macro-rx"></block> .</block>
   <block id="823690d53f135eca513f93c93a174cb1" category="section-title">2단계: 선택적으로 사용자 정의 복제 정책을 만듭니다.</block>
-  <block id="202f82422187107b48c76b4f1093f37b" category="paragraph">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다.  미리 정의된 정책이 요구 사항을 충족하지 못하는 경우 사용자 정의 복제 정책을 만들 수 있습니다.</block>
   <block id="9e0b9f51445e376b8e8b748e02d479d5" category="inline-link-macro">사전 정의된 ONTAP 데이터 보호 정책</block>
   <block id="f68cabc6603a5173a52adc0789172ad3" category="paragraph">에 대해 알아보세요<block ref="7807ad443b4479d6979a7fffa34492fb" category="inline-link-macro-rx"></block> .</block>
   <block id="87531525c3b816a3a29dbbcbcd9e58b1" category="inline-link-macro">복제 정책에 대해 알아보세요</block>
@@ -2175,10 +2077,8 @@
   <block id="bec1e41aa312239c590ea19d2cd648e2" category="paragraph">ASA 스토리지 시스템에서 ASA r2 스토리지 시스템으로 VM 작업 부하를 마이그레이션해야 하는 경우 NetApp 다음을 권장합니다.<block ref="5e3823885235dce61c55802a90e4bf09" category="inline-link-macro-rx"></block> 데이터의 실시간, 중단 없는 마이그레이션을 수행합니다.</block>
   <block id="8472fc4ccb1079c9fe1f338f10dae548" category="list-text">CLI에서 다음을 입력하세요.<block ref="f0af09467abded8f889764e0118fc371" prefix=" " category="inline-code"></block></block>
   <block id="6e3ec6c33e748e95fcc9a00b80c75047" category="paragraph">ASA r2 시스템의 경우 _개성_은 _ASA r2_이고 _is-disaggregated_의 상태는 _true_입니다.</block>
-  <block id="0212dda5b736d4e3ac685d52c9fe59e3" category="paragraph">삭제하려는 저장 장치가 복제 관계에 있는 일관성 그룹에 있는 경우 다음을 수행해야 합니다.<block ref="741fafaed1397e844d655f1c5d2c2470" category="inline-link-macro-rx"></block> 삭제하기 전에.</block>
   <block id="b50f5f8469f7f4269e80570d419c9f8e" category="inline-link-macro">복제 관계에서 일관성 그룹에 대한 지오메트리 변경 지원</block>
   <block id="42071aa0f3867fbd6baf2685ca27c2ff" category="cell"><block ref="42071aa0f3867fbd6baf2685ca27c2ff" category="inline-link-macro-rx"></block></block>
-  <block id="65476b287593ea7b99cab3c73a759847" category="cell">ASA r2 시스템은 SnapMirror 활성 동기화 관계나 비동기 복제 관계에서 일관성 그룹에 대한 기하학적 변경을 지원하며, SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊지 않습니다.  기본 일관성 그룹에서 기하학적 변경이 발생하면 변경 사항이 보조 일관성 그룹에 복제됩니다.</block>
   <block id="40a82e39058981afc99290ca5e2fabbc" category="inline-link-macro">자식 일관성 그룹의 비동기 복제 지원</block>
   <block id="4c8a5f5490ffb0c0214d67b43bb5c57d" category="cell"><block ref="4c8a5f5490ffb0c0214d67b43bb5c57d" category="inline-link-macro-rx"></block></block>
   <block id="f003fc5d30b5290d37cac05051c256e6" category="cell">비동기 복제 정책은 계층적 관계의 일관성 그룹에 적용될 수 있습니다.</block>
@@ -2203,7 +2103,6 @@
   <block id="078f057957ee3112500c8f235bb0352f" category="paragraph">SnapMirror 복제는 다음과 같은 제한 사항이 있는 ASA r2 시스템에서 지원됩니다.</block>
   <block id="387dae8bc04454e56a9780e8507821e5" category="list-text">SnapMirror 동기 복제는 지원되지 않습니다.</block>
   <block id="74618c54a0d6a05f0dbccbfa9f4bc480" category="list-text">SnapMirror Active Sync는 두 개의 ASA r2 시스템 간에만 지원됩니다.</block>
-  <block id="c274f3c7bf5ff5013941b9ff06a2dfdc" category="list-text">SnapMirror 비동기 복제는 두 개의 ASA r2 시스템 간에만 지원됩니다. SnapMirror 비동기 복제는 ASA r2 시스템과 ASA, AFF 또는 FAS 시스템 또는 클라우드 사이에서는 지원되지 않습니다.</block>
   <block id="91986d95992f1ad825d4163f8cc66a27" category="inline-link-macro">ASA r2 시스템에서 지원되는 SnapMirror 복제 정책</block>
   <block id="5ebade231442483b3d9dd2848baa6ccc" category="inline-link-macro">ASA r2 시스템의 SnapMirror Active Sync</block>
   <block id="423f4fe0f55d76e8fcf2a8817bd3ae34" category="paragraph">자세히 알아보세요<block ref="53c394728f3be1f907f95f13ec9262d9" category="inline-link-macro-rx"></block> .</block>
@@ -2217,11 +2116,9 @@
   <block id="fc117733d5bf95c0139e1bc7fb47402a" category="inline-link-macro">랜섬웨어 방지 보호 일시 중지</block>
   <block id="68d82971e18ae285c3545db3392fb02d" category="cell"><block ref="586465f47cc689b69578bfa78bae2526" category="inline-link-macro-rx"></block>.</block>
   <block id="54552e48bc6d578c009fd992b8b06a98" category="paragraph">ASA r2 시스템의 데이터를 백업하기 위해 스냅샷을 만듭니다.  ONTAP 시스템 관리자를 사용하면 단일 스토리지 유닛의 수동 스냅샷을 생성하거나 일관성 그룹을 생성하고 동시에 여러 스토리지 유닛의 자동 스냅샷을 예약할 수 있습니다.</block>
-  <block id="8cd098a9fcb7b5e2a106337dfc35ddc9" category="paragraph">ONTAP 9.18.1부터 새 스토리지 유닛으로 일관성 그룹을 생성할 때 스냅샷 예약 비율을 설정하고 자동 스냅샷 삭제를 활성화할 수 있습니다.  스냅샷 예약은 스냅샷을 위해 특별히 예약된 저장 장치의 공간입니다.  스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.  부모 일관성 그룹에서 스냅샷 예약 및 자동 스냅샷 삭제가 활성화된 경우 모든 기존 자식 일관성 그룹에서도 활성화됩니다.  새로운 자식 일관성 그룹이 추가되면 부모의 스냅샷 예약 및 스냅샷 삭제 설정은 상속되지 않습니다.</block>
   <block id="3b34504f2a5ca1bcf5ee7604a53c73c6" category="inline-link-macro">ASA r2 스토리지 시스템의 스냅샷 예약에 대해 자세히 알아보세요.</block>
   <block id="8caf85c6e8569582ba34f628913fb1ac" category="paragraph"><block ref="82eeebd8f26e5c1bba0e8228d0651252" category="inline-link-macro-rx"></block>.</block>
   <block id="9c859532bec1d27748e966c373dc670d" category="inline-link-macro">ASA r2 시스템의 자식 일관성 그룹에 대해 자세히 알아보세요.</block>
-  <block id="60b02b43a7d05d018304b4628d676397" category="paragraph">ONTAP 9.16.1부터 새로운 스토리지 유닛을 사용하여 일관성 그룹을 생성할 때 최대 5개의 자식 일관성 그룹을 구성할 수 있습니다. <block ref="f1a0f4ed0f432768de2b840c9e2d3a9d" category="inline-link-macro-rx"></block>.</block>
   <block id="36c4a42b2b90a9d08bf06c6dbdca6f18" category="paragraph">ASA r2 시스템은 두 가지 성능 수준을 제공합니다.  기본 성능 수준은 *극단*으로, 사용 가능한 가장 높은 수준입니다.  성능 수준을 *성능*으로 낮출 수 있습니다.</block>
   <block id="eef3eb3d811e00eac97b123dd64b8767" category="paragraph">기본 스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화합니다.</block>
   <block id="d1ab4768c39b624802ab6dec9f10bec4" category="list-text">*스냅샷 예약 %*에서 스냅샷에 할당하려는 저장 장치 공간의 백분율에 해당하는 숫자 값을 입력합니다.</block>
@@ -2287,7 +2184,6 @@
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">네트워킹</block>
   <block id="adcbd436a1b357e39b7ae30dc6f4ea85" category="paragraph">ASA r2 시스템에서 지원되는 일반적인 네트워킹 기능에 대해 자세히 알아보세요.</block>
   <block id="912008f846838b55bb1317ee6c2fe5aa" category="section-title">FIPS 준수</block>
-  <block id="6bafdd1f6bb057a2f36be8431367b211" category="paragraph">ONTAP 모든 SSL 연결에 대해 연방 정보 처리 표준(FIPS) 140-2를 준수합니다.  ONTAP 내에서 SSL FIPS 모드를 켜고 끌 수 있고, SSL 프로토콜을 전역적으로 설정하고, RC4와 같은 취약한 암호를 끌 수 있습니다.</block>
   <block id="a3feba850e295ef89d0ff278063f67bb" category="paragraph">ONTAP 9.18.1부터 SSL에 대한 포스트퀀텀 컴퓨팅 암호화 알고리즘이 지원됩니다.  이러한 알고리즘은 미래의 양자 컴퓨팅 공격에 대한 추가적인 보호 기능을 제공하며, SSL FIPS 모드가 비활성화된 경우 사용할 수 있습니다.</block>
   <block id="adb63f8b488f18267724ae7cdc626773" category="inline-link-macro">모든 SSL 연결에 대한 FIPS를 구성하는 방법을 알아보세요</block>
   <block id="0316162bbfed207eb384168b8350ddd6" category="list-text"><block ref="d0644dc39229104e22aa6bb6d6a478f4" category="inline-link-macro-rx"></block>.</block>
@@ -2309,12 +2205,9 @@
   <block id="c9b809a8a0be01452bcb4a9a44b9e75d" category="inline-link-macro">NVMe에 대한 공간 할당(맵 해제)에 대해 자세히 알아보세요.</block>
   <block id="8b12cbcd3cfef46fc75a23bfedc38c3a" category="list-text"><block ref="b0eb582fadc9931c22d97f580dd17d74" category="inline-link-macro-rx"></block>.</block>
   <block id="c4a348629a843b9ec255aeca1b2a216f" category="paragraph">ONTAP 9.16.1부터 NVMe 네임스페이스에 대한 공간 할당 해제(일명 "홀 펀칭" 및 "언맵"이라고도 함)가 기본적으로 활성화됩니다. 공간 할당 해제를 통해 호스트는 네임스페이스에서 사용되지 않은 블록을 할당 해제하여 공간을 회수할 수 있습니다.</block>
-  <block id="605b329c2e4d92dfa41efad4fb67c2e8" category="paragraph">시스템 관리자에서 다양한 작업, 개체 및 정보 항목을 검색할 수 있습니다.  특정 항목에 대한 테이블 데이터를 검색할 수도 있습니다.</block>
   <block id="3b8c82465a3bb473ba8ae90f8a4faaaa" category="inline-link-macro">시스템 관리자에서 정보를 검색, 필터링 및 정렬하는 방법을 알아보세요.</block>
   <block id="85d4853309c62a311e378a627ddffad5" category="paragraph"><block ref="407717bfd2e65c0cf889e5f6c4b0921d" category="inline-link-macro-rx"></block>.</block>
-  <block id="6c2e53189649bd6687dddbe41deae368" category="paragraph">ASA r2 시스템은 모든 플래시 솔루션을 기반으로 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 솔루션을 제공합니다. ASA r2 시스템은 ONTAP 특성, 스토리지 계층 및 지원 프로토콜 구현 측면에서 다른 ONTAP 시스템(ASA, AFF, FAS )과 차별화됩니다.</block>
   <block id="5c1b41ebe7dbb796571241a2573537df" category="paragraph-title">프로토콜 서비스를 사용한 기본 스토리지 VM 생성</block>
-  <block id="23b1f43da700200258ce094b112f1151" category="paragraph">새로운 클러스터에는 SAN 프로토콜이 활성화된 기본 데이터 저장 가상 머신(VM)이 자동으로 포함됩니다.  IP 데이터 LIF는 iSCSI 및 NVMe/TCP 프로토콜을 지원하며 다음을 사용합니다.<block ref="6ee97f4349d48b4c53372dfd08835169" prefix=" " category="inline-code"></block> 기본적으로 서비스 정책이 적용됩니다.</block>
   <block id="5394908cf8d6f0ebb49c495b8cb4d0dd" category="doc">ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM 마이그레이션</block>
   <block id="ec8bccf423bcef2e309e4956040ccb3f" category="paragraph">ASA 와 ASA r2 스토리지 시스템 간의 스토리지 VM 마이그레이션은 다음과 같이 지원됩니다.</block>
   <block id="42327235fd87e6d620f2ee816e9d6149" category="cell">다음 ASA 시스템 중 하나에서:</block>
@@ -2366,7 +2259,6 @@
   <block id="216c309570be06e8bf47ded6a9935197" category="section-title">3단계: ASA 에서 ASA r2 클러스터로 스토리지 VM 마이그레이션 준비</block>
   <block id="e31c0a5dbae02288f83fa6af5bce6ce4" category="paragraph">ASA 클러스터에서 ASA r2 클러스터로 스토리지 가상 머신(VM)을 마이그레이션하기 전에 마이그레이션 사전 검사를 실행하고 필요한 문제를 해결해야 합니다.  사전 검사를 성공적으로 통과할 때까지 마이그레이션을 수행할 수 없습니다.</block>
   <block id="351e9f339eb79674390af4a3f1c2ff1e" category="list-text">ASA r2 클러스터에서 마이그레이션 사전 검사를 실행합니다.</block>
-  <block id="f69bb10ef5c71f1822dc519caec16663" category="paragraph">ASA 클러스터를 마이그레이션하기 위해 문제를 해결해야 하는 경우 문제와 해결 방법이 표시됩니다.  문제를 해결하고 사전 점검을 성공적으로 완료될 때까지 반복합니다.</block>
   <block id="66bd41748f0136f40140cb32f6ad9ae2" category="paragraph">이제 ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션할 준비가 되었습니다.</block>
   <block id="d0d7f20044d1f98b7361cb3e2eaa4369" category="section-title">4단계: ASA 스토리지 VM을 ASA r2 클러스터로 마이그레이션</block>
   <block id="4d3190b98843b96e5dfac1c70dab24ad" category="paragraph">ASA 클러스터를 준비하고 ASA r2 클러스터와 필요한 클러스터 피어 관계를 만든 후 스토리지 VM 마이그레이션을 시작할 수 있습니다.</block>
@@ -2409,8 +2301,6 @@
   <block id="88b492110e1066f5d49d63281dd0882b" category="cell">클러스터당 스토리지 VM</block>
   <block id="693b04a116e2728c124dc2e59e7f14c6" category="cell">HA 쌍당 지원되는 스토리지 가상 머신(VM)의 최대 수가 32개에서 256개로 늘어났습니다.</block>
   <block id="e48e73e576f724fd4213ab1eca7edb4a" category="cell">ONTAP 9.18.1</block>
-  <block id="fec98ca7c75ede1dbe8ec2dbf74a75dc" category="cell">SnapMirror 활성 동기화</block>
-  <block id="be626395ab5a6e8fbc73b5c1f349921d" category="cell">SnapMirror Active Sync에 대한 지원이 2노드 클러스터에서 4노드 클러스터로 증가했습니다.</block>
   <block id="d685640410801eb03bb5dcb58186458f" category="section-title">시스템</block>
   <block id="0d291a2ea60d9d25b3a4f09a5f365a43" category="paragraph">다음 NetApp ASA r2 시스템을 사용할 수 있습니다.  이러한 시스템은 SAN 전용 고객의 요구 사항에 맞춰 간소화된 환경을 만드는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
   <block id="93a626427237c85ea03fde6fc4a425b5" category="paragraph">다음 NetApp ASA r2 시스템은 ONTAP 9.16.1부터 지원됩니다. 이러한 시스템은 SAN 전용 고객의 요구 사항에 맞춰 간소화된 환경을 만드는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다.</block>
@@ -2435,7 +2325,6 @@
   <block id="74bb636063257a476aa70d6beb1b78a0" category="cell"><block ref="74bb636063257a476aa70d6beb1b78a0" category="inline-link-macro-rx"></block></block>
   <block id="bb6f2042d7b561ef22513dcacc071c68" category="cell">스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화하여 ASA r2 스토리지 유닛에서 스냅샷에 사용되는 공간의 양을 제한할 수 있습니다.  스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.  이렇게 하면 사용자 데이터를 위한 저장 장치의 공간을 스냅샷이 차지하지 못하게 하여 애플리케이션 중단을 방지할 수 있습니다.</block>
   <block id="afc9ff5f825988208f6c59ba04c2c2d2" category="paragraph">스토리지 VM에서 생성하는 모든 새 스토리지 유닛은 기본적으로 랜섬웨어 공격으로부터 보호되며, 의심스러운 활동은 System Manager에서 보고됩니다.</block>
-  <block id="8ae754caf3a2f6cacd2c696b8292a020" category="paragraph">ONTAP 9.18.1부터 지원되는 IPsec 하드웨어 오프로드가 IPv6 트래픽으로 확장되었습니다.</block>
   <block id="39fa9e9872335fa886f58deacacdaf75" category="paragraph">다음 NIC 카드는 다음 ASA r2 시스템 및 ONTAP 버전에서 하드웨어 오프로드를 지원합니다.</block>
   <block id="e8467e9b509c4924668c01eb7ab2adde" category="cell">ONTAP 버전</block>
   <block id="4a5de9d6a058ff88b7a7bc223e95c9ad" category="paragraph">X50135A(2p, 40G/100G 이더넷 컨트롤러)</block>
@@ -2465,20 +2354,15 @@
   <block id="daacdfe6a9c965f99bb919daaf922d41" category="paragraph">ONTAP 9.18.1부터 스토리지 유닛을 생성할 때 스냅샷 예약을 수정하고 자동 스냅샷 삭제를 활성화할 수 있습니다. 스냅샷 예약은 스냅샷을 위해 특별히 예약된 저장 장치의 공간입니다. 스냅샷 예약이 자동 스냅샷 삭제로 설정된 경우, 스냅샷에 사용된 공간이 스냅샷 예약 공간을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다.</block>
   <block id="cd70e38e090afe4dfe68269857720d8c" category="inline-link-macro">씬 프로비저닝</block>
   <block id="235edd79b1fce1af069d9278c91366b9" category="paragraph">스토리지 가용성 영역 전체에서 워크로드 밸런싱을 최적화하려면 짝수 개의 스토리지 유닛을 만듭니다.</block>
-  <block id="bcba813b1b55d0253fcd84e63b13b621" category="paragraph">호스트 NQN을 &lt;nqn.yyyy-mm&gt; 다음에 정규화된 도메인 이름으로 포맷합니다.  연도는 1970년 또는 그 이후여야 합니다.  총 최대 길이는 223이어야 합니다.  유효한 NVMe 이니시에이터의 예는 nqn.2014-08.com.example:string입니다.</block>
   <block id="34870fc34c4d7d31040582c184ed973a" category="paragraph">ASA r2 스토리지 유닛을 생성하고 호스트 이니시에이터를 추가한 후 호스트를 스토리지 유닛에 매핑하여 데이터 제공을 시작합니다.  저장 장치는 저장 장치 생성 프로세스의 일부로 호스트에 매핑됩니다.  언제든지 기존 스토리지 장치를 새 호스트나 기존 호스트에 매핑할 수도 있습니다.</block>
-  <block id="e5e9f89a4e81cd1c64531c80eba2e77e" category="admonition">ASA r2 시스템에서는 SED가 NVMe 기반 SSD에 대해서만 지원됩니다.</block>
   <block id="e6129943cc99a13d8c697c60264ba016" category="inline-link-macro">동적 공간 균형 조정</block>
   <block id="8c43a655da0b70a36ef0f72c6b39d432" category="admonition"><block ref="f3838dd89a924b4e0ebc50e64aa2b719" category="inline-link-macro-rx"></block>이 기능은 ONTAP 9.17.1로 업그레이드하거나 새로운 ONTAP 9.17.1 ASA r2 클러스터를 초기화한 후 14일이 지나면 기본적으로 활성화됩니다.  ASA r2 시스템에서 동적 공간 균형 조정을 활성화한 후에는 ONTAP 9.17.1에서 이전 버전으로 되돌릴 수 없습니다.</block>
   <block id="166a84d4b4570b597bcb3a30d4252d65" category="doc">ASA r2 클러스터에서 ONTAP 용량 분산에 대해 알아보세요.</block>
-  <block id="0eabbb2a15c52c4ca21e3d1a32f8a437" category="paragraph">ASA r2 시스템의 경우 ONTAP _균형 배치_를 사용하여 새로 생성된 스토리지 장치를 최적의 성능과 균형 잡힌 스토리지 활용을 위해 가장 적합한 스토리지 가용 영역에 자동으로 배치합니다.  ONTAP 9.17.1 이상 버전을 실행 중인 경우 기존 스토리지 장치에서 사용되는 공간은 동적 공간 균형 조정을 사용하여 균형이 맞춰집니다.  ONTAP 9.16.1을 실행 중인 경우 기존 스토리지 장치에서 사용되는 공간은 복사 기반 워크로드 재균형 조정을 사용하여 균형이 맞춰집니다.</block>
   <block id="0378d558dcd0562ad67f6e96ad981dde" category="cell">...에서 지원됨</block>
   <block id="037e39315c9955da8fb128aa756cd46e" category="cell">균형 잡힌 배치</block>
   <block id="3b5c971fe265309c78554a126187a02b" category="cell">동적 공간 균형 조정</block>
   <block id="b357fa1cac46cc202ec05fcda6bb8345" category="cell">복사 기반 워크로드 재분배</block>
   <block id="ca5e84f0aed2658b5025cc94ecf226e3" category="cell">ONTAP 9.16.1 버전에서만 사용 가능</block>
-  <block id="cdf4362de9950bde8f5ebc0f7e20c7e0" category="paragraph">균형 배치 기능을 사용하면 새로 생성된 스토리지 장치가 최적의 성능과 균형 잡힌 스토리지 활용을 위해 최적의 스토리지 가용 영역에 자동으로 배치됩니다.  균형 배치 기능은 ONTAP 9.16.1 이상 버전에서 기본적으로 활성화되어 있습니다.</block>
-  <block id="558429cf36a4f5c8c0960e6bd8efd1df" category="paragraph">ONTAP 동적 공간 균형 조정 기능을 통해 클러스터의 여유 공간을 능동적으로 모니터링하고 스토리지 가용 영역 내에서 스토리지 장치를 자동으로 이동하여 균형 잡힌 공간 활용을 유지합니다.  클러스터 전체 용량 활용률이 80%에 도달하면 EMS 경고가 자동으로 발생하고, 90%에 도달하면 EMS 알림이 자동으로 발생합니다.</block>
   <block id="c6a005b97c2f2846aa679b95c6025d92" category="paragraph">ONTAP 9.17.1 이상 버전으로 업그레이드 또는 설치한 후 14일이 지나면 동적 공간 균형 조정이 기본적으로 활성화됩니다.  기본 14일 활성화 기간을 수정해야 하는 경우 NetApp 지원팀에 문의하십시오.  동적 공간 균형 조정이 활성화된 후에는 ONTAP 9.17.1에서 이전 버전으로 되돌릴 수 없습니다.</block>
   <block id="46a255963b960d8b5876c25f4de05d2a" category="paragraph">동적 공간 균형 조정은 클러스터 내 모든 노드의 사용 가능한 공간 평균(전역 평균)을 기준으로 _일반 모드_ 또는 _저용량 공간 모드_로 작동합니다.</block>
   <block id="025d18661b268d39b7e3eaaddcbc28d7" category="list-text">*일반 모드*</block>
@@ -2492,7 +2376,6 @@
   <block id="87e3450ba7653f98d10dc2803138c7bf" category="list-text">클러스터 내 하나 이상의 노드에 전체 평균보다 여유 공간이 적습니다.</block>
   <block id="6dfd63ffb4710564042f8d26eb17a0af" category="paragraph">_복사 기반 워크로드 재균형_을 사용하면 스토리지 가용 영역 내에서 스토리지 사용률 불균형이 발생할 경우 ONTAP 불균형을 유발하는 스토리지 장치를 여유 공간이 더 많은 스토리지 가용 영역으로 자동으로 복사합니다.  대상 스토리지 가용 영역에 여유 공간이 충분하지 않으면 ONTAP 로드 밸런싱 작업을 수행하지 않습니다.  복사 기반 워크로드 재균형 조정은 ONTAP 9.16.1을 실행하는 ASA r2 시스템에만 적용되며, 해당 시스템에서는 기본적으로 활성화되어 있습니다.  ONTAP 9.17.1 이상 버전에서는 동적 공간 균형 조정으로 대체되었습니다.</block>
   <block id="625927359c6ff98754dcdfda6d0f8d77" category="paragraph">복사 기반 워크로드 재조정의 기본 설정을 수정해야 하는 경우 NetApp 지원팀에 문의하십시오.</block>
-  <block id="299c5db3cbde057ebd5a919711b1d2e1" category="paragraph">스토리지 VM에서 클러스터링된 외부 키 관리 서버에 대한 연결을 구성할 수 있습니다. 클러스터형 키 서버를 사용하면 스토리지 VM에서 기본 키 서버와 보조 키 서버를 지정할 수 있습니다. ONTAP 키를 등록할 때 먼저 기본 키 서버에 액세스를 시도한 후 작업이 성공적으로 완료될 때까지 순차적으로 보조 서버에 액세스를 시도하여 키 중복을 방지합니다.</block>
   <block id="9f71ddf310db058a3a89122693392a68" category="inline-link-macro">ASA r2 클러스터에서 용량 균형 조정에 대해 알아보세요.</block>
   <block id="d480af7e6686a5e56e9006fab126c8e7" category="section-title">ASA r2 시스템 차이점 요약</block>
   <block id="542b4f4e36f442f64960052e5e90dc97" category="section-title">스토리지 VM의 모든 스토리지 장치에서 ARP/AI를 활성화합니다.</block>
@@ -2510,7 +2393,6 @@
   <block id="560b852910a0e98466ea0bc41a896549" category="inline-link-macro">자동 ARP/AI 활성화 지원</block>
   <block id="e9a88c72c24e4398f874d2f4af5b49e8" category="cell"><block ref="e9a88c72c24e4398f874d2f4af5b49e8" category="inline-link-macro-rx"></block></block>
   <block id="689aa35f9f1eec56b70643199a8682d8" category="cell">새로운 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 9.18.1로 업그레이드하면 12시간의 유예 기간 후 새로 생성된 모든 스토리지 유닛에서 ARP/AI가 기본적으로 자동 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새로 생성된 스토리지 유닛에 대해 클러스터 전체에서 활성화됩니다.</block>
-  <block id="ada9a568ab6a5d18c006a2f881dad45e" category="paragraph">새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화하거나 클러스터를 ONTAP 9.18.1로 업그레이드하면 12시간의 유예 기간 후 모든 새 스토리지 장치에서 ARP/AI가 기본적으로 자동으로 활성화됩니다. 유예 기간 동안 ARP/AI를 비활성화하지 않으면 유예 기간이 종료될 때 새 스토리지 장치에 대해 클러스터 전체에서 활성화됩니다.</block>
   <block id="15a35bbf98ecdf50ebbe830c9150b1fa" category="inline-link-macro">수동으로 활성화됨</block>
   <block id="2c5bf6d23c3b237a161f10e7a30084bf" category="paragraph">ONTAP 9.17.1에서 생성된 스토리지 장치는 ARP/AI용 <block ref="e30e679666ce4b86d4d0fe351918a7bf" category="inline-link-macro-rx"></block>이어야 합니다.</block>
   <block id="89282cacdaeec6ad949d1fee8ef83b96" category="paragraph">최초 12시간의 유예 기간 동안 또는 그 이후에 기본 활성화를 비활성화할 수 있습니다.</block>
@@ -2522,29 +2404,22 @@
   <block id="969d795be0732afa7c8d6bc59c89a090" category="list-text">*저장*을 선택합니다</block>
   <block id="91af5705f16502125e8b2187e64202c0" category="open-title">CLI</block>
   <block id="2789285c59c5d3b50b0af44eb0af9d83" category="list-text">기본 활성화 상태를 확인합니다.</block>
-  <block id="51ea13505527485e8ad1964193e9ac5d" category="list-text">기존 볼륨 및 새 볼륨에 대한 기본 활성화를 비활성화합니다.</block>
   <block id="f2927aad75b0aa15b973bf19aae3a066" category="admonition">어떤 랜섬웨어 탐지 또는 예방 시스템도 랜섬웨어 공격으로부터 완벽한 안전을 보장할 수는 없습니다. 공격이 탐지되지 않을 수도 있지만, ARP/AI는 안티바이러스 소프트웨어가 침입을 탐지하지 못할 경우 중요한 추가 방어 계층 역할을 합니다.</block>
   <block id="d818371e54d5db7f0b123dad9f0741fa" category="list-text">ONTAP 9.18.1부터는 ONTAP 9.18.1로 업그레이드하거나 새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간이 지나면 새로 생성되는 모든 스토리지 유닛에서 ARP/AI가 기본적으로 활성화됩니다.</block>
   <block id="4ebb5f6bb42f5000c86113152e6fc7b8" category="section-title">클러스터의 모든 스토리지 유닛에서 ARP/AI 활성화</block>
   <block id="4a30706558af49bc475c9076f39c5043" category="paragraph">ONTAP 9.17.1을 실행 중인 경우 클러스터에 생성된 모든 스토리지 유닛에 대해 기본적으로 ARP/AI를 활성화할 수 있습니다.</block>
   <block id="b3d26117cd7cf369132a7f5c1b0e1b21" category="paragraph">ONTAP 9.18.1 이상에서는 모든 새 스토리지 유닛에서 ARP/AI가 기본적으로 활성화됩니다. ARP/AI가 활성화되지 않은 ONTAP 9.17.1에서 생성된 스토리지 유닛이 있는 경우 수동으로 활성화할 수 있습니다.</block>
   <block id="1ce5b5693fce06d8eab0db104f812a23" category="inline-image-macro">랜섬웨어 방지 설정 편집</block>
-  <block id="1d6ca6ff92e87645e0e1be4c8c4254c1" category="paragraph">ONTAP 9.17.1을 실행 중인 경우 스토리지 가상 머신(VM)에 생성된 모든 스토리지 유닛에 대해 기본적으로 ARP/AI를 활성화할 수 있습니다. 즉, 스토리지 VM에 새로 생성되는 모든 스토리지 유닛에는 ARP/AI가 자동으로 활성화됩니다. 또한 스토리지 VM에 있는 기존 스토리지 유닛에도 ARP/AI를 적용할 수 있습니다.</block>
-  <block id="f3a115988cb09dfd534467f2d9511859" category="paragraph">ONTAP 9.17.1을 실행 중이고 스토리지 VM의 모든 스토리지 유닛에서 ARP/AI를 활성화하지 않으려면 활성화할 특정 유닛을 선택할 수 있습니다.</block>
   <block id="b86583f9a9fc89f434a369308432e10e" category="inline-link-macro">알려진 ARP/AI 급증 보고</block>
-  <block id="114bbec71af5be00be6f74b75bcf02d1" category="paragraph">스토리지 유닛 활동의 급증(일회성 급증이든 새로운 정상 상태의 특징인 급증이든)을 알고 있다면 안전하다고 보고해야 합니다. 이러한 급증을 수동으로 안전하다고 보고하면 ARP의 위협 평가 정확도를 높이는 데 도움이 됩니다. <block ref="8dee558f5c9b6bedf916b9781132862f" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
   <block id="b27281dcf866cc70bd075c0d39310671" category="sidebar">기본 ARP/AI 활성화 비활성화</block>
   <block id="74c34cd79314b0b0543df58dce891912" category="cell">SnapMirror 활성 동기화 지원이 2노드 클러스터에서 4노드 클러스터로 확대되었습니다.</block>
   <block id="b930776d8572e5f3c1d7294d9809974c" category="paragraph">업데이트를 전적으로 직접 관리하려는 경우에만 자동 업데이트를 비활성화하십시오. 자동 업데이트가 꺼지면 시스템에서 업데이트를 알리거나 다운로드하거나 설치하지 않습니다. 모든 업데이트를 수동으로 모니터링, 다운로드, 예약 및 설치할 책임은 사용자에게 있습니다.</block>
   <block id="26f7abc505f53b85cb219303544259d3" category="paragraph"><block ref="d57b4f0ac425b878d2f45da8c8c89d8d" category="inline-link-macro-rx"></block>.</block>
-  <block id="330a40ed2b3f8affc9b2ba9dda95e7d2" category="paragraph">ASA r2 시스템의 성능을 최적화하려면 스토리지 유닛의 용량을 늘리거나, QoS 정책을 업데이트하거나, 유닛에 매핑된 호스트를 변경하는 등의 수정이 필요할 수 있습니다. 예를 들어, 기존 스토리지 유닛에 새롭고 중요한 애플리케이션 워크로드가 추가되는 경우, 새 애플리케이션에 필요한 성능 수준을 지원하기 위해 스토리지 유닛에 적용된 QoS(Quality of Service) 정책을 변경해야 할 수 있습니다.</block>
   <block id="3fda8ce05b50b72371c5f4cb65657861" category="paragraph">스토리지 유닛은 기본적으로 씬 프로비저닝 방식으로 구성됩니다. 씬 프로비저닝을 사용하면 스토리지 유닛이 할당된 크기까지 확장될 수 있지만 공간을 미리 예약하지는 않습니다. 필요에 따라 사용 가능한 여유 공간에서 공간이 동적으로 할당됩니다. 이를 통해 사용 가능한 공간을 _과잉 프로비저닝_하여 스토리지 효율성을 높일 수 있습니다. 예를 들어 1TB의 여유 공간이 있고 1TB 스토리지 유닛 4개를 생성해야 한다고 가정해 보겠습니다. 시스템에 3TB의 추가 스토리지 용량을 즉시 추가하는 대신 스토리지 유닛을 생성하고 공간 사용량을 모니터링한 다음 스토리지 유닛이 실제 공간을 사용함에 따라 스토리지 용량을 늘릴 수 있습니다. 자세한 내용은 <block ref="37a5a7f95b66d852ea39cef83793bc4b" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="d6e1856d58417da15c8f45bb5225a284" category="admonition">스토리지 유닛을 두 개 이상 생성하는 경우, 각 유닛은 동일한 용량으로 생성됩니다. 충분한 사용 가능한 공간을 확보하려면 생성할 스토리지 유닛 수에 원하는 용량을 곱하십시오. 사용 가능한 공간이 부족한 상태에서 오버 프로비저닝을 선택한 경우, 공간 부족으로 인한 데이터 손실을 방지하기 위해 사용률을 면밀히 모니터링하십시오.</block>
   <block id="aa716862002e83866a499a0f5aaa467f" category="paragraph">지정한 운영 체제에서 실행 중인 호스트에 대한 기존 호스트 그룹이 없는 경우 ONTAP에서 자동으로 새 호스트 그룹을 생성합니다.</block>
   <block id="a8e81b2ccd42d59459e94b66c7e93b33" category="inline-link-macro">Active IQ Digital Advisor 또는 Upgrade Health Checker에서 Upgrade Advisor를 사용하여 업그레이드 준비</block>
   <block id="8e06442a81408e5b3d9d881ee34604d9" category="list-text">포트 e10b를 shelf 1 NSM B 포트 e0b에 연결하십시오.</block>
-  <block id="a21739611cdd87f44b21b69f2d1255c4" category="doc">ASA r2 스토리지 시스템에서 기본 자율형 랜섬웨어 보호 기능을 비활성화하십시오</block>
-  <block id="8a7cfb8fa6ea38ee5f0146687bddcd42" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 활성화하세요</block>
   <block id="3e43f7eeca64d5c830b0064870a6156b" category="admonition">설치 및 유지보수 절차를 수행하는 동안에는 항상 검증된 접지점에 연결된 접지 손목 스트랩을 착용하십시오. 적절한 ESD 예방 조치를 따르지 않으면 컨트롤러 노드, 스토리지 셸프 및 네트워크 스위치가 영구적으로 손상될 수 있습니다.</block>
   <block id="fc4a9f6cd00df6dfa4d8144f15b57af3" category="paragraph">스토리지 유닛(LUN 또는 NVMe 네임스페이스 기반)이 생성되면 ONTAP은 해당 스토리지 유닛을 저장할 적절한 스토리지 가용성 영역에 볼륨을 자동으로 생성합니다. 새로 생성된 볼륨은 최적의 성능과 균형 잡힌 용량 활용을 위해 스토리지 가용성 영역 내에 자동으로 배치됩니다. 스토리지 가용성 영역 내의 용량 활용은 사용 중인 ONTAP 버전에 따라 균형을 유지합니다. <block ref="44cab674f8c9e72d3dcaedde750c6695" category="inline-link-macro-rx"></block>.</block>
   <block id="862cd7ba2a996f4f7baaf919aeabdaa3" category="summary">ASA A1K 스토리지 시스템을 네트워크 및 스토리지 셸프에 연결하여 클러스터 통신, 관리 액세스 및 SAN 호스트 연결을 활성화하십시오.</block>
@@ -2654,11 +2529,9 @@
   <block id="e8a159e2ff115b18e83ff77937ef6345" category="paragraph">케이블 연결 절차는 일반적인 구성을 보여줍니다. 구체적인 케이블 연결은 스토리지 시스템에 주문한 구성 요소에 따라 다릅니다. 포괄적인 구성 및 슬롯 우선순위 세부 정보는 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="3b1d6e6330ca5bf54a0c22beaa407de9" category="sidebar">케이블 개요</block>
   <block id="2c8eecf979e6fd790e493d164307b594" category="paragraph">ASA r2 시스템용 ONTAP 소프트웨어 업그레이드는 다른 ONTAP 시스템의 업그레이드와 동일한 프로세스를 따릅니다. <block ref="6ef617cad96624aff48188ee9c2d2af4" category="inline-link-macro-rx"></block>을(를) 시작하는 것이 좋습니다.</block>
-  <block id="64653b9fd94570b308a1c2ed04a37c62" category="paragraph">업그레이드 준비를 마친 후에는 <block ref="e26ea1c18f478c08bac49629d6c7055f" category="inline-link-macro-rx"></block>를 사용하여 업그레이드를 수행하는 것이 좋습니다. ANDU는 ONTAP의 고가용성(HA) 페일오버 기술을 활용하여 업그레이드 중에도 클러스터가 중단 없이 데이터를 계속 제공하도록 보장합니다.</block>
   <block id="a9a92968dbd42b1c6a98d69ef29dff86" category="paragraph"><block ref="dbcdfdb6de3365861229d4de54f3e7c8" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
   <block id="0000dac1f1d7d52694ae1c57ec4c4952" category="section-title">계획된 업그레이드 전에 자동화된 사전 업그레이드 검사를 실행합니다</block>
   <block id="1e136489f0f4579da4728cecbc41c760" category="paragraph">ONTAP 소프트웨어를 업그레이드하는 과정에 있지 않아도 ONTAP 자동 업그레이드 사전 점검을 실행할 수 있습니다. ONTAP 자동 업그레이드 프로세스와 별도로 업그레이드 전 점검을 실행하면 클러스터에 대해 수행되는 점검 항목을 확인할 수 있으며 실제 업그레이드를 시작하기 전에 수정해야 할 오류 또는 경고 목록을 제공받을 수 있습니다.</block>
-  <block id="97b8d819cd6f1c3d1e12d20c69bc9343" category="paragraph">ONTAP 9.19.1부터 오류와 경고가 별도로 표시되어 업그레이드 전에 해결해야 할 문제를 쉽게 식별할 수 있습니다.</block>
   <block id="7dadbaefb3cf1bd5b8a86802fac0839a" category="inline-link-macro">ONTAP 자동 사전 업그레이드 검사 실행</block>
   <block id="c240788f59668332d5c171cbe489376a" category="paragraph"><block ref="9c7fdd39bc5019d6cec3e908fec6a772" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
   <block id="9917a58904f13efdde588f2978fd93b9" category="inline-link-macro">AI를 활용한 자율형 랜섬웨어 보호 기능 활성화</block>
@@ -2682,7 +2555,6 @@
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="section-title">성능</block>
   <block id="2f7da8b0d24f58aae7a1dc8db2ca277d" category="paragraph">ASA r2 시스템에서 지원되는 일반적인 성능 기능에 대해 자세히 알아보십시오.</block>
   <block id="61dd3b29ebbda633eaa5595a4948d71f" category="section-title">자동 QoS 처리량 상한 증가를 제어하는 기본 설정을 수정합니다.</block>
-  <block id="a05bc26fbb935d2a28e26f1e40856f67" category="paragraph">적응형 및 비적응형 QoS 정책 그룹은 기본적으로 워크로드의 처리량 상한을 1초 동안 50%까지 일시적으로 높여 단기적인 성능 향상 요구에 대응하도록 자동으로 활성화됩니다. ONTAP 9.19.1부터는 이러한 기본 설정을 수정할 수 있습니다. ONTAP 9.18.1 이하 버전에서는 이러한 설정을 변경할 수 없습니다.</block>
   <block id="60315893e2acf5905698d5d0f606fd10" category="inline-link-macro">QoS 처리량 상한에 대해 자세히 알아보십시오</block>
   <block id="90845cd8ac5d10e2937758f233798b78" category="paragraph"><block ref="d91291c9e48585273f64f9043b3d3422" category="inline-link-macro-rx"></block>.</block>
   <block id="4f27a34799ad8580f67b93c57e242ad0" category="section-title">SAN 구성</block>
@@ -2697,13 +2569,11 @@
   <block id="a8421094cc908d8f315c1ab2f19b8085" category="paragraph"><block ref="fddba30123b8f0cdf7b9e22a9b2eaad2" category="inline-link-macro-rx"></block>.</block>
   <block id="d2faa14ab70288d07188a62b2f1242e8" category="section-title">전역 중복 제거</block>
   <block id="3cc42248c8d3e1724108887db39a1fc0" category="inline-link-macro">기존 ONTAP 중복제거 공간 절약 효과</block>
-  <block id="dfa4d4587562c16f4a5925d3b5594a9e" category="paragraph">ONTAP 9.19.1부터 _글로벌 중복 제거_ 기능이 <block ref="c7d4c0ceea3d0bc35cdb8645e84b0be9" category="inline-link-macro-rx"></block> 스토리지 유닛 수준에서 전체 스토리지 가용성 영역(SAZ)으로 확장되었습니다. SAZ 내 모든 스토리지 유닛에서 중복 데이터 블록을 제거함으로써 스토리지 효율성을 크게 향상시키고 총 소유 비용을 절감할 수 있습니다. 글로벌 중복 제거는 기능 라이선스가 필요하지 않으며 기본적으로 활성화되어 있고 기존 스토리지 효율성 기술과 원활하게 통합되며 최소한의 성능 영향으로 투명하게 작동하고 관리자 구성이 필요하지 않습니다.</block>
   <block id="65481be362fd14e3b943e8347948143f" category="paragraph">ONTAP 9.19.1부터 SnapMirror 액티브 동기화 보호를 활성화할 계획인 AIX LUN을 생성하는 경우 *호스트 정보*에서 *액세스 모드*에 대해 *로컬*을 선택합니다. 이는 투명한 애플리케이션 페일오버를 활성화하는 데 필요합니다.</block>
   <block id="b8cd8dd355516b19f7a3260bfd645929" category="paragraph">ASA r2 시스템의 각 HA 쌍은 _스토리지 가용성 영역_이라는 공통 스토리지 풀을 사용합니다. 스토리지 가용성 영역은 스토리지 시스템의 사용 가능한 모든 디스크에 액세스할 수 있으며 HA 쌍의 두 노드 모두에서 볼 수 있습니다. 스토리지 가용성 영역의 사용 가능한 공간을 모니터링하면 필요에 따라 사용량을 줄이거나 용량을 늘려 공간 부족으로 인한 워크로드 장애를 방지할 수 있습니다.</block>
   <block id="f1c9e9af80bb533618f5bdefe333747d" category="inline-link-macro">인사이트</block>
   <block id="ebafe46641c676ef6ab5894f79ff62ab" category="paragraph">ONTAP 9.19.1부터 ASA r2 시스템 HA 쌍 중 하나의 스토리지 가용성 영역이 용량에 가까워지면 System Manager *Insights*에 알림이 표시됩니다. System Manager에 대해 자세히 알아보십시오<block ref="41fc10ce3fe36daf8df250e4d0c01ea9" category="inline-link-macro-rx"></block>.</block>
   <block id="1546607861bbb550ca3750055c66328f" category="paragraph">*스토리지 유닛* 아래에 스토리지 가용성 영역의 모든 스토리지 유닛 목록이 표시됩니다.</block>
-  <block id="2e9d0a1cf17808045f957a3e9c93942b" category="paragraph">스토리지 가용성 영역의 공간이 부족한 경우 클러스터 전체의 스토리지 사용률 균형을 맞추기 위해 다른 스토리지 가용성 영역으로 <block ref="a3223fe003597dcfd7b6d75426783c5a" category="inline-link-macro-rx"></block>하거나, 공간 확보를 위해 스냅샷을 삭제하거나, 용량을 늘리기 위해 노드에 디스크를 추가하는 것을 계획해야 합니다.</block>
   <block id="f81baecda64413757c058ded626fcc01" category="summary">ASA r2 시스템용 ONTAP 9.19.1에서 제공되는 새로운 기능에 대해 알아보십시오.</block>
   <block id="2be5fa0f2f2942f164632e2517148f97" category="doc">ASA r2 시스템용 ONTAP 9.19.1의 새로운 기능</block>
   <block id="3f1aac64a6f9339cbf436a8cebfe6bf1" category="inline-link-macro">SnapMirror 액티브 동기화를 위한 AIX 호스트 지원</block>
@@ -2735,7 +2605,6 @@
   <block id="2b1cc84feb959647df3e34b19f0fa843" category="cell">자동화된 업그레이드 전 검사를 실행할 때 오류와 경고가 별도로 표시되어 업그레이드 전에 해결해야 할 문제를 쉽게 파악할 수 있습니다.</block>
   <block id="064aa1a0e3e542c891816ff0102a8eca" category="summary">ASA r2 클러스터에 Autonomous Ransomware Protection 라이센스가 설치되어 있는 경우 ONTAP 9.18.1로 업그레이드하거나 새 ONTAP 9.18.1 ASA r2 클러스터를 초기화한 후 12시간 후에 기존 및 새로 생성된 모든 스토리지 유닛에서 ARP가 기본적으로 설정됩니다.</block>
   <block id="c21e619b6e99a5ee7d89c9b052f96fb0" category="summary">AI 기반 ARP를 활성화하면 잠재적인 랜섬웨어 위협을 감지하고, 데이터를 보호하기 위한 조치를 자동으로 취하며, System Manager에 경고 메시지를 표시하여 의심스러운 활동을 알려줍니다.</block>
-  <block id="99705e545197778e8e90edce81239e6b" category="paragraph">ARP는 SAN 환경에서 끊임없이 진화하는 랜섬웨어를 탐지하는 머신러닝 기반의 안티랜섬웨어 분석 모델을 도입하여 사이버 복원력을 향상시킵니다. ARP의 머신러닝 모델은 모의 랜섬웨어 공격 전후의 대규모 파일 데이터셋을 사용하여 사전 학습됩니다. 이러한 리소스 집약적인 학습은 ONTAP 외부에서 수행되며, 이 학습 결과로 생성된 사전 학습 모델은 ONTAP에 포함되어 제공됩니다. 이 모델은 접근하거나 수정할 수 없습니다. ARP/AI는 활성화 즉시 사용 가능하며, <block ref="3fa1bfd584351c2c430a6346ba4b1ef3" category="inline-link-macro-rx"></block>이 없습니다.</block>
   <block id="0da4b61d19faba4a01242d2539243538" category="list-text">ARP/AI는 SnapLock으로 보호되는 스토리지 유닛에서 지원되지 않습니다.</block>
   <block id="df2caa7829ca66f49ae2621799defacd" category="summary">ASA r2 시스템에서 IP 프로토콜을 사용하는 경우 IP 보안을 구성하여 데이터 보안을 강화할 수 있습니다.</block>
   <block id="51e4b174c948dff20235dc02acc443e7" category="summary">NVMe TCP over TLS를 구성하여 NVMe TCP 호스트와 ONTAP 간에 네트워크를 통해 전송되는 모든 데이터를 암호화함으로써 데이터 보안을 강화하십시오.</block>
@@ -2753,7 +2622,6 @@
   <block id="3b02d77db56f5837a4003247043c2394" category="paragraph"><block ref="31c33696bbbaa92dffde7abe3995709d" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
   <block id="a77592aaf5c220b3ff9f169a775bd853" category="inline-link-macro">ASA r2 시스템과 다른 ONTAP 시스템의 차이점</block>
   <block id="a3516695dad8c94bdcdc3a67a8d5dd34" category="paragraph"><block ref="539f35f6411ebaaeab190de38a065f4e" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
-  <block id="ea03cb347c7ee0097cb3e671367a977c" category="paragraph">ONTAP 9.18.1 버전부터는 스토리지 가상 머신(VM)을 표준 ASA 클러스터에서 ASA r2 클러스터로 중단 없이 마이그레이션할 수 있습니다. 표준 ASA 클러스터에서 ASA r2 클러스터로 마이그레이션하면 SAN 전용 환경을 위한 ASA r2 시스템의 간소화된 아키텍처를 활용할 수 있습니다.</block>
   <block id="b5242c12e4e4dddc0b06b882bba4d38b" category="admonition">ASA MetroCluster에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션할 수 없습니다. ASA r2 시스템은 MetroCluster 구성을 지원하지 않습니다.</block>
   <block id="196eeaa68e9fe706e49dda770e2601a9" category="paragraph"><block ref="196eeaa68e9fe706e49dda770e2601a9" category="inline-link-macro-rx"></block></block>
   <block id="a40044a10e4010bd1fcc3bb2a5acd96f" category="paragraph">ONTAP System Manager를 사용하면 SAN 프로토콜을 빠르고 쉽게 구성할 수 있습니다. 이 예에서는 iSCSI 네트워크 인터페이스에 대한 IP 주소를 구성해 보겠습니다.</block>
@@ -2796,9 +2664,7 @@
   <block id="e4b174c97062b84b94de5aec8d72c08f" category="paragraph">반드시 <block ref="7f38abb4db0b33676ee7cc43f021c5dd" category="inline-link-macro-rx"></block>.</block>
   <block id="881033f035c68f8afca68971d7048cb7" category="list-text">시스템 관리자에서 *보호 &gt; 일관성 그룹*을 선택한 다음 일관성 그룹을 선택합니다.</block>
   <block id="85908df832c10b0c1e39e90d02578829" category="list-text">*대상 설정*을 선택한 다음 *삭제를 방지하기 위해 대상 스냅샷 잠금*을 선택합니다.</block>
-  <block id="1bbad3d34588dd1bc3c0367825d25780" category="paragraph">NetApp ASA r2 시스템은 SAN 전용 고객의 요구 사항에 맞춘 간소화된 환경을 제공하는 통합 하드웨어 및 소프트웨어 솔루션입니다. ASA r2 시스템에서 ONTAP 소프트웨어와 System Manager는 필수 SAN 기능을 지원하도록 최적화되어 있으며, SAN 환경에서 지원되지 않는 기능은 제거되었습니다.</block>
   <block id="c6032ff25210fd8264d5f370b7924a96" category="paragraph-title">저장 단위 및 일관성 그룹</block>
-  <block id="e13d282f1b6dc4032c4acd77d766ee11" category="paragraph">데이터 도난이나 랜섬웨어 등 악의적인 공격으로부터 데이터를 보호하기 위해 ASA r2 시스템은 내장 키 관리자, 이중 계층 암호화, 다중 요소 인증 및 다중 관리자 검증을 지원합니다. 또한 스냅샷을 2차 위치로 복제하고 SnapLock for SnapVault를 사용하여 대상 스냅샷이 실수로 또는 악의적으로 삭제되는 것을 방지할 수 있습니다.</block>
   <block id="4c78514417b4a0942051bcf756b5e689" category="paragraph-title">지원되는 프로토콜, 다중 경로 및 구성</block>
   <block id="46fe1d288c9a0f1af878fd298319c1f5" category="inline-link-macro">SAN 다중 경로 지원</block>
   <block id="0e8a99bad4b792a0f1d2b26bca172d70" category="list-text"><block ref="e49bc3d33674d3c62051d808bc03b9aa" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
@@ -2823,7 +2689,6 @@
   <block id="443ddb7ca2bd07f5946e8a824feee453" category="list-text">*랜섬웨어 방지* 항목에서 *사용 안 함*을 선택한 다음 *비활성화*를 선택하십시오.</block>
   <block id="882422644d0036961f2ef9aed07712d6" category="list-text">*랜섬웨어 방지* 옆에서 <block ref="09996779530a0566a9742876e9ffd4f1" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 *기존의 모든 스토리지 유닛에서 활성화*를 선택합니다.</block>
   <block id="6dc61dbf62f6b39ca07f06ff22297587" category="doc">ASA r2 스토리지 시스템의 SnapLock 데이터 보호에 대해 알아보십시오</block>
-  <block id="b28c237eff548aecf479a239a22f815e" category="paragraph">ONTAP SnapLock은 규정 및 거버넌스 목적으로 파일을 수정되지 않은 형태로 보존하기 위해 WORM 스토리지를 사용하는 조직을 위한 고성능 규정 준수 솔루션입니다. SnapLock을 Compliance 또는 Enterprise 모드로 실행할 수 있으며, 이들 모드는 서로 다른 수준의 WORM 데이터 보호를 제공합니다. SAN 환경의 기본 클러스터에서는 SnapLock Compliance 및 Enterprise 모드가 지원되지 않지만, 2차 시스템에서 SnapVault용 SnapLock을 활성화하여 우발적이거나 악의적인 삭제로부터 2차 스냅샷을 보호할 수 있습니다.</block>
   <block id="d518b6c93614020b83f8ca34dcf03ca0" category="paragraph">SnapLock Compliance Clock는 SnapLock for SnapVault를 사용하여 2차 시스템의 스냅샷을 보호하려면 초기화해야 합니다.</block>
   <block id="bd89ef986499f4ff1572bd4a4fa483d9" category="inline-link-macro">SnapLock for SnapVault SAN 환경에서</block>
   <block id="5294938468fdefd1f2310e6e7293cb9b" category="list-text"><block ref="d75f88da20f7788e820767a9d46ee9a2" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.</block>
@@ -2833,7 +2698,6 @@
   <block id="92cc3b2a1d05f3fe426bdf43e298f42c" category="paragraph">2차 시스템에서 SnapLock for SnapVault로 대상 스냅샷을 보호하려면 먼저 로컬 및 대상 클러스터에서 SnapLock Compliance Clock을 초기화해야 합니다.</block>
   <block id="bdb3c62480d4e3e45e23afa7944d222f" category="list-text">규정 준수 시계가 초기화되었는지 확인하십시오.</block>
   <block id="0f45969bf7bc3472106c4a23173a35bb" category="inline-link-macro">SnapVault용 SnapLock과의 복제 관계 생성</block>
-  <block id="1c455b71b9a6a19b8ab5534d9dd3545f" category="paragraph">로컬 클러스터와 대상 클러스터에서 SnapLock 규정 준수 시계를 초기화한 후에는 <block ref="716f8ed67937d4ffe779f9f204ed103b" category="inline-link-macro-rx"></block>할 준비가 완료됩니다.</block>
   <block id="53ba0b0af13871c9c1e7a43da8f40ede" category="sidebar">ONTAP 고급 사용자를 위한 ASA r2 CLI 및 REST API 지원</block>
   <block id="56487b0f66d25f7027042188a0b85f01" category="sidebar">SnapLock에 대해 알아보십시오</block>
   <block id="479de3f7ce60040c78f3aea05b661d3d" category="paragraph">구성 요소에 장애가 발생하면 LIF는 페일오버되거나 다른 물리적 포트로 마이그레이션되어 네트워크 통신이 중단되지 않습니다.  ONTAP 9.19.1부터 IP LIF에 대해 자동 LIF 페일오버가 기본적으로 지원됩니다.  자동 LIF 페일오버가 활성화되면 스토리지 페일오버가 발생할 경우 LIF는 홈 노드 또는 포트에서 HA 파트너 노드 또는 포트로 자동으로 마이그레이션된 후 페일오버가 완료되면 다시 원래 노드 또는 포트로 돌아갑니다.  또는 포트 상태가 불안정해지면 LIF는 현재 홈 노드의 정상 포트로 자동으로 마이그레이션된 후 포트가 다시 정상화되면 원래 포트로 돌아갑니다.</block>
@@ -2844,10 +2708,7 @@
   <block id="92a1cbd4a70feecdf2052aa1fa356bcb" category="list-text"><block ref="7a7f88f43b7074f5986625bfd88c1f41" category="inline-link-macro-rx"></block>.</block>
   <block id="586d267f3f13eb8c297cb08d2d97ab3e" category="paragraph">이제 복제 관계를 생성했으므로 복제 정책에 정의된 대로 초기 데이터 전송이 시작됩니다. 선택적으로 복제 페일오버를 테스트하여 ASA r2 시스템이 오프라인 상태가 될 경우 성공적인 페일오버가 발생하는지 확인할 수 있습니다.</block>
   <block id="da0717e9287d2101d9333f2031bca9aa" category="paragraph-title">데이터 보호 및 보안</block>
-  <block id="794d2058bfa0143a6c722eb0d40f6fa2" category="paragraph">ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. 모든 프로토콜은 멀티패싱을 위한 대칭형 액티브-액티브 아키텍처를 지원하여 호스트와 스토리지 간의 모든 경로가 활성화/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 및 직접 연결 구성을 지원합니다. FC 및 NVMe/FC 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 구성을 지원하며, ONTAP 9.19.1부터는 직접 연결 구성도 지원합니다. ASA r2 시스템은 ASA, AFF 또는 FAS 시스템과의 클러스터 혼합을 지원하지 않습니다.</block>
   <block id="5cdfe0a12dbe0154513cd399f4ebb394" category="cell"><block ref="5cdfe0a12dbe0154513cd399f4ebb394" category="inline-link-macro-rx"></block></block>
-  <block id="79e8ff3b299a4fcb9f7a7eaedd4a6306" category="cell">IP 및 NVMe/TCP LIF에 대해 기본 자동 LIF 페일오버가 지원됩니다.</block>
-  <block id="f4a196522bd29f2dc617b123e426fca8" category="admonition">VM(가상 머신) 제한은 Hardware Universe에 나열되어 있지 않습니다. ASA r2 시스템 볼륨 제한을 기준으로 HA 쌍당 권장 최대 VM 수는 800개, 클러스터당 권장 최대 VM 수는 1200개입니다.  이 제한은 VMFS 데이터스토어에 있는 VM에는 적용되지 않습니다.  VMFS 데이터스토어에는 최대 VM 수 제한이 없습니다.</block>
   <block id="a536b53a0230979ea7dced793dc9491e" category="doc">ASA r2 시스템에서 ONTAP Mediator 또는 ONTAP Cloud Mediator 구성</block>
   <block id="6e3fcbcce3441b9118a284072b2d43aa" category="doc">ASA r2 시스템에서 클러스터 간 스토리지 VM 피어 관계 생성</block>
   <block id="6bf0920af0bdc9c57b36bb8d2920f050" category="doc">ASA r2 시스템에서 데이터 보호 정책 및 일정 관리</block>
@@ -2866,4 +2727,136 @@
   <block id="d59a2ca55fba4c918ce94764958c72c4" category="doc">ASA r2 스토리지 시스템에 대한 IPsec 및 하드웨어 오프로드 지원</block>
   <block id="58c7744ea9658fb6f86ed215f89056ad" category="doc">ASA r2 스토리지 시스템에서 ARP/AI 보호 일시 중지 또는 재개</block>
   <block id="a80d92389a122d0641f947975df5f6d2" category="doc">ASA r2 스토리지 시스템에서 ARP/AI 경고에 대응하기</block>
+  <block id="191bc9661a8209b0a3923f185c6f289c" category="list-text">클러스터에 참여시킬 노드 옆의 <block ref="c2bfb9c080f7666b2b95fa7dd1fddf25" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 *노드 추가*를 선택합니다.</block>
+  <block id="3800406a96ecfafffe5350045e3348a6" category="list-text">LED가 계속 켜져 있으면 드라이브에 전원이 공급되고 있는 것입니다.</block>
+  <block id="c66f04fab5f6c81dc4e9ac89698c689e" category="paragraph">공개 인증서를 생성하는 데 사용할 수 있는 CSR(인증서 서명 요청)을 생성했습니다.</block>
+  <block id="f890ea16b37808f30107186e9a34db25" category="paragraph">클러스터 설정 중에 기본 데이터 스토리지 가상 머신(VM)이 생성됩니다. 다른 스토리지 VM을 생성하고 선택하지 않는 한, 모든 새 스토리지 유닛은 기본 데이터 스토리지 VM 내부에 생성됩니다. 다양한 애플리케이션, 부서 또는 고객별로 스토리지 유닛을 분리하기 위해 추가 스토리지 VM을 생성할 수 있습니다. 예를 들어 개발 환경용 스토리지 VM과 운영 환경용 스토리지 VM을 각각 생성하거나, 재무 부서용 스토리지 VM과 마케팅 부서용 스토리지 VM을 각각 생성할 수 있습니다.</block>
+  <block id="46f9946828414c98cf9060e07c5d3092" category="paragraph">유지 관리, 문제 해결, 소프트웨어 업데이트 또는 기타 관리상의 이유로 노드를 재부팅해야 할 수 있습니다. 노드가 재부팅되면 해당 HA 파트너 노드가 자동으로 테이크오버를 실행합니다. 재부팅된 노드가 다시 온라인 상태가 되면 파트너 노드는 자동으로 반환을 수행합니다.</block>
+  <block id="4a330c605bee761c0108a159f6e44e23" category="paragraph">노드가 재부팅되는 동안 HA 파트너는 데이터 서비스 중단 없이 테이크오버를 수행합니다. 재부팅이 완료되면 HA 파트너는 반환을 수행합니다.</block>
+  <block id="0078c366ca1007a09c1d3806650b2226" category="paragraph">System Manager를 사용하여 ASA r2 시스템의 노드 이름을 조직의 명명 규칙에 맞추거나 기타 관리상의 이유로 변경할 수 있습니다.</block>
+  <block id="adb32774e84399eab9e160ba514b5a7a" category="paragraph">ONTAP 클러스터를 복원하는 작업은 시스템 운영에 지장을 초래합니다. 복원 작업이 진행되는 동안에는 반드시 클러스터를 오프라인 상태로 전환해야 합니다. 운영 중인 클러스터는 기술 지원 없이 복원하면 안 됩니다. 새 클러스터 또는 테스트 클러스터는 기술 지원팀의 도움 없이 복원할 수 있습니다. 새 클러스터 또는 테스트 클러스터의 복원 작업이 실패하거나, 복원 작업이 성공적으로 완료되었지만 운영 환경에서의 클러스터 성능에 만족하지 못하는 경우 기술 지원팀에 도움을 요청하십시오.</block>
+  <block id="b1ba6cba548b9b66e1df5a4a665c88ae" category="paragraph">전체 복원 절차는 <block ref="685dd4f32cb1899994bd1e3c5bb2a9b4" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="d09ff6b128689591d407e67a13cc82e4" category="summary">ASA r2 시스템의 경우 ONTAP는 스토리지 가용성 영역 전체에서 스토리지 사용률의 균형을 유지하기 위해 균형 배치, 동적 공간 균형 조정 또는 복사 기반 워크로드 재균형 조정을 사용합니다.</block>
+  <block id="f8cdd11f2b5f09f7e688be7ed95d09b7" category="paragraph">ASA r2 시스템의 경우 ONTAP는 _균형 배치_를 사용하여 새로 생성된 스토리지 장치를 최적의 성능과 균형 잡힌 스토리지 활용을 위해 가장 적합한 스토리지 가용 영역에 자동으로 배치합니다. ONTAP 9.17.1 이상 버전을 실행 중인 경우 기존 스토리지 장치에서 사용되는 공간은 _동적 공간 균형 조정_을 사용하여 균형이 조정됩니다. ONTAP 9.16.1 버전을 실행 중인 경우 기존 스토리지 장치에서 사용되는 공간은 _복사 기반 워크로드 재균형 조정_을 사용하여 균형이 조정됩니다.</block>
+  <block id="bab52952d181d43a839a67e5cc154b28" category="paragraph">균형 배치 기능을 사용하면 새로 생성된 스토리지 유닛이 최적의 성능과 균형 잡힌 스토리지 활용을 위해 최적의 스토리지 가용 영역에 자동으로 배치됩니다. 균형 배치 기능은 ONTAP 9.16.1 이상 버전에서 기본적으로 활성화되어 있습니다.</block>
+  <block id="3432b3874046e16a76bcae83b932a935" category="paragraph">_동적 공간 균형 조정_을 사용하면 ONTAP이 클러스터의 여유 공간을 능동적으로 모니터링하고 스토리지 가용성 영역 내에서 스토리지 장치를 자동으로 이동하여 균형 잡힌 공간 활용도를 유지합니다. 클러스터 전체 용량 활용률이 80%에 도달하면 EMS(Event Management System) 경고가 자동으로 발생하고, 90%에 도달하면 EMS 알림이 자동으로 발생합니다.</block>
+  <block id="cccad7dc513bed4fdb462322d06cbb1a" category="paragraph">ONTAP는 기본적으로 ASA r2 시스템의 펌웨어 및 시스템 파일을 자동으로 다운로드하고 업데이트합니다. 다운로드 및 설치 전에 권장 업데이트를 미리 확인하고 싶다면 System Manager를 사용하여 자동 업데이트를 비활성화하거나 업데이트 매개변수를 편집하여 작업이 수행되기 전에 사용 가능한 업데이트에 대한 알림을 받도록 설정할 수 있습니다.</block>
+  <block id="9cb28c3bd53f2c203a659b82d86dee4b" category="paragraph">스토리지 펌웨어, Service Processor/Baseboard Management Controller(SP/BMC) 펌웨어 및 시스템 파일에 대한 권장 업데이트는 기본적으로 ASA r2 시스템에 자동으로 다운로드 및 설치됩니다. 자동 업데이트가 비활성화된 경우, 활성화하여 기본 동작을 복원할 수 있습니다.</block>
+  <block id="7ed59214bbce1725a79ad9822c174655" category="paragraph">자동 업데이트가 비활성화되어 있습니다. 정기적으로 권장 업데이트를 확인하고 수동 설치 여부를 결정하십시오.</block>
+  <block id="2d06385d115e59ba604b6d5ed36c4d37" category="paragraph">스토리지 펌웨어, SP/BMC 펌웨어 및 시스템 파일에 대한 권장 업데이트를 클러스터에 자동으로 다운로드 및 설치하도록 선택하거나, 권장 업데이트를 자동으로 무시하도록 선택할 수 있습니다. 업데이트 설치 또는 무시를 수동으로 제어하려면 권장 업데이트가 있을 때 알림을 받도록 선택한 다음 수동으로 설치하거나 무시할 수 있습니다.</block>
+  <block id="7f9852dfa5b39ab0803fad00d8651c67" category="paragraph">업그레이드 준비를 마친 후에는 <block ref="e26ea1c18f478c08bac49629d6c7055f" category="inline-link-macro-rx"></block>를 사용하여 업그레이드를 수행하는 것이 좋습니다. ANDU는 ONTAP의 고가용성(HA) 페일오버 기술을 활용하여 업그레이드 중에도 클러스터가 중단 없이 데이터를 계속 제공하도록 보장합니다.</block>
+  <block id="e5fdf00291b091191289983bd854fe5b" category="paragraph">ONTAP 9.19.1 버전부터 오류와 경고가 별도로 표시되어 업그레이드 전에 해결해야 할 문제를 쉽게 파악할 수 있습니다.</block>
+  <block id="aad6dbc9051f9beb8e5cb248bd4a2f2f" category="paragraph">System Manager를 사용하여 사용자 계정에 대한 Active Directory 도메인 컨트롤러 액세스, LDAP 및 SAML 인증을 구성하십시오. 사용자 계정 역할을 생성하여 해당 역할이 할당된 사용자가 클러스터에서 수행할 수 있는 특정 기능을 정의하십시오.</block>
+  <block id="a9682626c074d023fa0ed93f5a5b521c" category="section-title">Active Directory 도메인 컨트롤러 액세스 구성</block>
+  <block id="1f671ab32ff77482944adf0ea84fa1af" category="paragraph">클러스터 또는 스토리지 VM에 대한 Active Directory(AD) 도메인 컨트롤러 액세스를 구성하여 AD 계정 액세스를 활성화하십시오.</block>
+  <block id="df5dd91431b291bedd088ad3f686135d" category="list-text">*보안* 항목에서 *SAML 인증* 옆에 있는 <block ref="a9be0719b387789238ea22451afbb122" category="inline-image-macro-rx" type="image"></block>을 선택합니다.</block>
+  <block id="66cdadec4d05083814cc0fca03fdccfa" category="list-text">MFA를 활성화하려면 <block ref="0428df21f8cd0e9a5a515701151394b7" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 보조 로그인 방법과 인증 방법을 선택합니다.</block>
+  <block id="8c19f13592bfe4c6339c1183cd739d9b" category="list-text">*부분적으로 연결됨*: 일부 이니시에이터가 두 노드 모두에 연결되지 않았음을 나타냅니다.</block>
+  <block id="06441b99bd83c34d40425726c4b55a22" category="paragraph">ONTAP 9.18.1부터 새 스토리지 유닛으로 일관성 그룹을 생성할 때 스냅샷 예약 비율을 설정하고 자동 스냅샷 삭제를 활성화할 수 있습니다. 스냅샷 예약은 스토리지 유닛에서 스냅샷을 위해 특별히 예약된 공간의 양입니다. 스냅샷 예약이 자동 스냅샷 삭제와 함께 설정된 경우, 스냅샷에서 사용된 공간이 스냅샷 예약 용량을 초과하면 오래된 스냅샷이 자동으로 삭제됩니다. 상위 일관성 그룹에서 스냅샷 예약 및 자동 스냅샷 삭제가 활성화된 경우, 기존의 모든 하위 일관성 그룹에도 해당 설정이 활성화됩니다. 새 하위 일관성 그룹을 추가하는 경우 상위 일관성 그룹의 스냅샷 예약 및 스냅샷 삭제 설정을 상속하지 않습니다.</block>
+  <block id="d23efcc7e490e713ae34dac1c8aba9c6" category="paragraph">ONTAP 9.16.1 버전부터 새 스토리지 장치를 사용하여 일관성 그룹을 생성할 때 최대 5개의 하위 일관성 그룹을 구성할 수 있습니다. <block ref="f1a0f4ed0f432768de2b840c9e2d3a9d" category="inline-link-macro-rx"></block>.</block>
+  <block id="4e3cf8f43355a1f426896a60e52ae691" category="paragraph">이제 스냅샷으로 데이터가 보호되었으므로 <block ref="6da619e2e389e2d245017bdc536fe8bb" category="inline-link-macro-rx"></block>백업 및 재해 복구를 위해 일관성 그룹을 지리적으로 멀리 떨어진 위치로 복사해야 합니다.</block>
+  <block id="32cfb1f207a804766a081cde8e05641d" category="paragraph">ONTAP 9.16.1을 실행 중이고 확장하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우, 스토리지 단위를 추가하기 전에 <block ref="33d9216c15eaaa9769b5c96c29eb8a4f" category="inline-link-macro-rx"></block> 해야 합니다. ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우, 일관성 그룹을 확장하기 전에 <block ref="34346ff5cca42944a4ed431b70afdf69" category="inline-link-macro-rx"></block> 해야 합니다. 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 복제 관계를 해제하는 것은 ONTAP 9.17.1 이상 버전에서는 필요하지 않습니다.</block>
+  <block id="96b6f36515ed900325778800e75c0d06" category="paragraph">새 스토리지 단위를 생성한 후에는 <block ref="0b287ca0eb92c7f68147891f3dfb6ead" category="inline-link-macro-rx"></block> 및 <block ref="8f4058042298bb1cf89c5eaabd6331c6" category="inline-link-macro-rx"></block>을(를) 수행해야 합니다. 호스트 이니시에이터를 추가하면 호스트가 스토리지 단위에 액세스하고 데이터 작업을 수행할 수 있는 자격을 갖추게 됩니다. 스토리지 단위를 호스트에 매핑하면 스토리지 단위가 매핑된 호스트에 데이터를 제공하기 시작할 수 있습니다.</block>
+  <block id="57aed6c56a2f7178daeb521fb34e7b36" category="paragraph">ONTAP 9.16.1 버전부터 System Manager를 사용하여 ASA r2 시스템에 계층적 일관성 그룹을 생성할 수 있습니다. 계층 구조에서는 하나 이상의 일관성 그룹이 상위 일관성 그룹 아래에 하위 항목으로 구성됩니다.</block>
+  <block id="cac1eb36848fed2fb2131d39326975af" category="summary">일관성 그룹을 사용하면 각 스토리지 장치에 대해 개별적으로 작업을 수행하는 대신 여러 스토리지 장치에 대해 동시에 다양한 작업을 수행할 수 있습니다. 계층 구조에서 하나 이상의 일관성 그룹이 상위 일관성 그룹 아래에 하위로 구성됩니다.</block>
+  <block id="7f4b39493709c290e8903680e162ffc6" category="paragraph">ONTAP 9.16.1 버전부터 System Manager를 사용하여 ASA r2 시스템에서 계층적 일관성 그룹을 생성할 수 있습니다. 계층 구조에서는 하나 이상의 일관성 그룹이 상위 일관성 그룹 아래에 하위 항목으로 구성됩니다. 각 하위 일관성 그룹에 개별 스냅샷 정책을 적용하고, 상위 항목을 복제하여 모든 하위 일관성 그룹의 스냅샷을 하나의 단위로 원격 클러스터에 복제할 수 있습니다. 이를 통해 복잡한 데이터 구조에 대한 데이터 보호 및 관리가 간소화됩니다.</block>
+  <block id="39d315fe641192ea4a3a49a405763876" category="list-text">상위 일관성 그룹으로 변환하려는 일관성 그룹 위로 마우스를 가져가세요.</block>
+  <block id="cb1b079a7e0cce7a45c32d7fced71838" category="paragraph">상위 일관성 그룹 아래에 추가 하위 일관성 그룹을 생성할 수 있습니다. 또한 <block ref="6da619e2e389e2d245017bdc536fe8bb" category="inline-link-macro-rx"></block> 백업 및 재해 복구를 위해 상위 및 하위 일관성 그룹을 지리적으로 멀리 떨어진 위치로 복사할 수 있습니다.</block>
+  <block id="193ac48cc23264c8613d0f27d7ec209b" category="list-text">분리하려는 하위 일관성 그룹 위로 마우스 커서를 가져가세요.</block>
+  <block id="8fb8829b62dd1afe6e7e4ca7dad63542" category="paragraph">일관성 그룹을 복원하면 일관성 그룹의 모든 스토리지 유닛에 있는 데이터가 스냅샷의 데이터로 대체됩니다. 스냅샷 생성 후 스토리지 유닛에 적용된 변경 사항은 복원되지 않습니다.</block>
+  <block id="a38bc9d83bd76fff04a53bc90f552a49" category="list-text">*원격 클러스터 시작*을 선택하면 원격 클러스터 인증에 사용할 암호가 생성됩니다.</block>
+  <block id="44328525b71c7eb7a876e8da959d7e6b" category="paragraph">로컬 ASA r2 클러스터와 원격 클러스터를 피어링했습니다. 이제 복제 관계를 생성할 수 있습니다.</block>
+  <block id="aae54b9c336989e65f261ef7595563c1" category="paragraph">복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다. ONTAP에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다. 사전 정의된 정책이 요구 사항을 충족하지 못하는 경우 사용자 지정 복제 정책을 생성할 수 있습니다.</block>
+  <block id="4b4046a26ed9c573b52b9cc36b35d147" category="paragraph">AutoSupport 는 시스템 상태를 사전에 모니터링하고 NetApp 기술 지원, 사내 지원 조직 및 지원 파트너에게 자동으로 메시지를 보냅니다.</block>
+  <block id="1f0f4d5e4fbccb6b49c2118e965d8465" category="paragraph">AutoSupport 클러스터를 설정할 때 기술 지원팀으로 전송되는 AutoSupport 메시지는 기본적으로 활성화됩니다. 내부 지원 조직으로 메시지를 보내려면 올바른 옵션을 설정하고 유효한 메일 호스트를 등록해야 합니다. ONTAP는 활성화된 후 24시간이 지나면 AutoSupport 메시지 전송을 시작합니다.</block>
+  <block id="cd5057e30241d195623c50c8f125b47c" category="list-text">수신자의 이메일 주소를 입력한 후 수신자 범주를 선택하십시오.</block>
+  <block id="e7c5877eadd28e9e577f5794a3352e5b" category="paragraph">파트너의 경우 수신자 범주에서 *파트너*를 선택하십시오. 내부 지원 조직 구성원의 경우 *일반*을 선택하십시오.</block>
+  <block id="a43c8941f7fbadd2fb303e16eef7d5e4" category="paragraph">AutoSupport 케이스는 지정하신 시간 동안 생성되지 않습니다. 지정된 시간이 만료되기 전에 업그레이드 또는 유지 관리를 완료하면 지원 케이스 생성을 즉시 재개하십시오.</block>
+  <block id="df349485333089af18db98856dfd3bf2" category="paragraph">도움이 필요한 문제가 발생하면 ONTAP System Manager를 사용하여 기술 지원에 케이스를 제출하거나 완료된 케이스 또는 진행 중인 케이스를 확인할 수 있습니다.</block>
+  <block id="9e4a8c3b14e2fe391dd0e3a33a344107" category="list-text">지원 사례를 제출하려면 시스템 관리자에서 *클러스터 &gt; 지원*을 선택한 다음 *NetApp 지원으로 이동*을 선택하십시오.</block>
+  <block id="e2057dc7852f3eba153f65823e7c7e8a" category="list-text">이전에 제출한 사례를 보려면 System Manager에서 *클러스터 &gt; 지원*을 선택한 다음 *내 사례 보기*를 선택하십시오.</block>
+  <block id="250d60f3e3ec35c4979adb676c1e06fc" category="paragraph">NetApp ASA r2 시스템은 SAN 전용 고객을 위한 경험을 간소화하는 통합 하드웨어 및 소프트웨어 솔루션을 제공합니다. ASA r2 시스템에서 ONTAP 소프트웨어와 System Manager는 필수 SAN 기능을 지원하도록 간소화되어 있으며, SAN 환경에서 불필요한 기능은 제거되었습니다.</block>
+  <block id="c26f5110c76ff9077160476c6647bd0a" category="paragraph">ASA r2 시스템은 스토리지 관리 및 데이터 보호를 간소화하기 위해 일관성 그룹이 있는 스토리지 유닛을 사용합니다. 예를 들어, 일관성 그룹에 10개의 스토리지 유닛으로 구성된 데이터베이스가 있고 전체 데이터베이스를 백업해야 한다고 가정해 보겠습니다. 각 스토리지 유닛을 개별적으로 백업하는 대신 일관성 그룹을 백업하여 전체 데이터베이스를 보호할 수 있습니다.</block>
+  <block id="2e74326758bb6da25ec0a7120b26cc85" category="paragraph">도난 또는 랜섬웨어 등 악의적인 공격으로부터 데이터를 보호하기 위해 ASA r2 시스템은 온보드 키 관리자, 이중 레이어 암호화, 다중 요소 인증 및 다중 관리자 검증을 지원합니다. 또한 스냅샷을 보조 위치로 복제하고 SnapLock for SnapVault를 사용하여 대상 스냅샷이 실수로 또는 악의적으로 삭제되지 않도록 보호할 수 있습니다.</block>
+  <block id="343ddb1612539a3436f9d56affa4ae1b" category="paragraph">ASA r2 시스템은 모든 SAN 프로토콜(iSCSI, FC, NVMe/FC, NVMe/TCP)을 지원합니다. 모든 프로토콜은 멀티패싱을 위한 대칭형 액티브-액티브 아키텍처를 지원하여 호스트와 스토리지 간의 모든 경로가 활성화/최적화됩니다. iSCSI 및 NVMe/TCP 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 및 직접 연결 구성을 지원합니다. FC 및 NVMe/FC 프로토콜은 지원되는 모든 ONTAP 버전에 대해 네트워크 구성을 지원하며, ONTAP 9.19.1부터는 직접 연결 구성도 지원합니다. ASA r2 시스템은 ASA, AFF 또는 FAS 시스템과의 클러스터 혼합을 지원하지 않습니다.</block>
+  <block id="0e90f20eaae9f49465dc7ddd2a1eb2d5" category="paragraph">ASA r2 시스템을 가동하려면 하드웨어 구성 요소를 설치하고, 클러스터를 설정하고, SAN 클라이언트에서 스토리지 시스템으로의 데이터 액세스를 설정하고, 스토리지를 프로비저닝해야 합니다.</block>
+  <block id="778f3315a6f341440c61e4e4c875d18a" category="paragraph">ASA r2 시스템은 간소화된 버전의 ONTAP를 실행하므로 다른 ONTAP 시스템에서와 마찬가지로 일반적인 ONTAP 작업 및 System Manager 기능을 수행할 수 있습니다.</block>
+  <block id="b79748ccbc52a90a2302e88eb6a413a5" category="paragraph">스토리지 VM에서 클러스터링된 외부 키 관리 서버에 대한 연결을 구성할 수 있습니다. 클러스터링된 키 서버를 사용하면 스토리지 VM에서 기본 및 보조 키 서버를 지정할 수 있습니다. 키를 등록할 때 ONTAP는 먼저 기본 키 서버를 시도하고, 성공할 때까지 보조 서버를 순차적으로 시도하여 중복 키를 방지합니다.</block>
+  <block id="cc83a1b300be6a5f57f96b70b9db1554" category="paragraph">ONTAP은 모든 SSL 연결에 대해 연방 정보 처리 표준(FIPS) 140-2를 준수합니다. SSL FIPS 모드를 켜고 끄거나, SSL 프로토콜을 전역적으로 설정하거나, RC4 등 ONTAP 내의 취약한 암호화를 해제할 수 있습니다.</block>
+  <block id="d93cb08b65fd884be72f3bd480fa8e6f" category="paragraph">적응형 및 비적응형 QoS 정책 그룹은 단기적인 성능 향상 요구에 대응하기 위해 기본적으로 워크로드의 처리량 상한을 1초 동안 50%만큼 일시적으로 증가시킵니다. ONTAP 9.19.1 버전부터는 이러한 설정을 수정할 수 있습니다. ONTAP 9.18.1 이전 버전에서는 이러한 설정을 변경할 수 없습니다.</block>
+  <block id="af755d79b67e4b338fec8da14a341168" category="paragraph">ONTAP 9.19.1부터 _글로벌 중복 제거_ 기능이 <block ref="c7d4c0ceea3d0bc35cdb8645e84b0be9" category="inline-link-macro-rx"></block> 스토리지 유닛 수준에서 전체 스토리지 가용성 영역(SAZ)으로 확장되었습니다. SAZ 내 모든 스토리지 유닛에서 중복 데이터 블록을 제거함으로써 스토리지 효율성을 크게 향상시키고 총 소유 비용을 절감할 수 있습니다. 글로벌 중복 제거는 기능 라이선스가 필요하지 않으며 기본적으로 활성화되어 있고 기존 스토리지 효율성 기술과 원활하게 통합되며 최소한의 성능 영향으로 관리자 구성 없이 투명하게 작동합니다.</block>
+  <block id="9349f33d561a2e094950d39f1ed44809" category="paragraph">시스템 관리자에서 다양한 작업, 개체 및 정보 항목을 검색할 수 있습니다. 또한 테이블 데이터에서 특정 항목을 검색할 수도 있습니다.</block>
+  <block id="a34f8041f266253171917874487dbfc2" category="paragraph">ASA r2 시스템은 애그리게이트 대신 스토리지 가용성 영역을 사용하므로 일부 ONTAP CLI 명령 및 매개변수가 지원되지 않습니다. 시스템 관리자 대신 CLI를 사용하여 클러스터를 설정할 수도 있습니다.</block>
+  <block id="dfdb2fd8b33e49fa0714a0035a6583c5" category="paragraph">다음 명령 및 명령 세트는 ASA r2에서 지원되지 않습니다.</block>
+  <block id="354594999c8d0d8ec0e9a4ae56ab00a5" category="paragraph">귀하는 <block ref="df4559a5b62289a9d3564a01abc04ba8" category="inline-link-macro-rx"></block>할 것을 권장합니다. System Manager는 클러스터를 빠르고 쉽게 구성하고 실행할 수 있는 안내형 워크플로우를 제공합니다. 하지만 ONTAP 명령어 사용에 익숙한 경우, ONTAP 명령줄 인터페이스(CLI)를 사용하여 클러스터를 설정할 수도 있습니다. CLI를 사용한 클러스터 설정은 System Manager에 비해 추가적인 옵션이나 이점을 제공하지 않습니다.</block>
+  <block id="1f0ec0ea721d23109883a528c04d5f8f" category="paragraph">클러스터 설정 중에 ONTAP는 기본 데이터 스토리지 VM을 생성하고 초기 스토리지 장치를 생성하며 데이터 LIF를 자동으로 검색합니다. 선택적으로 호스트 이름 확인을 위해 DNS(도메인 이름 시스템)를 활성화하고, 시간 동기화를 위해 NTP(네트워크 시간 프로토콜)를 사용하도록 클러스터를 설정하고, 저장 데이터 암호화를 활성화할 수 있습니다.</block>
+  <block id="50d96c70b34fb5262ad81e0fb02c79fb" category="paragraph">ASA r2 시스템은 올플래시 시스템을 기반으로 구축된 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 솔루션입니다. 이 시스템은 ONTAP 특성, 스토리지 계층 및 지원 프로토콜 측면에서 다른 ONTAP 시스템(ASA, AFF 및 FAS)과 차이가 있습니다.</block>
+  <block id="33ea2989715916c385e4c46d8f87a8cb" category="paragraph">ASA r2 시스템에서 ONTAP 소프트웨어는 필수 SAN 기능을 지원하도록 간소화되어 있으며, SAN과 관련 없는 기능의 가시성과 가용성은 제한됩니다. 예를 들어, ASA r2 시스템에서 실행되는 System Manager는 NAS 클라이언트의 홈 디렉터리를 생성하는 옵션을 표시하지 않습니다. 이러한 간소화된 버전의 ONTAP을 _ASA r2 퍼스낼리티_라고 합니다. ASA 시스템에서 실행되는 ONTAP은 _ASA ONTAP 퍼스낼리티_라고 합니다. AFF 및 FAS ONTAP 시스템에서 실행되는 ONTAP은 _통합 ONTAP 퍼스낼리티_라고 합니다. ONTAP 퍼스낼리티 간의 차이점은 ONTAP 명령 참조(man 페이지), REST API 사양 및 EMS 메시지(해당하는 경우)에서 확인할 수 있습니다.</block>
+  <block id="0c53120c0a37aa566bcaabdc3db2c119" category="paragraph">FAS, AFF 및 ASA 시스템의 스토리지 계층은 애그리게이트를 기본 스토리지 단위로 사용합니다. 애그리게이트는 스토리지 시스템에서 사용 가능한 특정 디스크 세트를 소유합니다. 애그리게이트는 자신이 소유한 디스크의 공간을 LUN 및 네임스페이스용 볼륨에 할당합니다. 이러한 시스템에서 ONTAP 사용자는 애그리게이트, 볼륨, LUN 및 네임스페이스를 생성하고 수정할 수 있습니다.</block>
+  <block id="553d57d0cb8254eb12f678c1f627a2f5" category="paragraph">새로운 클러스터에는 SAN 프로토콜이 활성화된 기본 데이터 스토리지 VM이 자동으로 포함됩니다. IP 데이터 LIF는 iSCSI 및 NVMe/TCP 프로토콜을 지원하며 기본적으로 <block ref="6ee97f4349d48b4c53372dfd08835169" prefix=" " category="inline-code"></block> 서비스 정책을 사용합니다.</block>
+  <block id="eba5488e745840d53a0d26874c057967" category="paragraph">ASA r2 REST API와 FAS, AFF 및 ASA 시스템에서 사용할 수 있는 통합 ONTAP REST API 사이에는 몇 가지 차이점이 있습니다. 이러한 변경 사항을 이해하면 온라인 API 참조 문서를 더욱 효과적으로 활용할 수 있습니다.</block>
+  <block id="bc80e10df9df4bde03aaafb5ad93487a" category="paragraph">일부 ASA r2 엔드포인트 및 메서드 조합은 통합 ONTAP 페르소나에 대해 정의된 모든 속성을 지원하지 않습니다. 예를 들어, 엔드포인트와 함께 PATCH를 사용하는 경우<block ref="e1b0fcb86b8544c0bfae622fa2eee9eb" prefix=" " category="inline-code"></block>, ASA r2에서는 다음을 포함한 여러 속성이 지원되지 않습니다.</block>
+  <block id="2515b0d972174b8da93d666bbc2a0640" category="paragraph">OAuth 2.0은 업계 표준 권한 부여 프레임워크입니다. 서명된 액세스 토큰을 기반으로 보호된 리소스에 대한 액세스를 제한하고 제어하는 데 사용됩니다. System Manager를 사용하여 OAuth 2.0을 구성하여 ASA r2 시스템 리소스를 보호할 수 있습니다.</block>
+  <block id="9e744d3b29b14c1e0673c4b17f78134a" category="paragraph">ASA r2 시스템은 다양한 SAN 기능을 지원하지만, 일부 ONTAP 소프트웨어 기능은 지원되지 않습니다.</block>
+  <block id="89529e8b0f5abf47eae72800c99c9e03" category="list-text">SnapMirror 비동기 복제는 두 ASA r2 시스템 간에만 지원됩니다. SnapMirror 비동기 복제는 ASA r2 시스템과 ASA, AFF 또는 FAS 시스템 또는 클라우드 간에는 지원되지 않습니다.</block>
+  <block id="3455863dc2c79d389bc63947b92ba151" category="paragraph">ASA r2 시스템에서 _호스트 그룹_은 호스트가 스토리지 유닛에 액세스할 수 있도록 하는 메커니즘입니다. 호스트 그룹은 SCSI 호스트의 경우 igroup을, NVMe 호스트의 경우 NVMe 서브시스템을 의미합니다. 호스트는 자신이 속한 호스트 그룹에 매핑된 스토리지 유닛만 볼 수 있습니다. 호스트 그룹이 스토리지 유닛에 매핑되면 해당 그룹의 구성원인 호스트는 스토리지 유닛을 마운트(디렉터리 및 파일 구조 생성)할 수 있습니다.</block>
+  <block id="0baa81502420610d8491d137c5a7600c" category="paragraph">호스트 그룹은 스토리지 유닛을 생성할 때 자동으로 또는 수동으로 생성됩니다. 스토리지 유닛 생성 전이나 후에 다음 단계를 따라 호스트 그룹을 생성할 수도 있습니다.</block>
+  <block id="37edd6546536ee33daeade7bcbaac58f" category="paragraph">데이터 복제는 ASA r2 시스템의 스토리지 유닛 및 일관성 그룹의 복사본을 생성합니다. 이러한 복사본은 애플리케이션 개발, 테스트, 백업, 데이터 마이그레이션 및 기타 관리 기능에 사용할 수 있습니다.</block>
+  <block id="128a9af66fc57673d23c2f4e52e5b147" category="list-text">새 호스트의 이름을 입력한 다음 *FC* 또는 *iSCSI*를 선택하십시오.</block>
+  <block id="0955662857642778caa308916302c17a" category="list-text">분할하려는 일관성 그룹 복제본 위로 마우스 커서를 가져가세요.</block>
+  <block id="f95dc9e5c65a541e63758e40ef4ab461" category="list-text">계속 진행하려면 확인 옵션을 선택한 다음 *삭제*를 선택합니다.</block>
+  <block id="9186819613e4544c06798068f110ac3d" category="doc">ASA r2 시스템에서 스토리지 유닛 삭제</block>
+  <block id="7d3f86ef01fb14f6238f2174e6f30bbe" category="paragraph">유닛에 포함된 데이터를 더 이상 유지할 필요가 없는 경우 스토리지 유닛을 삭제합니다. 더 이상 필요하지 않은 스토리지 유닛을 삭제하면 다른 호스트 애플리케이션에 필요한 공간을 확보할 수 있습니다.</block>
+  <block id="2048a5e995446c4d214fc477c176a7ca" category="paragraph">삭제하려는 스토리지 유닛이 복제 관계에 있는 일관성 그룹에 속해 있는 경우, 삭제하기 전에 <block ref="741fafaed1397e844d655f1c5d2c2470" category="inline-link-macro-rx"></block>해야 합니다.</block>
+  <block id="cbbf553649c4d498a40f24ec3fec574f" category="paragraph">ONTAP 9.18.1부터는 표준 ASA 클러스터에서 ASA r2 클러스터로 스토리지 가상 머신(VM)을 중단 없이 마이그레이션하여 SAN 전용 환경을 위한 ASA r2 시스템의 간소화된 아키텍처를 채택할 수 있습니다.</block>
+  <block id="60c73917b8d3ddecbb72e7e5762083db" category="paragraph">마이그레이션을 위해 ASA 클러스터를 준비하는 과정에서 해결해야 할 문제가 있는 경우, 해당 문제와 수정 조치가 표시됩니다. 문제를 해결하고 사전 점검이 성공적으로 완료될 때까지 반복하십시오.</block>
+  <block id="d69e3ae5fb7f4d74bb4862c599c903e5" category="paragraph">ASA r2 시스템의 성능을 최적화하려면 스토리지 유닛의 용량을 늘리거나, QoS 정책을 업데이트하거나, 유닛에 매핑된 호스트를 변경하는 등 스토리지 유닛을 수정해야 할 수 있습니다. 예를 들어, 기존 스토리지 유닛에 새롭고 중요한 애플리케이션 워크로드가 추가되는 경우, 새 애플리케이션에 필요한 성능 수준을 지원하기 위해 스토리지 유닛에 적용된 QoS(서비스 품질) 정책을 변경해야 할 수 있습니다.</block>
+  <block id="b129f6c71702a299debbdda5a2727959" category="paragraph">스토리지 유닛의 쓰기 가능한 공간이 부족하여 발생할 수 있는 데이터 액세스 손실을 방지하려면 스토리지 유닛이 가득 차기 전에 크기를 늘리십시오. 스토리지 유닛의 용량은 ONTAP에서 허용하는 최대 크기인 128TB까지 늘릴 수 있습니다.</block>
+  <block id="7913f9abc185fbbc272a0be428372b28" category="paragraph">호스트 NQN을 &lt;nqn.yyyy-mm&gt; 뒤에 정규화된 도메인 이름이 오는 형식으로 지정하십시오. 연도는 1970년 이상이어야 합니다. 전체 최대 길이는 223자입니다. 유효한 NVMe 이니시에이터의 예는 nqn.2014-08.com.example:string입니다.</block>
+  <block id="6176133530e282d4e6f776ba74fa250b" category="paragraph">최적의 성능, 구성 및 지원을 위해서는 ASA r2의 스토리지 제한 사항을 숙지해야 합니다.</block>
+  <block id="de36ba2a4f0d50d11747dca4c55d81fa" category="admonition">VM(가상 머신) 제한은 Hardware Universe에 나열되어 있지 않습니다. ASA r2 시스템 볼륨 제한을 기준으로 HA 쌍당 권장 최대 VM 수는 800개, 클러스터당 권장 최대 VM 수는 1,200개입니다. 이 제한은 VMFS 데이터스토어에 있는 VM에는 적용되지 않습니다. VMFS 데이터스토어에는 최대 VM 수 제한이 없습니다.</block>
+  <block id="2fe1b5011f3d1147125182e35103fd82" category="paragraph">ONTAP System Manager를 사용하여 지연 시간, IOPS 및 처리량을 포함하여 클러스터 및 특정 스토리지 장치의 전반적인 성능을 1시간에서 1년까지의 기간에 걸쳐 모니터링할 수 있습니다.</block>
+  <block id="b2fb8f2c49b571f5a64388a1522dfc93" category="paragraph">스토리지 유닛 성능 지표를 사용하여 특정 애플리케이션이 지연 시간, IOPS 및 처리량에 미치는 영향을 파악하십시오.</block>
+  <block id="a2877460acc67e1b9e083a8639777af3" category="paragraph">스토리지 유닛 성능 지표를 사용하여 스토리지 유닛에 할당된 QoS 정책을 수정하여 지연 시간을 줄이고 IOPS 및 처리량을 최대화해야 하는지 분석하십시오.</block>
+  <block id="c40495734764055727dee1933eca4f55" category="paragraph">클러스터의 공간이 부족하거나 향후 수요를 충족할 용량이 부족한 경우, <block ref="652f39ff07f6641e851e14e8190a6b59" category="inline-link-macro-rx"></block> ASA r2 시스템에 추가 스토리지를 추가하여 스토리지 용량을 늘리십시오.</block>
+  <block id="0f0d107f9f413c757492bd17bcc810f9" category="paragraph">*개요*에서 스토리지 가용성 영역의 용량, 사용 공간량 및 데이터 축소 비율이 표시됩니다.</block>
+  <block id="52bae3cbcb139f829d1f0457547db64f" category="paragraph">스토리지 가용성 영역의 공간이 부족한 경우, <block ref="a3223fe003597dcfd7b6d75426783c5a" category="inline-link-macro-rx"></block>을(를) 다른 스토리지 가용성 영역으로 이동하여 클러스터 전체의 스토리지 사용률 균형을 맞추거나, 스냅샷을 삭제하여 공간을 확보하거나, 노드에 추가 디스크를 추가하여 용량을 늘릴 수 있습니다.</block>
+  <block id="f4dcbcddf0a58f7acae80ac1057f79ec" category="paragraph">ONTAP System Manager를 사용하여 오류 또는 경고 목록, 권장 수정 조치, 시스템 감사 로그, 활성, 완료 또는 실패한 작업을 확인합니다.</block>
+  <block id="d1cafb6cca02cdaf156c39ab85cf4667" category="paragraph">추가하신 이메일 주소로 클러스터 이벤트 및 감사 로그에 대한 지정된 이메일 알림이 전송됩니다.</block>
+  <block id="5b4df8e4e6bcba25812f523a8ff0d48d" category="paragraph">예를 들어, 클러스터에 네트워크 시간 프로토콜(NTP) 서버가 구성되어 있다고 가정해 보겠습니다. 하지만 최적의 클러스터 시간 관리에 필요한 권장 NTP 서버 수보다 적은 수의 NTP 서버가 구성되어 있다는 사실을 모르고 있습니다. 클러스터 시간이 정확하지 않아 발생할 수 있는 문제를 방지하기 위해 Insights는 구성된 NTP 서버 수가 부족하다는 알림을 표시하고, 문제에 대해 자세히 알아보거나, 문제를 해결하거나, 알림을 무시할 수 있는 옵션을 제공합니다.</block>
+  <block id="07ef9331c22296c0d701c86a18931fee" category="cell">ASA r2 시스템은 SnapMirror 활성 동기화 또는 비동기 복제 관계에서 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊지 않고 일관성 그룹의 지오메트리 변경을 지원합니다. 기본 일관성 그룹에서 지오메트리 변경이 발생하면 해당 변경 사항이 보조 일관성 그룹에 복제됩니다.</block>
+  <block id="30ec47d1704b1f4d4160a0d2b38c446e" category="cell">IP 및 NVMe/TCP LIF에 대해 기본 자동 LIF 페일오버가 지원됩니다.</block>
+  <block id="4e37072a2c8f1f2686c25a56cc7fe5a0" category="doc">ASA r2 스토리지 시스템에서 기본 자율형 랜섬웨어 보호 기능 비활성화</block>
+  <block id="f7124b5fb6200087924759772c39094c" category="paragraph">새로운 ONTAP 9.18.1 ASA r2 클러스터를 초기화하거나 기존 클러스터를 ONTAP 9.18.1로 업그레이드할 때, 12시간의 유예 기간 후에 모든 새 스토리지 유닛에서 ARP/AI가 기본적으로 활성화됩니다. 이 기간 동안 ARP/AI를 비활성화하지 않으면, 유예 기간이 종료되는 시점에 ONTAP에서 클러스터 전체의 새 스토리지 유닛에 대해 ARP/AI를 활성화합니다.</block>
+  <block id="e78e6c58ff6756a1c49cdcf8a0d90874" category="list-text">기존 및 신규 스토리지 유닛에 대한 기본 활성화를 비활성화합니다.</block>
+  <block id="fe0115a9991e894c8d0202acdf464c6b" category="doc">ASA r2 스토리지 시스템에서 AI 기반 자율 랜섬웨어 보호 기능을 활성화합니다.</block>
+  <block id="f286721d39ac98e7c28c07657b53bd23" category="paragraph">ONTAP 9.17.1 버전부터는 인공지능 기반 자율 랜섬웨어 보호(ARP/AI) 기능을 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. ARP/AI는 잠재적인 랜섬웨어 위협을 감지하고, ARP 스냅샷을 자동으로 생성하며, 의심스러운 활동이 감지되면 System Manager에 경고를 표시합니다.</block>
+  <block id="06b0252287bc8fc183617b04aace4e0d" category="paragraph">ARP는 SAN 환경에서 끊임없이 진화하는 랜섬웨어 형태를 탐지하는 머신러닝 기반의 랜섬웨어 분석 모델을 도입하여 사이버 복원력을 향상시킵니다. ARP의 머신러닝 모델은 모의 랜섬웨어 공격 전후의 대규모 파일 데이터셋을 사용하여 사전 학습됩니다. 이 리소스 집약적인 학습은 ONTAP 외부에서 이루어지며, 결과적으로 생성된 사전 학습된 모델은 ONTAP에 포함됩니다. 이 모델은 접근하거나 수정할 수 없습니다. ARP/AI는 활성화 즉시 작동하며, 별도의 <block ref="3fa1bfd584351c2c430a6346ba4b1ef3" category="inline-link-macro-rx"></block>이 필요하지 않습니다.</block>
+  <block id="9e30ae1056c2dbdd373f380ea70a5640" category="paragraph">ONTAP 9.17.1을 실행 중인 경우 스토리지 VM에 생성되는 모든 스토리지 유닛에 기본적으로 ARP/AI를 활성화할 수 있습니다. 즉, 스토리지 VM에 새로 생성되는 모든 스토리지 유닛에는 ARP/AI가 자동으로 활성화됩니다. 또한 스토리지 VM에 있는 기존 스토리지 유닛에도 ARP/AI를 적용할 수 있습니다.</block>
+  <block id="5e944c0995c1fd3e38c53feb2f65de16" category="paragraph">ONTAP 9.17.1을 실행 중이고 스토리지 VM의 모든 스토리지 유닛에서 ARP/AI를 활성화하지 않으려면 활성화할 특정 유닛을 선택할 수 있습니다.</block>
+  <block id="d9e720aa17773fab0cb413c82ddb05f2" category="paragraph">암호화된 경우, 저장 매체가 다른 용도로 사용되거나, 반환되거나, 분실되거나, 도난당하더라도 저장된 데이터를 읽을 수 없습니다. ONTAP System Manager를 사용하여 이중 계층 보호를 위한 하드웨어 및 소프트웨어 암호화를 적용할 수 있습니다.</block>
+  <block id="1c99c3974e412e5553db4fda8e6583b0" category="admonition">ASA r2 시스템에서 SED는 NVMe 기반 SSD에서만 지원됩니다.</block>
+  <block id="bd62bcbd95ea548f99ef5772329b8a06" category="cell">온보드 키 관리자 구성</block>
+  <block id="952f06167b1974b2114fa7a92886da15" category="paragraph">ASA r2 시스템에서 IP 프로토콜을 사용하는 경우, 데이터 보안을 강화하기 위해 IP 보안(IPsec)을 구성할 수 있습니다. IPsec은 전송 중인 데이터 암호화, IP 수준 엔드포인트 인증, 그리고 재전송 공격 및 중간자 공격 방지 기능을 제공하는 인터넷 표준입니다.</block>
+  <block id="26a6b79e822d3487cc30abdb15e2488a" category="paragraph">ONTAP 9.18.1 버전부터 IPsec 하드웨어 오프로드 지원이 IPv6 트래픽까지 확장되었습니다.</block>
+  <block id="cf73493ac373020705667f208ad40c13" category="doc">ASA r2 시스템의 키 관리자 간에 ONTAP 데이터 암호화 키 마이그레이션</block>
+  <block id="6a4a6e4d39a9c00220c69c90685b73d8" category="paragraph">ASA r2 시스템의 ONTAP 내장 키 관리자, 외부 키 관리자 또는 지원되는 구성에서 둘 다를 사용하여 데이터 암호화 키를 관리할 수 있습니다. 외부 키 관리자는 스토리지 VM 수준에서만 지원됩니다. ONTAP 클러스터 수준에서는 내장 키 관리자 또는 외부 키 관리자 중 하나를 사용할 수 있습니다.</block>
+  <block id="dc08231556bac46f8d1a8fc6032fc896" category="paragraph">ONTAP 9.16.1 버전부터는 ONTAP 명령줄 인터페이스(CLI)를 사용하여 클러스터 수준에서 키 관리자 간에 키를 마이그레이션할 수 있습니다.</block>
+  <block id="bb8a69d3c3a37c7f27fc5792d540ca64" category="open-title">온보드 키 관리자에서 외부 키 관리자로</block>
+  <block id="5143c94cc35b04a0bc5566cff8343060" category="open-title">외부 키 관리자에서 온보드 키 관리자로</block>
+  <block id="bafcc6110c41eeea7d61e30e2b8f75c2" category="list-text">외부 키 관리자 구성 삭제</block>
+  <block id="ac442a2656f9ae887b9400940ea20224" category="paragraph">ONTAP 명령줄 인터페이스(CLI)를 사용하여 클러스터 및 스토리지 VM 수준에서 키 관리자 간에 키를 마이그레이션할 수 있습니다.</block>
+  <block id="4c5a6e56de3300786edc529694b31c59" category="paragraph">인공지능 기반 자율 랜섬웨어 보호(ARP/AI) 기능이 ASA r2 시스템의 하나 이상의 스토리지 유닛에서 비정상적인 활동을 감지하면 데이터를 보호하기 위해 자동으로 ARP 스냅샷을 생성합니다. 스토리지 용량 및 비즈니스 요구 사항에 따라 기본 ARP 스냅샷 보존 기간을 늘리거나 줄일 수 있습니다. 예를 들어, 비즈니스에 중요한 애플리케이션의 경우 더 긴 데이터 복구 기간을 지원하기 위해 보존 기간을 늘리거나, 중요하지 않은 애플리케이션의 경우 스토리지 공간을 절약하기 위해 보존 기간을 줄일 수 있습니다.</block>
+  <block id="7854516f6713816258e9a83382b2019b" category="paragraph">ONTAP 명령줄 인터페이스(CLI)를 사용하여 기본 보존 기간을 수정할 수 있습니다. 기본 보존 기간을 변경하는 단계는<block ref="02f493e3d4b2ac47f6e229a1ce055166" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="82e703fead51284be6a69d68c8a0dfb8" category="list-text"><block ref="ffae57afd5555ce06187b71385ac5fc4" category="inline-image-macro-rx" type="image"></block>를 선택합니다.</block>
+  <block id="a23bd45f74d44ac5ff58910124ab0d85" category="paragraph">ONTAP 9.17.1 버전부터는 인공지능 기반 자율 랜섬웨어 보호(ARP/AI) 기능을 사용하여 ASA r2 시스템의 데이터를 보호할 수 있습니다. 평소와 다른 워크로드 이벤트를 계획하고 있다면 오탐을 방지하기 위해 ARP/AI 분석을 일시적으로 중단할 수 있습니다. 이벤트가 완료되면 ARP/AI 분석을 다시 시작할 수 있습니다.</block>
+  <block id="cc6e457fd6da66eb3b603e4c42e3a549" category="paragraph">평소와 다른 작업 부하가 발생하는 이벤트를 시작하기 전에 오탐을 방지하기 위해 ARP/AI 분석을 일시적으로 중단해야 할 수도 있습니다.</block>
+  <block id="4becad7cdcbabc8006773c8293112ed6" category="paragraph">비정상적인 작업 부하 중에 ARP/AI를 일시 중지한 경우, 작업이 완료된 후 다시 시작하여 랜섬웨어 공격으로부터 데이터를 보호하십시오.</block>
+  <block id="c7670b4ab3fb54ad32897c522f1d5468" category="paragraph">인공지능 기반 자율 랜섬웨어 보호(ARP/AI)가 ASA r2 시스템의 하나 이상의 스토리지 유닛에서 비정상적인 활동을 감지하면 System Manager가 대시보드에 경고를 표시합니다. 경고를 검토하고 활동을 확인한 후 필요한 경우 데이터 보호를 위한 조치를 취하십시오.</block>
+  <block id="7791ed314c54318ded8d7b0c4fb6c4e3" category="paragraph">ARP/AI 경고 메시지가 표시되면 조치를 취하기 전에 해당 애플리케이션 무결성 검사기를 사용하여 스토리지 장치의 데이터를 확인하십시오. 스토리지 장치의 데이터 무결성을 검증하면 해당 활동이 정상적인 활동인지 아니면 랜섬웨어 공격일 가능성이 있는지 판단하는 데 도움이 됩니다.</block>
+  <block id="d56b7ea153d7020ea7d674d15162591f" category="cell">즉시 조치를 취하지 마십시오. 최대 7일 동안 스토리지 유닛을 모니터링하십시오. 스토리지 유닛이 정상적으로 작동하는 경우 해당 활동을 오탐으로 표시하십시오. 스토리지 유닛이 계속해서 비정상적인 활동을 보이는 경우 해당 활동을 랜섬웨어 공격 가능성으로 표시하십시오.</block>
+  <block id="d19233c8ee3cfcd5032938faed7a7363" category="paragraph">ARP/AI가 하나 이상의 스토리지 유닛에서 비정상적인 활동을 감지하면 *경고* 항목에 메시지가 표시됩니다.</block>
+  <block id="e7e7921d40004de3413b2feb5d015c04" category="paragraph">스토리지 유닛 활동의 급증(일회성 급증이든 새로운 정상 상태의 특징인 급증이든)을 알고 있다면 안전하다고 보고해야 합니다. 이러한 급증을 수동으로 안전하다고 보고하면 ARP의 위협 평가 정확도를 높이는 데 도움이 됩니다. <block ref="8dee558f5c9b6bedf916b9781132862f" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
+  <block id="200e37440690270fcdf5d35f1f9f63c6" category="paragraph">ONTAP SnapLock는 규정 준수 및 거버넌스 목적으로 파일을 수정되지 않은 형태로 보존하기 위해 WORM 스토리지를 사용하는 조직을 위한 고성능 규정 준수 솔루션입니다. 서로 다른 수준의 WORM 데이터 보호를 제공하는 Compliance 또는 Enterprise 모드로 SnapLock를 실행할 수 있습니다. SAN 환경의 기본 클러스터에서는 SnapLock Compliance 및 Enterprise 모드가 지원되지 않지만, 보조 시스템에서 SnapVault용 SnapLock를 활성화하여 실수로 또는 악의적으로 보조 스냅샷이 삭제되지 않도록 보호할 수 있습니다.</block>
+  <block id="44ed1558e28022693124a32e31d67183" category="paragraph">로컬 클러스터와 대상 클러스터에서 SnapLock 규정 준수 시계를 초기화한 후에는 <block ref="716f8ed67937d4ffe779f9f204ed103b" category="inline-link-macro-rx"></block>할 준비가 완료됩니다.</block>
 </blocks>

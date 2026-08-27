@@ -37,7 +37,7 @@ ONTAP 9.18.1부터 스냅샷 예약 및 자동 스냅샷 삭제를 설정하여 
 link:snapshot-reserve.html["ASA r2 스토리지 시스템의 스냅샷 예약에 대해 자세히 알아보세요."].
 
 .시작하기 전에
-ONTAP 9.16.1을 실행 중이고 확장하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.link:snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"] 저장 장치를 추가하기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.link:snapmirror-active-sync-break-relationship.html["관계를 끊다"] 일관성 그룹을 확장하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.
+ONTAP 9.16.1을 실행 중이고 확장하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우, 스토리지 단위를 추가하기 전에 link:snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"] 해야 합니다. ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우, 일관성 그룹을 확장하기 전에 link:snapmirror-active-sync-break-relationship.html["관계를 끊다"] 해야 합니다. 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 복제 관계를 해제하는 것은 ONTAP 9.17.1 이상 버전에서는 필요하지 않습니다.
 
 [role="tabbed-block"]
 ====
@@ -67,7 +67,7 @@ ONTAP 9.16.1을 실행 중이고 확장하려는 일관성 그룹이 SnapMirror 
 
 
 .다음 단계
-새 스토리지 유닛을 생성한 후에는 link:../manage-data/provision-san-storage.html#add-host-initiators["호스트 이니시에이터를 추가합니다"]및 link:../manage-data/provision-san-storage.html#map-the-storage-unit-to-a-host["새로 생성된 스토리지 유닛을 호스트에 매핑합니다"]을 수행해야 합니다. 호스트 이니시에이터를 추가하면 호스트가 스토리지 유닛을 액세스하고 데이터 작업을 수행할 수 있습니다. 스토리지 유닛을 호스트에 매핑하면 스토리지 유닛이 매핑된 호스트에 데이터를 제공하기 시작할 수 있습니다.
+새 스토리지 단위를 생성한 후에는 link:../manage-data/provision-san-storage.html#add-host-initiators["호스트 이니시에이터를 추가합니다"] 및 link:../manage-data/provision-san-storage.html#map-the-storage-unit-to-a-host["새로 생성된 스토리지 유닛을 호스트에 매핑합니다"]을(를) 수행해야 합니다. 호스트 이니시에이터를 추가하면 호스트가 스토리지 단위에 액세스하고 데이터 작업을 수행할 수 있는 자격을 갖추게 됩니다. 스토리지 단위를 호스트에 매핑하면 스토리지 단위가 매핑된 호스트에 데이터를 제공하기 시작할 수 있습니다.
 
 --
 ====

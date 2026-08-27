@@ -11,7 +11,7 @@ summary: 무단 조작 방지 스냅샷을 사용하여 데이터를 보호합�
 
 
 [role="lead"]
-ONTAP SnapLock은 규정 및 거버넌스 목적으로 파일을 수정되지 않은 형태로 보존하기 위해 WORM 스토리지를 사용하는 조직을 위한 고성능 규정 준수 솔루션입니다. SnapLock을 Compliance 또는 Enterprise 모드로 실행할 수 있으며, 이들 모드는 서로 다른 수준의 WORM 데이터 보호를 제공합니다. SAN 환경의 기본 클러스터에서는 SnapLock Compliance 및 Enterprise 모드가 지원되지 않지만, 2차 시스템에서 SnapVault용 SnapLock을 활성화하여 우발적이거나 악의적인 삭제로부터 2차 스냅샷을 보호할 수 있습니다.
+ONTAP SnapLock는 규정 준수 및 거버넌스 목적으로 파일을 수정되지 않은 형태로 보존하기 위해 WORM 스토리지를 사용하는 조직을 위한 고성능 규정 준수 솔루션입니다. 서로 다른 수준의 WORM 데이터 보호를 제공하는 Compliance 또는 Enterprise 모드로 SnapLock를 실행할 수 있습니다. SAN 환경의 기본 클러스터에서는 SnapLock Compliance 및 Enterprise 모드가 지원되지 않지만, 보조 시스템에서 SnapVault용 SnapLock를 활성화하여 실수로 또는 악의적으로 보조 스냅샷이 삭제되지 않도록 보호할 수 있습니다.
 
 SnapLock Compliance Clock는 SnapLock for SnapVault를 사용하여 2차 시스템의 스냅샷을 보호하려면 초기화해야 합니다.
 

@@ -4,14 +4,14 @@ permalink: secure-data/migrate-encryption-keys-between-key-managers.html
 keywords: onboard key manager, external key manager, configure, migrate keys, store keys, authentication keys, encryption keys, asa r2 
 summary: 'ASA R2 시스템에서 ONTAP 온보드 키 관리자나 외부 키 관리자 또는 둘 다(한 가지 경우) 사용하여 데이터 암호화 키를 관리할 수 있습니다.' 
 ---
-= ONTAP R2 시스템의 주요 관리자 간에 ASA 데이터 암호화 키를 마이그레이션합니다
+= ASA r2 시스템의 키 관리자 간에 ONTAP 데이터 암호화 키 마이그레이션
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ASA R2 시스템의 ONTAP 온보드 키 관리자나 외부 키 관리자(또는 둘 다)를 사용하여 데이터 암호화 키를 관리할 수 있습니다. 외부 키 관리자는 스토리지 VM 레벨에서만 사용하도록 설정할 수 있습니다. ONTAP 클러스터 레벨에서 온보드 키 관리자 또는 외부 키 관리자를 사용하도록 설정할 수 있습니다.
+ASA r2 시스템의 ONTAP 내장 키 관리자, 외부 키 관리자 또는 지원되는 구성에서 둘 다를 사용하여 데이터 암호화 키를 관리할 수 있습니다. 외부 키 관리자는 스토리지 VM 수준에서만 지원됩니다. ONTAP 클러스터 수준에서는 내장 키 관리자 또는 외부 키 관리자 중 하나를 사용할 수 있습니다.
 
 [cols="2,2"]
 |===
@@ -53,11 +53,11 @@ ASA R2 시스템의 ONTAP 온보드 키 관리자나 외부 키 관리자(또는
 [[migrate-keys-between-key-managers-at-the-ontap-cluster-level]]
 == ONTAP 클러스터 레벨에서 주요 관리자 간에 키를 마이그레이션합니다
 
-ONTAP 9.16.1부터는 ONTAP CLI(Command Line Interface)를 사용하여 클러스터 레벨의 키 관리자 간에 키를 마이그레이션할 수 있습니다.
+ONTAP 9.16.1 버전부터는 ONTAP 명령줄 인터페이스(CLI)를 사용하여 클러스터 수준에서 키 관리자 간에 키를 마이그레이션할 수 있습니다.
 
 [role="tabbed-block"]
 ====
-.온보드부터 외부까지
+.온보드 키 관리자에서 외부 키 관리자로
 --
 .단계
 . 권한 수준을 고급으로 설정합니다.
@@ -93,7 +93,7 @@ set -privilege admin
 
 
 --
-.외부에서 온보드까지
+.외부 키 관리자에서 온보드 키 관리자로
 --
 .단계
 . 권한 수준을 고급으로 설정합니다.
@@ -114,7 +114,7 @@ security key-manager onboard create-config
 ----
 security key-manager keystore enable -vserver <storage_vm_name> -type OKM
 ----
-. 외부 키 관리자 구성을 삭제합니다
+. 외부 키 관리자 구성 삭제
 +
 [source, cli]
 ----
@@ -135,7 +135,7 @@ set -privilege admin
 [[migrate-keys-between-key-managers-across-ontap-cluster-and-storage-vm-levels]]
 == ONTAP 클러스터와 스토리지 VM 수준에서 주요 관리자 간에 키를 마이그레이션합니다
 
-ONTAP CLI(Command Line Interface)를 사용하여 클러스터 수준의 키 관리자와 스토리지 VM 레벨의 키 관리자 간에 키를 마이그레이션할 수 있습니다.
+ONTAP 명령줄 인터페이스(CLI)를 사용하여 클러스터 및 스토리지 VM 수준에서 키 관리자 간에 키를 마이그레이션할 수 있습니다.
 
 .단계
 . 권한 수준을 고급으로 설정합니다.

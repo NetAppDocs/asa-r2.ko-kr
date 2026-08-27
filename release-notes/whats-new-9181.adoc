@@ -26,7 +26,7 @@ ASA r2 시스템을 위한 ONTAP 9.18.1에서 사용할 수 있는 새로운 기
 | 업데이트 | 설명 
 
 
-| link:../data-protection/snapmirror-active-sync.html["SnapMirror Active Sync 구성에 대한 지원이 향상되었습니다."] | SnapMirror Active Sync에 대한 지원이 2노드 클러스터에서 4노드 클러스터로 증가했습니다. 
+| link:../data-protection/snapmirror-active-sync.html["SnapMirror Active Sync 구성에 대한 지원이 향상되었습니다."] | SnapMirror 활성 동기화 지원이 2노드 클러스터에서 4노드 클러스터로 확대되었습니다. 
 |===
 
 

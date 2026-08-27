@@ -12,7 +12,7 @@ searchtitle: ASA A1K, A90, A70, A50, A30, A20 및 C30 스토리지 시스템 설
 
 
 [role="lead"]
-ASA R2 시스템을 설치하고 실행하려면 하드웨어 구성 요소를 설치하고, 클러스터를 설정하고, 호스트에서 스토리지 시스템으로의 데이터 액세스를 설정하고, 스토리지를 프로비저닝해야 합니다.
+ASA r2 시스템을 가동하려면 하드웨어 구성 요소를 설치하고, 클러스터를 설정하고, SAN 클라이언트에서 스토리지 시스템으로의 데이터 액세스를 설정하고, 스토리지를 프로비저닝해야 합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 하드웨어를 설치하고 설정합니다
 [role="quick-margin-para"]

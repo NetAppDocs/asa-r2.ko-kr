@@ -11,14 +11,14 @@ summary: System Manager를 사용하여 사용자 계정에 대한 Active Direct
 
 
 [role="lead"]
-System Manager를 사용하여 사용자 계정에 대한 Active Directory 도메인 컨트롤러 액세스, LDAP 및 SAML 인증을 구성합니다. 사용자 계정 역할을 생성하여 역할에 할당된 사용자가 클러스터에서 수행할 수 있는 특정 기능을 정의합니다.
+System Manager를 사용하여 사용자 계정에 대한 Active Directory 도메인 컨트롤러 액세스, LDAP 및 SAML 인증을 구성하십시오. 사용자 계정 역할을 생성하여 해당 역할이 할당된 사용자가 클러스터에서 수행할 수 있는 특정 기능을 정의하십시오.
 
 
 
 [[configure-active-directory-domain-controller-access]]
-== Active Directory 도메인 컨트롤러 액세스를 구성합니다
+== Active Directory 도메인 컨트롤러 액세스 구성
 
-AD 계정 액세스를 설정할 수 있도록 클러스터 또는 스토리지 VM에 대한 AD(Active Directory) 도메인 컨트롤러 액세스를 구성합니다.
+클러스터 또는 스토리지 VM에 대한 Active Directory(AD) 도메인 컨트롤러 액세스를 구성하여 AD 계정 액세스를 활성화하십시오.
 
 .단계
 . System Manager에서 * 클러스터 > 설정 * 을 선택합니다.
@@ -64,7 +64,7 @@ SAML(Security Assertion Markup Language) 인증을 사용하면 Active Directory
 
 .단계
 . System Manager에서 * 클러스터 > 설정 * 을 선택합니다.
-. 보안 * 에서 * SAML 인증 * 옆에 있는 를 선택합니다image:icon_gear_white_bg.png["기계식 기어의 파란색 윤곽선"].
+. *보안* 항목에서 *SAML 인증* 옆에 있는 image:icon_gear_white_bg.png["기계식 기어의 파란색 윤곽선"]을 선택합니다.
 . SAML 인증 활성화 * 를 선택합니다.
 . IDP URL 및 호스트 시스템 IP 주소를 입력한 다음 * 저장 * 을 선택합니다.
 +
@@ -115,7 +115,7 @@ IDP 시스템에 인증 화면이 표시됩니다.
 . 사용자 * 에서 을 선택합니다image:icon_add_blue_bg.png["더하기 기호 다음에 흰색 글자로 추가된 단어가 포함된 파란색 직사각형"].
 . 사용자 이름을 입력한 다음 사용자에게 할당할 역할을 선택합니다.
 . 사용자 로그인 방법과 인증 방법을 선택합니다.
-. MFA를 활성화하려면 를 image:icon_add.gif["더하기 기호 뒤에 파란색 글자로 추가된 단어가 있습니다"]선택한 다음 보조 로그인 방법 및 인증 방법을 선택합니다
+. MFA를 활성화하려면 image:icon_add.gif["더하기 기호 뒤에 파란색 글자로 추가된 단어가 있습니다"]을 선택한 다음 보조 로그인 방법과 인증 방법을 선택합니다.
 . 사용자의 암호를 입력합니다.
 . 저장 * 을 선택합니다.
 

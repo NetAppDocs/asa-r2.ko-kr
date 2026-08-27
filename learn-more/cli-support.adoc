@@ -11,13 +11,13 @@ summary: '특정 ONTAP 명령은 ASA r2 시스템(ASA A1K, ASA 90, ASA 70, ASA A
 
 
 [role="lead"]
-ASA r2 시스템의 스토리지 계층은 집계 대신 스토리지 가용성 영역(SAZ)을 사용합니다. 스토리지 가용성 영역은 단일 HA 쌍에서 사용할 수 있는 공통 스토리지 풀입니다. HA 쌍의 두 노드는 공유 스토리지 가용성 영역의 모든 사용 가능한 디스크에 액세스할 수 있습니다. 스토리지 유닛(LUN 또는 NVMe 네임스페이스)이 생성되면 ONTAP 해당 스토리지 가용성 영역에 볼륨을 자동으로 생성하여 스토리지 유닛을 저장합니다.
+ASA r2 시스템은 애그리게이트 대신 스토리지 가용성 영역을 사용하므로 일부 ONTAP CLI 명령 및 매개변수가 지원되지 않습니다. 시스템 관리자 대신 CLI를 사용하여 클러스터를 설정할 수도 있습니다.
 
 이러한 저장소 관리에 대한 간소화된 접근 방식으로 인해  `storage aggregate` ASA r2 시스템에서는 명령이 지원되지 않습니다.  `lun` ,  `storage` 그리고  `volume` 명령과 매개변수도 제한적이다.
 
 지원되지 않는다고 명시된 경우를 제외하고, link:https://docs.netapp.com/us-en/ontap-cli/["ONTAP 명령 참조입니다"]의 나머지 모든 명령어는 ASA r2 시스템에서 지원됩니다.
 
-다음 명령 및 명령 세트는 R2의 ASA에서 지원되지 않습니다.
+다음 명령 및 명령 세트는 ASA r2에서 지원되지 않습니다.
 
 .지원되지 않는 <code> LUN </code> 명령입니다
 [%collapsible]
@@ -145,9 +145,9 @@ NOTE: 그만큼  `lun move-in-volume` 명령은 다음으로 대체됩니다.  `
 [[set-up-an-ontap-asa-r2-cluster-using-the-cli]]
 == CLI를 사용하여 ONTAP ASA R2 클러스터를 설정합니다
 
-권장 link:../install-setup/initialize-ontap-cluster.html["System Manager를 사용하여 ONTAP ASA R2 클러스터를 설정합니다"]사항입니다. System Manager는 클러스터를 설정하고 실행하는 데 도움이 되는 빠르고 쉬운 워크플로우를 제공합니다. 하지만 ONTAP 명령 작업에 익숙한 경우 선택적으로 ONTAP CLI(Command Line Interface)를 사용하여 클러스터 설정을 할 수 있습니다. CLI를 사용하여 클러스터를 설정하면 System Manager를 사용하여 설정하는 것보다 더 많은 옵션이나 이점이 없습니다.
+귀하는 link:../install-setup/initialize-ontap-cluster.html["System Manager를 사용하여 ONTAP ASA R2 클러스터를 설정합니다"]할 것을 권장합니다. System Manager는 클러스터를 빠르고 쉽게 구성하고 실행할 수 있는 안내형 워크플로우를 제공합니다. 하지만 ONTAP 명령어 사용에 익숙한 경우, ONTAP 명령줄 인터페이스(CLI)를 사용하여 클러스터를 설정할 수도 있습니다. CLI를 사용한 클러스터 설정은 System Manager에 비해 추가적인 옵션이나 이점을 제공하지 않습니다.
 
-클러스터 설정 중에 기본 데이터 스토리지 가상 머신(VM)이 생성되고 초기 스토리지 유닛이 생성되며 데이터 LIF가 자동으로 검색됩니다. 필요에 따라 DNS(Domain Name System)를 활성화하여 호스트 이름을 확인하고, 시간 동기화에 NTS(Network Time Protocol)를 사용하도록 클러스터를 설정하고, 저장된 데이터의 암호화를 활성화할 수 있습니다.
+클러스터 설정 중에 ONTAP는 기본 데이터 스토리지 VM을 생성하고 초기 스토리지 장치를 생성하며 데이터 LIF를 자동으로 검색합니다. 선택적으로 호스트 이름 확인을 위해 DNS(도메인 이름 시스템)를 활성화하고, 시간 동기화를 위해 NTP(네트워크 시간 프로토콜)를 사용하도록 클러스터를 설정하고, 저장 데이터 암호화를 활성화할 수 있습니다.
 
 .시작하기 전에
 다음 정보를 수집합니다.

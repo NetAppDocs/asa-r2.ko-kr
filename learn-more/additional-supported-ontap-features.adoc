@@ -11,7 +11,7 @@ summary: ASA r2 시스템은 간소화된 버전의 ONTAP 실행하므로 일반
 
 
 [role="lead"]
-ASA r2 시스템은 간소화된 버전의 ONTAP 실행하므로 일반적인 ONTAP 작업과 시스템 관리자 기능은 ASA r2 시스템에서 다른 ONTAP 시스템과 동일한 방식으로 수행됩니다.
+ASA r2 시스템은 간소화된 버전의 ONTAP를 실행하므로 다른 ONTAP 시스템에서와 마찬가지로 일반적인 ONTAP 작업 및 System Manager 기능을 수행할 수 있습니다.
 
 일반적인 특징과 기능에 대한 자세한 내용은 다음 ONTAP 설명서를 참조하세요.
 
@@ -27,7 +27,7 @@ ASA r2 시스템에서 지원되는 일반적인 데이터 보호 기능에 대�
 [[clustered-external-key-servers]]
 === 클러스터링된 외부 키 서버
 
-스토리지 VM에서 클러스터링된 외부 키 관리 서버에 대한 연결을 구성할 수 있습니다. 클러스터형 키 서버를 사용하면 스토리지 VM에서 기본 키 서버와 보조 키 서버를 지정할 수 있습니다. ONTAP 키를 등록할 때 먼저 기본 키 서버에 액세스를 시도한 후 작업이 성공적으로 완료될 때까지 순차적으로 보조 서버에 액세스를 시도하여 키 중복을 방지합니다.
+스토리지 VM에서 클러스터링된 외부 키 관리 서버에 대한 연결을 구성할 수 있습니다. 클러스터링된 키 서버를 사용하면 스토리지 VM에서 기본 및 보조 키 서버를 지정할 수 있습니다. 키를 등록할 때 ONTAP는 먼저 기본 키 서버를 시도하고, 성공할 때까지 보조 서버를 순차적으로 시도하여 중복 키를 방지합니다.
 
 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-cluster-key-server-task.html["클러스터형 외부 키 서버를 구성하는 방법을 알아보세요"^].
 
@@ -107,7 +107,7 @@ ASA r2 시스템에서 지원되는 일반적인 네트워킹 기능에 대해 �
 [[fips-compliance]]
 === FIPS 준수
 
-ONTAP 모든 SSL 연결에 대해 연방 정보 처리 표준(FIPS) 140-2를 준수합니다.  ONTAP 내에서 SSL FIPS 모드를 켜고 끌 수 있고, SSL 프로토콜을 전역적으로 설정하고, RC4와 같은 취약한 암호를 끌 수 있습니다.
+ONTAP은 모든 SSL 연결에 대해 연방 정보 처리 표준(FIPS) 140-2를 준수합니다. SSL FIPS 모드를 켜고 끄거나, SSL 프로토콜을 전역적으로 설정하거나, RC4 등 ONTAP 내의 취약한 암호화를 해제할 수 있습니다.
 
 ONTAP 9.18.1부터 SSL에 대한 포스트퀀텀 컴퓨팅 암호화 알고리즘이 지원됩니다.  이러한 알고리즘은 미래의 양자 컴퓨팅 공격에 대한 추가적인 보호 기능을 제공하며, SSL FIPS 모드가 비활성화된 경우 사용할 수 있습니다.
 
@@ -135,7 +135,7 @@ ASA r2 시스템에서 지원되는 일반적인 성능 기능에 대해 자세�
 [[modify-default-settings-that-control-automatic-qos-throughput-ceiling-increases]]
 === 자동 QoS 처리량 상한 증가를 제어하는 기본 설정을 수정합니다.
 
-적응형 및 비적응형 QoS 정책 그룹은 기본적으로 워크로드의 처리량 상한을 1초 동안 50%까지 일시적으로 높여 단기적인 성능 향상 요구에 대응하도록 자동으로 활성화됩니다. ONTAP 9.19.1부터는 이러한 기본 설정을 수정할 수 있습니다. ONTAP 9.18.1 이하 버전에서는 이러한 설정을 변경할 수 없습니다.
+적응형 및 비적응형 QoS 정책 그룹은 단기적인 성능 향상 요구에 대응하기 위해 기본적으로 워크로드의 처리량 상한을 1초 동안 50%만큼 일시적으로 증가시킵니다. ONTAP 9.19.1 버전부터는 이러한 설정을 수정할 수 있습니다. ONTAP 9.18.1 이전 버전에서는 이러한 설정을 변경할 수 없습니다.
 
 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 처리량 상한에 대해 자세히 알아보십시오"^].
 
@@ -204,13 +204,13 @@ link:https://docs.netapp.com/us-en/ontap/concepts/storage-efficiency-overview.ht
 [[global-deduplication]]
 === 전역 중복 제거
 
-ONTAP 9.19.1부터 _글로벌 중복 제거_ 기능이 link:https://docs.netapp.com/us-en/ontap/concepts/deduplication-concept.html["기존 ONTAP 중복제거 공간 절약 효과"^] 스토리지 유닛 수준에서 전체 스토리지 가용성 영역(SAZ)으로 확장되었습니다. SAZ 내 모든 스토리지 유닛에서 중복 데이터 블록을 제거함으로써 스토리지 효율성을 크게 향상시키고 총 소유 비용을 절감할 수 있습니다. 글로벌 중복 제거는 기능 라이선스가 필요하지 않으며 기본적으로 활성화되어 있고 기존 스토리지 효율성 기술과 원활하게 통합되며 최소한의 성능 영향으로 투명하게 작동하고 관리자 구성이 필요하지 않습니다.
+ONTAP 9.19.1부터 _글로벌 중복 제거_ 기능이 link:https://docs.netapp.com/us-en/ontap/concepts/deduplication-concept.html["기존 ONTAP 중복제거 공간 절약 효과"^] 스토리지 유닛 수준에서 전체 스토리지 가용성 영역(SAZ)으로 확장되었습니다. SAZ 내 모든 스토리지 유닛에서 중복 데이터 블록을 제거함으로써 스토리지 효율성을 크게 향상시키고 총 소유 비용을 절감할 수 있습니다. 글로벌 중복 제거는 기능 라이선스가 필요하지 않으며 기본적으로 활성화되어 있고 기존 스토리지 효율성 기술과 원활하게 통합되며 최소한의 성능 영향으로 관리자 구성 없이 투명하게 작동합니다.
 
 
 
 [[system-manager]]
 == 시스템 관리자
 
-시스템 관리자에서 다양한 작업, 개체 및 정보 항목을 검색할 수 있습니다.  특정 항목에 대한 테이블 데이터를 검색할 수도 있습니다.
+시스템 관리자에서 다양한 작업, 개체 및 정보 항목을 검색할 수 있습니다. 또한 테이블 데이터에서 특정 항목을 검색할 수도 있습니다.
 
 link:https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html["시스템 관리자에서 정보를 검색, 필터링 및 정렬하는 방법을 알아보세요."^].
