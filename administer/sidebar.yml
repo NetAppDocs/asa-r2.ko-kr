@@ -32,6 +32,8 @@ entries:
   entries:
   - title: 노드 추가
     url: "/administer/add-nodes.html"
+  - title: 노드 제거
+    url: "/administer/remove-nodes.html"
   - title: 재부팅, 테이크오버 및 노드 반환
     url: "/administer/reboot-take-over-give-back-nodes.html"
   - title: 노드 이름을 바꿉니다
