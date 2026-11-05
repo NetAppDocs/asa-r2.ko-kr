@@ -17,7 +17,7 @@ SnapMirror 액티브 싱크는 장애 조치 발생 시 데이터를 보호하�
 . 클러스터 간에 클러스터 피어링 관계가 있는지 확인합니다.
 +
 
-NOTE: SnapMirror Active Sync에서는 클러스터 피어 관계를 위해 기본 IP 공간이 필요합니다. 사용자 지정 IP 공간은 지원되지 않습니다.
+NOTE: SnapMirror 활성 동기화에는 클러스터 피어 관계를 위한 기본 IPspace가 필요합니다. 사용자 지정 IPspace는 지원되지 않습니다.
 
 +
 link:snapshot-replication.html#step-1-create-a-cluster-peer-relationship["클러스터 피어 관계 생성"] .

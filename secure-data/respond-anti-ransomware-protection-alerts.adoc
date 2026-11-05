@@ -46,3 +46,6 @@ ARP/AI가 하나 이상의 스토리지 유닛에서 비정상적인 활동을 �
 
 .다음 단계
 스토리지 유닛 활동의 급증(일회성 급증이든 새로운 정상 상태의 특징인 급증이든)을 알고 있다면 안전하다고 보고해야 합니다. 이러한 급증을 수동으로 안전하다고 보고하면 ARP의 위협 평가 정확도를 높이는 데 도움이 됩니다. link:https://docs.netapp.com/us-en/ontap/anti-ransomware/manage-parameters-task.html#report-known-surges["알려진 ARP/AI 급증 보고"^] 방법을 알아보십시오.
+
+
+NOTE: 스토리지 장치의 link:modify-arp-snapshot-retention-period.html["스냅샷 응답 정책"]이(가) 경고 전용으로 설정되었거나 공격 발생 시에만 스냅샷을 생성하도록 설정된 경우, ARP/AI가 활성화되어 있더라도 해당 스토리지 장치에 대한 주기적인 ARP 스냅샷은 표시되지 않습니다.

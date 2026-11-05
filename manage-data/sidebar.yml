@@ -26,10 +26,10 @@ entries:
       url: "/manage-data/delete-storage-units.html"
   - title: 스토리지 VM 마이그레이션
     entries:
-    - title: ASA 클러스터에서 스토리지 VM 마이그레이션
+    - title: ASA 스토리지 VM을 ASA r2 클러스터로 마이그레이션
       url: "/manage-data/migrate-svm.html"
-    - title: 컷오버 클라이언트 및 소스 스토리지 VM 정리
-      url: "/manage-data/svm-post-migrate-cutover-cleanup.html"
+    - title: ASA r2 스토리지 VM을 ASA 또는 AFF 클러스터로 마이그레이션
+      url: "/manage-data/migrate-svm-from-asa-r2.html"
   - title: 보관 제한
     url: "/manage-data/storage-limits.html"
 - title: 데이터 보호
@@ -110,7 +110,7 @@ entries:
       url: "/secure-data/enable-anti-ransomware-protection.html"
     - title: 기본 ARP/AI 활성화 비활성화
       url: "/secure-data/disable-default-anti-ransomware-protection.html"
-    - title: ARP/AI 스냅샷 보존 기간 수정
+    - title: ARP/AI 스냅샷 응답 정책 구성
       url: "/secure-data/modify-arp-snapshot-retention-period.html"
     - title: ARP/AI 경고에 응답
       url: "/secure-data/respond-anti-ransomware-protection-alerts.html"

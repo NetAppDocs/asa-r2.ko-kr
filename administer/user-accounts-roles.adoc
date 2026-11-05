@@ -74,7 +74,7 @@ SAML(Security Assertion Markup Language) 인증을 사용하면 Active Directory
 . System Manager의 확인 창으로 돌아가서 * I have configured the IDP with the host URI or metadata * 를 선택합니다.
 . SAML 기반 인증을 활성화하려면 * 로그아웃 * 을 선택합니다.
 +
-IDP 시스템에 인증 화면이 표시됩니다.
+IdP 시스템은 인증 화면을 표시합니다.
 
 
 

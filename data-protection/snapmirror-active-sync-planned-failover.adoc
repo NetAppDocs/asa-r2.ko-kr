@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: data-protection/snapmirror-active-sync-planned-failover.html 
 keywords: snapmirror active sync, planned failover, disaster recovery 
-summary: SnapMirror 활성 동기화 관계에 대한 계획된 장애 조치를 수행하여 비즈니스 연속성과 재해 복구를 보장하는 방법을 알아보세요. 
+summary: SnapMirror 활성 동기화 관계에 대한 계획된 페일오버를 수행하여 페일오버 프로세스를 테스트하거나 기본 사이트에서 유지 관리를 수행합니다. 
 ---
 = ASA r2 SnapMirror 활성 동기화 관계 장애 조치
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: data-protection/manage-hierarchical-consistency-groups.html 
 keywords: consistency groups, snapshots, data protection, protect data, add, remove, delete, storage units, lun, namespace, increase capacity 
-summary: 일관성 그룹을 사용하면 각 스토리지 장치에 대해 개별적으로 작업을 수행하는 대신 여러 스토리지 장치에 대해 동시에 다양한 작업을 수행할 수 있습니다. 계층 구조에서 하나 이상의 일관성 그룹이 상위 일관성 그룹 아래에 하위로 구성됩니다. 
+summary: ASA r2 시스템에서 여러 스토리지 장치에 대한 스냅샷 및 복제를 관리하기 위해 계층적 일관성 그룹을 승격, 강등, 생성 및 분리할 수 있습니다. 
 ---
 = ASA r2 시스템에서 계층적 일관성 그룹 관리
 :allow-uri-read: 
@@ -42,13 +42,13 @@ ONTAP 9.16.1을 실행 중이고 승격하려는 일관성 그룹이 SnapMirror 
 부모 일관성 그룹을 단일 일관성 그룹으로 강등하면 연관된 자식 일관성 그룹의 스토리지 단위가 부모 일관성 그룹에 추가됩니다.  자식 일관성 그룹이 삭제되고 부모 일관성 그룹은 단일 일관성 그룹으로 관리됩니다.
 
 .시작하기 전에
-ONTAP 9.16.1을 실행 중이고 강등하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.link:snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"] 일관성 그룹이 강등되기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.link:snapmirror-active-sync-break-relationship.html["관계를 끊다"] 일관성 그룹을 강등하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.
+ONTAP 9.16.1을 실행 중이고 강등하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우, 일관성 그룹을 강등하기 전에 link:snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"]해야 합니다. ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우, 일관성 그룹을 강등하기 전에 link:snapmirror-active-sync-break-relationship.html["관계를 끊다"]해야 합니다. ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 강등하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 해제할 필요가 없습니다.
 
 .단계
 . System Manager에서 * 보호 > 일관성 그룹 * 을 선택합니다.
 . 강등할 부모 일관성 그룹 위에 마우스를 놓습니다.
 . 를 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택한 다음 * 단일 정합성 보장 그룹으로 하향 이동 * 을 선택합니다.
-. 하향 이동 * 을 선택합니다
+. *강등*을 선택합니다.
 
 
 .다음 단계
@@ -113,7 +113,7 @@ link:policies-schedules.html#apply-a-snapshot-policy-to-a-consistency-group["스
 자식 일관성 그룹을 부모 일관성 그룹에서 분리하면 자식 일관성 그룹은 부모 일관성 그룹에서 제거되고 단일 일관성 그룹으로 관리됩니다.  부모에 적용된 복제 정책은 더 이상 분리된 자식 일관성 그룹에 적용되지 않습니다.
 
 .시작하기 전에
-ONTAP 9.16.1을 실행 중이고 분리하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우 다음을 수행해야 합니다.link:snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"] 일관성 그룹을 분리하기 전에.  ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우 다음을 수행해야 합니다.link:snapmirror-active-sync-break-relationship.html["관계를 끊다"] 일관성 그룹을 분리하기 전에.  ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 확장하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 끊을 필요가 없습니다.
+ONTAP 9.16.1을 실행 중이고 분리하려는 일관성 그룹이 SnapMirror 활성 동기화 관계에 있는 경우, 일관성 그룹을 분리하려면 먼저 link:snapmirror-active-sync-delete-relationship.html["SnapMirror 활성 동기화 관계 삭제"]해야 합니다. ONTAP 9.16.1을 실행 중이고 일관성 그룹이 비동기 복제 관계에 있는 경우, 일관성 그룹을 분리하려면 먼저 link:snapmirror-active-sync-break-relationship.html["관계를 끊다"]해야 합니다. ONTAP 9.17.1 및 이후 릴리스에서는 일관성 그룹을 분리하기 전에 SnapMirror 활성 동기화 관계를 삭제하거나 비동기 관계를 해제할 필요가 없습니다.
 
 .단계
 . System Manager에서 * 보호 > 일관성 그룹 * 을 선택합니다.

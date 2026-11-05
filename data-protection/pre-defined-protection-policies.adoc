@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: data-protection/pre-defined-protection-policies.html 
 keywords: snapshot replication, asa r2, protect data, data protection, replication, replicate data, remote cluster, destination cluster, source cluster, replication relationship, asynchronous replication, synchronous replication, policy, pre-defined, default, custom, policies 
-summary: 복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 원격 사이트에 복제되는 시점을 정의합니다.  ONTAP 에는 복제 관계에 사용할 수 있는 다양한 사전 정의된 데이터 보호 정책이 포함되어 있습니다. 
+summary: 비동기 정책 및 SnapMirror 활성 동기화 정책을 포함하여, ASA r2 클러스터 데이터를 원격 사이트로 복제하기 위한 사전 정의된 데이터 보호 정책을 선택하십시오. 
 ---
 = ASA r2 시스템에 대한 사전 정의된 데이터 보호 정책에 대해 알아보십시오.
 :allow-uri-read: 
@@ -15,10 +15,18 @@ summary: 복제 정책은 ASA r2 클러스터에서 수행된 업데이트가 �
 
 미리 정의된 정책이 귀하의 요구 사항을 충족하지 못하는 경우link:snapshot-replication.html#step-2-optionally-create-a-custom-replication-policy["사용자 정의 복제 정책 생성"] .
 
+ONTAP 9.20.1부터 지원되는 비동기 데이터 보호 정책을 사용하여 기존 FC 패브릭을 통해 백엔드 SnapMirror 비동기 복제를 구성할 수 있습니다. 다음 사전 정의된 보호 정책은 백엔드 FC 복제를 지원합니다:
 
-NOTE: ASA r2 시스템은 동기 복제를 지원하지 않습니다.
+* 비동기
+* 미러올스냅샷
+* 미러앤볼트
+* XDP기본
+
 
 ASA r2 시스템은 다음과 같은 사전 정의된 보호 정책을 지원합니다.
+
+
+NOTE: ASA r2 시스템은 동기 복제를 지원하지 않습니다.
 
 [cols="3,4,1"]
 |===

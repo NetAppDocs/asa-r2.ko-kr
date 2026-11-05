@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: data-protection/manage-consistency-groups-add-remove-snapshots.html 
 keywords: consistency groups, snapshots, data protection, protect data, add, remove, delete, storage units, lun, namespace, increase capacity 
-summary: 일관성 그룹의 일부인 저장 장치의 데이터를 보호하기 위해 일관성 그룹의 스냅샷을 만듭니다.  일관성 그룹의 어떤 저장 장치에 있는 데이터를 더 이상 보호할 필요가 없으면 스냅샷 보호를 제거할 수 있습니다. 
+summary: 일관성 그룹에 스냅샷 보호를 추가하여 스토리지 장치의 데이터를 보호하거나, 더 이상 필요하지 않을 때 스냅샷 보호를 제거하십시오. 
 ---
 = 스냅샷을 사용하여 ASA r2 시스템의 일관성 그룹을 보호하세요.
 :allow-uri-read: 
@@ -20,7 +20,7 @@ summary: 일관성 그룹의 일부인 저장 장치의 데이터를 보호하�
 [[add-snapshot-data-protection-to-a-consistency-group]]
 == 정합성 보장 그룹에 스냅샷 데이터 보호 기능을 추가합니다
 
-정합성 보장 그룹에 스냅샷 데이터 보호를 추가하면 사전 정의된 스케줄에 따라 정합성 보장 그룹의 로컬 스냅샷이 정기적으로 생성됩니다.
+일관성 그룹에 스냅샷 데이터 보호를 추가하면, ONTAP은 미리 정의된 일정에 따라 정기적으로 일관성 그룹의 로컬 스냅샷을 생성합니다.
 
 link:restore-data.html["데이터를 복원합니다"]손실되거나 손상된 스냅샷을 사용할 수 있습니다.
 
@@ -54,7 +54,7 @@ image:icon_dropdown_arrow.gif["아래쪽 파란색 화살표"]기본 정책 옆�
 
 .. 정책 일정을 선택합니다.
 .. Maximum snapshots * 에 정합성 보장 그룹에 대해 유지할 최대 스냅샷 수를 입력합니다.
-.. 선택적으로 * SnapMirror label * 아래에 SnapMirror 라벨을 입력합니다.
+.. 선택적으로 *SnapMirror 레이블* 아래에 SnapMirror 레이블을 입력합니다.
 .. 저장 * 을 선택합니다.
 
 

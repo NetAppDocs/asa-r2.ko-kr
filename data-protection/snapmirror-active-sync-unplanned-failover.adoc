@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: data-protection/snapmirror-active-sync-unplanned-failover.html 
 keywords: asa r2, reestablish, snapmirror active sync, unplanned failover, disaster recovery 
-summary: ASA r2 클러스터의 계획되지 않은 장애 조치 후 SnapMirror 활성 동기화 관계를 재설정하는 방법을 알아보세요. 
+summary: ASA r2 클러스터의 예기치 않은 장애 조치 후 SnapMirror 활성 동기화 관계를 다시 설정합니다. 
 ---
-= ASA r2에서 예기치 않은 페일오버 후 SnapMirror 활성 동기화 재설정
+= ASA r2에서 예기치 않은 페일오버 후 SnapMirror 활성 동기화를 다시 설정합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ASA r2 시스템에서 SnapMirror 액티브 동기화는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서는 양쪽 사이트 모두 활성 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다. 소스 클러스터에 장애가 발생하거나 격리되면 중재자는 자동 계획되지 않은 페일오버(AUFO)를 트리거하고 소스 클러스터가 복구될 때까지 타겟 클러스터에서 모든 I/O를 처리합니다.
+예기치 않은 장애 조치 후 원래 소스 클러스터에서 작업을 재개하려면 SnapMirror 활성 동기화 관계를 다시 설정하십시오. ASA r2 시스템에서 SnapMirror 활성 동기화는 대칭형 활성/활성 구성을 지원합니다. 대칭형 활성/활성 구성에서는 두 사이트 모두 활성 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다. 소스 클러스터에 장애가 발생하거나 격리되면 ONTAP Mediator가 자동 예기치 않은 장애 조치(AUFO)를 트리거하고 소스 클러스터가 복구될 때까지 타겟 클러스터에서 모든 I/O를 처리합니다.
 
 SnapMirror 활성 동기화 관계에서 AUFO가 발생하는 경우, 관계를 다시 설정하고 원래 소스 클러스터가 다시 온라인 상태가 되면 해당 클러스터에서 작업을 재개해야 합니다.
 
 .시작하기 전에
 * SnapMirror 활성 동기화 관계는 동기화되어야 합니다.
-* 저장 장치 이동과 같은 중단 없는 작업이 진행 중일 때는 계획된 장애 조치를 시작할 수 없습니다.
+* 스토리지 장치 이동 등 비중단 작업이 진행 중일 때는 계획된 페일오버를 시작할 수 없습니다.
 * ONTAP Mediator는 구성되고 연결되어 있으며 쿼럼에 속해야 합니다.
 * 호스트에서 손실된 I/O 경로를 복구하거나 I/O 경로 상태를 업데이트하려면 기본 스토리지 클러스터가 다시 작동을 시작한 후 호스트에서 스토리지/어댑터 재스캔을 수행해야 합니다.
 

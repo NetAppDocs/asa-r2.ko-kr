@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: data-protection/restore-data.html 
 keywords: restore data, asa r2, data restoration 
-summary: 정합성 보장 그룹의 데이터가 손상되거나 손실된 경우 원격 스냅샷에서 전체 정합성 보장 그룹을 복원할 수 있습니다. 
+summary: ASA r2 시스템에서 데이터가 손실되거나 손상된 경우 로컬 또는 원격 스냅샷에서 일관성 그룹 또는 스토리지 단위를 복원합니다. 
 ---
 = ASA R2 스토리지 시스템에서 데이터를 복구합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 정합성 보장 그룹의 데이터가 손상되거나 손실된 경�
 
 
 [role="lead"]
-스냅샷으로 보호되는 정합성 보장 그룹 또는 스토리지 유닛의 데이터는 손실되거나 손상된 경우 복구할 수 있습니다.
+스냅샷으로 보호되는 일관성 그룹 또는 스토리지 단위의 데이터가 손실되거나 손상된 경우, 스냅샷에서 복원하여 스냅샷이 생성된 시점으로 데이터를 되돌리십시오.
 
 
 
@@ -43,7 +43,7 @@ summary: 정합성 보장 그룹의 데이터가 손상되거나 손실된 경�
 .단계
 . System Manager에서 * Protection > Replication * 을 선택합니다.
 . Local Destinations * 를 선택합니다.
-. 복원할 * 소스 * 를 선택한 다음 를 image:icon_kabob.gif["세 개의 수직 파란색 점"]선택합니다.
+. 복원할 *원본*을 선택한 다음 image:icon_kabob.gif["세 개의 수직 파란색 점"]을(를) 선택합니다.
 . Restore * 를 선택합니다.
 . 데이터를 복구할 클러스터, 스토리지 VM 및 정합성 보장 그룹을 선택합니다.
 . 복원할 스냅샷을 선택합니다.

@@ -1,0 +1,27 @@
+= 
+:allow-uri-read: 
+
+
+.단계
+. 타겟 클러스터에서 스토리지 VM 마이그레이션을 시작합니다:
++
+[source, cli]
+----
+vserver migrate start -vserver <storage_VM_name> -source-cluster <source_cluster>
+----
++
+자동 전환을 비활성화하려면  `-auto-cutover false` 매개변수를 사용하십시오. 소스 스토리지 VM의 자동 제거를 비활성화하려면  `-auto-source-cleanup false` 매개변수를 사용하십시오.
+
+. 마이그레이션 상태 모니터링
++
+[source, cli]
+----
+vserver migrate show -vserver <storage_VM_name>
+----
++
+자동 전환이 시작되기 전에 마이그레이션을 일시 중지하거나 취소해야 하는 경우 다음을 사용하세요. `vserver migrate pause` 그리고 `vserver migrate abort` 명령.  취소하기 전에 마이그레이션을 일시 중지해야 합니다.  전환이 시작된 후에는 마이그레이션을 취소할 수 없습니다.
+
++
+자동 전환이 활성화된 경우, 마이그레이션이 완료되면 *상태*가 *migration-complete*로 표시됩니다. 자동 전환이 비활성화된 경우, *상태*가 *Ready for source cleanup*으로 표시됩니다.
+
+

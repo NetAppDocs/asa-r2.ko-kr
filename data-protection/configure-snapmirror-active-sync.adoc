@@ -11,12 +11,12 @@ summary: 재해 발생 시 자동 장애 조치를 활성화하고 보조 데이
 
 
 [role="lead"]
-SnapMirror 활성 동기화를 구성하여 보조 사이트에 데이터 사본을 만들고 재해 발생 시 호스트 애플리케이션이 자동으로 투명하게 장애 조치될 수 있도록 합니다.
+SnapMirror 액티브 싱크를 구성하여 보조 사이트에 데이터 복사본을 생성하고 재해 발생 시 호스트 애플리케이션이 자동으로 투명하게 페일오버되도록 설정하십시오.
 
 ASA r2 시스템에서 SnapMirror Active Sync는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서는 두 사이트 모두 액티브 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다.
 
 .이 작업에 대해
-iSCSI 또는 FC 프로토콜을 사용하고 VMware Sphere용 ONTAP 도구를 사용하는 경우 선택적으로 다음을 수행할 수 있습니다. link:https://docs.netapp.com/us-en/netapp-solutions/vmware/vmware-vmsc-with-smas.html["VM ware용 ONTAP 도구를 사용하여 SnapMirror 활성 동기화를 구성합니다."^] .
+iSCSI 또는 FC 프로토콜을 사용하고 ONTAP tools for VMware vSphere를 사용하는 경우 선택적으로 link:https://docs.netapp.com/us-en/netapp-solutions/vmware/vmware-vmsc-with-smas.html["ONTAP tools for VMware vSphere를 사용하여 SnapMirror 활성 동기화를 구성합니다."^]할 수 있습니다.
 
 
 NOTE: ONTAP 9.19.1부터 인공지능 기반 자율 랜섬웨어 보호(ARP/AI)는 ASA r2 시스템의 SnapMirror 액티브 싱크 SAN 관계에서 기본 읽기/쓰기 스토리지 장치를 지원합니다. ARP/AI는 활성 기본 스토리지 장치에서 실행되어 기본 전용 ARP 스냅샷을 생성하고 해당 스토리지 장치에 대한 머신 러닝 기반 랜섬웨어 탐지 기능을 제공합니다. ARP/AI를 활성화하려면 link:../secure-data/enable-anti-ransomware-protection.html["AI를 활용한 자율형 랜섬웨어 보호 기능 활성화"]을 참조하십시오.
@@ -34,7 +34,7 @@ link:create-snapshots.html#step-1-optionally-create-a-consistency-group["일관�
 . 기존 클러스터 피어를 선택하거나 *새 피어 추가*를 선택하세요.
 . 스토리지 VM을 선택하세요.
 . 복제 정책에 대해 *AutomatedFailOverDuplex*를 선택합니다.
-. 비균일 대칭 활성/활성 구성을 생성하는 경우 *대상 설정*을 선택한 다음 이 절차를 시작하기 전에 생성하는 새 대상 일관성 그룹의 이름을 입력합니다.
+. 비균일 대칭 활성/활성 구성을 생성하는 경우, *대상 설정*을 선택한 다음 이 절차를 시작하기 전에 생성한 새 대상 일관성 그룹의 이름을 입력하십시오.
 . 저장 * 을 선택합니다.
 
 

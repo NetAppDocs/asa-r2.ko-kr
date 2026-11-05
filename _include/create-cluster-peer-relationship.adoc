@@ -1,0 +1,61 @@
+= 
+:allow-uri-read: 
+
+
+.시작하기 전에
+다음 방법 중 하나를 사용하여 피어링 중인 클러스터의 모든 노드에 클러스터 간 LIF를 생성해야 합니다.
+
+* link:https://docs.netapp.com/us-en/ontap/peering/configure-intercluster-lifs-share-data-ports-task.html["공유 데이터 포트에서 클러스터 간 LIF 구성"^]
+* link:https://docs.netapp.com/us-en/ontap/peering/configure-intercluster-lifs-use-dedicated-ports-task.html["전용 데이터 포트에 클러스터 간 LIF 구성"^]
+* link:https://docs.netapp.com/us-en/ontap/peering/configure-intercluster-lifs-use-ports-own-networks-task.html["사용자 정의 IP 공간에서 클러스터 간 LIF 구성"^]
+
+
+.단계
+. 타겟 클러스터에서 소스 클러스터와 피어 관계를 생성하고 암호를 생성합니다:
++
+[source, cli]
+----
+cluster peer create -peer-addrs <source_cluster_LIF_IPs> -generate-passphrase
+----
++
+다음 예제에서는 클러스터 1과 클러스터 2 사이에 클러스터 피어 관계를 만들고 시스템에서 생성한 암호를 만듭니다.
+
++
+[listing]
+----
+cluster1::> cluster peer create -peer-addrs 10.98.191.193 -generate-passphrase
+Passphrase: UCa+6lRVICXeL/gq1WrK7ShR
+            Peer Cluster Name: cluster2
+            Initial Allowed Vserver Peers: -
+            Expiration Time: 6/7/2017 09:16:10 +5:30
+            Intercluster LIF IP: 10.140.106.185
+Warning: make a note of the passphrase - it cannot be displayed again.
+
+----
+. 생성된 암호를 복사합니다.
+. 소스 클러스터에서 타겟 클러스터와 피어 관계를 생성합니다:
++
+[source, cli]
+----
+cluster peer create -peer-addrs <destination_cluster_LIF_IPs>
+----
+. 타겟 클러스터에서 생성된 암호를 입력합니다.
+. 클러스터 피어 관계가 생성되었는지 확인하세요.
++
+[source, cli]
+----
+cluster peer show
+----
++
+다음 예에서는 피어링에 성공한 클러스터에 대한 예상 출력을 표시합니다.
+
++
+[listing]
+----
+cluster1::> cluster peer show
+
+Peer Cluster Name   Cluster Serial Number   Availability   Authentication
+-----------------   ---------------------   -------------- --------------
+cluster2             1-80-123456             Available      ok
+----
+

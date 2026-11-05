@@ -1,0 +1,15 @@
+= 
+:allow-uri-read: 
+
+
+.단계
+. 타겟 클러스터에서 마이그레이션 사전 검사를 실행하십시오:
++
+[source, cli]
+----
+vserver migrate start -vserver <storage_VM> -source-cluster <sourcecluster> -check-only true
+----
++
+마이그레이션을 준비하기 위해 해결해야 할 문제가 있는 경우, 문제와 해결 조치가 표시됩니다. 문제를 해결하고 사전 점검이 성공적으로 완료될 때까지 반복하십시오.
+
+

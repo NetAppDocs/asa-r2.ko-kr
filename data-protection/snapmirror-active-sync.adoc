@@ -11,9 +11,9 @@ summary: 'SnapMirror Active Sync를 사용하면 예상치 못한 중단이나 �
 
 
 [role="lead"]
-ONTAP SnapMirror 액티브 싱크 데이터 보호 기능은 사이트 전체에 장애가 발생하더라도 비즈니스 서비스가 계속 운영될 수 있도록 지원하며, 보조 복사본을 사용하여 애플리케이션이 투명하게 페일오버되도록 지원합니다. SnapMirror 액티브 싱크를 사용하면 페일오버를 트리거하는 데 수동 작업이나 사용자 지정 스크립팅이 필요하지 않습니다.
+ONTAP SnapMirror 액티브 싱크 데이터 보호 기능은 사이트 전체 장애 발생 시에도 비즈니스 서비스가 중단 없이 운영될 수 있도록 지원하며, 보조 복사본을 사용하여 애플리케이션이 투명하게 장애 조치를 수행할 수 있도록 합니다. SnapMirror 액티브 싱크를 사용하면 장애 조치를 실행하기 위해 수동 개입이나 사용자 지정 스크립트가 필요하지 않습니다.
 
-SnapMirror 액티브 동기화를 구성하기 위한 System Manager 절차는 ASA r2 시스템과 통합 ONTAP 퍼스널리티를 실행하는 NetApp FAS, AFF 및 ASA 시스템에서 서로 다르지만, SnapMirror 액티브 동기화의 요구 사항, 아키텍처 및 작동 방식은 동일합니다.link:https://www.netapp.com/pdf.html?item=/media/138366-sb-3457-san-disaster-recovery-netapp-asa.pdf["ASA r2 시스템에서 SnapMirror Active Sync를 사용한 재해 복구에 대해 자세히 알아보세요."^]
+ASA r2 시스템에서 SnapMirror 액티브 동기화를 구성하는 System Manager 절차는 통합 ONTAP 퍼스낼리티를 실행하는 NetApp FAS, AFF 및 ASA 시스템과 다르지만, SnapMirror 액티브 동기화의 요구사항, 아키텍처 및 작동 방식은 동일합니다. link:https://www.netapp.com/pdf.html?item=/media/138366-sb-3457-san-disaster-recovery-netapp-asa.pdf["ASA r2 시스템에서 SnapMirror Active Sync를 사용한 재해 복구에 대해 자세히 알아보세요."^]
 
 ASA r2 시스템에서 SnapMirror 액티브 동기화는 대칭형 액티브/액티브 구성을 지원합니다. 대칭형 액티브/액티브 구성에서 양쪽 사이트 모두 액티브 I/O를 위해 로컬 스토리지에 액세스할 수 있습니다. link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/architecture-concept.html#symmetric-activeactive["대칭 활성/활성 구성"^]에 대해 자세히 알아보십시오.
 
@@ -41,7 +41,7 @@ ONTAP Mediator 또는 ONTAP Cloud Mediator를 사용하여 클러스터 상태�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 자체 서명 인증서를 사용하여 ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성합니다.
 [role="quick-margin-para"]
-당신은해야합니다 link:configure-ontap-mediator.html["ONTAP Mediator 또는 ONTAP Cloud Mediator 구성"] 클러스터 모니터링을 위해 SnapMirror Active Sync와 함께 사용하려면 먼저 다음 단계를 따라야 합니다.
+클러스터 모니터링을 위해 SnapMirror 액티브 싱크와 함께 사용하기 전에 반드시 link:configure-ontap-mediator.html["ONTAP Mediator 또는 ONTAP Cloud Mediator를 구성합니다"] 해야 합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] SnapMirror Active Sync를 구성합니다.
 [role="quick-margin-para"]

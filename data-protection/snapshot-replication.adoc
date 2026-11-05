@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: data-protection/snapshot-replication.html 
 keywords: snapshot replication, asa r2, protect data, data protection, replication, replicate data, remote cluster, destination cluster, source cluster, replication relationship, asynchronous replication, synchronous replication 
-summary: ONTAP System Manager를 사용하여 백업 및 재해 복구를 위해 원격 위치에 데이터를 복사합니다. 설정을 위해서는 복제 정책 및 관계를 생성해야 합니다. 
+summary: ONTAP System Manager를 사용하여 백업 및 재해 복구를 위해 데이터를 원격 위치로 복사합니다. 스냅샷 복제를 설정하려면 복제 정책 및 관계를 생성합니다. 
 searchtitle: ONTAP System Manager | ASA R2를 사용하여 원격 클러스터에 스냅샷을 복제합니다 
 ---
 = ASA R2 스토리지 시스템에서 원격 클러스터로 스냅샷 복제
@@ -17,7 +17,7 @@ searchtitle: ONTAP System Manager | ASA R2를 사용하여 원격 클러스터�
 
 NOTE: ASA r2 스토리지 시스템에 대한 스냅샷 복제는 다른 ASA r2 스토리지 시스템에서만 지원됩니다.  ASA r2 시스템에서 ASA, AFF 또는 FAS 시스템으로, 또는 ASA, AFF 또는 FAS 시스템에서 ASA r2 시스템으로 스냅샷을 복제할 수 없습니다.
 
-스냅샷 복제를 설정하려면 ASA R2 시스템과 원격 위치 간에 복제 관계를 설정해야 합니다. 복제 관계는 복제 정책에 의해 관리됩니다. 모든 스냅샷을 복제하는 기본 정책은 클러스터 설정 중에 생성됩니다. 기본 정책을 사용하거나 필요에 따라 새 정책을 생성할 수 있습니다.
+스냅샷 복제를 설정하려면 ASA r2 시스템과 원격 위치 간에 복제 관계를 설정해야 합니다. 복제 관계는 복제 정책에 따라 거버넌스 기반으로 관리됩니다. 모든 스냅샷을 복제하는 기본 정책은 클러스터 설정 중에 생성됩니다. 기본 정책을 사용하거나 새 정책을 생성할 수 있습니다.
 
 ONTAP 9.17.1부터 계층적 관계의 일관성 그룹에 비동기 복제 정책을 적용할 수 있습니다.  ONTAP 9.16.1에서는 계층적 관계에 있는 일관성 그룹에 대해 비동기 복제가 지원되지 않습니다.
 
@@ -88,12 +88,12 @@ NOTE: 비동기 정책을 사용하면 데이터가 소스에 기록된 후 원�
 
 랜섬웨어 공격에 대한 보안을 강화하려면 SnapLock for SnapVault 복제 관계를 생성하십시오.
 
+.이 작업에 대해
+* 복제 관계를 생성할 때 복제 관계에 적합한 복제 정책을 선택해야 합니다.  미리 정의된 정책을 사용하거나 사용자 지정 정책을 만들 수 있습니다.
+
+
 .시작하기 전에
-* link:pre-defined-protection-policies.html["복제 정책에 대해 알아보세요"] .
-+
-복제 관계를 생성할 때 복제 관계에 적합한 복제 정책을 선택해야 합니다.  미리 정의된 정책을 사용하거나 사용자 지정 정책을 만들 수 있습니다.
-
-
+ONTAP 9.20.1 버전부터 기존 FC 패브릭을 통해 백엔드 SnapMirror 비동기 복제를 구성할 수 있습니다. 이를 위해서는 ONTAP 시스템 백엔드가 FC 복제를 위해 구성되어 있어야 하며, FC 패브릭과 클러스터 간 IP 네트워크가 모두 작동 중이어야 합니다. 복제 데이터는 FC 패브릭을 통해 전송될 수 있지만, 클러스터 통신 및 복제 관리 기능을 위해서는 클러스터 간 IP 네트워크가 필요합니다. link:https://docs.netapp.com/us-en/ontap/data-protection/configure-backend-fc-replication.html["FC 복제를 위해 ONTAP 시스템 백엔드를 구성하는 방법을 알아보십시오."^].
 
 
 
@@ -101,6 +101,13 @@ NOTE: 비동기 정책을 사용하면 데이터가 소스에 기록된 후 원�
 === 스냅샷을 원격 클러스터로 복제하는 관계를 생성합니다.
 
 스냅샷을 원격 클러스터에 복제하여 데이터를 보호합니다. 일관성 그룹의 복제된 스냅샷은 재해 복구 또는 데이터 마이그레이션에 사용할 수 있습니다.
+
+.이 작업에 대해
+ONTAP 9.20.1 이상 버전에서:
+
+* 백엔드 FC 복제를 사용하여 SnapMirror 관계를 생성하려면 지원되는 사전 정의된 비동기 데이터 보호 정책을 사용하고 FC 전송 프로토콜을 선택해야 합니다. 백엔드 복제는 기본적으로 IP 프로토콜을 사용합니다. link:pre-defined-protection-policies.html["백엔드 FC 복제를 지원하는 사전 정의된 복제 정책을 알아보세요"].
+* 복제 관계를 생성한 후 선택한 전송 프로토콜을 변경하려면 해당 관계를 link:snapmirror-active-sync-break-relationship.html["중단"] 삭제한 다음 원하는 전송 프로토콜로 다시 생성해야 합니다.
+
 
 .단계
 . System Manager에서 * Protection > Replication * 을 선택합니다.
@@ -129,6 +136,7 @@ source_consistency 그룹은 복제할 로컬 클러스터의 정합성 보장 �
 
 |===
 . 복제 정책을 선택합니다.
+. ONTAP 9.20.1 이상 버전에서는 복제 관계에 사용할 전송 프로토콜을 선택하십시오.
 . 데이터 전송 시작을 지연시키려면 *대상 설정*을 선택한 다음 *즉시 전송 시작*을 선택 해제하십시오.
 +
 초기 데이터 전송은 기본적으로 즉시 시작됩니다.
@@ -154,7 +162,8 @@ source_consistency 그룹은 복제할 로컬 클러스터의 정합성 보장 �
 NOTE: ASA r2 시스템은 SnapLock Compliance 모드 또는 SnapLock Enterprise 모드를 지원하지 않습니다. SnapLock for SnapVault 복제 관계를 생성하면 대상 스냅샷 잠금만 활성화됩니다. SnapLock Compliance 또는 Enterprise 모드는 활성화되지 않습니다.
 
 .시작하기 전에
-반드시 link:../secure-data/snaplock.html#initialize-the-snaplock-compliance-clock["SnapLock 규정 준수 시계를 초기화합니다"].
+* 반드시 link:../secure-data/snaplock.html#initialize-the-snaplock-compliance-clock["SnapLock 규정 준수 시계를 초기화합니다"].
+
 
 .단계
 . 시스템 관리자에서 *보호 > 일관성 그룹*을 선택한 다음 일관성 그룹을 선택합니다.
@@ -162,7 +171,11 @@ NOTE: ASA r2 시스템은 SnapLock Compliance 모드 또는 SnapLock Enterprise 
 . Remote protection * 아래에서 * Replicate to a remote cluster * 를 선택합니다.
 . 복제 정책 * 을 선택합니다.
 +
-반드시 _vault_replication 정책을 선택해야 합니다.
+_볼트_ 복제 정책을 선택해야 합니다. ONTAP 9.20.1 이상 버전에서는 백엔드 FC 복제를 구성하기 위해 _MirrorAndVault_ 정책을 선택해야 합니다.
+
+. ONTAP 9.20.1 이상 버전에서는 전송 프로토콜을 선택하십시오.
++
+복제 관계를 생성한 후 선택한 전송 프로토콜을 변경하려면 해당 관계를 link:snapmirror-active-sync-break-relationship.html["중단"] 삭제한 다음 원하는 전송 프로토콜로 다시 생성해야 합니다.
 
 . *대상 설정*을 선택한 다음 *삭제를 방지하기 위해 대상 스냅샷 잠금*을 선택합니다.
 . 최대 및 최소 데이터 보존 기간을 입력합니다.
@@ -179,6 +192,9 @@ NOTE: ASA r2 시스템은 SnapLock Compliance 모드 또는 SnapLock Enterprise 
 
 .다음 단계
 이제 복제 관계를 생성했으므로 복제 정책에 정의된 대로 초기 데이터 전송이 시작됩니다. 선택적으로 복제 페일오버를 테스트하여 ASA r2 시스템이 오프라인 상태가 될 경우 성공적인 페일오버가 발생하는지 확인할 수 있습니다.
+
+.관련 정보
+link:pre-defined-protection-policies.html["미리 정의된 보호 정책에 대해 알아보세요"].
 
 
 

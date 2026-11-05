@@ -13,7 +13,11 @@ summary: 무단 조작 방지 스냅샷을 사용하여 데이터를 보호합�
 [role="lead"]
 ONTAP SnapLock는 규정 준수 및 거버넌스 목적으로 파일을 수정되지 않은 형태로 보존하기 위해 WORM 스토리지를 사용하는 조직을 위한 고성능 규정 준수 솔루션입니다. 서로 다른 수준의 WORM 데이터 보호를 제공하는 Compliance 또는 Enterprise 모드로 SnapLock를 실행할 수 있습니다. SAN 환경의 기본 클러스터에서는 SnapLock Compliance 및 Enterprise 모드가 지원되지 않지만, 보조 시스템에서 SnapVault용 SnapLock를 활성화하여 실수로 또는 악의적으로 보조 스냅샷이 삭제되지 않도록 보호할 수 있습니다.
 
-SnapLock Compliance Clock는 SnapLock for SnapVault를 사용하여 2차 시스템의 스냅샷을 보호하려면 초기화해야 합니다.
+SnapLock Compliance 클록은 link:../data-protection/snapshot-replication.html["SnapLock for SnapVault를 사용하여 보조 시스템의 스냅샷을 보호합니다"]로 초기화되어야 합니다.
+
+ONTAP 9.20.1부터 기존 FC 패브릭을 통한 SnapVault 복제를 위해 백엔드 SnapLock을 구성할 수 있습니다. 이렇게 하려면 ONTAP 시스템 백엔드가 FC 복제를 위해 구성되어 있어야 하며 FC 패브릭과 인터클러스터 IP 네트워크가 모두 작동 중이어야 합니다. 복제 데이터는 FC 패브릭을 통해 전송될 수 있지만, 클러스터 통신 및 복제 관리 기능에는 인터클러스터 IP 네트워크가 필요합니다.
+
+link:https://docs.netapp.com/us-en/ontap/data-protection/configure-backend-fc-replication.html["FC 복제를 위해 ONTAP 시스템 백엔드를 구성하십시오."^]하는 방법을 알아보십시오.
 
 .관련 정보
 * link:https://docs.netapp.com/us-en/ontap/san-admin/configure-backup-vaults-san-environment-concept.html["SnapLock for SnapVault SAN 환경에서"^]에 대해 자세히 알아보십시오.

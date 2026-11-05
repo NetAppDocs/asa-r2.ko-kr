@@ -16,6 +16,8 @@ ONTAP 9.18.1부터는 표준 ASA 클러스터에서 ASA r2 클러스터로 스�
 
 NOTE: ASA MetroCluster에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션할 수 없습니다. ASA r2 시스템은 MetroCluster 구성을 지원하지 않습니다.
 
+ASA r2 시스템은 QuickAssist Technology(QAT)를 지원합니다. ASA 시스템은 QAT를 지원하지 않습니다. ONTAP 9.20.1부터 ONTAP은 스토리지 가상 머신(VM)이 ASA(비 QAT) 시스템에서 ASA r2(QAT) 시스템으로 마이그레이션된 후 발생할 수 있는 높은 읽기 지연 시간과 CPU 사용량을 줄여줍니다.
+
 ASA 와 ASA r2 스토리지 시스템 간의 스토리지 VM 마이그레이션은 다음과 같이 지원됩니다.
 
 [cols="2"]
@@ -51,7 +53,7 @@ ASA 와 ASA r2 스토리지 시스템 간의 스토리지 VM 마이그레이션�
 |===
 ASA 및 ASA r2 시스템의 최신 목록은 다음을 참조하세요.link:https://hwu.netapp.com/["NetApp Hardware Universe를 참조하십시오"^] .  ASA r2 시스템은 NetApp Hardware Universe 에 "ASA A-시리즈/C-시리즈(신제품)"로 나열되어 있습니다.
 
-ASA 클러스터에서만 스토리지 VM을 ASA r2 클러스터로 마이그레이션할 수 있습니다.  다른 유형의 ONTAP 시스템에서의 마이그레이션은 지원되지 않습니다.
+스토리지 VM은 ASA 클러스터에서만 ASA r2 클러스터로 마이그레이션할 수 있습니다. 다른 유형의 ONTAP 시스템에서 ASA r2 시스템으로의 마이그레이션은 지원되지 않습니다.
 
 .시작하기 전에
 ASA r2 클러스터와 ASA 클러스터의 모든 노드는 ONTAP 9.18.1 이상을 실행해야 합니다.  클러스터 노드의 ONTAP 9.18.1 패치 버전은 다를 수 있습니다.
@@ -103,6 +105,9 @@ lun show -vserver <storage_VM>
 
 ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션하려면 먼저 피어 관계를 만들어야 합니다.  피어 관계는 ONTAP 클러스터와 스토리지 VM이 안전하게 데이터를 교환할 수 있도록 하는 네트워크 연결을 정의합니다.
 
+.이 작업에 대해
+ASA 클러스터는 스토리지 VM을 마이그레이션할 _소스_ 클러스터이고, ASA r2 클러스터는 스토리지 VM을 마이그레이션할 _타겟_ 클러스터입니다.
+
 .시작하기 전에
 다음 방법 중 하나를 사용하여 피어링 중인 클러스터의 모든 노드에 클러스터 간 LIF를 생성해야 합니다.
 
@@ -112,11 +117,11 @@ ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이
 
 
 .단계
-. ASA r2 클러스터에서 ASA 클러스터와 피어 관계를 만들고 암호를 생성합니다.
+. 타겟 클러스터에서 소스 클러스터와 피어 관계를 생성하고 암호를 생성합니다:
 +
 [source, cli]
 ----
-cluster peer create -peer-addrs <ASA_cluster_LIF_IPs> -generate-passphrase
+cluster peer create -peer-addrs <source_cluster_LIF_IPs> -generate-passphrase
 ----
 +
 다음 예제에서는 클러스터 1과 클러스터 2 사이에 클러스터 피어 관계를 만들고 시스템에서 생성한 암호를 만듭니다.
@@ -134,13 +139,13 @@ Warning: make a note of the passphrase - it cannot be displayed again.
 
 ----
 . 생성된 암호를 복사합니다.
-. ASA 클러스터에서 ASA r2 클러스터와 피어 관계를 만듭니다.
+. 소스 클러스터에서 타겟 클러스터와 피어 관계를 생성합니다:
 +
 [source, cli]
 ----
-cluster peer create -peer-addrs <ASA_r2_LIF_IPs>
+cluster peer create -peer-addrs <destination_cluster_LIF_IPs>
 ----
-. ASA r2 클러스터에서 생성된 암호를 입력하세요.
+. 타겟 클러스터에서 생성된 암호를 입력합니다.
 . 클러스터 피어 관계가 생성되었는지 확인하세요.
 +
 [source, cli]
@@ -165,24 +170,27 @@ cluster2             1-80-123456             Available      ok
 ASA 및 ASA r2 클러스터는 피어링되어 있으며 스토리지 VM 데이터를 안전하게 전송할 수 있습니다.
 
 .다음 단계
-이제 ASA 스토리지 VM을 마이그레이션할 준비가 되었습니다.
+이제 마이그레이션 사전 검사를 실행할 준비가 되었습니다.
 
 
 
-[[step-3-prepare-for-storage-vm-migration-from-an-asa-to-an-asa-r2-cluster]]
-== 3단계: ASA 에서 ASA r2 클러스터로 스토리지 VM 마이그레이션 준비
+[[step-3-execute-the-migration-pre-check]]
+== 3단계: 마이그레이션 사전 검사 실행
 
-ASA 클러스터에서 ASA r2 클러스터로 스토리지 가상 머신(VM)을 마이그레이션하기 전에 마이그레이션 사전 검사를 실행하고 필요한 문제를 해결해야 합니다.  사전 검사를 성공적으로 통과할 때까지 마이그레이션을 수행할 수 없습니다.
+ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션하기 전에 마이그레이션 사전 검사를 실행하고 필요한 문제를 해결해야 합니다. 사전 검사가 성공적으로 통과될 때까지 마이그레이션을 수행할 수 없습니다.
+
+.이 작업에 대해
+ASA 클러스터는 스토리지 VM을 마이그레이션할 _소스_ 클러스터이고, ASA r2 클러스터는 스토리지 VM을 마이그레이션할 _타겟_ 클러스터입니다.
 
 .단계
-. ASA r2 클러스터에서 마이그레이션 사전 검사를 실행합니다.
+. 타겟 클러스터에서 마이그레이션 사전 검사를 실행하십시오:
 +
 [source, cli]
 ----
-vserver migrate start -vserver <storage_VM> -source-cluster <asa_cluster> -check-only true
+vserver migrate start -vserver <storage_VM> -source-cluster <sourcecluster> -check-only true
 ----
 +
-마이그레이션을 위해 ASA 클러스터를 준비하는 과정에서 해결해야 할 문제가 있는 경우, 해당 문제와 수정 조치가 표시됩니다. 문제를 해결하고 사전 점검이 성공적으로 완료될 때까지 반복하십시오.
+마이그레이션을 준비하기 위해 해결해야 할 문제가 있는 경우, 문제와 해결 조치가 표시됩니다. 문제를 해결하고 사전 점검이 성공적으로 완료될 때까지 반복하십시오.
 
 
 
@@ -199,7 +207,9 @@ ASA 클러스터를 준비하고 ASA r2 클러스터와 필요한 클러스터 �
 스토리지 VM 마이그레이션을 수행할 때는 CPU 워크로드를 실행할 수 있도록 ASA 클러스터와 ASA r2 클러스터 모두에 30%의 CPU 여유 공간을 두는 것이 가장 좋습니다.
 
 .이 작업에 대해
-스토리지 VM 마이그레이션 후 클라이언트는 자동으로 ASA r2 클러스터로 전환되고 ASA 클러스터의 스토리지 VM은 자동으로 제거됩니다.  자동 전환 및 자동 스토리지 VM 제거는 기본적으로 활성화되어 있습니다.  선택적으로 두 가지 모두 비활성화하고 전환 및 스토리지 VM 제거를 수동으로 수행할 수 있습니다.
+* 스토리지 VM 마이그레이션 후 클라이언트 I/O는 중단 없이 타겟 클러스터로 원활하게 전환되며, ASA r2 클러스터의 스토리지 VM은 자동으로 제거됩니다. 자동 전환 및 자동 스토리지 VM 제거는 기본적으로 활성화되어 있습니다. 필요에 따라 두 옵션 중 하나 또는 둘 다를 비활성화하고 수동으로 수행할 수 있습니다.
+* ASA 클러스터는 스토리지 VM을 마이그레이션할 _소스_ 클러스터이고, ASA r2 클러스터는 스토리지 VM을 마이그레이션할 _타겟_ 클러스터입니다.
+
 
 .시작하기 전에
 * ASA r2 클러스터에는 마이그레이션된 스토리지 VM을 보관할 수 있는 충분한 여유 공간이 있어야 합니다.
@@ -215,14 +225,14 @@ ASA 클러스터를 준비하고 ASA r2 클러스터와 필요한 클러스터 �
 
 
 .단계
-. ASA r2 클러스터에서 스토리지 VM 마이그레이션을 시작합니다.
+. 타겟 클러스터에서 스토리지 VM 마이그레이션을 시작합니다:
 +
 [source, cli]
 ----
-vserver migrate start -vserver <storage_VM_name> -source-cluster <ASA_cluster>
+vserver migrate start -vserver <storage_VM_name> -source-cluster <source_cluster>
 ----
 +
-자동 컷오버를 비활성화하려면 다음을 사용하세요. `-auto-cutover false` 매개변수.  ASA 스토리지 VM의 자동 제거를 비활성화하려면 다음을 사용하세요. `-auto-source-cleanup false` 매개변수.
+자동 전환을 비활성화하려면  `-auto-cutover false` 매개변수를 사용하십시오. 소스 스토리지 VM의 자동 제거를 비활성화하려면  `-auto-source-cleanup false` 매개변수를 사용하십시오.
 
 . 마이그레이션 상태 모니터링
 +
@@ -231,15 +241,81 @@ vserver migrate start -vserver <storage_VM_name> -source-cluster <ASA_cluster>
 vserver migrate show -vserver <storage_VM_name>
 ----
 +
-마이그레이션이 완료되면 *상태*가 *마이그레이션 완료*로 표시됩니다.
+자동 전환이 시작되기 전에 마이그레이션을 일시 중지하거나 취소해야 하는 경우 다음을 사용하세요. `vserver migrate pause` 그리고 `vserver migrate abort` 명령.  취소하기 전에 마이그레이션을 일시 중지해야 합니다.  전환이 시작된 후에는 마이그레이션을 취소할 수 없습니다.
+
++
+자동 전환이 활성화된 경우, 마이그레이션이 완료되면 *상태*가 *migration-complete*로 표시됩니다. 자동 전환이 비활성화된 경우, *상태*가 *Ready for source cleanup*으로 표시됩니다.
 
 
-
-
-NOTE: 자동 전환이 시작되기 전에 마이그레이션을 일시 중지하거나 취소해야 하는 경우 다음을 사용하세요. `vserver migrate pause` 그리고 `vserver migrate abort` 명령.  취소하기 전에 마이그레이션을 일시 중지해야 합니다.  전환이 시작된 후에는 마이그레이션을 취소할 수 없습니다.
 
 .결과
 스토리지 VM은 ASA 클러스터에서 ASA r2 클러스터로 마이그레이션됩니다.  스토리지 VM의 이름과 UUID, 데이터 LIF 이름, IP 주소, 볼륨 이름과 같은 개체 이름은 변경되지 않습니다.  스토리지 VM에 있는 마이그레이션된 객체의 UUID가 업데이트됩니다.
 
 .다음 단계
-자동 컷오버 및 자동 스토리지 VM 제거를 비활성화한 경우link:svm-post-migrate-cutover-cleanup.html["ASA 클라이언트를 ASA r2 클러스터로 수동으로 전환하고 ASA 클러스터에서 스토리지 VM을 제거합니다."] .
+자동 전환 및 자동 스토리지 VM 제거를 비활성화한 경우, 마이그레이션 후 전환 및 정리를 수행하여 ASA 클라이언트를 타겟 클러스터로 수동으로 전환하고 ASA 클러스터에서 스토리지 VM을 제거하십시오.
+
+
+
+[[step-5-post-migration-cutover-and-cleanup]]
+== 5단계: 마이그레이션 후 전환 및 정리
+
+클러스터 간 스토리지 VM 마이그레이션 중에 클라이언트 I/O는 타겟 클러스터로 전환되고 소스 클러스터의 스토리지 VM은 자동으로 제거됩니다. 마이그레이션 중에 소스 스토리지 VM의 자동 전환 및 제거를 비활성화하도록 선택한 경우, 마이그레이션 상태가 *소스 정리 준비됨*에 도달한 후 이러한 단계를 수동으로 수행해야 합니다.
+
+
+
+[[manually-cut-over-clients-after-a-storage-vm-migration]]
+=== 스토리지 VM 마이그레이션 후 클라이언트를 수동으로 전환
+
+스토리지 VM의 클러스터 간 마이그레이션 중에 자동 클라이언트 전환을 비활성화한 경우, 마이그레이션 관계가 전환 준비가 완료되면 수동으로 전환을 수행하여 대상 스토리지 VM이 클라이언트에 데이터를 제공할 수 있도록 해야 합니다.
+
+.이 작업에 대해
+타겟 클러스터에서 이 작업을 수행하십시오.
+
+.단계
+. 클라이언트 전환을 수동으로 실행합니다:
++
+[source, cli]
+----
+vserver migrate cutover -vserver <storage_VM_name>
+----
+. 컷오버 작업이 완료되었는지 확인하세요.
++
+[source, cli]
+----
+vserver migrate show
+----
+
+
+.결과
+타겟 클러스터의 스토리지 VM에서 클라이언트로 데이터가 제공되고 있습니다.
+
+.다음 단계
+이제 소스 클러스터에서 스토리지 VM을 제거할 준비가 되었습니다.
+
+
+
+[[manually-remove-a-storage-vm-after-migration]]
+=== 마이그레이션 후 스토리지 VM을 수동으로 제거
+
+클러스터 간 스토리지 VM 마이그레이션 중에 자동 소스 정리를 비활성화한 경우, 마이그레이션이 완료된 후 스토리지 공간을 확보하기 위해 소스 클러스터에서 스토리지 VM을 제거하십시오.
+
+.시작하기 전에
+클라이언트는 타겟 클러스터에서 데이터를 제공해야 합니다.
+
+.단계
+. 소스 클러스터에서 소스 스토리지 VM의 상태가 *소스 정리 준비됨*인지 확인합니다:
++
+[source, cli]
+----
+vserver migrate show
+----
+. 소스 스토리지 VM을 제거합니다:
++
+[source, cli]
+----
+vserver migrate source-cleanup -vserver <storage_VM_name>
+----
+
+
+.결과
+소스 클러스터의 스토리지 VM이 제거되었습니다.
