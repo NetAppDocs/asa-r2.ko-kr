@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-data/migrate-svm-from-asa-r2.html 
 keywords: move svm, migrate svm, asa, asa r2, storage vm, storage virtual machine 
-summary: 'ONTAP 9.20.1 버전부터는 스토리지 가상 머신(VM)을 2노드 ASA r2 클러스터에서 2노드 ASA 또는 2노드 AFF 클러스터로 중단 없이 마이그레이션할 수 있습니다.' 
+summary: ONTAP 9.20.1부터 2노드 ASA r2 클러스터에서 2노드 ASA 또는 AFF 클러스터로 스토리지 VM을 중단 없이 마이그레이션할 수 있습니다. 
 ---
 = ASA r2 클러스터에서 ASA 또는 AFF 클러스터로 스토리지 VM 마이그레이션
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'ONTAP 9.20.1 버전부터는 스토리지 가상 머신(VM)을 2노드
 
 
 [role="lead"]
-ONTAP 9.20.1부터 2노드 ASA r2 클러스터에서 2노드 ASA 또는 2노드 AFF 클러스터로 스토리지 가상 머신(VM)을 중단 없이 마이그레이션할 수 있습니다. SAN 및 NAS 워크로드를 통합하거나, ASA r2 시스템에서 사용할 수 없는 ONTAP 기능을 도입하거나, 환경에 대한 하드웨어 교체의 일환으로 스토리지 VM을 마이그레이션해야 할 수 있습니다. 마이그레이션 중에 LUN 및 네임스페이스에 대한 기존 호스트 매핑과 스토리지 유닛 구성이 유지되므로 운영 노력과 위험이 줄어듭니다.
+ONTAP 9.20.1부터 2노드 ASA r2 클러스터에서 2노드 ASA 또는 2노드 AFF 클러스터로 스토리지 가상 머신(VM)을 중단 없이 마이그레이션할 수 있습니다. SAN 및 NAS 워크로드를 통합하거나, ASA r2 시스템에서 사용할 수 없는 ONTAP 기능을 도입하거나, 하드웨어를 교체하기 위해 스토리지 VM을 마이그레이션해야 할 수 있습니다. 마이그레이션 중에 기존 호스트 매핑과 LUN 및 네임스페이스에 대한 스토리지 유닛 구성이 유지되므로 운영 노력과 위험이 줄어듭니다.
 
 .시작하기 전에
 * 클러스터 관리자여야 합니다.
@@ -21,8 +21,8 @@ ONTAP 9.20.1부터 2노드 ASA r2 클러스터에서 2노드 ASA 또는 2노드 
 .이 작업에 대해
 * ASA r2 스토리지 VM은 2노드 ASA r2 클러스터에서 2노드 AFF 클러스터로만 마이그레이션할 수 있습니다.
 +
-** ASA r2 스토리지 VM은 FAS 클러스터 또는 노드가 2개를 초과하는 ASA 또는 AFF 클러스터로 마이그레이션할 수 없습니다.
-** 노드가 2개를 초과하는 ASA r2 클러스터에서는 ASA r2 스토리지 VM을 마이그레이션할 수 없습니다.
+** ASA r2 스토리지 VM은 FAS 클러스터 또는 노드가 2개보다 많은 ASA 또는 AFF 클러스터로 마이그레이션할 수 없습니다.
+** 노드가 두 개를 초과하는 ASA r2 클러스터에서는 ASA r2 스토리지 VM을 마이그레이션할 수 없습니다.
 
 
 * ASA r2 클러스터에서 AFF 클러스터로의 데이터 마이그레이션은 되돌릴 수 없습니다.
@@ -30,7 +30,7 @@ ONTAP 9.20.1부터 2노드 ASA r2 클러스터에서 2노드 ASA 또는 2노드 
 전환 전에 마이그레이션을 중단할 수 있지만, 전환이 시작된 후에는 마이그레이션을 중단하거나 되돌릴 수 없습니다. 마이그레이션이 완료된 후에는 AFF 클러스터에서 ASA r2 클러스터로 데이터를 마이그레이션할 수 없습니다.
 
 +
-link:migrate-svm.html["ASA에서 ASA r2 클러스터로 SVM을 마이그레이션합니다"]할 수 있습니다.
+link:migrate-svm.html["ASA에서 ASA r2 클러스터로 스토리지 VM 마이그레이션"]할 수 있습니다.
 
 * 한 번에 하나의 스토리지 VM만 마이그레이션할 수 있습니다.
 * 스토리지 VM은 최대 400개의 스토리지 유닛을 포함할 수 있습니다.
@@ -120,7 +120,7 @@ ASA r2 클러스터에서 스토리지 가상 머신(VM)을 마이그레이션�
 
 .단계
 . link:../data-protection/snapmirror-active-sync-break-relationship.html["기존 복제 관계를 모두 제거합니다"].
-. link:../data-protection/snapmirror-active-sync-delete-relationship.html["기존 SnapMirrror 활성 동기화 관계를 모두 제거하십시오."].
+. link:../data-protection/snapmirror-active-sync-delete-relationship.html["기존 SnapMirror 활성 동기화 관계를 모두 제거하십시오"].
 . IPsec이 활성화되어 있는지 확인하십시오:
 +
 [source, cli]
@@ -144,15 +144,15 @@ link:https://docs.netapp.com/us-en/ontap-cli/security-ipsec-config-show.html["se
 network interface show -vserver <storage_vm_name> -fields address-family, is-vip
 ----
 +
-iPv6 LIF의 경우  `-address-family`은(는)  `ipv6`입니다. VIP LIF의 경우  `-is-vip` 매개변수는  `true`입니다.
+IPv6 LIF의 경우  `-address-family`은(는)  `ipv6`입니다. VIP LIF의 경우  `-is-vip` 매개변수는  `true`입니다.
 
-.. IPv6 또는 VIP LIF가 있는 경우 모두 제거하십시오:
+.. IPv6 또는 VIP LIF가 있는 경우 제거하십시오:
 +
 [source, cli]
 ----
 network interface delete -vserver <storage_vm_name> - lif <lif_name>
 ----
-.. 스토리지 VM에 iPv6 또는 VIP LIF가 남아 있지 않은지 확인하십시오:
+.. 스토리지 VM에 IPv6 또는 VIP LIF가 남아 있지 않은지 확인하십시오:
 +
 [source, cli]
 ----
@@ -221,7 +221,7 @@ vserver migrate start -vserver <storage_VM> -source-cluster <sourcecluster> -che
 
 ASA r2와 ASA 또는 AFF 클러스터 간에 필요한 클러스터 피어 관계를 생성하고 두 클러스터를 준비하는 단계를 완료한 후에는 스토리지 VM 마이그레이션을 시작할 수 있습니다.
 
-스토리지 VM 마이그레이션을 수행할 때는 마이그레이션 CPU 워크로드가 실행될 수 있도록 ASA r2 클러스터와 AFF 클러스터 모두에 30%의 CPU 여유 공간을 확보하는 것이 좋습니다.
+모범 사례로, 마이그레이션 워크로드가 실행될 수 있도록 ASA r2 클러스터와 AFF 클러스터 모두에 30%의 CPU 여유 공간을 남겨 두십시오.
 
 .이 작업에 대해
 * 스토리지 VM 마이그레이션 후 클라이언트 I/O는 중단 없이 타겟 클러스터로 원활하게 전환되며, ASA r2 클러스터의 스토리지 VM은 자동으로 제거됩니다. 자동 전환 및 자동 스토리지 VM 제거는 기본적으로 활성화되어 있습니다. 필요에 따라 두 옵션 중 하나 또는 둘 다를 비활성화하고 수동으로 수행할 수 있습니다.

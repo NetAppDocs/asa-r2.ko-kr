@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-data/migrate-svm.html 
 keywords: move svm, migrate svm, asa, asa r2, storage vm, storage virtual machine 
-summary: 스토리지 가용 영역의 공간이 부족한 경우 스토리지 유닛을 다른 스토리지 가용 영역으로 이동하여 클러스터 전체의 스토리지 사용률을 조정할 수 있습니다. 
+summary: 스토리지 VM 검증, 클러스터 피어링, 사전 검사 실행 및 마이그레이션 등을 포함하여 중단 없이 ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션합니다. 
 ---
 = ASA 클러스터에서 ASA r2 클러스터로 스토리지 VM 마이그레이션
 :allow-uri-read: 
@@ -16,7 +16,7 @@ ONTAP 9.18.1부터는 표준 ASA 클러스터에서 ASA r2 클러스터로 스�
 
 NOTE: ASA MetroCluster에서 ASA r2 클러스터로 스토리지 VM을 마이그레이션할 수 없습니다. ASA r2 시스템은 MetroCluster 구성을 지원하지 않습니다.
 
-ASA r2 시스템은 QuickAssist Technology(QAT)를 지원합니다. ASA 시스템은 QAT를 지원하지 않습니다. ONTAP 9.20.1부터 ONTAP은 스토리지 가상 머신(VM)이 ASA(비 QAT) 시스템에서 ASA r2(QAT) 시스템으로 마이그레이션된 후 발생할 수 있는 높은 읽기 지연 시간과 CPU 사용량을 줄여줍니다.
+ASA r2 시스템은 QuickAssist Technology(QAT)를 지원합니다. ASA 시스템은 QAT를 지원하지 않습니다. ONTAP 9.20.1부터 ONTAP은 스토리지 VM을 ASA(QAT 미지원) 시스템에서 ASA r2(QAT 지원) 시스템으로 마이그레이션한 후 발생할 수 있는 높은 읽기 지연 시간과 CPU 사용량을 줄여줍니다.
 
 ASA 와 ASA r2 스토리지 시스템 간의 스토리지 VM 마이그레이션은 다음과 같이 지원됩니다.
 
@@ -249,7 +249,7 @@ vserver migrate show -vserver <storage_VM_name>
 
 
 .결과
-스토리지 VM은 ASA 클러스터에서 ASA r2 클러스터로 마이그레이션됩니다.  스토리지 VM의 이름과 UUID, 데이터 LIF 이름, IP 주소, 볼륨 이름과 같은 개체 이름은 변경되지 않습니다.  스토리지 VM에 있는 마이그레이션된 객체의 UUID가 업데이트됩니다.
+스토리지 VM이 ASA 클러스터에서 ASA r2 클러스터로 마이그레이션됩니다. 스토리지 VM의 이름과 UUID, 데이터 LIF 이름, IP 주소, 그리고 볼륨 이름 등 오브젝트 이름은 변경되지 않습니다. 스토리지 VM에서 마이그레이션된 오브젝트의 UUID가 업데이트됩니다.
 
 .다음 단계
 자동 전환 및 자동 스토리지 VM 제거를 비활성화한 경우, 마이그레이션 후 전환 및 정리를 수행하여 ASA 클라이언트를 타겟 클러스터로 수동으로 전환하고 ASA 클러스터에서 스토리지 VM을 제거하십시오.

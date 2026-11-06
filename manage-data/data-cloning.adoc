@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-data/data-cloning.html 
 keywords: data cloning, clone data, cloning data, luns, namespaces, clone storage units, clone, cloning, clone consistency groups 
-summary: ASA R2에서 스토리지 유닛 및 정합성 보장 그룹을 클론하면 운영 환경 외부에서 다양한 용도로 사용할 데이터 복제본을 생성할 수 있습니다. 
+summary: ASA r2 시스템에서 스토리지 유닛과 일관성 그룹을 복제하여 운영 환경 외부에서 사용할 데이터 복사본을 생성합니다. 
 searchtitle: ONTAP System Manager | ASA R2를 사용한 데이터 클론 복제 
 ---
 = ASA R2 스토리지 시스템에 데이터를 복제합니다
@@ -82,7 +82,7 @@ searchtitle: ONTAP System Manager | ASA R2를 사용한 데이터 클론 복제
 
 클론은 클론 복제할 일관성 그룹의 스냅샷에서 생성됩니다. 클론 생성 프로세스가 기본적으로 시작되는 시점에 클론에 사용되는 스냅샷이 생성됩니다. 기존 스냅샷을 사용하도록 기본 동작을 수정할 수 있습니다.
 
-스토리지 유닛 매핑은 클론 생성 프로세스의 일부로 복사됩니다. 스냅샷 정책은 클론 복제 프로세스의 일부로 복사되지 않습니다.
+스토리지 유닛 매핑은 클로닝 프로세스의 일부로 복사됩니다. 스냅샷 정책은 클로닝 프로세스의 일부로 복사되지 않습니다.
 
 ASA R2 시스템에 로컬로 저장된 정합성 보장 그룹 또는 원격 위치에 복제된 정합성 보장 그룹에서 클론을 생성할 수 있습니다.
 
